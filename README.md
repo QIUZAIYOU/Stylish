@@ -6,7 +6,7 @@
 
 适用于浏览器插件「Stylus」和「Stylish」
 
-如有问题请到[我的网站](https://www.asifadeaway.com)点击右下角会话按钮给我留言。
+如有问题请提交 Issues ，或到[我的网站](https://www.asifadeaway.com)点击右下角会话按钮给我留言。
 
 目前适配如下网站：
 
