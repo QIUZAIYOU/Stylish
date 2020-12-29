@@ -147,13 +147,9 @@ url-prefix("http://www.douyu.com/") {
     .v3-sign,
     .head .header_nav .expres_pic,
     .chat-bottom-ad,
-    .summer_edited {
-        display: none!important;
-    }
+    .summer_edited,
     .text-cont a.hy-name,
-    .text-cont a.hy-name+span {
-        display: none!important;
-    }
+    .text-cont a.hy-name+span,
     .head-nav li.video-entry,
     .head-nav li.funny,
     .head-nav li.yuba,
@@ -170,9 +166,7 @@ url-prefix("http://www.douyu.com/") {
     #header.annualfestival-header2::after,
     #header.annualfestival-header2::after,
     #header.annualfestival-header2::after,
-    #header.annualfestival-header2::before {
-        display: none!important;
-    }
+    #header.annualfestival-header2::before,
     .u_nav>ul:nth-child(1)>li:nth-child(2),
     .u_nav>ul:nth-child(1)>li:nth-child(4),
     .u_nav>ul:nth-child(1)>li:nth-child(5),
@@ -186,26 +180,20 @@ url-prefix("http://www.douyu.com/") {
     .u_nav>ul:nth-child(1)>li:nth-child(18),
     .u_nav>ul:nth-child(1)>li:nth-child(19),
     .u_nav>ul:nth-child(1)>li:nth-child(20),
-    .u_nav>ul:nth-child(1)>li:nth-child(21) {
+    .u_nav>ul:nth-child(1)>li:nth-child(21),
+    div[data-component-id*="videoHeader"],
+    div[data-component-id*="backgroundImg"],
+    div[data-component-id*="ladderNav"],
+    .JS_slider4officialwrap.slider4officialwrap,
+    .ywreturntip {
         display: none!important;
     }
     .PlayerCase {
         display: block!important;
     }
-    div[data-component-id*="videoHeader"],
-    div[data-component-id*="backgroundImg"],
-    div[data-component-id*="ladderNav"],
-    .JS_slider4officialwrap.slider4officialwrap {
-        display: none!important;
-    }
-    .ywreturntip {
-        display: none!important;
-    }
     /*=== 视频内广告屏蔽(H5播放器) ===*/
     .QRcode,
-    .lianmai-tips {
-        display: none!important;
-    }
+    .lianmai-tips,
     div[class*="yanzhi-dd40b4"],
     div[class*="bg-3aecb2"],
     div[class*="bg-1a1f33"],
@@ -283,9 +271,7 @@ url-prefix("http://www.douyu.com/") {
     }
     /*=== update fixed ===*/
     div[class*='-ad'],
-    div[class*='-Ad'] {
-        display: none!important;
-    }
+    div[class*='-Ad'],
     .GuessMainPanelHeader-icon fishballTreasure,
     .ToolbarActivityArea>div>div>div:not([data-flag="anchor_quiz"]),
     .ToolbarActivityArea .ActivityTips,
