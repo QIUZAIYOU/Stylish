@@ -1,6 +1,4 @@
-# Stylish
-
-![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png)
+# Stylish ![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png)
 
 ## 简介及说明
 
@@ -10,6 +8,6 @@
 
 目前适配如下网站：
 
-斗鱼 [夜间斗鱼](https://userstyles.org/styles/158117/nightmode-for-douyu-com)
-知乎 [夜间知乎](https://userstyles.org/styles/160889/nightmode-for-zhihu-com)
-百度 [简百度](https://userstyles.org/styles/169907/simple-baidu)
+- 斗鱼：[夜间斗鱼](https://userstyles.org/styles/158117/nightmode-for-douyu-com)
+- 知乎：[夜间知乎](https://userstyles.org/styles/160889/nightmode-for-zhihu-com)
+- 百度：[简百度](https://userstyles.org/styles/169907/simple-baidu)
