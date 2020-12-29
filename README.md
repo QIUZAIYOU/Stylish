@@ -1,8 +1,10 @@
-# NightModeForDouyu.com ![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png)
+# NightModeForDouyu.com
+
+![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png)
 
 根据本人自己的使用习惯制作。
 
-1. 常用页面夜间模式全覆盖
+> 1. 常用页面夜间模式全覆盖
 2. 去除广告
 3. 去除导航栏中游戏等无用杂项
 4. 部分icon更换使之更符合当前主题
