@@ -1,6 +1,6 @@
-# Stylish ![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png)
+# 简介及说明
 
-## 简介及说明
+ ![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png)
 
 为部分网站添加自定义样式。
 
