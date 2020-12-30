@@ -2,7 +2,7 @@
     /*=== 
      * 版权信息
      * 作者：QIUZAIYOU 
-     * 最后更新：20201229
+     * 最后更新：20201230
      * Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -274,6 +274,7 @@ url-prefix("http://www.douyu.com/") {
     div[class*='-Ad'],
     .GuessMainPanelHeader-icon fishballTreasure,
     .ToolbarActivityArea>div>div>div:not([data-flag="anchor_quiz"]),
+    .ToolbarActivityArea>div>div>div:not(.PlayerToolbar-FishpondTreasure),
     .ToolbarActivityArea .ActivityTips,
     .Title-videoSiteLink,
     .Title-roomOtherBottom,
@@ -4139,7 +4140,8 @@ url-prefix("http://www.douyu.com/") {
     }
     .ToolbarActivityArea>div>div>div,
     .shark-webp .GuessIcon,
-    .GuessIcon {
+    .GuessIcon,
+    .FishpondEntrance-icon{
         width: 40px!important;
         height: 40px!important;
         margin: 0!important;
@@ -5053,10 +5055,17 @@ url-prefix("http://www.douyu.com/") {
         background-size: cover;
     }
     .shark-webp .GuessIcon,
-    .GuessIcon {
-        background: url(https://www.asifadeaway.com/NightMode/douyu/GuessIcon.png);
+    .GuessIcon,
+    .FishpondEntrance-icon {
         background-size: cover;
         background-repeat: no-repeat!important;
+    }
+    .shark-webp .GuessIcon,
+    .GuessIcon,{
+        background: url(https://www.asifadeaway.com/NightMode/douyu/GuessIcon.png);
+    }
+    .FishpondEntrance-icon{
+        background: url(https://www.asifadeaway.com/NightMode/douyu/FishpondEntranceIcon.png);
     }
 }
 
