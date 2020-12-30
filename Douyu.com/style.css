@@ -3917,7 +3917,8 @@ url-prefix("http://www.douyu.com/") {
     .SociatyLabel-name.is-special,
     .Header-follow-tab.is-active,
     .layout-Partition-title,
-    .layout-Slider~.layout-Partition .layout-Partition-title {
+    .layout-Slider~.layout-Partition .layout-Partition-title,
+    .FTP-btn.is-active{
         color: #fff!important;
     }
     .DyCover-hot,
