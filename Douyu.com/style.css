@@ -273,8 +273,7 @@ url-prefix("http://www.douyu.com/") {
     div[class*='-ad'],
     div[class*='-Ad'],
     .GuessMainPanelHeader-icon fishballTreasure,
-    .ToolbarActivityArea>div>div>div:not([data-flag="anchor_quiz"]),
-    .ToolbarActivityArea>div>div>div:not(.PlayerToolbar-FishpondTreasure),
+    .ToolbarActivityArea>div>div>div,
     .ToolbarActivityArea .ActivityTips,
     .Title-videoSiteLink,
     .Title-roomOtherBottom,
@@ -376,6 +375,11 @@ url-prefix("http://www.douyu.com/") {
         display: block!important;
     }
     div[class*='-add'] {
+        display: block!important;
+    }
+    /* --  播放器下方互动按钮  -- */
+    .ToolbarActivityArea>div>div>div[data-flag="anchor_quiz"],
+    .ToolbarActivityArea>div>div>.PlayerToolbar-FishpondTreasure{
         display: block!important;
     }
 }
