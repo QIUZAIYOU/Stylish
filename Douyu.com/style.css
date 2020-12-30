@@ -382,6 +382,10 @@ url-prefix("http://www.douyu.com/") {
     .ToolbarActivityArea>div>div>.PlayerToolbar-FishpondTreasure{
         display: block!important;
     }
+    /*[[ToolbarActivityArea]]*/
+        display: none!important;
+    }
+    
 }
 
 @-moz-document url-prefix("https://www.douyu.com/"),
