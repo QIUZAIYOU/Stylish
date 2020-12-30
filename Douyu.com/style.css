@@ -5057,11 +5057,11 @@ url-prefix("http://www.douyu.com/") {
     .shark-webp .GuessIcon,
     .GuessIcon,
     .FishpondEntrance-icon {
-        background-size: cover;
+        background-size: cover!important;
         background-repeat: no-repeat!important;
     }
     .shark-webp .GuessIcon,
-    .GuessIcon,{
+    .GuessIcon{
         background: url(https://www.asifadeaway.com/NightMode/douyu/GuessIcon.png);
     }
     .FishpondEntrance-icon{
