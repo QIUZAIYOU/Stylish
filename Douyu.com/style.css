@@ -3305,7 +3305,8 @@ url-prefix("http://www.douyu.com/") {
     .video-above,
     .GuessGameMiniPanel-wrapper,
     .ActiviesExpanel-ExpandBtn,
-    .GuessMainPanelHeader-icon.fishballTreasure {
+    .GuessMainPanelHeader-icon.fishballTreasure,
+    .FishpondEntrance-word {
         opacity: 0!important;
         display: none!important;
     }
