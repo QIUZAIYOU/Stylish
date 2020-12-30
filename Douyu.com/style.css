@@ -383,6 +383,7 @@ url-prefix("http://www.douyu.com/") {
         display: block!important;
     }
     /*[[ToolbarActivityArea]]*/
+    .asifadeaway{
         display: none!important;
     }
     
