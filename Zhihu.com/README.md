@@ -2,7 +2,7 @@
 
 ![夜间知乎 NightMode For Zhihu.com](https://userstyles.org/style_screenshots/160889_after.png?r=1609251646)
 
-![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png)
+<img src="https://camo.githubusercontent.com/3177a12d6dac9a08032f768208bde1cc65437e2fe48b102969255eb7ff5b7512/68747470733a2f2f7777772e61736966616465617761792e636f6d2f696d616765732f66617669636f6e2e737667" width="32" height="32"> ![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png) <img src="https://camo.githubusercontent.com/3177a12d6dac9a08032f768208bde1cc65437e2fe48b102969255eb7ff5b7512/68747470733a2f2f7777772e61736966616465617761792e636f6d2f696d616765732f66617669636f6e2e737667" width="32" height="32">
 
 ## 简介及说明
 
