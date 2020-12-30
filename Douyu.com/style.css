@@ -5068,6 +5068,7 @@ url-prefix("http://www.douyu.com/") {
     .GuessIcon{
         background: url(https://www.asifadeaway.com/NightMode/douyu/GuessIcon.png);
     }
+    .shark-webp .FishpondEntrance-icon,
     .FishpondEntrance-icon{
         background: url(https://www.asifadeaway.com/NightMode/douyu/FishpondEntranceIcon.png);
     }
