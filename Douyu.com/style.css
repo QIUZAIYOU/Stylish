@@ -3424,7 +3424,9 @@ url-prefix("http://www.douyu.com/") {
     .FansRankAllList,
     .RankAllMain-content,
     .VideoCollection-content,
-    .PublicAnnounce-panel {
+    .PublicAnnounce-panel,
+    .FTP-taskRight,
+    .FTP-task{
         background: #2c2c2c!important;
     }
     .AnchorRank-more,
@@ -3474,7 +3476,8 @@ url-prefix("http://www.douyu.com/") {
     .Title-followBtnBox.is-followed,
     .AnchorComment-modal,
     .Title-anchorName-block:hover,
-    .VideoEntry-list {
+    .VideoEntry-list,
+    .FTP-singleTask-btn.is-got, .FTP-singleTask-btn.is-unfinished{
         background: #272727!important;
     }
     .layout-Module-head.is-fixed,
@@ -3496,7 +3499,8 @@ url-prefix("http://www.douyu.com/") {
     .ChatFansBarragePop,
     .AssembleExpressHeader,
     .GiftInfoPanel-imgBox,
-    .Barrage-roomVip--super {
+    .Barrage-roomVip--super,
+    .FTP-taskLeft{
         background-color: #212121!important;
     }
     .TagItem-editing:hover {
@@ -3760,7 +3764,10 @@ url-prefix("http://www.douyu.com/") {
     .PublicAnnounce h3,
     .VideoEntry-text,
     .VideoAnchorItem-title,
-    .VideoReplayItem-date {
+    .VideoReplayItem-date,
+    .FTP-btn,
+    .FTP-singleTask-name,
+    .FT-modal .FT-modal-info{
         color: #868686!important;
     }
     .RichRankList-item.is-stealth .RichRankList-name {
@@ -4047,7 +4054,8 @@ url-prefix("http://www.douyu.com/") {
     .ListHeader-pop-label,
     .VideoAnchorItem,
     .VideoEntry-list,
-    .VideoEntry-replaylist {
+    .VideoEntry-replaylist,
+    .FTP-singleTask{
         border-color: #424242!important;
     }
     .is-followed .Title-followText:nth-child(3):after {
@@ -4141,6 +4149,9 @@ url-prefix("http://www.douyu.com/") {
         border-color: transparent transparent #272727!important;
     }
     /* -- 狗日的其他 -- */
+    div[role="document"][class="dy-Modal"][style*="width"]{
+        width:360px!important;
+    }
     .ToolbarActivityArea>div>div:not(.ActiviesExpanel) {
         display: grid!important;
         grid-template-columns: repeat(10, 40px)!important;
