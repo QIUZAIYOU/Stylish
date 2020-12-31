@@ -44,6 +44,10 @@ url-prefix("https://zhuanlan.zhihu.com/") {
         background-color: #2b94ff!important;
         -webkit-border-radius: 6px!important
     }
+    ::-webkit-scrollbar-corner{
+        background-color: #141414!important;
+        -webkit-border-radius: 0!important
+    }
     body,
     .explore-tab .tab-navs .tab-nav.active>a,
     .modal-dialog-title,
