@@ -2,7 +2,7 @@
     /*=== 
      * 版权信息
      * 作者：QIUZAIYOU 
-     * 最后更新：20201230
+     * 最后更新：20201231
      * Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -4056,7 +4056,8 @@ url-prefix("http://www.douyu.com/") {
     .VideoAnchorItem,
     .VideoEntry-list,
     .VideoEntry-replaylist,
-    .FTP-singleTask{
+    .FTP-singleTask,
+    .AvatarFrame-img.is-circle{
         border-color: #424242!important;
     }
     .is-followed .Title-followText:nth-child(3):after {
