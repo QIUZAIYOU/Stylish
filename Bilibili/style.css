@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
-    /*=== 
+    /* ===
          * 版权信息
          * 作者：QIUZAIYOU 
-         * 最后更新：20210101
+         * 最后更新：20201230
          * Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+    === */
 }
 
 @-moz-document domain("bilibili.com") {
@@ -28,7 +28,7 @@
         --bili-yellow: #f7a920!important;
         --bodr-42: 1px solid #424242!important;
         --filter-ff-86: invert(50%) sepia(12%) saturate(0%) hue-rotate(202deg) brightness(103%) contrast(94%)!important;
-        --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%)!important;
+        --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%);
     }
     html,
     body {
@@ -344,7 +344,7 @@
     }
     .page-content .left-side .article-list .article-list-holder .article-item.item-tp-3 .item-holder .article-content .cover-img .cover-image,
     .page-content .left-side .article-list .article-list-holder .article-item.item-tp-4 .item-holder .article-content .cover-img .cover-image {
-        /* >> 为保证效果特意不加 !important << */
+        /* >>为保证效果特意不加 !important<< */
         background: url(https://www.asifadeaway.com/NightMode/bilibili/loading_tv.png) center no-repeat
     }
     /* -- 稍后再看 -- */
@@ -359,7 +359,7 @@
     .feed-card .empty-content .empty-text {
         color: var(--color-86)!important
     }
-    /*=== FOOTER === */
+    /* ===FOOTER=== */
     .international-footer {
         background-color: var(--color-1b)!important
     }
@@ -572,7 +572,7 @@ url-prefix("https://message.bilibili.com/pages/nav/index_new_sync") {
 
 @-moz-document url-prefix("https://t.bilibili.com/?tab="),
 regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
-    /*=== 动态页 ===*/
+    /* ===动态页=== */
     /* -- 背景 -- */
     body,
     #app,
@@ -800,7 +800,7 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
 }
 
 @-moz-document url-prefix("https://t.bilibili.com/lottery/") {
-    /*=== 互动抽奖 ===*/
+    /* ===互动抽奖=== */
     /* --背景 -- */
     #bp-app {
         background-color: var(--color-27)!important
@@ -823,14 +823,14 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
 }
 
 @-moz-document url-prefix("https://www.bilibili.com/video") {
-    /*=== 播放页 === */
+    /* ===播放页=== */
     .video-info .video-title .activity {
         color: var(--color-ff)!important
     }
 }
 
 @-moz-document url-prefix("https://space.bilibili.com/") {
-    /*=== 个人空间 ===*/
+    /* ===个人空间=== */
     /* -- 背景 -- */
     .modal-wrapper,
     .ps .ps__rail-x.ps--clicking,
@@ -1158,7 +1158,7 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
 }
 
 @-moz-document url-prefix("https://www.bilibili.com/read/") {
-    /*=== 专栏 ===*/
+    /* ===专栏=== */
     /* -- 背景 -- */
     .page-content .right-side .search-module .search-block input,
     .page-content .left-side .article-list .article-list-holder .article-item,
