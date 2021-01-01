@@ -29,7 +29,8 @@
         --bili-yellow: #f7a920!important;
         --bodr-42: 1px solid #424242!important;
         --filter-ff-86: invert(50%) sepia(12%) saturate(0%) hue-rotate(202deg) brightness(103%) contrast(94%)!important;
-        --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%);
+        --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%)!important;
+        --filter-98a2aa-86: invert(50%) sepia(90%) saturate(1%) hue-rotate(25deg) brightness(89%) contrast(86%)!important;
     }
     html,
     body {
@@ -1010,7 +1011,9 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .album-list__tab-count,
     .album-list__title,
     .album-list__tab-name,
-    .album-card__info {
+    .album-card__info,
+    .be-dropdown-trigger .icon-ic_more,
+    .favInfo-box .favInfo-details .fav-options .meta {
         color: var(--color-86)!important
     }
     #page-index .col-2 .section .user-auth.no-auth .no-auth-title span,
@@ -1019,7 +1022,8 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .pgc-space-follow-item .pgc-item-info .type-and-area,
     .pgc-space-follow-item .pgc-item-info .pgc-item-state,
     .sub-tabs .filter-content,
-    .i-live-fo-count.space-fans {
+    .i-live-fo-count.space-fans,
+    .small-item .meta {
         color: var(--color-66)!important
     }
     .large-item .title,
@@ -1040,7 +1044,8 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     #page-fav .fav-sidenav .fav-item.cur .num,
     #page-fav .fav-sidenav .fav-item.cur .text,
     .h .h-vipType,
-    .be-pager-item-active a {
+    .be-pager-item-active a,
+    .favInfo-box .favInfo-details .fav-options .fav-play {
         color: var(--color-ff)!important
     }
     .pgc-space-follow-item .bangumi-options .opt-list li.disabled,
@@ -1059,7 +1064,8 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .be-pager-item:hover a,
     .be-pager-next:hover a,
     .be-pager-prev:hover a,
-    .album-list__tab--active .album-list__tab-name {
+    .album-list__tab--active .album-list__tab-name,
+    .favInfo-box .favInfo-details .fav-options .meta:hover {
         color: var(--bili-blue)!important
     }
     #page-index .col-2 .section .user-auth .auth-description {
@@ -1114,8 +1120,12 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .be-pager-next,
     .be-pager-prev,
     .space_input,
-    #page-myalbum .album-content {
+    #page-myalbum .album-content,
+    .be-dropdown-item.be-dropdown-item-delimiter {
         border-color: var(--color-42)!important
+    }
+    #page-fav .fav-main .small-item {
+        border-color: var(--color-2c)!important
     }
     .card .more-panel:after {
         border-top-color: var(--color-42)!important;
@@ -1355,5 +1365,39 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     }
     .up-info-holder .fixed-box .rightside-article-list-btn .icon-list {
         filter: var(--filter-22-86)!important;
+    }
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/watchlater") {
+    /* ===稍后再看=== */
+    /* -- 背景 -- */
+    .watch-later-list header .s-btn,
+    .watch-later-list header .d-btn {
+        background-color: var(--color-21)!important
+    }
+    .watch-later-list header .s-btn:hover {
+        background-color: var(--bili-blue)!important
+    }
+    /* -- 字体 -- */
+    .watch-later-list .list-box .av-item .key {
+        color: var(--color-86)!important
+    }
+    .watch-later-list header .s-btn {
+        color: var(--bili-blue)!important
+    }
+    .watch-later-list header .s-btn:hover {
+        color: var(--color-ff)!important
+    }
+    .watch-later-list header .d-btn {
+        color: var(--color-42)!important
+    }
+    /* -- 边框 -- */
+    .watch-later-list .list-box .av-item .av-about,
+    .watch-later-list header .d-btn {
+        border-color: var(--color-42)!important
+    }
+    /* -- 其他 -- */
+    .watch-later-list .list-box .av-item .av-about .info .state .btn-del {
+        filter: var(--filter-98a2aa-86)!important
     }
 }
