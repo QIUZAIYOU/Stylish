@@ -110,7 +110,8 @@
     .van-popper-favorite .play-all,
     .van-popper-avatar .level-bar,
     .mini-header,
-    .sticky-bar {
+    .sticky-bar,
+    .nav-user-center .user-con .fall-mini-avatar {
         background-color: var(--color-2c)!important
     }
     .vip-m,
@@ -261,6 +262,9 @@
     .van-popper-avatar .coins .contact .phone-tips:after,
     .emoji-box:before {
         background-image: url(https://www.asifadeaway.com/NightMode/bilibili/tips_arrow.png)!important
+    }
+    .nav-user-center .user-con .fall-mini-avatar img {
+        mix-blend-mode: soft-light!important
     }
     .sticky-bar {
         box-shadow: 0 2px 4px 0 rgb(33 33 33 / 50%)!important
@@ -500,7 +504,8 @@
     .live-rank .live-rank-item .number.on,
     .manga-rank-item .rank-number.on,
     .time-line .tl-link:hover,
-    .time-line .tl-link:hover .bilifont {
+    .time-line .tl-link:hover .bilifont,
+    .page-tab .con li .bilifont {
         color: var(--color-ff)!important
     }
     .contact-help:hover,
