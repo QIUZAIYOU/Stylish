@@ -1348,7 +1348,7 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .view:before,
     .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .like:before,
     .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .reply:before {
-        filter: invert(50%) sepia(2%) saturate(15%) hue-rotate(356deg) brightness(106%) contrast(80%);
+        filter: invert(50%) sepia(2%) saturate(15%) hue-rotate(356deg) brightness(106%) contrast(80%)!important;
     }
     .page-content .left-side .partitio-name .filter:after {
         filter: var(--filter-ff-86)!important
