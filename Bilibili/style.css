@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
-    /* ===
-         * 版权信息
-         * 作者：QIUZAIYOU 
-         * 最后更新：20210101
-         * Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    === */
+    /*=== 
+        * 版权信息
+        * 作者：QIUZAIYOU 
+        * 最后更新：20201230
+        * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -18,6 +18,7 @@
         --color-37: #373737!important;
         --color-42: #424242!important;
         --color-66: #666!important;
+        --color-77: #777!important;
         --color-86: #868686!important;
         --color-af: #afafaf!important;
         --color-ff: #fff!important;
@@ -35,7 +36,8 @@
         font-family: "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", 'Segoe UI', Tahoma, "宋体b8b\4f53", SimSun, sans-serif!important
     }
     html,
-    body {
+    body,
+    #app {
         background-color: var(--color-21)!important;
         color: var(--color-86)!important
     }
@@ -127,7 +129,8 @@
     .lang-change .lang-intro,
     .van-popper-avatar .coins .contact .contact-tips,
     .van-popper-avatar .coins .info .login-award,
-    sticky-bar .nav-item:hover {
+    sticky-bar .nav-item:hover,
+    .van-popover.van-popper.van-popper-upload {
         background-color: var(--color-21)!important
     }
     .bilibili-search-history .history-item.focus,
@@ -139,7 +142,8 @@
     .van-popper-avatar .links .link-item:hover,
     .lang-change .lang-item:hover,
     .van-popper-avatar .logout span:hover,
-    .lang-change .lang-intro-item:hover {
+    .lang-change .lang-intro-item:hover,
+    .van-popper-upload .upload-item[data-v-6a9061fa]:hover {
         background-color: var(--color-27)!important
     }
     .bilibili-search-suggest .suggest-item:hover,
@@ -179,7 +183,8 @@
     .lang-change .lang-title,
     .van-popper-avatar .logout span,
     .van-popper-avatar .coins .contact .contact-tips,
-    .sticky-bar .bar-content .title {
+    .sticky-bar .bar-content .title,
+    .bilifont {
         color: var(--color-86)!important
     }
     .bili-header-m .nav-search .nav-search-keyword:focus,
@@ -191,6 +196,24 @@
     .van-popper-history .tab-item--active,
     .van-popper-avatar .vip {
         color: var(--color-ff)!important
+    }
+    .bilibili-search-suggest .suggest-item a:hover,
+    .international-header .mini-type .nav-link .nav-link-ul .nav-link-item .link:hover,
+    .van-popover .mini-type .nav-link .nav-link-ul .nav-link-item .link:hover,
+    .channel-menu-mini .box a:hover,
+    .van-popper-favorite .tab-item--normal:hover span:not(.num),
+    .bilibili-search-history .history-item a:hover,
+    .mini-type .nav-user-center .user-con .item .name:hover,
+    .van-popper-avatar .logout span:hover,
+    .van-popper-avatar .links .link-item:hover .link-title,
+    .lang-change .lang-item:hover .lang-title,
+    .van-popper-avatar .logout span:hover,
+    .van-popper-upload .upload-item:hover,
+    .van-popper-upload .upload-item:hover .bilifont {
+        color: var(--bili-blue)!important
+    }
+    .nav-link .nav-link-ul .nav-link-item .link .navbar_pullup path {
+        fill: var(--color-86)!important
     }
     .international-header .mini-type .nav-search #nav_searchform,
     .van-popover .mini-type .nav-search #nav_searchform,
@@ -207,22 +230,6 @@
     .lang-change,
     .van-popper-avatar .links {
         border-color: var(--color-42)!important
-    }
-    .bilibili-search-suggest .suggest-item a:hover,
-    .international-header .mini-type .nav-link .nav-link-ul .nav-link-item .link:hover,
-    .van-popover .mini-type .nav-link .nav-link-ul .nav-link-item .link:hover,
-    .channel-menu-mini .box a:hover,
-    .van-popper-favorite .tab-item--normal:hover span:not(.num),
-    .bilibili-search-history .history-item a:hover,
-    .mini-type .nav-user-center .user-con .item .name:hover,
-    .van-popper-avatar .logout span:hover,
-    .van-popper-avatar .links .link-item:hover .link-title,
-    .lang-change .lang-item:hover .lang-title,
-    .van-popper-avatar .logout span:hover {
-        color: var(--bili-blue)!important
-    }
-    .nav-link .nav-link-ul .nav-link-item .link .navbar_pullup path {
-        fill: var(--color-86)!important
     }
     .bili-header-m .nav-search .nav-search-btn,
     .international-header .nav-search .nav-search-btn {
@@ -245,7 +252,8 @@
     .vip-m,
     .van-popper-favorite .vp-container,
     .van-popper-history .vp-container,
-    .van-popper-avatar .coins .contact .contact-tips {
+    .van-popper-avatar .coins .contact .contact-tips,
+    .van-popover.van-popper.van-popper-upload {
         border: var(--bodr-42)!important
     }
     .van-popper-avatar .coins .contact .email-tips:after,
@@ -344,7 +352,7 @@
     }
     .page-content .left-side .article-list .article-list-holder .article-item.item-tp-3 .item-holder .article-content .cover-img .cover-image,
     .page-content .left-side .article-list .article-list-holder .article-item.item-tp-4 .item-holder .article-content .cover-img .cover-image {
-        /* >>为保证效果特意不加 !important<< */
+        /* >> 为保证效果特意不加 !important << */
         background: url(https://www.asifadeaway.com/NightMode/bilibili/loading_tv.png) center no-repeat
     }
     /* -- 稍后再看 -- */
@@ -359,7 +367,7 @@
     .feed-card .empty-content .empty-text {
         color: var(--color-86)!important
     }
-    /* ===FOOTER=== */
+    /*=== FOOTER === */
     .international-footer {
         background-color: var(--color-1b)!important
     }
@@ -378,6 +386,9 @@
     }
     .international-footer .link-box .link-item {
         border-color: var(--color-42)!important
+    }
+    .pgc-no-data {
+        mix-blend-mode: multiply!important
     }
     /* -- 其他 -- */
     .btn.default {
@@ -436,7 +447,8 @@
     .rank-wrap .number.on,
     .live-rank .live-rank-item .number.on,
     .pgc-rank-wrap .number.on,
-    .manga-rank-item .rank-number.on {
+    .manga-rank-item .rank-number.on,
+    .time-line .tl-link:hover {
         background-color: var(--bili-blue)!important
     }
     /* -- 字体 -- */
@@ -444,6 +456,9 @@
     .van-popover {
         font-family: "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", 'Segoe UI', Tahoma, "宋体b8b\4f53", SimSun, sans-serif!important
     }
+    #international-home-app+#app .nav-link-item a,
+    .nav-user-center .user-con .item .name,
+    .manga-panel .manga-list-box .manga-card .manga-title,
     .van-popover a,
     .storey-title .no-link,
     .exchange-btn .btn,
@@ -451,38 +466,50 @@
     .rank-header .more,
     .pgc-rank-wrap .number,
     .elevator .list-box .item .bilifont,
-    .pgc-rank-wrap .txt .update,
     .manga-rank-item .rank-number,
-    .manga-panel .manga-list-box .manga-card .manga-title,
     .ifmt h3,
     .rank-header .name,
     .popover-video-card .content .info .f-title,
     .popover-video-card .content .info .subtitle,
     .popover-video-card .count ul li,
     .van-popper-channel .sub-item .name,
-    .live-card .up .txt .desc,
     .bypb-window .online,
     .video-card-common .gg-icon,
     .live-rank .live-rank-item .number,
     .storey-title .text-info,
-    .elevator .ear {
+    .elevator .ear,
+    .video-card-common .title {
         color: var(--color-86)!important
     }
+    .pgc-rank-wrap .txt .update,
     .video-card-common .up,
     .manga-panel .manga-list-box .manga-card .manga-tag,
+    .manga-rank-item .other-link .update,
+    .live-card .up .txt .tag {
+        color: var(--color-66)!important
+    }
+    .live-card .up .txt .desc {
+        color: var(--color-77)!important
+    }
     .live-rank .live-rank-item .txt p.p2 {
         color: var(--color-af)!important
     }
-    #international-home-app+#app .nav-link-item a,
     .van-popper-avatar .vip,
     .pgc-rank-wrap .number.on,
     .live-rank .live-rank-item .number.on,
-    .manga-rank-item .rank-number.on {
+    .manga-rank-item .rank-number.on,
+    .time-line .tl-link:hover,
+    .time-line .tl-link:hover .bilifont {
         color: var(--color-ff)!important
     }
     .contact-help:hover,
     .van-popper-channel .sub-item .name:hover,
-    .international-header a:hover {
+    .international-header a:hover,
+    .video-card-common .title:hover,
+    #international-home-app+#app .nav-link-item a:hover,
+    .nav-user-center .user-con .item .name:hover,
+    .time-line .tl-link,
+    .time-line .tl-link .bilifont {
         color: var(--bili-blue)!important
     }
     /* -- 边框 -- */
@@ -571,8 +598,9 @@ url-prefix("https://message.bilibili.com/pages/nav/index_new_sync") {
 }
 
 @-moz-document url-prefix("https://t.bilibili.com/?tab="),
+url-prefix("https://t.bilibili.com/?spm_id_from="),
 regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
-    /* ===动态页=== */
+    /*=== 动态页 ===*/
     /* -- 背景 -- */
     body,
     #app,
@@ -599,7 +627,9 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .comment-bilibili-fold .comment-list .list-item:hover,
     .bb-comment .operation .opera-list li:hover,
     .comment-bilibili-fold .operation .opera-list li:hover,
-    .userinfo-content {
+    .userinfo-content,
+    .feed-title,
+    .card .focus-btn .unfocus .unfocus-text {
         background-color: var(--color-2c)!important
     }
     .new-topic-panel .tag-item .label,
@@ -632,7 +662,8 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .user-card,
     .bb-comment .nameplate .nameplate-card,
     .comment-bilibili-fold .nameplate .nameplate-card,
-    .live-panel-item .live-up-img {
+    .live-panel-item .live-up-img,
+    .card .focus-btn .unfocus .unfocus-text:hover {
         background-color: var(--color-27)!important
     }
     .userinfo-content .btn-box>a,
@@ -679,7 +710,8 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .bb-comment .nameplate .nameplate-card .nameplate-text .n-type,
     .comment-bilibili-fold .nameplate .nameplate-card .nameplate-text .n-type,
     .box-toggle,
-    .new-topic-panel .tag-item .content {
+    .new-topic-panel .tag-item .content,
+    .feed-title {
         color: var(--color-86)!important
     }
     .up-name,
@@ -708,7 +740,9 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .bb-comment .comment-header .tabs-order li.on,
     .comment-bilibili-fold .comment-header .tabs-order li.on,
     .backdrop .title-box .close-button:hover,
-    .music-container:hover .text-content {
+    .music-container:hover .text-content,
+    .card .focus-btn .unfocus .unfocus-text:hover,
+    .new-topic-panel .tag-item .content:hover {
         color: var(--bili-blue)!important
     }
     .card .main-content .user-name.big-vip a,
@@ -763,6 +797,10 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
         border-top-color: var(--color-42)!important;
         border-left-color: var(--color-42)!important
     }
+    .feed-title {
+        border: var(--bodr-42)!important;
+        border-bottom: none!important
+    }
     /* -- 阴影 -- */
     .most-viewed-panel .list-content .most-viewed-item .section .avatar {
         box-shadow: 0 0 0 1px var(--color-42)!important
@@ -800,7 +838,7 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
 }
 
 @-moz-document url-prefix("https://t.bilibili.com/lottery/") {
-    /* ===互动抽奖=== */
+    /*=== 互动抽奖 ===*/
     /* --背景 -- */
     #bp-app {
         background-color: var(--color-27)!important
@@ -823,14 +861,14 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
 }
 
 @-moz-document url-prefix("https://www.bilibili.com/video") {
-    /* ===播放页=== */
+    /*=== 播放页 === */
     .video-info .video-title .activity {
         color: var(--color-ff)!important
     }
 }
 
 @-moz-document url-prefix("https://space.bilibili.com/") {
-    /* ===个人空间=== */
+    /*=== 个人空间 ===*/
     /* -- 背景 -- */
     .modal-wrapper,
     .ps .ps__rail-x.ps--clicking,
@@ -1158,7 +1196,7 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
 }
 
 @-moz-document url-prefix("https://www.bilibili.com/read/") {
-    /* ===专栏=== */
+    /*=== 专栏 ===*/
     /* -- 背景 -- */
     .page-content .right-side .search-module .search-block input,
     .page-content .left-side .article-list .article-list-holder .article-item,
