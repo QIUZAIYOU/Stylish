@@ -557,6 +557,9 @@
     .user-card {
         border-color: var(--color-42)!important
     }
+    .userinfo-wrapper {
+        z-index: 199405191!important
+    }
     /* -- 分页 -- */
     .paging-box-big .current,
     .paging-box-big .next,
@@ -891,7 +894,8 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .comment-bilibili-fold .nameplate .nameplate-card .nameplate-text .n-type,
     .box-toggle,
     .new-topic-panel .tag-item .content,
-    .feed-title {
+    .feed-title,
+    .button-bar {
         color: var(--color-86)!important
     }
     .up-name,
@@ -921,7 +925,11 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .backdrop .title-box .close-button:hover,
     .music-container:hover .text-content,
     .card .focus-btn .unfocus .unfocus-text:hover,
-    .new-topic-panel .tag-item .content:hover {
+    .new-topic-panel .tag-item .content:hover,
+    .tab-bar .tab .tab-text.selected,
+    .tab-bar .tab .tab-text:hover,
+    .box-toggle:hover,
+    .box-toggle.active {
         color: var(--bili-blue)!important
     }
     .card .main-content .user-name.big-vip a,
@@ -961,6 +969,9 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .userinfo-content .btn-box>a.liked:hover,
     .userinfo-content .btn-box>a.liked {
         border-color: var(--color-27)!important
+    }
+    .most-viewed-panel .list-content .most-viewed-item .section .avatar .red-dot[data-v-28eb68ea] {
+        border-color: var(--color-2c)!important
     }
     .live-panel .more-button .more::after,
     .new-topic-panel .more-button .more::after {
@@ -1005,6 +1016,9 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
         box-shadow: 0 5px 10px 0 rgba(33, 33, 33, .9);
         top: 0!important
     }
+    .card .main-content .button-bar .single-button .single-icon {
+        filter: var(--filter-98a2aa-86)
+    }
 }
 
 @-moz-document url-prefix("https://t.bilibili.com/lottery/") {
@@ -1027,13 +1041,6 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .clock-time::after,
     .prize-item .prize-img {
         border-color: var(--color-42)!important
-    }
-}
-
-@-moz-document url-prefix("https://www.bilibili.com/video") {
-    /* ===播放页 === */
-    .video-info .video-title .activity {
-        color: var(--color-ff)!important
     }
 }
 
@@ -1234,7 +1241,9 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .be-pager-next:hover a,
     .be-pager-prev:hover a,
     .album-list__tab--active .album-list__tab-name,
-    .favInfo-box .favInfo-details .fav-options .meta:hover {
+    .favInfo-box .favInfo-details .fav-options .meta:hover,
+    .tab-bar .tab .tab-text.selected,
+    .tab-bar .tab .tab-text[data-v-58304b2a]:hover {
         color: var(--bili-blue)!important
     }
     #page-index .col-2 .section .user-auth .auth-description {
@@ -1703,7 +1712,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
         color: var(--color-af)!important
     }
     .tag-info-pane .tag-header .btn-sub,
-    .float-nav .nav-menu .item:hover {
+    .float-nav .nav-menu .item:hover,
+    .video-info .video-title .activity {
         color: var(--color-ff)!important
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover,
@@ -1771,4 +1781,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .pop-live .pl__icon--online {
         mix-blend-mode: soft-light;
     }
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/v") {
+    /* ===视频分类页=== */
 }
