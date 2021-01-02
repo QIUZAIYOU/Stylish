@@ -2,7 +2,7 @@
     /*===
          * 版权信息
          * 作者：QIUZAIYOU 
-         * 最后更新：20210102
+         * 最后更新：20210103
          * Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -27,6 +27,7 @@
         --bili-red: #fa5a57!important;
         --bili-pink: #fb7299!important;
         --bili-yellow: #f7a920!important;
+        --bili-green: #0dad9e!important;
         --bodr-42: 1px solid #424242!important;
         --filter-ff-86: invert(50%) sepia(12%) saturate(0%) hue-rotate(202deg) brightness(103%) contrast(94%)!important;
         --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%)!important;
@@ -101,7 +102,7 @@
     .title h2 {
         color: var(--color-86)!important
     }
-    /* -- 全站顶部导航 -- */
+    /* -- 全站导航 -- */
     .international-header .mini-type,
     .van-popover .mini-type,
     .channel-menu-mini,
@@ -260,7 +261,8 @@
     }
     .van-popper-avatar .coins .contact .email-tips:after,
     .van-popper-avatar .coins .contact .phone-tips:after,
-    .emoji-box:before {
+    .emoji-box:before,
+    .sub-nav-m .tips .t-arrow {
         background-image: url(https://www.asifadeaway.com/NightMode/bilibili/tips_arrow.png)!important
     }
     .nav-user-center .user-con .fall-mini-avatar img {
@@ -421,7 +423,8 @@
     .loading-tip::before,
     .page-content .left-side .article-list .tips-holder .icon-fail,
     .page-content .left-side .article-list .tips-holder .icon-loading,
-    .section.loading .content {
+    .section.loading .content,
+    .load-state {
         filter: var(--filter-ff-86)!important
     }
     .loading-content {
@@ -435,7 +438,8 @@
     }
     .video-card-common .card-pic a,
     .manga-panel .manga-list-box .manga-card>img,
-    .video-card-reco .info-box {
+    .video-card-reco .info-box,
+    .lazy-img {
         background: url(https://www.asifadeaway.com/NightMode/bilibili/loading_tv.png) center no-repeat!important
     }
     .page-content .left-side .article-list .article-list-holder .article-item.item-tp-3 .item-holder .article-content .cover-img .cover-image,
@@ -443,9 +447,14 @@
         /* >> 为保证效果特意不加 !important << */
         background: url(https://www.asifadeaway.com/NightMode/bilibili/loading_tv.png) center no-repeat
     }
+    .load-state span.loading:before,
+    .load-state span.error:before {
+        filter: var(--filter-98a2aa-86)!important
+    }
     /* -- 稍后再看 -- */
     .see-later,
-    .i-watchlater {
+    .i-watchlater,
+    .watch-later-trigger {
         background-image: url(https://www.asifadeaway.com/NightMode/bilibili/see_later.png)!important
     }
     /* -- 暂无内容&默认图片 -- */
@@ -465,7 +474,8 @@
         mix-blend-mode: overlay!important
     }
     /* ===FOOTER=== */
-    .international-footer {
+    .international-footer,
+    .b-footer-wrap .pic-box {
         background-color: var(--color-1b)!important
     }
     .international-footer a,
@@ -478,8 +488,19 @@
         color: var(--color-af)!important
     }
     .international-footer .link-box .link-item ul a:hover,
-    .international-footer .link-box .link-item.link-b ul a:hover {
+    .international-footer .link-box .link-item.link-b ul a:hover,
+    .international-footer a:hover,
+    .international-footer .link-box .link-item.link-c a:hover p {
         color: var(--bili-blue)!important
+    }
+    .international-footer .link-box .link-item.link-c .weibo {
+        color: #fe596c!important
+    }
+    .international-footer .link-box .link-item.link-c .biliapp {
+        color: #585f69!important
+    }
+    .international-footer .link-box .link-item.link-c .weixin {
+        color: #42c86b!important
     }
     .international-footer .link-box .link-item {
         border-color: var(--color-42)!important
@@ -566,11 +587,16 @@
     .paging-box-big .prev,
     .paging-box-big .tcd-number,
     .paging-box-big .dian,
-    .paging-box-big .page-jump input {
+    .paging-box-big .page-jump input,
+    .pager .pages .page-item button,
+    .pager .jump-pager input[type=text] {
         background-color: var(--color-21)!important
     }
     .paging-box-big .dian,
-    .paging-box-big .page-jump {
+    .paging-box-big .page-jump,
+    .pager .pages .page-item button,
+    .pager .jump-pager,
+    .pager .jump-pager input[type=text] {
         color: var(--color-86)!important
     }
     .paging-box-big .current,
@@ -578,7 +604,9 @@
     .paging-box-big .prev,
     .paging-box-big .tcd-number,
     .paging-box-big .dian,
-    .paging-box-big .page-jump input {
+    .paging-box-big .page-jump input,
+    .pager .pages .page-item button,
+    .pager .jump-pager input[type=text] {
         border-color: var(--color-42)!important
     }
     .paging-box-big .dian {
@@ -588,7 +616,9 @@
     .paging-box-big .current:hover,
     .paging-box-big .next:hover,
     .paging-box-big .prev:hover,
-    .paging-box-big .tcd-number:hover {
+    .paging-box-big .tcd-number:hover,
+    .pager .pages .page-item.active button,
+    .pager .pages .page-item button:hover {
         background-color: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important;
         color: var(--color-ff)!important
@@ -1785,4 +1815,155 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
 
 @-moz-document url-prefix("https://www.bilibili.com/v") {
     /* ===视频分类页=== */
+    /* -- 背景 -- */
+    .sub-nav-m .tips,
+    .spread-module .num,
+    .video-floor-m .zone-title .headline .link-more,
+    .bili-dropdown,
+    .bili-dropdown .dropdown-list .dropdown-item,
+    .tag-list li.tag-item,
+    .video-floor-m .dynamic-title .read-push,
+    .mobile-link-l,
+    .video-info-module {
+        background-color: var(--color-21)!important
+    }
+    .rank-list .rank-item .ri-num,
+    .sec-rank .more-link,
+    .go-top-m .go-top {
+        background-color: var(--color-2c)!important
+    }
+    .bili-dropdown .dropdown-list .dropdown-item:hover,
+    .sec-rank .more-link:hover,
+    .video-floor-m .dynamic-title .read-push:hover {
+        background-color: var(--color-27)!important
+    }
+    .energy-m .hot-box li .tag-type,
+    .rank-list .rank-item.highlight .ri-num {
+        background-color: var(--bili-pink)!important
+    }
+    .go-top-m .go-top:hover {
+        background-color: var(--bili-blue)!important
+    }
+    /* -- 字体 -- */
+    .energy-m .hot-box li:first-child .txt,
+    .energy-m .hot-box li .txt,
+    .spread-module .t,
+    .rank-list .rank-item .ri-detail .ri-title,
+    .rank-list .rank-item .ri-num,
+    .tag-list li.tag-item .tag-a,
+    .video-floor-m .dynamic-title .title .name,
+    .tag-list-wrp .title .name,
+    .video-list .vl-hd .tab-list li,
+    .video-info-module .v-info,
+    .video-info-module .v-preview .txt,
+    .tag-more .b-toggle-btn {
+        color: var(--color-86)!important
+    }
+    .spread-module .num,
+    .rank-list .rank-item .ri-detail .ri-point,
+    .tag-list-wrp .title .small,
+    .mod-1 .r .v-info .v-info-i,
+    .mod-1 .r .up-info .v-date,
+    .mod-1 .r .v-desc,
+    .mod-2 li .r .v-info .v-info-i,
+    .mod-2 li .r .v-desc,
+    .video-info-module .v-data span {
+        color: var(--color-66)!important
+    }
+    .rank-list .rank-item.highlight .ri-num,
+    .tag-list li.tag-item.on .tag-a,
+    .tag-list li.tag-item.on .tag-a:hover {
+        color: var(--color-ff)!important
+    }
+    .energy-m .hot-box li:hover .txt,
+    .spread-module a:hover .t,
+    .rank-list .rank-item:hover .ri-title,
+    .bili-dropdown .dropdown-list .dropdown-item:hover,
+    .tag-list li.tag-item:hover a,
+    .video-list .vl-hd .order-tab li.on,
+    .video-list .vl-hd .type-tab li.on,
+    .tag-more .b-toggle-btn:hover {
+        color: var(--bili-blue)!important
+    }
+    /* -- 边框 -- */
+    .international-header .primary-menu-itnl,
+    .sub-nav-m .tips,
+    .video-floor-m .zone-title .headline .link-more,
+    .bili-dropdown,
+    .bili-dropdown .dropdown-list,
+    .sec-rank .more-link,
+    .video-list .vl-hd,
+    .mod-2 li .l-item,
+    .tag-list li.tag-item,
+    .video-floor-m .dynamic-title .read-push,
+    .video-list .vl-hd .s-line,
+    .mod-2 li,
+    .mod-1 .r,
+    .mod-1 .r .up-info .v-date,
+    .mobile-link-l,
+    .go-top-m .go-top,
+    .video-info-module,
+    .video-info-module .v-info .line,
+    .video-info-module .v-preview,
+    .video-info-module .v-data {
+        border-color: var(--color-42)!important
+    }
+    .go-top-m .go-top:hover {
+        border-color: var(--bili-blue)!important
+    }
+    /* -- 其他 -- */
+    .spread-module .num i,
+    .mod-1 .r .v-info .v-info-i i,
+    .mod-2 li .r .v-info .v-info-i i,
+    .video-info-module .v-data span .icon {
+        opacity: .5!important;
+        filter: var(--filter-98a2aa-86)!important
+    }
+    .video-list .vl-hd .display-tab li:not(.on),
+    .tag-more .b-toggle-btn:not(:hover) .b-icon-toggle-down,
+    .tag-more .b-toggle-btn:not(:hover) .b-icon-toggle-up {
+        filter: var(--filter-98a2aa-86)!important
+    }
+    .video-floor-m .zone-title .headline .link-more:hover i,
+    .sec-rank .more-link:hover .icon-arrow-r {
+        filter: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%);
+    }
+    .go-top-m .go-top:hover {
+        background-position: -713px -72px!important
+    }
+    .tag-more .b-toggle-btn {
+        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/toggle-base.png) !important
+    }
+    .b-toggle-btn {
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important
+    }
+    .tag-more .b-toggle-btn .b-icon-toggle-down,
+    .tag-more .b-toggle-btn .b-icon-toggle-up {
+        margin: 0 0 0 5px!important
+    }
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/cheese?") {
+    /* ===课堂=== */
+    /* -- 背景 -- */
+    .nav-wrapper {
+        background-color: var(--color-1b)!important
+    }
+    /* -- 字体 -- */
+    .nav-wrapper {
+        color: var(--color-86)!important
+    }
+    /* -- 边框 -- */
+    /* -- 其他 -- */
+    .banner-bg-mask {
+        z-index: 1!important
+    }
+    .banner-bg {
+        z-index: 0!important
+    }
+    .banner-slider-wrapper {
+        z-index: 2!important
+    }
 }
