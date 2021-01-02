@@ -1,8 +1,8 @@
 @-moz-document url-prefix("http://example.com") {
     /*=== 
      * 版权信息
-     * 作者：QIUZAIYOU 
-     * 最后更新：20201231
+     * 作者：QIUZAIYOU
+     * 最后更新：20210102
      * Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -379,14 +379,13 @@ url-prefix("http://www.douyu.com/") {
     }
     /* --  播放器下方互动按钮  -- */
     .ToolbarActivityArea>div>div>div[data-flag="anchor_quiz"],
-    .ToolbarActivityArea>div>div>.PlayerToolbar-FishpondTreasure{
+    .ToolbarActivityArea>div>div>.PlayerToolbar-FishpondTreasure {
         display: block!important;
     }
     /*[[ToolbarActivityArea]]*/
-    .asifadeaway{
+    .asifadeaway {
         display: none!important;
     }
-    
 }
 
 @-moz-document url-prefix("https://www.douyu.com/"),
@@ -3426,7 +3425,7 @@ url-prefix("http://www.douyu.com/") {
     .VideoCollection-content,
     .PublicAnnounce-panel,
     .FTP-taskRight,
-    .FTP-task{
+    .FTP-task {
         background: #2c2c2c!important;
     }
     .AnchorRank-more,
@@ -3477,7 +3476,8 @@ url-prefix("http://www.douyu.com/") {
     .AnchorComment-modal,
     .Title-anchorName-block:hover,
     .VideoEntry-list,
-    .FTP-singleTask-btn.is-got, .FTP-singleTask-btn.is-unfinished{
+    .FTP-singleTask-btn.is-got,
+    .FTP-singleTask-btn.is-unfinished {
         background: #272727!important;
     }
     .layout-Module-head.is-fixed,
@@ -3500,7 +3500,7 @@ url-prefix("http://www.douyu.com/") {
     .AssembleExpressHeader,
     .GiftInfoPanel-imgBox,
     .Barrage-roomVip--super,
-    .FTP-taskLeft{
+    .FTP-taskLeft {
         background-color: #212121!important;
     }
     .TagItem-editing:hover {
@@ -3767,7 +3767,9 @@ url-prefix("http://www.douyu.com/") {
     .VideoReplayItem-date,
     .FTP-btn,
     .FTP-singleTask-name,
-    .FT-modal .FT-modal-info{
+    .FT-modal .FT-modal-info,
+    .FT-modal .FT-modal-desc,
+    .FT-modal .FT-modal-tip.is-shark-enough {
         color: #868686!important;
     }
     .RichRankList-item.is-stealth .RichRankList-name {
@@ -3918,7 +3920,7 @@ url-prefix("http://www.douyu.com/") {
     .Header-follow-tab.is-active,
     .layout-Partition-title,
     .layout-Slider~.layout-Partition .layout-Partition-title,
-    .FTP-btn.is-active{
+    .FTP-btn.is-active {
         color: #fff!important;
     }
     .DyCover-hot,
@@ -4057,7 +4059,7 @@ url-prefix("http://www.douyu.com/") {
     .VideoEntry-list,
     .VideoEntry-replaylist,
     .FTP-singleTask,
-    .AvatarFrame-img.is-circle{
+    .AvatarFrame-img.is-circle {
         border-color: #424242!important;
     }
     .is-followed .Title-followText:nth-child(3):after {
@@ -4151,8 +4153,8 @@ url-prefix("http://www.douyu.com/") {
         border-color: transparent transparent #272727!important;
     }
     /* -- 狗日的其他 -- */
-    div[role="document"][class="dy-Modal"][style*="width"]{
-        width:360px!important;
+    div[role="document"][class="dy-Modal"][style*="width"] {
+        width: 360px!important;
     }
     .ToolbarActivityArea>div>div:not(.ActiviesExpanel) {
         display: grid!important;
@@ -4163,7 +4165,7 @@ url-prefix("http://www.douyu.com/") {
     .ToolbarActivityArea>div>div>div,
     .shark-webp .GuessIcon,
     .GuessIcon,
-    .FishpondEntrance-icon{
+    .FishpondEntrance-icon {
         width: 40px!important;
         height: 40px!important;
         margin: 0!important;
@@ -4752,23 +4754,27 @@ url-prefix("http://www.douyu.com/") {
     }
     /*=== 用户昵称颜色 ===*/
     .Barrage-nickName {
-        color: /*[[UserNameColor]]*/!important;
+        color: /*[[UserNameColor]]*/
+        !important;
     }
     /*=== 用户发言颜色 ===*/
     .UserLevel+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
     .UserLevel+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
     .UserLevel+span+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]) {
-        color: /*[[UserContentColor]]*/!important;
+        color: /*[[UserContentColor]]*/
+        !important;
     }
     /*=== 主播昵称颜色 ===*/
     .AnchorLevel+.Barrage-nickName,
     .AnchorLevel+span+.Barrage-nickName {
-        color: /*[[AnchorNameColor]]*/!important;
+        color: /*[[AnchorNameColor]]*/
+        !important;
     }
     /*=== 主播发言颜色 ===*/
     .AnchorLevel+.Barrage-nickName+.Barrage-content,
     .AnchorLevel+span+.Barrage-nickName+.Barrage-content {
-        color: /*[[AnchorContentColor]]*/!important;
+        color: /*[[AnchorContentColor]]*/
+        !important;
     }
 }
 
@@ -5083,11 +5089,11 @@ url-prefix("http://www.douyu.com/") {
         background-repeat: no-repeat!important;
     }
     .shark-webp .GuessIcon,
-    .GuessIcon{
+    .GuessIcon {
         background: url(https://www.asifadeaway.com/NightMode/douyu/GuessIcon.png);
     }
     .shark-webp .FishpondEntrance-icon,
-    .FishpondEntrance-icon{
+    .FishpondEntrance-icon {
         background: url(https://www.asifadeaway.com/NightMode/douyu/FishpondEntranceIcon.png);
     }
 }
