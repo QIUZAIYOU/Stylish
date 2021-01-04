@@ -7,6 +7,12 @@
     ===*/
 }
 
+@-moz-document domain("douyu.com") {
+html,body{
+    font-family:"Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", 'Segoe UI', Tahoma, "宋体b8b\4f53", SimSun, sans-serif
+}
+}
+
 @-moz-document url-prefix("https://www.douyu.com/"),
 url-prefix("http://www.douyu.com/") {
     /*=== 屏蔽元素 ===*/
