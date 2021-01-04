@@ -498,6 +498,7 @@
     .bili-avatar,
     .avatar,
     .list-item .avatar {
+        /* >> 为防止覆盖用户头像特意不加 !important << */
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/avatar_defalut.png)
     }
     .pgc-no-data,
