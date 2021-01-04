@@ -1808,7 +1808,7 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
         fill: var(--bili-blue)!important
     }
     /* -- 其他属性 -- */
-    .pop-live .pl__icon--online {
+    .pop-live .pl__icon, .pop-live .pl__icon--online {
         mix-blend-mode: soft-light;
     }
 }
