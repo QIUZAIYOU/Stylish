@@ -102,7 +102,7 @@
         width: 70px!important;
         height: 32px!important;
         margin-right: 16px!important;
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/navbar_logo.svg)!important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/navbar_logo.svg)!important
     }
     .login-panel {
         background-color: var(--color-2c)!important
@@ -278,7 +278,7 @@
     .van-popper-avatar .coins .contact .phone-tips:after,
     .emoji-box:before,
     .sub-nav-m .tips .t-arrow {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/tips_arrow.png)!important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/tips_arrow.png)!important
     }
     .nav-user-center .user-con .fall-mini-avatar img {
         mix-blend-mode: soft-light!important
@@ -409,11 +409,11 @@
     .comment-bilibili-fold .comment-list .list-item .info .hate i,
     .bb-comment .operation .spot,
     .comment-bilibili-fold .operation .spot {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/icons_1.png)!important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_1.png)!important
     }
     .bb-comment .nameplate .nameplate-card .nameplate-arrow,
     .comment-bilibili-fold .nameplate .nameplate-card .nameplate-arrow {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/info_arrows.png)!important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/info_arrows.png)!important
     }
     .emoji-box,
     .bb-comment .comment-list .list-item .con .vote-container:hover .text-area,
@@ -455,12 +455,12 @@
     .manga-panel .manga-list-box .manga-card>img,
     .video-card-reco .info-box,
     .lazy-img {
-        background: var(--color-21) url(https://www.asifadeaway.com/NightMode/bilibili/loading_tv.png) center no-repeat!important
+        background: var(--color-21) url(https://www.asifadeaway.com/Stylish/bilibili/loading_tv.png) center no-repeat!important
     }
     .page-content .left-side .article-list .article-list-holder .article-item.item-tp-3 .item-holder .article-content .cover-img .cover-image,
     .page-content .left-side .article-list .article-list-holder .article-item.item-tp-4 .item-holder .article-content .cover-img .cover-image {
         /* >> 为保证效果特意不加 !important << */
-        background: url(https://www.asifadeaway.com/NightMode/bilibili/loading_tv.png) center no-repeat
+        background: url(https://www.asifadeaway.com/Stylish/bilibili/loading_tv.png) center no-repeat
     }
     .load-state span.loading:before,
     .load-state span.error:before {
@@ -473,7 +473,7 @@
     .see-later,
     .i-watchlater,
     .watch-later-trigger {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/see_later.png)!important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/see_later.png)!important
     }
     /* -- 暂无内容&默认图片 -- */
     .empty-content {
@@ -484,7 +484,7 @@
         color: var(--color-86)!important
     }
     .bili-avatar {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/avatar_defalut.png)!important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/avatar_defalut.png)!important
     }
     .pgc-no-data {
         mix-blend-mode: multiply!important
@@ -1439,19 +1439,19 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .small-item .meta>span .icon,
     .meta-col span .icon,
     .list-item .meta .icon {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/icons_2.png)!important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_2.png)!important
     }
     #page-index .fav-covers.empty,
     .favInfo-box .favInfo-cover.empty,
     .small-item .cover {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/playlistbg.png)!important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/playlistbg.png)!important
     }
     .icon-m-ra {
         filter: var(--filter-ff-86)!important
     }
     .elec .elec-status {
         width: 111px!important;
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/elec_status.png)!important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/elec_status.png)!important
     }
     #page-index .col-2 .section .user-auth .auth-icon.personal-auth {
         background-position: -37px -50px!important
@@ -1586,27 +1586,27 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     }
     /* -- 其他属性 -- */
     .page-content .right-side .search-module .search-block .search-icon {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/search_icon.png) !important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/search_icon.png) !important
     }
     .page-content .right-side .search-module .search-block .search-word-panel .history-item .cancel {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/search_history_del.png) !important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/search_history_del.png) !important
     }
     .page-content .right-side .search-module .search-block .search-word-panel .history-item .cancel:hover {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/search_history_del_hover.png) !important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/search_history_del_hover.png) !important
     }
     .up-info-holder .fixed-box .more .help .icon,
     .page-content .right-side .more .help .icon {
-        background: url(https://www.asifadeaway.com/NightMode/bilibili/help.png) center no-repeat!important;
+        background: url(https://www.asifadeaway.com/Stylish/bilibili/help.png) center no-repeat!important;
         background-size: cover!important
     }
     .to-comment {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/to_comment.png) !important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/to_comment.png) !important
     }
     .to-comment:hover {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/to_comment_hover.png) !important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/to_comment_hover.png) !important
     }
     .to-top {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/to_top.png) !important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/to_top.png) !important
     }
     .to-top:hover {
         background-position: -60px!important
@@ -2155,7 +2155,7 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
         background-position: -713px -72px!important
     }
     .tag-more .b-toggle-btn {
-        background-image: url(https://www.asifadeaway.com/NightMode/bilibili/toggle-base.png) !important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/toggle-base.png) !important
     }
     .b-toggle-btn {
         display: flex!important;
