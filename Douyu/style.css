@@ -3776,7 +3776,8 @@ url-prefix("http://www.douyu.com/") {
     .FTP-singleTask-name,
     .FT-modal .FT-modal-info,
     .FT-modal .FT-modal-desc,
-    .FT-modal .FT-modal-tip.is-shark-enough {
+    .FT-modal .FT-modal-tip.is-shark-enough,
+    .FTP-singleTask-btn.is-got, .FTP-singleTask-btn.is-unfinished{
         color: #868686!important;
     }
     .RichRankList-item.is-stealth .RichRankList-name {
