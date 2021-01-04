@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-     * 版权信息
-     * 作者：QIUZAIYOU 
-     * 最后更新：20210104
-     * Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+         * 版权信息
+         * 作者：QIUZAIYOU 
+         * 最后更新：20210104
+         * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+        ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -892,7 +892,8 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .comment-bilibili-fold .operation .opera-list li:hover,
     .userinfo-content,
     .feed-title,
-    .card .focus-btn .unfocus .unfocus-text {
+    .card .focus-btn .unfocus .unfocus-text,
+    .notice-panel .img-container .notice-img {
         background-color: var(--color-2c)!important
     }
     .new-topic-panel .tag-item .label,
@@ -1047,6 +1048,9 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     }
     .most-viewed-panel .list-content .most-viewed-item .section .avatar .red-dot[data-v-28eb68ea] {
         border-color: var(--color-2c)!important
+    }
+    .live-panel-item .live-up-img {
+        border-color: var(--color-21)!important
     }
     .live-panel .more-button .more::after,
     .new-topic-panel .more-button .more::after {
