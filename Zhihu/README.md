@@ -1,4 +1,4 @@
-# 夜间知乎 NightMode For Zhihu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2020.12.31-blue)
+# 夜间知乎 NightMode For Zhihu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.01.05-blue)
 
 ![夜间知乎 NightMode For Zhihu.com](https://www.asifadeaway.com/Stylish/zhihu/StylishCover.png)
 
@@ -10,6 +10,10 @@
 2. 去除垃圾元素
 
 ## 历史更新
+
+### 2021
+
+`01.05 00:33`：新增消息和私信页夜化。
 
 ### 2020
 
