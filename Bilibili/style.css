@@ -4,7 +4,7 @@
          * 作者：QIUZAIYOU 
          * 最后更新：20210104
          * Github项目地址：https://github.com/QIUZAIYOU/Stylish
-        ===*/
+    ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -107,7 +107,7 @@
     .login-panel {
         background-color: var(--color-2c)!important
     }
-    .button-box button {
+    .button-box button:not(.helper-btn) {
         background-color: var(--color-27)!important
     }
     .button-box .login {
@@ -127,7 +127,8 @@
     .van-popper-avatar .level-bar,
     .mini-header,
     .sticky-bar,
-    .nav-user-center .user-con .fall-mini-avatar {
+    .nav-user-center .user-con .fall-mini-avatar,
+    .vip-m .bubble-traditional .recommand .bubble-col .item img {
         background-color: var(--color-2c)!important
     }
     .vip-m,
@@ -227,7 +228,9 @@
     .lang-change .lang-item:hover .lang-title,
     .van-popper-avatar .logout span:hover,
     .van-popper-upload .upload-item:hover,
-    .van-popper-upload .upload-item:hover .bilifont {
+    .van-popper-upload .upload-item:hover .bilifont,
+    .van-popper-avatar .coins .contact .email-icon--bind,
+    .van-popper-avatar .coins .contact .phone-icon--bind {
         color: var(--bili-blue)!important
     }
     .nav-link .nav-link-ul .nav-link-item .link .navbar_pullup path {
@@ -469,6 +472,14 @@
     html .lazy-img img {
         background-color: var(--color-21)!important
     }
+    .link-progress-tv {
+        mix-blend-mode: multiply!important
+    }
+    .loading-content {
+        display: flex;
+        align-items: center!important;
+        justify-content: center!important
+    }
     /* -- 稍后再看 -- */
     .see-later,
     .i-watchlater,
@@ -483,10 +494,14 @@
     .list-null span {
         color: var(--color-86)!important
     }
-    .bili-avatar {
-        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/avatar_defalut.png)!important
+    .bili-avatar,
+    .avatar,
+    .list-item .avatar {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/avatar_defalut.png)
     }
-    .pgc-no-data {
+    .pgc-no-data,
+    .nothing-img,
+    .placeholder .placeholder-img {
         mix-blend-mode: multiply!important
     }
     img[src*='face/member/noface.jpg'] {
@@ -2207,5 +2222,178 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     }
     .banner-slider-wrapper {
         z-index: 2!important
+    }
+}
+
+@-moz-document url-prefix("https://message.bilibili.com/") {
+    /* ===消息=== */
+    /* -- 背景 -- */
+    html,
+    body {
+        background: var(--color-21)!important
+    }
+    .emoji>div,
+    .message .message-content,
+    .static-popup,
+    .emoji,
+    .emoji-cover.selected {
+        background-color: var(--color-21)!important
+    }
+    .space-left,
+    .space-right .space-right-top .title,
+    .card,
+    .bili-im .left,
+    .dialog,
+    .msg-notify,
+    .send-btn,
+    .pagination,
+    .action-menu .menu-list,
+    .action-menu .menu-list:before,
+    .config {
+        background-color: var(--color-2c)!important
+    }
+    .space-right,
+    .list-item:hover,
+    .message-list,
+    .send-box,
+    .list-item.active,
+    .bili-im,
+    .list-item .name.name-loading,
+    .action-menu .menu-list a:hover {
+        background-color: var(--color-27)!important
+    }
+    .msg-notify hr,
+    .config .config-item:not(:first-child)::before {
+        background-color: var(--color-42)!important
+    }
+    .send-btn.active {
+        background-color: var(--bili-blue)!important
+    }
+    /* -- 字体 -- */
+    .title,
+    .text-box,
+    .bili-im,
+    .list-item .name,
+    .button-box .item>button,
+    .message .message-content,
+    .msg-notify .modules .module .mtitle,
+    .msg-notify .modules .module .detail,
+    .list-title,
+    .send-btn,
+    .core-style,
+    .input-box.placeholder-shown::before,
+    .config,
+    .radio-selector {
+        color: var(--color-86)!important
+    }
+    .line-2,
+    .msg-notify .content {
+        color: var(--color-af)!important
+    }
+    .send-btn.active {
+        color: var(--color-ff)!important
+    }
+    .line-1,
+    .orginal-reply,
+    .line-3,
+    .time,
+    .list-item .last-word,
+    .no-more,
+    .indicator,
+    .action-menu .menu-list a .tips {
+        color: var(--color-66)!important
+    }
+    .im-dynamic-link,
+    .im-topic-link {
+        color: var(--bili-blue)!important
+    }
+    .im-dynamic-link:hover,
+    .im-topic-link:hsover {
+        color: var(--bili-lightblue)!important
+    }
+    /* -- 边框 -- */
+    .list,
+    .list-title,
+    .divided-line,
+    .divider,
+    .orginal-reply,
+    .love-item:not(:last-child)::after,
+    .bili-im .left .title,
+    .title,
+    .bili-im .left,
+    .send-box,
+    .btn-box,
+    .static-popup,
+    .action-menu .menu-list,
+    .action-menu .menu-list:before {
+        border-color: var(--color-42)!important
+    }
+    .count-2 .avatar:first-child::before {
+        border-color: var(--color-2c)!important
+    }
+    .send-btn.active {
+        border-color: var(--bili-blue)!important
+    }
+    .action-menu .menu-list:before {
+        border-bottom-color: transparent!important;
+        border-left-color: transparent!important
+    }
+    /* -- 阴影 -- */
+    .space-right .space-right-top .title,
+    .card,
+    .bili-im,
+    .action-menu .menu-list,
+    .config {
+        box-shadow: 0 2px 4px 0 rgba(33, 33, 33, 0.54)!important;
+    }
+    /* -- SVG -- */
+    .css-1xneiug .content {
+        fill: var(--color-27)!important
+    }
+    .css-1xneiug .border {
+        fill: var(--color-42)!important
+    }
+    /* -- 其他 -- */
+    .side-bar .icon {
+        filter: invert(50%) sepia(63%) saturate(0%) hue-rotate(156deg) brightness(93%) contrast(96%)!important
+    }
+    .create-btn::before,
+    .helper-btn::before {
+        filter: var(--filter-98a2aa-86)!important
+    }
+    .message-list {
+        overflow-y: auto!important
+    }
+    .emoji-container .emotion-btn-box,
+    .image-upload-btn {
+        filter: invert(50%) sepia(6%) saturate(5%) hue-rotate(33deg) brightness(104%) contrast(85%);
+    }
+}
+
+@-moz-document url-prefix("https://passport.bilibili.com") {
+    /* ===护照中心=== */
+    /* -- 背景 -- */
+    .notification-list {
+        background-color: var(--color-21)!important
+    }
+    /* -- 字体 -- */
+    .notification-list-title {
+        color: var(--color-86)!important
+    }
+    .notification-list-info,
+    .notification-tips {
+        color: var(--color-66)!important
+    }
+    .notification-tips a {
+        color: var(--bili-blue)!important
+    }
+    /* -- 边框 -- */
+    .notification-warp,
+    .notification-list-line {
+        border-color: var(--color-42)!important
+    }
+    /* -- 其他 -- */
+    .top-banner {
+        height: 106px!important
     }
 }
