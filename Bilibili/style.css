@@ -1915,7 +1915,7 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
 }
 
 @-moz-document url-prefix("https://www.bilibili.com/v") {
-    /* ===视频分类页=== */
+    /* ===分类页=== */
     /* -- 背景 -- */
     .schedule-filter .bscroll-vertical-scrollbar {
         background-color: var(--color-14)!important
