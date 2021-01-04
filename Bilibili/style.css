@@ -4,7 +4,7 @@
          * 作者：QIUZAIYOU 
          * 最后更新：20210104
          * Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+        ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -483,7 +483,8 @@
     /* -- 稍后再看 -- */
     .see-later,
     .i-watchlater,
-    .watch-later-trigger {
+    .watch-later-trigger,
+    .van-watchlater {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/see_later.png)!important
     }
     /* -- 暂无内容&默认图片 -- */
@@ -753,6 +754,7 @@
     .video-card-common .title {
         color: var(--color-86)!important
     }
+    .rank-wrap .preview .txt span,
     .pgc-rank-wrap .txt .update,
     .video-card-common .up,
     .manga-panel .manga-list-box .manga-card .manga-tag,
