@@ -1929,7 +1929,9 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover svg {
         fill: var(--bili-blue)!important
     }
-    #balh-settings-btn:hover .icon-saturn {
+    #balh-settings-btn:hover .icon-saturn,
+    .bilibili-player-video-popup-follow-img,
+    .bp-svgicon svg {
         fill: var(--color-ff)!important
     }
     /* -- 其他属性 -- */
