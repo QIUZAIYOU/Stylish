@@ -1,9 +1,9 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-        * 版权信息
-        * 作者：QIUZAIYOU 
-        * 最后更新：20210104
-        * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    * 版权信息
+    * 作者：QIUZAIYOU 
+    * 最后更新：20210104
+    * Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
 
@@ -358,7 +358,9 @@
     .bb-comment .comment-list .list-item .info>span,
     .comment-bilibili-fold .comment-list .list-item .info>span,
     .bb-comment .comment-list .list-item .con .vote-container .text-area .text-desc,
-    .comment-bilibili-fold .comment-list .list-item .con .vote-container .text-area .text-desc {
+    .comment-bilibili-fold .comment-list .list-item .con .vote-container .text-area .text-desc,
+    .bb-comment .comment-list .list-item .user .text-con,
+    .comment-bilibili-fold .comment-list .list-item .user .text-con {
         color: var(--color-66)!important
     }
     .user-card .btn-box .like {
@@ -991,10 +993,6 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .feed-title,
     .button-bar {
         color: var(--color-86)!important
-    }
-    .bb-comment .comment-list .list-item .user .text-con,
-    .comment-bilibili-fold .comment-list .list-item .user .text-con {
-        color: var(--color-66)!important
     }
     .up-name,
     .bangumi-container .text-area .title,
@@ -1825,7 +1823,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .review-module .review-list .review-item .review-title,
     .main-container .media-info .media-right .media-tool-bar .btn-rating .star-wrapper li i.icon-star-empty,
     .ep-section-module .section-title,
-    .main-container .nav-tools .tool-item {
+    .main-container .nav-tools .tool-item,
+    .activity-m .onlytip {
         color: var(--color-86)!important
     }
     .up-info .up-info_right .desc,
