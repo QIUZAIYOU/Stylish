@@ -1,11 +1,44 @@
 @-moz-document url-prefix("http://example.com") {
     /*=== 
-         * 版权信息
-         * 自用，上传只为保存
-         * 作者：QIUZAIYOU 
-         * 最后更新：20210105
-         * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+     * 版权信息
+     * 自用，上传只为保存
+     * 作者：QIUZAIYOU 
+     * 最后更新：20210105
+     * Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
+}
+
+@-moz-document domain("zhihu.com") {
+    /* ===通用属性=== */
+     :root {
+        --color-00: #000!important;
+        --color-14: #141414!important;
+        --color-1b: #1b1b1b!important;
+        --color-21: #212121!important;
+        --color-24: #242424!important;
+        --color-27: #272727!important;
+        --color-2c: #2c2c2c!important;
+        --color-37: #373737!important;
+        --color-42: #424242!important;
+        --color-44: #444!important;
+        --color-66: #666!important;
+        --color-6d: #6d6d6d!important;
+        --color-77: #777!important;
+        --color-7c: #7c7c7c!important;
+        --color-86: #868686!important;
+        --color-af: #afafaf!important;
+        --color-cc: #ccc!important;
+        --color-ff: #fff!important;
+        --color-e43: #e43!important;
+        --zhihu-blue: #0084ff!important;
+        --zhihu-lightblue: #2b94ff!important;
+        --aifa-blue: #3072f6!important;
+        --zhihu-orange: #ff9500!important;
+        --zhihu-yellow: #c2a469!important;
+        --zhihu-green: #2db370!important;
+        --bodr-42: 1px solid #424242!important;
+        --filter-ff-86: invert(50%) sepia(12%) saturate(0%) hue-rotate(202deg) brightness(103%) contrast(94%)!important;
+    }
 }
 
 @-moz-document url-prefix("https://www.zhihu.com/"),
@@ -31,38 +64,38 @@ url-prefix("https://zhuanlan.zhihu.com/") {
         height: 6px!important
     }
      ::-webkit-scrollbar-track-piece {
-        background-color: #141414!important;
+        background-color: var(--color-14)!important;
         -webkit-border-radius: 0!important
     }
      ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
-        background-color: #2b94ff!important;
+        background-color: var(--zhihu-lightblue)!important;
         -webkit-border-radius: 6px!important
     }
      ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
-        background-color: #2b94ff!important;
+        background-color: var(--zhihu-lightblue)!important;
         -webkit-border-radius: 6px!important
     }
      ::-webkit-scrollbar-corner {
-        background-color: #141414!important;
+        background-color: var(--color-14)!important;
         -webkit-border-radius: 0!important
     }
     input::-webkit-input-placeholder,
     textarea::-webkit-input-placeholder {
-        color: #868686!important
+        color: var(--color-86)!important
     }
     input:-moz-placeholder,
     textarea:-moz-placeholder {
-        color: #868686!important
+        color: var(--color-86)!important
     }
     input::-moz-placeholder,
     textarea::-moz-placeholder {
-        color: #868686!important
+        color: var(--color-86)!important
     }
     input:-ms-input-placeholder,
     textarea:-ms-input-placeholder {
-        color: #868686!important
+        color: var(--color-86)!important
     }
     body,
     .explore-tab .tab-navs .tab-nav.active>a,
@@ -87,8 +120,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .UserPageItem,
     .UserPageItem .UserPageItem-link,
     .css-14wm9dx,
-    .MobileAppHeader+.Sticky--holder {
-        background: #212121!important;
+    .MobileAppHeader+.Sticky--holder,
+    .KfeCollection-PcCollegeCard-type {
+        background: var(--color-21)!important;
         -webkit-tap-highlight-color: rgba(26, 26, 26, 0)
     }
     div[class*="SectionBar-module-root-"]:before,
@@ -195,8 +229,11 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .NotificationList,
     .ChatWrapper .Chat,
     .ChatBox .Input-wrapper--multiline .Input,
-    .ChatSideBar-Search {
-        background: #2c2c2c!important
+    .ChatSideBar-Search,
+    .KfeCollection-PcCollegeCard-root,
+    .KfeCollection-PcCollegeCard-wrapper,
+    .SearchResult-Card .SearchTopicHeader-IntroTail {
+        background: var(--color-2c)!important
     }
     .PushNotifications-item:after,
     .MoreAnswers .List-headerText,
@@ -221,8 +258,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .NotificationList-Item.NotificationList-Item:after,
     .NotificationList-DateSplit.NotificationList-DateSplit:after,
     .ChatUserListItem:after,
-    .ChatListGroup-SectionTitle--bottomBorder:after {
-        background: #424242!important
+    .ChatListGroup-SectionTitle--bottomBorder:after,
+    .WikiBoxHotList-Line {
+        background: var(--color-42)!important
     }
     .Messages-footer,
     .Notifications-footer,
@@ -282,15 +320,15 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .SpecialListCard-followButton,
     html[data-theme=dark] .SpecialListCard-followButton,
     .ChatUserListItem--active {
-        background: #373737!important
+        background: var(--color-37)!important
     }
     .lower {
-        background: #444!important
+        background: var(--color-44)!important
     }
     .ac-renderer .ac-row:last-child,
     .AnswerItem-statusContentdiv,
     div[class*="SectionBar-module-current-"] {
-        background: #242424!important
+        background: var(--color-24)!important
     }
     html.no-touchevents .zm-item-vote-count:hover {
         background: #698ebf!important
@@ -312,16 +350,19 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     }
     .WikiBoxHeader-IntroTail:before,
     .SearchTopicHeader-IntroTail:before {
-        background-image: linear-gradient(90deg, #fff, #373737)!important
+        background-image: linear-gradient(90deg, var(--color-ff), var(--color-37))!important
+    }
+    .SearchResult-Card .SearchTopicHeader-IntroTail:before {
+        background-image: linear-gradient(90deg, var(--color-37), var(--color-2c))!important
     }
     .Switch--checked {
-        background-color: #0084ff!important
+        background-color: var(--zhihu-blue)!important
     }
     .QuestionItem-footer--writeAnswerButton {
-        background-color: #2b94ff!important
+        background-color: var(--zhihu-lightblue)!important
     }
     .ChatUserListItem .Chat-ActionMenuPopover-Button {
-        background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), #373737 20%)!important
+        background: linear-gradient(90deg, hsla(0, 0%, 100%, 0), var(--color-37) 20%)!important
     }
     body,
     .page-explore .page-title,
@@ -442,8 +483,16 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .NotificationList-DateSplit,
     .ChatListGroup-SectionTitle,
     .ChatSideBar-Search-Input input[type=search],
-    .ChatUserListItem-Name .userName-nameArea {
-        color: #868686!important
+    .ChatUserListItem-Name .userName-nameArea,
+    .ExploreHeader-tab,
+    .TopSearch-itemText,
+    .WikiBoxHotList-Title,
+    .KfeCollection-PcCollegeCard-type,
+    .SearchItem-type,
+    html[data-theme=dark] .SearchItem-type,
+    .SearchTopicHeader-MetaKey,
+    html[data-theme=dark] .SearchTopicHeader-MetaKey {
+        color: var(--color-86)!important
     }
     .ztext blockquote,
     .Search-container,
@@ -451,7 +500,7 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .QuestionRelatedCard-content>a,
     .Footer,
     html[data-theme=dark] .Footer {
-        color: #7c7c7c!important
+        color: var(--color-7c)!important
     }
     .GlobalSideBar-navNumber,
     html[data-theme=dark] .GlobalSideBar-navNumber,
@@ -466,8 +515,17 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     html[data-theme=dark] .Profile-footerOperations a,
     .Profile-lightItemValue,
     .css-sumlaa,
-    .GlobalSideBar-categoryLabel {
-        color: #666!important
+    .GlobalSideBar-categoryLabel,
+    .SearchBar-label,
+    .SearchBar-searchLink,
+    .SearchItem-time,
+    html[data-theme=dark] .SearchItem-time,
+    .TimeBox-ContentMeta,
+    html[data-theme=dark] .TimeBox-ContentMeta,
+    .WikiBoxHotList-Item,
+    .WikiBoxHotList-ItemMeta,
+    .KfeCollection-PcCollegeCard-status {
+        color: var(--color-66)!important
     }
     .post-link,
     .question_link,
@@ -549,17 +607,17 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .BrandQuestionSymbol-name,
     .NotificationList-Item-header .NotificationList-Item-link:hover,
     html[data-theme=dark] .NotificationList-Item-header .NotificationList-Item-link:hover {
-        color: #2b94ff!important
+        color: var(--zhihu-lightblue)!important
     }
     .tab-navs .tab-nav.active>a,
     .AnswerItem-statusReason,
     .MCNLinkCard-price,
     .MCNLinkCard-button,
     .UserStatus {
-        color: #e43!important
+        color: var(--color-e43)!important
     }
     .Qrcode-container p.Qrcode-scanResultTips {
-        color: #2db370
+        color: var(--zhihu-green)
     }
     .QuestionAnswers-answerTip .Button,
     html[data-theme=dark] .QuestionAnswers-answerTip .Button,
@@ -577,8 +635,14 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .TopSearch-itemText:hover,
     .css-134a7ny,
     .GlobalSideBar-categoryItem:hover .GlobalSideBar-categoryLabel,
-    .NotificationList-Item-content .NotificationList-Item-link:hover {
-        color: #0084ff!important
+    .NotificationList-Item-content .NotificationList-Item-link:hover,
+    .ExploreHeader-tab--active,
+    .ExploreHeader-tab:hover,
+    html[data-theme=dark] .ExploreHeader-tab--active,
+    html[data-theme=dark] .ExploreHeader-tab:hover,
+    .TimeBox-Footer,
+    .KfeCollection-PcCollegeCard-searchMore {
+        color: var(--zhihu-blue)!important
     }
     .TopSearch-itemText {
         color: #8590a6
@@ -589,10 +653,10 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .Button--primary.Button--red,
     .QuestionItem-footer--writeAnswerButton,
     .ExploreHomePage-specialsLoginButton {
-        color: #fff!important
+        color: var(--color-ff)!important
     }
     .css-zzd7cz-Label {
-        color: rgb(194, 164, 105)!important
+        color: var(--zhihu-yellow)!important
     }
     .SettingsNav-link.is-active svg,
     .Zi,
@@ -600,11 +664,11 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .Zi--Star:not(.Button-zi),
     .GlobalSideBar-navIcon,
     html[data-theme=dark] .GlobalSideBar-navIcon {
-        fill: #0084ff!important
+        fill: var(--zhihu-blue)!important
     }
     .Zi--Alert,
     .MCNLinkCard-button svg.Zi.Zi--ArrowRight {
-        fill: #e43!important
+        fill: var(--color-e43)!important
     }
     .Modal-closeIcon,
     .MinorHotSpot-Quote,
@@ -613,13 +677,13 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .EmptyState svg path,
     .css-sumlaa svg *,
     .ExploreCollectionCard-collectedContentCount svg {
-        fill: #868686!important
+        fill: var(--color-86)!important
     }
     .FollowButton-icon,
     .Button--primary.Button--blue svg,
     .VoteButton.is-active svg,
     .AccountSocial svg,
-    a[data-tooltip="优秀回答者"] svg path[fill="#FFF"],
+    a[data-tooltip="优秀回答者"] svg path[fill="#fff"],
     .AuthorInfo-head .Zi,
     .AnswerAuthor-item-icon .Zi,
     .Zi--WeChat,
@@ -629,15 +693,15 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .Zi--Check,
     .QuestionItem-footer--writeAnswerButton svg,
     svg[fill="#fff"] {
-        fill: #fff!important
+        fill: var(--color-ff)!important
     }
-    a[data-tooltip="优秀回答者"] svg path[fill="#FF9500"] {
-        fill: #ff9500!important
+    a[data-tooltip="优秀回答者"] svg path[fill="#ff9500"] {
+        fill: var(--zhihu-orange)!important
     }
     .css-9eo0vs-Label .Zi.Zi--LabelProfessional,
     .css-9eo0vs-Label .Zi.Zi--LabelSpecial,
     .css-9eo0vs-Label .Zi.Zi--ArrowRight {
-        fill: rgb(194, 164, 105)!important
+        fill: var(--zhihu-yellow)!important
     }
     .feed-item+.feed-item,
     .page-explore .page-title,
@@ -808,15 +872,16 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .Notifications-Section-header--fixed,
     .ChatSideBar,
     .ChatWrapper .Chat,
-    .ChatSideBar-Search-Input input {
-        border-color: #424242!important
+    .ChatSideBar-Search-Input input,
+    .WikiBoxHotList {
+        border-color: var(--color-42)!important
     }
     .UserAvatar,
     .PushNotifications-count,
     .Messages-count,
     .Question-mainColumnLoginButton,
     .css-ybodb {
-        border-color: #2c2c2c!important
+        border-color: var(--color-2c)!important
     }
     .ztext a.external:hover,
     .ztext a.internal:hover,
@@ -824,7 +889,7 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .RichText a.UserLink-link:hover,
     html[data-theme=dark] .RichText a.UserLink-link:hover,
     .css-rxuqvq:before {
-        border-color: #2b94ff!important
+        border-color: var(--zhihu-lightblue)!important
     }
     .tab-navs .tab-nav.active>a,
     html.no-touchevents .tab-navs .tab-nav.active>a:hover {
@@ -832,13 +897,13 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     }
     .popover.top .arrow2,
     .popover.top .arrow {
-        border-top-color: #444!important
+        border-top-color: var(--color-44)!important
     }
     .EmoticonTool-panel:after {
-        border-top-color: #424242!important
+        border-top-color: var(--color-42)!important
     }
     .Switch--checked {
-        border-color: #2b94ff!important
+        border-color: var(--zhihu-lightblue)!important
     }
     .zu-top,
     .AppHeader {
@@ -889,15 +954,15 @@ url-prefix("https://zhuanlan.zhihu.com/") {
         padding-left: 5px!important
     }
     .Register-smsBackUp {
-        border-top: 1px solid #424242!important
+        border-top: 1px solid var(--color-42)!important
     }
     .Qrcode-img {
         padding: 5px!important;
-        background: #fff!important
+        background: var(--color-ff)!important
     }
     .AppBanner-qrcode {
         padding: 2px!important;
-        background: #fff!important
+        background: var(--color-ff)!important
     }
     .zu-top-search-input {
         font-weight: 700!important
@@ -914,13 +979,13 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     }
     code:not([class*="language-"]) {
         font-family: consolas, Menlo, PingFang SC, Microsoft YaHei, monospace;
-        color: #afafaf!important;
+        color: var(--color-af)!important;
         font-size: .875rem!important;
         padding: .1875rem .625rem!important;
-        background: #2c2c2c!important;
+        background: var(--color-2c)!important;
         margin: 0 .3125rem!important;
         border-radius: .25rem!important;
-        border-bottom: .0625rem solid #3072f6!important;
+        border-bottom: .0625rem solid var(--aifa-blue)!important;
         box-sizing: border-box!important
     }
     .highlight .nt,
@@ -932,7 +997,7 @@ url-prefix("https://zhuanlan.zhihu.com/") {
         width: 100%!important;
         padding-left: 10px!important;
         padding-right: 10px!important;
-        background-color: #2c2c2c!important
+        background-color: var(--color-2c)!important
     }
     .highlight pre code,
     .css-1hmxk26 {
@@ -942,24 +1007,24 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .highlight .kc,
     .highlight .kr,
     .highlight .o {
-        color: #ccc
+        color: var(--color-cc)
     }
     .highlight .c1 {
-        color: #6d6d6d
+        color: var(--color-6d)
     }
     .RichContent-cover-inner {
         z-index: 915049!important
     }
     .UserStatus {
-        text-shadow: 0 2px 0px #000;
+        text-shadow: 0 2px 0px var(--color-00);
         background: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(238, 68, 51, .3))!important
     }
     .css-1wnm7f1 {
         overflow: hidden!important
     }
     .ChatSideBar-Search.ChatSideBar-Search--active *:not(.ChatSideBar-SearchIcon) {
-        background: #2c2c2c!important;
-        border-color: #424242!important;
-        color: #868686!important
+        background: var(--color-2c)!important;
+        border-color: var(--color-42)!important;
+        color: var(--color-86)!important
     }
 }
