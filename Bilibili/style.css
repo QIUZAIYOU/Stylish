@@ -1931,7 +1931,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
         fill: var(--color-86)!important
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover svg,
-    .bilibili-player-video-danmaku-setting-left-block-content .bilibili-player-block-filter-type.disabled .bilibili-player-block-filter-image .bp-svgicon svg {
+    .bilibili-player-video-danmaku-setting-left-block-content .bilibili-player-block-filter-type.disabled .bilibili-player-block-filter-image .bp-svgicon svg,
+    .bilibili-player-video-sendbar .bilibili-player-video-danmaku-root .bilibili-player-video-danmaku-setting:hover .bp-svgicon svg {
         fill: var(--bili-blue)!important
     }
     #balh-settings-btn:hover .icon-saturn,
