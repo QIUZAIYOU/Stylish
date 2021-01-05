@@ -1867,7 +1867,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .more-ops-list li:hover,
     .main-container .ep-list-wrapper .list-wrapper.simple ul .ep-item:hover,
     .main-container .review-module .review-list .review-item:hover .review-title,
-    .multi-page .cur-list .list-box li.on>a {
+    .multi-page .cur-list .list-box li.on>a,
+    .bilibili-player-video-danmaku-setting-left-block-content .bilibili-player-block-filter-type.disabled .bilibili-player-block-filter-image {
         color: var(--bili-blue)!important
     }
     .video-desc .tip-info .argue i,
@@ -1929,7 +1930,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .player-auxiliary-danmaku-date-picker-container .player-auxiliary-danmaku-date-picker-header .player-auxiliary-danmaku-date-picker-btn {
         fill: var(--color-86)!important
     }
-    .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover svg {
+    .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover svg,
+    .bilibili-player-video-danmaku-setting-left-block-content .bilibili-player-block-filter-type.disabled .bilibili-player-block-filter-image .bp-svgicon svg {
         fill: var(--bili-blue)!important
     }
     #balh-settings-btn:hover .icon-saturn,
