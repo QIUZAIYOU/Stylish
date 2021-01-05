@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-         * 版权信息
-         * 作者：QIUZAIYOU 
-         * 最后更新：20210104
-         * Github项目地址：https://github.com/QIUZAIYOU/Stylish
-     ===*/
+        * 版权信息
+        * 作者：QIUZAIYOU 
+        * 最后更新：20210104
+        * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -991,6 +991,10 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .feed-title,
     .button-bar {
         color: var(--color-86)!important
+    }
+    .bb-comment .comment-list .list-item .user .text-con,
+    .comment-bilibili-fold .comment-list .list-item .user .text-con {
+        color: var(--color-66)!important
     }
     .up-name,
     .bangumi-container .text-area .title,
