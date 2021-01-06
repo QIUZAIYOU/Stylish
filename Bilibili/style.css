@@ -1,9 +1,9 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-        * 版权信息
-        * 作者：QIUZAIYOU 
-        * 最后更新：20210106
-        * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    * 版权信息
+    * 作者：QIUZAIYOU 
+    * 最后更新：20210106
+    * Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
 
@@ -2194,7 +2194,6 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .video-info-module .v-preview .txt,
     .tag-more .b-toggle-btn,
     .article-card .l-con .title,
-    .card-score .title .title-text,
     .card-score .team .team-info .team-nam,
     .card-score .time-wrap,
     .score-contain .allmatch,
@@ -2306,7 +2305,9 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .competition-menu,
     .msg-wrap,
     .score-module-wrap .team-msg .title,
-    .score-module-wrap .team-msg .msg-score .score-time {
+    .score-module-wrap .team-msg .msg-score .score-time,
+    .card-score .desc,
+    .card-score .title .title-text {
         color: var(--color-66)!important
     }
     .select-type .type-group li.on,
