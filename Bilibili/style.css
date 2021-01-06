@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-    * 版权信息
-    * 作者：QIUZAIYOU 
-    * 最后更新：20210106
-    * Github项目地址：https://github.com/QIUZAIYOU/Stylish
-===*/
+        * 版权信息
+        * 作者：QIUZAIYOU 
+        * 最后更新：20210106
+        * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -27,7 +27,7 @@
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-    :root {
+     :root {
         --color-14: #141414!important;
         --color-1b: #1b1b1b!important;
         --color-21: #212121!important;
@@ -55,6 +55,7 @@
         --filter-ff-86: invert(50%) sepia(12%) saturate(0%) hue-rotate(202deg) brightness(103%) contrast(94%)!important;
         --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%)!important;
         --filter-98a2aa-86: invert(50%) sepia(90%) saturate(1%) hue-rotate(25deg) brightness(89%) contrast(86%)!important;
+        --filter-626a6e-blue: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%)!important
     }
     html,
     body {
@@ -89,28 +90,28 @@
         color: var(--color-86)!important
     }
     /* ===浏览器滚动条=== */
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         background-color: var(--color-14)!important;
         border-radius: 0!important;
         -webkit-border-radius: 0!important
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         background-color: var(--bili-blue)!important;
         border-radius: 6px!important;
         -webkit-border-radius: 6px!important
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         background-color: var(--bili-blue)!important;
         border-radius: 6px!important;
         -webkit-border-radius: 6px!important
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         background-color: var(--color-14)!important;
         border-radius: 0!important;
         -webkit-border-radius: 0!important
@@ -184,7 +185,7 @@
     .lang-change .lang-item:hover,
     .van-popper-avatar .logout span:hover,
     .lang-change .lang-intro-item:hover,
-    .van-popper-upload .upload-item[data-v-6a9061fa]:hover {
+    .van-popper-upload .upload-item:hover {
         background-color: var(--color-27)!important
     }
     .bilibili-search-suggest .suggest-item:hover,
@@ -483,7 +484,9 @@
     .video-card-common .card-pic a,
     .manga-panel .manga-list-box .manga-card>img,
     .video-card-reco .info-box,
-    .lazy-img {
+    .lazy-img,
+    .common-lazy-img,
+    .bangumi-home-lazy-img {
         background: var(--color-21) url(https://www.asifadeaway.com/Stylish/bilibili/loading_tv.png) center no-repeat!important
     }
     .page-content .left-side .article-list .article-list-holder .article-item.item-tp-3 .item-holder .article-content .cover-img .cover-image,
@@ -507,6 +510,12 @@
         align-items: center!important;
         justify-content: center!important
     }
+    /* 去掉图片未完全加载时的白边 */
+    img[src="null"],
+    img[alt][src]:not([src*="/"]),
+    img[alt][data-src]:not([data-src*="/"]) {
+        display: none!important
+    }
     /* -- 稍后再看 -- */
     .see-later,
     .i-watchlater,
@@ -515,17 +524,20 @@
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/see_later.png)!important
     }
     /* -- 暂无内容&默认图片 -- */
-    .empty-content {
+    .empty-content,
+    .up-info .u-face .fa {
         background-color: var(--color-2c)!important
     }
     .feed-card .empty-content .empty-text,
-    .list-null span {
+    .list-null span,
+    .nodata-contain .txt {
         color: var(--color-86)!important
     }
     .bili-avatar,
     .avatar,
     .list-item .avatar {
         /* >> 为防止覆盖用户头像特意不加 !important << */
+        background-color: var(--color-21)!important;
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/avatar_defalut.png)
     }
     .pgc-no-data,
@@ -536,37 +548,8 @@
     img[src*='face/member/noface.jpg'] {
         mix-blend-mode: overlay!important
     }
-    /* ===FOOTER=== */
-    .international-footer,
-    .b-footer-wrap .pic-box {
-        background-color: var(--color-1b)!important
-    }
-    .international-footer a,
-    .international-footer .link-box .link-item.link-c p {
-        color: var(--color-86)!important
-    }
-    .international-footer .link-box .link-item .bt,
-    .international-footer .partner,
-    .international-footer .partner a {
-        color: var(--color-af)!important
-    }
-    .international-footer .link-box .link-item ul a:hover,
-    .international-footer .link-box .link-item.link-b ul a:hover,
-    .international-footer a:hover,
-    .international-footer .link-box .link-item.link-c a:hover p {
-        color: var(--bili-blue)!important
-    }
-    .international-footer .link-box .link-item.link-c .weibo {
-        color: #fe596c!important
-    }
-    .international-footer .link-box .link-item.link-c .biliapp {
-        color: #585f69!important
-    }
-    .international-footer .link-box .link-item.link-c .weixin {
-        color: #42c86b!important
-    }
-    .international-footer .link-box .link-item {
-        border-color: var(--color-42)!important
+    .nodata-contain .nodata {
+        mix-blend-mode: soft-light!important
     }
     /* -- 按钮 -- */
     .btn.default,
@@ -583,7 +566,8 @@
         border-color: var(--bili-blue)!important
     }
     .btn.primary,
-    .primary-btn {
+    .primary-btn,
+    .sure {
         color: var(--color-ff)!important;
         background: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important
@@ -591,7 +575,8 @@
     .btn.primary:focus,
     .btn.primary:focus,
     .btn.primary:hover,
-    .primary-btn:hover {
+    .primary-btn:hover,
+    .sure:hover {
         color: var(--color-ff)!important;
         background-color: var(--bili-lightblue)!important
     }
@@ -668,37 +653,12 @@
     .music-pagination .dian,
     .music-pagination .next,
     .music-pagination .prev,
-    .music-pagination .tcd-number {
-        background-color: var(--color-21)!important
-    }
-    .paging-box-big .dian,
-    .paging-box-big .page-jump,
-    .pager .pages .page-item button,
-    .pager .jump-pager,
-    .pager .jump-pager input[type=text],
-    .music-pagination .dian,
-    .music-pagination .next,
-    .music-pagination .prev,
-    .music-pagination .tcd-number {
-        color: var(--color-86)!important
-    }
-    .paging-box-big .current,
-    .paging-box-big .next,
-    .paging-box-big .prev,
-    .paging-box-big .tcd-number,
-    .paging-box-big .dian,
-    .paging-box-big .page-jump input,
-    .pager .pages .page-item button,
-    .pager .jump-pager input[type=text],
-    .music-pagination .dian,
-    .music-pagination .next,
-    .music-pagination .prev,
-    .music-pagination .tcd-number {
+    .music-pagination .tcd-number,
+    .pagelistbox .p,
+    .pagelistbox .custom-right .custom-right-inner.custompage {
+        color: var(--color-86)!important;
+        background-color: var(--color-21)!important;
         border-color: var(--color-42)!important
-    }
-    .paging-box-big .dian,
-    .music-pagination .dian {
-        border-color: var(--color-21)!important
     }
     .paging-box-big .current,
     .paging-box-big .current:hover,
@@ -715,10 +675,21 @@
     .music-pagination .current:hover,
     .music-pagination .next:hover,
     .music-pagination .prev:hover,
-    .music-pagination .tcd-number:hover {
+    .music-pagination .tcd-number:hover,
+    .pagelistbox .p.active,
+    .pagelistbox .p:hover {
         background-color: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important;
         color: var(--color-ff)!important
+    }
+    .paging-box-big .page-jump,
+    .pager .jump-pager,
+    .pagelistbox .custom-right .custom-right-inner {
+        color: var(--color-86)!important
+    }
+    .paging-box-big .dian,
+    .music-pagination .dian {
+        border-color: var(--color-21)!important
     }
     /* -- 下拉菜单 -- */
     .bili-dropdown,
@@ -773,7 +744,8 @@
     }
     .go-top-m .go-top,
     .back-top-btn,
-    .to-top {
+    .to-top,
+    .back-top-tools .tool-item {
         color: var(--color-86)!important;
         border-color: var(--color-42)!important;
         background-color: var(--color-2c)!important
@@ -782,7 +754,8 @@
         background-color: var(--bili-blue)!important;
     }
     .go-top-m .go-top:hover,
-    .back-top-btn:hover {
+    .back-top-btn:hover,
+    .back-top-tools .tool-item:hover {
         color: var(--color-ff)!important;
         border-color: var(--bili-blue)!important;
         background-color: var(--bili-blue)!important;
@@ -794,6 +767,52 @@
     .to-top:hover {
         background-color: var(--bili-blue)!important;
         background-position: -60px!important
+    }
+    .top-icon g g {
+        fill: var(--color-86)!important
+    }
+    .back-top-tools .tool-item:hover .top-icon g g {
+        fill: var(--color-ff)!important
+    }
+    /* ===FOOTER=== */
+    .footer,
+    .bili-footer .footer-wrp,
+    .international-footer,
+    .b-footer-wrap .pic-box {
+        background-color: var(--color-1b)!important
+    }
+    .international-footer a,
+    .international-footer .link-box .link-item.link-c p,
+    .footer p,
+    .footer span,
+    .bili-footer p,
+    .bili-footer span {
+        color: var(--color-86)!important
+    }
+    .international-footer .link-box .link-item .bt,
+    .international-footer .partner,
+    .international-footer .partner a {
+        color: var(--color-af)!important
+    }
+    .international-footer .link-box .link-item ul a:hover,
+    .international-footer .link-box .link-item.link-b ul a:hover,
+    .international-footer a:hover,
+    .international-footer .link-box .link-item.link-c a:hover p {
+        color: var(--bili-blue)!important
+    }
+    .international-footer .link-box .link-item.link-c .weibo {
+        color: #fe596c!important
+    }
+    .international-footer .link-box .link-item.link-c .biliapp {
+        color: #585f69!important
+    }
+    .international-footer .link-box .link-item.link-c .weixin {
+        color: #42c86b!important
+    }
+    .international-footer .link-box .link-item,
+    .footer .boston-postcards li,
+    .bili-footer .boston-postcards li {
+        border-color: var(--color-42)!important
     }
 }
 
@@ -814,7 +833,8 @@
     .elevator .list-box .item,
     .manga-rank-item .rank-number,
     .popover-video-card,
-    .live-rank .live-rank-item .number {
+    .live-rank .live-rank-item .number,
+    .live-card .up .up-cover .face {
         background-color: var(--color-2c)!important
     }
     .contact-help:hover,
@@ -861,11 +881,11 @@
     .bypb-window .online,
     .video-card-common .gg-icon,
     .live-rank .live-rank-item .number,
-    .storey-title .text-info,
     .elevator .ear,
     .video-card-common .title {
         color: var(--color-86)!important
     }
+    .storey-title .text-info,
     .rank-wrap .preview .txt span,
     .pgc-rank-wrap .txt .update,
     .video-card-common .up,
@@ -874,7 +894,8 @@
     .live-card .up .txt .tag,
     .live-rank .live-rank-item .txt p.p2,
     .live-rank .live-rank-item .count,
-    .live-rank .live-rank-item .count .bilifont {
+    .live-rank .live-rank-item .count .bilifont,
+    .update_info {
         color: var(--color-66)!important
     }
     .live-card .up .txt .desc {
@@ -1080,6 +1101,7 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .main-panel {
         background: var(--color-21)!important
     }
+    .card-list .tab-bar,
     .live-rank .live-rank-item .number,
     .user-panel,
     .live-panel,
@@ -1243,8 +1265,9 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .music-container,
     .bb-comment .nameplate .nameplate-card .nameplate-text,
     .comment-bilibili-fold .nameplate .nameplate-card .nameplate-text,
-    .live-panel-item .live-up-img.most-viewed-panel .list-content .most-viewed-item .section .avatar,
-    .most-viewed-panel .list-content .most-viewed-item .section .avatar .red-dot.most-viewed-panel .list-content .most-viewed-item .section .icon-all,
+    .live-panel-item .live-up-img,
+    .most-viewed-panel .list-content .most-viewed-item .section .avatar .red-dot,
+    .most-viewed-panel .list-content .most-viewed-item .section .icon-all,
     .card {
         border-color: var(--color-42)!important
     }
@@ -1252,7 +1275,9 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .userinfo-content .btn-box>a.liked {
         border-color: var(--color-27)!important
     }
-    .most-viewed-panel .list-content .most-viewed-item .section .avatar .red-dot[data-v-28eb68ea] {
+    .most-viewed-panel .list-content .most-viewed-item .section .avatar,
+    .most-viewed-panel .list-content .most-viewed-item .section .avatar .red-dot,
+    .most-viewed-panel .list-content .most-viewed-item .section .icon-all {
         border-color: var(--color-2c)!important
     }
     .live-panel-item .live-up-img {
@@ -1272,8 +1297,13 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
         border-bottom: none!important
     }
     /* -- 阴影 -- */
-    .most-viewed-panel .list-content .most-viewed-item .section .avatar {
-        box-shadow: 0 0 0 1px var(--color-42)!important
+    .most-viewed-panel .list-content .most-viewed-item .section .avatar,
+    .most-viewed-panel .list-content .most-viewed-item .section .icon-all {
+        box-shadow: 0 0 0 1px var(--color-2c)!important
+    }
+    .most-viewed-panel .list-content .most-viewed-item .section .avatar.active,
+    .most-viewed-panel .list-content .most-viewed-item .section .icon-all.active {
+        box-shadow: 0 0 0 1px var(--bili-blue)!important
     }
     .article-container:hover .text-area {
         box-shadow: 0 3px 10px 0 rgba(33, 33, 33, 0.44)!important
@@ -1296,7 +1326,7 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     }
     /* -- 其他 -- */
     .tab-bar {
-        z-index: 19940519!important;
+        z-index: 1!important;
         position: sticky!important;
         box-shadow: 0 5px 10px 0 rgba(33, 33, 33, .9);
         top: 0!important
@@ -1307,7 +1337,7 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
 }
 
 @-moz-document url-prefix("https://t.bilibili.com/lottery/") {
-    /* ===互动抽奖=== */
+    /* ===动态页 > 互动抽奖=== */
     /* --背景 -- */
     #bp-app {
         background-color: var(--color-27)!important
@@ -1329,549 +1359,9 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     }
 }
 
-@-moz-document url-prefix("https://space.bilibili.com/") {
-    /* ===个人空间=== */
-    /* -- 背景 -- */
-    .modal-wrapper,
-    .ps .ps__rail-x.ps--clicking,
-    .ps .ps__rail-x:focus,
-    .ps .ps__rail-x:hover,
-    .ps .ps__rail-y.ps--clicking,
-    .ps .ps__rail-y:focus,
-    .ps .ps__rail-y:hover,
-    #page-setting #setting-index-modules.is-dragging .setting-index-module:hover,
-    .elec .elec-status,
-    .shop-panel .shop-list {
-        background-color: var(--color-21)!important
-    }
-    .n .n-inner,
-    #page-index .col-1,
-    .section .count,
-    #page-index .col-2 .section:last-child,
-    #page-index .col-2 .section.elec,
-    #page-index .col-2 .section.i-m,
-    #page-index .col-2 .section,
-    .be-textarea_inner,
-    .be-dropdown-menu,
-    #page-dynamic .col-2 .section,
-    .col-full,
-    #page-channel-index .channel-option.no-channel,
-    #page-fav .fav-main .search-input input,
-    .pgc-space-follow-item .bangumi-options .opt-list,
-    .pgc-space-follow-item .bangumi-options .opt-list li.disabled:hover,
-    .elec .elec-status-bg-grey,
-    .feed-title,
-    .card,
-    .card .more-panel,
-    .card .more-panel:after,
-    .article-container,
-    .bangumi-container,
-    .be-pager-item,
-    .be-pager-next,
-    .be-pager-prev,
-    .space_input {
-        background-color: var(--color-2c)!important
-    }
-    .list-create,
-    .g-search input,
-    .be-dropdown-item:hover,
-    #page-fav .fav-sidenav .fav-item:hover,
-    .favInfo-box.favEmpty .favInfo-details .fav-options .fav-play,
-    .favInfo-box.invalid .favInfo-details .fav-options .fav-play,
-    .pgc-space-follow-item .bangumi-options .opt-list li:hover,
-    .be-switch,
-    #page-setting #setting-new-tag,
-    #page-setting .setting-tag-list a,
-    .video-container,
-    .card-content .repost,
-    .card-content .not-support,
-    .card-content .deleted,
-    #page-video #submit-video-type-filter,
-    .contribution-sidenav .contribution-item:hover,
-    .album-list__tabs {
-        background-color: var(--color-27)!important
-    }
-    #page-fav .fav-sidenav .icon-cursor {
-        background-color: var(--color-37)!important
-    }
-    .mini-item .cover img,
-    .pgc-space-follow-item .pgc-item-info .type-and-area i,
-    .pgc-space-follow-item .pgc-item-info .pgc-item-state i {
-        background-color: var(--color-42)!important
-    }
-    .ps__rail-y.ps--clicking .ps__thumb-y,
-    .ps__rail-y:focus>.ps__thumb-y,
-    .ps__rail-y:hover>.ps__thumb-y,
-    .be-switch-container.is-checked .be-switch,
-    .be-pager-item-active {
-        background-color: var(--bili-blue)!important
-    }
-    #page-setting #setting-new-tag-btn {
-        background: linear-gradient(#2c2c2c, #272727);
-    }
-    /* -- 字体 -- */
-    .sec-empty-hint,
-    .section .count,
-    .list-create .text,
-    #page-index .channel .empty-state p,
-    .section-title,
-    .modal-wrapper .modal-header-close,
-    .n .n-data .n-data-k,
-    .n .n-data .n-data-v,
-    #page-index #i-ann-content textarea,
-    #page-index #i-ann-content,
-    .g-search input,
-    .be-dropdown-item,
-    .i-live .i-live-unfo-btn,
-    .i-live .i-live-fo-count,
-    .user .info .meta span.text,
-    .breadcrumb .item.cur,
-    .n .n-num,
-    #page-fav .fav-sidenav .nav-title .text,
-    #page-fav .fav-sidenav .num,
-    #page-fav .fav-main .fav-meta,
-    #page-fav .fav-sidenav .favlist-title,
-    #page-fav .fav-sidenav .watch-later,
-    #page-fav .fav-main .filter-item,
-    #page-fav .fav-main .search-input input,
-    #page-fav .fav-main .search-types,
-    #page-fav .fav-main .filter-item .filter-type .be-dropdown-item span,
-    .sub-tabs span,
-    .pgc-space-follow-item .pgc-item-info .pgc-item-desc,
-    .pgc-space-follow-item .bangumi-options i.iconfont,
-    .pgc-space-follow-item .bangumi-options .opt-list li,
-    #page-setting .setting-privacy-item .setting-privacy-name,
-    #page-setting .setting-privacy-item .setting-privacy-switcher .be-switch-label,
-    #page-setting #setting-index-modules.is-dragging .setting-index-module:hover,
-    #page-setting #setting-new-tag,
-    .i-pin-data,
-    .i-pin-desc,
-    .small-item .meta>span,
-    .elec .elec-status,
-    .i-live .i-live-off-guest p,
-    .feed-title,
-    .video-container .text-area .content,
-    .video-container .text-area .view-danmaku,
-    .card .button-area .more-button,
-    .card .more-panel,
-    .article-container .text-area .content,
-    .shop-panel .panel-desc,
-    .bangumi-container .text-area .view-danmaku,
-    .div-load-more .load-more,
-    #page-video #submit-video-type-filter a .count,
-    .list-item .desc,
-    .list-item .meta,
-    .be-pager-item,
-    .be-pager-item-jump-next:after,
-    .be-pager-item-jump-prev:after,
-    .be-pager-total,
-    .be-pager-options-elevator,
-    .space_input,
-    .contribution-sidenav .num,
-    #page-article .row .breadcrumb .item,
-    .album-list__tab-count,
-    .album-list__title,
-    .album-list__tab-name,
-    .album-card__info,
-    .be-dropdown-trigger .icon-ic_more,
-    .favInfo-box .favInfo-details .fav-options .meta {
-        color: var(--color-86)!important
-    }
-    #page-index .col-2 .section .user-auth.no-auth .no-auth-title span,
-    #page-fav .fav-main.cur-fav-empty .filter-item.do-batch .text,
-    #page-fav .fav-main .filter-item .filter-type .be-dropdown-item i,
-    .pgc-space-follow-item .pgc-item-info .type-and-area,
-    .pgc-space-follow-item .pgc-item-info .pgc-item-state,
-    .sub-tabs .filter-content,
-    .i-live-fo-count.space-fans,
-    .small-item .meta {
-        color: var(--color-66)!important
-    }
-    .large-item .title,
-    .pgc-space-follow-item .pgc-item-info .pgc-item-title,
-    .i-pin-title,
-    .article-title a,
-    .video-container .text-area .title,
-    .article-container .text-area .title,
-    .shop-desc .desc-box .title,
-    .bangumi-container .text-area .title,
-    .list-item .title {
-        color: var(--color-af)!important
-    }
-    .contribution-sidenav .contribution-item.cur .num,
-    .contribution-sidenav .contribution-item.cur .text,
-    #page-fav .fav-sidenav .fav-item.cur .be-dropdown-trigger .icon-ic_more,
-    #page-fav .fav-sidenav .fav-item.cur .iconfont,
-    #page-fav .fav-sidenav .fav-item.cur .num,
-    #page-fav .fav-sidenav .fav-item.cur .text,
-    .h .h-vipType,
-    .be-pager-item-active a,
-    .favInfo-box .favInfo-details .fav-options .fav-play {
-        color: var(--color-ff)!important
-    }
-    .pgc-space-follow-item .bangumi-options .opt-list li.disabled,
-    .pgc-space-follow-item .bangumi-options .opt-list li.disabled:hover {
-        color: var(--color-14)!important
-    }
-    .modal-wrapper .modal-header-close:hover,
-    .n .n-btn.active,
-    .be-dropdown-item:hover,
-    .sub-tabs a.active,
-    .pgc-space-follow-item .bangumi-options .opt-list li:hover,
-    .i-live .i-live-off-guest a,
-    .video-container.can-hover:hover .text-area .title,
-    .article-container:hover .text-area .title,
-    .list-item .title:hover,
-    .be-pager-item:hover a,
-    .be-pager-next:hover a,
-    .be-pager-prev:hover a,
-    .album-list__tab--active .album-list__tab-name,
-    .favInfo-box .favInfo-details .fav-options .meta:hover,
-    .tab-bar .tab .tab-text.selected,
-    .tab-bar .tab .tab-text[data-v-58304b2a]:hover {
-        color: var(--bili-blue)!important
-    }
-    #page-index .col-2 .section .user-auth .auth-description {
-        color: var(--bili-yellow)!important
-    }
-    .card .main-content .user-name.big-vip a,
-    .card .main-content .user-name.big-vip a:hover {
-        color: var(--bili-pink)!important
-    }
-    /* -- 边框 -- */
-    #page-index .col-1,
-    .i-pin-v .be-tab,
-    .section,
-    .list-create,
-    .section .more,
-    .section .count,
-    #page-index .fav-covers,
-    .modal-wrapper .modal-title,
-    #page-index .col-2 .section:last-child,
-    .i-m-r2,
-    .i-m-upload,
-    #page-index .col-2 .section,
-    #page-index .col-2 .section-title,
-    .g-search input,
-    .be-dropdown-menu,
-    .i-live .i-live-unfo-btn,
-    .i-live .i-live-fo-count,
-    .contribution-sidenav~.main-content,
-    .contribution-sidenav,
-    #page-fav .fav-sidenav .nav-container,
-    #page-fav .fav-sidenav,
-    #page-fav .fav-sidenav .watch-later,
-    #page-fav .fav-main .favList-info,
-    #page-fav .fav-main .filter-item.search,
-    #page-fav .fav-main .search-types,
-    .pgc-space-follow-item .bangumi-options .opt-list,
-    #page-subs .mini-item,
-    #page-setting .setting-index-module,
-    #page-setting .setting-index-container,
-    #page-setting #setting-new-tag-btn,
-    #page-setting #setting-new-tag,
-    #page-setting .setting-tag-list a,
-    .article-content,
-    .s-content,
-    .card,
-    .video-container,
-    .card .more-panel,
-    .article-container,
-    .bangumi-container,
-    .list-item,
-    .be-pager-item,
-    .be-pager-next,
-    .be-pager-prev,
-    .space_input,
-    #page-myalbum .album-content,
-    .be-dropdown-item.be-dropdown-item-delimiter {
-        border-color: var(--color-42)!important
-    }
-    #page-fav .fav-main .small-item {
-        border-color: var(--color-2c)!important
-    }
-    .card .more-panel:after {
-        border-top-color: var(--color-42)!important;
-        border-left-color: var(--color-42)!important
-    }
-    .feed-title {
-        border: var(--bodr-42)!important;
-        border-bottom: none!important
-    }
-    .be-pager-item-active,
-    .be-pager-item:hover,
-    .be-pager-next:hover,
-    .be-pager-prev:hover {
-        border-color: var(--bili-blue)!important
-    }
-    /* -- 阴影 -- */
-    .n .n-inner,
-    .large-item .cover img,
-    .mini-item .cover img,
-    .col-full,
-    .i-pin-c {
-        box-shadow: 0 0 0 1px #424242!important
-    }
-    .article-container:hover .text-area {
-        box-shadow: 0 7px 14px 0 rgba(33, 33, 33, .9)!important
-    }
-    /* -- SVG -- */
-    .shop-panel .panel-desc .shop-icon {
-        filter: invert(51%) sepia(0%) saturate(423%) hue-rotate(197deg) brightness(105%) contrast(83%)!important
-    }
-    .album-card__count-icon--view,
-    .album-card__count-icon--like {
-        filter: invert(50%) sepia(22%) saturate(0%) hue-rotate(240deg) brightness(101%) contrast(84%)!important
-    }
-    /* -- 其他属性 -- */
-    .section .count:before,
-    .section .more,
-    #browser-version-tip #close-browser-tip,
-    .section .count:before,
-    .section .more,
-    #browser-version-tip #close-browser-tip,
-    .section .count:before,
-    .section .more,
-    #browser-version-tip #close-browser-tip,
-    .section .count:before,
-    .section .more,
-    #browser-version-tip #close-browser-tip,
-    .g-search .search-btn,
-    #page-fav .fav-sidenav .nav-title .icon-add,
-    .list-create .icon,
-    #page-fav .fav-sidenav .icon-fav-default,
-    #page-fav .fav-sidenav .icon-fav-private,
-    #page-fav .fav-sidenav .icon-fav-public,
-    #page-fav .fav-main .search-input .icon-search,
-    #page-setting .setting-index-module-icon,
-    #page-setting .setting-tag-list .delete,
-    .i-pin-meta .icon,
-    .small-item .meta>span .icon,
-    .meta-col span .icon,
-    .list-item .meta .icon {
-        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_2.png)!important
-    }
-    #page-index .fav-covers.empty,
-    .favInfo-box .favInfo-cover.empty,
-    .small-item .cover {
-        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/playlistbg.png)!important
-    }
-    .icon-m-ra {
-        filter: var(--filter-ff-86)!important
-    }
-    .elec .elec-status {
-        width: 111px!important;
-        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/elec_status.png)!important
-    }
-    #page-index .col-2 .section .user-auth .auth-icon.personal-auth {
-        background-position: -37px -50px!important
-    }
-}
-
-@-moz-document url-prefix("https://www.bilibili.com/read/") {
-    /* ===专栏=== */
-    /* -- 背景 -- */
-    .page-content .right-side .search-module .search-block input,
-    .page-content .left-side .article-list .article-list-holder .article-item,
-    .page-content .right-side .rank-module .rank-list .item,
-    .page-content .right-side .search-module .search-block .search-word-panel,
-    .page-content .right-side .search-module .search-block .search-word-panel .panel-title p span,
-    .page-content .left-side .partitio-name .filter .filter-btn-lst,
-    .tab-content,
-    .nav-tab-bar .tab-item,
-    .article-holder figure.img-box,
-    .page-content .right-side .up-list {
-        background-color: var(--color-21)!important
-    }
-    .up-info-holder .fixed-box .up-article-list-block .more-article,
-    .to-comment,
-    .to-comment .comment-num,
-    .page-content .right-side .rank-module .rank-list .item .rank-index,
-    .page-content .right-side .rank-module .complete-rank,
-    .article-list-holder-block .article-list-plane .button:hover,
-    .up-info-holder .fixed-box .rightside-article-list-btn:hover,
-    .bb-comment .comment-list .list-item .reply-box .view-more .btn-more:hover,
-    .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more:hover,
-    .article-holder img,
-    .banner-wrap {
-        background-color: var(--color-2c)!important
-    }
-    .page-content .right-side .search-module .search-block .search-word-panel .history-item:hover,
-    .page-content .right-side .search-module .search-block .search-word-panel .suggest-item:hover {
-        background-color: var(--color-27)!important
-    }
-    .page-content .right-side .rank-module .rank-list .item:nth-child(-n+3) .rank-index {
-        background-color: var(--bili-red)!important
-    }
-    /* -- 字体 -- */
-    .title-container .title,
-    .article-holder,
-    .article-holder .color-gray-03,
-    .up-info-holder .fixed-box .more .top-bar,
-    .up-info-holder .fixed-box .up-article-list-block .block-title,
-    .up-info-holder .fixed-box .up-article-list-block .article-list .article-item .article-title .info,
-    .up-info-holder .fixed-box .more .help .title,
-    .up-info-holder .fixed-box .more .link .title,
-    .to-comment .comment-num,
-    .up-info-holder .fixed-box .up-article-list-block .article-list .article-item .article-title,
-    .authority,
-    .original,
-    .article-action .more .more-ops-list,
-    .article-action,
-    .page-content .right-side .search-module .search-block input,
-    .page-content .right-side .rank-module .rank-list .item .rank-index,
-    .page-content .right-side .more .top-bar,
-    .page-content .right-side .search-module .search-block .search-word-panel .panel-title p span,
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-title-holder .list-mark,
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-desc,
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .up-content .nick-name,
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .category,
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .like,
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .reply,
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .view,
-    .page-content .left-side .partitio-name,
-    .up-info-holder .fixed-box .rightside-article-list-btn .label,
-    .up-info-holder .fixed-box .rightside-article-list-btn .title,
-    .article-list-holder-block .article-list-plane .button.off .label,
-    .article-list-holder-block .article-list-plane .button .title,
-    .article-list-holder-block .article-list-plane .button .label,
-    .article-list-holder-block .article-list-name,
-    .up-info-holder .fixed-box .up-info-block .up-info-right-block .fans-num,
-    .up-info-holder .fixed-box .up-info-block .up-info-right-block .view-num,
-    .up-info-holder .fixed-box .up-info-block .up-info-right-block .row-2,
-    .article-holder h1 {
-        color: var(--color-86)!important
-    }
-    .article-holder .color-default,
-    .page-content .right-side .up-list .up-item .info-holder .dynamic {
-        color: var(--color-66)!important
-    }
-    .asifadeaway,
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-title-holder {
-        color: var(--color-af)!important
-    }
-    .page-content .right-side .rank-module .rank-list .item:nth-child(-n+3) .rank-index {
-        color: var(--color-ff)!important
-    }
-    .up-info-holder .fixed-box .more .help .title:hover,
-    .up-info-holder .fixed-box .more .link .title:hover,
-    .article-holder .color-blue-04,
-    .up-info-holder .fixed-box .up-article-list-block .article-list .article-item:hover .article-title {
-        color: var(--bili-blue)!important
-    }
-    .article-holder .color-pink-04 {
-        color: var(--bili-red)!important
-    }
-    .bb-comment .reply-notice .notice-item a,
-    .comment-bilibili-fold .reply-notice .notice-item a {
-        color: var(--bili-ryellow)!important
-    }
-    /* -- 边框 -- */
-    .up-info-holder .fixed-box .more .top-bar,
-    .up-info-holder .fixed-box .up-article-list-block .block-title,
-    .to-comment,
-    .to-comment .comment-num,
-    .article-action,
-    .bb-comment .comment-header,
-    .comment-bilibili-fold .comment-header,
-    .categories-bar,
-    .page-content .right-side .rank-module .rank-tabs-bar,
-    .page-content .right-side .search-module .search-block,
-    .page-content .left-side .article-list .article-list-holder .article-item,
-    .page-content .right-side .more .top-bar,
-    .page-content .right-side .search-module .search-block .search-word-panel,
-    .page-content .right-side .search-module .search-block .search-word-panel .panel-title .split-line,
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-title-holder .list-mark,
-    .tag-container .tag-item .tag-content,
-    .up-info-holder .fixed-box .rightside-article-list-btn,
-    .article-list-holder-block .article-list-plane,
-    .up-info-holder .fixed-box .rightside-article-list-btn .label,
-    .article-list-holder-block .article-list-plane .button#article-list-btn .label,
-    .article-list-holder-block .article-list-plane .button#article-list-btn .title,
-    .page-content .right-side .up-list .title,
-    .banner-wrap {
-        border-color: var(--color-42)!important
-    }
-    .to-comment:hover {
-        border-color: var(--bili-blue)!important
-    }
-    /* -- 其他属性 -- */
-    .page-content .right-side .search-module .search-block .search-icon {
-        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/search_icon.png) !important
-    }
-    .page-content .right-side .search-module .search-block .search-word-panel .history-item .cancel {
-        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/search_history_del.png) !important
-    }
-    .page-content .right-side .search-module .search-block .search-word-panel .history-item .cancel:hover {
-        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/search_history_del_hover.png) !important
-    }
-    .up-info-holder .fixed-box .more .help .icon,
-    .page-content .right-side .more .help .icon {
-        background: url(https://www.asifadeaway.com/Stylish/bilibili/help.png) center no-repeat!important;
-        background-size: cover!important
-    }
-    .to-comment {
-        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/to_comment.png) !important
-    }
-    .to-comment:hover {
-        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/to_comment_hover.png) !important
-    }
-    .nav-tab-bar .tab-item:before {
-        mix-blend-mode: soft-light!important
-    }
-    .nav-tab-bar .tab-item.on:before {
-        mix-blend-mode: unset!important
-    }
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .view:before,
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .like:before,
-    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .reply:before {
-        filter: invert(50%) sepia(2%) saturate(15%) hue-rotate(356deg) brightness(106%) contrast(80%)!important;
-    }
-    .page-content .left-side .partitio-name .filter:after {
-        filter: var(--filter-ff-86)!important
-    }
-    .up-info-holder .fixed-box .rightside-article-list-btn .icon-list {
-        filter: var(--filter-22-86)!important;
-    }
-}
-
-@-moz-document url-prefix("https://www.bilibili.com/watchlater") {
-    /* ===稍后再看=== */
-    /* -- 背景 -- */
-    .watch-later-list header .s-btn,
-    .watch-later-list header .d-btn {
-        background-color: var(--color-21)!important
-    }
-    .watch-later-list header .s-btn:hover {
-        background-color: var(--bili-blue)!important
-    }
-    /* -- 字体 -- */
-    .watch-later-list .list-box .av-item .key {
-        color: var(--color-86)!important
-    }
-    .watch-later-list header .s-btn {
-        color: var(--bili-blue)!important
-    }
-    .watch-later-list header .s-btn:hover {
-        color: var(--color-ff)!important
-    }
-    .watch-later-list header .d-btn {
-        color: var(--color-42)!important
-    }
-    /* -- 边框 -- */
-    .watch-later-list .list-box .av-item .av-about,
-    .watch-later-list header .d-btn {
-        border-color: var(--color-42)!important
-    }
-    /* -- 其他 -- */
-    .watch-later-list .list-box .av-item .av-about .info .state .btn-del {
-        filter: var(--filter-98a2aa-86)!important
-    }
-}
-
 @-moz-document url-prefix("https://www.bilibili.com/video"),
 url-prefix("https://www.bilibili.com/bangumi/play") {
-    /* ===播放页=== */
+    /* ===视频播放页=== */
     /* -- 背景 -- */
     .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap .bscroll-vertical-scrollbar.mousedown,
     .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap:hover .bscroll-vertical-scrollbar {
@@ -2139,39 +1629,6 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     }
 }
 
-@-moz-document url-prefix("https://www.bilibili.com/video/online") {
-    /* ===当前在线=== */
-    /* -- 背景 -- */
-    .online-list .ebox {
-        background-color: var(--color-21)!important
-    }
-    .online-list .ebox .ol {
-        background-color: var(--color-2c)!important
-    }
-    /* -- 字体 -- */
-    .b-head.online .b-head-t,
-    .online-list .ebox .etitle {
-        color: var(--color-86)!important
-    }
-    .online-list .ebox .dlo .author,
-    .online-list .ebox .dlo span {
-        color: var(--color-66)!important
-    }
-    .online-list .ebox a:hover .etitle {
-        color: var(--bili-blue)!important
-    }
-    /* -- 边框 -- */
-    .online-list .ebox,
-    .b-head.online {
-        border-color: var(--color-42)!important
-    }
-    /* -- 其他 -- */
-    .online-list .ebox .dlo span .b-icon {
-        opacity: .5!important;
-        filter: var(--filter-98a2aa-86)!important
-    }
-}
-
 @-moz-document url-prefix("https://www.bilibili.com/v") {
     /* ===频道及频道详情页=== */
     /* -- 背景 -- */
@@ -2283,12 +1740,12 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
         background-color: var(--bili-lightblue)!important
     }
     .team-box .team-item .team-name:not(.selected),
-    .playercard .player-img[data-v-21416d6d] {
+    .playercard .player-img {
         background-image: linear-gradient(0deg, var(--color-2c), var(--color-21))!important
     }
     /* -- 字体 -- */
     .tab-item.active,
-    .competition-history-nodata p[data-v-54575123],
+    .competition-history-nodata p,
     .team-name,
     .filter-wrap .toggle-open-select,
     .user-contain .page-btn,
@@ -2336,7 +1793,7 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .game-menu .more,
     .team-box .title,
     .team-box .team-item .teamNum,
-    .team-box .team-infodata .infodata-box .score,
+    .team-box .team-infodata .infobox .score,
     .team-box .team-detail .team-player-img .controlbar,
     .ring-box .win-count,
     .headline .getmore,
@@ -2344,7 +1801,7 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .playrank-box .single-rank .single-rank-box .top-three .single-top .countnum,
     .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .other-count,
     .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .player-info .name,
-    .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .killdata-container .countnum,
+    .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .killcontainer .countnum,
     .headline .title,
     .border-table th,
     .border-table td .teamname,
@@ -2364,7 +1821,7 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .competition-user-money .competition-user-info .competition-user-coin>div i,
     .competition-score>li span,
     .tab-item,
-    .single-data-wrap .match-info-title .team,
+    .single-wrap .match-info-title .team,
     .competition-title,
     .all span,
     .team-msg .score,
@@ -2373,7 +1830,9 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .competition-title .competition-title-center .team-vs,
     .play-selector__item,
     .rank-card-panel .toggle,
-    .video-floor-infomation-m .zone-title .headline .link-more {
+    .video-floor-infomation-m .zone-title .headline .link-more,
+    .schedule-list .match-time,
+    .schedule-list .match-time .time-hours {
         color: var(--color-86)!important
     }
     .competition-score>li p,
@@ -2401,7 +1860,7 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .channel-list-preview .header-desc,
     .card-score .des,
     .team-box .subtitle,
-    .team-box .team-infodata .infodata-box .score-title,
+    .team-box .team-infodata .infobox .score-title,
     .ring-box .inset-text,
     .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .player-info .position,
     .playrank-box .single-rank .single-rank-box .top-three .single-top .logobox .belongteam,
@@ -2597,7 +2056,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
         border-color: var(--color-21)!important
     }
     .schedule-filter .filter-content .content-all div.active,
-    .video-floor-infomation-m .zone-title .headline .link-more:hover {
+    .video-floor-infomation-m .zone-title .headline .link-more:hover,
+    .schedule-list .match-operate.live {
         border-color: var(--bili-blue)!important
     }
     .home-slide .trigger img.on {
@@ -2664,7 +2124,7 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     }
     .video-floor-m .zone-title .headline .link-more:hover i,
     .sec-rank .more-link:hover .icon-arrow-r {
-        filter: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%);
+        filter: var(--filter-626a6e-blue)!important
     }
     .subscribe-panel .subscribe-item .move-icon,
     .sidebar-search-bar .search-icon {
@@ -2674,7 +2134,7 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/topbg.png) !important
     }
     .tag-more .b-toggle-btn {
-        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/toggle-base.png) !important
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/toggle_base.png) !important
     }
     .b-toggle-btn {
         display: flex!important;
@@ -2705,26 +2165,192 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     }
 }
 
-@-moz-document url-prefix("https://www.bilibili.com/cheese?") {
-    /* ===课堂=== */
+@-moz-document url-prefix("https://www.bilibili.com/anime") {
+    /* ===番剧=== */
     /* -- 背景 -- */
-    .nav-wrapper {
-        background-color: var(--color-1b)!important
+    #app,
+    .spread-module .num,
+    .new-stat-module .zone-title .headline .new-stat-more,
+    .new-stat-module .zone-title .headline .new-stat-more:hover,
+    .block-area .follow-wrapper .follow-head .follow-more,
+    .block-area .follow-wrapper .follow-head .follow-more:hover,
+    .pgc-rank-dropdown,
+    .pgc-rank-dropdown .dropdown-list,
+    .timeline-header,
+    .tl-head .tl-day,
+    .timeline-wrapper,
+    .season-timeline .season-group .group-time:before {
+        background-color: var(--color-21)!important
+    }
+    .block-area .timeline-wrapper.block-left .timeline-box .timeline-item .item-right p.num a,
+    .pgc-rank-list .rank-item .ri-num,
+    .sec-rank .more-link,
+    .video-info-module {
+        background-color: var(--color-2c)!important
+    }
+    .sec-rank .more-link:hover,
+    .pgc-rank-dropdown .dropdown-list .dropdown-item:hover {
+        background-color: var(--color-27)!important
+    }
+    .tl-head .tl-day .indicator {
+        background-color: var(--color-42)!important
+    }
+    .season-timeline .season-group.is-published .group-time:before {
+        background-color: var(--color-86)!important
+    }
+    .block-area .timeline-wrapper.block-left .timeline-box .timeline-item.new .item-right p.num a,
+    .pgc-rank-list .rank-item.highlight .ri-num {
+        background-color: var(--bili-pink)!important
+    }
+    .block-area .timeline-toggle-block .timeline-toggle-btn {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/toggle_base.png) !important
+    }
+    .index-entry-wrapper .filter-block-title a:after,
+    .new-stat-module .zone-title .headline .new-stat-more .icon,
+    .sec-rank .more-link .icon-arrow-r,
+    .pgc-rank-dropdown .icon-arrow-down,
+    .block-area .follow-wrapper .follow-head .follow-more .icon {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_3.png) !important
+    }
+    .tl-head .tl-day .day-of-week,
+    .season-timer .current-timer:before,
+    .timeline-header>div[class*="arrow-"] {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/anime_icons.png) !important
     }
     /* -- 字体 -- */
-    .nav-wrapper {
+    .sort-item,
+    .video-info-module,
+    .new-stat-module .zone-title .headline .new-stat-more,
+    .block-area .timeline-wrapper.block-left .item-right p.num a,
+    .block-area .timeline-title .headline .name,
+    .block-area .timeline-toggle-block .timeline-toggle-btn,
+    .index-entry-wrapper .filter-block-title span,
+    .video-item-biref .biref-info .biref-title,
+    .new-stat-module .zone-title .headline .name,
+    .block-area .block-left .block-header .block-title,
+    .spread-module .t,
+    .pgc-rank-list .rank-item .ri-detail .ri-title,
+    .pgc-rank-list .rank-item .ri-num,
+    .sec-rank .more-link,
+    .pgc-rank-dropdown,
+    .pgc-rank-dropdown .dropdown-list,
+    .video-info-module .v-info,
+    .video-info-module .v-preview .txt,
+    .block-area .follow-wrapper .follow-head .follow-more,
+    .filter-wrapper .filter-title,
+    .tl-head .tl-day.today span.t-date,
+    .tl-head .tl-day.today span,
+    .season-timeline .season-group.is-published .group-time,
+    li.season-item .season-body .season-title {
         color: var(--color-86)!important
     }
+    .timeline-box .timeline-item .item-right p.num,
+    .follow-item .details .ep-info,
+    .follow-item .details .ep-intro,
+    .index-entry-wrapper .filter-list .filter-item,
+    .spread-module .num,
+    .pgc-rank-list .rank-item .ri-detail .ri-point,
+    .video-info-module .v-data span,
+    .filter-block .filter-name,
+    .bangumi-item .pub-info,
+    li.season-item .season-body .season-desc {
+        color: var(--color-66)!important
+    }
+    .block-area .timeline-wrapper.block-left .timeline-box .timeline-item.new .item-right p.num a,
+    .block-area .timeline-title .headline .timeline-more:hover,
+    .carousel-wrapper .carou-info span a,
+    .pgc-rank-list .rank-item.highlight .ri-num {
+        color: var(--color-ff)!important
+    }
+    .block-area .timeline-toggle-block .timeline-toggle-btn:hover,
+    .video-item-biref .biref-info .biref-title:hover,
+    .spread-module a:hover .t,
+    .new-stat-module .zone-title .headline .new-stat-more:hover,
+    .block-area .follow-wrapper .follow-head .follow-more:hover,
+    .sec-rank .more-link:hover,
+    .pgc-rank-dropdown .dropdown-list .dropdown-item:hover,
+    .pgc-rank-list .rank-item:hover .ri-title,
+    .filter-block .filter-item-wrapper .filter-item.on {
+        color: var(--bili-blue)!important
+    }
+    .block-area .timeline-title .headline .timeline-more,
+    li.season-item .season-body .season-desc.published {
+        color: var(--bili-pink)!important
+    }
     /* -- 边框 -- */
+    .video-info-module,
+    .video-info-module .v-info .line,
+    .video-info-module .v-preview,
+    .video-info-module .v-data,
+    .international-header .primary-menu-itnl,
+    .new-stat-module .zone-title .headline .new-stat-more,
+    .sec-rank .more-link,
+    .pgc-rank-dropdown,
+    .pgc-rank-dropdown .dropdown-list,
+    .block-area .follow-wrapper .follow-head .follow-more,
+    .timeline-header .tl-weeks:after,
+    .season-timeline .season-group.is-published,
+    .season-timeline .season-group {
+        border-color: var(--color-42)!important
+    }
+    .season-timeline .season-group.is-published .group-time:before,
+    .season-timeline .season-group .group-time:before {
+        border-color: var(--color-86)!important
+    }
+    .block-area .timeline-title .headline .timeline-more,
+    .season-timeline .season-group.today.is-published .group-time:before {
+        border-color: var(--bili-pink)!important
+    }
+    .new-stat-module .zone-title .headline .new-stat-more:hover,
+    .block-area .follow-wrapper .follow-head .follow-more:hover {
+        border-color: var(--bili-blue)!important
+    }
+    .sort-item i.up {
+        border-bottom-color: var(--color-86)!important
+    }
+    .sort-item i.down {
+        border-top-color: var(--color-86)!important
+    }
+    .sort-item.on i.active {
+        border-color: var(--bili-blue) rgba(0, 0, 0, 0)!important
+    }
+    /* -- 阴影 -- */
+    .timeline-header {
+        box-shadow: 0 10px 10px var(--color-21)!important
+    }
+    .timeline-header .tl-weeks,
+    .timeline-wrapper {
+        box-shadow: none!important
+    }
     /* -- 其他 -- */
-    .banner-bg-mask {
-        z-index: 1!important
+    img[alt][src]:not([src*="/"]),
+    img[alt][data-src]:not([data-src*="/"]) {
+        display: unset!important
     }
-    .banner-bg {
-        z-index: 0!important
+    .block-area .timeline-toggle-block .timeline-toggle-btn {
+        display: flex!important;
+        align-items: center!important;
+        justify-content: center!important
     }
-    .banner-slider-wrapper {
-        z-index: 2!important
+    .block-area .timeline-toggle-block .timeline-toggle-btn .timeline-icon-toggle-up,
+    .block-area .timeline-toggle-block .timeline-toggle-btn .timeline-icon-toggle-down {
+        margin: 0 0 0 5px!important
+    }
+    .block-area .timeline-toggle-block .timeline-toggle-btn:not(:hover) .timeline-icon-toggle-up,
+    .block-area .timeline-toggle-block .timeline-toggle-btn:not(:hover) .timeline-icon-toggle-down,
+    .mask .popup-box .popup-title .popup-close:not(:hover),
+    .spread-module .num i,
+    .video-info-module .v-data span .icon {
+        filter: var(--filter-98a2aa-86)!important
+    }
+    .new-stat-module .zone-title .headline .new-stat-more:hover .icon,
+    .block-area .follow-wrapper .follow-head .follow-more:hover .icon {
+        filter: var(--filter-626a6e-blue)!important
+    }
+    .spread-module .num i,
+    .spread-module .num i,
+    .video-info-module .v-data span .icon {
+        opacity: .5!important
     }
 }
 
@@ -2873,6 +2499,604 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     }
 }
 
+@-moz-document url-prefix("https://www.bilibili.com/read/") {
+    /* ===专栏=== */
+    /* -- 背景 -- */
+    .page-content .right-side .search-module .search-block input,
+    .page-content .left-side .article-list .article-list-holder .article-item,
+    .page-content .right-side .rank-module .rank-list .item,
+    .page-content .right-side .search-module .search-block .search-word-panel,
+    .page-content .right-side .search-module .search-block .search-word-panel .panel-title p span,
+    .page-content .left-side .partitio-name .filter .filter-btn-lst,
+    .tab-content,
+    .nav-tab-bar .tab-item,
+    .article-holder figure.img-box,
+    .page-content .right-side .up-list {
+        background-color: var(--color-21)!important
+    }
+    .up-info-holder .fixed-box .up-article-list-block .more-article,
+    .to-comment,
+    .to-comment .comment-num,
+    .page-content .right-side .rank-module .rank-list .item .rank-index,
+    .page-content .right-side .rank-module .complete-rank,
+    .article-list-holder-block .article-list-plane .button:hover,
+    .up-info-holder .fixed-box .rightside-article-list-btn:hover,
+    .bb-comment .comment-list .list-item .reply-box .view-more .btn-more:hover,
+    .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more:hover,
+    .article-holder img,
+    .banner-wrap {
+        background-color: var(--color-2c)!important
+    }
+    .page-content .right-side .search-module .search-block .search-word-panel .history-item:hover,
+    .page-content .right-side .search-module .search-block .search-word-panel .suggest-item:hover {
+        background-color: var(--color-27)!important
+    }
+    .page-content .right-side .rank-module .rank-list .item:nth-child(-n+3) .rank-index {
+        background-color: var(--bili-red)!important
+    }
+    /* -- 字体 -- */
+    .title-container .title,
+    .article-holder,
+    .article-holder .color-gray-03,
+    .up-info-holder .fixed-box .more .top-bar,
+    .up-info-holder .fixed-box .up-article-list-block .block-title,
+    .up-info-holder .fixed-box .up-article-list-block .article-list .article-item .article-title .info,
+    .up-info-holder .fixed-box .more .help .title,
+    .up-info-holder .fixed-box .more .link .title,
+    .to-comment .comment-num,
+    .up-info-holder .fixed-box .up-article-list-block .article-list .article-item .article-title,
+    .authority,
+    .original,
+    .article-action .more .more-ops-list,
+    .article-action,
+    .page-content .right-side .search-module .search-block input,
+    .page-content .right-side .rank-module .rank-list .item .rank-index,
+    .page-content .right-side .more .top-bar,
+    .page-content .right-side .search-module .search-block .search-word-panel .panel-title p span,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-title-holder .list-mark,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-desc,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .up-content .nick-name,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .category,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .like,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .reply,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .view,
+    .page-content .left-side .partitio-name,
+    .up-info-holder .fixed-box .rightside-article-list-btn .label,
+    .up-info-holder .fixed-box .rightside-article-list-btn .title,
+    .article-list-holder-block .article-list-plane .button.off .label,
+    .article-list-holder-block .article-list-plane .button .title,
+    .article-list-holder-block .article-list-plane .button .label,
+    .article-list-holder-block .article-list-name,
+    .up-info-holder .fixed-box .up-info-block .up-info-right-block .fans-num,
+    .up-info-holder .fixed-box .up-info-block .up-info-right-block .view-num,
+    .up-info-holder .fixed-box .up-info-block .up-info-right-block .row-2,
+    .article-holder h1 {
+        color: var(--color-86)!important
+    }
+    .article-holder .color-default,
+    .page-content .right-side .up-list .up-item .info-holder .dynamic {
+        color: var(--color-66)!important
+    }
+    .asifadeaway,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-title-holder {
+        color: var(--color-af)!important
+    }
+    .page-content .right-side .rank-module .rank-list .item:nth-child(-n+3) .rank-index {
+        color: var(--color-ff)!important
+    }
+    .up-info-holder .fixed-box .more .help .title:hover,
+    .up-info-holder .fixed-box .more .link .title:hover,
+    .article-holder .color-blue-04,
+    .up-info-holder .fixed-box .up-article-list-block .article-list .article-item:hover .article-title {
+        color: var(--bili-blue)!important
+    }
+    .article-holder .color-pink-04 {
+        color: var(--bili-red)!important
+    }
+    .bb-comment .reply-notice .notice-item a,
+    .comment-bilibili-fold .reply-notice .notice-item a {
+        color: var(--bili-ryellow)!important
+    }
+    /* -- 边框 -- */
+    .up-info-holder .fixed-box .more .top-bar,
+    .up-info-holder .fixed-box .up-article-list-block .block-title,
+    .to-comment,
+    .to-comment .comment-num,
+    .article-action,
+    .bb-comment .comment-header,
+    .comment-bilibili-fold .comment-header,
+    .categories-bar,
+    .page-content .right-side .rank-module .rank-tabs-bar,
+    .page-content .right-side .search-module .search-block,
+    .page-content .left-side .article-list .article-list-holder .article-item,
+    .page-content .right-side .more .top-bar,
+    .page-content .right-side .search-module .search-block .search-word-panel,
+    .page-content .right-side .search-module .search-block .search-word-panel .panel-title .split-line,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-title-holder .list-mark,
+    .tag-container .tag-item .tag-content,
+    .up-info-holder .fixed-box .rightside-article-list-btn,
+    .article-list-holder-block .article-list-plane,
+    .up-info-holder .fixed-box .rightside-article-list-btn .label,
+    .article-list-holder-block .article-list-plane .button#article-list-btn .label,
+    .article-list-holder-block .article-list-plane .button#article-list-btn .title,
+    .page-content .right-side .up-list .title,
+    .banner-wrap {
+        border-color: var(--color-42)!important
+    }
+    .to-comment:hover {
+        border-color: var(--bili-blue)!important
+    }
+    /* -- 其他属性 -- */
+    .page-content .right-side .search-module .search-block .search-icon {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/search_icon.png) !important
+    }
+    .page-content .right-side .search-module .search-block .search-word-panel .history-item .cancel {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/search_history_del.png) !important
+    }
+    .page-content .right-side .search-module .search-block .search-word-panel .history-item .cancel:hover {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/search_history_del_hover.png) !important
+    }
+    .up-info-holder .fixed-box .more .help .icon,
+    .page-content .right-side .more .help .icon {
+        background: url(https://www.asifadeaway.com/Stylish/bilibili/help.png) center no-repeat!important;
+        background-size: cover!important
+    }
+    .to-comment {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/to_comment.png) !important
+    }
+    .to-comment:hover {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/to_comment_hover.png) !important
+    }
+    .nav-tab-bar .tab-item:before {
+        mix-blend-mode: soft-light!important
+    }
+    .nav-tab-bar .tab-item.on:before {
+        mix-blend-mode: unset!important
+    }
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .view:before,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .like:before,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-info-bar .reply:before {
+        filter: invert(50%) sepia(2%) saturate(15%) hue-rotate(356deg) brightness(106%) contrast(80%)!important;
+    }
+    .page-content .left-side .partitio-name .filter:after {
+        filter: var(--filter-ff-86)!important
+    }
+    .up-info-holder .fixed-box .rightside-article-list-btn .icon-list {
+        filter: var(--filter-22-86)!important;
+    }
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/cheese?") {
+    /* ===课堂=== */
+    /* -- 背景 -- */
+    .nav-wrapper {
+        background-color: var(--color-1b)!important
+    }
+    /* -- 字体 -- */
+    .nav-wrapper {
+        color: var(--color-86)!important
+    }
+    /* -- 边框 -- */
+    /* -- 其他 -- */
+    .banner-bg-mask {
+        z-index: 1!important
+    }
+    .banner-bg {
+        z-index: 0!important
+    }
+    .banner-slider-wrapper {
+        z-index: 2!important
+    }
+}
+
+@-moz-document url-prefix("https://space.bilibili.com/") {
+    /* ===个人空间=== */
+    /* -- 背景 -- */
+    .modal-wrapper,
+    .ps .ps__rail-x.ps--clicking,
+    .ps .ps__rail-x:focus,
+    .ps .ps__rail-x:hover,
+    .ps .ps__rail-y.ps--clicking,
+    .ps .ps__rail-y:focus,
+    .ps .ps__rail-y:hover,
+    #page-setting #setting-index-modules.is-dragging .setting-index-module:hover,
+    .elec .elec-status,
+    .shop-panel .shop-list {
+        background-color: var(--color-21)!important
+    }
+    .n .n-inner,
+    #page-index .col-1,
+    .section .count,
+    #page-index .col-2 .section:last-child,
+    #page-index .col-2 .section.elec,
+    #page-index .col-2 .section.i-m,
+    #page-index .col-2 .section,
+    .be-textarea_inner,
+    .be-dropdown-menu,
+    #page-dynamic .col-2 .section,
+    .col-full,
+    #page-channel-index .channel-option.no-channel,
+    #page-fav .fav-main .search-input input,
+    .pgc-space-follow-item .bangumi-options .opt-list,
+    .pgc-space-follow-item .bangumi-options .opt-list li.disabled:hover,
+    .elec .elec-status-bg-grey,
+    .feed-title,
+    .card,
+    .card .more-panel,
+    .card .more-panel:after,
+    .article-container,
+    .bangumi-container,
+    .be-pager-item,
+    .be-pager-next,
+    .be-pager-prev,
+    .space_input {
+        background-color: var(--color-2c)!important
+    }
+    .list-create,
+    .g-search input,
+    .be-dropdown-item:hover,
+    #page-fav .fav-sidenav .fav-item:hover,
+    .favInfo-box.favEmpty .favInfo-details .fav-options .fav-play,
+    .favInfo-box.invalid .favInfo-details .fav-options .fav-play,
+    .pgc-space-follow-item .bangumi-options .opt-list li:hover,
+    .be-switch,
+    #page-setting #setting-new-tag,
+    #page-setting .setting-tag-list a,
+    .video-container,
+    .card-content .repost,
+    .card-content .not-support,
+    .card-content .deleted,
+    #page-video #submit-video-type-filter,
+    .contribution-sidenav .contribution-item:hover,
+    .album-list__tabs {
+        background-color: var(--color-27)!important
+    }
+    #page-fav .fav-sidenav .icon-cursor {
+        background-color: var(--color-37)!important
+    }
+    .mini-item .cover img,
+    .pgc-space-follow-item .pgc-item-info .type-and-area i,
+    .pgc-space-follow-item .pgc-item-info .pgc-item-state i {
+        background-color: var(--color-42)!important
+    }
+    .ps__rail-y.ps--clicking .ps__thumb-y,
+    .ps__rail-y:focus>.ps__thumb-y,
+    .ps__rail-y:hover>.ps__thumb-y,
+    .be-switch-container.is-checked .be-switch,
+    .be-pager-item-active {
+        background-color: var(--bili-blue)!important
+    }
+    #page-setting #setting-new-tag-btn {
+        background: linear-gradient(#2c2c2c, #272727);
+    }
+    /* -- 字体 -- */
+    .sec-empty-hint,
+    .section .count,
+    .list-create .text,
+    #page-index .channel .empty-state p,
+    .section-title,
+    .modal-wrapper .modal-header-close,
+    .n .n-data .n-data-k,
+    .n .n-data .n-data-v,
+    #page-index #i-ann-content textarea,
+    #page-index #i-ann-content,
+    .g-search input,
+    .be-dropdown-item,
+    .i-live .i-live-unfo-btn,
+    .i-live .i-live-fo-count,
+    .user .info .meta span.text,
+    .breadcrumb .item.cur,
+    .n .n-num,
+    #page-fav .fav-sidenav .nav-title .text,
+    #page-fav .fav-sidenav .num,
+    #page-fav .fav-main .fav-meta,
+    #page-fav .fav-sidenav .favlist-title,
+    #page-fav .fav-sidenav .watch-later,
+    #page-fav .fav-main .filter-item,
+    #page-fav .fav-main .search-input input,
+    #page-fav .fav-main .search-types,
+    #page-fav .fav-main .filter-item .filter-type .be-dropdown-item span,
+    .sub-tabs span,
+    .pgc-space-follow-item .pgc-item-info .pgc-item-desc,
+    .pgc-space-follow-item .bangumi-options i.iconfont,
+    .pgc-space-follow-item .bangumi-options .opt-list li,
+    #page-setting .setting-privacy-item .setting-privacy-name,
+    #page-setting .setting-privacy-item .setting-privacy-switcher .be-switch-label,
+    #page-setting #setting-index-modules.is-dragging .setting-index-module:hover,
+    #page-setting #setting-new-tag,
+    .i-pin-data,
+    .i-pin-desc,
+    .elec .elec-status,
+    .i-live .i-live-off-guest p,
+    .feed-title,
+    .video-container .text-area .content,
+    .video-container .text-area .view-danmaku,
+    .card .button-area .more-button,
+    .card .more-panel,
+    .article-container .text-area .content,
+    .shop-panel .panel-desc,
+    .bangumi-container .text-area .view-danmaku,
+    .div-load-more .load-more,
+    #page-video #submit-video-type-filter a .count,
+    .list-item .desc,
+    .list-item .meta,
+    .be-pager-item,
+    .be-pager-item-jump-next:after,
+    .be-pager-item-jump-prev:after,
+    .be-pager-total,
+    .be-pager-options-elevator,
+    .space_input,
+    .contribution-sidenav .num,
+    #page-article .row .breadcrumb .item,
+    .album-list__tab-count,
+    .album-list__title,
+    .album-list__tab-name,
+    .album-card__info,
+    .be-dropdown-trigger .icon-ic_more,
+    .favInfo-box .favInfo-details .fav-options .meta {
+        color: var(--color-86)!important
+    }
+    #page-index .col-2 .section .user-auth.no-auth .no-auth-title span,
+    #page-fav .fav-main.cur-fav-empty .filter-item.do-batch .text,
+    #page-fav .fav-main .filter-item .filter-type .be-dropdown-item i,
+    .pgc-space-follow-item .pgc-item-info .type-and-area,
+    .pgc-space-follow-item .pgc-item-info .pgc-item-state,
+    .sub-tabs .filter-content,
+    .i-live-fo-count.space-fans,
+    .small-item .meta {
+        color: var(--color-66)!important
+    }
+    .large-item .title,
+    .pgc-space-follow-item .pgc-item-info .pgc-item-title,
+    .i-pin-title,
+    .article-title a,
+    .video-container .text-area .title,
+    .article-container .text-area .title,
+    .shop-desc .desc-box .title,
+    .bangumi-container .text-area .title,
+    .list-item .title {
+        color: var(--color-af)!important
+    }
+    .contribution-sidenav .contribution-item.cur .num,
+    .contribution-sidenav .contribution-item.cur .text,
+    #page-fav .fav-sidenav .fav-item.cur .be-dropdown-trigger .icon-ic_more,
+    #page-fav .fav-sidenav .fav-item.cur .iconfont,
+    #page-fav .fav-sidenav .fav-item.cur .num,
+    #page-fav .fav-sidenav .fav-item.cur .text,
+    .h .h-vipType,
+    .be-pager-item-active a,
+    .favInfo-box .favInfo-details .fav-options .fav-play {
+        color: var(--color-ff)!important
+    }
+    .pgc-space-follow-item .bangumi-options .opt-list li.disabled,
+    .pgc-space-follow-item .bangumi-options .opt-list li.disabled:hover {
+        color: var(--color-14)!important
+    }
+    .modal-wrapper .modal-header-close:hover,
+    .n .n-btn.active,
+    .be-dropdown-item:hover,
+    .sub-tabs a.active,
+    .pgc-space-follow-item .bangumi-options .opt-list li:hover,
+    .i-live .i-live-off-guest a,
+    .video-container.can-hover:hover .text-area .title,
+    .article-container:hover .text-area .title,
+    .list-item .title:hover,
+    .be-pager-item:hover a,
+    .be-pager-next:hover a,
+    .be-pager-prev:hover a,
+    .album-list__tab--active .album-list__tab-name,
+    .favInfo-box .favInfo-details .fav-options .meta:hover,
+    .tab-bar .tab .tab-text.selected,
+    .tab-bar .tab .tab-text:hover {
+        color: var(--bili-blue)!important
+    }
+    #page-index .col-2 .section .user-auth .auth-description {
+        color: var(--bili-yellow)!important
+    }
+    .card .main-content .user-name.big-vip a,
+    .card .main-content .user-name.big-vip a:hover {
+        color: var(--bili-pink)!important
+    }
+    /* -- 边框 -- */
+    #page-index .col-1,
+    .i-pin-v .be-tab,
+    .section,
+    .list-create,
+    .section .more,
+    .section .count,
+    #page-index .fav-covers,
+    .modal-wrapper .modal-title,
+    #page-index .col-2 .section:last-child,
+    .i-m-r2,
+    .i-m-upload,
+    #page-index .col-2 .section,
+    #page-index .col-2 .section-title,
+    .g-search input,
+    .be-dropdown-menu,
+    .i-live .i-live-unfo-btn,
+    .i-live .i-live-fo-count,
+    .contribution-sidenav~.main-content,
+    .contribution-sidenav,
+    #page-fav .fav-sidenav .nav-container,
+    #page-fav .fav-sidenav,
+    #page-fav .fav-sidenav .watch-later,
+    #page-fav .fav-main .favList-info,
+    #page-fav .fav-main .filter-item.search,
+    #page-fav .fav-main .search-types,
+    .pgc-space-follow-item .bangumi-options .opt-list,
+    #page-subs .mini-item,
+    #page-setting .setting-index-module,
+    #page-setting .setting-index-container,
+    #page-setting #setting-new-tag-btn,
+    #page-setting #setting-new-tag,
+    #page-setting .setting-tag-list a,
+    .article-content,
+    .s-content,
+    .card,
+    .video-container,
+    .card .more-panel,
+    .article-container,
+    .bangumi-container,
+    .list-item,
+    .be-pager-item,
+    .be-pager-next,
+    .be-pager-prev,
+    .space_input,
+    #page-myalbum .album-content,
+    .be-dropdown-item.be-dropdown-item-delimiter {
+        border-color: var(--color-42)!important
+    }
+    #page-fav .fav-main .small-item {
+        border-color: var(--color-2c)!important
+    }
+    .card .more-panel:after {
+        border-top-color: var(--color-42)!important;
+        border-left-color: var(--color-42)!important
+    }
+    .feed-title {
+        border: var(--bodr-42)!important;
+        border-bottom: none!important
+    }
+    .be-pager-item-active,
+    .be-pager-item:hover,
+    .be-pager-next:hover,
+    .be-pager-prev:hover {
+        border-color: var(--bili-blue)!important
+    }
+    /* -- 阴影 -- */
+    .n .n-inner,
+    .large-item .cover img,
+    .mini-item .cover img,
+    .col-full,
+    .i-pin-c {
+        box-shadow: 0 0 0 1px #424242!important
+    }
+    .article-container:hover .text-area {
+        box-shadow: 0 7px 14px 0 rgba(33, 33, 33, .9)!important
+    }
+    /* -- SVG -- */
+    .shop-panel .panel-desc .shop-icon {
+        filter: invert(51%) sepia(0%) saturate(423%) hue-rotate(197deg) brightness(105%) contrast(83%)!important
+    }
+    .album-card__count-icon--view,
+    .album-card__count-icon--like {
+        filter: invert(50%) sepia(22%) saturate(0%) hue-rotate(240deg) brightness(101%) contrast(84%)!important
+    }
+    /* -- 其他属性 -- */
+    .section .count:before,
+    .section .more,
+    #browser-version-tip #close-browser-tip,
+    .section .count:before,
+    .section .more,
+    #browser-version-tip #close-browser-tip,
+    .section .count:before,
+    .section .more,
+    #browser-version-tip #close-browser-tip,
+    .section .count:before,
+    .section .more,
+    #browser-version-tip #close-browser-tip,
+    .g-search .search-btn,
+    #page-fav .fav-sidenav .nav-title .icon-add,
+    .list-create .icon,
+    #page-fav .fav-sidenav .icon-fav-default,
+    #page-fav .fav-sidenav .icon-fav-private,
+    #page-fav .fav-sidenav .icon-fav-public,
+    #page-fav .fav-main .search-input .icon-search,
+    #page-setting .setting-index-module-icon,
+    #page-setting .setting-tag-list .delete,
+    .i-pin-meta .icon,
+    .small-item .meta>span .icon,
+    .meta-col span .icon,
+    .list-item .meta .icon {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_2.png)!important
+    }
+    #page-index .fav-covers.empty,
+    .favInfo-box .favInfo-cover.empty,
+    .small-item .cover {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/playlistbg.png)!important
+    }
+    .small-item .meta>span .icon {
+        opacity: .5!important;
+    }
+    .icon-m-ra {
+        filter: var(--filter-ff-86)!important
+    }
+    .elec .elec-status {
+        width: 111px!important;
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/elec_status.png)!important
+    }
+    #page-index .col-2 .section .user-auth .auth-icon.personal-auth {
+        background-position: -37px -50px!important
+    }
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/video/online") {
+    /* ===当前在线=== */
+    /* -- 背景 -- */
+    .online-list .ebox {
+        background-color: var(--color-21)!important
+    }
+    .online-list .ebox .ol {
+        background-color: var(--color-2c)!important
+    }
+    /* -- 字体 -- */
+    .b-head.online .b-head-t,
+    .online-list .ebox .etitle {
+        color: var(--color-86)!important
+    }
+    .online-list .ebox .dlo .author,
+    .online-list .ebox .dlo span {
+        color: var(--color-66)!important
+    }
+    .online-list .ebox a:hover .etitle {
+        color: var(--bili-blue)!important
+    }
+    /* -- 边框 -- */
+    .online-list .ebox,
+    .b-head.online {
+        border-color: var(--color-42)!important
+    }
+    /* -- 其他 -- */
+    .online-list .ebox .dlo span .b-icon {
+        opacity: .5!important;
+        filter: var(--filter-98a2aa-86)!important
+    }
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/watchlater") {
+    /* ===稍后再看=== */
+    /* -- 背景 -- */
+    .watch-later-list header .s-btn,
+    .watch-later-list header .d-btn {
+        background-color: var(--color-21)!important
+    }
+    .watch-later-list header .s-btn:hover {
+        background-color: var(--bili-blue)!important
+    }
+    /* -- 字体 -- */
+    .watch-later-list .list-box .av-item .key {
+        color: var(--color-86)!important
+    }
+    .watch-later-list header .s-btn {
+        color: var(--bili-blue)!important
+    }
+    .watch-later-list header .s-btn:hover {
+        color: var(--color-ff)!important
+    }
+    .watch-later-list header .d-btn {
+        color: var(--color-42)!important
+    }
+    /* -- 边框 -- */
+    .watch-later-list .list-box .av-item .av-about,
+    .watch-later-list header .d-btn {
+        border-color: var(--color-42)!important
+    }
+    /* -- 其他 -- */
+    .watch-later-list .list-box .av-item .av-about .info .state .btn-del {
+        filter: var(--filter-98a2aa-86)!important
+    }
+}
+
 @-moz-document url-prefix("https://passport.bilibili.com") {
     /* ===护照中心=== */
     /* -- 背景 -- */
@@ -2904,23 +3128,41 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
 @-moz-document url-prefix("https://www.bilibili.com/account/history") {
     /* ===历史记录=== */
     /* -- 背景 -- */
-    .history-list .r-info {
+    .history-list .r-info,
+    .history-dlg,
+    .history-wrap .history-btn .btn {
         background-color: var(--color-21)!important
     }
     .history-list .cover-contain {
         background-color: var(--color-2c)!important
     }
+    .history-wrap .history-btn .btn:hover {
+        background-color: var(--bili-blue)!important
+    }
     /* -- 字体 -- */
     .history-wrap .b-head .b-head-t,
     .history-list .l-info .lastplay-time .lastplay-t,
-    .history-list .r-info .w-info .username {
+    .history-list .r-info .w-info .username,
+    .history-list .r-info .history-delete,
+    .history-dlg .dlg-txt,
+    .history-dlg .hsbtn .cancel,
+    .history-wrap .history-btn .btn {
         color: var(--color-86)!important
     }
     .history-list .r-info .w-info .pro-txt,
     .history-list .r-info .w-info .name {
         color: var(--color-66)!important
     }
-    .notification-tips a {
+    .bili-footer .boston-postcards li .tips {
+        color: var(--color-af)!important
+    }
+    .history-dlg .hsbtn .sure,
+    .history-wrap .history-btn .btn:hover {
+        color: var(--color-ff)!important
+    }
+    .notification-tips a,
+    .history-list .r-info .history-delete:hover,
+    .history-dlg .hsbtn .cancel:hover {
         color: var(--bili-blue)!important
     }
     /* -- 边框 -- */
@@ -2929,8 +3171,15 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .history-list .l-info .lastplay-time .history-red-round,
     .history-list .r-info .r-txt,
     .history-list .r-info .w-info .name,
-    .history-list .r-info .preview {
+    .history-list .r-info .preview,
+    .history-dlg,
+    .history-dlg .hsbtn .cancel,
+    .history-wrap .history-btn .btn {
         border-color: var(--color-42)!important
+    }
+    .history-dlg .hsbtn .cancel:hover,
+    .history-wrap .history-btn .btn:hover {
+        border-color: var(--bili-blue)!important
     }
     .history-list .l-info .lastplay-time .history-red-round {
         border-top-color: transparent!important;
@@ -2942,8 +3191,5 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     /* -- 其他 -- */
     .top-banner {
         height: 106px!important
-    }
-    img[src="null"] {
-        display: none!important
     }
 }
