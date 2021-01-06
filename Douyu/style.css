@@ -2,7 +2,7 @@
     /*=== 
      * 版权信息
      * 作者：QIUZAIYOU
-     * 最后更新：20210105
+     * 最后更新：20210106
      * Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -3317,7 +3317,9 @@ url-prefix("http://www.douyu.com/") {
     .GuessGameMiniPanel-wrapper,
     .ActiviesExpanel-ExpandBtn,
     .GuessMainPanelHeader-icon.fishballTreasure,
-    .FishpondEntrance-word {
+    .FishpondEntrance-word,
+    img[src*="default-avatar"],
+    img[src*="default-cover"] {
         opacity: 0!important;
         display: none!important;
     }
@@ -3777,7 +3779,8 @@ url-prefix("http://www.douyu.com/") {
     .FT-modal .FT-modal-info,
     .FT-modal .FT-modal-desc,
     .FT-modal .FT-modal-tip.is-shark-enough,
-    .FTP-singleTask-btn.is-got, .FTP-singleTask-btn.is-unfinished{
+    .FTP-singleTask-btn.is-got,
+    .FTP-singleTask-btn.is-unfinished {
         color: #868686!important;
     }
     .RichRankList-item.is-stealth .RichRankList-name {
@@ -4762,27 +4765,23 @@ url-prefix("http://www.douyu.com/") {
     }
     /*=== 用户昵称颜色 ===*/
     .Barrage-nickName {
-        color: /*[[UserNameColor]]*/
-        !important;
+        color: /*[[UserNameColor]]*/!important;
     }
     /*=== 用户发言颜色 ===*/
     .UserLevel+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
     .UserLevel+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
     .UserLevel+span+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]) {
-        color: /*[[UserContentColor]]*/
-        !important;
+        color: /*[[UserContentColor]]*/!important;
     }
     /*=== 主播昵称颜色 ===*/
     .AnchorLevel+.Barrage-nickName,
     .AnchorLevel+span+.Barrage-nickName {
-        color: /*[[AnchorNameColor]]*/
-        !important;
+        color: /*[[AnchorNameColor]]*/!important;
     }
     /*=== 主播发言颜色 ===*/
     .AnchorLevel+.Barrage-nickName+.Barrage-content,
     .AnchorLevel+span+.Barrage-nickName+.Barrage-content {
-        color: /*[[AnchorContentColor]]*/
-        !important;
+        color: /*[[AnchorContentColor]]*/!important;
     }
 }
 
