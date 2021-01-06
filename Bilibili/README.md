@@ -1,4 +1,4 @@
-# 夜间哔哩 NightMode For Bilibili.com ![Last_Update](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.01.04-blue)
+# 夜间哔哩 NightMode For Bilibili.com ![Last_Update](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.01.06-blue)
 
 ![夜间哔哩 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/bilibili/StylishCover.png)
 
@@ -17,6 +17,8 @@
 施工中，敬请期待。
 
 ### 2021
+
+`01.06 11:39`：继续「频道及频道详情页」夜化工作，同时继续优化已完成页面夜化效果。
 
 `01.04 21:52`：完成「消息页」夜化，可能完成「频道及频道详情页」夜化，继续优化已完成页面夜化效果。
 
