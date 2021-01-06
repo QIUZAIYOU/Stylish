@@ -545,11 +545,71 @@
     .placeholder .placeholder-img {
         mix-blend-mode: multiply!important
     }
-    img[src*='face/member/noface.jpg'] {
-        mix-blend-mode: overlay!important
-    }
+    /* img[src*='face/member/noface.jpg']{mix-blend-mode: overlay!important} */
     .nodata-contain .nodata {
         mix-blend-mode: soft-light!important
+    }
+    /* -- 用户卡片 -- */
+    .user-card-m iframe {
+        display: none
+    }
+    .members-info .avatar,
+    .user-card-m .loading .mc1,
+    .user-card-m .loading .mc3,
+    .user-card-m .loading .mc4,
+    .user-card .loading .mc1,
+    .user-card .loading .mc3,
+    .user-card .loading .mc4,
+    #id-card {
+        background-color: var(--color-2c)!important
+    }
+    .user-card-m,
+    .user-card-m .face,
+    .user-card,
+    .user-card .face {
+        background-color: var(--color-21)!important
+    }
+    .user-card-m .btn-box .liked,
+    .user-card-m .btn-box .liked:hover,
+    .user-card .btn-box .liked,
+    .user-card .btn-box .liked:hover,
+    #id-card .idc-btn {
+        background-color: var(--color-27)!important
+    }
+    .user-card-m .btn-box .message,
+    .user-card .btn-box .message {
+        background-color: var(--color-37)!important
+    }
+    .user-card-m .info .sign,
+    .user-card .info .sign,
+    #id-card .idc-auth-description,
+    #id-card .idc-meta {
+        color: var(--color-66)!important
+    }
+    .user-card-m .btn-box .like,
+    .user-card .btn-box .like {
+        color: var(--color-ff)!important
+    }
+    .user-card-m .btn-box .like,
+    .user-card .btn-box .like,
+    #id-card .idc-btn:hover {
+        border-color: var(--bili-blue)!important
+    }
+    .user-card-m .btn-box a,
+    .user-card-m .face,
+    .user-card-m .btn-box .liked,
+    .user-card-m .btn-box .liked:hover,
+    .user-card-m,
+    .user-card .btn-box a,
+    .user-card .face,
+    .user-card .btn-box .liked,
+    .user-card .btn-box .liked:hover,
+    .user-card,
+    #id-card .idc-btn {
+        border-color: var(--color-42)!important
+    }
+    .userinfo-wrapper {
+        z-index: 199405191!important
     }
     /* -- 按钮 -- */
     .btn.default,
@@ -565,6 +625,7 @@
         color: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important
     }
+    #id-card .idc-btn.btn.primary,
     .btn.primary,
     .primary-btn,
     .sure {
@@ -584,62 +645,6 @@
         color: var(--color-86)!important;
         background: var(--color-21)!important;
         border-color: var(--color-42)!important
-    }
-    /* -- 用户卡片 -- */
-    .user-card-m iframe {
-        display: none
-    }
-    .members-info .avatar,
-    .user-card-m .loading .mc1,
-    .user-card-m .loading .mc3,
-    .user-card-m .loading .mc4,
-    .user-card .loading .mc1,
-    .user-card .loading .mc3,
-    .user-card .loading .mc4 {
-        background-color: var(--color-2c)!important
-    }
-    .user-card-m,
-    .user-card-m .face,
-    .user-card,
-    .user-card .face {
-        background-color: var(--color-21)!important
-    }
-    .user-card-m .btn-box .liked,
-    .user-card-m .btn-box .liked:hover,
-    .user-card .btn-box .liked,
-    .user-card .btn-box .liked:hover {
-        background-color: var(--color-27)!important
-    }
-    .user-card-m .btn-box .message,
-    .user-card .btn-box .message {
-        background-color: var(--color-37)!important
-    }
-    .user-card-m .info .sign,
-    .user-card .info .sign {
-        color: var(--color-66)!important
-    }
-    .user-card-m .btn-box .like,
-    .user-card .btn-box .like {
-        color: var(--color-ff)!important
-    }
-    .user-card-m .btn-box .like,
-    .user-card .btn-box .like {
-        border-color: var(--bili-blue)!important
-    }
-    .user-card-m .btn-box a,
-    .user-card-m .face,
-    .user-card-m .btn-box .liked,
-    .user-card-m .btn-box .liked:hover,
-    .user-card-m,
-    .user-card .btn-box a,
-    .user-card .face,
-    .user-card .btn-box .liked,
-    .user-card .btn-box .liked:hover,
-    .user-card {
-        border-color: var(--color-42)!important
-    }
-    .userinfo-wrapper {
-        z-index: 199405191!important
     }
     /* -- 分页 -- */
     .paging-box-big .current,
@@ -744,7 +749,7 @@
     }
     .go-top-m .go-top,
     .back-top-btn,
-    .to-top,
+    .to-top:not([style*="background-position"]),
     .back-top-tools .tool-item {
         color: var(--color-86)!important;
         border-color: var(--color-42)!important;
@@ -761,10 +766,10 @@
         background-color: var(--bili-blue)!important;
         background-position: -713px -72px!important
     }
-    .to-top {
+    .to-top:not([style*="background-position"]) {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/to_top.png) !important
     }
-    .to-top:hover {
+    .to-top:not([style*="background-position"]):hover {
         background-color: var(--bili-blue)!important;
         background-position: -60px!important
     }
@@ -2729,7 +2734,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .be-pager-item,
     .be-pager-next,
     .be-pager-prev,
-    .space_input {
+    .space_input,
+    .search-component-input input {
         background-color: var(--color-2c)!important
     }
     .list-create,
@@ -2748,10 +2754,13 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .card-content .deleted,
     #page-video #submit-video-type-filter,
     .contribution-sidenav .contribution-item:hover,
-    .album-list__tabs {
+    .album-list__tabs,
+    #page-follows .follow-sidenav .follow-list-container .follow-item:hover,
+    #page-follows .follow-main .follow-action-bottom .follow-action-fixtop {
         background-color: var(--color-27)!important
     }
-    #page-fav .fav-sidenav .icon-cursor {
+    #page-fav .fav-sidenav .icon-cursor,
+    .fans-action-follow {
         background-color: var(--color-37)!important
     }
     .mini-item .cover img,
@@ -2767,7 +2776,20 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
         background-color: var(--bili-blue)!important
     }
     #page-setting #setting-new-tag-btn {
-        background: linear-gradient(#2c2c2c, #272727);
+        background: linear-gradient(var(--color-2c), var(--color-27));
+    }
+    #app .h #h-sign {
+        color: #d6dee4!important;
+        background: transparent!important
+    }
+    #app .h #h-sign:hover {
+        background: hsla(0, 0%, 100%, .2)!important;
+        box-shadow: 0 0 0 1px hsla(0, 0%, 100%, .5)!important;
+    }
+    #app .h #h-sign:focus {
+        background: #fff!important;
+        box-shadow: inset 0 2px 4px rgba(35, 54, 86, .3)!important;
+        color: #6d757a!important;
     }
     /* -- 字体 -- */
     .sec-empty-hint,
@@ -2833,7 +2855,16 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .album-list__tab-name,
     .album-card__info,
     .be-dropdown-trigger .icon-ic_more,
-    .favInfo-box .favInfo-details .fav-options .meta {
+    .favInfo-box .favInfo-details .fav-options .meta,
+    #page-follows .follow-sidenav .nav-title .text,
+    #page-follows .follow-tabs,
+    .fans-action-follow,
+    .search-component-input input,
+    #page-follows .follow-main .follow-action-top .back-to-info,
+    #page-follows .follow-main .follow-action-bottom li,
+    #page-follows .follow-main .follow-action-bottom .select-counter,
+    .section .operation,
+    #page-channel-detail .watch-later-btn {
         color: var(--color-86)!important
     }
     #page-index .col-2 .section .user-auth.no-auth .no-auth-title span,
@@ -2843,7 +2874,11 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .pgc-space-follow-item .pgc-item-info .pgc-item-state,
     .sub-tabs .filter-content,
     .i-live-fo-count.space-fans,
-    .small-item .meta {
+    .small-item .meta,
+    #page-follows .list-item .auth-description,
+    #page-follows .follow-sidenav .num,
+    #page-channel-detail .channel-info .meta,
+    .elec .elec-monthly-count {
         color: var(--color-66)!important
     }
     .large-item .title,
@@ -2865,7 +2900,11 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     #page-fav .fav-sidenav .fav-item.cur .text,
     .h .h-vipType,
     .be-pager-item-active a,
-    .favInfo-box .favInfo-details .fav-options .fav-play {
+    .favInfo-box .favInfo-details .fav-options .fav-play,
+    #page-follows .follow-sidenav .follow-list-container .follow-item.cur a,
+    #page-follows .follow-sidenav .follow-list-container .follow-item.cur .be-dropdown-trigger .icon-ic_more,
+    #page-follows .follow-sidenav .follow-list-container .follow-item.cur .num,
+    #page-follows .follow-sidenav .follow-list-container .follow-item.cur .text {
         color: var(--color-ff)!important
     }
     .pgc-space-follow-item .bangumi-options .opt-list li.disabled,
@@ -2887,7 +2926,10 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .album-list__tab--active .album-list__tab-name,
     .favInfo-box .favInfo-details .fav-options .meta:hover,
     .tab-bar .tab .tab-text.selected,
-    .tab-bar .tab .tab-text:hover {
+    .tab-bar .tab .tab-text:hover,
+    #page-follows .follow-main .follow-action-top .back-to-info:hover,
+    .section .operation:hover,
+    #page-channel-detail .watch-later-btn:hover {
         color: var(--bili-blue)!important
     }
     #page-index .col-2 .section .user-auth .auth-description {
@@ -2943,10 +2985,23 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .be-pager-prev,
     .space_input,
     #page-myalbum .album-content,
-    .be-dropdown-item.be-dropdown-item-delimiter {
+    .be-dropdown-item.be-dropdown-item-delimiter,
+    #page-follows .follow-main .follow-header.follow-header-info,
+    #page-follows .follow-main,
+    #page-follows .follow-sidenav .nav-container.follow-container,
+    #page-follows .follow-sidenav,
+    #page-follows .follow-main .follow-action-top .back-to-info,
+    #page-follows .follow-main .follow-action-top,
+    .user .tags,
+    #page-index .channel .channel-item,
+    .section .operation,
+    #page-channel-detail .channel-info .c-count,
+    #page-channel-detail .filter,
+    #page-channel-detail .watch-later-btn {
         border-color: var(--color-42)!important
     }
-    #page-fav .fav-main .small-item {
+    #page-fav .fav-main .small-item,
+    .elec .elec-avatar {
         border-color: var(--color-2c)!important
     }
     .card .more-panel:after {
@@ -2960,7 +3015,10 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .be-pager-item-active,
     .be-pager-item:hover,
     .be-pager-next:hover,
-    .be-pager-prev:hover {
+    .be-pager-prev:hover,
+    #page-follows .follow-main .follow-action-top .back-to-info:hover,
+    .section .operation:hover,
+    #page-channel-detail .watch-later-btn:hover {
         border-color: var(--bili-blue)!important
     }
     /* -- 阴影 -- */
@@ -2968,8 +3026,9 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .large-item .cover img,
     .mini-item .cover img,
     .col-full,
-    .i-pin-c {
-        box-shadow: 0 0 0 1px #424242!important
+    .i-pin-c,
+    .list-item .cover img {
+        box-shadow: 0 0 0 1px var(--bodr-42)!important
     }
     .article-container:hover .text-area {
         box-shadow: 0 7px 14px 0 rgba(33, 33, 33, .9)!important
@@ -3007,7 +3066,13 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .i-pin-meta .icon,
     .small-item .meta>span .icon,
     .meta-col span .icon,
-    .list-item .meta .icon {
+    .list-item .meta .icon,
+    #page-follows .follow-sidenav .icon-follow,
+    #page-follows .follow-sidenav .nav-title .icon-add,
+    .search-component .icon-follow-search,
+    #page-follows .follow-select .icon-follow-watched,
+    #page-follows .follow-main .follow-action-bottom .icon-copy,
+    .tag-list .tag-icon {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_2.png)!important
     }
     #page-index .fav-covers.empty,
@@ -3027,6 +3092,18 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     }
     #page-index .col-2 .section .user-auth .auth-icon.personal-auth {
         background-position: -37px -50px!important
+    }
+    #page-follows .icon-multiple {
+        /*  >> #979797 -> #868686 <<    */
+        filter: invert(50%) sepia(5%) saturate(0%) hue-rotate(250deg) brightness(104%) contrast(98%);
+    }
+    .to-top {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/space-to-top.png) !important
+    }
+    #page-index .channel .channel-item .i-watchlater-channel,
+    #page-channel-detail .watch-later-btn {
+        background: unset!important;
+        padding: 0 7px!important
     }
 }
 
