@@ -1537,7 +1537,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .ep-list-wrapper .list-wrapper.simple ul .ep-item.cursor,
     .main-container .nav-tools .tool-item:hover,
     .multi-page .cur-list .module-box li.on a,
-    .up-info .btn-panel .not-follow {
+    .up-info .btn-panel .not-follow,
+    .up-info .btn-panel .following-charge-btn {
         color: var(--color-ff)!important
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover,
