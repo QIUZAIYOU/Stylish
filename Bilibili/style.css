@@ -1,9 +1,9 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-        * 版权信息
-        * 作者：QIUZAIYOU 
-        * 最后更新：20210107
-        * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    * 版权信息
+    * 作者：QIUZAIYOU 
+    * 最后更新：20210107
+    * Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
 
@@ -486,7 +486,8 @@
     .video-card-reco .info-box,
     .lazy-img,
     .common-lazy-img,
-    .bangumi-home-lazy-img {
+    .bangumi-home-lazy-img,
+    .i-pin-cover {
         background: var(--color-21) url(https://www.asifadeaway.com/Stylish/bilibili/loading_tv.png) center no-repeat!important
     }
     .page-content .left-side .article-list .article-list-holder .article-item.item-tp-3 .item-holder .article-content .cover-img .cover-image,
@@ -596,17 +597,20 @@
         border-color: var(--bili-blue)!important
     }
     .user-card-m .btn-box a,
-    .user-card-m .face,
     .user-card-m .btn-box .liked,
     .user-card-m .btn-box .liked:hover,
     .user-card-m,
     .user-card .btn-box a,
-    .user-card .face,
     .user-card .btn-box .liked,
     .user-card .btn-box .liked:hover,
     .user-card,
     #id-card .idc-btn {
         border-color: var(--color-42)!important
+    }
+    .user-card .face,
+    .user-card-m .face,
+    #id-card .idc-avatar {
+        border-color: var(--color-2c)!important
     }
     .userinfo-wrapper {
         z-index: 199405191!important
