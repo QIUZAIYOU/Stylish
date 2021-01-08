@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-    * 版权信息
-    * 作者：QIUZAIYOU 
-    * 最后更新：20210108
-    * Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+        * 版权信息
+        * 作者：QIUZAIYOU 
+        * 最后更新：20210108
+        * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+        ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -1577,7 +1577,11 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .media-info .media-cover,
     .vcd .cover,
     .multi-page .cur-list .module-box li,
-    .main-container .season-list .ss-list-wrapper .expand-more {
+    .main-container .season-list .ss-list-wrapper .expand-more,
+    .tag-channel-pane,
+    .tag-channel-pane .channel-cover,
+    .tag-report-popup,
+    .tag-channel-cancel-popup {
         background-color: var(--color-2c)!important
     }
     .up-info .btn-panel .not-follow-charge-btn,
@@ -1613,10 +1617,14 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .ep-list-wrapper .ep-item .cover-wrapper,
     .section-ep-wrapper .ep-item .cover-wrapper,
     .ep-list-wrapper .ep-item.cursor,
-    .section-ep-wrapper .ep-item.cursor {
+    .section-ep-wrapper .ep-item.cursor,
+    .tag-info-pane .tag-footer .btn-left-box>a:hover,
+    .tag-channel-pane .channel-btns__subs--delete .delete-btn,
+    .tag-channel-pane .channel-btns__subs--delete .delete-btn:hover {
         background-color: var(--color-27)!important
     }
-    .bilibili-player-video-sendbar .bilibili-player-video-inputbar {
+    .bilibili-player-video-sendbar .bilibili-player-video-inputbar,
+    .tag-channel-pane .channel-btns .is-subs {
         background-color: var(--color-37)!important
     }
     .s_tag .btn-add span {
@@ -1636,7 +1644,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .ep-list-wrapper .list-wrapper.simple ul .ep-item.cursor,
     .main-container .nav-tools .tool-item:hover,
     #balh-settings-btn:hover,
-    .multi-page .cur-list .module-box li.on {
+    .multi-page .cur-list .module-box li.on,
+    .tag-channel-pane .channel-btns__link:hover {
         background-color: var(--bili-blue)!important
     }
     .up-info .btn-panel .not-follow:hover {
@@ -1697,7 +1706,11 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .tool-bar .coin-info span,
     .main-container .tool-bar .like-info span,
     .main-container .tool-bar .share-info span,
-    .main-container .tool-bar .mobile-info span {
+    .main-container .tool-bar .mobile-info span,
+    .tag-info-pane .text,
+    .tag-channel-pane .channel-title,
+    .tag-channel-pane .channel-btns .is-subs,
+    .tag-channel-cancel-popup p {
         color: var(--color-86)!important
     }
     .up-info .up-info_right .desc,
@@ -1716,7 +1729,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .season-list .ss-list-wrapper .ss-item .ss-info .ss-count,
     .main-container .recom-wrapper .recom-list .recom-item .info-wrapper .video-subtitle,
     .main-container .recom-wrapper .recom-list .recom-item .info-wrapper .video-count,
-    .main-container .media-info .media-right .media-count {
+    .main-container .media-info .media-right .media-count,
+    .tag-channel-pane .channel-desc {
         color: var(--color-66)!important
     }
     .video-info .video-title,
@@ -1734,7 +1748,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .multi-page .cur-list .module-box li.on a,
     .up-info .btn-panel .not-follow,
     .up-info .btn-panel .following-charge-btn,
-    .main-container .pay-bar .btn-pay {
+    .main-container .pay-bar .btn-pay,
+    .tag-channel-pane .channel-btns__link:hover {
         color: var(--color-ff)!important
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover,
@@ -1764,7 +1779,11 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .tool-bar .like-info.active span,
     .main-container .tool-bar .like-info:hover span,
     .main-container .tool-bar .share-info:hover span,
-    .main-container .tool-bar .mobile-info:hover span {
+    .main-container .tool-bar .mobile-info:hover span,
+    .s_tag .tag-area>li:hover>a,
+    .s_tag .tag-area>li:hover>div>a.tag-link,
+    .tag-channel-pane .channel-btns__link,
+    .tag-channel-pane .channel-btns__subs--delete .delete-btn {
         color: var(--bili-blue)!important
     }
     .video-desc .tip-info .argue i,
@@ -1802,7 +1821,10 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .media-info .media-right .media-tool-bar .btn-rating,
     .main-container .nav-tools .tool-item,
     .multi-page .cur-list .module-box li,
-    .main-container .tool-bar .share-info .share-more {
+    .main-container .tool-bar .share-info .share-more,
+    .tag-channel-pane .channel-cover,
+    .tag-channel-pane .channel-btns__subs--delete,
+    .tag-channel-pane .channel-btns .is-subs {
         border-color: var(--color-42)!important
     }
     .player-auxiliary-danmaku-date-picker-container .player-auxiliary-danmaku-date-picker-body .day-span {
@@ -1820,7 +1842,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .ep-list-wrapper .list-wrapper.simple ul .ep-item:hover,
     .main-container .nav-tools .tool-item:hover,
     .multi-page .cur-list .module-box li.on,
-    .multi-page .cur-list .module-box li:hover {
+    .multi-page .cur-list .module-box li:hover,
+    .tag-channel-pane .channel-btns__link {
         border-color: var(--bili-blue)!important
     }
     /* -- 阴影 -- */
