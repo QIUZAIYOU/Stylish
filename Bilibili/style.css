@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-        * 版权信息
-        * 作者：QIUZAIYOU 
-        * 最后更新：20210108
-        * Github项目地址：https://github.com/QIUZAIYOU/Stylish
-        ===*/
+    * 版权信息
+    * 作者：QIUZAIYOU 
+    * 最后更新：20210108
+    * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -3163,7 +3163,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     #page-follows .list-item .auth-description,
     #page-follows .follow-sidenav .num,
     #page-channel-detail .channel-info .meta,
-    .elec .elec-monthly-count {
+    .elec .elec-monthly-count,
+    #page-channel-detail .channel-info .desc {
         color: var(--color-66)!important
     }
     .large-item .title,
