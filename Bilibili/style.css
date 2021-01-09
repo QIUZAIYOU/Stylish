@@ -19,11 +19,11 @@
     .storey-box div[id*="bili_"]>a[data-loc-id],
     /* 首页直播板块（个人不喜，故添加了开关，默认开启） */
     /* [[biliLive]] */
+    #bili_live,
     /* 播放页广告 */
     #bannerAd,
     #slide_ad,
-    .ad-report,
-    #bili_live {
+    .ad-report {
         display: none!important
     }
 }
@@ -59,6 +59,8 @@
         --bodr-42: 1px solid #424242!important;
         --filter-ff-86: invert(50%) sepia(12%) saturate(0%) hue-rotate(202deg) brightness(103%) contrast(94%)!important;
         --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%)!important;
+        --filter-99-66: invert(56%) sepia(0%) saturate(2966%) hue-rotate(316deg) brightness(80%) contrast(92%)!important;
+        --filter-99-86: invert(38%) sepia(0%) saturate(537%) hue-rotate(141deg) brightness(101%) contrast(84%)!important;
         --filter-98a2aa-86: invert(50%) sepia(90%) saturate(1%) hue-rotate(25deg) brightness(89%) contrast(86%)!important;
         --filter-98a2aa-shopPink: invert(50%) sepia(81%) saturate(1975%) hue-rotate(308deg) brightness(100%) contrast(90%)!important;
         --filter-626a6e-blue: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%)!important
@@ -716,22 +718,28 @@
     }
     /* -- 按钮 -- */
     .btn.default,
-    .default-btn {
+    .default-btn,
+    .link-more,
+    .el-button--default {
         color: var(--color-86)!important;
         background: var(--color-37)!important;
         border-color: var(--color-42)!important
     }
-    .btn:focus,
-    .btn:hover,
+    .link-more,
+    .el-button--default {
+        background: var(--color-21)!important;
+    }
     .default-btn:hover,
-    .link-more:hover {
+    .link-more:hover,
+    .el-button--default:hover {
         color: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important
     }
     #id-card .idc-btn.btn.primary,
     .btn.primary,
     .primary-btn,
-    .sure {
+    .sure,
+    .el-button--primary {
         color: var(--color-ff)!important;
         background: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important
@@ -740,14 +748,10 @@
     .btn.primary:focus,
     .btn.primary:hover,
     .primary-btn:hover,
-    .sure:hover {
+    .sure:hover,
+    .el-button--primary:hover {
         color: var(--color-ff)!important;
         background-color: var(--bili-lightblue)!important
-    }
-    .link-more {
-        color: var(--color-86)!important;
-        background: var(--color-21)!important;
-        border-color: var(--color-42)!important
     }
     /* -- 分页 -- */
     .paging-box-big .current,
@@ -1918,7 +1922,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .tab-item,
     .rank-card-panel .toggle>span,
     .video-floor-infomation-m .zone-title .headline .link-more,
-    .discovery-container[data-v-0cde21b8] {
+    .discovery-container,
+    .el-message-box {
         background-color: var(--color-21)!important
     }
     .rank-list .rank-item .ri-num,
@@ -1956,7 +1961,7 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .score-module-wrap .team-msg,
     .play-selector__item,
     .slide-channel-panel .mini-channel-card,
-    .mini-channel-card .cover {
+    s .mini-channel-card .cover {
         background-color: var(--color-2c)!important
     }
     .bili-dropdown .dropdown-list .dropdown-item:hover,
@@ -1974,7 +1979,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .discovery-panel__title--active {
         background-color: var(--color-27)!important
     }
-    .competition-option .competition-option-hide .competition-option-close {
+    .competition-option .competition-option-hide .competition-option-close,
+    .mini-channel-card .btn--atten {
         background-color: var(--color-37)!important
     }
     c .schedule-list .match-status.over,
@@ -1992,8 +1998,7 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .schedule-list .match-operate.live,
     .schedule-filter .bscroll-vertical-scrollbar .bscroll-indicator,
     .schedule-contain .time-all.active,
-    .schedule-filter .filter-content .content-all div.active,
-    .van-tabs_active-bar[style*="color"] {
+    .schedule-filter .filter-content .content-all div.active {
         background-color: var(--bili-blue)!important
     }
     .schedule-list .match-operate.live,
@@ -2002,6 +2007,9 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     }
     .detail-banner-title .btn--subscribe:hover {
         background-color: rgba(255, 255, 255, .3)!important
+    }
+    .detail-banner-title .btn:hover {
+        background-color: rgba(255, 255, 255, .7)!important
     }
     .team-box .team-item .team-name:not(.selected),
     .playercard .player-img {
@@ -2047,7 +2055,6 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .discovery-panel__title,
     .subscribe-panel__title .text,
     .subscribe-panel .subscribe-item .name,
-    .detail-page-container .van-tabs-wrap .van-tabs-tab,
     .category-container .inner-container__header .tit .channel-list-preview .header-info .title .card-score .team .score .score-away,
     .score-contain .page-btn,
     .library-contain .search-sort .sort-list li,
@@ -2092,7 +2099,6 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .score-module-wrap .team-msg .msg-title,
     .score-module-wrap .team-msg .msg-score,
     .competition-title .competition-title-center .team-vs,
-    .play-selector__item,
     .rank-card-panel .toggle,
     .video-floor-infomation-m .zone-title .headline .link-more,
     .schedule-list .match-time,
@@ -2103,7 +2109,12 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .type-header .header-info .title,
     .card--light,
     .arrow-btn .iconfont,
-    .game-content .team-box .team-detail .team-infodata .infodata-box .score {
+    .game-content .team-box .team-detail .team-infodata .infodata-box .score,
+    .mini-channel-card .name,
+    .mini-channel-card .btn,
+    .mini-channel-card .count,
+    .el-message-box .el-message-box__message,
+    .rank-card-panel .header .title {
         color: var(--color-86)!important
     }
     .competition-score>li p,
@@ -2205,22 +2216,12 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .competition-option .competition-option-hide .competition-option-close:hover,
     .single-data-wrap .match-info-title a:hover,
     .video-floor-infomation-m .zone-title .headline .link-more:hover,
-    .year-selector__item[style*="border"],
-    .detail-page-container .van-tabs-wrap .van-tabs-tab-active[style*="color"],
-    .discovery-panel__title--active,
-    .slide-channel-panel .mini-channel-card:hover {
+    .discovery-panel__title--active {
         color: var(--bili-blue)!important
-    }
-    .detail-page-container .van-tabs-wrap .van-tabs-tab-active {
-        color: var(--bili-khaki)!important
     }
     .card-score .team .score .score-home,
     .schedule-list .match-ranks .ranks-score .score-home {
         color: var(--bili-red)!important
-    }
-    .play-selector__item[style*="border"],
-    .play-selector__item:hover {
-        color: var(--bili-yellow)!important
     }
     .team-box .team-item .teamNo0,
     .playrank-box .single-rank .single-rank-box .top-three .single-top .num-count-1,
@@ -2307,7 +2308,6 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .sidebar-search-bar,
     .channel-sidebar,
     .discovery-panel,
-    .year-selector__item,
     .team-box .team-item.selected-0,
     .team-box .infobox,
     .team-box .team-detail .team-player-img .controlbar,
@@ -2327,8 +2327,9 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .competition-option .competition-option-content,
     .competition-user,
     .tab-item,
-    .play-selector__item,
-    .video-floor-infomation-m .zone-title .headline .link-more {
+    .video-floor-infomation-m .zone-title .headline .link-more,
+    .el-message-box,
+    .mini-channel-card .btn--noatten {
         border-color: var(--color-42)!important
     }
     .schedule-filter .filter-content li .img {
@@ -2339,15 +2340,11 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     }
     .schedule-filter .filter-content .content-all div.active,
     .video-floor-infomation-m .zone-title .headline .link-more:hover,
-    .schedule-list .match-operate.live,
-    .year-selector__item[style*="border"] {
+    .schedule-list .match-operate.live {
         border-color: var(--bili-blue)!important
     }
     .home-slide .trigger img.on {
         border-color: var(--bili-lightred)!important
-    }
-    .play-selector__item[style*="border"] {
-        border-color: var(--bili-yelow)!important
     }
     .year-selector__item[style*="rgb(217, 167, 115)"] {
         border-color: var(--bili-khaki)!important
@@ -2411,7 +2408,10 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     }
     .subscribe-panel .subscribe-item .move-icon,
     .sidebar-search-bar .search-icon {
-        filter: invert(50%) sepia(5%) saturate(17%) hue-rotate(39deg) brightness(105%) contrast(91%);
+        filter: invert(50%) sepia(5%) saturate(17%) hue-rotate(39deg) brightness(105%) contrast(91%)!important
+    }
+    .channel-list-preview .header .icon {
+        filter: var(--filter-99-66)!important
     }
     .score-module-wrap .team-center .bg-white {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/topbg.png) !important
@@ -2446,8 +2446,37 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .calendar-year {
         opacity: 1!important
     }
-    .detail-banner-title .btn--subscribe {
+    .detail-banner-title .btn--subscribe,
+    .detail-banner-title .btn {
         transition: .3s
+    }
+    /* 频道分类页 TabBar */
+    .detail-page-container .van-tabs-wrap .van-tabs-tab[style*="rgb(34, 34, 34)"] {
+        color: var(--color-86)!important
+    }
+    .play-selector .play-selector__item,
+    .year-selector .year-selector__item {
+        color: var(--color-86);
+        border-color: var(--color-42);
+    }
+    .detail-page-container .van-tabs-wrap .van-tabs-tab[style*="rgb(30, 48, 68)"],
+    .detail-page-container .van-tabs-wrap .van-tabs-tab[style*="rgb(57, 72, 88)"],
+    .detail-page-container .van-tabs-wrap .van-tabs-tab[style*="rgb(7, 25, 44)"] {
+        color: var(--bili-blue)!important
+    }
+    .van-tabs_active-bar[style*="rgb(30, 48, 68)"],
+    .van-tabs_active-bar[style*="rgb(57, 72, 88)"],
+    .van-tabs_active-bar[style*="rgb(7, 25, 44)"] {
+        background-color: var(--bili-blue)!important
+    }
+    .play-selector .play-selector__item[style*="rgb(30, 48, 68)"],
+    .year-selector .year-selector__item[style*="rgb(30, 48, 68)"],
+    .play-selector .play-selector__item[style*="rgb(57, 72, 88)"],
+    .year-selector .year-selector__item[style*="rgb(57, 72, 88)"],
+    .play-selector .play-selector__item[style*="rgb(7, 25, 44)"],
+    .year-selector .year-selector__item[style*="rgb(7, 25, 44)"] {
+        color: var(--bili-blue)!important;
+        border-color: var(--bili-blue)!important
     }
 }
 
