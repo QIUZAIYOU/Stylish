@@ -1,9 +1,9 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-    * 版权信息
-    * 作者：QIUZAIYOU 
-    * 最后更新：20210109
-    * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    * © 版权信息
+    * © 作者：QIUZAIYOU 
+    * © 最后更新：20210109
+    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
 
@@ -1613,7 +1613,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .tag-channel-pane,
     .tag-channel-pane .channel-cover,
     .tag-report-popup,
-    .tag-channel-cancel-popup {
+    .tag-channel-cancel-popup,
+    .main-container .plp-l .player-mask .bar-wrapper {
         background-color: var(--color-2c)!important
     }
     .up-info .btn-panel .not-follow-charge-btn,
@@ -1653,12 +1654,16 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .section-ep-wrapper .ep-item.cursor,
     .tag-info-pane .tag-footer .btn-left-box>a:hover,
     .tag-channel-pane .channel-btns__subs--delete .delete-btn,
-    .tag-channel-pane .channel-btns__subs--delete .delete-btn:hover {
+    .tag-channel-pane .channel-btns__subs--delete .delete-btn:hover,
+    .ep-list-wrapper .ep-item .badge,
+    .section-ep-wrapper .ep-item .badge[style*="rgb(153, 153, 153)"] {
         background-color: var(--color-27)!important
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar,
     .tag-channel-pane .channel-btns .is-subs,
-    .tag-channel-cancel-popup a.btn-no {
+    .tag-channel-cancel-popup a.btn-no,
+    .main-container .plp-l .player-mask .bar-wrapper .left-bar,
+    .main-container .plp-l .player-mask .bar-wrapper .right-bar {
         background-color: var(--color-37)!important
     }
     .s_tag .btn-add span {
@@ -1748,7 +1753,9 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .tag-channel-pane .channel-title,
     .tag-channel-pane .channel-btns .is-subs,
     .tag-channel-cancel-popup p,
-    .tag-channel-cancel-popup a.btn-no {
+    .tag-channel-cancel-popup a.btn-no,
+    .section-ep-wrapper .ep-item .badge[style*="rgb(153, 153, 153)"],
+    .main-container .pay-bar .vip .btn-pay.active {
         color: var(--color-86)!important
     }
     .up-info .up-info_right .desc,
