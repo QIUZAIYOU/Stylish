@@ -467,7 +467,9 @@
     .comment-bilibili-con .btn .btn-cancel,
     .comment-bilibili-con .t,
     .comment-bilibili-con .reason-box dl dt,
-    .comment-bilibili-con .reason-box dl dd {
+    .comment-bilibili-con .reason-box dl dd,
+    .bb-comment .comment-list .list-item .text,
+    .comment-bilibili-fold .comment-list .list-item .text {
         color: var(--color-86)!important
     }
     .bb-comment .nameplate .nameplate-card .nameplate-text .n-type,
@@ -1655,7 +1657,6 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .tag-info-pane .tag-footer .btn-left-box>a:hover,
     .tag-channel-pane .channel-btns__subs--delete .delete-btn,
     .tag-channel-pane .channel-btns__subs--delete .delete-btn:hover,
-    .ep-list-wrapper .ep-item .badge,
     .section-ep-wrapper .ep-item .badge[style*="rgb(153, 153, 153)"] {
         background-color: var(--color-27)!important
     }
@@ -4204,5 +4205,23 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     /* -- 其他 -- */
     .order-list-wrapper .order-list .no-order .err-img {
         mix-blend-mode: soft-light!important
+    }
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/blackboard") {
+    /* ===黑板=== */
+    /* -- 背景 -- */
+    .comment-container,
+    #webShare .bili-share-pc {
+        background-color: var(--color-21)!important
+    }
+    /* -- 字体 -- */
+    .comment-container .common .b-head,
+    .bili-share-pc .title {
+        color: var(--color-86)!important
+    }
+    /* -- 边框 -- */
+    #webShare .bili-share-pc {
+        border-color: var(--color-42)!important
     }
 }
