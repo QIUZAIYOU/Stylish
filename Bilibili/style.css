@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU 
-    * © 最后更新：20210109
+    * © 最后更新：20210110
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -1756,7 +1756,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .tag-channel-cancel-popup p,
     .tag-channel-cancel-popup a.btn-no,
     .section-ep-wrapper .ep-item .badge[style*="rgb(153, 153, 153)"],
-    .main-container .pay-bar .vip .btn-pay.active {
+    .main-container .pay-bar .vip .btn-pay.active,
+    .comment-m .b-head {
         color: var(--color-86)!important
     }
     .up-info .up-info_right .desc,
