@@ -1,16 +1,16 @@
 @-moz-document url-prefix("http://example.com") {
-    /*=== 
-     * 版权信息
-     * 自用，上传只为保存
-     * 作者：QIUZAIYOU 
-     * 最后更新：20210105
-     * Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+/*=== 
+* © 版权信息
+* © 自用，上传只为保存
+* © 作者：QIUZAIYOU 
+* © 最后更新：20210111
+* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+===*/
 }
 
 @-moz-document domain("zhihu.com") {
     /* ===通用属性=== */
-     :root {
+    :root {
         --color-00: #000!important;
         --color-14: #141414!important;
         --color-1b: #1b1b1b!important;
@@ -59,25 +59,25 @@ url-prefix("https://zhuanlan.zhihu.com/") {
 @-moz-document url-prefix("https://www.zhihu.com/"),
 url-prefix("https://zhuanlan.zhihu.com/") {
     /*=== 基本样式调整 ===*/
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         background-color: var(--color-14)!important;
         -webkit-border-radius: 0!important
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         background-color: var(--zhihu-lightblue)!important;
         -webkit-border-radius: 6px!important
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         background-color: var(--zhihu-lightblue)!important;
         -webkit-border-radius: 6px!important
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         background-color: var(--color-14)!important;
         -webkit-border-radius: 0!important
     }
@@ -232,7 +232,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .ChatSideBar-Search,
     .KfeCollection-PcCollegeCard-root,
     .KfeCollection-PcCollegeCard-wrapper,
-    .SearchResult-Card .SearchTopicHeader-IntroTail {
+    .SearchResult-Card .SearchTopicHeader-IntroTail,
+    #Popover9-toggle {
         background: var(--color-2c)!important
     }
     .PushNotifications-item:after,
@@ -491,7 +492,11 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .SearchItem-type,
     html[data-theme=dark] .SearchItem-type,
     .SearchTopicHeader-MetaKey,
-    html[data-theme=dark] .SearchTopicHeader-MetaKey {
+    html[data-theme=dark] .SearchTopicHeader-MetaKey,
+    .Search-albumStatusLink,
+    .Search-ebookStatusLink,
+    .Search-liveStatusLink,
+    .Search-statusLink {
         color: var(--color-86)!important
     }
     .ztext blockquote,
@@ -1026,5 +1031,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
         background: var(--color-2c)!important;
         border-color: var(--color-42)!important;
         color: var(--color-86)!important
+    }
+    img[src*="source=54b3c3a5"],
+    img[src*="source=4e949a73"] {
+        mix-blend-mode: overlay!important
     }
 }
