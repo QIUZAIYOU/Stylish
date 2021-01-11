@@ -379,7 +379,13 @@
     .comment-bilibili-fold .operation .opera-list,
     .emoji-box,
     .emoji-box .emoji-tabs .tab-link.on,
-    .bb-comment .nameplate .nameplate-card {
+    .bb-comment .nameplate .nameplate-card,
+    .feed-tag .publish-panel-container,
+    .feed-tag .card,
+    .publish-panel,
+    .feed-tag .core-style,
+    .card .more-panel[data-v-59e7bd6e],
+    .card .more-panel[data-v-59e7bd6e]:after {
         background-color: var(--color-21)!important
     }
     .bb-comment .comment-send .textarea-container textarea,
@@ -389,7 +395,8 @@
     .comment-bilibili-fold .comment-list .list-item .con .vote-container .image-area .share-img,
     .pic-box,
     .comment-bilibili-con .con,
-    .comment-bilibili-con .t {
+    .comment-bilibili-con .t,
+    .hash-popup {
         background-color: var(--color-2c)!important
     }
     .bb-comment .operation .opera-list li:hover,
@@ -412,10 +419,13 @@
     .comment-bilibili-fold .no-login .comment-submit,
     .bb-comment .no-login .comment-emoji,
     .comment-bilibili-fold .no-login .comment-emoji,
-    .comment-bilibili-con .btn .btn-cancel {
+    .comment-bilibili-con .btn .btn-cancel,
+    .hash-popup .topic-container .item.is-selected,
+    .video-container {
         background-color: var(--color-27)!important
     }
-    .user-card .btn-box .message {
+    .user-card .btn-box .message,
+    .dynamic-link-hover-bg:hover {
         background-color: var(--color-37)!important
     }
     .comment-bilibili-con .btn .btn-submit {
@@ -437,6 +447,9 @@
     .bb-comment .nameplate .nameplate-card .nameplate-arrow,
     .comment-bilibili-fold .nameplate .nameplate-card .nameplate-arrow {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/info_arrows.png)!important
+    }
+    .card .main-content .button-bar .bp-svg-icon {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/bp_svg_icon.svg)!important
     }
     .bb-comment .operation .opera-list,
     .comment-bilibili-fold .operation .opera-list,
@@ -469,7 +482,12 @@
     .comment-bilibili-con .reason-box dl dt,
     .comment-bilibili-con .reason-box dl dd,
     .bb-comment .comment-list .list-item .text,
-    .comment-bilibili-fold .comment-list .list-item .text {
+    .comment-bilibili-fold .comment-list .list-item .text,
+    .feed-tag .core-style,
+    .feed-tag .box-toggle,
+    .video-container .text-area .title,
+    .card .button-area .more-button,
+    .card .more-panel {
         color: var(--color-86)!important
     }
     .bb-comment .nameplate .nameplate-card .nameplate-text .n-type,
@@ -480,7 +498,12 @@
     .comment-bilibili-fold .comment-list .list-item .info>span,
     .bb-comment .comment-list .list-item .con .vote-container .text-area .text-desc,
     .comment-bilibili-fold .comment-list .list-item .con .vote-container .text-area .text-desc,
-    .comment-bilibili-fold .comment-list .list-item .user .text-con {
+    .comment-bilibili-fold .comment-list .list-item .user .text-con,
+    .feed-tag .separater-line,
+    .hash-popup .hint,
+    .indicator,
+    .video-container .text-area .view-danmaku[data-v-0514ecc0],
+    .tc-slate {
         color: var(--color-66)!important
     }
     .user-card .btn-box .like,
@@ -488,6 +511,9 @@
     .comment-bilibili-fold .no-login .baffle .b-btn,
     .comment-bilibili-con .btn .btn-submit {
         color: var(--color-ff)!important
+    }
+    .indicator::after {
+        color: var(--color-42)!important
     }
     .bb-comment .comment-list .list-item .text .vote-link,
     .comment-bilibili-fold .comment-list .list-item .text .vote-link,
@@ -501,7 +527,9 @@
     .comment-bilibili-fold .comment-list .list-item .text .comment-jump-url,
     .bb-comment .comment-list .list-item .text-con .comment-jump-url,
     .comment-bilibili-fold .comment-list .list-item .text-con .comment-jump-url,
-    .comment-bilibili-con .btn .btn-cancel:hover {
+    .comment-bilibili-con .btn .btn-cancel:hover,
+    .hash-popup .topic-container .item.is-selected[data-v-9f192432],
+    .dynamic-link-hover-bg {
         color: var(--bili-blue)!important
     }
     .bb-comment .comment-send .textarea-container textarea,
@@ -525,7 +553,11 @@
     .bb-comment .no-login .comment-submit,
     .comment-bilibili-fold .no-login .comment-submit,
     .comment-bilibili-con .t,
-    .comment-bilibili-con .btn .btn-cancel {
+    .comment-bilibili-con .btn .btn-cancel,
+    .feed-tag .card,
+    .hash-popup,
+    .video-container,
+    .card .more-panel {
         border-color: var(--color-42)!important
     }
     .comment-bilibili-con .con label:before {
@@ -541,6 +573,13 @@
     .comment-bilibili-con .btn .btn-cancel:hover,
     .comment-bilibili-con .con input[type='radio']:checked+label:before {
         border-color: var(--bili-blue)!important
+    }
+    .card .more-panel[data-v-59e7bd6e]:after {
+        border-top-color: var(--color-42)!important;
+        border-left-color: var(--color-42)!important
+    }
+    .feed-tag .card {
+        border-width: 1px 0 0 0!important
     }
     .emoji-box,
     .bb-comment .comment-list .list-item .con .vote-container:hover .text-area,
@@ -563,6 +602,9 @@
     .bb-comment .comment-list .list-item .info .like:not(.liked) i:not(:hover),
     .bb-comment .comment-list .list-item .info .hate:not(.hated) i:not(:hover) {
         opacity: .5!important
+    }
+    .feed-tag .card {
+        border-radius: 0!important
     }
     /* -- 加载有关 -- */
     .loading-img,
@@ -731,7 +773,8 @@
     .default-btn,
     .link-more,
     .el-button--default,
-    .cancel {
+    .cancel,
+    .card .focus-btn .focus {
         color: var(--color-86)!important;
         background: var(--color-37)!important;
         border-color: var(--color-42)!important
@@ -743,7 +786,8 @@
     .default-btn:hover,
     .link-more:hover,
     .el-button--default:hover,
-    .cancel:hover {
+    .cancel:hover,
+    .card .focus-btn .focus:hover {
         color: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important
     }
@@ -751,7 +795,8 @@
     .btn.primary,
     .primary-btn,
     .sure,
-    .el-button--primary {
+    .el-button--primary,
+    .card .focus-btn .unfocus {
         color: var(--color-ff)!important;
         background: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important
@@ -761,9 +806,19 @@
     .btn.primary:hover,
     .primary-btn:hover,
     .sure:hover,
-    .el-button--primary:hover {
+    .el-button--primary:hover,
+    .card .focus-btn .unfocus:hover {
         color: var(--color-ff)!important;
         background-color: var(--bili-lightblue)!important
+    }
+    .card .focus-btn .focus .focus-text {
+        color: var(--color-86)!important;
+    }
+    .card .focus-btn .unfocus .unfocus-text {
+        color: var(--color-ff)!important;
+    }
+    .card .focus-btn .focus:hover .focus-text {
+        color: var(--bili-blue)!important;
     }
     /* -- 分页 -- */
     .paging-box-big .current,
@@ -1404,7 +1459,7 @@ regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]") {
     .feed-title {
         color: var(--color-86)!important
     }
-    .card .main-content .button-bar[data-v-59e7bd6e] {
+    .card .main-content .button-bar {
         color: var(--color-66)!important
     }
     .up-name,
