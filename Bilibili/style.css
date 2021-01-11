@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-    * © 版权信息
-    * © 作者：QIUZAIYOU 
-    * © 最后更新：20210110
-    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+        * © 版权信息
+        * © 作者：QIUZAIYOU 
+        * © 最后更新：20210110
+        * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+        ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -1098,7 +1098,8 @@
     .contact-help:hover,
     .exchange-btn .btn:hover,
     .rank-header .more:hover,
-    .bypb-window .online:hover {
+    .bypb-window .online:hover,
+    .rcmd-box-wrap .change-btn:hover {
         background-color: var(--color-27)!important
     }
     .elevator .bg23 {
@@ -1140,7 +1141,8 @@
     .video-card-common .gg-icon,
     .live-rank .live-rank-item .number,
     .elevator .ear,
-    .video-card-common .title {
+    .video-card-common .title,
+    .rcmd-box-wrap .change-btn {
         color: var(--color-86)!important
     }
     .storey-title .text-info,
@@ -1193,7 +1195,8 @@
     .popover-video-card .count,
     div[id*="van-popover"],
     .bypb-window .online,
-    .video-card-common .gg-icon {
+    .video-card-common .gg-icon,
+    .rcmd-box-wrap .change-btn {
         border-color: var(--color-42)!important
     }
     .page-tab .con li,
