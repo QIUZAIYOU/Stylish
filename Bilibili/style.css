@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-        * © 版权信息
-        * © 作者：QIUZAIYOU 
-        * © 最后更新：20210110
-        * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-        ===*/
+    * © 版权信息
+    * © 作者：QIUZAIYOU 
+    * © 最后更新：20210112
+    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -1171,7 +1171,8 @@
     .elevator .list-box .item.on .bilifont,
     .elevator .list-box .item:hover .bilifont,
     .elevator .list-box .item.on,
-    .elevator .list-box .item:hover {
+    .elevator .list-box .item:hover,
+    .rcmd-box-wrap .new-guide .bili-icon_sousuo_yichu {
         color: var(--color-ff)!important
     }
     .contact-help:hover,
