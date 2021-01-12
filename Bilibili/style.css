@@ -47,26 +47,31 @@
         --bili-lightblue: #00b5e5!important;
         --bili-red: #fa5a57!important;
         --bili-lightred: #f25e8e!important;
-        --bili-pink: #fb7299!important;
-        --bili-shop-pink: #f25d8e!important;
-        --bili-shop-darkpink: #e50e4c!important;
         --bili-yellow: #f7a920!important;
         --bili-green: #0dad9e!important;
+        --bili-pink: #fb7299!important;
         --bili-khaki: #d9a773!important;
         --bili-golden: #ffbb2f!important;
         --bili-silvery: #aab6c5!important;
         --bili-coppery: #f89658!important;
+        --bili-manga-blue: #32aaff!important;
+        --bili-manga-yellow: #fb9b11!important;
+        --bili-shop-pink: #f25d8e!important;
+        --bili-shop-darkpink: #e50e4c!important;
         --bodr-42: 1px solid #424242!important;
         --filter-ff-86: invert(50%) sepia(12%) saturate(0%) hue-rotate(202deg) brightness(103%) contrast(94%)!important;
         --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%)!important;
+        --filter-21-86: invert(51%) sepia(3%) saturate(13%) hue-rotate(350deg) brightness(104%) contrast(86%)!important;
         --filter-99-66: invert(56%) sepia(0%) saturate(2966%) hue-rotate(316deg) brightness(80%) contrast(92%)!important;
         --filter-99-86: invert(38%) sepia(0%) saturate(537%) hue-rotate(141deg) brightness(101%) contrast(84%)!important;
         --filter-cc-86: invert(50%) sepia(16%) saturate(0%) hue-rotate(243deg) brightness(103%) contrast(81%)!important;
+        --filter-c0-86: invert(50%) sepia(0%) saturate(2764%) hue-rotate(157deg) brightness(107%) contrast(70%)!important;
         --filter-df-86: invert(50%) sepia(85%) saturate(0%) hue-rotate(196deg) brightness(89%) contrast(96%)!important;
         --filter-ccd0d7-86: invert(50%) sepia(5%) saturate(0%) hue-rotate(195deg) brightness(104%) contrast(93%)!important;
         --filter-98a2aa-86: invert(50%) sepia(90%) saturate(1%) hue-rotate(25deg) brightness(89%) contrast(86%)!important;
+        --filter-bdc7cf-86: invert(50%) sepia(0%) saturate(1258%) hue-rotate(292deg) brightness(106%) contrast(82%)!important;
         --filter-98a2aa-shopPink: invert(50%) sepia(81%) saturate(1975%) hue-rotate(308deg) brightness(100%) contrast(90%)!important;
-        --filter-626a6e-blue: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%)!important
+        --filter-626a6e-blue: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%)!important; --filter-bdc7cf-mangaBlue: invert(50%) sepia(98%) saturate(1080%) hue-rotate(180deg) brightness(101%) contrast(102%)!important
     }
     html,
     body {
@@ -2843,6 +2848,187 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .spread-module .num i,
     .video-info-module .v-data span .icon {
         opacity: .5!important
+    }
+}
+
+@-moz-document url-prefix("https://manga.bilibili.com/") {
+    /* ===漫画=== */
+    /* -- 背景 -- */
+    .search-bar .search-bar-bg,
+    .rank-item-wrapper {
+        background: var(--color-21)!important
+    }
+    .emoji>div,
+    .message .message-content,
+    .static-popup,
+    .emoji,
+    .emoji-cover.selected,
+    .index-banner,
+    .overlay .content {
+        background-color: var(--color-21)!important
+    }
+    .manga-navbar,
+    .hot-category,
+    .app-layout .size-ruler .fix-scroller .section-navigator,
+    .container .back-to-content,
+    .manga-card-vertical .manga-cover-section .manga-cover,
+    .manga-detail .layout,
+    .bb-comment,
+    .comment-bilibili-fold,
+    .paging-box-big .current,
+    .paging-box-big .dian,
+    .paging-box-big .next,
+    .paging-box-big .prev,
+    .paging-box-big .tcd-number,
+    .paging-box-big .page-jump input,
+    .header-info .manga-info .action-buttons .do-favourite,
+    .manga-cover {
+        background-color: var(--color-2c)!important
+    }
+    .episode-list-component .episode-list .list-header .header-item,
+    .episode-list .list-item:hover,
+    .title-tooltip,
+    .title-tooltip:before,
+    .header-info .manga-info .action-buttons .do-favourite:hover {
+        background-color: var(--color-27)!important
+    }
+    .container .back-to-content .line {
+        background-color: var(--color-42)!important
+    }
+    .section-navigator .section-item.current {
+        background-color: var(--bili-manga-blue)!important
+    }
+    .header-info .manga-info .action-buttons .do-favourite .fav-icon {
+        background: transparent!important
+    }
+    .manga-card-vertical .manga-cover-section .manga-cover,
+    .header-info .manga-cover {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/manga_cover.png) !important
+    }
+    /* -- 字体 -- */
+    .manga-navbar-manga-logo,
+    .nav-list .nav-item,
+    .download-app,
+    .manga-navbar-history-list .action-button,
+    .manga-navbar-favourite-manga .action-button,
+    .search-bar .search-bar-bg,
+    .search-bar .search-input,
+    .search-bar .search-input.v-middle.ts-dot-2,
+    .title,
+    .comic-item .title,
+    .comic-item .text,
+    .discover .tab,
+    .manga-footer .row-one .left-part .manga-logo,
+    .section-navigator .section-item,
+    .manga-card-vertical .text-info-section .manga-title,
+    .style-section .tag-block .tag-containers .style-tag,
+    .header-info .manga-info .manga-title,
+    .manga-button.ghost,
+    .list-item,
+    .episode-list-component .episode-list .list-header .header-item,
+    .title-tooltip,
+    .season-comment .section-title,
+    .bb-comment .comment-header .tabs-order li,
+    .comment-bilibili-fold .comment-header .tabs-order li,
+    .comic-info-panel .comic-detail .comic-title,
+    .rank-list-component .section-title,
+    .rank-list-item .preview-mode .title-text,
+    .rank-list-item .expand-mode .text-section .item-title,
+    .rank-list-item .preview-mode .index-indicator,
+    .overlay .first-line,
+    .rank-title {
+        color: var(--color-86)!important
+    }
+    .comic-item .tags,
+    .manga-card-vertical .text-info-section .supporting-text,
+    .style-section .tag-block .block-title,
+    .header-info .manga-info .supporting-text,
+    .header-info .manga-info .author-name,
+    .header-info .manga-info .season-introduction,
+    .comic-info-panel .comic-detail .comic-info,
+    .rank-list-item .preview-mode .supporting-text,
+    .rank-list-item .expand-mode .text-section .footer-text .left-part,
+    .rank-hint,
+    .manga-info-ctnr,
+    .no-more-ctnr {
+        color: var(--color-66)!important
+    }
+    .title .button,
+    .others .title,
+    .content .title .button.followed .text,
+    .section-navigator .section-item.current,
+    .rankings .title .button {
+        color: var(--color-ff)!important
+    }
+    a:hover,
+    .nav-list .nav-item.active,
+    .nav-list .nav-item:hover,
+    .download-app:hover,
+    .comic-item:hover .text,
+    .discover .tab:hover,
+    .section-navigator .section-item:not(.current):hover,
+    .title .button,
+    .style-section .tag-block .tag-containers .style-tag.selected,
+    .style-section .tag-block .tag-containers .style-tag:hover,
+    .list-item.last-read .title,
+    .episode-list-component .episode-list .list-header .header-item:hover,
+    .bb-comment .comment-header .tabs-order li.on,
+    .comment-bilibili-fold .comment-header .tabs-order li.on,
+    .sidebar-item.activated {
+        color: var(--bili-manga-blue)!important
+    }
+    .rank-list-item .preview-mode .index-indicator.high-light {
+        color: var(--bili-manga-yellow)!important
+    }
+    /* -- 边框 -- */
+    .app-layout .size-ruler .fix-scroller .section-navigator,
+    .section-navigator .divider,
+    .list-item,
+    .header-info .manga-info .action-buttons .do-favourite,
+    .sidebar-ctnr[data-v-5c4b9d9d] {
+        border-color: var(--color-42)!important
+    }
+    .paging-box-big .dian,
+    .music-pagination .dian {
+        border-color: var(--color-2c)!important
+    }
+    .send-btn.active,
+    .list-item.last-read {
+        border-color: var(--bili-manga-blue)!important
+    }
+    /* -- 阴影 -- */
+    .manga-navbar {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08)!important
+    }
+    .container .back-to-content {
+        box-shadow: none!important
+    }
+    /* -- 其他 -- */
+    .section-navigator .back-to-top .icon,
+    .container .back-to-content .back-to-home-button .icon,
+    .container .back-to-content .back-to-top-button .icon,
+    .overlay .close-button {
+        filter: var(--filter-bdc7cf-86)!important
+    }
+    .section-navigator .back-to-top .icon:hover,
+    .container .back-to-content .back-to-home-button:hover .icon-home,
+    .container .back-to-content .back-to-top-button:hover .icon-top {
+        filter: var(--filter-bdc7cf-mangaBlue)!important
+    }
+    .header-info .manga-info .action-buttons .do-favourite .fav-icon:not([src*="PHBhdGggZD0iTTEyLDE4LjQ4LDYuNDMsMjEuMjJhLjcuNywwLDAsMS0xLS43M2wuODgtNi4xNEwyLDkuOWEuNy43LDAsMCwxLC4zOC0xLjE4TDguNDksNy42NmwyLjg5LTUuNDlhLjcxLjcxLDAsMCwxLDEuMjQsMGwyLjg5LDUuNDksNi4xMiwxLjA2QS43LjcsMCwwLDEsMjIsOS45bC00LjMyLDQuNDUuODgsNi4xNGEuNy43LDAsMCwxLTEsLjczWiIgc3R5bGU9ImZpbGw6I2ZmYTAxNTtmaWxsLXJ1bGU6ZXZlbm9kZCIvPjwvc3ZnPg"]) {
+        filter: var(--filter-21-86)!important
+    }
+    .rank-movement.hold[data-v-02948b0a] {
+        filter: var(--filter-c0-86)!important
+    }
+    .header-info .manga-info .supporting-text .label-icon {
+        filter: invert(100%) sepia(0%) saturate(3063%) hue-rotate(68deg) brightness(67%) contrast(110%)
+    }
+    .list-item.is-read> :not(.tag):not(.title-tooltip) {
+        opacity: 1!important
+    }
+    .list-item.is-read:not(.last-read) {
+        opacity: .6!important
     }
 }
 
