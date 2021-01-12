@@ -2882,7 +2882,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .paging-box-big .tcd-number,
     .paging-box-big .page-jump input,
     .header-info .manga-info .action-buttons .do-favourite,
-    .manga-cover {
+    .manga-cover,
+    .schedule-item .schedule-img {
         background-color: var(--color-2c)!important
     }
     .episode-list-component .episode-list .list-header .header-item,
@@ -2902,7 +2903,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
         background: transparent!important
     }
     .manga-card-vertical .manga-cover-section .manga-cover,
-    .header-info .manga-cover {
+    .header-info .manga-cover,
+    .schedule-item .schedule-img {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/manga_cover.png) !important
     }
     /* -- 字体 -- */
@@ -2936,7 +2938,10 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .rank-list-item .expand-mode .text-section .item-title,
     .rank-list-item .preview-mode .index-indicator,
     .overlay .first-line,
-    .rank-title {
+    .rank-title,
+    .schedule-list .list-header .section-title,
+    .schedule-list .list-header .date-selector .date-item,
+    .schedule-item .text-section .title-text {
         color: var(--color-86)!important
     }
     .comic-item .tags,
@@ -2950,7 +2955,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .rank-list-item .expand-mode .text-section .footer-text .left-part,
     .rank-hint,
     .manga-info-ctnr,
-    .no-more-ctnr {
+    .no-more-ctnr,
+    .schedule-item .text-section .status-text {
         color: var(--color-66)!important
     }
     .title .button,
@@ -2974,7 +2980,9 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .episode-list-component .episode-list .list-header .header-item:hover,
     .bb-comment .comment-header .tabs-order li.on,
     .comment-bilibili-fold .comment-header .tabs-order li.on,
-    .sidebar-item.activated {
+    .sidebar-item.activated,
+    .schedule-list .list-header .date-selector .date-item.active,
+    .schedule-list .data-list .data-item:hover .title-text {
         color: var(--bili-manga-blue)!important
     }
     .rank-list-item .preview-mode .index-indicator.high-light {
