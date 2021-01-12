@@ -1768,6 +1768,12 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .more-ops-list .ops-watch-later {
         background: transparent!important
     }
+    .pop-live .pl__icon--user {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_3.png) !important
+    }
+    .pop-live .pl__icon--online {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/live_eye.png) !important
+    }
     /* -- 字体 -- */
     .ep-list-wrapper .ep-item,
     .section-ep-wrapper .ep-item,
@@ -1985,10 +1991,6 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
         fill: var(--color-ff)!important
     }
     /* -- 其他属性 -- */
-    .pop-live .pl__icon,
-    .pop-live .pl__icon--online {
-        mix-blend-mode: soft-light;
-    }
     img[src="null"],
     img[alt][src]:not([src*="/"]),
     img[alt][data-src]:not([data-src*="/"]) {
