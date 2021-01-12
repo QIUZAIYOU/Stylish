@@ -1,4 +1,4 @@
-# 夜间哔哩 NightMode For Bilibili.com ![Last_Update](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.01.08-blue)
+# 夜间哔哩 NightMode For Bilibili.com ![Last_Update](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.01.12-blue)
 
 ![夜间哔哩 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/bilibili/StylishCover.png)
 
@@ -24,6 +24,8 @@
 施工中，敬请期待。
 
 ### 2021
+
+`01.12 11:10`：新增「会漫画」相关页面夜化。继续优化已完成页面夜化效果。
 
 `01.08 00:02`：新增「会员购」相关页面夜化，由于本人从没从「会员购」购买过东西，所以「订单中心」没有订单，因此只能夜化无订单提示页面，因为看不到有订单的页面是什么样，所以无法夜化。优化了全站评论列表细节及图标。继续优化已完成页面夜化效果。
 
