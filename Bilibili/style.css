@@ -62,15 +62,17 @@
         --filter-ff-86: invert(50%) sepia(12%) saturate(0%) hue-rotate(202deg) brightness(103%) contrast(94%)!important;
         --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%)!important;
         --filter-21-86: invert(51%) sepia(3%) saturate(13%) hue-rotate(350deg) brightness(104%) contrast(86%)!important;
-        --filter-99-66: invert(56%) sepia(0%) saturate(2966%) hue-rotate(316deg) brightness(80%) contrast(92%)!important;
-        --filter-99A2AA-66: invert(71%) sepia(0%) saturate(0%) hue-rotate(7deg) brightness(87%) contrast(90%)!important;
         --filter-99-86: invert(38%) sepia(0%) saturate(537%) hue-rotate(141deg) brightness(101%) contrast(84%)!important;
         --filter-cc-86: invert(50%) sepia(16%) saturate(0%) hue-rotate(243deg) brightness(103%) contrast(81%)!important;
         --filter-c0-86: invert(50%) sepia(0%) saturate(2764%) hue-rotate(157deg) brightness(107%) contrast(70%)!important;
         --filter-df-86: invert(50%) sepia(85%) saturate(0%) hue-rotate(196deg) brightness(89%) contrast(96%)!important;
+        --filter-dd-86: invert(50%) sepia(97%) saturate(0%) hue-rotate(158deg) brightness(88%) contrast(84%)!important;
         --filter-ccd0d7-86: invert(50%) sepia(5%) saturate(0%) hue-rotate(195deg) brightness(104%) contrast(93%)!important;
         --filter-98a2aa-86: invert(50%) sepia(90%) saturate(1%) hue-rotate(25deg) brightness(89%) contrast(86%)!important;
         --filter-bdc7cf-86: invert(50%) sepia(0%) saturate(1258%) hue-rotate(292deg) brightness(106%) contrast(82%)!important;
+        --filter-99-66: invert(56%) sepia(0%) saturate(2966%) hue-rotate(316deg) brightness(80%) contrast(92%)!important;
+        --filter-ff-66: invert(77%) sepia(70%) saturate(0%) hue-rotate(92deg) brightness(91%) contrast(93%)!important;
+        --filter-99a2aa-66: invert(71%) sepia(0%) saturate(0%) hue-rotate(7deg) brightness(87%) contrast(90%)!important;
         --filter-98a2aa-shopPink: invert(50%) sepia(81%) saturate(1975%) hue-rotate(308deg) brightness(100%) contrast(90%)!important;
         --filter-626a6e-blue: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%)!important;
         --filter-bdc7cf-mangaBlue: invert(50%) sepia(98%) saturate(1080%) hue-rotate(180deg) brightness(101%) contrast(102%)!important
@@ -650,7 +652,7 @@
     .review-list-wrp li .review-data .review-data-item.review-data-comment i,
     .review-list-wrp li .review-data div.review-data-comment embed,
     .review-list-wrp li .review-data div.review-data-comment i {
-        filter: var(--filter-99A2AA-66)!important
+        filter: var(--filter-99a2aa-66)!important
     }
     /* -- 加载有关 -- */
     .loading-img,
@@ -694,7 +696,8 @@
     html .lazy-img img {
         background-color: var(--color-21)!important
     }
-    .link-progress-tv {
+    .link-progress-tv,
+    .loading-icon {
         mix-blend-mode: multiply!important
     }
     .loading-content {
@@ -741,7 +744,8 @@
         mix-blend-mode: multiply!important
     }
     /* img[src*='face/member/noface.jpg']{mix-blend-mode: overlay!important} */
-    .nodata-contain .nodata {
+    .nodata-contain .nodata,
+    .no-data {
         mix-blend-mode: soft-light!important
     }
     /* -- 用户卡片 -- */
@@ -848,7 +852,8 @@
     .sure,
     .el-button--primary,
     .card .focus-btn .unfocus,
-    .big-member-btn {
+    .big-member-btn,
+    .b-info .button {
         color: var(--color-ff)!important;
         background: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important
@@ -860,7 +865,8 @@
     .sure:hover,
     .el-button--primary:hover,
     .card .focus-btn .unfocus:hover,
-    .big-member-btn:hover {
+    .big-member-btn:hover,
+    .b-info .button:hover {
         color: var(--color-ff)!important;
         background-color: var(--bili-lightblue)!important
     }
@@ -890,7 +896,11 @@
     .pagelistbox .custom-right .custom-right-inner.custompage,
     .points-record .el-pagination__editor,
     .el-pagination .btn-next,
-    .el-pagination .btn-prev {
+    .el-pagination .btn-prev,
+    .el-pagination__editor.el-input .el-input__inner,
+    .el-pagination .btn-next,
+    .el-pagination .btn-prev,
+    .el-pager li {
         color: var(--color-86)!important;
         background-color: var(--color-21)!important;
         border-color: var(--color-42)!important
@@ -912,7 +922,8 @@
     .music-pagination .prev:hover,
     .music-pagination .tcd-number:hover,
     .pagelistbox .p.active,
-    .pagelistbox .p:hover {
+    .pagelistbox .p:hover,
+    .el-pager li.active {
         background-color: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important;
         color: var(--color-ff)!important
@@ -931,9 +942,11 @@
     .el-pagination__editor {
         border-color: var(--color-21)!important
     }
-    .points-record .el-pagination__editor,
-    .points-record .el-pagination .btn-next,
-    .points-record .el-pagination .btn-prev {
+    .el-pagination__jump {
+        color: var(--color-66)!important
+    }
+    .el-pagination button.disabled {
+        color: var(--color-66)!important;
         background-color: var(--color-2c)!important;
     }
     /* -- 下拉菜单 -- */
@@ -1084,6 +1097,63 @@
     .feedback-mask .content .headline,
     .feedback-mask .content .feedback-body .supplement {
         border-color: var(--color-42)!important;
+    }
+    /* -- 日期选择 -- */
+    .el-picker-panel {
+        color: var(--color-86)!important;
+        border-color: var(--color-42)!important;
+        background-color: var(--color-21)!important;
+        box-shadow: 0 2px 6px var(--color-21)!important;
+    }
+    .el-picker-panel__icon-btn {
+        color: var(--color-86)!important;
+    }
+    .el-date-table td.next-month,
+    .el-date-table td.prev-month {
+        color: var(--color-66)!important;
+    }
+    .el-date-table th,
+    .el-date-table .available span {
+        color: var(--color-af)!important;
+    }
+    .el-date-table td.current:not(.disabled) span {
+        color: var(--color-ff)!important;
+    }
+    .el-date-picker__header-label.active,
+    .el-date-picker__header-label:hover,
+    .el-picker-panel__icon-btn:hover,
+    .el-date-table td.today span {
+        color: var(--bili-blue)!important
+    }
+    .el-date-table td.available:hover {
+        background-color: var(--color-2c)!important;
+    }
+    .el-date-table td.current:not(.disabled),
+    .el-date-table td.end-date,
+    .el-date-table td.start-date,
+    .el-date-table td.current:not(.disabled) span {
+        color: var(--color-ff)!important;
+        background-color: var(--bili-blue)!important
+    }
+    .el-date-table th {
+        border-color: var(--color-42)!important;
+    }
+    .el-date-table td.disabled div {
+        color: var(--color-66)!important;
+        background-color: var(--color-21)!important;
+    }
+    .el-date-table td.available.current {
+        background-color: var(--color-21)!important;
+    }
+    .el-popper[x-placement^=bottom] .popper__arrow {
+        border-bottom-color: var(--color-42)!important;
+    }
+    .el-popper[x-placement^=bottom] .popper__arrow:after {
+        border-bottom-color: var(--color-21)!important;
+    }
+    /* -- mask -- */
+    .mask .popup-box .popup-content {
+        color: var(--color-86)!important;
     }
     /* -- 其他 -- */
     .random-change {
@@ -3550,33 +3620,65 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://account.bilibili.com/") {
     /* ===个人中心=== */
     /* -- 屏蔽 -- */
-    .top-header {
+    .top-header,
+    .top_bg {
         display: none!important
     }
     /* -- 背景 -- */
-    .notification-list {
+    .notification-list,
+    .user-nick-name .el-input,
+    .indentify-page {
         background-color: var(--color-21)!important
     }
     .security_content,
     .security-right,
-    .security-list:hover,
+    li.security-list:hover,
     .security-list-jump:hover,
     .big-more-item-item,
     .big-more-item-list,
     .go-movie,
-    .viptable tr:nth-child(2n) td {
+    .viptable tr:nth-child(2n) td,
+    .user-nick-name .el-input__inner,
+    .user-my-sign .el-textarea,
+    .user-my-sign .el-textarea .el-textarea__inner,
+    .user-my-date .el-input__inner,
+    .tool-uninstall-pendant,
+    .face-g-list .mp-block .right ul li .mp-tips,
+    .security-list .child-list li a:hover,
+    .el-pagination__jump .el-pagination__editor,
+    .el-pagination .btn-next,
+    .el-pagination .btn-prev,
+    .coin-inner,
+    .get-coin-more,
+    .table-normal tbody tr:nth-child(odd),
+    .finish-status .finish-box .box-title,
+    .home-top-level-mask-warp,
+    .invtable tr:nth-child(odd) td,
+    table.invtable td input,
+    .points-record .el-pagination__editor,
+    .points-record .el-pagination .btn-next,
+    .points-record .el-pagination .btn-prev {
         background-color: var(--color-2c)!important
     }
     .home-top-level-up,
     .big-more-item-item:hover .big-more-item-txt,
-    .viptable tr th {
+    .viptable tr th,
+    .pendant-header,
+    .table-normal thead tr td,
+    .get-coin-more:hover,
+    .invtable tr th,
+    .codedone {
         background-color: var(--color-27)!important
     }
     .security_content,
     .re-exp-getexp,
     .home-top-level-up,
     .h-safe-nobtn,
-    .viptable tr:nth-child(odd) td {
+    .viptable tr:nth-child(odd) td,
+    .user-my-sex .el-radio-button__inner,
+    .pendant-mask .pendant-box,
+    .face-g-list .mp-block .right ul li .strip,
+    .finish-status .finish-box .box-content {
         background-color: var(--color-37)!important
     }
     .big-more-tool-item {
@@ -3585,8 +3687,20 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .line-circle {
         background-color: var(--color-42)!important
     }
+    .pendant-main .pendant-btn:hover {
+        background-color: var(--bili-lightblue)!important
+    }
     .points-header-warp {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/vip_score.png) !important
+    }
+    .security-icon,
+    .child-list li a i,
+    .al-bl,
+    .home-level-mask-icon {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_4.png) !important
+    }
+    .al-bl {
+        background-position: -727px -237px!important
     }
     /* -- 字体 -- */
     .home-userstatus,
@@ -3619,7 +3733,41 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .points-how-title,
     .points-faq-info-list,
     .points-record-title,
-    .viptable {
+    .viptable,
+    .points-exchange-title,
+    .userinfo-username,
+    .user-nick-name .el-input,
+    .user-nick-name .el-input__inner,
+    .user-my-sign .el-textarea,
+    .user-my-sign .el-textarea .el-textarea__inner,
+    .user-my-date .el-input__inner,
+    .user-my-date .el-input__icon,
+    .user-my-sex .el-radio-button__inner,
+    .tool-uninstall-pendant.disable span,
+    .pendant-mail-margin h3,
+    .pendant-nav li div,
+    .pendant-info p,
+    .details-list-t div,
+    .face-g-list .mp-block .left .mp-info .mp-title,
+    .face-g-list .mp-block .right ul li p.title,
+    .face-g-list .mp-block .right ul li .mp-tips,
+    .black-name,
+    .coin-nav-item,
+    .coin-rest-p,
+    .coin-rest-info,
+    .coin-index-right-title,
+    .get-coin-more,
+    .coin-record .coin-title,
+    .record-nav-item,
+    .main-content-title span.t,
+    .record-group,
+    .finish-status .finish-box .box-title,
+    .home-top-level-mask-warp,
+    .home-level-tips,
+    .invitation-info-title,
+    .inv-record-title,
+    .inputdone,
+    .invtable tr th {
         color: var(--color-86)!important
     }
     .notification-list-info,
@@ -3632,7 +3780,24 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .member-list-item-subtext,
     .big-game-gift-money,
     .points-text,
-    .el-pagination__editor {
+    .el-pagination__editor,
+    .user-setting-warp .el-form-item__label,
+    .nick-name-not,
+    .vip-description,
+    .fans-number,
+    .face-g-list .mp-block .left .mp-info .mp-descr,
+    .face-g-list .mp-block .left .mp-info label,
+    .face-g-list .mp-block .right ul li.base .tips,
+    .face-g-list .mp-block .right ul li p.reach-tips,
+    .black-time,
+    .el-pagination__jump,
+    .coin-text-p,
+    .main-content-title span.i,
+    .indentify-page .attention,
+    .inv-record-right,
+    .codedone,
+    table.invtable td,
+    .invitation-normal {
         color: var(--color-66)!important
     }
     .notification-tips a,
@@ -3643,13 +3808,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .big-name-record:hover,
     .tabs-nav .active,
     .points-header-box .points-num,
-    .go-movie {
+    .go-movie,
+    .pendant-list li:hover .pendant-name,
+    .face-nav>.active a,
+    .tab-mk2.active,
+    .coin-nav .on,
+    .record-nav .on {
         color: var(--bili-blue)!important
     }
-    .security-left .on .security-nav-name {
+    .security-left .on .security-nav-name,
+    .el-radio-button__orig-radio:checked+.el-radio-button__inner,
+    .pendant-nav li div.active,
+    .mp-mine-takedown,
+    .current .tab-btn-link,
+    .mp-mine-takedown:hover {
         color: var(--color-ff)!important
     }
     /* -- 边框 -- */
+    .tool-uninstall-pendant,
+    .tool-container,
     .security_content,
     .security-right,
     .security-ul,
@@ -3681,7 +3858,44 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .points-record-warp,
     .viptable,
     .viptable tr th,
-    table.viptable td {
+    table.viptable td,
+    .user-nick-name .el-input,
+    .user-nick-name .el-input__inner,
+    .user-my-sign .el-textarea,
+    .user-my-sign .el-textarea .el-textarea__inner,
+    .user-my-date .el-input__inner,
+    .user-setting-warp .padding-dom,
+    .user-my-sex .el-radio-button__inner,
+    .face-nav,
+    .pendant-list li,
+    .security-list .child-list,
+    .security-list .first-level,
+    .sr-t,
+    .tabs-mk2,
+    .face-g-list .face-g-block,
+    .hold-list,
+    .hold-list-width.details-list-t,
+    .face-g-list .mp-block .left .mp-img,
+    .face-g-list .mp-block .right ul li .mp-tips,
+    .black-list,
+    .black-btn,
+    .el-pagination__jump .el-pagination__editor,
+    .coin-nav,
+    .get-coin-more,
+    .table-wrapper,
+    .table-normal tbody tr,
+    .table-normal thead tr td,
+    .table-normal tbody tr td,
+    .record-nav,
+    .main-content-title,
+    .indentify-page,
+    .identify-component .identify-head,
+    .finish-status .finish-box,
+    .finish-status .finish-box .box-title,
+    .home-top-level-mask-warp,
+    .invitation-top-warp,
+    .invtable tr th,
+    table.invtable td {
         border-color: var(--color-42)!important
     }
     .home-userstatus {
@@ -3690,6 +3904,33 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .big-more-tool-btn,
     .line-circle {
         border-color: var(--color-2c)!important
+    }
+    .pendant-list li:hover {
+        border-color: var(--bili-blue)!important
+    }
+    .face-g-list .mp-block .right ul li.base .round {
+        border-color: var(--color-37)!important
+    }
+    /* -- 阴影 -- */
+    .face-g-list .mp-block .right ul li .mp-tips {
+        box-shadow: 0 2px 4px var(--color-21)!important;
+    }
+    /* -- 其他 -- */
+    .indentify-page {
+        margin-top: 20px!important
+    }
+    .pendant-pay-close:not(:hover) {
+        filter: invert(50%) sepia(0%) saturate(3420%) hue-rotate(340deg) brightness(107%) contrast(78%)!important
+    }
+    .finish-status .finish-box .box-title:before {
+        filter: var(--filter-dd-86)!important
+    }
+    .fans-no-data:after,
+    .fans-no-data-wear:after {
+        mix-blend-mode: soft-light!important
+    }
+    .loading {
+        mix-blend-mode: multiply!important
     }
 }
 
@@ -4783,6 +5024,79 @@ url-prefix("https://www.bilibili.com/bangumi") {
     }
 }
 
+@-moz-document url-prefix("https://www.bilibili.com/blackboard/big-protocol.html") {
+    /* ===大会员协议=== */
+    /* -- 字体 -- */
+    p span[style*="#333333"] {
+        color: var(--color-86)!important
+    }
+    p span {
+        color: var(--color-af)!important
+    }
+}
+
+@-moz-document url-prefix("https://big.bilibili.com/") {
+    /* ===大会员=== */
+    /* -- 屏蔽 -- */
+    .top-header {
+        display: none!important
+    }
+    /* -- 背景 -- */
+    table.viptable tr:nth-child(odd) td,
+    .el-input__inner {
+        background-color: var(--color-21)!important
+    }
+    .explain-item-bg-1,
+    .explain-item-bg-2,
+    .expain-left-nav-big-title,
+    table.viptable tr:nth-child(even) td {
+        background-color: var(--color-2c)!important
+    }
+    .history-th {
+        background-color: var(--color-27)!important
+    }
+    /* -- 字体 -- */
+    .common-title-txt,
+    .explain-item-content-name,
+    .right-more-btn,
+    .explain-right-content,
+    .explain-left-item-name,
+    .explain-left-nav-name,
+    .explain-right-content-txt-big,
+    .history-th,
+    table.viptable td,
+    .big-history-tab-item-2 {
+        color: var(--color-86)!important
+    }
+    .explain-item-content-desc,
+    .explain-right-content-txt-small,
+    .history-remark,
+    .el-pagination__jump {
+        color: var(--color-66)!important
+    }
+    .big-history-tab-item-active {
+        color: var(--color-ff)!important
+    }
+    .explain-left-item-active .explain-left-item-name,
+    .expain-left-nav-big-title-active .explain-left-nav-name {
+        color: var(--bili-blue)!important
+    }
+    /* -- 边框 -- */
+    .right-more-btn,
+    .explain-right-content-title-wrapper,
+    .expain-left-nav-big-title,
+    .history-th,
+    table.viptable td,
+    .big-history-tab-item-2,
+    .big-history-tab-item,
+    .el-input__inner {
+        border-color: var(--color-42)!important
+    }
+    .expain-left-nav-big-title-active {
+        border-color: var(--bili-blue)!important
+    }
+}
+
 @-moz-document url-prefix("https://www.bilibili.com/blackboard") {
     /* ===黑板=== */
     /* -- 背景 -- */
@@ -4801,39 +5115,153 @@ url-prefix("https://www.bilibili.com/bangumi") {
     }
 }
 
-@-moz-document url-prefix("https://big.bilibili.com/") {
-    /* ===大会员=== */
+@-moz-document url-prefix("https://www.bilibili.com/blackboard/help") {
+    /* ===黑板 > 全站帮助=== */
     /* -- 背景 -- */
-    .explain-item-bg-1,
-    .explain-item-bg-2,
-    .expain-left-nav-big-title {
+    .home main,
+    .MenuBox,
+    .container header,
+    .el-collapse-item__wrap,
+    .el-menu,
+    .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus,
+    .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover,
+    .el-menu--horizontal>.el-submenu .el-submenu__title:hover,
+    .el-collapse-item__header,
+    p[style*="white"] {
+        background-color: var(--color-21)!important
+    }
+    .el-menu-item:focus,
+    .el-menu-item:hover,
+    .el-submenu__title:hover,
+    .collapseItem .context img {
         background-color: var(--color-2c)!important
     }
     /* -- 字体 -- */
-    .common-title-txt,
-    .explain-item-content-name,
-    .right-more-btn,
-    .explain-right-content,
-    .explain-left-item-name,
-    .explain-left-nav-name,
-    .explain-right-content-txt-big {
+    .el-menu-item,
+    .el-collapse-item__header,
+    .el-collapse-item__content {
         color: var(--color-86)!important
     }
-    .explain-item-content-desc,
-    .explain-right-content-txt-small {
-        color: var(--color-66)!important
+    p span[style*="background:yellow"] {
+        color: var(--color-21)!important
     }
-    .explain-left-item-active .explain-left-item-name,
-    .expain-left-nav-big-title-active .explain-left-nav-name {
+    .el-menu-item.is-active {
         color: var(--bili-blue)!important
     }
     /* -- 边框 -- */
-    .right-more-btn,
-    .explain-right-content-title-wrapper,
-    .expain-left-nav-big-title {
+    .MenuBox,
+    .container header,
+    .container .collapseItem {
         border-color: var(--color-42)!important
     }
-    .expain-left-nav-big-title-active {
+}
+
+@-moz-document url-prefix("https://pay.bilibili.com/") {
+    /* ===支付相关=== */
+    /* -- 背景 -- */
+    .home main,
+    .MenuBox,
+    .container header,
+    .el-collapse-item__wrap,
+    .el-menu,
+    .el-menu--horizontal>.el-menu-item:not(.is-disabled):focus,
+    .el-menu--horizontal>.el-menu-item:not(.is-disabled):hover,
+    .el-menu--horizontal>.el-submenu .el-submenu__title:hover,
+    .el-collapse-item__header,
+    p[style*="white"] {
+        background-color: var(--color-21)!important
+    }
+    #bp_user_box,
+    .bb_box,
+    .bp_box,
+    .b-info,
+    .b-info .balance-top .balance-row .balance-right .shell-channel .shell-item,
+    .spend-recode,
+    .el-table__empty-block,
+    .el-input__inner {
+        background-color: var(--color-2c)!important
+    }
+    .bb-intro-top,
+    a.bp_box_bot_click,
+    .el-table .el-table__header-wrapper th,
+    .el-table th,
+    .el-table tr {
+        background-color: var(--color-27)!important
+    }
+    .b-info .balance-top:after,
+    .el-table--border:after,
+    .el-table--group:after,
+    .el-table:before,
+    .spend-recode .part-common .lineto {
+        background-color: var(--color-42)!important
+    }
+    /* -- 字体 -- */
+    .bp-user-box .bp-user-box-bb,
+    .bp-user-box .bp-user-box-bk,
+    .bp-user-box-top p,
+    .bp-user-box i,
+    .bp-user-box-bottom p,
+    .bp_box_top,
+    .b-info .balance-footer .balance-part .part-balance-price,
+    .b-info .bb-des .des-title,
+    .b-info .bb-des,
+    .b-info .balance-footer .part-balance-name,
+    .b-info .warning-group .warning-title,
+    .b-info .balance-top .balance-row .balance-right .shell-channel .shell-item .channel-name,
+    .spend-recode .title-group .selected-title,
+    .el-table thead,
+    .el-input__inner,
+    .el-input__prefix,
+    .el-input__suffix .spend-recode .title-group .selected-title {
+        color: var(--color-86)!important
+    }
+    .b-info .balance-footer,
+    .b-info .balance-top .balance-row .balance-title,
+    .b-info .balance-top .info-tip {
+        color: var(--color-66)!important
+    }
+    p span[style*="background:yellow"] {
+        color: var(--color-21)!important
+    }
+    .spend-recode .title-group .selected-title {
+        color: var(--color-ff)!important
+    }
+    .el-menu-item.is-active,
+    a.bp_box_bot_click {
+        color: var(--bili-blue)!important
+    }
+    .b-info .warning-group .warning-btn {
+        color: var(--bili-pink)!important
+    }
+    /* -- 边框 -- */
+    #bp_user_box,
+    .bb_box,
+    .bp_box,
+    .b-info,
+    .bb-intro-top,
+    .b-info .dividing-line,
+    .bp-user-box-bb,
+    .bp-user-box-top,
+    .bp_box_top,
+    .b-info .warning-group,
+    .b-info .balance-top .balance-row .balance-right .shell-channel .shell-item,
+    .spend-recode,
+    .el-table td,
+    .el-table th.is-leaf,
+    .el-input__inner {
+        border-color: var(--color-42)!important
+    }
+    .b-info .balance-top .balance-row .balance-right .shell-channel .shell-item-active {
         border-color: var(--bili-blue)!important
+    }
+    .b-info .warning-group .warning-btn {
+        border-color: var(--bili-pink)!important
+    }
+    /* -- 其他 -- */
+    .b-info .line {
+        filter: var(--filter-ff-66)!important
+    }
+    .b-info .warning-group .icon-warning {
+        mix-blend-mode: soft-light!important
     }
 }
