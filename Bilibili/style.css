@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-    * © 版权信息
-    * © 作者：QIUZAIYOU 
-    * © 最后更新：20210113
-    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+        * © 版权信息
+        * © 作者：QIUZAIYOU 
+        * © 最后更新：20210114
+        * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+        ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -2007,7 +2007,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .up-info .btn-panel .following-charge-btn,
     .main-container .pay-bar .btn-pay,
     .tag-channel-pane .channel-btns__link:hover,
-    .tag-channel-cancel-popup a.btn-ok {
+    .tag-channel-cancel-popup a.btn-ok,
+    .up-info .up-info_right .name .live-status:hover {
         color: var(--color-ff)!important
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover,
@@ -2053,7 +2054,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .video-desc .tip-info .copyright i {
         color: var(--bili-red)!important
     }
-    .video-toolbar .appeal-text:hover {
+    .video-toolbar .appeal-text:hover,
+    .up-info .up-info_right .name .live-status {
         color: var(--bili-pink)!important
     }
     .bb-comment .reply-notice .notice-item a,
