@@ -3110,7 +3110,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .schedule-item .schedule-img,
     .manga-navbar-history-list .drop-list,
     .multi-line-text:after,
-    .manga-navbar-favourite-manga .drop-list {
+    .manga-navbar-favourite-manga .drop-list,
+    .episode-comment {
         background-color: var(--color-2c)!important
     }
     .episode-list-component .episode-list .list-header .header-item,
