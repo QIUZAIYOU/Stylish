@@ -78,6 +78,7 @@
         --filter-99a2aa-66: invert(71%) sepia(0%) saturate(0%) hue-rotate(7deg) brightness(87%) contrast(90%)!important;
         --filter-98a2aa-shopPink: invert(50%) sepia(81%) saturate(1975%) hue-rotate(308deg) brightness(100%) contrast(90%)!important;
         --filter-626a6e-blue: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%)!important;
+        --filter-20-mangaBlue: invert(50%) sepia(91%) saturate(1050%) hue-rotate(180deg) brightness(101%) contrast(101%)!important;
         --filter-6c727e-mangaBlue: invert(50%) sepia(66%) saturate(1178%) hue-rotate(182deg) brightness(103%) contrast(102%)!important;
         --filter-bdc7cf-mangaBlue: invert(50%) sepia(98%) saturate(1080%) hue-rotate(180deg) brightness(101%) contrast(102%)!important;
     }
@@ -3273,6 +3274,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     }
     .nav-list .emmet {
         filter: var(--filter-20-86)!important
+    }
+    .nav-list .nav-item:hover .emmet {
+        filter: var(--filter-20-mangaBlue)!important
     }
     .search-bar .confirm-btn .search-icon[data-v-3c58a041] {
         filter: var(--filter-19-86)!important
