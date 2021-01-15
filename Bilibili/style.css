@@ -61,8 +61,9 @@
         --bodr-42: 1px solid #424242!important;
         --filter-ff-86: invert(50%) sepia(12%) saturate(0%) hue-rotate(202deg) brightness(103%) contrast(94%)!important;
         --filter-19-86: invert(47%) sepia(70%) saturate(2%) hue-rotate(340deg) brightness(97%) contrast(84%)!important;
-        --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%)!important;
+        --filter-20-86: invert(49%) sepia(19%) saturate(4%) hue-rotate(314deg) brightness(103%) contrast(91%)!important;
         --filter-21-86: invert(51%) sepia(3%) saturate(13%) hue-rotate(350deg) brightness(104%) contrast(86%)!important;
+        --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%)!important;
         --filter-99-86: invert(38%) sepia(0%) saturate(537%) hue-rotate(141deg) brightness(101%) contrast(84%)!important;
         --filter-cc-86: invert(50%) sepia(16%) saturate(0%) hue-rotate(243deg) brightness(103%) contrast(81%)!important;
         --filter-c0-86: invert(50%) sepia(0%) saturate(2764%) hue-rotate(157deg) brightness(107%) contrast(70%)!important;
@@ -3247,7 +3248,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .section-navigator .divider,
     .list-item,
     .header-info .manga-info .action-buttons .do-favourite,
-    .sidebar-ctnr[data-v-5c4b9d9d] {
+    .sidebar-ctnr,
+    .nav-list .divider {
         border-color: var(--color-42)!important
     }
     .paging-box-big .dian,
@@ -3268,6 +3270,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     /* -- 其他 -- */
     .episode-comment .comment-container {
         padding-top: 0!important
+    }
+    .nav-list .emmet {
+        filter: var(--filter-20-86)!important
     }
     .search-bar .confirm-btn .search-icon[data-v-3c58a041] {
         filter: var(--filter-19-86)!important
