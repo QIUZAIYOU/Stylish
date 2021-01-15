@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-        * © 版权信息
-        * © 作者：QIUZAIYOU 
-        * © 最后更新：20210113
-        * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-        ===*/
+    * © 版权信息
+    * © 作者：QIUZAIYOU 
+    * © 最后更新：20210115
+    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -828,7 +828,8 @@
     .el-button--default,
     .cancel,
     .card .focus-btn .focus,
-    .big-gift-btn-home {
+    .big-gift-btn-home,
+    .btn-confirm.disabled {
         color: var(--color-86)!important;
         background: var(--color-37)!important;
         border-color: var(--color-42)!important
@@ -3659,7 +3660,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     table.invtable td input,
     .points-record .el-pagination__editor,
     .points-record .el-pagination .btn-next,
-    .points-record .el-pagination .btn-prev {
+    .points-record .el-pagination .btn-prev,
+    .container {
         background-color: var(--color-2c)!important
     }
     .home-top-level-up,
@@ -3669,7 +3671,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .table-normal thead tr td,
     .get-coin-more:hover,
     .invtable tr th,
-    .codedone {
+    .codedone,
+    .first-change-lb {
         background-color: var(--color-27)!important
     }
     .security_content,
@@ -3680,13 +3683,15 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .user-my-sex .el-radio-button__inner,
     .pendant-mask .pendant-box,
     .face-g-list .mp-block .right ul li .strip,
-    .finish-status .finish-box .box-content {
+    .finish-status .finish-box .box-content,
+    .first-change-lb:hover {
         background-color: var(--color-37)!important
     }
     .big-more-tool-item {
         background-color: var(--color-86)!important
     }
-    .line-circle {
+    .line-circle,
+    .border-line {
         background-color: var(--color-42)!important
     }
     .pendant-main .pendant-btn:hover {
@@ -3698,7 +3703,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .security-icon,
     .child-list li a i,
     .al-bl,
-    .home-level-mask-icon {
+    .home-level-mask-icon,
+    .first-change-lb i {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_4.png) !important
     }
     .al-bl {
@@ -3769,7 +3775,11 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .invitation-info-title,
     .inv-record-title,
     .inputdone,
-    .invtable tr th {
+    .invtable tr th,
+    .head-wrap,
+    .descript,
+    .pre-info,
+    .reset-img label {
         color: var(--color-86)!important
     }
     .notification-list-info,
@@ -3799,7 +3809,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .inv-record-right,
     .codedone,
     table.invtable td,
-    .invitation-normal {
+    .invitation-normal,
+    .first-change-lb span {
         color: var(--color-66)!important
     }
     .notification-tips a,
@@ -3815,7 +3826,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .face-nav>.active a,
     .tab-mk2.active,
     .coin-nav .on,
-    .record-nav .on {
+    .record-nav .on,
+    .reset-img label:hover {
         color: var(--bili-blue)!important
     }
     .security-left .on .security-nav-name,
@@ -3897,10 +3909,17 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .home-top-level-mask-warp,
     .invitation-top-warp,
     .invtable tr th,
-    table.invtable td {
+    table.invtable td,
+    .container,
+    .modal-head,
+    .first-change-lb,
+    .pre-container {
         border-color: var(--color-42)!important
     }
-    .home-userstatus {
+    .home-userstatus,
+    .crop-box,
+    .drag-point,
+    .container-bg {
         border-color: var(--color-86)!important
     }
     .big-more-tool-btn,
@@ -4064,7 +4083,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-follows .follow-main .follow-action-bottom .icon-copy,
     .tag-list .tag-icon,
     .i-live .i-live-m,
-    #page-index .i-m-u-icon, 
+    #page-index .i-m-u-icon,
     #page-index .i-m-v-icon {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_2.png)!important
     }
