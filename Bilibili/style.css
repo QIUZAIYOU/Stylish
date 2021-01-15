@@ -286,6 +286,7 @@
     .van-popper-avatar .count-item .item-value,
     .van-popper-avatar .links .link-title,
     .van-popper-avatar .link-icon,
+    .van-popper-avatar .nickname,
     .lang-change .lang-intro,
     .lang-change .lang-title,
     .van-popper-avatar .logout span,
@@ -325,6 +326,9 @@
     .van-popper-avatar .coins .contact .phone-icon--bind,
     .van-popper-login .btn-box .btn.reg-btn {
         color: var(--bili-blue)!important
+    }
+    .van-popper-avatar .nickname[style*="rgb(251, 114, 153)"] {
+        color: var(--bili-pink)!important
     }
     .nav-link .nav-link-ul .nav-link-item .link .navbar_pullup path {
         fill: var(--color-86)!important
@@ -834,7 +838,8 @@
     .cancel,
     .card .focus-btn .focus,
     .big-gift-btn-home,
-    .btn-confirm.disabled {
+    .btn-confirm.disabled,
+    .form-login .input-box .btn-box .btn {
         color: var(--color-86)!important;
         background: var(--color-37)!important;
         border-color: var(--color-42)!important
@@ -848,7 +853,8 @@
     .el-button--default:hover,
     .cancel:hover,
     .card .focus-btn .focus:hover,
-    .big-gift-btn-home:hover {
+    .big-gift-btn-home:hover,
+    .form-login .input-box .btn-box .btn:hover {
         color: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important
     }
@@ -859,7 +865,8 @@
     .el-button--primary,
     .card .focus-btn .unfocus,
     .big-member-btn,
-    .b-info .button {
+    .b-info .button,
+    .form-login .input-box .btn-box .btn-login {
         color: var(--color-ff)!important;
         background: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important
@@ -872,7 +879,8 @@
     .el-button--primary:hover,
     .card .focus-btn .unfocus:hover,
     .big-member-btn:hover,
-    .b-info .button:hover {
+    .b-info .button:hover,
+    .form-login .input-box .btn-box .btn-login:hover {
         color: var(--color-ff)!important;
         background-color: var(--bili-lightblue)!important
     }
@@ -903,7 +911,7 @@
     .points-record .el-pagination__editor,
     .el-pagination .btn-next,
     .el-pagination .btn-prev,
-    .el-pagination__editor.el-input .el-input__inner,
+    .el-pagination__editor.el-input,
     .el-pagination .btn-next,
     .el-pagination .btn-prev,
     .el-pager li {
@@ -959,7 +967,8 @@
     .bili-dropdown,
     .bili-dropdown .dropdown-list,
     .bili-select,
-    .bili-select .dropdown-list {
+    .bili-select .dropdown-list,
+    .el-select-dropdown {
         background-color: var(--color-21)!important;
         border-color: var(--color-42)!important
     }
@@ -971,12 +980,23 @@
         border-color: var(--color-42)!important
     }
     .bili-dropdown .dropdown-list .dropdown-item:hover,
-    .bili-option:hover {
+    .bili-option:hover,
+    .el-select-dropdown__item:hover,
+    .el-select-dropdown__item.hover {
         background-color: var(--color-27)!important;
         color: var(--bili-blue)!important;
     }
     .selector-wrapper .more-type-wrapper {
         background-color: var(--color-2c)!important;
+    }
+    .el-select-dropdown__item.is-disabled:hover {
+        background-color: var(--color-21)!important;
+    }
+    .el-select-dropdown__item {
+        color: var(--color-86)!important
+    }
+    .el-select-dropdown__item.is-disabled {
+        color: var(--color-66)!important
     }
     /* -- 播放器 -- */
     .player .bilibili-player-video-bottom-area .bilibili-player-video-sendbar {
@@ -988,20 +1008,30 @@
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-danmaku-input,
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar,
-    .bilibili-player-video-info {
+    .bilibili-player-video-info,
+    .dialog-success-explain {
         color: var(--color-86)!important;
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-inputbar-wrap {
         border-color: var(--color-42)!important
     }
-    /* -- 弹出层 -- */
+    /* -- 弹出 -- */
+    .dialog-contnent {
+        background-color: var(--color-21)!important;
+    }
     .mask .popup-box {
         background-color: var(--color-2c)!important
     }
-    .mask .popup-box h3 {
+    .mask .popup-box h3,
+    .dialog-title-txt,
+    .dialog-fail-explain {
         color: var(--color-86)!important;
     }
-    .mask .popup-box .popup-title {
+    .dialog-fail-explain2 {
+        color: var(--color-66)!important;
+    }
+    .mask .popup-box .popup-title,
+    .dialog-title {
         border-color: var(--color-42)!important
     }
     /* -- 返回顶部 -- */
@@ -3124,7 +3154,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .manga-navbar-history-list .drop-list,
     .multi-line-text:after,
     .manga-navbar-favourite-manga .drop-list,
-    .episode-comment {
+    .episode-comment,
+    .user-panel .drop-list {
         background-color: var(--color-2c)!important
     }
     .episode-list-component .episode-list .list-header .header-item,
@@ -3133,7 +3164,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .title-tooltip:before,
     .header-info .manga-info .action-buttons .do-favourite:hover,
     .manga-navbar-history-list .drop-list .more-btn-container,
-    .manga-navbar-favourite-manga .drop-list .more-btn-container {
+    .manga-navbar-favourite-manga .drop-list .more-btn-container,
+    .user-panel .drop-list .logout-btn-container .logout-button {
         background-color: var(--color-27)!important
     }
     .container .back-to-content .line {
@@ -3192,7 +3224,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .data-list .list-container .data-item .text-section .manga-title,
     .manga-navbar-favourite-manga .action-button,
     .manga-navbar-favourite-manga .drop-list .more-btn-container .more-button,
-    .search-bar .placeholder-list .placeholder-item {
+    .search-bar .placeholder-list .placeholder-item,
+    .user-panel .drop-list .logout-btn-container .logout-button {
         color: var(--color-86)!important
     }
     .comic-item .tags,
@@ -3208,7 +3241,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .manga-info-ctnr,
     .no-more-ctnr,
     .schedule-item .text-section .status-text,
-    .data-list .list-container .data-item .text-section .footer-text .text {
+    .data-list .list-container .data-item .text-section .footer-text .text,
+    .user-info-panel .user-name,
+    .user-info-panel .info-item {
         color: var(--color-66)!important
     }
     .title .button,
@@ -3238,7 +3273,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .data-list .list-container .data-item .text-section:hover .manga-title,
     .manga-navbar-history-list .drop-list .more-btn-container .more-button:hover,
     .manga-navbar-favourite-manga .drop-list .more-btn-container .more-button:hover,
-    .comic-info-panel .comic-detail:hover .comic-title {
+    .comic-info-panel .comic-detail:hover .comic-title,
+    .user-panel .drop-list .logout-btn-container .logout-button:hover {
         color: var(--bili-manga-blue)!important
     }
     .rank-list-item .preview-mode .index-indicator.high-light {
@@ -3678,10 +3714,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .big-more-item-list,
     .go-movie,
     .viptable tr:nth-child(2n) td,
-    .user-nick-name .el-input__inner,
+    .user-nick-name,
     .user-my-sign .el-textarea,
     .user-my-sign .el-textarea .el-textarea__inner,
-    .user-my-date .el-input__inner,
+    .user-my-date,
     .tool-uninstall-pendant,
     .face-g-list .mp-block .right ul li .mp-tips,
     .security-list .child-list li a:hover,
@@ -3698,7 +3734,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .points-record .el-pagination__editor,
     .points-record .el-pagination .btn-next,
     .points-record .el-pagination .btn-prev,
-    .container {
+    .container,
+    .user-nick-name .el-input,
+    .user-nick-name .el-input__inner,
+    .user-my-date .el-input__inner {
         background-color: var(--color-2c)!important
     }
     .home-top-level-up,
@@ -3782,10 +3821,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .points-exchange-title,
     .userinfo-username,
     .user-nick-name .el-input,
-    .user-nick-name .el-input__inner,
+    .user-nick-name,
     .user-my-sign .el-textarea,
     .user-my-sign .el-textarea .el-textarea__inner,
-    .user-my-date .el-input__inner,
+    .user-my-date,
     .user-my-date .el-input__icon,
     .user-my-sex .el-radio-button__inner,
     .tool-uninstall-pendant.disable span,
@@ -3816,7 +3855,11 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .head-wrap,
     .descript,
     .pre-info,
-    .reset-img label {
+    .reset-img label,
+    .home-top-msg-name,
+    .user-nick-name .el-input,
+    .user-nick-name .el-input__inner,
+    .user-my-date .el-input__inner {
         color: var(--color-86)!important
     }
     .notification-list-info,
@@ -3875,6 +3918,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .mp-mine-takedown:hover {
         color: var(--color-ff)!important
     }
+    .home-top-msg-name[style*="rgb(251, 114, 153)"] {
+        color: var(--bili-pink)!important
+    }
     /* -- 边框 -- */
     .tool-uninstall-pendant,
     .tool-container,
@@ -3911,10 +3957,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .viptable tr th,
     table.viptable td,
     .user-nick-name .el-input,
-    .user-nick-name .el-input__inner,
+    .user-nick-name,
     .user-my-sign .el-textarea,
     .user-my-sign .el-textarea .el-textarea__inner,
-    .user-my-date .el-input__inner,
+    .user-my-date,
     .user-setting-warp .padding-dom,
     .user-my-sex .el-radio-button__inner,
     .face-nav,
@@ -3950,7 +3996,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .container,
     .modal-head,
     .first-change-lb,
-    .pre-container {
+    .pre-container,
+    .user-nick-name .el-input,
+    .user-nick-name .el-input__inner,
+    .user-my-date .el-input__inner {
         border-color: var(--color-42)!important
     }
     .home-userstatus,
@@ -4508,27 +4557,109 @@ url-prefix("https://www.bilibili.com/bangumi") {
         display: none!important
     }
     /* -- 背景 -- */
-    .notification-list {
+    .notification-list,
+    #login-app .title-line .tit,
+    #login-app .form-login .input-box .item input,
+    .el-input__inner,
+    #login-app .qrcode-login .qrcode-con .qrcode-box .qrcode-tips,
+    .steps-icon {
         background-color: var(--color-21)!important
+    }
+    #login-app .input-with-select .el-input-group__prepend,
+    #login-app .el-select .el-input__inner,
+    #login-app .el-select-dropdown {
+        background-color: var(--color-27)!important
+    }
+    #login-app .el-select-dropdown__item:hover,
+    #login-app .el-select-dropdown__item.hover {
+        background-color: var(--color-37)!important
+    }
+    .steps-list .steps-line {
+        background-color: var(--color-42)!important
     }
     /* -- 字体 -- */
     .notification-list-title,
     .nav-list li .list-description p,
-    .nav-list li .list-title .list-title-text p {
+    .nav-list li .list-title .list-title-text p,
+    #login-app .form-login .input-box .item input,
+    #login-app p,
+    .el-input__inner,
+    #login-app .el-input-group__append,
+    #login-app .el-input-group__prepend,
+    #login-app .el-select .el-input .el-select__caret,
+    .steps-icon,
+    .steps-title,
+    .form-group .form-group-title[data-v-3c22c706],
+    .mail-text {
         color: var(--color-86)!important
     }
     .notification-list-info,
-    .notification-tips {
+    .notification-tips,
+    #login-app .form-login .input-box .remember span,
+    #login-app .qrcode-login .qrcode-footer .app-link,
+    #login-app .qrcode-login .qrcode-footer .suc-txt,
+    .el-breadcrumb__separator,
+    .form-message,
+    .result-desc {
         color: var(--color-66)!important
     }
     .notification-tips a {
         color: var(--bili-blue)!important
     }
+    #login-app .form-login .input-box .text .tips,
+    .steps-list>.active .steps-icon,
+    .steps-list>.active .steps-title,
+    .form-message.text-error {
+        color: var(--bili-shop-pink)!important
+    }
     /* -- 边框 -- */
     .notification-warp,
     .notification-list-line,
-    .nav-list li {
+    .nav-list li,
+    #login-app .title-line,
+    #login-app .login-box .line,
+    #login-app .form-login .input-box .item input,
+    #login-app .checkbox-bwxr,
+    .el-input__inner,
+    #login-app .input-with-select .el-input-group__prepend,
+    .steps-line,
+    .steps-icon {
         border-color: var(--color-42)!important
+    }
+    .steps-list>.active .steps-icon,
+    .steps-list>.active .steps-title {
+        border-color: var(--bili-shop-pink)!important
+    }
+    #login-app .el-input-group--append .el-select .el-input.is-focus .el-input__inner,
+    #login-app .el-input-group--prepend .el-select .el-input.is-focus .el-input__inner,
+    #login-app .el-input-group__append button.el-button,
+    #login-app .el-input-group__append div.el-select .el-input__inner,
+    #login-app .el-input-group__append div.el-select:hover .el-input__inner,
+    #login-app .el-input-group__prepend button.el-button,
+    #login-app .el-input-group__prepend div.el-select .el-input__inner,
+    #login-app .el-input-group__prepend div.el-select:hover .el-input__inner {
+        border-color: transparent!important
+    }
+    .qrcode-login .qrcode-con .qrcode-box .qrcode-img {
+        border: 5px solid var(--color-ff)!important
+    }
+    /* -- 其他 -- */
+    .qrcode-login .qrcode-con .qrcode-box,
+    .qrcode-login .qrcode-con .qrcode-box .qrcode-img {
+        width: 150px!important;
+        height: 150px!important;
+        margin: 0 auto!important;
+        box-sizing: border-box!important
+    }
+    #login-app input[name="country_code"] {
+        height: 38px!important;
+        border-radius: 4px!important
+    }
+    #login-app .checkbox-bwxr input {
+        display: none!important
+    }
+    #login-app .checkbox-bwxr:not(.active) {
+        filter: var(--filter-ccd0d7-86)!important
     }
 }
 
@@ -5347,7 +5478,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .b-info .line {
         filter: var(--filter-ff-66)!important
     }
-    .b-info .warning-group .icon-warning {
+    .b-info .warning-group .icon-warning,
+    .bb-intro-top .b-question .b-question-icon {
         mix-blend-mode: soft-light!important
     }
 }
