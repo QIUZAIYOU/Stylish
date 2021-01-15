@@ -4063,7 +4063,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-follows .follow-select .icon-follow-watched,
     #page-follows .follow-main .follow-action-bottom .icon-copy,
     .tag-list .tag-icon,
-    .i-live .i-live-m {
+    .i-live .i-live-m,
+    #page-index .i-m-u-icon, 
+    #page-index .i-m-v-icon {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_2.png)!important
     }
     #page-index .fav-covers.empty,
