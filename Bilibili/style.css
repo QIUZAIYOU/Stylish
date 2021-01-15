@@ -2001,7 +2001,9 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .tool-bar .share-info .share-more .share-wrapper .share-btn i,
     .main-container .tool-bar .share-info .share-more .share-wrapper .share-btn span,
     .up-info>a .up-name,
-    .main-container .tool-bar .mobile-info .mobile-more .top-wrapper .video-title {
+    .main-container .tool-bar .mobile-info .mobile-more .top-wrapper .video-title,
+    .wide-members .avatar .up-name,
+    .wide-members__title {
         color: var(--color-86)!important
     }
     .up-info .up-info_right .desc,
@@ -2091,7 +2093,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
         color: var(--bili-red)!important
     }
     .video-toolbar .appeal-text:hover,
-    .up-info .up-info_right .name .live-status {
+    .up-info .up-info_right .name .live-status,
+    .wide-members .avatar .is-vip {
         color: var(--bili-pink)!important
     }
     .bb-comment .reply-notice .notice-item a,
