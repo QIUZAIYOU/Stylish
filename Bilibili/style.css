@@ -60,6 +60,7 @@
         --bili-shop-darkpink: #e50e4c!important;
         --bodr-42: 1px solid #424242!important;
         --filter-ff-86: invert(50%) sepia(12%) saturate(0%) hue-rotate(202deg) brightness(103%) contrast(94%)!important;
+        --filter-19-86: invert(47%) sepia(70%) saturate(2%) hue-rotate(340deg) brightness(97%) contrast(84%)!important;
         --filter-22-86: invert(54%) sepia(2%) saturate(0%) hue-rotate(136deg) brightness(99%) contrast(94%)!important;
         --filter-21-86: invert(51%) sepia(3%) saturate(13%) hue-rotate(350deg) brightness(104%) contrast(86%)!important;
         --filter-99-86: invert(38%) sepia(0%) saturate(537%) hue-rotate(141deg) brightness(101%) contrast(84%)!important;
@@ -69,13 +70,15 @@
         --filter-dd-86: invert(50%) sepia(97%) saturate(0%) hue-rotate(158deg) brightness(88%) contrast(84%)!important;
         --filter-ccd0d7-86: invert(50%) sepia(5%) saturate(0%) hue-rotate(195deg) brightness(104%) contrast(93%)!important;
         --filter-98a2aa-86: invert(50%) sepia(90%) saturate(1%) hue-rotate(25deg) brightness(89%) contrast(86%)!important;
+        --filter-6c727e-86: invert(50%) sepia(0%) saturate(7464%) hue-rotate(114deg) brightness(108%) contrast(65%)!important;
         --filter-bdc7cf-86: invert(50%) sepia(0%) saturate(1258%) hue-rotate(292deg) brightness(106%) contrast(82%)!important;
         --filter-99-66: invert(56%) sepia(0%) saturate(2966%) hue-rotate(316deg) brightness(80%) contrast(92%)!important;
         --filter-ff-66: invert(77%) sepia(70%) saturate(0%) hue-rotate(92deg) brightness(91%) contrast(93%)!important;
         --filter-99a2aa-66: invert(71%) sepia(0%) saturate(0%) hue-rotate(7deg) brightness(87%) contrast(90%)!important;
         --filter-98a2aa-shopPink: invert(50%) sepia(81%) saturate(1975%) hue-rotate(308deg) brightness(100%) contrast(90%)!important;
         --filter-626a6e-blue: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%)!important;
-        --filter-bdc7cf-mangaBlue: invert(50%) sepia(98%) saturate(1080%) hue-rotate(180deg) brightness(101%) contrast(102%)!important
+        --filter-6c727e-mangaBlue: invert(50%) sepia(66%) saturate(1178%) hue-rotate(182deg) brightness(103%) contrast(102%)!important;
+        --filter-bdc7cf-mangaBlue: invert(50%) sepia(98%) saturate(1080%) hue-rotate(180deg) brightness(101%) contrast(102%)!important;
     }
     html,
     body {
@@ -3078,6 +3081,14 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://manga.bilibili.com/") {
     /* ===漫画=== */
     /* -- 背景 -- */
+    .ps .ps__rail-x.ps--clicking,
+    .ps .ps__rail-x:focus,
+    .ps .ps__rail-x:hover,
+    .ps .ps__rail-y.ps--clicking,
+    .ps .ps__rail-y:focus,
+    .ps .ps__rail-y:hover {
+        background: var(--color-14)!important
+    }
     .search-bar .search-bar-bg,
     .rank-item-wrapper {
         background: var(--color-21)!important
@@ -3126,7 +3137,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .container .back-to-content .line {
         background-color: var(--color-42)!important
     }
-    .section-navigator .section-item.current {
+    .section-navigator .section-item.current,
+    .ps__rail-y.ps--clicking .ps__thumb-y,
+    .ps__rail-y:focus>.ps__thumb-y,
+    .ps__rail-y:hover>.ps__thumb-y {
         background-color: var(--bili-manga-blue)!important
     }
     .header-info .manga-info .action-buttons .do-favourite .fav-icon {
@@ -3175,7 +3189,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .manga-navbar-history-list .drop-list .more-btn-container .more-button,
     .data-list .list-container .data-item .text-section .manga-title,
     .manga-navbar-favourite-manga .action-button,
-    .manga-navbar-favourite-manga .drop-list .more-btn-container .more-button {
+    .manga-navbar-favourite-manga .drop-list .more-btn-container .more-button,
+    .search-bar .placeholder-list .placeholder-item {
         color: var(--color-86)!important
     }
     .comic-item .tags,
@@ -3251,6 +3266,12 @@ url-prefix("https://www.bilibili.com/bangumi") {
         box-shadow: none!important
     }
     /* -- 其他 -- */
+    .episode-comment .comment-container {
+        padding-top: 0!important
+    }
+    .search-bar .confirm-btn .search-icon[data-v-3c58a041] {
+        filter: var(--filter-19-86)!important
+    }
     .section-navigator .back-to-top .icon,
     .container .back-to-content .back-to-home-button .icon,
     .container .back-to-content .back-to-top-button .icon,
@@ -3265,8 +3286,14 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .header-info .manga-info .action-buttons .do-favourite .fav-icon:not([src*="PHBhdGggZD0iTTEyLDE4LjQ4LDYuNDMsMjEuMjJhLjcuNywwLDAsMS0xLS43M2wuODgtNi4xNEwyLDkuOWEuNy43LDAsMCwxLC4zOC0xLjE4TDguNDksNy42NmwyLjg5LTUuNDlhLjcxLjcxLDAsMCwxLDEuMjQsMGwyLjg5LDUuNDksNi4xMiwxLjA2QS43LjcsMCwwLDEsMjIsOS45bC00LjMyLDQuNDUuODgsNi4xNGEuNy43LDAsMCwxLTEsLjczWiIgc3R5bGU9ImZpbGw6I2ZmYTAxNTtmaWxsLXJ1bGU6ZXZlbm9kZCIvPjwvc3ZnPg"]) {
         filter: var(--filter-21-86)!important
     }
-    .rank-movement.hold[data-v-02948b0a] {
+    .rank-movement.hold99a2aa {
         filter: var(--filter-c0-86)!important
+    }
+    .episode-comment .header-section .close-button img {
+        filter: var(--filter-6c727e-86)!important
+    }
+    .episode-comment .header-section .close-button:hover img {
+        filter: var(--filter-6c727e-mangaBlue)!important
     }
     .header-info .manga-info .supporting-text .label-icon {
         filter: invert(100%) sepia(0%) saturate(3063%) hue-rotate(68deg) brightness(67%) contrast(110%)
