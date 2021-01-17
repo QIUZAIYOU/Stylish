@@ -4595,14 +4595,16 @@ url-prefix("https://www.bilibili.com/bangumi") {
     }
     /* -- 背景 -- */
     .notification-list,
-    #login-app .title-line .tit,
+    .title-line .tit,
     #login-app .form-login .input-box .item input,
     .el-input__inner,
     #login-app .qrcode-login .qrcode-con .qrcode-box .qrcode-tips,
-    .steps-icon {
+    .steps-icon,
+    .back-fff {
         background-color: var(--color-21)!important
     }
     #login-app .input-with-select .el-input-group__prepend,
+    #app .input-with-select .el-input-group__prepend,
     #login-app .el-select .el-input__inner,
     #login-app .el-select-dropdown {
         background-color: var(--color-27)!important
@@ -4653,12 +4655,13 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .notification-warp,
     .notification-list-line,
     .nav-list li,
-    #login-app .title-line,
+    .title-line,
     #login-app .login-box .line,
     #login-app .form-login .input-box .item input,
     #login-app .checkbox-bwxr,
     .el-input__inner,
     #login-app .input-with-select .el-input-group__prepend,
+    #app .input-with-select .el-input-group__prepend,
     .steps-line,
     .steps-icon {
         border-color: var(--color-42)!important
@@ -4674,7 +4677,15 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #login-app .el-input-group__append div.el-select:hover .el-input__inner,
     #login-app .el-input-group__prepend button.el-button,
     #login-app .el-input-group__prepend div.el-select .el-input__inner,
-    #login-app .el-input-group__prepend div.el-select:hover .el-input__inner {
+    #login-app .el-input-group__prepend div.el-select:hover .el-input__inner,
+    #app .el-input-group--append .el-select .el-input.is-focus .el-input__inner,
+    #app .el-input-group--prepend .el-select .el-input.is-focus .el-input__inner,
+    #app .el-input-group__append button.el-button,
+    #app .el-input-group__append div.el-select .el-input__inner,
+    #app .el-input-group__append div.el-select:hover .el-input__inner,
+    #app .el-input-group__prepend button.el-button,
+    #app .el-input-group__prepend div.el-select .el-input__inner,
+    #app .el-input-group__prepend div.el-select:hover .el-input__inner {
         border-color: transparent!important
     }
     .qrcode-login .qrcode-con .qrcode-box .qrcode-img {
@@ -4688,14 +4699,14 @@ url-prefix("https://www.bilibili.com/bangumi") {
         margin: 0 auto!important;
         box-sizing: border-box!important
     }
-    #login-app input[name="country_code"] {
+    input[name="country_code"] {
         height: 38px!important;
         border-radius: 4px!important
     }
-    #login-app .checkbox-bwxr input {
+    .checkbox-bwxr input {
         display: none!important
     }
-    #login-app .checkbox-bwxr:not(.active) {
+    .checkbox-bwxr:not(.active) {
         filter: var(--filter-ccd0d7-86)!important
     }
 }
