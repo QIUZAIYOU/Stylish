@@ -30,7 +30,7 @@
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-    :root {
+     :root {
         --color-14: #141414 !important;
         --color-1b: #1b1b1b !important;
         --color-21: #212121 !important;
@@ -149,28 +149,28 @@
         color: var(--color-ff);
     }
     /* ===浏览器滚动条=== */
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         background-color: var(--color-14) !important;
         border-radius: 0 !important;
         -webkit-border-radius: 0 !important;
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         background-color: var(--bili-blue) !important;
         border-radius: 6px !important;
         -webkit-border-radius: 6px !important;
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         background-color: var(--bili-blue) !important;
         border-radius: 6px !important;
         -webkit-border-radius: 6px !important;
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         background-color: var(--color-14) !important;
         border-radius: 0 !important;
         -webkit-border-radius: 0 !important;
@@ -404,8 +404,8 @@
     .feed-tag .card,
     .publish-panel,
     .feed-tag .core-style,
-    .card .more-panel[data-v-59e7bd6e],
-    .card .more-panel[data-v-59e7bd6e]:after {
+    .card .more-panel,
+    .card .more-panel:after {
         background-color: var(--color-21) !important;
     }
     .bb-comment .comment-send .textarea-container textarea,
@@ -523,7 +523,7 @@
     .feed-tag .separater-line,
     .hash-popup .hint,
     .indicator,
-    .video-container .text-area .view-danmaku[data-v-0514ecc0],
+    .video-container .text-area .view-danmaku,
     .tc-slate {
         color: var(--color-66) !important;
     }
@@ -549,7 +549,7 @@
     .bb-comment .comment-list .list-item .text-con .comment-jump-url,
     .comment-bilibili-fold .comment-list .list-item .text-con .comment-jump-url,
     .comment-bilibili-con .btn .btn-cancel:hover,
-    .hash-popup .topic-container .item.is-selected[data-v-9f192432],
+    .hash-popup .topic-container .item.is-selected,
     .dynamic-link-hover-bg {
         color: var(--bili-blue) !important;
     }
@@ -595,7 +595,7 @@
     .comment-bilibili-con .con input[type="radio"]:checked+label:before {
         border-color: var(--bili-blue) !important;
     }
-    .card .more-panel[data-v-59e7bd6e]:after {
+    .card .more-panel:after {
         border-top-color: var(--color-42) !important;
         border-left-color: var(--color-42) !important;
     }
@@ -1078,43 +1078,43 @@
         fill: var(--color-ff) !important;
     }
     /* -- 举报 -- */
-    .report-pc-dialog .report-dialog-container[data-v-c3ffce0a] {
+    .report-pc-dialog .report-dialog-container {
         background-color: var(--color-2c) !important;
     }
-    .report-pc-dialog .report-dialog-container .title[data-v-c3ffce0a],
-    .reason-container .reason-category .reason-category-title[data-v-c3ffce0a] {
+    .report-pc-dialog .report-dialog-container .title,
+    .reason-container .reason-category .reason-category-title {
         color: var(--color-86) !important;
     }
-    .submit .cancel-btn[data-v-c3ffce0a],
-    .submit .submit-btn[data-v-c3ffce0a] {
+    .submit .cancel-btn,
+    .submit .submit-btn {
         color: var(--color-86) !important;
         background: var(--color-2c) !important;
         border-color: var(--color-42) !important;
     }
-    .submit .submit-btn[data-v-c3ffce0a] {
+    .submit .submit-btn {
         color: var(--bili-shop-pink) !important;
     }
-    .submit .submit-btn[data-v-c3ffce0a]:hover {
+    .submit .submit-btn:hover {
         color: var(--bili-shop-darkpink) !important;
     }
-    .submit .cancel-btn[data-v-c3ffce0a]:hover {
+    .submit .cancel-btn:hover {
         color: var(--bili-blue) !important;
     }
-    .submit .cancel-btn[data-v-c3ffce0a]:after {
+    .submit .cancel-btn:after {
         border-color: var(--color-86) !important;
     }
-    .submit .submit-btn[data-v-c3ffce0a]:after {
+    .submit .submit-btn:after {
         border-color: var(--bili-shop-pink) !important;
     }
-    .submit .submit-btn[data-v-c3ffce0a]:hover:after {
+    .submit .submit-btn:hover:after {
         border-width: 3px !important;
         border-color: var(--bili-shop-darkpink) !important;
     }
-    .submit .cancel-btn[data-v-c3ffce0a]:hover:after {
+    .submit .cancel-btn:hover:after {
         border-width: 3px !important;
         border-color: var(--bili-blue) !important;
     }
-    .reason-container .reason-category .other-reason .icon-select[data-v-c3ffce0a],
+    .reason-container .reason-category .other-reason .icon-select,
     .reason-container .reason-category .reason-item .icon-select:not(.selected) {
         filter: var(--filter-98a2aa-86) !important;
     }
@@ -3350,7 +3350,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .nav-list .nav-item:hover .emmet {
         filter: var(--filter-20-mangaBlue) !important;
     }
-    .search-bar .confirm-btn .search-icon[data-v-3c58a041] {
+    .search-bar .confirm-btn .search-icon {
         filter: var(--filter-19-86) !important;
     }
     .section-navigator .back-to-top .icon,
@@ -4660,7 +4660,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #login-app .el-select .el-input .el-select__caret,
     .steps-icon,
     .steps-title,
-    .form-group .form-group-title[data-v-3c22c706],
+    .form-group .form-group-title,
     .mail-text {
         color: var(--color-86) !important;
     }
@@ -5027,28 +5027,28 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
     /* ===会员购=== */
     /* ===浏览器滚动条=== */
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         background-color: var(--color-14) !important;
         border-radius: 0 !important;
         -webkit-border-radius: 0 !important;
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         background-color: var(--bili-shop-pink) !important;
         border-radius: 6px !important;
         -webkit-border-radius: 6px !important;
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         background-color: var(--bili-shop-pink) !important;
         border-radius: 6px !important;
         -webkit-border-radius: 6px !important;
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         background-color: var(--color-14) !important;
         border-radius: 0 !important;
         -webkit-border-radius: 0 !important;
@@ -5086,7 +5086,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
         background-color: var(--color-27) !important;
     }
     .nav-header-wrapper .nav-header .nav-header-regis-login .nav-header-middle-line,
-    .info-body ul .divider[data-v-97edb89e]:before {
+    .info-body ul .divider:before {
         background-color: var(--color-42) !important;
     }
     .announcement-item .circle {
@@ -5132,7 +5132,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .modal-wrapper .modal-container .modal-body,
     .whole-guest-wrapper .guest-content .guest-desc,
     .info-body ul li .title,
-    .info-body ul li .content[data-v-97edb89e] {
+    .info-body ul li .content {
         color: var(--color-86) !important;
     }
     .project-list .project-list-item .project-list-item-detail .project-list-item-time,
