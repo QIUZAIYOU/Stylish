@@ -868,7 +868,8 @@
     .card .focus-btn .unfocus,
     .big-member-btn,
     .b-info .button,
-    .form-login .input-box .btn-box .btn-login {
+    .form-login .input-box .btn-box .btn-login,
+    .other-panel .card .detail .ask-btn {
         color: var(--color-ff)!important;
         background: var(--bili-blue)!important;
         border-color: var(--bili-blue)!important;
@@ -882,7 +883,8 @@
     .card .focus-btn .unfocus:hover,
     .big-member-btn:hover,
     .b-info .button:hover,
-    .form-login .input-box .btn-box .btn-login:hover {
+    .form-login .input-box .btn-box .btn-login:hover,
+    .other-panel .card .detail .ask-btn:hover {
         color: var(--color-ff)!important;
         background-color: var(--bili-lightblue)!important;
     }
@@ -2361,7 +2363,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .score-module-wrap .team-msg,
     .play-selector__item,
     .slide-channel-panel .mini-channel-card,
-    s .mini-channel-card .cover {
+    s .mini-channel-card .cover,
+    .customer-card .card-header {
         background-color: var(--color-2c)!important;
     }
     .bili-dropdown .dropdown-list .dropdown-item:hover,
@@ -2514,7 +2517,12 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .mini-channel-card .btn,
     .mini-channel-card .count,
     .el-message-box .el-message-box__message,
-    .rank-card-panel .header .title {
+    .rank-card-panel .header .title,
+    .self-panel .scroll-container .item>span,
+    .customer-card .card-header .name,
+    .other-panel .card .title,
+    .other-panel .card .detail-text,
+    .other-panel .card .detail p {
         color: var(--color-86)!important;
     }
     .competition-score>li p,
@@ -2570,7 +2578,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .card-score .desc,
     .card-score .title .title-text,
     .mini-channel-card .label,
-    .game-content .team-box .team-detail .team-infodata .infodata-box .score-title {
+    .game-content .team-box .team-detail .team-infodata .infodata-box .score-title,
+    .other-panel .card .detail-hint {
         color: var(--color-66)!important;
     }
     .select-type .type-group li.on,
@@ -2729,7 +2738,10 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .tab-item,
     .video-floor-infomation-m .zone-title .headline .link-more,
     .el-message-box,
-    .mini-channel-card .btn--noatten {
+    .mini-channel-card .btn--noatten,
+    .customer-card,
+    .guess-panel .question-container,
+    .other-panel .card .title {
         border-color: var(--color-42)!important;
     }
     .schedule-filter .filter-content li .img {
