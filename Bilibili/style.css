@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-    * © 版权信息
-    * © 作者：QIUZAIYOU 
-    * © 最后更新：20210117
-    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+        * © 版权信息
+        * © 作者：QIUZAIYOU 
+        * © 最后更新：20210117
+        * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+        ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -75,6 +75,7 @@
         --filter-bdc7cf-86: invert(50%) sepia(0%) saturate(1258%) hue-rotate(292deg) brightness(106%) contrast(82%)!important;
         --filter-99-66: invert(56%) sepia(0%) saturate(2966%) hue-rotate(316deg) brightness(80%) contrast(92%)!important;
         --filter-ff-66: invert(77%) sepia(70%) saturate(0%) hue-rotate(92deg) brightness(91%) contrast(93%)!important;
+        --filter-ccd0d7-66: invert(70%) sepia(2%) saturate(5%) hue-rotate(326deg) brightness(100%) contrast(81%)!important;
         --filter-d8-66: invert(83%) sepia(0%) saturate(1979%) hue-rotate(347deg) brightness(131%) contrast(68%)!important;
         --filter-99a2aa-66: invert(71%) sepia(0%) saturate(0%) hue-rotate(7deg) brightness(87%) contrast(90%)!important;
         --filter-98a2aa-shopPink: invert(50%) sepia(81%) saturate(1975%) hue-rotate(308deg) brightness(100%) contrast(90%)!important;
@@ -1874,7 +1875,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .media-info .media-right .media-desc i,
     .main-container .tool-bar .share-info .share-more,
     .appeal-box,
-    .main-container .tool-bar .mobile-info .mobile-more {
+    .main-container .tool-bar .mobile-info .mobile-more,
+    .coin-operated-m {
         background-color: var(--color-21)!important
     }
     .up-info .btn-panel .following,
@@ -1908,6 +1910,10 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .media-info .media-right .pub-wrapper .up-info-wrapper .split-line,
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-btn-send.bui-button-disabled {
         background-color: var(--color-42)!important
+    }
+    .coin-operated-m .mc-box.left-con,
+    .coin-operated-m .mc-box.on.right-con {
+        background-color: var(--color-ff)!important
     }
     .s_tag .btn-add:hover span,
     .up-info .btn-panel .not-follow,
@@ -2004,7 +2010,9 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .up-info>a .up-name,
     .main-container .tool-bar .mobile-info .mobile-more .top-wrapper .video-title,
     .wide-members .avatar .up-name,
-    .wide-members__title {
+    .wide-members__title,
+    .coin-operated-m .like-checkbox,
+    .coin-operated-m .coin-title {
         color: var(--color-86)!important
     }
     .up-info .up-info_right .desc,
@@ -2026,7 +2034,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .media-info .media-right .media-count,
     .tag-channel-pane .channel-desc,
     .video-toolbar .appeal-text,
-    .main-container .tool-bar .mobile-info .mobile-more p {
+    .main-container .tool-bar .mobile-info .mobile-more p,
+    .coin-operated-m .coin-bottom .tips {
         color: var(--color-66)!important
     }
     .video-info .video-title,
@@ -2152,7 +2161,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .nav-tools .tool-item:hover,
     .multi-page .cur-list .module-box li.on,
     .multi-page .cur-list .module-box li:hover,
-    .tag-channel-pane .channel-btns__link {
+    .tag-channel-pane .channel-btns__link,
+    .coin-operated-m .mc-box.on {
         border-color: var(--bili-blue)!important
     }
     /* -- 阴影 -- */
@@ -2180,6 +2190,12 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     img[alt][src]:not([src*="/"]),
     img[alt][data-src]:not([data-src*="/"]) {
         display: unset!important
+    }
+    .coin-operated-m .like-checkbox input[type=checkbox]:not(:checked)+i {
+        filter: var(--filter-ccd0d7-66)!important
+    }
+    input[type="checkbox"] {
+        display: none!important
     }
 }
 
