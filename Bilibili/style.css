@@ -293,7 +293,8 @@
     .bilifont,
     .van-popper-login .title,
     .international-header .mini-type .user-con.logout .item a,
-    .van-popover .mini-type .user-con.logout .item a {
+    .van-popover .mini-type .user-con.logout .item a,
+    .login-panel .action-button {
         color: var(--color-86)!important;
     }
     .bili-header-m .nav-search .nav-search-keyword:focus,
@@ -346,7 +347,8 @@
     .lang-change,
     .van-popper-avatar .links,
     .van-popper-login .lang-change,
-    .van-popper-login .vp-container {
+    .van-popper-login .vp-container,
+    .login-panel .divider {
         border-color: var(--color-42)!important;
     }
     .bili-header-m .nav-search .nav-search-btn,
@@ -3333,7 +3335,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .manga-navbar-history-list .drop-list .more-btn-container .more-button:hover,
     .manga-navbar-favourite-manga .drop-list .more-btn-container .more-button:hover,
     .comic-info-panel .comic-detail:hover .comic-title,
-    .user-panel .drop-list .logout-btn-container .logout-button:hover {
+    .user-panel .drop-list .logout-btn-container .logout-button:hover,
+    .login-panel .action-button:hover {
         color: var(--bili-manga-blue)!important;
     }
     .rank-list-item .preview-mode .index-indicator.high-light {
