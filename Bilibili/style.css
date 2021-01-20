@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
-/*===
-* © 版权信息
-* © 作者：QIUZAIYOU
-* © 最后更新：20210119
-* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-===*/
+    /*===
+    * © 版权信息
+    * © 作者：QIUZAIYOU
+    * © 最后更新：20210120
+    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    ===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -2072,7 +2072,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .pay-bar .btn-pay,
     .tag-channel-pane .channel-btns__link:hover,
     .tag-channel-cancel-popup a.btn-ok,
-    .up-info .up-info_right .name .live-status:hover {
+    .up-info .up-info_right .name .live-status:hover,
+    .up-info .btn-panel .not-follow-charge-btn:hover {
         color: var(--color-ff)!important;
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover,
@@ -2182,6 +2183,9 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .coin-operated-m .mc-box.on {
         border-color: var(--bili-blue)!important;
     }
+    .up-info .btn-panel .not-follow-charge-btn:hover {
+        border-color: var(--bili-pink)!important;
+    }
     /* -- 阴影 -- */
     .bilibili-player {
         box-shadow: 0 0 8px var(--color-14)!important;
@@ -2226,12 +2230,6 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     #app .textarea .textarea-warp textarea {
         background-color: var(--color-21)!important;
     }
-    asifadeaway {
-        background-color: var(--color-2c)!important;
-    }
-    asifadeaway {
-        background-color: var(--color-27)!important;
-    }
     /* -- 字体 -- */
     #app .container .textarea .textarea-warp textarea,
     #app .container .question,
@@ -2245,15 +2243,6 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     #app .textarea .memo,
     #app .upload-area {
         color: var(--color-66)!important;
-    }
-    asifadeaway {
-        color: var(--color-ff)!important;
-    }
-    asifadeaway {
-        color: var(--bili-blue)!important;
-    }
-    asifadeaway {
-        color: var(--bili-pink)!important;
     }
     /* -- 边框 -- */
     #app .question,
@@ -2274,10 +2263,6 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     #app .textarea .textarea-warp textarea:focus {
         outline: none!important;
     }
-    asifadeaway {
-        border-color: var(--bili-blue)!important;
-    }
-    /* -- 阴影 -- */
     /* -- 其他 -- */
     #app .container .upload-area .add-img .img-wrap img {
         filter: var(--filter-ccd0d7-86)!important;
@@ -5162,9 +5147,6 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .whole-detail-info-wrapper .detail-info-wrapper .clearfix .tip-content p {
         color: var(--color-66)!important;
     }
-    asifadeaway {
-        color: var(--color-ff)!important;
-    }
     .ticket-tips-wrapper .ticket-tips-content span {
         color: var(--bili-blue)!important;
     }
@@ -5195,9 +5177,6 @@ url-prefix("https://www.bilibili.com/bangumi") {
     }
     .selectable-option.active {
         border-color: var(--bili-shop-pink)!important;
-    }
-    asifadeaway {
-        border-color: var(--bili-blue)!important;
     }
     /* -- 阴影 -- */
     .selector-wrapper {
