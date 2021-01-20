@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
-    /*===
-    * © 版权信息
-    * © 作者：QIUZAIYOU
-    * © 最后更新：20210120
-    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+/*===
+* © 版权信息
+* © 作者：QIUZAIYOU
+* © 最后更新：20210120
+* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -18,8 +18,7 @@
     /* 首页板块中间的Banner广告 */
     .storey-box div[id*="bili_"]>a[data-loc-id],
     /* 首页直播板块（个人不喜，故添加了开关，默认开启） */
-    /* [[biliLive]] */
-    #bili_live,
+    /*[[BiliLive]]*/
     /* 播放页广告 */
     #bannerAd,
     #slide_ad,
@@ -386,7 +385,7 @@
         mix-blend-mode: soft-light!important;
     }
     .sticky-bar {
-        box-shadow: 0 2px 4px 0 rgb(33 33 33 / 50%)!important;
+        box-shadow: 0 2px 4px 0 rgba(33,3,33,.5)!important;
     }
     /* -- 全站评论列表 -- */
     .page-container,
@@ -1920,7 +1919,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .tool-bar .share-info .share-more,
     .appeal-box,
     .main-container .tool-bar .mobile-info .mobile-more,
-    .coin-operated-m {
+    .coin-operated-m,
+    .van-popover.van-followed {
         background-color: var(--color-21)!important;
     }
     .up-info .btn-panel .following,
@@ -1938,7 +1938,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .tag-info-pane .tag-footer .btn-left-box>a:hover,
     .tag-channel-pane .channel-btns__subs--delete .delete-btn,
     .tag-channel-pane .channel-btns__subs--delete .delete-btn:hover,
-    .section-ep-wrapper .ep-item .badge[style*="rgb(153, 153, 153)"] {
+    .section-ep-wrapper .ep-item .badge[style*="rgb(153, 153, 153)"],
+    .van-popover.van-followed .follow_dropdown li:hover {
         background-color: var(--color-27)!important;
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar,
@@ -2056,7 +2057,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .wide-members .avatar .up-name,
     .wide-members__title,
     .coin-operated-m .like-checkbox,
-    .coin-operated-m .coin-title {
+    .coin-operated-m .coin-title,
+    .van-popover.van-followed .follow_dropdown li {
         color: var(--color-86)!important;
     }
     .up-info .up-info_right .desc,
@@ -2140,7 +2142,8 @@ url-prefix("https://www.bilibili.com/bangumi/play") {
     .main-container .tool-bar .share-info .share-more .share-wrapper .share-btn:hover i,
     .main-container .tool-bar .share-info .share-more .share-wrapper .share-btn:hover span,
     .up-info>a .up-name:hover,
-    .main-container .tool-bar .mobile-info .mobile-more p a {
+    .main-container .tool-bar .mobile-info .mobile-more p a,
+    .van-popover.van-followed .follow_dropdown li:hover {
         color: var(--bili-blue)!important;
     }
     .video-desc .tip-info .argue i,
