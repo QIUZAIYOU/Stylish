@@ -768,7 +768,7 @@
     .avatar,
     .list-item .avatar {
         /* >> 为防止覆盖用户头像特意不加!important << */
-        background-color: var(--color-21)!important;
+        background-color: transparent!important;
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/avatar_defalut.png);
     }
     .pgc-no-data,
@@ -5081,7 +5081,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .buyticket,
     .bread-wrapper,
     .whole-detail-info-wrapper,
-    .modal-wrapper .modal-container {
+    .modal-wrapper .modal-container,
+    .showhome__switch__container {
         background-color: var(--color-21)!important;
     }
     .nav-header-wrapper,
@@ -5098,13 +5099,27 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .ticket-tips-wrapper .merchant-section,
     .ticket-tips-wrapper .rec-item,
     .guest-wrapper,
-    .announcement-wrapper {
+    .announcement-wrapper,
+    .nav-header-wrapper .nav-header .user-panel,
+    .mallhome__switch__container,
+    .mallhome__selector,
+    .mallhome__list__card,
+    .malldetail__info__detailinfo__tabs__tab,
+    .malldetail__info__wrap,
+    .malldetail__bread,
+    .malldetail .bread-wrapper,
+    .malldetail__info__detail__content,
+    .malldetail__qrcode__container {
         background-color: var(--color-2c)!important;
     }
     .nav-header-wrapper .nav-header .nav-header-search-bar-wrapper .suggestion-list .suggestion-item:hover,
     .info-header,
     .ticket-tips-wrapper .merchant-section .baseinfo-wrapper .content-item .title,
-    .info-header {
+    .info-header,
+    .mallhome__selector__line__label,
+    .malldetail__info__mainimg,
+    .malldetail__info__items,
+    .malldetail__info__detail__line--price {
         background-color: var(--color-27)!important;
     }
     .nav-header-wrapper .nav-header .nav-header-regis-login .nav-header-middle-line,
@@ -5114,11 +5129,35 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .announcement-item .circle {
         background-color: var(--color-86)!important;
     }
+    .malldetail__info__detailinfo__tabs__tab--selected {
+        background: transparent!important
+    }
     .whole-guest-wrapper .guest-content .guest-title:before {
         background-image: linear-gradient( 90deg, var(--bili-shop-pink) 40%, var(--color-21) 80%);
     }
+    .project-list .recommend-project-list-header .left-line {
+        background-image: linear-gradient(90deg, var(--color-21), var(--bili-shop-pink));
+    }
+    .project-list .recommend-project-list-header .right-line {
+        background-image: linear-gradient(-90deg, var(--color-21), var(--bili-shop-pink));
+    }
     .announcement-item.active .circle {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/shop_notice_dot.png)!important;
+    }
+    .showhome__switch,
+    .mallhome__switch {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/showhome_switch_bg.png)!important;
+    }
+    .showhome__switch__button,
+    .mallhome__switch__button {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/showhome_switch_button_on.png)!important;
+    }
+    .showhome__switch__button--select,
+    .mallhome__switch__button--select {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/showhome_switch_button.png)!important;
+    }
+    .project-list .empty-project {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/empty_project.png)!important;
     }
     /* -- 字体 -- */
     .selector-wrapper .title,
@@ -5131,7 +5170,6 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .nav-header-wrapper .nav-header .nav-header-search-bar,
     .nav-header-wrapper .nav-header .nav-header-search-bar-wrapper .suggestion-list,
     .project-list .project-list-item .project-list-item-detail .project-list-item-title,
-    .pagination-wrapper .pagination .pageNum,
     .product-info-time-wrapper .product-info-time,
     .whole-detail-info-wrapper .detail-info-wrapper .vuene-wrapper .check-map,
     .selectable-option.unable,
@@ -5154,7 +5192,14 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .modal-wrapper .modal-container .modal-body,
     .whole-guest-wrapper .guest-content .guest-desc,
     .info-body ul li .title,
-    .info-body ul li .content {
+    .info-body ul li .content,
+    .nav-header-wrapper .nav-header .user-panel,
+    .nav-header-wrapper .nav-header .user-panel a,
+    .nav-header-wrapper .nav-header .user-panel .panel-list,
+    .showhome__switch__button,
+    .mallhome__switch__button,
+    .malldetail__info__detailinfo__tabs__tab,
+    .malldetail__info__detail__line__value {
         color: var(--color-86)!important;
     }
     .project-list .project-list-item .project-list-item-detail .project-list-item-time,
@@ -5170,7 +5215,13 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .ticket-tips-wrapper .rec-item .rec-item-time,
     .ticket-tips-wrapper .rec-item .rec-item-vuene,
     .notice-info-wrapper .notice-info-time,
-    .whole-detail-info-wrapper .detail-info-wrapper .clearfix .tip-content p {
+    .whole-detail-info-wrapper .detail-info-wrapper .clearfix .tip-content p,
+    .showhome__switch__button--select,
+    .project-list .no-result,
+    .mallhome__switch__button--select,
+    .pagination-wrapper .pagination .pageNum,
+    .malldetail__info__detail__line__label,
+    .malldetail__info__detail__brief {
         color: var(--color-66)!important;
     }
     .ticket-tips-wrapper .ticket-tips-content span {
@@ -5185,7 +5236,12 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .ticket-count,
     .tabs-wrapper .tabs .tabs-item.active,
     .announcement-item .announcement-item-desc a:hover,
-    .whole-detail-info-wrapper .detail-info-wrapper .supplement .refund-info span {
+    .whole-detail-info-wrapper .detail-info-wrapper .supplement .refund-info span,
+    .nav-header-wrapper .nav-header .user-panel .panel-list div:hover a,
+    .project-list .project-list-item:hover .project-list-item-detail .project-list-item-title,
+    .pagination-wrapper .pagination .pageNum:hover,
+    .malldetail__info__detailinfo__tabs__tab--selected,
+    .malldetail__info__detail__line__value__ensure {
         color: var(--bili-shop-pink)!important;
     }
     /* -- 边框 -- */
@@ -5198,11 +5254,19 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .ticket-tips-wrapper .rec-item,
     .ticket-count,
     .guest-wrapper,
-    .announcement-wrapper {
+    .announcement-wrapper,
+    .mallhome__selector__line,
+    .malldetail__info__mainimg {
         border-color: var(--color-42)!important;
     }
     .selectable-option.active {
         border-color: var(--bili-shop-pink)!important;
+    }
+    .malldetail__qrcode__container {
+        border: var(--bodr-42)!important
+    }
+    .malldetail__qrcode__container .malldetail__qrcode img {
+        border: 4px solid var(--color-ff)!important;
     }
     /* -- 阴影 -- */
     .selector-wrapper {
@@ -5214,27 +5278,13 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .project-list .project-list-item .project-list-item-img {
         box-shadow: 3px 3px 2px 0 rgba(33, 33, 33, 0.3)!important;
     }
-    .toolbar-wrapper {
+    .toolbar-wrapper,
+    .malldetail__qrcode__container {
         box-shadow: none!important;
     }
-    /* -- 其他 -- */
-    .nav-header-wrapper .nav-header .order-and-icon-wrapper:not(:hover) .order-icon,
-    .nav-header-wrapper .nav-header .search-icon,
-    .project-list .project-list-item .project-list-item-detail .icon,
-    .pagination-wrapper .arrow,
-    .whole-detail-info-wrapper .detail-info-wrapper .vuene-wrapper .address-icon,
-    .whole-detail-info-wrapper .detail-info-wrapper .supplement .express-info .icon-small-circle {
-        filter: var(--filter-98a2aa-86)!important;
-    }
-    .whole-detail-info-wrapper .detail-info-wrapper .supplement .refund-info .icon-small-circle {
-        filter: var(--filter-98a2aa-shopPink)!important;
-    }
-    .whole-detail-info-wrapper .detail-info-wrapper .supplement .express-info .icon-small-circle {
-        opacity: 0.5!important;
-    }
-    .whole-guest-wrapper .guest-list-content .guest-left-wrapper,
-    .whole-guest-wrapper .guest-list-content .guest-right-wrapper {
-        mix-blend-mode: overlay!important;
+    .nav-header-wrapper .nav-header .user-panel .user-uname,
+    .nav-header-wrapper .nav-header .user-panel .panel-list {
+        box-shadow: inset 0 -1px 0 0 #424242!important
     }
     /* -- 评论 -- */
     .comment,
@@ -5314,21 +5364,79 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .comment-none .comment-none-img {
         mix-blend-mode: multiply!important;
     }
+    /* -- 其他 -- */
+    .nav-header-wrapper .nav-header .order-and-icon-wrapper:not(:hover) .order-icon,
+    .nav-header-wrapper .nav-header .search-icon,
+    .project-list .project-list-item .project-list-item-detail .icon,
+    .pagination-wrapper .arrow,
+    .whole-detail-info-wrapper .detail-info-wrapper .vuene-wrapper .address-icon,
+    .whole-detail-info-wrapper .detail-info-wrapper .supplement .express-info .icon-small-circle {
+        filter: var(--filter-98a2aa-86)!important;
+    }
+    .whole-detail-info-wrapper .detail-info-wrapper .supplement .refund-info .icon-small-circle {
+        filter: var(--filter-98a2aa-shopPink)!important;
+    }
+    .whole-detail-info-wrapper .detail-info-wrapper .supplement .express-info .icon-small-circle {
+        opacity: 0.5!important;
+    }
+    .whole-guest-wrapper .guest-list-content .guest-left-wrapper,
+    .whole-guest-wrapper .guest-list-content .guest-right-wrapper {
+        mix-blend-mode: overlay!important;
+    }
+    .project-list .project-list-item .promo-item {
+        padding: 1px 3px!important;
+        border-radius: 4px!important;
+    }
+    .malldetail__info__items__item--selected {
+        border-radius: 0!important;
+    }
+    .malldetail__qrcode__container,
+    .malldetail__qrcode__container .malldetail__qrcode {
+        height: auto!important;
+    }
+    .malldetail__qrcode__container .malldetail__qrcode {
+        width: -webkit-fit-content!important;
+        width: -moz-fit-content!important;
+        width: fit-content!important;
+        margin-bottom: 10px!important;
+    }
 }
 
 @-moz-document url-prefix("https://show.bilibili.com/orderlist") {
     /* ===会员购 > 订单中心=== */
     /* -- 背景 -- */
-    .order-list-wrapper {
+    .header,
+    .header .right li.user-wrapper .avatar .detail,
+    .header .right li.user-wrapper .avatar .detail .title,
+    .header .right li.user-wrapper .avatar .detail .level {
         background: var(--color-21)!important;
+    }
+    body,
+    #app,
+    .order-list-wrapper {
+        background: var(--color-2c)!important;
+    }
+    .header .right li.user-wrapper .avatar .detail .logout,
+    .header .right li.user-wrapper .avatar .detail .level a.total[data-v-545f1b4f] {
+        background: var(--color-27)!important;
+    }
+    .header .right li.user-wrapper,
+    .header .right li.user-wrapper .avatar {
+        background: transparent!important
     }
     /* -- 字体 -- */
     .order-list-wrapper .order-list .no-order .err-tips,
-    .order-list-wrapper .order-list .no-order .err-btn-group div {
+    .order-list-wrapper .order-list .no-order .err-btn-group div,
+    .header .right li.user-wrapper .avatar .detail .level .progress[data-v-545f1b4f] {
         color: var(--color-86)!important;
     }
+    .header .right li.user-wrapper .avatar .detail .logout,
+    .header .right li.user-wrapper .avatar .detail .level .progress span[data-v-545f1b4f] {
+        color: var(--color-66)!important;
+    }
     /* -- 边框 -- */
-    .order-list-wrapper .order-list .no-order .err-btn-group div {
+    .order-list-wrapper .order-list .no-order .err-btn-group div,
+    .header .right li.order[data-v-545f1b4f]:after {
         border-color: var(--color-42)!important;
     }
     /* -- 其他 -- */
