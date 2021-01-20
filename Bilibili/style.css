@@ -1278,6 +1278,17 @@
     .h5share-container:hover .text-area .text {
         color: var(--bili-blue)!important;
     }
+    [title*="封禁"],
+    .h .h-sign[title*="封禁"],
+    .up-info .up-info_right .desc[title*="封禁"] {
+        width: -webkit-fit-content!important;
+        width: -moz-fit-content!important;
+        width: fit-content!important;
+        background: var(--bili-red)!important;
+        color: var(--color-ff)!important;
+        padding: 1px 5px;
+        border-radius: 2px;
+    }
     .h5share-container:hover .text-area {
         box-shadow: 0 3px 10px 0 var(--color-27)!important;
     }
