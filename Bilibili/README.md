@@ -1,4 +1,4 @@
-# 夜间哔哩 NightMode For Bilibili.com ![Last_Update](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.01.18-blue)
+# 夜间哔哩 NightMode For Bilibili.com ![Last_Update](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.01.20-blue)
 
 ![夜间哔哩 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/bilibili/StylishCover.png)
 
@@ -23,9 +23,15 @@
 
 ## 历史更新
 
-施工中，敬请期待。
+大部分已完成，部分施工中...
+
+目前常用页面应该已经全面覆盖了。
+
+除了「直播」和「游戏」相关页面，使用时可点击浏览器工具栏 stylus 图标，再点击本样式名称后面的操作菜单（竖着的三个点），勾选排除当前链接，这两个域名相关页面夜化后续会补上。
 
 ### 2021
+
+`01.20 19:49`：修复「会员购」部分元素未夜化的问题，继续优化已完成页面夜化效果。
 
 `01.15 21:54`：继续优化已完成页面夜化效果。
 
