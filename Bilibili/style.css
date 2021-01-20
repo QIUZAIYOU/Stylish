@@ -467,6 +467,10 @@
     .card .main-content .button-bar .bp-svg-icon {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/bp_svg_icon.svg)!important;
     }
+    .bb-comment a,
+    .comment-bilibili-fold a {
+        color: var(--bili-blue)!important;
+    }
     .bb-comment .operation .opera-list,
     .comment-bilibili-fold .operation .opera-list,
     .bb-comment .comment-send .comment-emoji,
@@ -504,7 +508,11 @@
     .video-container .text-area .title,
     .card .button-area .more-button,
     .card .more-panel,
-    .comment-title-block {
+    .comment-title-block,
+    .bb-comment .comment-list .list-item .user .name,
+    .comment-bilibili-fold .comment-list .list-item .user .name,
+    .bb-comment .comment-list .list-item .reply-box .view-more .btn-more,
+    .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more {
         color: var(--color-86)!important;
     }
     .bb-comment .nameplate .nameplate-card .nameplate-text .n-type,
@@ -520,7 +528,12 @@
     .hash-popup .hint,
     .indicator,
     .video-container .text-area .view-danmaku,
-    .tc-slate {
+    .tc-slate,
+    .paging-box .current,
+    .paging-box .next,
+    .paging-box .prev,
+    .paging-box .tcd-number,
+    .paging-box .dian {
         color: var(--color-66)!important;
     }
     .user-card .btn-box .like,
@@ -546,8 +559,21 @@
     .comment-bilibili-fold .comment-list .list-item .text-con .comment-jump-url,
     .comment-bilibili-con .btn .btn-cancel:hover,
     .hash-popup .topic-container .item.is-selected,
-    .dynamic-link-hover-bg {
+    .dynamic-link-hover-bg,
+    .paging-box .current,
+    .paging-box .current:hover,
+    .paging-box .next:hover,
+    .paging-box .prev:hover,
+    .paging-box .tcd-number:hover,
+    .paging-box .dian:hover,
+    .bb-comment .comment-list .list-item .reply-box .view-more .btn-more:hover,
+    .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more:hover {
         color: var(--bili-blue)!important;
+    }
+    .bb-comment .vip-red-name,
+    .comment-bilibili-fold .vip-red-name,
+    .bb-comment .comment-list .list-item .user .name.vip-red-name {
+        color: var(--bili-pink)!important;
     }
     .bb-comment .comment-send .textarea-container textarea,
     .comment-bilibili-fold .comment-send .textarea-container textarea,
