@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-    * © 版权信息
-    * © 作者：QIUZAIYOU
-    * © 最后更新：20210120
-    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+* © 版权信息
+* © 作者：QIUZAIYOU
+* © 最后更新：20210121
+* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -29,7 +29,7 @@
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-     :root {
+    :root {
         --color-14: #141414!important;
         --color-1b: #1b1b1b!important;
         --color-21: #212121!important;
@@ -45,6 +45,8 @@
         --bili-blue: #00a1d6!important;
         --bili-lightblue: #00b5e5!important;
         --bili-red: #fa5a57!important;
+        --bili-lightblue-50: #00b5e580!important;
+        --bili-red-50: #fa5a5780!important;
         --bili-lightred: #f25e8e!important;
         --bili-yellow: #f7a920!important;
         --bili-green: #0dad9e!important;
@@ -58,6 +60,7 @@
         --bili-shop-pink: #f25d8e!important;
         --bili-shop-darkpink: #e50e4c!important;
         --bodr-42: 1px solid #424242!important;
+        --filter-00-86: invert(50%) sepia(54%) saturate(0%) hue-rotate(258deg) brightness(95%) contrast(80%)!important;
         --filter-ff-86: invert(50%) sepia(12%) saturate(0%) hue-rotate(202deg) brightness(103%) contrast(94%)!important;
         --filter-19-86: invert(47%) sepia(70%) saturate(2%) hue-rotate(340deg) brightness(97%) contrast(84%)!important;
         --filter-20-86: invert(49%) sepia(19%) saturate(4%) hue-rotate(314deg) brightness(103%) contrast(91%)!important;
@@ -149,25 +152,25 @@
         line-height: 13px;
     }
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -5106,25 +5109,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
     /* ===会员购=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -5738,5 +5741,60 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .b-info .warning-group .icon-warning,
     .bb-intro-top .b-question .b-question-icon {
         mix-blend-mode: soft-light!important;
+    }
+}
+
+@-moz-document domain("bilibili.com") {
+    /* ===适配 Bilibili Evolved 插件=== */
+    /* --> 仅适配操作面板、部分常用设置下插件添加的元素及不会与本样式冲突的元素 */
+    /* --> 因为此插件修改样式是通过插入新的页内样式直接全局修改，并没有在被修改样式的元素上添加代表此插件的 id 或 class，因此会与本样式冲突，二者无法兼得。 */
+    /* --> 若打开插件中会改变页面样式或布局的设置，会出现样式错乱的现象。 */
+    /* --> 此插件自带夜间模式，若需要使用以上提到会与本样式冲突的功能，可以选择使用此插件自带的夜间模式。 */
+    /* -- 背景 -- */
+    [class*="gui-settings"] *:not(i) {
+        background-color: var(--color-21)!important;
+    }
+    asi {
+        background-color: var(--color-2c)!important;
+    }
+    .gui-settings-checkbox-container .gui-settings-checkbox::after,
+    .gui-settings-dropdown ul li:hover,
+    .panel-area .bb-comment .fold-comment,
+    .gui-settings-header .operations .operations-menu .operation:hover {
+        background-color: var(--color-27)!important;
+    }
+    [class*="gui-settings"] .custom-color-preview {
+        background: var(--theme-color)!important;
+    }
+    .gui-settings-checkbox-container .gui-settings-checkbox {
+        background: var(--bili-red-50)!important;
+    }
+    .gui-settings-checkbox-container input:checked~.gui-settings-checkbox {
+        background: var(--bili-lightblue-50)!important
+    }
+    /* -- 字体 -- */
+    [class*="gui-settings"] *,
+    .panel-area .bb-comment .fold-comment {
+        color: var(--color-86)!important;
+    }
+    .bb-comment .comment-list .list-item .info .hate span,
+    .bb-comment .comment-list .list-item .info .like span {
+        color: var(--color-66)!important;
+    }
+    p span[style*="background:yellow"] {
+        color: var(--color-21)!important;
+    }
+    .gui-settings-dropdown ul li:hover,
+    .panel-area .bb-comment .fold-comment:hover,
+    .gui-settings-header .operations .operations-menu .operation:hover {
+        color: var(--bili-blue)!important;
+    }
+    /* -- 边框 -- */
+    [class*="gui-settings"] * {
+        border-color: var(--color-42)!important;
+    }
+    /* -- 图标 -- */
+    [class*="icon-"]::after {
+        filter: var(--filter-00-86)!important;
     }
 }
