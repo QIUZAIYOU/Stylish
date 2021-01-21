@@ -718,7 +718,8 @@
     .lazy-img,
     .common-lazy-img,
     .bangumi-home-lazy-img,
-    .i-pin-cover {
+    .i-pin-cover,
+    .video-card-common .match-card-pic a{
         background: var(--color-21) url(https://www.asifadeaway.com/Stylish/bilibili/loading_tv.png) center no-repeat!important;
     }
     .page-content .left-side .article-list .article-list-holder .article-item.item-tp-3 .item-holder .article-content .cover-img .cover-image,
