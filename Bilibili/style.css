@@ -2,7 +2,7 @@
 /*===
 * © 版权信息
 * © 作者：QIUZAIYOU
-* © 最后更新：20210121
+* © 最后更新：20210123
 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 ===*/
 }
@@ -719,7 +719,7 @@
     .common-lazy-img,
     .bangumi-home-lazy-img,
     .i-pin-cover,
-    .video-card-common .match-card-pic a{
+    .video-card-common .match-card-pic a {
         background: var(--color-21) url(https://www.asifadeaway.com/Stylish/bilibili/loading_tv.png) center no-repeat!important;
     }
     .page-content .left-side .article-list .article-list-holder .article-item.item-tp-3 .item-holder .article-content .cover-img .cover-image,
@@ -4203,7 +4203,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .ps .ps__rail-y:focus,
     .ps .ps__rail-y:hover,
     #page-setting #setting-index-modules.is-dragging .setting-index-module:hover,
-    .shop-panel .shop-list {
+    .shop-panel .shop-list,
+    .h-notice[style*="rgb(231, 231, 231)"] {
         background-color: var(--color-21)!important;
     }
     .n .n-inner,
@@ -4404,7 +4405,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .section .operation,
     #page-channel-detail .watch-later-btn,
     .i-live .i-live-text,
-    .article-title a {
+    .article-title a,
+    .h-notice[style*="rgb(231, 231, 231)"] a[style*="rgb(153, 153, 153)"]:hover {
         color: var(--color-86)!important;
     }
     #page-index .col-2 .section .user-auth.no-auth .no-auth-title span,
