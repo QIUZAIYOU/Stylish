@@ -2,7 +2,7 @@
     /*===
 * © 版权信息
 * © 作者：QIUZAIYOU
-* © 最后更新：20210201
+* © 最后更新：20210203
 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 ===*/
 }
@@ -3658,7 +3658,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .tab-content,
     .nav-tab-bar .tab-item,
     .article-holder figure.img-box,
-    .page-content .right-side .up-list {
+    .page-content .right-side .up-list,
+    .article-holder .cut-off-5 {
         background-color: var(--color-21)!important;
     }
     .up-info-holder .fixed-box .up-article-list-block .more-article,
@@ -5348,25 +5349,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
     /* ===会员购=== */
     /* ===浏览器滚动条=== */
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
