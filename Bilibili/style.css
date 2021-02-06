@@ -1,8 +1,8 @@
 @-moz-document url-prefix("http://example.com") {
-    /*===
+/*===
 * © 版权信息
 * © 作者：QIUZAIYOU
-* © 最后更新：20210203
+* © 最后更新：20210206
 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 ===*/
 }
@@ -3857,25 +3857,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://www.bilibili.com/cheese") {
     /* ===课堂=== */
     /* ===浏览器滚动条=== */
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-green)!important;
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-green)!important;
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -5233,9 +5233,13 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .live-user-item .item-right .uname,
     #live-list .headline-live h3,
     .live-room-item .item-title,
-    #live-list .headline-room h3 {
+    #live-list .headline-room h3,
+    .game-item .info .title,
+    .game-item .info .type {
         color: var(--color-86)!important;
     }
+    .game-item .info .grade-wrap .player-grade,
+    .game-item .info .desc,
     .so-icon,
     .video-item .so-icon .up-name,
     .video-item.list .des,
@@ -5295,6 +5299,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
         color: #e39423!important;
     }
     /* -- 边框 -- */
+    .game-item .info .type,
     .filter-wrap,
     #navigator .v-switcher-header-item,
     .video-item.matrix,
