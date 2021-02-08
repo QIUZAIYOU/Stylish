@@ -2,7 +2,7 @@
     /*=== 
      * 版权信息
      * 作者：QIUZAIYOU
-     * 最后更新：20210106
+     * 最后更新：20210208
      * Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -2083,6 +2083,7 @@ url-prefix("http://www.douyu.com/") {
     .search-suggest-box,
     .Search-suggestBox {
         -webkit-filter: none!important;
+        filter: none!important;
         box-shadow: none!important;
     }
     .suggest-list li:hover,
@@ -4765,27 +4766,23 @@ url-prefix("http://www.douyu.com/") {
     }
     /*=== 用户昵称颜色 ===*/
     .Barrage-nickName {
-        color: /*[[UserNameColor]]*/
-        !important;
+        color: /*[[UserNameColor]]*/!important;
     }
     /*=== 用户发言颜色 ===*/
     .UserLevel+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
     .UserLevel+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
     .UserLevel+span+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]) {
-        color: /*[[UserContentColor]]*/
-        !important;
+        color: /*[[UserContentColor]]*/!important;
     }
     /*=== 主播昵称颜色 ===*/
     .AnchorLevel+.Barrage-nickName,
     .AnchorLevel+span+.Barrage-nickName {
-        color: /*[[AnchorNameColor]]*/
-        !important;
+        color: /*[[AnchorNameColor]]*/!important;
     }
     /*=== 主播发言颜色 ===*/
     .AnchorLevel+.Barrage-nickName+.Barrage-content,
     .AnchorLevel+span+.Barrage-nickName+.Barrage-content {
-        color: /*[[AnchorContentColor]]*/
-        !important;
+        color: /*[[AnchorContentColor]]*/!important;
     }
 }
 
