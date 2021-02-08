@@ -4765,23 +4765,27 @@ url-prefix("http://www.douyu.com/") {
     }
     /*=== 用户昵称颜色 ===*/
     .Barrage-nickName {
-        color: /*[[UserNameColor]]*/!important;
+        color: /*[[UserNameColor]]*/
+        !important;
     }
     /*=== 用户发言颜色 ===*/
     .UserLevel+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
     .UserLevel+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
     .UserLevel+span+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]) {
-        color: /*[[UserContentColor]]*/!important;
+        color: /*[[UserContentColor]]*/
+        !important;
     }
     /*=== 主播昵称颜色 ===*/
     .AnchorLevel+.Barrage-nickName,
     .AnchorLevel+span+.Barrage-nickName {
-        color: /*[[AnchorNameColor]]*/!important;
+        color: /*[[AnchorNameColor]]*/
+        !important;
     }
     /*=== 主播发言颜色 ===*/
     .AnchorLevel+.Barrage-nickName+.Barrage-content,
     .AnchorLevel+span+.Barrage-nickName+.Barrage-content {
-        color: /*[[AnchorContentColor]]*/!important;
+        color: /*[[AnchorContentColor]]*/
+        !important;
     }
 }
 
@@ -5608,12 +5612,19 @@ url-prefix("http://www.douyu.com/search/") {
     .anchor-name,
     .layout-Result,
     .layout-Tab-item,
-    .Search-anchor-info p,
     .Search-anchor-info h3,
-    .Search-anchor-info h4,
     .Search-rank,
-    .layout-Module-extra {
+    .layout-Module-extra,
+    .SearchAnchorVideo-title,
+    .Search-upSmall-info h3,
+    .Search-historyItem {
         color: #868686!important;
+    }
+    .SearchAnchorVideo-time,
+    .Search-upSmall-info p,
+    .Search-anchor-info p,
+    .Search-anchor-info h4 {
+        color: #666!important;
     }
     .layout-Tab-item.is-active {
         color: #ff5d23!important;
@@ -5624,7 +5635,9 @@ url-prefix("http://www.douyu.com/search/") {
     .sort-list li a,
     .layout-Tab,
     .Search-anchor-avatar,
-    .Search-direct {
+    .Search-direct,
+    .SearchAnchorVideo-container,
+    .Search-upSmall-avatar {
         border-color: #424242!important;
     }
     .item-amount i,
@@ -5647,6 +5660,9 @@ url-prefix("http://www.douyu.com/search/") {
     }
     .anchor-list-box {
         margin-top: -10px!important;
+    }
+    .shark-webp .SearchAnchorVideo-time i {
+        filter: invert(81%) sepia(2%) saturate(18%) hue-rotate(13deg) brightness(97%) contrast(102%)!important;
     }
 }
 
