@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210207
+    * © 最后更新：20210211
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -60,6 +60,7 @@
         --bili-manga-yellow: #fb9b11!important;
         --bili-shop-pink: #f25d8e!important;
         --bili-shop-darkpink: #e50e4c!important;
+        --bili-comment-notice-yellow: #e78b1f!important;
         --bodr-42: 1px solid #424242!important;
         --filter-ff-21: invert(100%) sepia(1%) saturate(2108%) hue-rotate(282deg) brightness(105%) contrast(74%)!important;
         --filter-00-86: invert(50%) sepia(54%) saturate(0%) hue-rotate(258deg) brightness(95%) contrast(80%)!important;
@@ -587,6 +588,10 @@
     .comment-bilibili-fold .vip-red-name,
     .bb-comment .comment-list .list-item .user .name.vip-red-name {
         color: var(--bili-pink)!important;
+    }
+    .bb-comment .reply-notice .notice-item a,
+    .comment-bilibili-fold .reply-notice .notice-item a {
+        color: var(--bili-comment-notice-yellow)!important;
     }
     .bb-comment .comment-send .textarea-container textarea,
     .comment-bilibili-fold .comment-send .textarea-container textarea,
