@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210212
+    * © 最后更新：20210214
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -885,6 +885,7 @@
     .form-login .input-box .btn-box .btn,
     .follow-dialog-wrap .follow-dialog-window .bottom .btn:disabled,
     .header-info .manga-info .action-buttons .manga-button.primary:disabled,
+    .submit-button.disabled,
     .disabled {
         border-color: var(--color-42)!important;
         background: var(--color-37)!important;
@@ -1958,7 +1959,9 @@ regexp("https://space.bilibili.com/[0-9]+/dynamic") {
     .checkbox,
     .row:first-child::before,
     .row.top-border::before,
-    .tip+.row::before {
+    .tip+.row::before,
+    .row::after,
+    .reply-item {
         border-color: var(--color-42)!important;
     }
 }
