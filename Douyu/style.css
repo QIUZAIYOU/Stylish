@@ -4834,7 +4834,9 @@ url-prefix("https://www.douyu.com/member") {
     .quiz-search-time+span,
     .u_mainbody,
     .control_group .control,
-    .draw-record-page-item {
+    .draw-record-page-item,
+    .change-tips-title,
+    .change-tips-content{
         color: #868686!important;
     }
     .rotaryTicket-content .quiz-search-time .ticketUse_tab_btn dd.cur a,
