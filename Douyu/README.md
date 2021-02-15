@@ -1,4 +1,4 @@
-# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.02.08-blue)
+# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.02.16-blue)
 
 ![夜间斗鱼 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/douyu/StylishCover.png)
 
@@ -32,6 +32,10 @@
 目前已知bug：启用本样式会导致斗鱼首页下方推荐直播缩略图不显示以及部分分类直播不加载。此bug暂不清楚是什么原因导致的。因为我一直是直接把关注页收藏到书签的，几乎不看首页所以没发现这个情况，暂时也不知道该怎么修复。不过这里也提供一个解决办法：点击浏览器工具栏stylus图标，再点击本样式名称后面的操作菜单（竖着的三个点），勾选排除当前链接。这样可以在首页不启用本样式，即可解决问题。
 
 ## 历史更新
+
+### 2021
+
+`02.16 01:28`：修复日期选择器样式未被正确覆盖的问题。
 
 ### 2020
 
