@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*=== 
-     * 版权信息
-     * 作者：QIUZAIYOU
-     * 最后更新：20210216
-     * Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+    * 版权信息
+    * 作者：QIUZAIYOU
+    * 最后更新：20210216
+    * Github项目地址：https://github.com/QIUZAIYOU/Stylish
+===*/
 }
 
 @-moz-document domain("douyu.com") {
@@ -5836,84 +5836,85 @@ url-prefix("http://www.douyu.com/directory/myFollow") {
     .layout-Cover-list .layout-Cover-item:first-child {
         display: none!important;
     }
-@-moz-document url-prefix("about:blank"),
-url-prefix("") {
-    /*=== 日期选择 ===*/
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv td,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .menuSel,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput:focus,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus {
-        background: #2c2c2c!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .MTitle td {
-        background: #373737!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .WdayOn,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .WwdayOn,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .Wselday,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .WotherDayOn {
-        background: #65a4f3!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .NavImg a,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv #dpQS {
-        background: url(https://www.asifadeaway.com/Stylish/douyu/wdate.png) no-repeat!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv #dpQS {
-        background-position: 0 -90px!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .NavImgrr a {
-        background-position: 0 -40px!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .NavImgr a {
-        background-position: 0 -25px!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .NavImgll a {
-        background-position: 0 5px!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .NavImgl a {
-        background-position: 0 -10px!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus {
-        background-position: 35px -68px!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .Wday,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .menu {
-        color: #868686!important
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .WotherDay,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .invalidMenu,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .WinvalidDay {
-        color: #666!important
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .WdayOn,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .WwdayOn,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .Wselday,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .WotherDayOn {
-        color: #fff!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .Wwday,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .menuOn {
-        color: #65a4f3!important;
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .MTitle td {
-        color: #afafaf!important
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .MMenu,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .YMenu {
-        border-color: #424242!important
-    }
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .dpButton:focus,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput:focus,
-    [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus {
-        outline: none!important;
+    @-moz-document url-prefix("about:blank"),
+    url-prefix() {
+        /*=== 日期选择 ===*/
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv td,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .menuSel,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput:focus,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus {
+            background: #2c2c2c!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .MTitle td {
+            background: #373737!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .WdayOn,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .WwdayOn,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .Wselday,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .WotherDayOn {
+            background: #65a4f3!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .NavImg a,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv #dpQS {
+            background: url(https://www.asifadeaway.com/Stylish/douyu/wdate.png) no-repeat!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv #dpQS {
+            background-position: 0 -90px!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .NavImgrr a {
+            background-position: 0 -40px!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .NavImgr a {
+            background-position: 0 -25px!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .NavImgll a {
+            background-position: 0 5px!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .NavImgl a {
+            background-position: 0 -10px!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus {
+            background-position: 35px -68px!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .Wday,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .menu {
+            color: #868686!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .WotherDay,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .invalidMenu,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .WinvalidDay {
+            color: #666!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .WdayOn,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .WwdayOn,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .Wselday,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .WotherDayOn {
+            color: #fff!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .Wwday,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .menuOn {
+            color: #65a4f3!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .MTitle td {
+            color: #afafaf!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .MMenu,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .YMenu {
+            border-color: #424242!important;
+        }
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .dpButton:focus,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminput:focus,
+        [stylus-iframe="https://www.douyu.com"] .WdateDiv .yminputfocus {
+            outline: none!important;
+        }
     }
 }
