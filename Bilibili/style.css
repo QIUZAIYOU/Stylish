@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210214
+    * © 最后更新：20210218
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -4719,7 +4719,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-channel-detail .channel-info .desc,
     .i-live .i-live-m,
     #page-index .col-2 .section .auth-detail,
-    .elec .elec-monthly-c {
+    .elec .elec-monthly-c,
+    .v-search-result {
         color: var(--color-66)!important;
     }
     .large-item .title,
