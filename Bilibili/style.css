@@ -885,8 +885,7 @@
     .form-login .input-box .btn-box .btn,
     .follow-dialog-wrap .follow-dialog-window .bottom .btn:disabled,
     .header-info .manga-info .action-buttons .manga-button.primary:disabled,
-    .submit-button.disabled,
-    .disabled {
+    .submit-button.disabled {
         border-color: var(--color-42)!important;
         background: var(--color-37)!important;
         color: var(--color-86)!important;
