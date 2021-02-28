@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210218
+    * © 最后更新：20210228
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -285,6 +285,8 @@
     .van-popper-favorite .tab-item--normal,
     .van-popper-favorite .play-all.view,
     .van-popper-history .tab-item,
+    .van-popper-history .header-video-card .video-info .line-1,
+    .van-popper-history .header-video-card .video-info .line-2,
     .bili-header-m .nav-search .nav-search-submit,
     .international-header .nav-search .nav-search-submit,
     .bilibili-search-history .cancel-icon,
@@ -309,11 +311,13 @@
     .login-panel .action-button {
         color: var(--color-86)!important;
     }
+    .van-popper-history .header-video-card .video-info .desc,
     .bili-header-m .nav-search .nav-search-keyword:focus,
     .international-header .nav-search .nav-search-keyword:focus,
-    .header-video-card .video-info .line-2,
-    .van-popper-avatar .count-item .item-key {
-        color: var(--color-af)!important;
+    .van-popper-history .header-video-card .video-info .info,
+    .van-popper-avatar .count-item .item-key,
+    .van-popper-history .bili-PC:before {
+        color: var(--color-66)!important;
     }
     .van-popper-history .tab-item--active,
     .van-popper-avatar .vip,
@@ -1549,11 +1553,14 @@ url-prefix("https://message.bilibili.com/pages/nav/index_new_sync") {
     .tab-bar,
     .name-line,
     .more-btn,
-    .split-line {
-        color: var(--color-86)!important;
+    .split-line,
+    .publish-time,
+    .tip-box {
+        color: var(--color-66)!important;
     }
-    .content {
-        color: var(--color-af)!important;
+    .content,
+    .more-btn {
+        color: var(--color-86)!important;
     }
     .im-list:hover {
         color: var(--bili-blue)!important;
@@ -5144,7 +5151,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .history-list .r-info .history-delete,
     .history-dlg .dlg-txt,
     .history-dlg .hsbtn .cancel,
-    .history-wrap .history-btn .btn {
+    .history-wrap .history-btn .btn,
+    .header-video-card .video-info .line-1 {
         color: var(--color-86)!important;
     }
     .history-list .r-info .w-info .pro-txt,
