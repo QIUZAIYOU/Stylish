@@ -5642,7 +5642,6 @@ url-prefix("http://www.douyu.com/search/") {
 	.SearchPost-des,
 	.SearchPost-nick,
 	[class*="index-listTitle"],
-	[class*="index-headerTitle"],
 	[class*="index-listDesc"],
 	[class*="index-listReplyNumber"],
 	[class*="index-listReplyNumber"],
@@ -5668,6 +5667,7 @@ url-prefix("http://www.douyu.com/search/") {
     }
     .layout-Tab-item.is-active,
 	.layout-Module-label.is-active,
+	[class*="index-headerTitle"],
 	[class*="index-sourceFromTextBox"]:hover{
         color: #ff5d23!important;
     }
