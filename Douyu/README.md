@@ -1,4 +1,4 @@
-# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.02.16-blue)
+# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.03.01-blue)
 
 ![夜间斗鱼 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/douyu/StylishCover.png)
 
@@ -34,6 +34,8 @@
 ## 历史更新
 
 ### 2021
+
+`03.01 17:18`：搜索结果页面优化。
 
 `02.16 01:28`：修复日期选择器样式未被正确覆盖的问题。
 
