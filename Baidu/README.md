@@ -1,4 +1,4 @@
-# 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2020.12.31-blue)
+# 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.02.27-blue)
 
 ![简百度 Simple Baidu](https://www.asifadeaway.com/Stylish/baidu/StylishCover.png)
 
@@ -10,6 +10,10 @@
 2. 样式更改
 
 ## 历史更新
+
+### 2021
+
+`02.27`：修复天气搜索结果字体颜色问题。
 
 ### 2020
 
