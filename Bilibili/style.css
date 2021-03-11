@@ -1,10 +1,11 @@
 @-moz-document url-prefix("http://example.com") {
-    /*===
-    * © 版权信息
-    * © 作者：QIUZAIYOU
-    * © 最后更新：20210228
-    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+/*===
+* © 版权信息
+* © 作者：QIUZAIYOU
+* © 最后更新：20210311
+* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+* © userstyles项目地址：https://userstyles.org/styles/196283/nightmode-for-bilibili-com
+===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -29,7 +30,7 @@
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-     :root {
+    :root {
         --color-14: #141414!important;
         --color-1b: #1b1b1b!important;
         --color-21: #212121!important;
@@ -160,25 +161,25 @@
         line-height: 13px;
     }
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -2019,7 +2020,10 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .tag-channel-pane .channel-cover,
     .tag-report-popup,
     .tag-channel-cancel-popup,
-    .main-container .plp-l .player-mask .bar-wrapper {
+    .main-container .plp-l .player-mask .bar-wrapper,
+    .video-sections,
+    .video-sections .video-section-title,
+    .video-sections .video-sections-head_second-line .second-line_right {
         background-color: var(--color-2c)!important;
     }
     .up-info .btn-panel .not-follow-charge-btn,
@@ -2083,7 +2087,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
         background-color: var(--color-86)!important;
     }
     .main-container .media-info .media-right .pub-wrapper .up-info-wrapper .split-line,
-    .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-btn-send.bui-button-disabled {
+    .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-btn-send.bui-button-disabled,
+    .video-sections .border-bottom-line {
         background-color: var(--color-42)!important;
     }
     .coin-operated-m .mc-box.left-con,
@@ -2195,7 +2200,10 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .coin-operated-m .like-checkbox,
     .coin-operated-m .coin-title,
     .van-popover.van-followed .follow_dropdown li,
-    .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap .player-auxiliary-setting-menu-list {
+    .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap .player-auxiliary-setting-menu-list,
+    .video-sections .video-sections-head_first-line .first-line-title,
+    .video-sections .video-section-title,
+    .video-sections .video-section-list .video-episode-card__info-title {
         color: var(--color-86)!important;
     }
     .up-info .up-info_right .desc,
@@ -2218,7 +2226,10 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .tag-channel-pane .channel-desc,
     .video-toolbar .appeal-text,
     .main-container .tool-bar .mobile-info .mobile-more p,
-    .coin-operated-m .coin-bottom .tips {
+    .coin-operated-m .coin-bottom .tips,
+    .video-sections .video-sections-head_second-line,
+    .video-sections .video-sections-head_second-line .abstract,
+    .video-sections .video-section-list .video-episode-card__info__number {
         color: var(--color-66)!important;
     }
     .video-info .video-title,
@@ -2282,7 +2293,9 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .main-container .tool-bar .mobile-info .mobile-more p a,
     .van-popover.van-followed .follow_dropdown li:hover,
     .player-auxiliary .player-auxiliary-area .player-auxiliary-filter-menu:hover,
-    .player-auxiliary .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap .player-auxiliary-setting-menu-list:hover {
+    .player-auxiliary .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap .player-auxiliary-setting-menu-list:hover,
+    .video-sections .video-section-list .video-episode-card:hover .video-episode-card__info-title,
+    .video-sections .video-section-list .video-episode-card__info-title-playing {
         color: var(--bili-blue)!important;
     }
     .video-desc .tip-info .argue i,
@@ -2388,6 +2401,9 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     }
     .coin-operated-m .like-checkbox input[type="checkbox"]:not(:checked)+i {
         filter: var(--filter-ccd0d7-66)!important;
+    }
+    #app>div.v-wrap>div.r-con>div.video-sections>div.video-sections-head>div.video-sections-head_second-line>div>img {
+        filter: var(--filter-99-66)!important;
     }
     input[type="checkbox"] {
         display: none!important;
@@ -3924,25 +3940,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://www.bilibili.com/cheese") {
     /* ===课堂=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-green)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-green)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -5423,25 +5439,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
     /* ===会员购=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
