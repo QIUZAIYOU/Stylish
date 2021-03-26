@@ -1,8 +1,8 @@
 @-moz-document url-prefix("http://example.com") {
-    /*===
+/*===
 * © 版权信息
 * © 作者：QIUZAIYOU
-* © 最后更新：20210316
+* © 最后更新：20210326
 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 ===*/
 }
@@ -1437,7 +1437,9 @@
     .live-rank .live-rank-item .number,
     .elevator .ear,
     .video-card-common .title,
-    .rcmd-box-wrap .change-btn {
+    .rcmd-box-wrap .change-btn,
+    .header-video-card .video-info .line-1,
+    .header-video-card .video-info .line-2 {
         color: var(--color-86)!important;
     }
     .storey-title .text-info,
@@ -1451,7 +1453,9 @@
     .live-rank .live-rank-item .count,
     .live-rank .live-rank-item .count .bilifont,
     .update_info,
-    .bili-icon_xinxi_UPzhu:before {
+    .bili-icon_xinxi_UPzhu:before,
+    .header-video-card .video-info .up,
+    .header-video-card .video-info .info .up {
         color: var(--color-66)!important;
     }
     .live-card .up .txt .desc {
@@ -5169,9 +5173,12 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .history-dlg .dlg-txt,
     .history-dlg .hsbtn .cancel,
     .history-wrap .history-btn .btn,
-    .header-video-card .video-info .line-1 {
+    .header-video-card .video-info .line-1,
+    .header-video-card .video-info .line-2 {
         color: var(--color-86)!important;
     }
+    .header-video-card .video-info .up,
+    .header-video-card .video-info .info .up,
     .history-list .r-info .w-info .pro-txt,
     .history-list .r-info .w-info .name {
         color: var(--color-66)!important;
