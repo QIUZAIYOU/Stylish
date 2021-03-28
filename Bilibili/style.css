@@ -1457,7 +1457,8 @@
     .update_info,
     .bili-icon_xinxi_UPzhu:before,
     .header-video-card .video-info .up,
-    .header-video-card .video-info .info .up {
+    .header-video-card .video-info .info .up,
+    .time-line-card .txt .update .published {
         color: var(--color-66)!important;
     }
     .live-card .up .txt .desc {
