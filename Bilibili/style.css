@@ -2146,6 +2146,9 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .pop-live .pl__icon--online {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/live_eye.png)!important;
     }
+    .up-info .up-info_right .name .username .mask {
+        background: transparent!important
+    }
     /* -- 字体 -- */
     .ep-list-wrapper .ep-item,
     .section-ep-wrapper .ep-item,
@@ -2314,7 +2317,9 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     }
     .video-toolbar .appeal-text:hover,
     .up-info .up-info_right .name .live-status,
-    .wide-members .avatar .is-vip {
+    .wide-members .avatar .is-vip,
+    .up-info .up-info_right .name .username.is_vip,
+    .user-card-m .info .user .name[style*="rgb(251, 114, 153)"] {
         color: var(--bili-pink)!important;
     }
     .bb-comment .reply-notice .notice-item a,
