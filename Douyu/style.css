@@ -5736,6 +5736,10 @@ url-prefix("http://www.douyu.com/search/") {
         background: #272727!important;
         border: 1px solid #424242!important;
     }
+    .Search input[type="text"]{
+        border:none!important;
+        background: transparent!important
+    }
 }
 
 @-moz-document url-prefix("https://msg.douyu.com/web/index.html?") {
