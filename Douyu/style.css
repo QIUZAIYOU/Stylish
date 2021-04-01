@@ -1,5 +1,5 @@
 @-moz-document url-prefix("http://example.com") {
-	/*=== 
+    /*=== 
 	* 版权信息
 	* 作者：QIUZAIYOU
 	* 最后更新：20210401
@@ -8,7 +8,7 @@
 }
 
 @-moz-document domain("douyu.com") {
-	/*=== 全局字体 ===*/
+    /*=== 全局字体 ===*/
     html,
     body {
         font-family: "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", 'Segoe UI', Tahoma, "宋体b8b\4f53", SimSun, sans-serif
@@ -4774,7 +4774,7 @@ url-prefix("http://www.douyu.com/") {
     }
     /*=== 用户昵称颜色 ===*/
     .Barrage-nickName {
-        color: /*[[UserNameColor]]*/!important;
+        color: /*[[UserNameColor]]*/ !important;
     }
     /*=== 用户发言颜色 ===*/
     .UserLevel+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
@@ -4838,7 +4838,7 @@ url-prefix("https://www.douyu.com/member") {
     .control_group .control,
     .draw-record-page-item,
     .change-tips-title,
-    .change-tips-content{
+    .change-tips-content {
         color: #868686!important;
     }
     .rotaryTicket-content .quiz-search-time .ticketUse_tab_btn dd.cur a,
@@ -5584,9 +5584,9 @@ url-prefix("http://www.douyu.com/search/") {
     .search-type-nav-game {
         display: none!important;
     }
-	[class*="index-searchPageWrap"]{
-		background: #212121!important;
-	}
+    [class*="index-searchPageWrap"] {
+        background: #212121!important;
+    }
     .search-type-nav,
     .div_title,
     .video-list,
@@ -5597,12 +5597,12 @@ url-prefix("http://www.douyu.com/search/") {
     .layout-Card-rank,
     .layout-Nav-backTop,
     .layout-Tab-container.is-fixed,
-	.layout-Module-trending-list,
-	.SearchPost,
-	[class*="index-listWrap"],
-	[class*="index-groupItem"],
-	[class*="index-dyPage"] a,
-	[class*="index-dyPage"] span{
+    .layout-Module-trending-list,
+    .SearchPost,
+    [class*="index-listWrap"],
+    [class*="index-groupItem"],
+    [class*="index-dyPage"] a,
+    [class*="index-dyPage"] span {
         background: #2c2c2c!important;
     }
     .Search-rank i {
@@ -5610,13 +5610,13 @@ url-prefix("http://www.douyu.com/search/") {
     }
     .Search-rank-wrapper:hover .Search-rank,
     .Search-direct,
-	.SearchPost-hot,
-	[class*="index-listReplyNumber"],
-	[class*="index-sourceFromTextBox"]{
+    .SearchPost-hot,
+    [class*="index-listReplyNumber"],
+    [class*="index-sourceFromTextBox"] {
         background: #272727!important;
     }
     .layout-Nav-backTop:hover,
-	span[class*="index-dyPageActive"] {
+    span[class*="index-dyPageActive"] {
         background-color: #ff5d23!important;
     }
     .div_title {
@@ -5639,63 +5639,63 @@ url-prefix("http://www.douyu.com/search/") {
     .Search-upSmall-info h3,
     .Search-historyItem,
     .Search-category h3,
-	.SearchPost-title,
-	.SearchPost-hot,
-	.SearchPost-des,
-	.SearchPost-nick,
-	[class*="index-listTitle"],
-	[class*="index-listDesc"],
-	[class*="index-listReplyNumber"],
-	[class*="index-listReplyNumber"],
-	[class*="index-groupName"],
-	[class*="index-sourceFromTextBox"],
-	[class*="index-dyPage"] a,
-	[class*="index-dyPage"] span,
-	[class*="index-sourceFrom"]{
+    .SearchPost-title,
+    .SearchPost-hot,
+    .SearchPost-des,
+    .SearchPost-nick,
+    [class*="index-listTitle"],
+    [class*="index-listDesc"],
+    [class*="index-listReplyNumber"],
+    [class*="index-listReplyNumber"],
+    [class*="index-groupName"],
+    [class*="index-sourceFromTextBox"],
+    [class*="index-dyPage"] a,
+    [class*="index-dyPage"] span,
+    [class*="index-sourceFrom"] {
         color: #868686!important;
     }
     .SearchAnchorVideo-time,
     .Search-upSmall-info p,
     .Search-anchor-info p,
     .Search-anchor-info h4,
-	.layout-Module-subtitle,
-	.SearchPost-time,
-	.SearchPost-group,
-	[class*="index-endec"],
-	[class*="index-listAuthorInfo"] a,
-	[class*="index-pubtime"],
-	[class*="index-memberNumber"]{
+    .layout-Module-subtitle,
+    .SearchPost-time,
+    .SearchPost-group,
+    [class*="index-endec"],
+    [class*="index-listAuthorInfo"] a,
+    [class*="index-pubtime"],
+    [class*="index-memberNumber"] {
         color: #666!important;
     }
     .layout-Tab-item.is-active,
-	.layout-Module-label.is-active,
-	[class*="index-headerTitle"],
-	[class*="index-sourceFromTextBox"]:hover{
+    .layout-Module-label.is-active,
+    [class*="index-headerTitle"],
+    [class*="index-sourceFromTextBox"]:hover {
         color: #ff5d23!important;
     }
     .search_info h3 {
         color: #f60!important;
     }
-	span[class*="index-dyPageActive"]{
-		color: #fff!important;
-	}
+    span[class*="index-dyPageActive"] {
+        color: #fff!important;
+    }
     .sort-list li a,
     .layout-Tab,
     .Search-anchor-avatar,
     .Search-direct,
     .SearchAnchorVideo-container,
     .Search-upSmall-avatar,
-	.SearchPost-line,
-	.SearchPost-group,
-	[class*="index-leftListItem"],
-	[class*="index-sourceFromTextBox"],
-	[class*="index-dyPage"] a,
-	[class*="index-dyPage"] span{
+    .SearchPost-line,
+    .SearchPost-group,
+    [class*="index-leftListItem"],
+    [class*="index-sourceFromTextBox"],
+    [class*="index-dyPage"] a,
+    [class*="index-dyPage"] span {
         border-color: #424242!important;
     }
-	[class*="index-sourceFromTextBox"]:hover{
-		border-color: #ff5d23!important;
-	}
+    [class*="index-sourceFromTextBox"]:hover {
+        border-color: #ff5d23!important;
+    }
     .item-amount i,
     .item-anchor i {
         background-image: url(https://www.asifadeaway.com/Stylish/douyu/icon-all.png)!important;
@@ -5706,10 +5706,10 @@ url-prefix("http://www.douyu.com/search/") {
     .anchor-card:hover {
         box-shadow: 0 0 15px #141414!important;
     }
-	[class*="index-groupItem"],
-	[class*="index-groupItem"]:hover{
-		box-shadow:none!important;
-	}
+    [class*="index-groupItem"],
+    [class*="index-groupItem"]:hover {
+        box-shadow: none!important;
+    }
     .anchor-action-btn {
         background: #212121!important;
         transition: .3s;
@@ -5724,18 +5724,18 @@ url-prefix("http://www.douyu.com/search/") {
     .shark-webp .SearchAnchorVideo-time i {
         filter: invert(81%) sepia(2%) saturate(18%) hue-rotate(13deg) brightness(97%) contrast(102%)!important;
     }
-	[class*="index-listReplyNumber"]{
-		border-radius: 999px!important;
-	}
-	[class*="index-iconcomment"],
-	[class*="index-iconuser"]{
-		mix-blend-mode: soft-light!important;
-	}
-	input[type="text"]{
-		color: #868686!important;
-		background: #272727!important;
-		border: 1px solid #424242!important;
-	}
+    [class*="index-listReplyNumber"] {
+        border-radius: 999px!important;
+    }
+    [class*="index-iconcomment"],
+    [class*="index-iconuser"] {
+        mix-blend-mode: soft-light!important;
+    }
+    input[type="text"] {
+        color: #868686!important;
+        background: #272727!important;
+        border: 1px solid #424242!important;
+    }
 }
 
 @-moz-document url-prefix("https://msg.douyu.com/web/index.html?") {
