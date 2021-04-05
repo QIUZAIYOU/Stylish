@@ -1726,7 +1726,8 @@ regexp("https://space.bilibili.com/[0-9]+/dynamic") {
     .live-panel-item .live-up-img,
     .card .focus-btn .unfocus .unfocus-text:hover,
     .vote-container,
-    .shop-panel .shop-list {
+    .shop-panel .shop-list,
+    .shop-item{
         background-color: var(--color-27)!important;
     }
     .userinfo-content .btn-box>a {
@@ -1796,7 +1797,8 @@ regexp("https://space.bilibili.com/[0-9]+/dynamic") {
     .indicator::after {
         color: var(--color-42)!important;
     }
-    .type-label {
+    .type-label,
+    .shop-desc .btn-box .jump-btn {
         color: var(--color-ff)!important;
     }
     .most-viewed-panel .list-content .most-viewed-item .name.active,
