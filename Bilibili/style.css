@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210408
+    * © 最后更新：20210409
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -3115,18 +3115,17 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .media-tab-detail-wrp .media-tab-detail,
     .media-tab-detail-wrp .media-tab-detail-l,
     .block-relate-wrp .relate-list .spread-module .num,
-    .media-info-card {
+    .media-info-card,
+    .slide-item-wrp .slide-item-img {
         background-color: var(--color-2c)!important;
     }
     .sec-rank .more-link:hover,
     .pgc-rank-dropdown .dropdown-list .dropdown-item:hover,
     .sl-ep-list .section-item,
     .bangumi-review-item,
-    .misl-ep-item {
+    .misl-ep-item,
+    .season-slider-wrapper .slider-wrapper .season-slider-list li:not(.cur) {
         background-color: var(--color-27)!important;
-    }
-    aaaaaaaaaa {
-        background-color: var(--color-37)!important;
     }
     .tl-head .tl-day .indicator {
         background-color: var(--color-42)!important;
@@ -3147,6 +3146,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .timeline-box .timeline-item.new p.num a {
         background-color: var(--bili-pink)!important;
     }
+    .season-slider-wrapper .slider-wrapper .season-slider-list li:after {
+        background-color: transparent!important;
+    }
     .block-area .timeline-toggle-block .timeline-toggle-btn {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/toggle_base.png)!important;
     }
@@ -3163,6 +3165,12 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .season-timer .current-timer:before,
     .timeline-header>div[class*="arrow-"] {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/anime_icons.png)!important;
+    }
+    .season-slider-wrapper .slider-wrapper .season-slider-list li:not(.cur):after {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/season_slider_list_after.png)!important;
+    }
+    .season-slider-wrapper .slider-wrapper .season-slider-list li:not(.cur):before {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/season_slider_list_before.png)!important;
     }
     /* -- 字体 -- */
     .media-info-card .mic-evaluate,
@@ -3200,7 +3208,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .icon-star:before,
     .media-tab-detail-wrp .media-tab-detail-l .media-tab-module-wrp .media-tab-module-title,
     .media-tab-detail-wrp .media-tab-detail .media-tab-module-wrp .media-tab-module-title,
-    .slide-item-wrp .slide-item-info .slide-item-title {
+    .slide-item-wrp .slide-item-info .slide-item-title,
+    .season-slider-wrapper .slider-wrapper .season-slider-list li:not(.cur) {
         color: var(--color-86)!important;
     }
     .timeline-box .timeline-item .item-right p.num,
@@ -3248,7 +3257,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .misl-ep-item:hover .misl-ep-text .misl-ep-index,
     .misl-ep-item:hover .misl-ep-text .misl-ep-title,
     .bangumi-media .bangumi-media-header .rate-wrapper .btn-go-write:hover,
-    .bangumi-review-item>a:hover .long-title {
+    .bangumi-review-item>a:hover .long-title,
+    .bangumi-media .bangumi-media-header .btn-more-review:hover,
+    .media-tab-detail-wrp .media-tab-detail-l .media-tab-module-wrp .media-tab-module-more:hover,
+    .media-tab-detail-wrp .media-tab-detail .media-tab-module-wrp .media-tab-module-more:hover {
         color: var(--bili-blue)!important;
     }
     .block-area .timeline-title .headline .timeline-more,
@@ -3280,7 +3292,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .media-tab-detail-wrp .media-tab-detail-l .media-tab-module-wrp,
     .media-tab-detail-wrp .media-tab-detail .media-tab-module-wrp,
     .sl-ep-list .section-item,
-    .misl-ep-item {
+    .misl-ep-item,
+    .season-slider-wrapper .slider-wrapper .season-slider-list li:not(.cur),
+    .season-slider-wrapper .slider-wrapper .season-slider-list li:not(.cur):first-child:before {
         border-color: var(--color-42)!important;
     }
     .season-timeline .season-group.is-published .group-time:before,
@@ -3292,7 +3306,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
         border-color: var(--bili-pink)!important;
     }
     .new-stat-module .zone-title .headline .new-stat-more:hover,
-    .block-area .follow-wrapper .follow-head .follow-more:hover {
+    .block-area .follow-wrapper .follow-head .follow-more:hover,
+    .bangumi-media .bangumi-media-header .btn-more-review:hover,
+    .media-tab-detail-wrp .media-tab-detail-l .media-tab-module-wrp .media-tab-module-more:hover,
+    .media-tab-detail-wrp .media-tab-detail .media-tab-module-wrp .media-tab-module-more:hover {
         border-color: var(--bili-blue)!important;
     }
     .sort-item i.up {
@@ -3341,6 +3358,19 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .spread-module .num i,
     .video-info-module .v-data span .icon {
         opacity: 0.5!important;
+    }
+    .misl-ep-item.lastplay .misl-ep-img:before {
+        border-radius: 0!important
+    }
+    .misl-ep-item .misl-ep-img {
+        width: 92.8px!important;
+        height: 58px!important;
+        margin: 0px!important;
+    }
+    .bangumi-media .bangumi-media-header .btn-more-review,
+    .media-tab-detail-wrp .media-tab-detail-l .media-tab-module-wrp .media-tab-module-more,
+    .media-tab-detail-wrp .media-tab-detail .media-tab-module-wrp .media-tab-module-more {
+        transition: .3s!important;
     }
     /* -- 其他属性 -- */
     img[src="null"],
