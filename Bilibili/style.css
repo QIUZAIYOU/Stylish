@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210409
+    * © 最后更新：20210410
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -2423,8 +2423,12 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     #app>div.v-wrap>div.r-con>div.video-sections>div.video-sections-head>div.video-sections-head_second-line>div>img {
         filter: var(--filter-99-66)!important;
     }
-    input:not(.bui-switch-input)[type="checkbox"] {
+    input:not[class][type="checkbox"] {
         display: none!important;
+    }
+    input[class][type="checkbox"] {
+        width: 100%!important;
+        height: 100%!important
     }
 }
 
