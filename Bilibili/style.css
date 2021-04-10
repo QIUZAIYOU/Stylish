@@ -1,10 +1,10 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-    * © 版权信息
-    * © 作者：QIUZAIYOU
-    * © 最后更新：20210410
-    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    ===*/
+* © 版权信息
+* © 作者：QIUZAIYOU
+* © 最后更新：20210411
+* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -29,7 +29,7 @@
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-     :root {
+    :root {
         --color-14: #141414!important;
         --color-1b: #1b1b1b!important;
         --color-21: #212121!important;
@@ -50,6 +50,7 @@
         --bili-lightred: #f25e8e!important;
         --bili-yellow: #f7a920!important;
         --bili-green: #0dad9e!important;
+        --bili-lightgreen: #43ce5b!important;
         --bili-green-50: #0dad9e80!important;
         --bili-pink: #fb7299!important;
         --bili-khaki: #d9a773!important;
@@ -162,25 +163,25 @@
         line-height: 13px;
     }
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -249,7 +250,9 @@
     .van-popover.van-popper.van-popper-upload,
     .van-popper-login .vp-container,
     .van-popper-login .btn-box .btn.reg-btn,
-    .van-popper-login .lang-change {
+    .van-popper-login .lang-change,
+    .unlogin-popover,
+    .unlogin-popover:before {
         background-color: var(--color-21)!important;
     }
     .bilibili-search-history .history-item.focus,
@@ -262,7 +265,8 @@
     .lang-change .lang-item:hover,
     .van-popper-avatar .logout span:hover,
     .lang-change .lang-intro-item:hover,
-    .van-popper-upload .upload-item:hover {
+    .van-popper-upload .upload-item:hover,
+    .unlogin-avatar {
         background-color: var(--color-27)!important;
     }
     .bilibili-search-suggest .suggest-item:hover,
@@ -310,7 +314,10 @@
     .van-popper-login .title,
     .international-header .mini-type .user-con.logout .item a,
     .van-popover .mini-type .user-con.logout .item a,
-    .login-panel .action-button {
+    .login-panel .action-button,
+    .unlogin-popover-avatar .title,
+    .content .lt-text,
+    .unlogin-popover-avatar .register-tip {
         color: var(--color-86)!important;
     }
     .van-popper-history .header-video-card .video-info .desc,
@@ -323,7 +330,8 @@
     }
     .van-popper-history .tab-item--active,
     .van-popper-avatar .vip,
-    .van-popper-login .btn-box .btn {
+    .van-popper-login .btn-box .btn,
+    .van-popover .login-btn {
         color: var(--color-ff)!important;
     }
     .bilibili-search-suggest .suggest-item a:hover,
@@ -893,7 +901,8 @@
     .follow-dialog-wrap .follow-dialog-window .bottom .btn:disabled,
     .header-info .manga-info .action-buttons .manga-button.primary:disabled,
     .submit-button.disabled,
-    .up-info-holder .fixed-box .follow-btn-holder .follow-btn.followed {
+    .up-info-holder .fixed-box .follow-btn-holder .follow-btn.followed,
+    .bili-btn.plain {
         border-color: var(--color-42)!important;
         background: var(--color-37)!important;
         color: var(--color-86)!important;
@@ -909,7 +918,8 @@
     .card .focus-btn .focus:hover,
     .big-gift-btn-home:hover,
     .form-login .input-box .btn-box .btn:hover,
-    .disabled:hover {
+    .disabled:hover,
+    .bili-btn.plain:hover {
         border-color: var(--bili-blue)!important;
         color: var(--bili-blue)!important;
     }
@@ -923,7 +933,8 @@
     .b-info .button,
     .form-login .input-box .btn-box .btn-login,
     .other-panel .card .detail .ask-btn,
-    .submit-button {
+    .submit-button,
+    .bili-btn.ok {
         border-color: var(--bili-blue)!important;
         background: var(--bili-blue)!important;
         color: var(--color-ff)!important;
@@ -939,7 +950,8 @@
     .b-info .button:hover,
     .form-login .input-box .btn-box .btn-login:hover,
     .other-panel .card .detail .ask-btn:hover,
-    .submit-button:hover {
+    .submit-button:hover,
+    .bili-btn.ok:hover {
         background-color: var(--bili-lightblue)!important;
         color: var(--color-ff)!important;
     }
@@ -1082,7 +1094,8 @@
     }
     /* -- 弹出 -- */
     .dialog-contnent,
-    .bp-popup-panel {
+    .bp-popup-panel,
+    .ui-popup .popup-wrap.shadow {
         background-color: var(--color-21)!important;
     }
     .mask .popup-box,
@@ -1093,14 +1106,17 @@
     .dialog-title-txt,
     .dialog-fail-explain,
     .bp-popup-panel .title-ctnr .popup-title,
-    .modalBox {
+    .modalBox,
+    .ui-popup .popup-wrap .text-box .text {
         color: var(--color-86)!important;
     }
-    .dialog-fail-explain2 {
+    .dialog-fail-explain2,
+    .ui-popup .popup-wrap .text-box .subtext {
         color: var(--color-66)!important;
     }
     .mask .popup-box .popup-title,
-    .dialog-title {
+    .dialog-title,
+    .ui-popup .popup-wrap.shadow {
         border-color: var(--color-42)!important;
     }
     /* -- 返回顶部 -- */
@@ -4016,25 +4032,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://www.bilibili.com/cheese") {
     /* ===课堂=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-green)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-green)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -5534,25 +5550,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
     /* ===会员购=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -6080,7 +6096,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .b-info .balance-top .balance-row .balance-right .shell-channel .shell-item,
     .spend-recode,
     .el-table__empty-block,
-    .el-input__inner {
+    .el-input__inner,
+    .trade-list,
+    .trade-wrapper {
         background-color: var(--color-2c)!important;
     }
     .bb-intro-top,
@@ -6114,12 +6132,16 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .el-table thead,
     .el-input__inner,
     .el-input__prefix,
-    .el-input__suffix .spend-recode .title-group .selected-title {
+    .el-input__suffix .spend-recode .title-group .selected-title,
+    .num-tip,
+    .trade-wrapper,
+    .qrpay-group .qrpay-content .pay-tips,
+    .qrpay-group .qrpay-content .more-pay .more-text,
+    .b-info .balance-top .info-tip,
+    .b-info .balance-top .balance-row .balance-title {
         color: var(--color-86)!important;
     }
-    .b-info .balance-footer,
-    .b-info .balance-top .balance-row .balance-title,
-    .b-info .balance-top .info-tip {
+    .b-info .balance-footer {
         color: var(--color-66)!important;
     }
     p span[style*="background:yellow"] {
@@ -6129,10 +6151,16 @@ url-prefix("https://www.bilibili.com/bangumi") {
         color: var(--color-ff)!important;
     }
     .el-menu-item.is-active,
-    a.bp_box_bot_click {
+    a.bp_box_bot_click,
+    .trade-wrapper span,
+    .b-info .balance-top .balance-row .balance-right .shell-channel .shell-item-active .channel-name {
         color: var(--bili-blue)!important;
     }
-    .b-info .warning-group .warning-btn {
+    .b-info .warning-group .warning-btn,
+    .agreement,
+    .agreement a,
+    .qrpay-group .qrpay-content .price,
+    .trade-wrapper div {
         color: var(--bili-pink)!important;
     }
     /* -- 边框 -- */
@@ -6150,7 +6178,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .spend-recode,
     .el-table td,
     .el-table th.is-leaf,
-    .el-input__inner {
+    .el-input__inner,
+    .trade-list,
+    .trade-wrapper {
         border-color: var(--color-42)!important;
     }
     .b-info .balance-top .balance-row .balance-right .shell-channel .shell-item-active {
@@ -6159,7 +6189,22 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .b-info .warning-group .warning-btn {
         border-color: var(--bili-pink)!important;
     }
+    #qr-code canvas {
+        border: 3px solid var(--color-ff)!important;
+    }
     /* -- 其他 -- */
+    .qrpay-group .qr-icon-group .qrcode-icon,
+    .qrpay-group .qr-icon-group .unable-wrap {
+        width: 154px;
+        height: 154px;
+        box-sizing: border-box
+    }
+    .b-info .bb-icon-des {
+        filter: var(--filter-99a2aa-66)!important;
+    }
+    .b-info .bb-icon-des .unbb-des {
+        filter: invert(1)
+    }
     .b-info .line {
         filter: var(--filter-ff-66)!important;
     }
@@ -6170,14 +6215,22 @@ url-prefix("https://www.bilibili.com/bangumi") {
 }
 
 @-moz-document url-prefix("https://member.bilibili.com/platform/"),
-url-prefix("https://www.bilibili.com/audio/creation/manager") {
+url-prefix("https://www.bilibili.com/audio/"),
+url-prefix("https://member.bilibili.com/video/"),
+url-prefix("https://member.bilibili.com/article-text"),
+url-prefix("https://member.bilibili.com/york/") {
     /* ===创作中心=== */
     /* ===个人中心=== */
     /* -- 背景 -- */
     .app_wrap,
-    .cc-body.is-layout {
+    .cc-body.is-layout,
+    .select-box,
+    .warning-info-v2-container {
         background-color: var(--color-21)!important
     }
+    html,
+    body,
+    #app,
     .header,
     .cc-nav-wrp,
     .new-link-top-wrap .new-link-top-container,
@@ -6199,13 +6252,49 @@ url-prefix("https://www.bilibili.com/audio/creation/manager") {
     .dropdown .dropdown-menu,
     .zimu-wrap,
     .dc-top-link_wrap .tabs .tabs__header,
+    .dc-top-link_wrap .tabs .tabs__header,
     #bili-data-center,
     .fans_wrap,
     .medal,
     .danmu-container,
     .ui-input,
     .ui-calendar .main-wrap,
-    .flatpickr-calendar {
+    .flatpickr-calendar,
+    .comment_box,
+    .comment_wrap,
+    .interActive-wrap,
+    .bcc-table__empty,
+    .loading_wrap,
+    .nav-upload-container,
+    .message-notice_wrap .tips-item_wrap,
+    .interact-wrap,
+    .bill-wrap,
+    .cc-article-wrp .article-card,
+    .cc-article-wrp .article-card .cover-wrp,
+    .bcc-pagination-elevator input,
+    .comment_wrap .bcc-button--default,
+    .danmu-report,
+    iframe[name="videoUpload"],
+    iframe[src="/article-text/home?"],
+    html[stylus-iframe="https://member.bilibili.com"] body #app,
+    .cover-v2-container .cover-v2-detail-wrp .cover-v2-selector .cover-v2-selector-deg,
+    .cover-v2-container .cover-v2-detail-wrp .cover-v2-selector .cover-v2-selector-items .selector-item,
+    .check-radio-v2-container-disabled .check-radio-v2-box,
+    .input-box-v2-1-container,
+    .select-box-v2-container .select-box-v2-controller-disabled,
+    .content-tag-v2-container .content-tag-v2-edit-mod-wrp,
+    .content-tag-v2-container .content-tag-v2-other-tag-error-wrp,
+    .text-area-box-v2-container .placeholder-style,
+    .text-area-box-v2-container .text-area-box-v2-val,
+    .drop-list-v2-container,
+    #text-contribute .fixed-header,
+    .footer-content .social-item,
+    #text-contribute,
+    .draft-wrap .draft-list li.draft-card,
+    .ticket-container,
+    .load-marks,
+    iframe[src="//www.bilibili.com/audio/submit/?hideStatus=true"],
+    iframe[src="/york/image-material-upload"] {
         background-color: var(--color-2c)!important
     }
     .section-item,
@@ -6220,7 +6309,11 @@ url-prefix("https://www.bilibili.com/audio/creation/manager") {
     .rank-active-target,
     .rank-fans-medal,
     .rank-vedio-target,
-    .rank-vedio-view {
+    .rank-vedio-view,
+    .nav-upload-container .nav-upload-item:hover,
+    .select-box .option-footer,
+    .drop-list-v2-container .drop-list-v2-item:hover,
+    .draft-wrap .draft-list li.draft-card .cover-wrp {
         background-color: var(--color-27)!important
     }
     .contri-condition .contri-right .iconClose,
@@ -6239,13 +6332,25 @@ url-prefix("https://www.bilibili.com/audio/creation/manager") {
     .ui-calendar .flatpickr-day.today.inRange,
     .ui-calendar .flatpickr-day:focus,
     .ui-calendar .flatpickr-day:hover,
-    .ui-btn.grey-radius {
+    .ui-btn.grey-radius,
+    .comment_wrap .bcc-button.is-disabled,
+    .normal-v2-container .normal-title-wrp>.template-op-disabled,
+    .select-box-v2-container .select-box-v2-controller-disabled,
+    #app .check-radio-v2-2-container-disabled {
         background-color: var(--color-37)!important
+    }
+    .check-radio-v2-container-disabled .check-radio-v2-box.check-radio-v2-box-checked:after,
+    div.check-radio-v2-container-disabled .check-radio-v2-box.check-radio-v2-box-checked:after,
+    .check-radio-v2-2-container .check-radio-v2-2-roll {
+        background-color: var(--color-86)!important
     }
     .slider-bar .nav-cut-off-line,
     .notice_wrap .notice_body .hot-item .item-left .point-circle,
     .line-divid,
-    .text-split_wrap .operate-txt[data-v-016fc23b]:not(:last-child):after {
+    .text-split_wrap .operate-txt:not(:last-child):after,
+    .comment_wrap .operate_wrap .operate_right .operate-txt:not(:last-child):after,
+    .tips-item_wrap .tips-item_left .circle,
+    .normal-v2-container .normal-title-wrp>.template-op>.template-op-divide {
         background-color: var(--color-42)!important
     }
     .ui-calendar .flatpickr-day.endRange,
@@ -6265,14 +6370,20 @@ url-prefix("https://www.bilibili.com/audio/creation/manager") {
     .ui-calendar .flatpickr-day.startRange.nextMonthDay,
     .ui-calendar .flatpickr-day.startRange.prevMonthDay,
     .ui-calendar .flatpickr-day.startRange:focus,
-    .ui-calendar .flatpickr-day.startRange:hover {
+    .ui-calendar .flatpickr-day.startRange:hover,
+    .bcc-checkbox-checked .bcc-checkbox-checkbox {
         background-color: var(--bili-blue)!important;
     }
     .home-wrap,
     .chief-recommend-module .carousel-box,
     .pie-empty.none,
-    .pie-empty {
+    .pie-empty,
+    .articel_wrap .operate_wrap .left_wrap .refresh,
+    #loading {
         background-color: transparent!important
+    }
+    .music-upload-wrapper .bg-wrapper {
+        background: var(--color-2c)!important
     }
     /* -- 字体 -- */
     .bcc-nav-slider-sub-menu__wrap .bcc-nav-slider-sub-menu,
@@ -6329,7 +6440,61 @@ url-prefix("https://www.bilibili.com/audio/creation/manager") {
     .flatpickr-current-month input.cur-year,
     .ui-calendar .flatpickr-day,
     .ui-calendar .flatpickr-month,
-    .ui-btn.grey-radius {
+    .ui-btn.grey-radius,
+    .comment_wrap .commet_header .title_wrap,
+    .bcc-input-inner,
+    .comment_wrap .operate_wrap .operate_left .bcc-checkbox,
+    .comment_wrap .bcc-button.is-disabled,
+    .button_wrap,
+    .danmu-wrp.index-v1 .section .title,
+    .danmu-wrp.index-v1 .section .content,
+    .nav-upload-container .nav-upload-item>p,
+    .tips-item_wrap .tips-item_left .content,
+    .bill-wrap .header .title,
+    .comment-item .right-block .reply-content,
+    .comment-item .right-block .replier-time,
+    .bili-btn i,
+    .more-btn i,
+    .select-box .select-item .text,
+    .select-box .option-footer,
+    .select-box .select-item i,
+    .bcc-icon-shanchugaojian,
+    .bcc-pagination-elevator input,
+    .comment-list-item .ci-content,
+    .comment_wrap .ellipsis .ac-link,
+    .comment_wrap .bcc-button--default,
+    .file-list-v2-container .file-title h1,
+    .normal-v2-container .normal-title-wrp>h1,
+    .file-list-v2-wrp .file-list-v2-item .file-list-v2-item-wrp .item-status-wrp .item-title,
+    .section-title-v2-container .section-title-v2-content-main,
+    .normal-v2-container .normal-title-wrp>.template-op>p,
+    .check-radio-v2-container-disabled .check-radio-v2-name,
+    .input-box-v2-1-container,
+    .input-box-v2-1-container .input-box-v2-1-instance .input-box-v2-1-val,
+    .select-box-v2-container .select-box-v2-controller .select-item-cont-inserted,
+    .select-box-v2-container .select-box-v2-controller i,
+    .more-selector-v2-container .more-selector-v2-title-wrp>h1,
+    .more-selector-v2-container .more-selector-v2-title-wrp .more-selector-v2-drop,
+    .fans-dynamic-v2-container .fans-dynamic-v2-title-wrp>h1,
+    .check-box-v2-container .check-box-v2-content,
+    .water-mark-set-v2-container .water-mark-set-v2-copy-switch-wrp>span,
+    .warning-info-v2-container p.warning-info-v2-content,
+    .select-box-v2-container .select-box-v2-controller,
+    .drop-list-v2-container .drop-list-v2-item .drop-list-v2-item-cont p.item-cont-main,
+    .electron-set-v2-container .electron-set-v2-copy-switch-wrp .electron-set-v2-hint,
+    .d-time-v2-container .d-time-v2-switch-wrp p.d-time-v2-last,
+    .d-time-v2-container .d-time-v2-switch-wrp p.d-time-v2-pre,
+    .upload-v2-step1-container #homeDrop .icon-android_uploadx,
+    .footer-content .social-item,
+    .upload-v2-step1-container #homeDrop .upload-hint,
+    .upload-v2-step1-container #homeDrop .video-jam .video-jam-pretext,
+    .video-editor-ol-wrp .video-editor-ol-content p.title,
+    .qa-area-ol-wrp .qa-area-ol-content p.main-title,
+    .qa-area-ol-wrp .qa-area-ol-content p.sub-title,
+    .video-editor-ol-wrp .video-editor-ol-content p.sub_title,
+    .drag-drop-music,
+    .load-marks,
+    .material-upload {
         color: var(--color-86)!important
     }
     .notice_wrap .notice_body .hot-item .item-right,
@@ -6354,7 +6519,40 @@ url-prefix("https://www.bilibili.com/audio/creation/manager") {
     .medal .medal-form .section .mini,
     .medal .medal-form .page-tip,
     .empty-wrp .text,
-    .danmu-container .empty-danmu {
+    .danmu-container .empty-danmu,
+    .article-card.v2 .meta-status .pubdate,
+    .cc-article-wrp .article-card .meta-footer i,
+    .cc-article-wrp .article-card .meta-footer .view-stat,
+    .bcc-pagination-extra,
+    .comment-list-item .ci-title,
+    .comment-list-item .ci-action .date,
+    .comment-list-item .ci-action .delete a,
+    .comment-list-item .ci-action .ignore a,
+    .comment-list-item .ci-action .like a,
+    .comment-list-item .ci-action .reply a,
+    .comment-list-item .ci-action .report a,
+    .comment-list-item .ci-action .select a,
+    .comment_wrap .tips,
+    .comment-list-item .article-wrap .name,
+    .section-title-v2-container .section-title-v2-content-sub,
+    .cover-v2-container .cover-v2-detail-wrp .cover-v2-selector .cover-v2-selector-title,
+    .input-box-v2-1-container .input-box-v2-1-max-tip,
+    .content-tag-v2-container .content-tag-v2-edit-mod-wrp,
+    .content-tag-v2-container .content-tag-v2-other-tag-error-wrp,
+    .text-area-box-v2-container .placeholder-style,
+    .text-area-box-v2-container .text-area-box-v2-val,
+    .text-area-box-v2-container .text-area-box-v2-max-tip,
+    .more-selector-v2-container .more-selector-v2-title-wrp .more-selector-v2-drop-tip,
+    .section-title-v2-container .section-title-v2-warning,
+    .check-box-v2-container .check-box-v2-pre-not-selected,
+    .editor-wrap .article-title .count,
+    .editor-box p.counter,
+    iframe#ueditor_0 p.origin-placeholder,
+    .draft-wrap .draft-list li.draft-card .meta-summary,
+    .draft-wrap .draft-list li.draft-card .meta-status .pubdate,
+    .draft-wrap .head-title span.count,
+    .tool-box-v2-container .tool-title,
+    .music-tips .music-tip {
         color: var(--color-66)!important
     }
     .cc-nav-wrp .nav-upload-btn>a,
@@ -6381,7 +6579,10 @@ url-prefix("https://www.bilibili.com/audio/creation/manager") {
     .flatpickr-day.startRange.nextMonthDay,
     .flatpickr-day.startRange.prevMonthDay,
     .flatpickr-day.startRange:focus,
-    .flatpickr-day.startRange:hover {
+    .flatpickr-day.startRange:hover,
+    .bcc-pagination-item.selected a,
+    .qa-area-ol-wrp a.qa-area-ol-content-btn,
+    .video-editor-ol-wrp .video-editor-ol-btn {
         color: var(--color-ff)!important
     }
     .slider-bar .bar-item .bcc-nav-slider-item__wrap .router-item.active,
@@ -6399,8 +6600,40 @@ url-prefix("https://www.bilibili.com/audio/creation/manager") {
     .bcc-select-list-wrap .bcc-select i,
     .bcc-option.selected,
     .text-split_wrap .operate-txt.active,
-    .flatpickr-day.today {
+    .flatpickr-day.today,
+    .dc-radio-button:hover,
+    .nav-upload-container .nav-upload-item:hover>p,
+    .select-box .select-item:hover,
+    .select-box .select-item:hover .text,
+    .select-box .option-footer:hover .option-text,
+    .comment-list-item .ci-action .delete a:hover,
+    .comment-list-item .ci-action .ignore a:hover,
+    .comment-list-item .ci-action .like a:hover,
+    .comment-list-item .ci-action .reply a:hover,
+    .comment-list-item .ci-action .report a:hover,
+    .comment-list-item .ci-action .select a:hover,
+    .comment_wrap .ellipsis .ac-link.active-item,
+    .comment_wrap .ellipsis .ac-link:hover,
+    .comment-list-item .check-box.checked,
+    .comment_wrap .bcc-button--default:not(.is-disabled):hover,
+    .feedback-tabs .bili-tab-v1.is-active,
+    .drop-list-v2-container .drop-list-v2-item:hover p.item-cont-main,
+    .water-mark-set-v2-container .water-mark-set-v2-copy-switch-wrp>a,
+    .electron-set-v2-container .electron-set-v2-copy-switch-wrp .electron-set-v2-hint>a,
+    .content-tag-v2-container .content-tag-v2-edit-mod-wrp p>a,
+    .bili-tab.current,
+    .music-clue .font-blue,
+    .music-clue .iconfont,
+    .upload-v2-step1-container .upload-agreement .reg-2>a {
         color: var(--bili-blue)!important
+    }
+    .file-list-v2-wrp .file-list-v2-item .file-list-v2-item-wrp .item-upload-info {
+        color: var(--bili-lightgreen)!important;
+    }
+    .warning-info-v2-container p.warning-info-v2-content.warning-info-v2-content-important,
+    .upload-v2-step1-container .upload-agreement .reg-2,
+    .music-clue {
+        color: var(--bili-pink)!important;
     }
     /* -- 边框 -- */
     .cc-nav-wrp,
@@ -6433,11 +6666,50 @@ url-prefix("https://www.bilibili.com/audio/creation/manager") {
     .ui-calendar .flatpickr-day.prevMonthDay:hover,
     .ui-calendar .flatpickr-day.today.inRange,
     .ui-calendar .flatpickr-day:focus,
-    .ui-calendar .flatpickr-day:hover {
-        border-color: var(--color-42)!important
+    .ui-calendar .flatpickr-day:hover,
+    .bcc-input-inner,
+    .comment_wrap .bcc-button.is-disabled,
+    .button_wrap,
+    .search-list,
+    .dm-transform_wrapper .select_wrap,
+    .danmu-wrp.index-v1 .bili-radio+span:before,
+    .comment-item .right-block .origin,
+    .article-card,
+    .article-card.v2 .meta-view .bili-btn,
+    .more-btn,
+    .select-box .row,
+    .bcc-pagination-elevator input,
+    .comment-list-item,
+    .comment_wrap .article-list,
+    #app .comment_wrap .bcc-button--default,
+    .dividing-line,
+    #app .normal-v2-container .normal-title-wrp>.template-op-disabled,
+    .normal-v2-container .normal-title-wrp>.template-op,
+    .cover-v2-container .cover-v2-detail-wrp .cover-v2-selector,
+    .cover-v2-container .cover-v2-detail-wrp .cover-v2-selector .cover-v2-selector-deg,
+    .cover-v2-container .cover-v2-detail-wrp .cover-v2-selector .cover-v2-selector-items .selector-item,
+    .check-radio-v2-container-disabled .check-radio-v2-box,
+    .input-box-v2-1-container,
+    #app .select-box-v2-container .select-box-v2-controller-disabled,
+    .content-tag-v2-container .content-tag-v2-edit-mod-wrp,
+    .content-tag-v2-container .content-tag-v2-other-tag-error-wrp,
+    .text-area-box-v2-container,
+    .warning-info-v2-container,
+    .select-box-v2-container .select-box-v2-controller,
+    .drop-list-v2-container,
+    .footer-content,
+    .footer-content .menu-item,
+    .original-editor-wrap,
+    .load-marks {
+        border-color: var(--color-42)!important;
     }
     .header .right-block .avatar img {
-        border-color: var(--color-2c)!important
+        border-color: var(--color-2c)!important;
+    }
+    .bcc-checkbox-checkbox,
+    .comment-list-item .check-box,
+    #loading i.waiting {
+        border-color: var(--color-86)!important;
     }
     .dc-radio-button.is-active,
     .ui-calendar .flatpickr-day.endRange,
@@ -6458,10 +6730,27 @@ url-prefix("https://www.bilibili.com/audio/creation/manager") {
     .ui-calendar .flatpickr-day.startRange.prevMonthDay,
     .ui-calendar .flatpickr-day.startRange:focus,
     .ui-calendar .flatpickr-day.startRange:hover,
-    .flatpickr-day.today {
+    .flatpickr-day.today,
+    .dc-radio-button:hover,
+    .bcc-checkbox-checked .bcc-checkbox-checkbox,
+    .comment-list-item .check-box.checked,
+    .comment_wrap .bcc-button--default:not(.is-disabled):hover,
+    .input-box-v2-1-container.input-box-v2-1-container-active,
+    .input-box-v2-1-container:hover {
         border-color: var(--bili-blue)!important
     }
+    .nav-upload-container,
+    .draft-wrap .draft-list li.draft-card {
+        border: var(--bodr-42)!important;
+    }
+    .cover-v2-container .cover-v2-detail-wrp .cover-v2-selector .cover-v2-selector-items .selector-item {
+        border-width: 1px!important
+    }
     /* -- 阴影 -- */
+    .nav-upload-container,
+    .draft-wrap .draft-list li.draft-card {
+        box-shadow: none!important;
+    }
     .bcc-select-list-wrap {
         box-shadow: 0 2px 12px 0 var(--color-21)!important;
     }
@@ -6472,8 +6761,19 @@ url-prefix("https://www.bilibili.com/audio/creation/manager") {
         box-shadow: 1px 1px 2px var(--color-42)!important;
     }
     /* -- 其他 -- */
+    .upload-v2-step1-container #homeDrop path {
+        stroke: var(--color-42)!important;
+    }
     .dc-section1-body canvas {
         filter: invert(50%)!important;
+    }
+    .icon-common,
+    .icon-download,
+    .icon-tv {
+        filter: invert(50%) sepia(3%) saturate(5%) hue-rotate(322deg) brightness(105%) contrast(87%)!important;
+    }
+    .normal-v2-container .normal-title-wrp>.template-op>img {
+        filter: var(--filter-98a2aa-86)!important;
     }
     .assist-wrap .icon-cal {
         filter: invert(48%) sepia(17%) saturate(0%) hue-rotate(134deg) brightness(101%) contrast(82%)!important;
