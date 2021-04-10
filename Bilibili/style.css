@@ -86,6 +86,7 @@
         --filter-d8-66: invert(83%) sepia(0%) saturate(1979%) hue-rotate(347deg) brightness(131%) contrast(68%)!important;
         --filter-99a2aa-66: invert(71%) sepia(0%) saturate(0%) hue-rotate(7deg) brightness(87%) contrast(90%)!important;
         --filter-bec3cc-42: invert(97%) sepia(0%) saturate(0%) hue-rotate(123deg) brightness(93%) contrast(91%)!important;
+        --filter-ccd0d7-42: invert(85%) sepia(1%) saturate(0%) hue-rotate(179deg) brightness(90%) contrast(97%)!important;
         --filter-98a2aa-shopPink: invert(50%) sepia(81%) saturate(1975%) hue-rotate(308deg) brightness(100%) contrast(90%)!important;
         --filter-green-blue: invert(50%) sepia(68%) saturate(522%) hue-rotate(125deg) brightness(95%) contrast(95%)!important;
         --filter-626a6e-blue: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%)!important;
@@ -794,6 +795,7 @@
         /* >> 为防止覆盖用户头像特意不加!important << */
         background-color: transparent!important;
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/avatar_defalut.png);
+        border-radius: 999px!important;
     }
     .pgc-no-data,
     .nothing-img,
@@ -5216,7 +5218,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
         display: none!important;
     }
     .checkbox-bwxr:not(.active) {
-        filter: var(--filter-ccd0d7-86)!important;
+        filter: var(--filter-ccd0d7-42)!important;
     }
 }
 
@@ -6164,6 +6166,321 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .b-info .warning-group .icon-warning,
     .bb-intro-top .b-question .b-question-icon {
         mix-blend-mode: soft-light!important;
+    }
+}
+
+@-moz-document url-prefix("https://member.bilibili.com/platform/"),
+url-prefix("https://www.bilibili.com/audio/creation/manager") {
+    /* ===创作中心=== */
+    /* ===个人中心=== */
+    /* -- 背景 -- */
+    .app_wrap,
+    .cc-body.is-layout {
+        background-color: var(--color-21)!important
+    }
+    .header,
+    .cc-nav-wrp,
+    .new-link-top-wrap .new-link-top-container,
+    .dc-page,
+    .dc-section1-body,
+    .data-card,
+    .notice_wrap,
+    .header .right-block .avatar img,
+    .academy-wrap,
+    .academy-wrap .content .list-wrap .forward,
+    .academy-wrap .content .list-wrap .next,
+    .side-utils .utils-box,
+    .upload-manage,
+    [stylus-iframe="https://member.bilibili.com"] #app,
+    .contri-condition .contri-search,
+    .bcc-select-list-wrap,
+    .bcc-search-input,
+    .head .dropdown-btn,
+    .dropdown .dropdown-menu,
+    .zimu-wrap,
+    .dc-top-link_wrap .tabs .tabs__header,
+    #bili-data-center,
+    .fans_wrap,
+    .medal,
+    .danmu-container,
+    .ui-input,
+    .ui-calendar .main-wrap,
+    .flatpickr-calendar {
+        background-color: var(--color-2c)!important
+    }
+    .section-item,
+    .slider-bar .bar-item .bcc-nav-slider-sub-menu:hover,
+    .slider-bar .bar-item .bcc-nav-slider-item__wrap:hover,
+    .side-utils .treaty-container:hover,
+    .side-utils .feedback-container:hover,
+    .bcc-table__wrap table thead tr th,
+    .bcc-option:hover,
+    .head .dropdown-menu .search .bili-input,
+    .pie-empty-wrapper,
+    .rank-active-target,
+    .rank-fans-medal,
+    .rank-vedio-target,
+    .rank-vedio-view {
+        background-color: var(--color-27)!important
+    }
+    .contri-condition .contri-right .iconClose,
+    .medal .medal-form .section .tip-icon,
+    .assist-wrap .assist-list header h1 .helper .icon,
+    .ui-calendar .main-wrap .shortmenus,
+    .ui-calendar .flatpickr-day.inRange,
+    .ui-calendar .flatpickr-day.nextMonthDay.inRange,
+    .ui-calendar .flatpickr-day.nextMonthDay.today.inRange,
+    .ui-calendar .flatpickr-day.nextMonthDay:focus,
+    .ui-calendar .flatpickr-day.nextMonthDay:hover,
+    .ui-calendar .flatpickr-day.prevMonthDay.inRange,
+    .ui-calendar .flatpickr-day.prevMonthDay.today.inRange,
+    .ui-calendar .flatpickr-day.prevMonthDay:focus,
+    .ui-calendar .flatpickr-day.prevMonthDay:hover,
+    .ui-calendar .flatpickr-day.today.inRange,
+    .ui-calendar .flatpickr-day:focus,
+    .ui-calendar .flatpickr-day:hover,
+    .ui-btn.grey-radius {
+        background-color: var(--color-37)!important
+    }
+    .slider-bar .nav-cut-off-line,
+    .notice_wrap .notice_body .hot-item .item-left .point-circle,
+    .line-divid,
+    .text-split_wrap .operate-txt[data-v-016fc23b]:not(:last-child):after {
+        background-color: var(--color-42)!important
+    }
+    .ui-calendar .flatpickr-day.endRange,
+    .ui-calendar .flatpickr-day.endRange.inRange,
+    .ui-calendar .flatpickr-day.endRange.nextMonthDay,
+    .ui-calendar .flatpickr-day.endRange.prevMonthDay,
+    .ui-calendar .flatpickr-day.endRange:focus,
+    .ui-calendar .flatpickr-day.endRange:hover,
+    .ui-calendar .flatpickr-day.selected,
+    .ui-calendar .flatpickr-day.selected.inRange,
+    .ui-calendar .flatpickr-day.selected.nextMonthDay,
+    .ui-calendar .flatpickr-day.selected.prevMonthDay,
+    .ui-calendar .flatpickr-day.selected:focus,
+    .ui-calendar .flatpickr-day.selected:hover,
+    .ui-calendar .flatpickr-day.startRange,
+    .ui-calendar .flatpickr-day.startRange.inRange,
+    .ui-calendar .flatpickr-day.startRange.nextMonthDay,
+    .ui-calendar .flatpickr-day.startRange.prevMonthDay,
+    .ui-calendar .flatpickr-day.startRange:focus,
+    .ui-calendar .flatpickr-day.startRange:hover {
+        background-color: var(--bili-blue)!important;
+    }
+    .home-wrap,
+    .chief-recommend-module .carousel-box,
+    .pie-empty.none,
+    .pie-empty {
+        background-color: transparent!important
+    }
+    /* -- 字体 -- */
+    .bcc-nav-slider-sub-menu__wrap .bcc-nav-slider-sub-menu,
+    .slider-bar .bar-item .bcc-nav-slider-sub-menu>span,
+    .slider-bar .bar-item .bcc-nav-slider-sub-menu a,
+    .notice_wrap .notice_title .notice-txt,
+    .notice_wrap .notice_body .hot-item .item-left p,
+    .section-item .data-name,
+    .section-item .diff-wrp .improve,
+    .academy-wrap .header .academy-tag,
+    .tabs .tabs__header .tabs__header-item,
+    .slider-bar .bar-item i:last-child,
+    .side-utils .treaty-container .item-desc,
+    .compila-condition .compila-type,
+    .contri-condition .contri-type,
+    .contri-condition .contri-select,
+    .contri-condition .contri-sort,
+    .contri-condition .contri-right i,
+    .contri-condition .contri-search,
+    .bcc-table__wrap table thead,
+    #app .cc-body.is-layout .cc-content-body .bcc-table__wrap .bcc-icon-ic_sortin_on,
+    #app .cc-body.is-layout .cc-content-body .bcc-table__wrap .bcc-icon-ic_sortin_un,
+    .bcc-select-input-wrap,
+    .bcc-select-input-inner,
+    .bcc-option.is-disabled,
+    .bcc-select-input-wrap i,
+    .bcc-search-input,
+    .bcc-option,
+    .cc-zimu-wrp .zimu-header .zimu-header-title,
+    .head .dropdown-btn .text,
+    .head .dropdown-btn .icon-arrowdown,
+    .head .dropdown-menu .article-list li,
+    .head .dropdown-menu .search .bili-input,
+    .head .dropdown-menu .search .fontvt,
+    .dc-top-link_wrap .tabs .tabs__header,
+    .dc-section-item1_title_custom .sectionTitle,
+    .dc-radio-button,
+    .dc-section1-title,
+    .pie-empty-wrapper,
+    .rank-active-target-item .title,
+    .rank-fans-medal-item .title,
+    .rank-vedio-target-item .title,
+    .rank-vedio-view-item .title,
+    h2.title,
+    .medal .medal-form .section .title-tip,
+    .medal-list .title,
+    .assist-wrap .assist-list header h1 .helper .icon,
+    .medal .medal-form .section .tip-icon,
+    .ui-input,
+    .fontvt,
+    .assist-wrap .assist-log header .tools .ui-calendar input[type=text],
+    span.flatpickr-weekday,
+    .flatpickr-current-month .flatpickr-monthDropdown-months,
+    .flatpickr-current-month input.cur-year,
+    .ui-calendar .flatpickr-day,
+    .ui-calendar .flatpickr-month,
+    .ui-btn.grey-radius {
+        color: var(--color-86)!important
+    }
+    .notice_wrap .notice_body .hot-item .item-right,
+    .data-card .tab.header .link,
+    .list-item .view,
+    .compila-not-find .compila-not-find-tips,
+    .contri-not-find .contri-not-find-tips,
+    .sticker-manage-info,
+    .bcc-state .bcc-state__tip,
+    .text-split_wrap .split-item,
+    #dc-section_summary .pie-empty,
+    .pie-empty.none,
+    .normal-empty,
+    .dc-section-item1_title_name small,
+    .pie-empty,
+    .rank-active-target-item .empty-data,
+    .rank-fans-medal-item .empty-data,
+    .rank-vedio-target-item .empty-data,
+    .rank-vedio-view-item .empty-data,
+    .bcc-icon-ic_help,
+    .medal header p,
+    .medal .medal-form .section .mini,
+    .medal .medal-form .page-tip,
+    .empty-wrp .text,
+    .danmu-container .empty-danmu {
+        color: var(--color-66)!important
+    }
+    .cc-nav-wrp .nav-upload-btn>a,
+    .chief-recommend-module .carousel-box .carousel-module .panel .title a,
+    .compila-condition .compila-right .compila-add,
+    .compila-not-find .compila-not-find-ime,
+    .contri-not-find .contri-not-find-ime,
+    .cc-btn.is-main,
+    .dc-radio-button.is-active,
+    .flatpickr-day.endRange,
+    .flatpickr-day.endRange.inRange,
+    .flatpickr-day.endRange.nextMonthDay,
+    .flatpickr-day.endRange.prevMonthDay,
+    .flatpickr-day.endRange:focus,
+    .flatpickr-day.endRange:hover,
+    .flatpickr-day.selected,
+    .flatpickr-day.selected.inRange,
+    .flatpickr-day.selected.nextMonthDay,
+    .flatpickr-day.selected.prevMonthDay,
+    .flatpickr-day.selected:focus,
+    .flatpickr-day.selected:hover,
+    .flatpickr-day.startRange,
+    .flatpickr-day.startRange.inRange,
+    .flatpickr-day.startRange.nextMonthDay,
+    .flatpickr-day.startRange.prevMonthDay,
+    .flatpickr-day.startRange:focus,
+    .flatpickr-day.startRange:hover {
+        color: var(--color-ff)!important
+    }
+    .slider-bar .bar-item .bcc-nav-slider-item__wrap .router-item.active,
+    .slider-bar .bar-item .bcc-nav-slider-item__wrap .router-item.active i,
+    .slider-bar .bar-item .bcc-nav-slider-item__wrap .router_wrap.active,
+    .slider-bar .bar-item .bcc-nav-slider-item__wrap .router_wrap.active i,
+    .slider-bar .bar-item .bcc-nav-slider-sub-menu .router-item.active,
+    .slider-bar .bar-item .bcc-nav-slider-sub-menu .router-item.active i,
+    .slider-bar .bar-item .bcc-nav-slider-sub-menu .router_wrap.active,
+    .slider-bar .bar-item .bcc-nav-slider-sub-menu .router_wrap.active i,
+    .data-card .tab .data-tab.current,
+    .tabs .tabs__header .tabs__header-item.is-active,
+    .new-link-top-wrap .link-top-item.active,
+    .contri-condition .contri-select.active,
+    .bcc-select-list-wrap .bcc-select i,
+    .bcc-option.selected,
+    .text-split_wrap .operate-txt.active,
+    .flatpickr-day.today {
+        color: var(--bili-blue)!important
+    }
+    /* -- 边框 -- */
+    .cc-nav-wrp,
+    .new-link-top-wrap .new-link-top-container,
+    .academy-wrap .content .tabs .tabs__header,
+    .contri-condition .contri-search,
+    .bcc-select-input-wrap,
+    .bcc-search-input,
+    .head .dropdown-btn,
+    .dropdown .dropdown-menu,
+    .head .dropdown-menu .article-list,
+    .head .dropdown-menu .search .bili-input,
+    .dc-top-link_wrap .tabs .tabs__header,
+    .dc-radio-button,
+    #dc-section_essential .item-in-row,
+    .watch_wrap,
+    .medal header,
+    .medal-list .part .content,
+    .danmu-container,
+    .ui-input,
+    .ui-calendar .main-wrap .shortmenus,
+    .ui-calendar .flatpickr-day.inRange,
+    .ui-calendar .flatpickr-day.nextMonthDay.inRange,
+    .ui-calendar .flatpickr-day.nextMonthDay.today.inRange,
+    .ui-calendar .flatpickr-day.nextMonthDay:focus,
+    .ui-calendar .flatpickr-day.nextMonthDay:hover,
+    .ui-calendar .flatpickr-day.prevMonthDay.inRange,
+    .ui-calendar .flatpickr-day.prevMonthDay.today.inRange,
+    .ui-calendar .flatpickr-day.prevMonthDay:focus,
+    .ui-calendar .flatpickr-day.prevMonthDay:hover,
+    .ui-calendar .flatpickr-day.today.inRange,
+    .ui-calendar .flatpickr-day:focus,
+    .ui-calendar .flatpickr-day:hover {
+        border-color: var(--color-42)!important
+    }
+    .header .right-block .avatar img {
+        border-color: var(--color-2c)!important
+    }
+    .dc-radio-button.is-active,
+    .ui-calendar .flatpickr-day.endRange,
+    .ui-calendar .flatpickr-day.endRange.inRange,
+    .ui-calendar .flatpickr-day.endRange.nextMonthDay,
+    .ui-calendar .flatpickr-day.endRange.prevMonthDay,
+    .ui-calendar .flatpickr-day.endRange:focus,
+    .ui-calendar .flatpickr-day.endRange:hover,
+    .ui-calendar .flatpickr-day.selected,
+    .ui-calendar .flatpickr-day.selected.inRange,
+    .ui-calendar .flatpickr-day.selected.nextMonthDay,
+    .ui-calendar .flatpickr-day.selected.prevMonthDay,
+    .ui-calendar .flatpickr-day.selected:focus,
+    .ui-calendar .flatpickr-day.selected:hover,
+    .ui-calendar .flatpickr-day.startRange,
+    .ui-calendar .flatpickr-day.startRange.inRange,
+    .ui-calendar .flatpickr-day.startRange.nextMonthDay,
+    .ui-calendar .flatpickr-day.startRange.prevMonthDay,
+    .ui-calendar .flatpickr-day.startRange:focus,
+    .ui-calendar .flatpickr-day.startRange:hover,
+    .flatpickr-day.today {
+        border-color: var(--bili-blue)!important
+    }
+    /* -- 阴影 -- */
+    .bcc-select-list-wrap {
+        box-shadow: 0 2px 12px 0 var(--color-21)!important;
+    }
+    .text-article-wrp .info-wrp .cc-btn {
+        box-shadow: 4px 4px 8px var(--color-21)!important;
+    }
+    .danmu-container {
+        box-shadow: 1px 1px 2px var(--color-42)!important;
+    }
+    /* -- 其他 -- */
+    .dc-section1-body canvas {
+        filter: invert(50%)!important;
+    }
+    .assist-wrap .icon-cal {
+        filter: invert(48%) sepia(17%) saturate(0%) hue-rotate(134deg) brightness(101%) contrast(82%)!important;
+    }
+    .flatpickr-months .flatpickr-next-month svg,
+    .flatpickr-months .flatpickr-prev-month svg {
+        filter: invert(53%) sepia(3%) saturate(29%) hue-rotate(8deg) brightness(100%) contrast(87%)!important;
     }
 }
 
