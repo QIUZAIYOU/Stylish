@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210412 11:30
+    * © 最后更新：20210412 11:49
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -6486,7 +6486,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .drop-list-v2-container .drop-list-v2-item:hover,
     .draft-wrap .draft-list li.draft-card .cover-wrp,
     .bili-radio+span:before,
-    .mission .point-reward .content .row .reward {
+    .mission .point-reward .content .row .reward,
+    .help-wrap li:hover {
         background-color: var(--color-27)!important
     }
     .mission .point-reward .content .row .reward .reward-left,
@@ -6697,7 +6698,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .protect-apply-entry-wrp .protect-appeal,
     .protect-apply-entry-wrp .protect-info-title,
     .protect-apply-entry-wrp .protect-entry .entry-button,
-    .protect-apply-entry-wrp .protect-entry .error-tips {
+    .protect-apply-entry-wrp .protect-entry .error-tips,
+    .help-wrap li .title {
         color: var(--color-86)!important
     }
     .notice_wrap .notice_body .hot-item .item-right,
@@ -6764,7 +6766,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .op-bar ul.sort-list li,
     .goods-card .desc,
     .goods-card .bottom,
-    .info-item .notice-time[data-v-7c800f85] {
+    .info-item .notice-time {
         color: var(--color-66)!important
     }
     .cc-nav-wrp .nav-upload-btn>a,
@@ -6838,7 +6840,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .music-clue .font-blue,
     .music-clue .iconfont,
     .upload-v2-step1-container .upload-agreement .reg-2>a,
-    .op-bar ul.sort-list li.active {
+    .op-bar ul.sort-list li.active,
+    .help-wrap li:hover .title {
         color: var(--bili-blue)!important
     }
     .file-list-v2-wrp .file-list-v2-item .file-list-v2-item-wrp .item-upload-info {
