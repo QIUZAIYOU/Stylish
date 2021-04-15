@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210412 11:49
+    * © 最后更新：20210415 1900
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -448,7 +448,11 @@
     .feed-tag .core-style,
     .card .more-panel,
     .card .more-panel:after,
-    .box-body {
+    .box-body,
+    .bb-comment .comment-send.comment-send-lite,
+    .comment-bilibili-fold .comment-send.comment-send-lite,
+    .bb-comment .comment-send-lite.comment-send-lite,
+    .comment-bilibili-fold .comment-send-lite.comment-send-lite {
         background-color: var(--color-21)!important;
     }
     .bb-comment .comment-send .textarea-container textarea,
@@ -459,7 +463,11 @@
     .pic-box,
     .comment-bilibili-con .con,
     .comment-bilibili-con .t,
-    .hash-popup {
+    .hash-popup,
+    .bb-comment .comment-send .textarea-container .ipt-txt,
+    .comment-bilibili-fold .comment-send .textarea-container .ipt-txt,
+    .bb-comment .comment-send-lite .textarea-container .ipt-txt,
+    .comment-bilibili-fold .comment-send-lite .textarea-container .ipt-txt {
         background-color: var(--color-2c)!important;
     }
     .bb-comment .operation .opera-list li:hover,
@@ -504,7 +512,11 @@
     .bb-comment .comment-list .list-item .info .hate i,
     .comment-bilibili-fold .comment-list .list-item .info .hate i,
     .bb-comment .operation .spot,
-    .comment-bilibili-fold .operation .spot {
+    .comment-bilibili-fold .operation .spot,
+    .bb-comment .comment-send .comment-emoji .face,
+    .comment-bilibili-fold .comment-send .comment-emoji .face,
+    .bb-comment .comment-send-lite .comment-emoji .face,
+    .comment-bilibili-fold .comment-send-lite .comment-emoji .face {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_1.png)!important;
     }
     .bb-comment .nameplate .nameplate-card .nameplate-arrow,
@@ -559,7 +571,15 @@
     .bb-comment .comment-list .list-item .user .name,
     .comment-bilibili-fold .comment-list .list-item .user .name,
     .bb-comment .comment-list .list-item .reply-box .view-more .btn-more,
-    .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more {
+    .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more,
+    .bb-comment .comment-send .textarea-container .ipt-txt,
+    .comment-bilibili-fold .comment-send .textarea-container .ipt-txt,
+    .bb-comment .comment-send-lite .textarea-container .ipt-txt,
+    .comment-bilibili-fold .comment-send-lite .textarea-container .ipt-txt,
+    .bb-comment .comment-send .comment-emoji,
+    .comment-bilibili-fold .comment-send .comment-emoji,
+    .bb-comment .comment-send-lite .comment-emoji,
+    .comment-bilibili-fold .comment-send-lite .comment-emoji {
         color: var(--color-86)!important;
     }
     .bb-comment .nameplate .nameplate-card .nameplate-text .n-type,
@@ -651,7 +671,15 @@
     .feed-tag .card,
     .hash-popup,
     .video-container,
-    .card .more-panel {
+    .card .more-panel,
+    .bb-comment .comment-send .textarea-container .ipt-txt,
+    .comment-bilibili-fold .comment-send .textarea-container .ipt-txt,
+    .bb-comment .comment-send-lite .textarea-container .ipt-txt,
+    .comment-bilibili-fold .comment-send-lite .textarea-container .ipt-txt,
+    .bb-comment .comment-send .comment-emoji,
+    .comment-bilibili-fold .comment-send .comment-emoji,
+    .bb-comment .comment-send-lite .comment-emoji,
+    .comment-bilibili-fold .comment-send-lite .comment-emoji {
         border-color: var(--color-42)!important;
     }
     .comment-bilibili-con .con label:before {
@@ -665,7 +693,8 @@
     .comment-bilibili-fold .comment-header .tabs-order li.on,
     .comment-bilibili-con .btn .btn-submit,
     .comment-bilibili-con .btn .btn-cancel:hover,
-    .comment-bilibili-con .con input[type="radio"]:checked+label:before {
+    .comment-bilibili-con .con input[type="radio"]:checked+label:before,
+    .bb-comment .comment-send-lite .textarea-container:hover textarea {
         border-color: var(--bili-blue)!important;
     }
     .card .more-panel:after {
@@ -679,6 +708,12 @@
     .bb-comment .comment-list .list-item .con .vote-container:hover .text-area,
     .comment-bilibili-fold .comment-list .list-item .con .vote-container:hover .text-area {
         box-shadow: 0 11px 12px 0 rgba(20, 20, 20, 0.4)!important;
+    }
+    .bb-comment .comment-send .comment-emoji,
+    .comment-bilibili-fold .comment-send .comment-emoji,
+    .bb-comment .comment-send-lite .comment-emoji,
+    .comment-bilibili-fold .comment-send-lite .comment-emoji {
+        box-shadow: 0px 1px 10px 0 var(--color-21)!important;
     }
     #bilibili-player.mini-player:before {
         box-shadow: 0 0 5px var(--color-14)!important;
