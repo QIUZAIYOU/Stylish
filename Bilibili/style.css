@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210415 2127
+    * © 最后更新：20210416 1450
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -1192,7 +1192,9 @@
     .popup-container-title-context .title,
     .ivu-modal-header-inner,
     .ivu-modal-header p,
-    .upper-check-confirm .inter-box {
+    .upper-check-confirm .inter-box,
+    .h .report-popup-tip,
+    .h .report-popup-item-text {
         color: var(--color-86)!important;
     }
     .dialog-fail-explain2,
@@ -1203,7 +1205,8 @@
     .dialog-title,
     .ui-popup .popup-wrap.shadow,
     .bcc-popover,
-    .ivu-modal-header {
+    .ivu-modal-header,
+    .h .report-popup-item-checkbox {
         border-color: var(--color-42)!important;
     }
     .bcc-popover[x-placement^=bottom] .popper__arrow {
@@ -2146,7 +2149,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .main-container .plp-l .player-mask .bar-wrapper,
     .video-sections,
     .video-sections .video-section-title,
-    .video-sections .video-sections-head_second-line .second-line_right {
+    .video-sections .video-sections-head_second-line .second-line_right,
+    .next-button .switch-button {
         background-color: var(--color-2c)!important;
     }
     .up-info .btn-panel .not-follow-charge-btn,
@@ -2206,7 +2210,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .main-container .plp-l .player-mask .bar-wrapper .right-bar {
         background-color: var(--color-37)!important;
     }
-    .s_tag .btn-add span {
+    .s_tag .btn-add span,
+    .next-button .switch-button:after {
         background-color: var(--color-86)!important;
     }
     .main-container .media-info .media-right .pub-wrapper .up-info-wrapper .split-line,
@@ -2216,7 +2221,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
         background-color: var(--color-42)!important;
     }
     .coin-operated-m .mc-box.left-con,
-    .coin-operated-m .mc-box.on.right-con {
+    .coin-operated-m .mc-box.on.right-con,
+    .next-button .switch-button.on:after {
         background-color: var(--color-ff)!important;
     }
     .s_tag .btn-add:hover span,
@@ -2231,7 +2237,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     #balh-settings-btn:hover,
     .multi-page .cur-list .module-box li.on,
     .tag-channel-pane .channel-btns__link:hover,
-    .tag-channel-cancel-popup a.btn-ok {
+    .tag-channel-cancel-popup a.btn-ok,
+    .next-button .switch-button.on {
         background-color: var(--bili-blue)!important;
     }
     .up-info .btn-panel .not-follow:hover,
@@ -2476,7 +2483,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .tag-channel-pane .channel-btns__subs--delete,
     .tag-channel-pane .channel-btns .is-subs,
     .wide-members .avatar,
-    .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap {
+    .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap,
+    .next-button .switch-button {
         border-color: var(--color-42)!important;
     }
     .player-auxiliary-danmaku-date-picker-container .player-auxiliary-danmaku-date-picker-body .day-span {
@@ -2496,7 +2504,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .multi-page .cur-list .module-box li.on,
     .multi-page .cur-list .module-box li:hover,
     .tag-channel-pane .channel-btns__link,
-    .coin-operated-m .mc-box.on {
+    .coin-operated-m .mc-box.on,
+    .next-button .switch-button.on {
         border-color: var(--bili-blue)!important;
     }
     .up-info .btn-panel .not-follow-charge-btn:hover {
@@ -4960,6 +4969,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .be-dropdown-item,
     .i-live .i-live-unfo-btn,
     .i-live .i-live-fo-count,
+    .i-live-fo-count.space-fans,
     .user .info .meta span.text,
     .breadcrumb .item.cur,
     .n .n-num,
@@ -5030,7 +5040,6 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .pgc-space-follow-item .pgc-item-info .type-and-area,
     .pgc-space-follow-item .pgc-item-info .pgc-item-state,
     .sub-tabs .filter-content,
-    .i-live-fo-count.space-fans,
     .small-item .meta,
     #page-follows .list-item .auth-description,
     #page-follows .follow-sidenav .num,
@@ -5094,7 +5103,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-follows .follow-main .follow-action-top .back-to-info:hover,
     .section .operation:hover,
     #page-channel-detail .watch-later-btn:hover,
-    .article-title:hover a {
+    .article-title:hover a,
+    #page-index .bangumi .content .title:hover {
         color: var(--bili-blue)!important;
     }
     #page-index .col-2 .section .user-auth .auth-description {
