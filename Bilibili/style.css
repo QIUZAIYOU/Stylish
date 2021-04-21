@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210416 1644
+    * © 最后更新：20210421 1537
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -7155,7 +7155,8 @@ url-prefix("https://cm.bilibili.com/") {
     .setting .public-setting,
     .setting .watermark-setting,
     .bili-switcher,
-    .setting .public-setting .public-wrp .setting-item .circle-wrap {
+    .setting .public-setting .public-wrp .setting-item .circle-wrap,
+    .data-card .tab.header .left-block .electro {
         border-color: var(--color-42)!important;
     }
     .header .right-block .avatar img {
@@ -7299,6 +7300,123 @@ url-prefix("https://cm.bilibili.com/") {
     }
     .magnetic .title img {
         filter: invert(50%) sepia(0%) saturate(1042%) hue-rotate(197deg) brightness(106%) contrast(84%)!important;
+    }
+}
+
+@-moz-document url-prefix("https://member.bilibili.com/academy/") {
+    /* ===创作中心 > 创作学院=== */
+    /* -- 背景 -- */
+    body,
+    #app,
+    .detail-guide-container .detail-guide-tip,
+    .card-img,
+    .tabs-nav .tab-item.border-bottom,
+    .search-wrp .bili-input,
+    .list-header .filter-wrp .article-type .bili-btn,
+    .list-header .filter-wrp .filter-level .bili-btn,
+    .list-header .filter-wrp .video-type .bili-btn,
+    .dropdown__content {
+        background-color: var(--color-21)!important;
+    }
+    .bili-header-m .nav-menu .nav-mask,
+    .left-nav-wrapper,
+    .carousel-wrap .panel .pic li,
+    .carousel-wrap .panel .pic li a .card-img,
+    .tag-modal,
+    .dropdown__content .dropdown__active,
+    .dropdown__content .dropdown__item:hover,
+    .adademy-wrapper .index-banner {
+        background-color: var(--color-2c)!important;
+    }
+    .border-line,
+    .list-header .filter-wrp .article-type .line,
+    .list-header .filter-wrp .filter-level .line,
+    .list-header .filter-wrp .video-type .line {
+        background-color: var(--color-42)!important;
+    }
+    .bili-header-m .nav-menu .nav-con .nav-item:hover {
+        background-color: transparent!important;
+    }
+    /* -- 字体 -- */
+    .detail-guide-container .detail-guide-tip .guide-tip-content-main h3,
+    .left-nav-wrapper .left-nav-ul .left-nav-item,
+    .left-nav-list.no-office .left-nav-item span,
+    .left-nav-item-child,
+    .tabs .customize-tab .tab-title,
+    .advice-btn,
+    .left-nav-childed .left-nav-childed-list,
+    .icon-right,
+    .academy-left-name,
+    .card-txt,
+    .academy-right-link,
+    .search-wrp .bili-input,
+    .search-wrp .icon-search,
+    .carousel-wrap .panel .pic li a .card-info .title .headline,
+    .carousel-wrap .panel .pic li a .card-info .title .num,
+    .list-header .dropdown-btn .icon-text,
+    .list-header .filter-wrp .article-type .bili-btn,
+    .list-header .filter-wrp .filter-level .bili-btn,
+    .list-header .filter-wrp .video-type .bili-btn,
+    .tabs-nav .tab-item,
+    .tag-modal,
+    .tag-modal .tag-title,
+    .tag-modal .tag-item,
+    .list-header .dropdown-btn .icon-ic_unfold {
+        color: var(--color-86)!important;
+    }
+    .card-view .collect-num,
+    .card-view .danmu-num,
+    .card-view .play-num,
+    .card-user,
+    .card-view .icon,
+    .carousel-wrap .panel .pic li a .card-info .detail {
+        color: var(--color-66)!important;
+    }
+    .bili-header-m .nav-menu .up-load .u-link,
+    .tabs-nav .tab-item.full {
+        color: var(--color-ff)!important;
+    }
+    .left-nav-wrapper .go-back-link,
+    .left-nav-wrapper .left-nav-ul .left-nav-item:hover i,
+    .left-nav-wrapper .left-nav-ul .left-nav-item:hover span,
+    .academy-right-link:hover,
+    .list-header .filter-wrp .article-type .bili-btn.current,
+    .list-header .filter-wrp .filter-level .bili-btn.current,
+    .list-header .filter-wrp .video-type .bili-btn.current,
+    .dropdown__content .dropdown__active {
+        color: var(--bili-blue)!important;
+    }
+    /* -- 边框 -- */
+    .tabs .customize-tab,
+    .search-wrp .bili-input,
+    .carousel-wrap .page .next,
+    .list-header .filter-wrp .category-wrp,
+    .list-header .filter-wrp .order-wrp,
+    .btn-section .btn-item,
+    .list-header .filter-wrp .article-type,
+    .list-header .filter-wrp .filter-level,
+    .list-header .filter-wrp .video-type {
+        border-color: var(--color-42)!important;
+    }
+    .carousel-wrap .page .next.current {
+        border-color: var(--bili-blue)!important;
+    }
+    .left-nav-wrapper {
+        border-right: 1px solid var(--color-42)!important;
+    }
+    /* -- 阴影 -- */
+    .left-nav-wrapper {
+        box-shadow: none!important;
+    }
+    /* -- 其他 -- */
+    .detail-guide-container .detail-guide-tip .guide-tip-triangle {
+        filter: var(--filter-ff-21)!important;
+    }
+    .card-user .card-avatar {
+        filter: var(--filter-99a2aa-66)!important;
+    }
+    .tabs .customize-tab .selected-bar {
+        bottom: 0!important;
     }
 }
 
