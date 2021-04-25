@@ -1,4 +1,4 @@
-# 夜间知乎 NightMode For Zhihu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.01.16-blue)
+# 夜间知乎 NightMode For Zhihu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.04.25-blue)
 
 ![夜间知乎 NightMode For Zhihu.com](https://www.asifadeaway.com/Stylish/zhihu/StylishCover.png)
 
@@ -12,6 +12,8 @@
 ## 历史更新
 
 ### 2021
+
+`04.25 17:13`：小修小补。
 
 `01.11 11:30`：小修小补。
 
