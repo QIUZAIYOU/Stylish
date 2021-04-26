@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210421 1537
+    * © 最后更新：20210426 1532
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -579,7 +579,9 @@
     .bb-comment .comment-send .comment-emoji,
     .comment-bilibili-fold .comment-send .comment-emoji,
     .bb-comment .comment-send-lite .comment-emoji,
-    .comment-bilibili-fold .comment-send-lite .comment-emoji {
+    .comment-bilibili-fold .comment-send-lite .comment-emoji,
+    .bb-comment .loading-state,
+    .comment-bilibili-fold .loading-state {
         color: var(--color-86)!important;
     }
     .bb-comment .nameplate .nameplate-card .nameplate-text .n-type,
