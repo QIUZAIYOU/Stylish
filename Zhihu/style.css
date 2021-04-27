@@ -3,7 +3,7 @@
     * © 版权信息
     * © 自用，上传只为保存
     * © 作者：QIUZAIYOU 
-    * © 最后更新：20210425 1713
+    * © 最后更新：20210427 1643
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -520,14 +520,6 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .SelfCollectionItem-title {
         color: var(--color-86) !important;
     }
-    .ztext blockquote,
-    .Search-container,
-    .ExploreCollectionCard-contentExcerpt,
-    .QuestionRelatedCard-content>a,
-    .Footer,
-    html[data-theme="dark"] .Footer {
-        color: var(--color-7c) !important;
-    }
     .GlobalSideBar-navNumber,
     html[data-theme="dark"] .GlobalSideBar-navNumber,
     .ContentItem-time,
@@ -646,16 +638,6 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     html[data-theme="dark"] .NotificationList-Item-header .NotificationList-Item-link:hover {
         color: var(--zhihu-lightblue) !important;
     }
-    .tab-navs .tab-nav.active>a,
-    .AnswerItem-statusReason,
-    .MCNLinkCard-price,
-    .MCNLinkCard-button,
-    .UserStatus {
-        color: var(--color-e43) !important;
-    }
-    .Qrcode-container p.Qrcode-scanResultTips {
-        color: var(--zhihu-green);
-    }
     .QuestionAnswers-answerTip .Button:not(.PaginationButton),
     html[data-theme="dark"] .QuestionAnswers-answerTip .Button,
     div[class*="ContentItem-module-title"],
@@ -694,6 +676,27 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .Button,
     html[data-theme=dark] .Button {
         color: var(--zhihu-blue) !important;
+    }
+    .ztext blockquote,
+    .Search-container,
+    .ExploreCollectionCard-contentExcerpt,
+    .QuestionRelatedCard-content>a,
+    .Footer,
+    html[data-theme="dark"] .Footer {
+        color: var(--color-7c) !important;
+    }
+    .HoverCard-separate {
+        color: var(--color-42) !important;
+    }
+    .tab-navs .tab-nav.active>a,
+    .AnswerItem-statusReason,
+    .MCNLinkCard-price,
+    .MCNLinkCard-button,
+    .UserStatus {
+        color: var(--color-e43) !important;
+    }
+    .Qrcode-container p.Qrcode-scanResultTips {
+        color: var(--zhihu-green);
     }
     .TopSearch-itemText {
         color: #8590a6;
