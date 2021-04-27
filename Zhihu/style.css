@@ -674,7 +674,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .CollectionsHeader-tabsLink:hover,
     .PaginationButton--current,
     .Button,
-    html[data-theme=dark] .Button {
+    html[data-theme=dark] .Button,
+    .HoverCard-separate{
         color: var(--zhihu-blue) !important;
     }
     .ztext blockquote,
@@ -684,9 +685,6 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .Footer,
     html[data-theme="dark"] .Footer {
         color: var(--color-7c) !important;
-    }
-    .HoverCard-separate {
-        color: var(--color-42) !important;
     }
     .tab-navs .tab-nav.active>a,
     .AnswerItem-statusReason,
