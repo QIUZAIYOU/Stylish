@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210503 1902
+    * © 最后更新：20210503 2056
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     ===*/
 }
@@ -2182,7 +2182,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap,
     .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap .player-auxiliary-setting-menu-list,
     .wide-members .avatar-list .van-icon-general_back_s,
-    .wide-members .avatar-list .van-icon-general_enter_s {
+    .wide-members .avatar-list .van-icon-general_enter_s,
+    .q1080p {
         background-color: var(--color-21)!important;
     }
     .up-info .btn-panel .following,
@@ -2339,7 +2340,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap .player-auxiliary-setting-menu-list,
     .video-sections .video-sections-head_first-line .first-line-title,
     .video-sections .video-section-title,
-    .video-sections .video-section-list .video-episode-card__info-title {
+    .video-sections .video-section-list .video-episode-card__info-title,
+    .q1080p .title {
         color: var(--color-86)!important;
     }
     .up-info .up-info_right .desc,
@@ -2387,7 +2389,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .tag-channel-pane .channel-btns__link:hover,
     .tag-channel-cancel-popup a.btn-ok,
     .up-info .up-info_right .name .live-status:hover,
-    .up-info .btn-panel .not-follow-charge-btn:hover {
+    .up-info .btn-panel .not-follow-charge-btn:hover,
+    .q1080p .btns .btn-getvip {
         color: var(--color-ff)!important;
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover,
