@@ -2,8 +2,9 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210503 2056
+    * © 最后更新：20210504 1343
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+    * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     ===*/
 }
 
@@ -2042,6 +2043,65 @@ regexp("https://space.bilibili.com/[0-9]+/dynamic") {
     }
 }
 
+@-moz-document url-prefix("https://t.bilibili.com/topic/") {
+    /* ===动态页 > ##标签页 === */
+    /* -- 背景 -- */
+    .tab-bg.w-100.bg-white {
+        background: var(--color-21)!important;
+    }
+    .feed-topic .publish-panel-container,
+    .relative-topics .content,
+    .feed-topic .separater-line,
+    .video-topic .video-list,
+    .page-list-box .page-input,
+    .page-list-box .page-item {
+        background-color: var(--color-2c)!important;
+    }
+    .page-list-box .active {
+        background-color: var(--bili-blue)!important;
+    }
+    .page-container {
+        background: transparent!important
+    }
+    /* -- 字体 -- */
+    .video-topic .video-list .video-title,
+    .v .t,
+    .tab-wrap .tab-item,
+    .page-list-box .page-input {
+        color: var(--color-86)!important;
+    }
+    .v .i span,
+    .page-list-box .pageInfo,
+    .page-list-box .jump-input {
+        color: var(--color-66)!important;
+    }
+    .page-list-box .active a {
+        color: var(--color-ff)!important;
+    }
+    .tab-nav .tab .tab-text.selected,
+    .tab-nav .tab .tab-text:hover,
+    .card .focus-btn .unfocus .unfocus-text[data-v-73fb1623],
+    .tab-wrap .tab-item.active {
+        color: var(--bili-blue)!important;
+    }
+    /* -- 边框 -- */
+    .feed-topic .separater-line,
+    .page-list-box .page-input,
+    .page-list-box .page-item {
+        border-color: var(--color-42)!important;
+    }
+    .page-list-box .active {
+        border-color: var(--bili-blue)!important;
+    }
+    .feed-topic .separater-line {
+        border: var(--bodr-42)!important
+    }
+    /* -- 其他 -- */
+    .v .b-icon {
+        filter: invert(50%) sepia(0%) saturate(2694%) hue-rotate(357deg) brightness(78%) contrast(91%)!important;
+    }
+}
+
 @-moz-document url-prefix("https://t.bilibili.com/lottery/") {
     /* ===动态页 > 互动抽奖=== */
     /* --背景 -- */
@@ -2152,7 +2212,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .video-sections,
     .video-sections .video-section-title,
     .video-sections .video-sections-head_second-line .second-line_right,
-    .next-button .switch-button {
+    .next-button .switch-button,
+    .error-container {
         background-color: var(--color-2c)!important;
     }
     .up-info .btn-panel .not-follow-charge-btn,
@@ -2183,7 +2244,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap .player-auxiliary-setting-menu-list,
     .wide-members .avatar-list .van-icon-general_back_s,
     .wide-members .avatar-list .van-icon-general_enter_s,
-    .q1080p {
+    .q1080p,
+    .error-body {
         background-color: var(--color-21)!important;
     }
     .up-info .btn-panel .following,
@@ -2341,7 +2403,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .video-sections .video-sections-head_first-line .first-line-title,
     .video-sections .video-section-title,
     .video-sections .video-section-list .video-episode-card__info-title,
-    .q1080p .title {
+    .q1080p .title,
+    .error-container .error-text {
         color: var(--color-86)!important;
     }
     .up-info .up-info_right .desc,
@@ -2390,7 +2453,8 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     .tag-channel-cancel-popup a.btn-ok,
     .up-info .up-info_right .name .live-status:hover,
     .up-info .btn-panel .not-follow-charge-btn:hover,
-    .q1080p .btns .btn-getvip {
+    .q1080p .btns .btn-getvip,
+    .error-container .big-btn {
         color: var(--color-ff)!important;
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover,
@@ -2548,7 +2612,9 @@ url-prefix("https://www.bilibili.com/cheese/play/") {
     #app>div.v-wrap>div.r-con>div.video-sections>div.video-sections-head>div.video-sections-head_second-line>div>img {
         filter: var(--filter-99-66)!important;
     }
-    input:not[class][type="checkbox"] {
+    input:not[class][type="checkbox"],
+    .error-container .error-manga,
+    .error-container .error.split {
         display: none!important;
     }
     input[class][type="checkbox"] {
