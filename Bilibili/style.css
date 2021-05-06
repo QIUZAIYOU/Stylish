@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210506 1512
+    * © 最后更新：20210506 1535
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     ===*/
@@ -5454,7 +5454,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .el-input__inner,
     #login-app .qrcode-login .qrcode-con .qrcode-box .qrcode-tips,
     .steps-icon,
-    .back-fff {
+    .back-fff,
+    .center .vf input,
+    .center .vf button {
         background-color: var(--color-21)!important;
     }
     #login-app .input-with-select .el-input-group__prepend,
@@ -5464,10 +5466,12 @@ url-prefix("https://www.bilibili.com/bangumi") {
         background-color: var(--color-27)!important;
     }
     #login-app .el-select-dropdown__item:hover,
-    #login-app .el-select-dropdown__item.hover {
+    #login-app .el-select-dropdown__item.hover,
+    .center .hide-tel {
         background-color: var(--color-37)!important;
     }
-    .steps-list .steps-line {
+    .steps-list .steps-line,
+    .lvhr {
         background-color: var(--color-42)!important;
     }
     /* -- 字体 -- */
@@ -5483,7 +5487,11 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .steps-icon,
     .steps-title,
     .form-group .form-group-title,
-    .mail-text {
+    .mail-text,
+    .center .vf input,
+    .center .hide-tel .tel,
+    .center .hide-tel .tel-label,
+    .center .vf button {
         color: var(--color-86)!important;
     }
     .notification-list-info,
@@ -5517,7 +5525,11 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #login-app .input-with-select .el-input-group__prepend,
     #app .input-with-select .el-input-group__prepend,
     .steps-line,
-    .steps-icon {
+    .steps-icon,
+    .center .hide-tel,
+    .center .hide-tel .tel-label,
+    .center .vf input,
+    .center .vf button {
         border-color: var(--color-42)!important;
     }
     .steps-list>.active .steps-icon,
