@@ -1,11 +1,11 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-    * © 版权信息
-    * © 作者：QIUZAIYOU
-    * © 最后更新：20210504 1343
-    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    * © Gitee项目地址：https://gitee.com/aiideai/Stylish
-    ===*/
+* © 版权信息
+* © 作者：QIUZAIYOU
+* © 最后更新：20210506 1149
+* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+* © Gitee项目地址：https://gitee.com/aiideai/Stylish
+===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -30,7 +30,7 @@
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-     :root {
+    :root {
         --color-14: #141414!important;
         --color-1b: #1b1b1b!important;
         --color-21: #212121!important;
@@ -166,25 +166,25 @@
         line-height: 13px;
     }
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -453,7 +453,8 @@
     .bb-comment .comment-send.comment-send-lite,
     .comment-bilibili-fold .comment-send.comment-send-lite,
     .bb-comment .comment-send-lite.comment-send-lite,
-    .comment-bilibili-fold .comment-send-lite.comment-send-lite {
+    .comment-bilibili-fold .comment-send-lite.comment-send-lite,
+    .comment-wrap {
         background-color: var(--color-21)!important;
     }
     .bb-comment .comment-send .textarea-container textarea,
@@ -582,7 +583,10 @@
     .bb-comment .comment-send-lite .comment-emoji,
     .comment-bilibili-fold .comment-send-lite .comment-emoji,
     .bb-comment .loading-state,
-    .comment-bilibili-fold .loading-state {
+    .comment-bilibili-fold .loading-state,
+    .comment-wrap .header .title-h2,
+    .bb-comment .comment-header .tabs-order li,
+    .comment-bilibili-fold .comment-header .tabs-order li {
         color: var(--color-86)!important;
     }
     .bb-comment .nameplate .nameplate-card .nameplate-text .n-type,
@@ -637,7 +641,9 @@
     .paging-box .tcd-number:hover,
     .paging-box .dian:hover,
     .bb-comment .comment-list .list-item .reply-box .view-more .btn-more:hover,
-    .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more:hover {
+    .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more:hover,
+    .bb-comment .comment-header .tabs-order li.on,
+    .comment-bilibili-fold .comment-header .tabs-order li.on {
         color: var(--bili-blue)!important;
     }
     .bb-comment .vip-red-name,
@@ -1433,9 +1439,9 @@
     .h5share-container:hover .text-area .text {
         color: var(--bili-blue)!important;
     }
-    [title*="封禁"],
-    .h .h-sign[title*="封禁"],
-    .up-info .up-info_right .desc[title*="封禁"] {
+    [title="封禁"],
+    .h .h-sign[title="封禁"],
+    .up-info .up-info_right .desc[title="封禁"] {
         width: -webkit-fit-content!important;
         width: -moz-fit-content!important;
         width: fit-content!important;
@@ -2054,8 +2060,12 @@ regexp("https://space.bilibili.com/[0-9]+/dynamic") {
     .feed-topic .separater-line,
     .video-topic .video-list,
     .page-list-box .page-input,
-    .page-list-box .page-item {
+    .page-list-box .page-item,
+    .active-panel {
         background-color: var(--color-2c)!important;
+    }
+    .active-panel .show-more-button {
+        background-color: var(--color-27)!important;
     }
     .page-list-box .active {
         background-color: var(--bili-blue)!important;
@@ -2067,7 +2077,8 @@ regexp("https://space.bilibili.com/[0-9]+/dynamic") {
     .video-topic .video-list .video-title,
     .v .t,
     .tab-wrap .tab-item,
-    .page-list-box .page-input {
+    .page-list-box .page-input,
+    .tc-dark-slate {
         color: var(--color-86)!important;
     }
     .v .i span,
@@ -2080,7 +2091,7 @@ regexp("https://space.bilibili.com/[0-9]+/dynamic") {
     }
     .tab-nav .tab .tab-text.selected,
     .tab-nav .tab .tab-text:hover,
-    .card .focus-btn .unfocus .unfocus-text[data-v-73fb1623],
+    .card .focus-btn .unfocus .unfocus-text,
     .tab-wrap .tab-item.active {
         color: var(--bili-blue)!important;
     }
@@ -2095,6 +2106,10 @@ regexp("https://space.bilibili.com/[0-9]+/dynamic") {
     }
     .feed-topic .separater-line {
         border: var(--bodr-42)!important
+    }
+    .active-panel .show-more-button .button-text[data-v-07e05beb]:after {
+        border-top-color: var(--color-86)!important;
+        border-left-color: var(--color-86)!important;
     }
     /* -- 其他 -- */
     .v .b-icon {
@@ -4031,7 +4046,6 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .up-info-holder .fixed-box .more .link .title,
     .to-comment .comment-num,
     .up-info-holder .fixed-box .up-article-list-block .article-list .article-item .article-title,
-    .authority,
     .original,
     .article-action .more .more-ops-list,
     .article-action,
@@ -4098,7 +4112,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .bangumi-rating-container .bangumi-rating-subtitle,
     .article-holder .article-card-root .article-card-wrap .article-info-container .desc,
     .article-holder .article-card-root .card-status,
-    .title-container .info span {
+    .title-container .info span,
+    .tag-container .tag-item {
         color: var(--color-66)!important;
     }
     .asifadeaway,
@@ -4114,7 +4129,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .up-info-holder .fixed-box .up-article-list-block .article-list .article-item:hover .article-title {
         color: var(--bili-blue)!important;
     }
-    .article-holder .color-pink-04 {
+    .article-holder .color-pink-04,
+    .article-holder .color-pink-03,
+    .authority {
         color: var(--bili-red)!important;
     }
     .bb-comment .reply-notice .notice-item a,
@@ -4212,25 +4229,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://www.bilibili.com/cheese") {
     /* ===课堂=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-green)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-green)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -4902,7 +4919,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .ps .ps__rail-y:hover,
     #page-setting #setting-index-modules.is-dragging .setting-index-module:hover,
     .shop-panel .shop-list,
-    .h-notice[style*="rgb(231, 231, 231)"] {
+    .h-notice[style*="rgb(231, 231, 231)"],
+    .h .h-forbid {
         background-color: var(--color-21)!important;
     }
     .n .n-inner,
@@ -5123,7 +5141,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .i-live .i-live-m,
     #page-index .col-2 .section .auth-detail,
     .elec .elec-monthly-c,
-    .v-search-result {
+    .v-search-result,
+    #page-index .col-1 .section.empty:after {
         color: var(--color-66)!important;
     }
     .large-item .title,
@@ -5183,6 +5202,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     }
     #page-index .col-2 .section .user-auth .auth-description {
         color: var(--bili-yellow)!important;
+    }
+    .h .h-forbid .f-wrap .f-txt {
+        color: var(--bili-red)!important;
     }
     .card .main-content .user-name.big-vip a,
     .card .main-content .user-name.big-vip a:hover,
@@ -5292,6 +5314,13 @@ url-prefix("https://www.bilibili.com/bangumi") {
         filter: invert(50%) sepia(22%) saturate(0%) hue-rotate(240deg) brightness(101%) contrast(84%)!important;
     }
     /* -- 其他属性 -- */
+    .h .h-forbid {
+        margin: 10px 0!important;
+    }
+    .h .h-forbid .f-wrap {
+        display: flex!important;
+        align-items: center!important;
+    }
     .small-item .meta>span .icon {
         opacity: 0.5!important;
     }
@@ -5334,6 +5363,12 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-channel-detail .watch-later-btn {
         padding: 0 7px!important;
         background: unset!important;
+    }
+    #page-index .subs .cover img {
+        mix-blend-mode: overlay!important;
+    }
+    .h .h-forbid .f-wrap .f-icon {
+        filter: invert(48%) sepia(72%) saturate(2051%) hue-rotate(326deg) brightness(98%) contrast(100%)!important;
     }
 }
 
@@ -5630,7 +5665,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .suggest-wrap .title span,
     .home-wrap .home-input .content,
     .home-wrap .home-input .type,
-    .home-wrap .home-input .list {
+    .home-wrap .home-input .list,
+    .video-info-module {
         background-color: var(--color-21)!important;
     }
     .filter-wrap .sub-filter,
@@ -5688,7 +5724,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .home-wrap .home-suggest .history.no-bg {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/no2233.png)!important;
     }
-    #user-list .dropdown-wrap .select-wrap .bili-dropdown .icon-arrow-down {
+    #user-list .dropdown-wrap .select-wrap .bili-dropdown .icon-arrow-down,
+    .video-info-module .icon {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_3.png)!important;
         opacity: 0.8!important;
     }
@@ -5751,7 +5788,11 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #live-list .headline-room h3 .num-txt,
     .article-item .content .desc,
     .topic-item .content .desc,
-    .up-feedback .up-fb-btn {
+    .up-feedback .up-fb-btn,
+    .activity-item .info .type,
+    .video-info-module .v-info,
+    .video-info-module .v-preview .txt,
+    .video-info-module .v-data span {
         color: var(--color-66)!important;
     }
     .bili-footer .boston-postcards li .tips,
@@ -5817,7 +5858,12 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .live-user-item .item-right .tags>span,
     .article-item,
     .topic-item,
-    #all-list .mixin-list ul:not(:last-child) {
+    #all-list .mixin-list ul:not(:last-child),
+    .activity-item .info .type,
+    .video-info-module,
+    .video-info-module .v-info .line,
+    .video-info-module .v-preview,
+    .video-info-module .v-data {
         border-color: var(--color-42)!important;
     }
     .history-dlg .hsbtn .cancel:hover,
@@ -5844,25 +5890,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
     /* ===会员购=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -6511,6 +6557,197 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .b-info .warning-group .icon-warning,
     .bb-intro-top .b-question .b-question-icon {
         mix-blend-mode: soft-light!important;
+    }
+}
+
+@-moz-document url-prefix("https://www.bilibili.com/blackroom"),
+url-prefix("https://www.bilibili.com/judgement") {
+    /* ===小黑屋=== */
+    /* -- 背景 -- */
+    .fjw-tips,
+    .select-wrap .select-txt,
+    .select-wrap .select-option,
+    .ban-app {
+        background-color: var(--color-21)!important;
+    }
+    .ban-modal,
+    .ban-modal-h5r,
+    .pub-list .face,
+    .ban-detail .content-box .info-wrap,
+    .what-ban .text-con,
+    .fjw-point,
+    .comment-wrap,
+    .bb-comment,
+    .comment-bilibili-fold,
+    .paging-box-big .page-jump input,
+    .paging-box-big .current,
+    .paging-box-big .dian,
+    .paging-box-big .next,
+    .paging-box-big .prev,
+    .paging-box-big .tcd-number,
+    .video-model,
+    .info-model,
+    .fjw-case-detail .ban-detail .content-box .major-content,
+    .teach-last-list,
+    .home-pc .application {
+        background-color: var(--color-2c)!important;
+    }
+    .select-wrap .select-option p:hover,
+    .case-list .voted-result,
+    .fjw-case-detail .ban-detail .content-box .voted-result,
+    .fjw-case-detail .ban-detail .content-box .watermark-wrap .bk-text-con .content-tag {
+        background-color: var(--color-27)!important;
+    }
+    .ban-detail .content-box .link-box .box-left .box-line,
+    .fjw-point .point-wrap .user-point .line {
+        background-color: var(--color-42)!important;
+    }
+    .paging-box-big .current,
+    .paging-box-big .current:hover,
+    .paging-box-big .dian:hover,
+    .paging-box-big .next:hover,
+    .paging-box-big .prev:hover,
+    .paging-box-big .tcd-number:hover {
+        background-color: var(--bili-blue)!important;
+    }
+    .bili-header-m .nav-menu .nav-con .nav-item:hover,
+    .paging-box-big .dian,
+    .paging-box-big .dian:hover,
+    .ban-detail .content-box .bk-text-con p span,
+    .pub-list .info dl p span {
+        background-color: transparent!important;
+    }
+    .pub-list .info .comment i,
+    .select-wrap .select-txt i,
+    .fjw-point .point-wrap .user-point .info .title .r-arrow,
+    .case-list .info .jury-time i,
+    .video-model header .down-arrow,
+    .info-model header .down-arrow,
+    .cases-wrap .fjw-user .b-right .u-img,
+    .home-pc .application .application-body .application-item .item i {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/ban_icons.png)!important;
+    }
+    /* -- 字体 -- */
+    .pub-list .info .name,
+    .fjw-tips .tip-content,
+    .pub-list .info .type .bk-title,
+    .select-wrap .select-txt,
+    .select-wrap .select-option p,
+    .ban-detail .content-box .bk-user-info .name,
+    .ban-detail .content-box .punish-title,
+    .ban-detail .content-box .link-box,
+    .jury-graph-wrap .graph-status .illegal,
+    .jury-graph-wrap .graph-status .legal,
+    .jury-graph-wrap .canvas-txt p,
+    .what-ban .text-con .title,
+    .ban-detail .content-box .link-box .box-right .origin-text,
+    .ban-detail .content-box .link-box .box-rule .origin-text,
+    .fjw-point header h2,
+    .fjw-point .point-wrap .user-point .info .content,
+    .fjw-point .point-wrap .user-point .info .title,
+    .case-list .voted-user-info .name,
+    .case-list .info .type .bk-title,
+    .case-list .info .type .jc-black,
+    .case-list .voted-result,
+    .case-list .voted-result-h5,
+    .case-list .voted-result .voted-gray,
+    .comment-wrap header h2,
+    .video-model header h2,
+    .info-model header h2,
+    .video-model h3,
+    .cm-model h4,
+    .cm-model .report-detail .detail .name,
+    .cm-model .report-detail .child-comment .child-list .detail .report-cnt,
+    .cm-model .report-detail .child-comment .child-list .detail .report-cnt .rep-name,
+    .cm-model .report-detail .detail .report-cnt,
+    .fjw-case-detail .ban-detail .content-box .voted-result,
+    .fjw-case-detail .ban-detail .content-box .voted-result .voted-gray,
+    .fjw-case-detail .ban-detail .content-box .origin-text,
+    .jury-graph-wrap .graph-status .illegal b,
+    .jury-graph-wrap .graph-status .legal b,
+    .cases-wrap .fjw-user .b-right .u-img,
+    .home-pc .application .application-body .application-item .p1 {
+        color: var(--color-86)!important;
+    }
+    .pub-list .info dl dt,
+    .pub-list .info .comment,
+    .ban-detail .content-box .bk-user-info .time,
+    .ban-detail .content-box .bk-text-con,
+    .jury-graph-wrap .canvas-txt h4,
+    .what-ban .text-con .txt,
+    .paginator .paging-box .result,
+    .fjw-point .point-wrap .user-point .info .usr-zan-cai span,
+    .case-list .info dl dt,
+    .case-list .info .comment,
+    .case-list .info .jury-time,
+    .cm-model .report-detail .detail .date,
+    .cm-model .report-detail .more-list,
+    .fjw-case-detail .ban-detail .content-box .watermark-wrap .watermark,
+    .fjw-case-detail .ban-detail .content-box .punish-title .rule-content,
+    .home-pc .application .application-header p,
+    .home-pc .application .application-body .fjw-tip,
+    .home-pc .application .application-foot p {
+        color: var(--color-66)!important;
+    }
+    .notice-list .title,
+    .web-notice .more,
+    .fjw-tips .tip-close {
+        color: var(--color-ff)!important;
+    }
+    .select-wrap .select-option p:hover,
+    .ban-detail .content-box .link-box .box-right a,
+    .cm-model .report-detail .more-list a,
+    .home-pc .application .application-header .title span {
+        color: var(--bili-blue)!important;
+    }
+    .cm-model .report-detail .detail .inner-pink>.detail>.report-cnt,
+    .cm-model .report-detail .detail .pink,
+    .cm-model .inner-pink>.detail>.report-cnt,
+    .cm-model .pink {
+        color: var(--bili-pink)!important;
+    }
+    /* -- 边框 -- */
+    .fjw-tips,
+    .pub-list .info dl,
+    .select-wrap .select-option,
+    .ban-detail .content-box .bk-text-con,
+    .ban-detail .content-box .link-box,
+    .fjw-point header,
+    .case-list .info dl,
+    .video-model .border-b,
+    .info-model .border-b,
+    .fjw-case-detail .ban-detail .content-box .jury-status,
+    .fjw-case-detail .ban-detail .content-box .watermark-wrap .bk-text-con .content-tag,
+    .home-pc .application .application-foot {
+        border-color: var(--color-42)!important;
+    }
+    .paging-box-big .dian,
+    .music-pagination .dian,
+    .el-pagination__editor {
+        border-color: var(--color-2c)!important;
+    }
+    .carousel-wrap .page .next.current {
+        border-color: var(--bili-blue)!important;
+    }
+    .left-nav-wrapper {
+        border-right: 1px solid var(--color-42)!important;
+    }
+    /* -- 阴影 -- */
+    .left-nav-wrapper,
+    .ban-detail .content-box .info-wrap,
+    .comment-wrap {
+        box-shadow: none!important;
+    }
+    /* -- 其他 -- */
+    img[src*='noface'] {
+        mix-blend-mode: overlay!important;
+    }
+    .fjw-point .point-wrap .user-point .info .usr-zan-cai .zan,
+    .fjw-point .point-wrap .user-point .info .usr-zan-cai .cai {
+        filter: invert(68%) sepia(0%) saturate(0%) hue-rotate(166deg) brightness(79%) contrast(83%)!important;
+    }
+    .teach-last-list .teach-tv-right {
+        filter: invert(50%) sepia(17%) saturate(0%) hue-rotate(161deg) brightness(102%) contrast(84%)!important;
     }
 }
 
