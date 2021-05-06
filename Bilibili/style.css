@@ -6562,7 +6562,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
 
 @-moz-document url-prefix("https://www.bilibili.com/blackroom"),
 url-prefix("https://www.bilibili.com/judgement") {
-    /* ===小黑屋=== */
+    /* ===风纪委员=== */
     /* -- 背景 -- */
     .fjw-tips,
     .select-wrap .select-txt,
