@@ -5474,6 +5474,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .lvhr {
         background-color: var(--color-42)!important;
     }
+    .center .vf button:hover {
+        background-color: var(--bili-blue)!important;
+    }
     /* -- 字体 -- */
     .notification-list-title,
     .nav-list li .list-description p,
@@ -5504,6 +5507,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .result-desc {
         color: var(--color-66)!important;
     }
+    .center .vf button:hover {
+        color: var(--color-ff)!important;
+    }
     .notification-tips a {
         color: var(--bili-blue)!important;
     }
@@ -5531,6 +5537,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .center .vf input,
     .center .vf button {
         border-color: var(--color-42)!important;
+    }
+    .center .vf button:hover {
+        border-color: var(--bili-blue)!important;
     }
     .steps-list>.active .steps-icon,
     .steps-list>.active .steps-title {
