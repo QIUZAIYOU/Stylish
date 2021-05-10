@@ -2,7 +2,7 @@
 /*=== 
 * 版权信息
 * 作者：QIUZAIYOU
-* 最后更新：20210421 1627
+* 最后更新：20210510 1829
 * Github项目地址：https://github.com/QIUZAIYOU/Stylish
 * Gitee项目地址：https://gitee.com/aiideai/Stylish
 ===*/
@@ -3795,7 +3795,8 @@ url-prefix("http://www.douyu.com/") {
     .FTP-singleTask-btn.is-unfinished,
     .compay-num-list .empty-item .empty-item-desc,
     .footer-protocol a,
-    .PlayerToolbar-Wealth {
+    .PlayerToolbar-Wealth,
+    .Search-recommend-info h3{
         color: #868686!important;
     }
     .RichRankList-item.is-stealth .RichRankList-name {
@@ -4298,6 +4299,7 @@ url-prefix("http://www.douyu.com/") {
     }
     .Search-historyList>li:hover,
     .Search-recommendList>li:hover,
+    .Search-recommend:hover,
     .Search-history-title,
     .Search-hot-title,
     .layout-Elevator.is-fixed,
