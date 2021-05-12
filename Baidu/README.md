@@ -1,4 +1,4 @@
-# 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.02.28-blue)
+# 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.05.12-blue)
 
 ![简百度 Simple Baidu](https://www.asifadeaway.com/Stylish/baidu/StylishCover.png)
 
