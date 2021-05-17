@@ -1,11 +1,11 @@
 @-moz-document url-prefix("http://example.com") {
     /*===
-    * © 版权信息
-    * © 作者：QIUZAIYOU
-    * © 最后更新：20210507 1249
-    * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-    * © Gitee项目地址：https://gitee.com/aiideai/Stylish
-    ===*/
+* © 版权信息
+* © 作者：QIUZAIYOU
+* © 最后更新：20210517 2041
+* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+* © Gitee项目地址：https://gitee.com/aiideai/Stylish
+===*/
 }
 
 @-moz-document domain("bilibili.com") {
@@ -30,7 +30,7 @@
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-     :root {
+    :root {
         --color-14: #141414!important;
         --color-1b: #1b1b1b!important;
         --color-21: #212121!important;
@@ -134,57 +134,57 @@
         color: var(--color-86)!important;
     }
     /* input[type="checkbox"] {
-        position: relative;
-        display: inline-block!important;
-        margin-right: 3px;
-        width: 13px!important;
-        height: 13px!important;
-        vertical-align: middle;
-        text-align: center;
-        line-height: 13px;
-    }
-    input[type="checkbox"]::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 13px!important;
-        height: 13px!important;
-        border: 1px solid var(--color-42);
-        background: var(--color-2c);
-        content: "";
-        line-height: 13px;
-    }
-    input[type="checkbox"]:checked::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 1px solid var(--bili-blue);
-        background-color: var(--bili-blue);
-        color: var(--color-ff);
-        content: "♪";
-        text-align: center;
-        line-height: 13px;
-    } */
+    position: relative;
+    display: inline-block!important;
+    margin-right: 3px;
+    width: 13px!important;
+    height: 13px!important;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 13px;
+}
+input[type="checkbox"]::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 13px!important;
+    height: 13px!important;
+    border: 1px solid var(--color-42);
+    background: var(--color-2c);
+    content: "";
+    line-height: 13px;
+}
+input[type="checkbox"]:checked::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--bili-blue);
+    background-color: var(--bili-blue);
+    color: var(--color-ff);
+    content: "♪";
+    text-align: center;
+    line-height: 13px;
+} */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-blue)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -2569,7 +2569,8 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .tag-channel-pane .channel-btns .is-subs,
     .wide-members .avatar,
     .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap,
-    .next-button .switch-button {
+    .next-button .switch-button,
+    .video-sections-item {
         border-color: var(--color-42)!important;
     }
     .player-auxiliary-danmaku-date-picker-container .player-auxiliary-danmaku-date-picker-body .day-span {
@@ -4231,25 +4232,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://www.bilibili.com/cheese") {
     /* ===课堂=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-green)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-green)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
@@ -5915,25 +5916,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
     /* ===会员购=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px!important;
         border-radius: 6px!important;
         background-color: var(--bili-shop-pink)!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0!important;
         background-color: var(--color-14)!important;
     }
