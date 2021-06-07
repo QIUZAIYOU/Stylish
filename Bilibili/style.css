@@ -2420,7 +2420,8 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .video-sections .video-section-title,
     .video-sections .video-section-list .video-episode-card__info-title,
     .q1080p .title,
-    .error-container .error-text {
+    .error-container .error-text,
+    .video-desc .desc-info{
         color: var(--color-86)!important;
     }
     .up-info .up-info_right .desc,
