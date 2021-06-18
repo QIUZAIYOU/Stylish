@@ -5631,6 +5631,13 @@ url-prefix("https://www.bilibili.com/bangumi") {
     }
 }
 
+@-moz-document url-prefix("https://passport.bilibili.com/register/login_sms_verify.html") {
+    /* ===护照中心>登录手机验证=== */
+    .container {
+        margin-top: 20px!important;
+    }
+}
+
 @-moz-document url-prefix("https://www.bilibili.com/account/history") {
     /* ===历史记录=== */
     /* -- 背景 -- */
