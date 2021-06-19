@@ -524,7 +524,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .SelfCollectionItem-title,
     .HoverCard-separate,
     .TimelineItem-module-title-3OWz,
-    .Header-module-intro-2QIJ {
+    .Header-module-intro-2QIJ,
+    a.QuestionMainAction {
         color: var(--color-86) !important;
     }
     .ztext blockquote,
