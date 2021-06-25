@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210618 0815
+    * © 最后更新：20210625 1036
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     ===*/
@@ -134,37 +134,37 @@
         color: var(--color-86) !important;
     }
     /* input[type="checkbox"] {
-        position: relative;
-        display: inline-block!important;
-        margin-right: 3px;
-        width: 13px!important;
-        height: 13px!important;
-        vertical-align: middle;
-        text-align: center;
-        line-height: 13px;
-    }
-    input[type="checkbox"]::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 13px!important;
-        height: 13px!important;
-        border: 1px solid var(--color-42);
-        background: var(--color-2c);
-        content: "";
-        line-height: 13px;
-    }
-    input[type="checkbox"]:checked::before {
-        position: absolute;
-        top: 0;
-        left: 0;
-        border: 1px solid var(--bili-blue);
-        background-color: var(--bili-blue);
-        color: var(--color-ff);
-        content: "♪";
-        text-align: center;
-        line-height: 13px;
-    } */
+            position: relative;
+            display: inline-block!important;
+            margin-right: 3px;
+            width: 13px!important;
+            height: 13px!important;
+            vertical-align: middle;
+            text-align: center;
+            line-height: 13px;
+        }
+        input[type="checkbox"]::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 13px!important;
+            height: 13px!important;
+            border: 1px solid var(--color-42);
+            background: var(--color-2c);
+            content: "";
+            line-height: 13px;
+        }
+        input[type="checkbox"]:checked::before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            border: 1px solid var(--bili-blue);
+            background-color: var(--bili-blue);
+            color: var(--color-ff);
+            content: "♪";
+            text-align: center;
+            line-height: 13px;
+        } */
     /* ===浏览器滚动条=== */
      ::-webkit-scrollbar {
         width: 6px !important;
@@ -2652,6 +2652,16 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .player-auxiliary-danmaku-date-picker-container .player-auxiliary-danmaku-date-picker-header .player-auxiliary-danmaku-date-picker-btn {
         fill: var(--color-86) !important;
     }
+    .bilibili-player-video-info-tips .bp-svgicon svg {
+        fill: none!important;
+    }
+    .bilibili-player-video-info-tips .bp-svgicon svg path {
+        fill: var(--color-42) !important;
+        stroke: var(--color-42) !important;
+    }
+    .bilibili-player-video-info-tips .bp-svgicon svg circle {
+        stroke: var(--color-42) !important;
+    }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-hint a:hover svg,
     .bilibili-player-video-danmaku-setting-left-block-content .bilibili-player-block-filter-type.disabled .bilibili-player-block-filter-image .bp-svgicon svg,
     .bilibili-player-video-sendbar .bilibili-player-video-danmaku-root .bilibili-player-video-danmaku-setting:hover .bp-svgicon svg {
@@ -2681,6 +2691,10 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .error-container .error-manga,
     .error-container .error.split,
     .coin-operated-m .like-checkbox input[type="checkbox"]::before {
+        display: none !important;
+    }
+    /* 成为大会员 */
+    .bili-dialog-m {
         display: none !important;
     }
 }
