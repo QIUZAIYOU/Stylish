@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210625 1036
+    * © 最后更新：20210629 1725
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     ===*/
@@ -5184,7 +5184,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-channel-detail .watch-later-btn,
     .i-live .i-live-text,
     .article-title a,
-    .h-notice[style*="rgb(231, 231, 231)"] a[style*="rgb(153, 153, 153)"]:hover {
+    .h-notice[style*="rgb(231, 231, 231)"] a[style*="rgb(153, 153, 153)"]:hover,
+    #page-video .page-head__left .video-title {
         color: var(--color-86) !important;
     }
     #page-index .col-2 .section .user-auth.no-auth .no-auth-title span,
