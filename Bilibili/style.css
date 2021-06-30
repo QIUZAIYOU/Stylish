@@ -2,7 +2,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：20210629 1725
+    * © 最后更新：20210630 1730
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     ===*/
@@ -5185,7 +5185,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .i-live .i-live-text,
     .article-title a,
     .h-notice[style*="rgb(231, 231, 231)"] a[style*="rgb(153, 153, 153)"]:hover,
-    #page-video .page-head__left .video-title {
+    #page-video .page-head__left .video-title,
+    #page-index .channel .section-right-options .play-all-channel .video-commonplayer_play {
         color: var(--color-86) !important;
     }
     #page-index .col-2 .section .user-auth.no-auth .no-auth-title span,
@@ -5259,7 +5260,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .section .operation:hover,
     #page-channel-detail .watch-later-btn:hover,
     .article-title:hover a,
-    #page-index .bangumi .content .title:hover {
+    #page-index .bangumi .content .title:hover,
+    #page-index .channel .section-right-options .play-all-channel:hover .video-commonplayer_play {
         color: var(--bili-blue) !important;
     }
     #page-index .col-2 .section .user-auth .auth-description {
@@ -5331,7 +5333,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .section .operation,
     #page-channel-detail .channel-info .c-count,
     #page-channel-detail .filter,
-    #page-channel-detail .watch-later-btn {
+    #page-channel-detail .watch-later-btn,
+    #page-index .channel .section-right-options .play-all-channel {
         border-color: var(--color-42) !important;
     }
     #page-fav .fav-main .small-item,
@@ -5352,7 +5355,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .be-pager-prev:hover,
     #page-follows .follow-main .follow-action-top .back-to-info:hover,
     .section .operation:hover,
-    #page-channel-detail .watch-later-btn:hover {
+    #page-channel-detail .watch-later-btn:hover,
+    #page-index .channel .section-right-options .play-all-channel:hover {
         border-color: var(--bili-blue) !important;
     }
     /* -- 阴影 -- */
