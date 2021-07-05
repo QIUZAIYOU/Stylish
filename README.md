@@ -21,7 +21,7 @@
 
 分支：
 
-- 哔哩：[夜间哔哩 > 创作中心](https://userstyles.org/styles/196283/nightmode-for-bilibili-com) （目前基本页面已经施工完毕，但因本人未上传过视频，不知道实际使用情况中页面是什么样，所以和稿件展示及操作方面有关的样式会出现没有夜化的情况）![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.07.05-blue)
+- 哔哩：[夜间哔哩 > 创作中心](https://userstyles.org/styles/196283/nightmode-for-bilibili-com) 目前基本页面已经施工完毕，但因本人未上传过视频，不知道实际使用情况中页面是什么样，所以和稿件展示及操作方面有关的样式会出现没有夜化的问题 ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.07.05-blue)
 
 暂定：
 
