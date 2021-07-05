@@ -19,10 +19,15 @@
 - 哔哩：[夜间哔哩](https://userstyles.org/styles/196283/nightmode-for-bilibili-com) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.07.05-blue)
 - 百度：[简百度](https://userstyles.org/styles/169907/simple-baidu) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.05.12-blue)
 
+分支：
+
+- 哔哩：[夜间哔哩 > 创作中心](https://userstyles.org/styles/196283/nightmode-for-bilibili-com) （目前基本页面已经施工完毕，但因本人未上传过视频，不知道实际使用情况中页面是什么样，所以和稿件展示及操作方面有关的样式会出现没有夜化的情况）![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.07.05-blue)
+
 暂定：
 
 - B站直播(看情况做不做，做的话不会新开，会与夜间哔哩合并)
 
 施工中：
 
-- B站创作中心(与夜间哔哩合并 > 目前基本页面已经施工完毕，但因本人未上传过视频，不知道实际使用情况中页面是什么样，所以和稿件展示及操作方面有关的样式会出现没有夜化的情况)![working](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen)
+暂无![Working](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen)
+
