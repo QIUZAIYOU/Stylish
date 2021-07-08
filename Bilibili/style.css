@@ -2,8 +2,8 @@
 @name           夜间哔哩 NightMode For Bilibili.com
 @namespace      USO Archive
 @author         QIUZAIYOU
-@description    `⭐1.常用页面夜间模式全覆盖⭐2.去除广告⭐3.去除无用元素⭐㊖ 凡涉及到金钱交易（充值、付费购买等）等页面，若遇到因本样式导致文字颜色看不清的情况，请关闭本样式之后再进行金钱交易操作。否则因未关闭本样式导致的财产损失与本样式及作者无关。若发现文字看不清的情况请及时反馈。`
-@version        20210708.15.58
+@description    `见下方简介`
+@version        20210708.17.42
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -13,10 +13,10 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("http://example.com") {
-/*===
+    /*===
 * © 版权信息
 * © 作者：QIUZAIYOU
-* © 最后更新：20210705 1920
+* © 最后更新：20210708 1742
 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 ===*/
@@ -4099,6 +4099,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://www.bilibili.com/read/") {
     /* ===专栏=== */
     /* -- 背景 -- */
+    body,
+    html,
     .page-content .right-side .search-module .search-block input,
     .page-content .left-side .article-list .article-list-holder .article-item,
     .page-content .right-side .rank-module .rank-list .item,
@@ -4109,7 +4111,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .nav-tab-bar .tab-item,
     .article-holder figure.img-box,
     .page-content .right-side .up-list,
-    .article-holder .cut-off-5 {
+    .article-holder .cut-off-5,
+    .comment-wrapper .comment-m,
+    .read-article-holder .default-cover,
+    .page-content .right-side .up-list .fresh-btn {
         background-color: var(--color-21) !important;
     }
     .up-info-holder .fixed-box .up-article-list-block .more-article,
@@ -4123,11 +4128,16 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more:hover,
     .article-holder img,
     .banner-wrap,
-    .article-holder .card {
+    .article-holder .card,
+    .article-container,
+    .article-up-info,
+    .recommend-list,
+    .fixed-top-header,
+    .right-side-bar .side-toolbar {
         background-color: var(--color-2c) !important;
     }
     .page-content .right-side .search-module .search-block .search-word-panel .history-item:hover,
-    .page-content .right-side .search-module .search-block .search-word-panel .suggest-item:hover {
+    .page-content .right-side .search-module .search-block .search-word-panel .suggest-item:hover，.read-article-holder .img-box .video-card {
         background-color: var(--color-27) !important;
     }
     .page-content .right-side .rank-module .rank-list .item:nth-child(-n + 3) .rank-index {
@@ -4136,6 +4146,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .article-holder img.latex,
     .article-holder img.loaded {
         background-color: transparent !important;
+    }
+    .right-side-bar .to-top {
+        background-image: none !important;
     }
     /* -- 字体 -- */
     .title-container .title,
@@ -4174,7 +4187,19 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .up-info-holder .fixed-box .up-info-block .up-info-right-block .row-2,
     .article-holder h1,
     .bangumi-rating-container .bangumi-rating-title,
-    .article-holder .article-card-root .article-card-wrap .article-info-container .title {
+    .article-holder .article-card-root .article-card-wrap .article-info-container .title,
+    .article-breadcrumb .breadcrumb-title,
+    .normal-article-holder,
+    .normal-article-holder h1,
+    .recommend-list .recommend-header .title,
+    .recommend-list .recommend-article-list .left-panel .article-title,
+    .fixed-top-header .inner>p,
+    .right-side-bar .side-toolbar .toolbar-item .iconfont,
+    .right-side-bar .side-toolbar .toolbar-item,
+    .right-side-bar .to-top .iconfont,
+    .comment-wrapper .comment-m .b-head,
+    .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-title-holder .article-title,
+    .page-content .right-side .up-list .fresh-btn {
         color: var(--color-86) !important;
     }
     blockquote,
@@ -4215,25 +4240,45 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .article-holder .article-card-root .article-card-wrap .article-info-container .desc,
     .article-holder .article-card-root .card-status,
     .title-container .info span,
-    .tag-container .tag-item {
+    .tag-container .tag-item,
+    .article-breadcrumb .breadcrumb-name,
+    .article-breadcrumb .slash,
+    .article-read-info>span,
+    .recommend-list .recommend-article-list .left-panel .article-info,
+    .recommend-list .recommend-article-list .left-panel .article-info .article-info--up,
+    .recommend-list .recommend-article-list .left-panel .article-info .article-info--stats .stats-categroy,
+    .recommend-list .recommend-article-list .left-panel .article-desc,
+    .read-article-holder .card-container .up-icon,
+    .read-article-holder .row-video-holder .row-video-infos,
+    .interaction-info,
+    .interaction-info .toolbar .share-box {
         color: var(--color-66) !important;
     }
     .asifadeaway,
     .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-title-holder {
         color: var(--color-af) !important;
     }
-    .page-content .right-side .rank-module .rank-list .item:nth-child(-n + 3) .rank-index {
+    .page-content .right-side .rank-module .rank-list .item:nth-child(-n + 3) .rank-index,
+    .right-side-bar .to-top:hover .iconfont {
         color: var(--color-ff) !important;
     }
     .up-info-holder .fixed-box .more .help .title:hover,
     .up-info-holder .fixed-box .more .link .title:hover,
     .article-holder .color-blue-04,
-    .up-info-holder .fixed-box .up-article-list-block .article-list .article-item:hover .article-title {
+    .up-info-holder .fixed-box .up-article-list-block .article-list .article-item:hover .article-title,
+    .recommend-list .recommend-article-list .left-panel .article-info .article-info--up:hover:not(.article-title),
+    .recommend-list .recommend-article-list .left-panel .article-info .article-info--stats .stats-categroy:hover,
+    .right-side-bar .side-toolbar .toolbar-item:hover .iconfont,
+    .right-side-bar .side-toolbar .toolbar-item:hover>.toolbar-item__num,
+    .recommend-list .recommend-article-list .left-panel .article-title:hover,
+    .page-content .left-side .article-list .article-list-holder .article-item:hover .item-holder .article-title,
+    .page-content .right-side .up-list .fresh-btn:hover {
         color: var(--bili-blue) !important;
     }
     .article-holder .color-pink-04,
     .article-holder .color-pink-03,
-    .authority {
+    .authority,
+    .article-footer-box .footer-text {
         color: var(--bili-red) !important;
     }
     .bb-comment .reply-notice .notice-item a,
@@ -4264,13 +4309,24 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .article-list-holder-block .article-list-plane .button#article-list-btn .title,
     .page-content .right-side .up-list .title,
     .banner-wrap,
-    .slim-border:after {
+    .slim-border:after,
+    .article-container__content,
+    .recommend-list .recommend-header,
+    .recommend-list .recommend-article-list .article-item,
+    .read-article-holder .row-video-holder,
+    .page-content .right-side .up-list .fresh-btn {
         border-color: var(--color-42) !important;
     }
     .to-comment:hover {
         border-color: var(--bili-blue) !important;
     }
+    .normal-article-holder .img-box:before {
+        border: none!important
+    }
     /* -- 其他属性 -- */
+    .comment-wrapper .comment-m {
+        padding: 0!important
+    }
     .article-action .ops .share-container .weixin-holder {
         filter: invert(100%);
         color: #727272;
@@ -7771,7 +7827,7 @@ url-prefix("https://cm.bilibili.com/") {
     /*  创作中心 > 充电计划 */
     /* -- 背景 -- */
     .toaster-wrp,
-    .charge-change .charge-change-wrp[data-v-7d26f2e5],
+    .charge-change .charge-change-wrp,
     .charge-index-box {
         background-color: var(--color-21) !important
     }
@@ -7780,8 +7836,8 @@ url-prefix("https://cm.bilibili.com/") {
         background-color: var(--color-2c) !important
     }
     /* -- 字体 -- */
-    .charge-change .charge-change-wrp .text[data-v-7d26f2e5],
-    .charge-change .charge-change-wrp .title[data-v-7d26f2e5],
+    .charge-change .charge-change-wrp .text,
+    .charge-change .charge-change-wrp .title,
     .charge-participate .benefit-item .short-desc,
     .charge-participate .check-read {
         color: var(--color-86) !important;
