@@ -6,7 +6,7 @@
 
 适用于浏览器插件「Stylus」和「Stylish」
 
-⭐ 所有项目正式使用 `UserStyles.world` 样式托管平台，建议使用此项目地址安装，可在 `Stylus` 管理面板在线更新
+⭐ 所有项目正式使用 `UserStyles.world` 样式托管平台，建议使用此平台安装，可在 `Stylus` 管理面板在线更新
 
 目前适配如下网站：
 
