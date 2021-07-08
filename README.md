@@ -14,10 +14,10 @@
 
 目前适配如下网站：
 
-- 斗鱼：[夜间斗鱼](https://userstyles.org/styles/158117/nightmode-for-douyu-com) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.05.10-blue)
-- 知乎：[夜间知乎](https://userstyles.org/styles/160889/nightmode-for-zhihu-com) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.06.19-blue)
-- 哔哩：[夜间哔哩](https://userstyles.org/styles/196283/nightmode-for-bilibili-com) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.07.05-blue)
-- 百度：[简百度](https://userstyles.org/styles/169907/simple-baidu) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.05.12-blue)
+- 斗鱼：[夜间斗鱼](https://userstyles.world/style/240/nightmode-for-douyu-com) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.05.10-blue)
+- 知乎：[夜间知乎](https://userstyles.world/style/242/nightmode-for-zhihu-com) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.06.19-blue)
+- 哔哩：[夜间哔哩](https://userstyles.world/style/241/nightmode-for-bilibili-com) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.07.05-blue)
+- 百度：[简百度](https://userstyles.world/style/243/simple-baidu) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.05.12-blue)
 
 分支：
 
