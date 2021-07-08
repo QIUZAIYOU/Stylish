@@ -7,8 +7,11 @@
 ## 项目地址
 
 `Github`：<https://github.com/QIUZAIYOU/Stylish/tree/main/Douyu>
+
 `Gitee`：<https://gitee.com/aiideai/Stylish/tree/main/Douyu>
+
 `UserStyles.org`：<https://userstyles.org/styles/158117/nightmode-for-douyu-com>
+
 `UserStyles.world`：<https://userstyles.world/style/240/nightmode-for-douyu-com>
 
 建议使用 `UserStyles.world` 项目地址安装，可在 `Stylus` 管面板线更新
