@@ -1,3 +1,79 @@
+/* ==UserStyle==
+@name           简百度 Simple Baidu
+@namespace      USO Archive
+@author         QIUZAIYOU
+@description    `去广告，样式更改。`
+@version        20210512.11.13
+@license        NO-REDISTRIBUTION
+@preprocessor   uso
+@advanced dropdown doubleList "搜索结果双列显示" {
+  doubleList_OFF "关*" <<<EOT /*[[doubleLis]]*\/ EOT;
+ doubleList_ON "开" <<<EOT /* 调整搜索结果样式以适配双列 *\/
+ #content_left {
+    display: flex!important;
+    flex-wrap: wrap!important;
+    align-items: center!important;
+    justify-content: space-between!important;
+}
+#content_left > div > .c-row {
+    display: flex!important;
+    align-items: center!important;
+    justify-content: space-between!important;
+}
+#container {
+    padding-bottom: 10px!important;
+}
+
+#foot,
+#content_left > .result,
+#content_left > .result-op,
+.c-group-wrapper,
+[tpl="tieba_general"],
+[tpl="recommend_list"],
+[tpl="bk_polysemy"],
+[tpl="singlevideo"],
+[tpl="sp_realtime_bigpic5"],
+[tpl="se_com_default"],
+[data-click*="rsv_srcid"],
+.PfXgVr {
+    width: calc((100% - 10px) / 2)!important;
+    box-sizing: border-box!important;
+    height: 216px!important;
+    margin: inherit!important;
+    margin-bottom: 10px!important;
+    overflow: hidden!important;
+    background: #fff!important;
+}
+.new-pmd .c-span3,
+.new-pmd .c-img3 {
+    width: 110px!important;
+}
+
+.c-result-content {
+    height: 170px!important;
+    overflow: hidden!important;
+}
+[tpl="tieba_general"] .result.c-container {
+    height: 140px!important;
+    overflow: hidden!important;
+}
+
+#content_left > div > .c-row {
+    height: 151px!important;
+    overflow: hidden!important;
+}
+.op-img-address-divide-low {
+    overflow: hidden!important;
+}
+/* 去掉部分无用元素 *\/
+#rs,
+#foot,
+[tpl="recommend_list"] {
+    display: none!important;
+} EOT;
+
+}
+==/UserStyle== */
 @-moz-document url-prefix("http://example.com") {
  /*=== 
  * 版权信息
