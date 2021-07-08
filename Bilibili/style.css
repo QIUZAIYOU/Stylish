@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-@version        20210708.17.42
+@version        20210708.22.57
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -16,7 +16,7 @@
     /*===
 * © 版权信息
 * © 作者：QIUZAIYOU
-* © 最后更新：20210708 1742
+* © 最后更新：20210708 2257
 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 ===*/
@@ -4133,7 +4133,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .article-up-info,
     .recommend-list,
     .fixed-top-header,
-    .right-side-bar .side-toolbar {
+    .right-side-bar .side-toolbar,
+    .z-top-container {
         background-color: var(--color-2c) !important;
     }
     .page-content .right-side .search-module .search-block .search-word-panel .history-item:hover,
@@ -4199,7 +4200,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .right-side-bar .to-top .iconfont,
     .comment-wrapper .comment-m .b-head,
     .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-title-holder .article-title,
-    .page-content .right-side .up-list .fresh-btn {
+    .page-content .right-side .up-list .fresh-btn,
+    .page-content .right-side .rank-module .rank-tabs-bar label,
+    .page-content .right-side .up-list .title {
         color: var(--color-86) !important;
     }
     blockquote,
