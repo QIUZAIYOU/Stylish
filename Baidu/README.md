@@ -4,6 +4,18 @@
 
 <img src="https://camo.githubusercontent.com/3177a12d6dac9a08032f768208bde1cc65437e2fe48b102969255eb7ff5b7512/68747470733a2f2f7777772e61736966616465617761792e636f6d2f696d616765732f66617669636f6e2e737667" width="32" height="32"> ![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png) <img src="https://camo.githubusercontent.com/3177a12d6dac9a08032f768208bde1cc65437e2fe48b102969255eb7ff5b7512/68747470733a2f2f7777772e61736966616465617761792e636f6d2f696d616765732f66617669636f6e2e737667" width="32" height="32">
 
+## 项目地址
+
+`Github`：<https://github.com/QIUZAIYOU/Stylish/tree/main/Baidu>
+
+`Gitee`：<https://gitee.com/aiideai/Stylish/tree/main/Baidu>
+
+`UserStyles.org`：<https://userstyles.org/styles/169907/simple-baidu>
+
+`UserStyles.world`：<https://userstyles.world/style/243/simple-baidu>
+
+建议使用 `UserStyles.world` 项目地址安装，可在 `Stylus` 管面板在线更新
+
 ## 简介及说明
 
 1. 去广告
