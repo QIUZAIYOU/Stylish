@@ -6,6 +6,18 @@
 
 `userstyles.world` 项目地址，从此安装可在线更新：[BIlibili](https://userstyles.world/style/241/nightmode-for-bilibili-com)
 
+## 项目地址
+
+`Github`：<https://github.com/QIUZAIYOU/Stylish/tree/main/Bilibili>
+
+`Gitee`：<https://gitee.com/aiideai/Stylish/tree/main/Bilibili>
+
+`UserStyles.org`：<https://userstyles.org/styles/196283/nightmode-for-bilibili-com>
+
+`UserStyles.world`：<https://userstyles.world/style/241/nightmode-for-bilibili-com>
+
+建议使用 `UserStyles.world` 项目地址安装，可在 `Stylus` 管面板线更新
+
 ## 简介及说明
 
 1. 常用页面夜间模式全覆盖
