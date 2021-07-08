@@ -1,3 +1,17 @@
+/* ==UserStyle==
+@name           夜间哔哩 NightMode For Bilibili.com
+@namespace      USO Archive
+@author         QIUZAIYOU
+@description    `见下方简介`
+@version        20210708 1557
+@license        CC-BY-NC-ND-4.0
+@preprocessor   uso
+@advanced dropdown BiliLive "首页直播板块屏蔽" {
+    BiliLive_ON "开*" <<<EOT #bili_live,EOT;
+    BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
+}
+==/UserStyle== */
+
 @-moz-document url-prefix("http://example.com") {
 /*===
 * © 版权信息
