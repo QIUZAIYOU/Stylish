@@ -8023,3 +8023,89 @@ url-prefix("https://cm.bilibili.com/") {
         filter: var(--filter-00-86) !important;
     }
 }
+
+@-moz-document domain("live.bilibili.com") {
+    /* ===直播 > 正在施工 === */
+    /* -- 背景 -- */
+    .search-bar {
+        background-color: var(--color-21) !important;
+    }
+    .area-list-panel .list-item:hover,
+    .link-navbar .nav-item:hover,
+    .area-list-panel,
+    .shortcuts-ctnr .shortcut-item:hover,
+    .link-panel-ctnr,
+    .totally-empty-hint,
+    .user-item-loading,
+    .user-item-loading .username,
+    .user-item-loading .avatar,
+    .activity-item-loading-ctnr .info-ctnr .first-line,
+    .activity-item-loading-ctnr .info-ctnr .second-line,
+    .activity-item-loading-ctnr .info-ctnr,
+    .activity-item-loading-ctnr .user-avatar {
+        background-color: var(--color-27) !important;
+    }
+    .link-navbar,
+    .highlight-area-item,
+    .link-navbar .nav-item,
+    .link-panel-ctnr .load-more .load-more-btn {
+        background-color: var(--color-2c) !important;
+    }
+    .link-navbar .main-ctnr .nav-items-ctnr.over-width {
+        background-color: var(--color-2c-95) !important;
+    }
+    .divider {
+        background-color: var(--color-42) !important;
+    }
+    asifadeaway {
+        background: var(--theme-color) !important;
+    }
+    asifadeaway {
+        background: var(--bili-red-50) !important;
+    }
+    asifadeaway {
+        background: var(--bili-lightblue-50) !important
+    }
+    /* -- 字体 -- */
+    .link-navbar .main-ctnr .nav-logo,
+    .shortcuts-ctnr div,
+    .search-bar span,
+    .search-bar input,
+    .search-bar-ctnr .search-bar .search-btn,
+    .link-navbar .nav-item,
+    .link-navbar .main-ctnr .nav-switcher,
+    .area-list-panel .list-item,
+    .user-item .username,
+    .section-title h2,
+    .activity-item-ctnr .info-ctnr .title-text,
+    .activity-item-ctnr .info-ctnr .first-line .username,
+    .link-panel-ctnr .load-more .load-more-btn {
+        color: var(--color-86) !important;
+    }
+    .activity-item-ctnr .info-ctnr .first-line .time {
+        color: var(--color-66) !important;
+    }
+    p span[style*="background:yellow"] {
+        color: var(--color-21) !important;
+    }
+    .link-navbar .nav-item:hover,
+    .area-list-panel .list-item:hover,
+    .shortcuts-ctnr .shortcut-item:hover .list-item {
+        color: var(--bili-blue) !important;
+    }
+    /* -- 边框 -- */
+    .search-bar {
+        border-color: var(--color-42) !important;
+    }
+    /* -- 图标 -- */
+    .link-navbar .main-ctnr .nav-switcher.open-btn {
+        filter: var(--filter-bb-86) !important;
+    }
+    /* -- 阴影 -- */
+    .link-navbar {
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08)!important;
+    }
+    .link-navbar .panel-shadow {
+        box-shadow: none!important;
+    }
+}
