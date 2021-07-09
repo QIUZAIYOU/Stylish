@@ -10,7 +10,7 @@
 
 `Gitee`：<https://gitee.com/aiideai/Stylish/tree/main/Zhihu>
 
-`UserStyles.org`：<https://userstyles.org/styles/158117/nightmode-for-douyu-com>
+`UserStyles.org`：<https://userstyles.org/styles/160889/nightmode-for-zhihu-com>
 
 `UserStyles.world`：<https://userstyles.world/style/242/nightmode-for-zhihu-com>
 
