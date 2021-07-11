@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-@version        20210708.22.57
+@version        20210711.16.37
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -16,7 +16,7 @@
     /*===
 * © 版权信息
 * © 作者：QIUZAIYOU
-* © 最后更新：20210708 2257
+* © 最后更新：202107011 1637
 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 ===*/
@@ -37,7 +37,9 @@
     /* 播放页广告 */
     #bannerAd,
     #slide_ad,
-    .ad-report {
+    .ad-report,
+    /* 直播页广告 */
+    .room-ctnr+div.flip-view {
         display: none !important;
     }
 }
@@ -51,6 +53,7 @@
         --color-23: #232323 !important;
         --color-27: #272727 !important;
         --color-2c: #2c2c2c !important;
+        --color-2c-95: rgba(44, 44, 44, .95) !important;
         --color-37: #373737 !important;
         --color-42: #424242 !important;
         --color-66: #666 !important;
@@ -91,6 +94,7 @@
         --filter-c0-86: invert(50%) sepia(0%) saturate(2764%) hue-rotate(157deg) brightness(107%) contrast(70%) !important;
         --filter-df-86: invert(50%) sepia(85%) saturate(0%) hue-rotate(196deg) brightness(89%) contrast(96%) !important;
         --filter-dd-86: invert(50%) sepia(97%) saturate(0%) hue-rotate(158deg) brightness(88%) contrast(84%) !important;
+        --filter-bb-86: invert(50%) sepia(0%) saturate(5799%) hue-rotate(152deg) brightness(107%) contrast(72%) !important;
         --filter-ccd0d7-86: invert(50%) sepia(5%) saturate(0%) hue-rotate(195deg) brightness(104%) contrast(93%) !important;
         --filter-98a2aa-86: invert(50%) sepia(90%) saturate(1%) hue-rotate(25deg) brightness(89%) contrast(86%) !important;
         --filter-6c727e-86: invert(50%) sepia(0%) saturate(7464%) hue-rotate(114deg) brightness(108%) contrast(65%) !important;
@@ -8027,7 +8031,8 @@ url-prefix("https://cm.bilibili.com/") {
 @-moz-document domain("live.bilibili.com") {
     /* ===直播 > 正在施工 === */
     /* -- 背景 -- */
-    .search-bar {
+    .search-bar,
+    .text-info-ctnr.body-bg {
         background-color: var(--color-21) !important;
     }
     .area-list-panel .list-item:hover,
@@ -8048,7 +8053,16 @@ url-prefix("https://cm.bilibili.com/") {
     .link-navbar,
     .highlight-area-item,
     .link-navbar .nav-item,
-    .link-panel-ctnr .load-more .load-more-btn {
+    .link-panel-ctnr .load-more .load-more-btn,
+    .hover-panel-wrapper,
+    .text-info-ctnr,
+    .rec-area-item,
+    .btn,
+    .live-sidebar-ctnr,
+    .hab-ctnr,
+    .rank-ctnr,
+    .news-ctnr,
+    .hover-panel-wrap {
         background-color: var(--color-2c) !important;
     }
     .link-navbar .main-ctnr .nav-items-ctnr.over-width {
@@ -8057,13 +8071,13 @@ url-prefix("https://cm.bilibili.com/") {
     .divider {
         background-color: var(--color-42) !important;
     }
-    asifadeaway {
+    [class*="gui-settings"] .custom-color-preview {
         background: var(--theme-color) !important;
     }
-    asifadeaway {
+    .gui-settings-checkbox-container .gui-settings-checkbox {
         background: var(--bili-red-50) !important;
     }
-    asifadeaway {
+    .gui-settings-checkbox-container input:checked~.gui-settings-checkbox {
         background: var(--bili-lightblue-50) !important
     }
     /* -- 字体 -- */
@@ -8079,10 +8093,24 @@ url-prefix("https://cm.bilibili.com/") {
     .section-title h2,
     .activity-item-ctnr .info-ctnr .title-text,
     .activity-item-ctnr .info-ctnr .first-line .username,
-    .link-panel-ctnr .load-more .load-more-btn {
+    .link-panel-ctnr .load-more .load-more-btn,
+    .section-title,
+    .banner-title,
+    .item-title,
+    .room-anchor,
+    .area-title,
+    .yzly-title,
+    .title-text,
+    .card-info-ctnr .room-title,
+    .area-name,
+    .sec-area-name {
         color: var(--color-86) !important;
     }
-    .activity-item-ctnr .info-ctnr .first-line .time {
+    .activity-item-ctnr .info-ctnr .first-line .time,
+    .room-title,
+    .item-time,
+    .popularity-row,
+    .room-anchor {
         color: var(--color-66) !important;
     }
     p span[style*="background:yellow"] {
@@ -8090,11 +8118,16 @@ url-prefix("https://cm.bilibili.com/") {
     }
     .link-navbar .nav-item:hover,
     .area-list-panel .list-item:hover,
-    .shortcuts-ctnr .shortcut-item:hover .list-item {
+    .shortcuts-ctnr .shortcut-item:hover .list-item,
+    .banner-item-ctnr:hover .banner-title {
         color: var(--bili-blue) !important;
     }
     /* -- 边框 -- */
-    .search-bar {
+    .search-bar,
+    .hover-panel-wrapper,
+    .rec-area-item,
+    .news-ctnr,
+    .hover-panel-wrap {
         border-color: var(--color-42) !important;
     }
     /* -- 图标 -- */
@@ -8102,10 +8135,20 @@ url-prefix("https://cm.bilibili.com/") {
         filter: var(--filter-bb-86) !important;
     }
     /* -- 阴影 -- */
+    .link-navbar .panel-shadow {
+        box-shadow: none!important;
+    }
     .link-navbar {
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.08)!important;
     }
-    .link-navbar .panel-shadow {
-        box-shadow: none!important;
+    .live-sidebar-ctnr {
+        box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.08)!important;
+    }
+    .highlight-area-item.hover {
+        box-shadow: 0 7px 11px 0 rgba(0, 0, 0, 0.08)!important;
+    }
+    .news-ctnr,
+    .hover-panel-wrap {
+        box-shadow: 0 13px 20px 0 rgba(0, 0, 0, 0.08)!important;
     }
 }
