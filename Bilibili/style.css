@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description   	 `⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-@version       	20210713.00.23
+@version       	20210713.00.32
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -16,7 +16,7 @@
 /*===
 * © 版权信息
 * © 作者：QIUZAIYOU
-* © 最后更新：202107013 0023
+* © 最后更新：202107013 0032
 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 ===*/
@@ -277,7 +277,8 @@
     .van-popper-login .lang-change,
     .unlogin-popover,
     .unlogin-popover:before,
-    .el-popover {
+    .el-popover,
+    .van-popper-avatar .level-intro {
         background-color: var(--color-21) !important;
     }
     .bilibili-search-history .history-item.focus,
@@ -353,7 +354,8 @@
     .unlogin-popover-avatar .register-tip,
     .el-popover,
     .header-popover-avatar .link .title,
-    .header-popover-download .link div p:first-child {
+    .header-popover-download .link div p:first-child,
+    .van-popper-avatar .level-intro {
         color: var(--color-86) !important;
     }
     .van-popper-history .header-video-card .video-info .desc,
@@ -388,7 +390,8 @@
     .van-popper-avatar .coins .contact .phone-icon--bind,
     .van-popper-login .btn-box .btn.reg-btn,
     .header-popover-avatar .link:hover span,
-    .header-popover-download .link:hover div p:first-child {
+    .header-popover-download .link:hover div p:first-child,
+    .van-popper-avatar .level-intro__link {
         color: var(--bili-blue) !important;
     }
     .van-popper-avatar .nickname[style*="rgb(251, 114, 153)"] {
@@ -457,6 +460,9 @@
     }
     .sticky-bar {
         box-shadow: 0 2px 4px 0 rgba(33, 3, 33, .5) !important;
+    }
+    .van-popper-avatar .level-intro {
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2)!important;
     }
     .nav-user-center .nav-item-dynamic .i-frame:before,
     .nav-user-center .nav-item-message .i-frame:before {
