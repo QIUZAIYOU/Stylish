@@ -10,7 +10,7 @@
 
 `Gitee`：<https://gitee.com/aiideai/Stylish/tree/main/Bilibili>
 
-~~`UserStyles.org`：<https://userstyles.org/styles/196283/nightmode-for-bilibili-com>
+~~`UserStyles.org`：<https://userstyles.org/styles/196283/nightmode-for-bilibili-com>~~
   
 --> 由于代码长度已超过上传允许范围故不再在 `UserStyles.org` 平台更新
 
