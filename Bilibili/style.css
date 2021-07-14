@@ -3,7 +3,7 @@
     @namespace      USO Archive
     @author         QIUZAIYOU
     @description   	 `⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-    @version       	20210714.15.22
+    @version       	20210714.17.36
     @license        CC-BY-NC-ND-4.0
     @preprocessor   uso
     @advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -16,7 +16,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：202107014 1522
+    * © 最后更新：202107014 1736
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     * © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1033,7 +1033,8 @@
     div[data-qiankun="push_message"] .btnrow .btn.save.disabled,
     .setting .public-setting .public-wrp .button-wrap .btn-text.ok.is-disable,
     .follow-btn,
-    .follow-btn.on {
+    .follow-btn.on,
+    .collection-m .bottom .btn.disable {
         border-color: var(--color-42) !important;
         background: var(--color-37) !important;
         color: var(--color-86) !important;
@@ -1053,7 +1054,8 @@
     .disabled:hover,
     .bili-btn.plain:hover,
     .follow-btn:hover,
-    .follow-btn.on:hover {
+    .follow-btn.on:hover,
+    .collection-m .bottom .btn.disable:hover {
         border-color: var(--bili-blue) !important;
         color: var(--bili-blue) !important;
     }
@@ -1069,7 +1071,9 @@
     .other-panel .card .detail .ask-btn,
     .submit-button,
     .bili-btn.ok,
-    .follow-btn {
+    .follow-btn,
+    .wrapper .edit-video-modal .btn.ghost,
+    .wrapper .edit-video-modal .btn.primary {
         border-color: var(--bili-blue) !important;
         background: var(--bili-blue) !important;
         color: var(--color-ff) !important;
@@ -1091,7 +1095,9 @@
     .other-panel .card .detail .ask-btn:hover,
     .submit-button:hover,
     .bili-btn.ok:hover,
-    .follow-btn:not(.on):hover {
+    .follow-btn:not(.on):hover,
+    .wrapper .edit-video-modal .btn.ghost:hover,
+    .wrapper .edit-video-modal .btn.primary:hover {
         background-color: var(--bili-lightblue) !important;
         color: var(--color-ff) !important;
     }
@@ -2359,7 +2365,8 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .q1080p,
     .error-body,
     .main-container .tool-bar .watch-info .watch-more,
-    .player-auxiliary {
+    .player-auxiliary,
+    .collection-m {
         background-color: var(--color-21) !important;
     }
     .up-info .btn-panel .following,
@@ -2432,7 +2439,9 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     }
     .main-container .ep-list-wrapper .list-wrapper.detail ul .ep-item.cursor,
     .main-container .ep-list-wrapper .list-wrapper.detail ul .ep-item:hover,
-    .more-ops-list .ops-watch-later {
+    .more-ops-list .ops-watch-later,
+    .collection-m .content .group-list .add-group .input-group input,
+    .collection-m .content .group-list ul .collection-mask {
         background: transparent !important;
     }
     .wide-members .avatar-list .van-icon-general_enter_s:after {
@@ -2525,7 +2534,9 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .video-desc .desc-info,
     .main-container .tool-bar .watch-info span,
     .main-container .tool-bar .watch-info .watch-more .title,
-    .main-container .media-info .media-right .media-tool-bar .btn-rating span {
+    .main-container .media-info .media-right .media-tool-bar .btn-rating span,
+    .collection-m .title,
+    .collection-m .content .group-list li {
         color: var(--color-86) !important;
     }
     .up-info .up-info_right .desc,
@@ -2553,7 +2564,9 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .video-sections .video-sections-head_second-line .abstract,
     .video-sections .video-section-list .video-episode-card__info__number,
     .up-info .up-info_right .name .message,
-    .up-info .up-info_right .name .message i {
+    .up-info .up-info_right .name .message i,
+    .collection-m .content .group-list li label .count,
+    .collection-m .content .group-list .add-group .add-btn {
         color: var(--color-66) !important;
     }
     .player-auxiliary-area .player-auxiliary-danmaku .player-auxiliary-danmaku-function [class*="player-auxiliary-danmaku-btn-"],
@@ -2680,7 +2693,10 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap,
     .next-button .switch-button,
     .video-sections-item,
-    .main-container .tool-bar .watch-info .watch-more {
+    .main-container .tool-bar .watch-info .watch-more,
+    .collection-m .bottom,
+    .collection-m .title,
+    .collection-m .content .group-list .add-group .add-btn {
         border-color: var(--color-42) !important;
     }
     .player-auxiliary-danmaku-date-picker-container .player-auxiliary-danmaku-date-picker-body .day-span {
@@ -2739,8 +2755,19 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     }
     /* -- 其他属性 -- */
     /* 成为大会员 */
-    .bili-dialog-m {
+    /*     .bili-dialog-m {
         display: none !important;
+    } */
+    .collection-m .content .group-list li input[type=checkbox]:not(:hover)+i {
+        filter: var(--filter-bec3cc-42) !important;
+    }
+    .collection-m .content .group-list li input[type=checkbox]:checked+i,
+    .collection-m .content .group-list li input[type=checkbox]:checked:hover+i {
+        filter: none!important
+    }
+    .collection-m .content .group-list .add-group .add-btn,
+    .collection-m .title .close {
+        filter: var(--filter-99a2aa-66) !important;
     }
     img[src="null"],
     img[alt][src]:not([src*="/"]),
@@ -5170,7 +5197,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-setting #setting-index-modules.is-dragging .setting-index-module:hover,
     .shop-panel .shop-list,
     .h-notice[style*="rgb(231, 231, 231)"],
-    .h .h-forbid {
+    .h .h-forbid,
+    .edit-media-list .edit-mask .edit-board,
+    .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .name-input,
+    .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .media-list-intro {
         background-color: var(--color-21) !important;
     }
     .n .n-inner,
@@ -5198,7 +5228,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .be-pager-next,
     .be-pager-prev,
     .space_input,
-    .search-component-input input {
+    .search-component-input input,
+    #page-fav .fav-main .fav-action-bottom .fav-action-fixtop,
+    #page-fav .fav-main .fav-video-list.is-batch .small-item.selected,
+    #page-fav .fav-main .fav-video-list.is-batch .small-item:hover {
         background-color: var(--color-2c) !important;
     }
     .list-create,
@@ -5229,8 +5262,13 @@ url-prefix("https://www.bilibili.com/bangumi") {
     }
     .mini-item .cover img,
     .pgc-space-follow-item .pgc-item-info .type-and-area i,
-    .pgc-space-follow-item .pgc-item-info .pgc-item-state i {
+    .pgc-space-follow-item .pgc-item-info .pgc-item-state i,
+    .wrapper .edit-video-modal .favlist-body:after {
         background-color: var(--color-42) !important;
+    }
+    .wrapper .edit-video-modal .addfav-container .fake-fav-input .icon-fav-add:before,
+    .wrapper .edit-video-modal .addfav-container .fake-fav-input .icon-fav-add:after {
+        background-color: var(--color-66) !important;
     }
     .ps__rail-y.ps--clicking .ps__thumb-y,
     .ps__rail-y:focus>.ps__thumb-y,
@@ -5288,13 +5326,20 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .tag-list .tag-icon,
     .i-live .i-live-m,
     #page-index .i-m-u-icon,
-    #page-index .i-m-v-icon {
+    #page-index .i-m-v-icon，#browser-version-tip #close-browser-tip,
+    .icon {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/icons_2.png) !important;
     }
     #page-index .fav-covers.empty,
     .favInfo-box .favInfo-cover.empty,
     .small-item .cover {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/playlistbg.png) !important;
+    }
+    .edit-media-list .edit-mask .edit-board .head .icon-close {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/space_icons.png) !important;
+    }
+    .wrapper .edit-video-modal .target-favlist .collection-mask {
+        background: transparent!important
     }
     /* -- 字体 -- */
     .sec-empty-hint,
@@ -5376,7 +5421,14 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .h-notice[style*="rgb(231, 231, 231)"] a[style*="rgb(153, 153, 153)"]:hover,
     #page-video .page-head__left .video-title,
     #page-index .channel .section-right-options .play-all-channel .video-commonplayer_play,
-    .section-title .play-all-channel .video-commonplayer_play {
+    .section-title .play-all-channel .video-commonplayer_play,
+    #page-fav .fav-main .fav-action-top .back-to-info,
+    #page-fav .fav-main .fav-action-bottom li,
+    .wrapper .edit-video-modal .edit-video-title,
+    .wrapper .edit-video-modal .target-favlist .target-favitem .target-fav-title .fav-meta .fav-name,
+    .edit-media-list .edit-mask .edit-board .head,
+    .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .name-input,
+    .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .media-list-intro {
         color: var(--color-86) !important;
     }
     #page-index .col-2 .section .user-auth.no-auth .no-auth-title span,
@@ -5395,7 +5447,14 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-index .col-2 .section .auth-detail,
     .elec .elec-monthly-c,
     .v-search-result,
-    #page-index .col-1 .section.empty:after {
+    #page-index .col-1 .section.empty:after,
+    #page-fav .fav-main .fav-action-bottom .select-counter,
+    .wrapper .edit-video-modal .edit-video-subtitle.unselected,
+    .wrapper .edit-video-modal .target-favlist .target-favitem .target-fav-title .fav-meta .fav-state,
+    .wrapper .edit-video-modal .addfav-container .fake-fav-input p,
+    .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .title,
+    .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .name-num-limit,
+    .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .intro-num-limit {
         color: var(--color-66) !important;
     }
     .large-item .title,
@@ -5527,8 +5586,17 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-channel-detail .filter,
     #page-channel-detail .watch-later-btn,
     #page-index .channel .section-right-options .play-all-channel,
-    .section-title .play-all-channel {
+    .section-title .play-all-channel,
+    #page-fav .fav-main .fav-action-top,
+    #page-fav .fav-main .fav-action-top .back-to-info,
+    .wrapper .edit-video-modal .addfav-container .fake-fav-input,
+    .edit-media-list .edit-mask .edit-board .head,
+    .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .name-input,
+    .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .media-list-intro {
         border-color: var(--color-42) !important;
+    }
+    .wrapper .edit-video-modal .target-favlist .target-favitem .target-fav-title .fav-select {
+        border-color: var(--color-66) !important;
     }
     #page-fav .fav-main .small-item,
     .elec .elec-avatar {
