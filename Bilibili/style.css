@@ -2,8 +2,8 @@
     @name           夜间哔哩 NightMode For Bilibili.com
     @namespace      USO Archive
     @author         QIUZAIYOU
-    @description   	 `⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-    @version       	20210719.07.1121
+    @description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
+    @version       	20210719.18.14
     @license        CC-BY-NC-ND-4.0
     @preprocessor   uso
     @advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -16,7 +16,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：202107019 1121
+    * © 最后更新：202107019 1814
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     * © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -279,7 +279,8 @@
     .unlogin-popover,
     .unlogin-popover:before,
     .el-popover,
-    .van-popper-avatar .level-intro {
+    .van-popper-avatar .level-intro,
+    .van-popover {
         background-color: var(--color-21) !important;
     }
     .bilibili-search-history .history-item.focus,
@@ -418,7 +419,9 @@
     .van-popper-login .lang-change,
     .van-popper-login .vp-container,
     .login-panel .divider,
-    .el-popover {
+    .el-popover,
+    .unlogin-popover,
+    .van-popover {
         border-color: var(--color-42) !important;
     }
     .bili-header-m .nav-search .nav-search-btn,
@@ -464,6 +467,9 @@
     }
     .van-popper-avatar .level-intro {
         box-shadow: 0 3px 6px 0 rgba(0, 0, 0, .2)!important;
+    }
+    .unlogin-popover {
+        box-shadow: none!important
     }
     .nav-user-center .nav-item-dynamic .i-frame:before,
     .nav-user-center .nav-item-message .i-frame:before {
@@ -5915,8 +5921,12 @@ url-prefix("https://www.bilibili.com/bangumi") {
 }
 
 @-moz-document url-prefix("https://passport.bilibili.com/register/login_sms_verify.html") {
+    /* ===护照中心 > 登录验证=== */
+    #internationalHeader {
+        margin-top: -20px!important;
+    }
     .container {
-        margin-top: 10px!important;
+        margin-top: 20px!important;
     }
 }
 
