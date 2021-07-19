@@ -1,4 +1,4 @@
-# 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.05.12-blue)
+# 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.07.19-blue)
 
 ![简百度 Simple Baidu](https://www.asifadeaway.com/Stylish/baidu/StylishCover.png)
 
@@ -24,6 +24,8 @@
 ## 历史更新
 
 ### 2021
+
+`07.19`：修复样式设置无效的问题，并改双列显示为三列，及其他积累问题修复。
 
 `02.28`：修复天气搜索结果字体颜色问题。
 
