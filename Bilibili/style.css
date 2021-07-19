@@ -3,7 +3,7 @@
     @namespace      USO Archive
     @author         QIUZAIYOU
     @description   	 `⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-    @version       	20210719.07.50
+    @version       	20210719.07.1121
     @license        CC-BY-NC-ND-4.0
     @preprocessor   uso
     @advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -16,7 +16,7 @@
     /*===
     * © 版权信息
     * © 作者：QIUZAIYOU
-    * © 最后更新：202107019 0750
+    * © 最后更新：202107019 1121
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     * © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -2774,7 +2774,8 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     img[alt][data-src]:not([data-src*="/"]) {
         display: unset !important;
     }
-    .coin-operated-m .like-checkbox input[type="checkbox"]:not(:checked)+i {
+    .coin-operated-m .like-checkbox input[type="checkbox"]:not(:checked)+i,
+    .q1080p .close {
         filter: var(--filter-ccd0d7-66) !important;
     }
     #app>div.v-wrap>div.r-con>div.video-sections>div.video-sections-head>div.video-sections-head_second-line>div>img {
@@ -5914,11 +5915,6 @@ url-prefix("https://www.bilibili.com/bangumi") {
 }
 
 @-moz-document url-prefix("https://passport.bilibili.com/register/login_sms_verify.html") {
-    /* ===护照中心>登录手机验证=== */
-    .custom-navbar {
-        background-color: var(--color-2c) !important;
-        margin-top: -10px!important;
-    }
     .container {
         margin-top: 10px!important;
     }
