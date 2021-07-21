@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1.常用页面夜间模式全覆盖⭐2.去除广告⭐3.去除导航栏中游戏等无用杂项⭐4.部分icon更换使之更符合当前主题⭐5.自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素⭐㊖ 凡涉及到金钱交易（充值、付费购买等）等页面，若遇到因本样式导致文字颜色看不清的情况，请关闭本样式之后再进行金钱交易操作。否则因未关闭本样式导致的财产损失与本样式及作者无关。若发现文字看不清的情况请及时反馈。`
-@version        20210510.18.29
+@version        2021.0721.1815
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -74,10 +74,10 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("http://example.com") {
-/*=== 
+    /*=== 
 * 版权信息
 * 作者：QIUZAIYOU
-* 最后更新：20210510 1829
+* 最后更新：20210721 1815
 * Github项目地址：https://github.com/QIUZAIYOU/Stylish
 * Gitee项目地址：https://gitee.com/aiideai/Stylish
 ===*/
@@ -3406,7 +3406,8 @@ url-prefix("http://www.douyu.com/") {
     img[src*="default-cover"],
     .PrivilegeGiftModalDialog,
     .compay-way-con-inner [class*="-pay-tips"],
-    .shark-webp .PlayerToolbar-couponIcon {
+    .shark-webp .PlayerToolbar-couponIcon,
+    .FudaiGiftToolBarTips {
         opacity: 0!important;
         display: none!important;
     }
@@ -3871,7 +3872,7 @@ url-prefix("http://www.douyu.com/") {
     .compay-num-list .empty-item .empty-item-desc,
     .footer-protocol a,
     .PlayerToolbar-Wealth,
-    .Search-recommend-info h3{
+    .Search-recommend-info h3 {
         color: #868686!important;
     }
     .RichRankList-item.is-stealth .RichRankList-name {
@@ -4162,7 +4163,8 @@ url-prefix("http://www.douyu.com/") {
     .VideoEntry-replaylist,
     .FTP-singleTask,
     .AvatarFrame-img.is-circle,
-    .FilterKeywords-intelligentText,.compay-title .subnav {
+    .FilterKeywords-intelligentText,
+    .compay-title .subnav {
         border-color: #424242!important;
     }
     .is-followed .Title-followText:nth-child(3):after {
@@ -4256,10 +4258,9 @@ url-prefix("http://www.douyu.com/") {
     .AnchorComment-modal::after {
         border-color: transparent transparent #272727!important;
     }
-    .compay-way-con .qrcode{
+    .compay-way-con .qrcode {
         border: 3px solid #fff;
     }
-
     /* -- 狗日的其他 -- */
     div[role="document"][class="dy-Modal"][style*="width"] {
         width: 360px!important;
@@ -4863,23 +4864,27 @@ url-prefix("http://www.douyu.com/") {
     }
     /*=== 用户昵称颜色 ===*/
     .Barrage-nickName {
-        color: /*[[UserNameColor]]*/ !important;
+        color: /*[[UserNameColor]]*/
+        !important;
     }
     /*=== 用户发言颜色 ===*/
     .UserLevel+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
     .UserLevel+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]),
     .UserLevel+span+span+.Barrage-nickName+.Barrage-content:not([class*="Barrage-content--color"]) {
-        color: /*[[UserContentColor]]*/!important;
+        color: /*[[UserContentColor]]*/
+        !important;
     }
     /*=== 主播昵称颜色 ===*/
     .AnchorLevel+.Barrage-nickName,
     .AnchorLevel+span+.Barrage-nickName {
-        color: /*[[AnchorNameColor]]*/!important;
+        color: /*[[AnchorNameColor]]*/
+        !important;
     }
     /*=== 主播发言颜色 ===*/
     .AnchorLevel+.Barrage-nickName+.Barrage-content,
     .AnchorLevel+span+.Barrage-nickName+.Barrage-content {
-        color: /*[[AnchorContentColor]]*/!important;
+        color: /*[[AnchorContentColor]]*/
+        !important;
     }
 }
 
@@ -5825,8 +5830,8 @@ url-prefix("http://www.douyu.com/search/") {
         background: #272727!important;
         border: 1px solid #424242!important;
     }
-    .Search input[type="text"]{
-        border:none!important;
+    .Search input[type="text"] {
+        border: none!important;
         background: transparent!important
     }
 }
