@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0720.16.21
+	@version        2021.0721.08.35
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -11,17 +11,17 @@
 	BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
 	}
 ==/UserStyle== */
-@-moz-document url-prefix("http://example.com") {
+@-moz-document url-prefix("https://www.bilibili.com/blackboard") {
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202107020 1621
+	* © 最后更新：20210721 0835
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
 	===*/
 }
-@-moz-document domain("bilibili.com") {
+@-moz-document domain("https://www.bilibili.com/blackboard/help") {
 	/* ===屏蔽元素=== */
 	/* -- 首页 -- */
 	/* 导航活动元素及app下载按钮 */
@@ -5891,6 +5891,7 @@ url-prefix("https://www.bilibili.com/bangumi") {
 }
 @-moz-document url-prefix("https://passport.bilibili.com/register/login_sms_verify.html") {
 	/* ===护照中心 > 登录验证=== */
+	/* -- 其他 -- */
 	#internationalHeader {
 		margin-top: -20px!important;
 	}
@@ -6693,15 +6694,18 @@ url-prefix("https://www.bilibili.com/bangumi") {
 	#webShare .bili-share-pc {
 		background-color: var(--color-21) !important;
 	}
+	.temp-model-topic .item {
+		background-color: var(--color-2c) !important;
+	}
 	/* -- 字体 -- */
 	.comment-container .common .b-head,
 	.bili-share-pc .title,
 	.act-rich-style-init .public-DraftEditor-content,
 	.act-rich-style-init .act-rich-render-content,
-	.context p span {
+	.context p span, .temp-model-topic .item-text {
 		color: var(--color-86) !important;
 	}
-	.act-rich-style-init .act-rich-render-content a {
+	.act-rich-style-init .act-rich-render-content a, .temp-model-topic .item:hover .item-text {
 		color: var(--bili-blue) !important;
 	}
 	/* -- 边框 -- */
