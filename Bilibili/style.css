@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0722.0820
+	@version        2021.0722.0836
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -20,7 +20,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021 0722 0820
+	* © 最后更新：2021 0722 0836
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -305,8 +305,7 @@
     .unlogin-popover,
     .unlogin-popover:before,
     .el-popover,
-    .van-popper-avatar .level-intro,
-    .van-popover {
+    .van-popper-avatar .level-intro {
         background-color: var(--color-21) !important;
     }
     .bilibili-search-history .history-item.focus,
@@ -335,7 +334,8 @@
     .van-popper-avatar .level-bar .level-progress {
         background-color: var(--bili-yellow) !important;
     }
-    .nav-user-center .nav-item-dynamic .i-frame iframe {
+    .nav-user-center .nav-item-dynamic .i-frame iframe,
+    .van-popover {
         background: transparent!important
     }
     .international-header a,
@@ -1884,7 +1884,8 @@ url-prefix("https://message.bilibili.com/pages/nav/index_new_sync") {
     }
 }
 
-@-moz-document url-prefix("https://manga.bilibili.com/eden/bilibili-nav-panel") {
+@-moz-document url-prefix("https://manga.bilibili.com/eden/bilibili-nav-panel"),
+url-prefix("https://www.bilibili.com/page-proxy/game-nav.html") {
     /* ===首页 > 导航漫画=== */
     html,
     body {
@@ -1896,6 +1897,9 @@ url-prefix("https://message.bilibili.com/pages/nav/index_new_sync") {
     .popularity-list .item-list .list-item:hover,
     .recommendation-list .list-item:before {
         background-color: var(--color-27) !important;
+    }
+    .brief a:hover {
+        background: transparent!important;
     }
     /* -- 字体 -- */
     .room-list .list-item .uname,
@@ -1912,6 +1916,10 @@ url-prefix("https://message.bilibili.com/pages/nav/index_new_sync") {
     /* -- 边框 -- */
     .room-list {
         border-color: var(--color-42) !important;
+    }
+    /* -- 其他 -- */
+    .box {
+        padding-bottom: 10px!important
     }
 }
 
