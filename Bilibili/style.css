@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0722.0836
+	@version        2021.0722.1504
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -17,10 +17,10 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("http://example.com") {
-	/*===
+    /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0722.0836
+	* © 最后更新：2021.0722.1504
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -5520,7 +5520,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
         color: var(--color-86) !important;
     }
     .video-container .text-area .view-danmaku,
-    .video-container .text-area .content {
+    .video-container .text-area .content,
+    #page-index .channel .channel-item .small-item .video-desc {
         color: var(--color-66) !important;
     }
     .contribution-sidenav .contribution-item.cur .num,
