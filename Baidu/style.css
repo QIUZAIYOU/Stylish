@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.0727.0917
+@version        2021.0727.1740
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -28,7 +28,8 @@
 		border-radius: 10px!important;
 		
 	}
-	div#content_left > div[class].hit-toptip.new-pmd{
+	div#content_left > div[class].hit-toptip.new-pmd,
+	#rs_top_new, .hit_top_new{
 		display: flex;
 		align-items: center;
 		justify-content: center;
@@ -85,8 +86,10 @@
 		overflow-y: hidden!important;
 		overflow-x: scroll!important;
 	}
-	div#content_left > div[class][mu*="天气"] .c-row,div#content_left > div[class] .wenda-abstract-wrap-new,
-	div#content_left > div[class][tpl="site"]>.c-border{
+	div#content_left > div[class][mu*="天气"] .c-row,
+	div#content_left > div[class] .wenda-abstract-wrap-new,
+	div#content_left > div[class][tpl="site"]>.c-border,
+	div#content_left > div[class][mu*="ip138"]>.c-border{
 		flex-direction: column!important;
 	}
 	.op_site_box_tools table td{
@@ -96,7 +99,8 @@
 	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain{
 		margin-bottom: 7px!important;
 	}
-	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right{
+	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right,
+	.op-ip-detail table{
 		height: fit-content!important;
     	margin: 0!important;
 	}
@@ -104,7 +108,12 @@
 		display: flex!important;
 		flex-flow: column nowrap!important;
 	}
-	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class])>a{
+	div#content_left > div[class][mu*="ip138"]>.c-row.c-gap-top{
+		display: flex!important;
+		align-items: center!important;
+	}
+	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class])>a,
+	div#content_left > div[class][mu*="ip138"]>.c-border>.c-row.c-gap-top>.c-span-last{
 		margin: 0!important;
 	}
 	div#content_left > div[class][tpl="site"]>.c-border>.op_site_main{
@@ -126,7 +135,7 @@
     /*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.0727.0917
+	 * © 最后更新：2021.0727.1740
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
