@@ -3,11 +3,16 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.0719.1648
+@version        2021.0727.0917
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
-     trebleist_ON "开" <<<EOT 
+    trebleist_ON "开" <<<EOT 
+	#rs,
+	#foot,
+	[tpl="recommend_list"]{
+		display: none!important;
+	}
  	#container.sam_newgrid #content_left {
 		width: 1200px!important;
 		display: flex!important;
@@ -16,10 +21,21 @@
 	}
 	div#content_left > div[class] {
 		width: calc((100% - 20px) / 3)!important;
-		margin: 0 0 15px 0!important;
+		margin: 0 0 10px 0!important;
 		box-sizing: border-box!important;
 		padding: 15px!important;
 		overflow:hidden!important;
+		border-radius: 10px!important;
+		
+	}
+	div#content_left > div[class].hit-toptip.new-pmd{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background: #fff;
+	}
+	div#content_left > div[class].hit-toptip.new-pmd .c-gap-bottom-large{
+		margin: 0!important;
 	}
 	div#content_left > div[class] .c-span9,
 	div#content_left > div[class] canvas {
@@ -69,23 +85,48 @@
 		overflow-y: hidden!important;
 		overflow-x: scroll!important;
 	}
-	div#content_left > div[class][mu*="天气"] .c-row{
+	div#content_left > div[class][mu*="天气"] .c-row,div#content_left > div[class] .wenda-abstract-wrap-new,
+	div#content_left > div[class][tpl="site"]>.c-border{
 		flex-direction: column!important;
 	}
-	#rs,
-	#foot,
-	[tpl="recommend_list"]{
-		display: none!important;
-	}EOT;
+	.op_site_box_tools table td{
+		padding: 3px!important;
+		text-align: center!important;
+	}
+	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain{
+		margin-bottom: 7px!important;
+	}
+	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right{
+		height: fit-content!important;
+    	margin: 0!important;
+	}
+	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class]){
+		display: flex!important;
+		flex-flow: column nowrap!important;
+	}
+	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class])>a{
+		margin: 0!important;
+	}
+	div#content_left > div[class][tpl="site"]>.c-border>.op_site_main{
+		margin-top: 0!important;
+		padding: 0!important;
+	}
+	div#content_left > div[class][tpl="site"]>.c-border>.op_site_main>.op_site_gap_top{
+		margin-top: 8px!important;
+	}
+	#container.sam_newgrid .c-container .t, #container.sam_newgrid .c-container .c-title{
+		display: flex!important;
+	}
+	EOT;
 	trebleList_OFF "关" <<<EOT /*[[trebleList]]*\/ EOT;
 }
 ==/UserStyle== */
 
 @-moz-document url-prefix("http://example.com") {
-	/*=== 
+    /*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.0719.1648
+	 * © 最后更新：2021.0727.0917
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -111,7 +152,8 @@ url-prefix("http://www.baidu.com") {
     .rrecom-btn-parent,
     #_mask,
     .ecom-result,
-    div[tpl="zp_exact_new"] {
+    div[tpl="zp_exact_new"],
+    div#content_left>div:not([class]) {
         display: none!important;
     }
     div.xpath-log[mu*="http://fanyi.baidu.com"] {
@@ -699,7 +741,8 @@ url-prefix("https://www.baidu.com/baidu?") {
     .op-music-lrc-r-lrc,
     .op-misuc-lrc-text,
     .op_weather4_twoicon_simple_day,
-    .op_exactqa_formula_gongshi {
+    .op_exactqa_formula_gongshi,
+    div#content_left>div[class].sp-separator {
         border-color: #dedede!important;
     }
     #page .pc,
@@ -757,6 +800,9 @@ url-prefix("https://www.baidu.com/baidu?") {
         box-shadow: none!important;
     }
     /* -- 属性 -- */
+    .new-pmd .c-span12 {
+        width: 100%!important;
+    }
     #container {
         width: 1200px!important;
         margin: 0 auto!important;
@@ -805,6 +851,7 @@ url-prefix("https://www.baidu.com/baidu?") {
         transition: .3s!important;
     }
     .c-container .c-container {
+        width: 100%!important;
         padding: 0!important;
     }
     .c-container:hover,
