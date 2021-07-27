@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1.常用页面夜间模式全覆盖⭐2.去除垃圾元素`
-@version        2021.0619.1035
+@version        2021.0727.2305
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@
     * © 版权信息
     * © 自用，上传只为保存
     * © 作者：QIUZAIYOU 
-    * © 最后更新：2021.0619.1035
+    * © 最后更新：2021.0727.2305
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     * © UserStyles.world项目地址：https://userstyles.world/style/242/nightmode-for-zhihu-com
@@ -248,12 +248,14 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     #TopicMain .Topic-bar,
     .Topic-bar,
     .popover .popover-content,
-    .SignFlowHomepage .css-zvnmar {
+    .SignFlowHomepage .css-zvnmar,
+    .BottomInfo {
         background: var(--color-2c) !important;
     }
     .Tag,
     .TopicTag .Tag,
-    .css-1k01q48 {
+    .css-1k01q48,
+    .MCNLinkCard {
         background: var(--color-27) !important;
     }
     .PushNotifications-item:after,
@@ -536,7 +538,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .HoverCard-separate,
     .TimelineItem-module-title-3OWz,
     .Header-module-intro-2QIJ,
-    a.QuestionMainAction {
+    a.QuestionMainAction,
+    .BottomInfo>div span {
         color: var(--color-86) !important;
     }
     .ztext blockquote,
@@ -586,7 +589,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .CommentItemV2-roleInfo,
     html[data-theme=dark] .CommentItemV2-reply,
     html[data-theme=dark] .CommentItemV2-roleInfo,
-    span[class*='TimelineItem-module-tag-'] {
+    span[class*='TimelineItem-module-tag-'],
+    .BottomInfo,
+    .MCNLinkCard-source {
         color: var(--color-66) !important;
     }
     .post-link,
@@ -1007,6 +1012,14 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .Switch--checked {
         border-color: var(--zhihu-lightblue) !important;
     }
+    .BottomInfo:before {
+        border-left-color: var(--color-42) !important;
+        border-right-color: var(--color-42) !important;
+        border-bottom-color: var(--color-42) !important;
+    }
+    .zu-top {
+        border: none !important;
+    }
     .zu-top,
     .AppHeader {
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7) !important;
@@ -1023,9 +1036,6 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .QuestionHeader-footer.is-fixed,
     .css-qedy2f {
         box-shadow: none !important;
-    }
-    .zu-top {
-        border: none !important;
     }
     .tab-navs {
         margin-bottom: 0 !important;
