@@ -3,127 +3,186 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.0727.1740
+@version        2021.0729.1601
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
     trebleist_ON "开" <<<EOT 
 	#rs,
 	#foot,
-	[tpl="recommend_list"]{
+	[tpl="recommend_list"] {
 		display: none!important;
 	}
- 	#container.sam_newgrid #content_left {
+
+	#container.sam_newgrid #content_left {
 		width: 1200px!important;
 		display: flex!important;
 		justify-content: space-between!important;
 		flex-wrap: wrap!important;
 	}
-	div#content_left > div[class] {
+
+	div#content_left>div[class],
+	div#content_left>div[class="c-group-wrapper"]>div[class] {
 		width: calc((100% - 20px) / 3)!important;
 		margin: 0 0 10px 0!important;
 		box-sizing: border-box!important;
 		padding: 15px!important;
-		overflow:hidden!important;
+		overflow: hidden!important;
 		border-radius: 10px!important;
-		
 	}
-	div#content_left > div[class].hit-toptip.new-pmd,
-	#rs_top_new, .hit_top_new{
+
+	div#content_left>div[class="c-group-wrapper"] {
+		display: flex!important;
+		flex-direction: row!important;
+		justify-content: space-between!important;
+		width: 100%!important;
+		background: transparent!important;
+		padding: 0!important;
+		margin: 0!important;
+	}
+
+	div#content_left>div[class="c-group-wrapper"]>div[class]:first-child,
+	div#content_left>div[class="c-group-wrapper"]>div[class]:last-child,
+	#content_left .c-group-wrapper>div[class]:not(:first-child, :last-child) {
+		border-radius: 10px!important;
+	}
+
+	div#content_left>div[class="c-group-wrapper"]:hover {
+		box-shadow: none!important;
+	}
+
+	div#content_left>div[class="c-group-wrapper"]>div[class]:hover {
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1)!important;
+	}
+
+	div#content_left>div[class].hit-toptip.new-pmd,
+	#rs_top_new,
+	.hit_top_new {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		background: #fff;
 	}
-	div#content_left > div[class].hit-toptip.new-pmd .c-gap-bottom-large{
+
+	div#content_left>div[class].hit-toptip.new-pmd .c-gap-bottom-large {
 		margin: 0!important;
 	}
-	div#content_left > div[class] .c-span9,
-	div#content_left > div[class] canvas {
+
+	div#content_left>div[class] .c-span9,
+	div#content_left>div[class] canvas,
+	div#content_left>.c-group-wrappe>div[class],
+	div#content_left>div[class="c-group-wrapper"]>div[class] ul {
 		width: 100%!important;
 	}
-	div#content_left > div[class].new-pmd .c-gap-top-large,
+	div#content_left>div[class="c-group-wrapper"]>div[class] ul{
+		max-height:310px!important;
+	}
+	div#content_left>div[class].new-pmd .c-gap-top-large,
 	.new-pmd .c-row,
 	.c-border,
-	div#content_left > div[class].new-pmd .c-tabs.c-sub-tabs .c-tabs-content {
+	div#content_left>div[class].new-pmd .c-tabs.c-sub-tabs .c-tabs-content {
 		width: 100%!important;
 		display: flex!important;
 		background: transparent!important;
 	}
-	div#content_left > div[class].new-pmd .c-abstract {
+
+	div#content_left>div[class].new-pmd .c-abstract {
 		margin-top: 10px!important;
 	}
-	div#content_left > div[class] .info-row_37tWa .info-col_2viHg {
+
+	div#content_left>div[class] .info-row_37tWa .info-col_2viHg {
 		width: inherit!important;
 	}
-	div#content_left > div[class].c-container table {
+
+	div#content_left>div[class].c-container table {
 		display: flex!important;
 		flex-direction: column!important;
 	}
-	div#content_left > div[class] .re-box_2CJ9w {
+
+	div#content_left>div[class] .re-box_2CJ9w {
 		box-shadow: none!important
 	}
-	div#content_left > div[class].new-pmd.c-container .c-container {
+
+	div#content_left>div[class].new-pmd.c-container .c-container {
 		overflow: auto;
 		margin: 0!important;
 	}
-	div#content_left > div[class] .c-border .c-span-last {
+
+	div#content_left>div[class] .c-border .c-span-last {
 		width: 100%!important;
 		margin-top: 10px!important;
 	}
-	div#content_left > div[class] .op-short-video-pc,
-	div#content_left > div[class].new-pmd .c-tabs.c-sub-tabs .c-tabs-content .c-row {
+
+	div#content_left>div[class] .op-short-video-pc,
+	div#content_left>div[class].new-pmd .c-tabs.c-sub-tabs .c-tabs-content .c-row {
 		overflow: auto!important;
 		padding-bottom: 5px!important;
 	}
-	div#content_left > div[class] .op-short-video-pc .c-span3 {
+
+	div#content_left>div[class] .op-short-video-pc .c-span3 {
 		width: calc((100% - 60px) / 2)!important
 	}
-	div#content_left > div[class].new-pmd .op-short-video-pc .c-img img {
+
+	div#content_left>div[class].new-pmd .op-short-video-pc .c-img img {
 		width: initial!important;
 	}
-	.op_weather4_twoicon_container_div{
+
+	.op_weather4_twoicon_container_div {
 		overflow-y: hidden!important;
 		overflow-x: scroll!important;
 	}
-	div#content_left > div[class][mu*="天气"] .c-row,
-	div#content_left > div[class] .wenda-abstract-wrap-new,
-	div#content_left > div[class][tpl="site"]>.c-border,
-	div#content_left > div[class][mu*="ip138"]>.c-border{
+
+	div#content_left>div[class][mu*="天气"] .c-row,
+	div#content_left>div[class] .wenda-abstract-wrap-new,
+	div#content_left>div[class][tpl="site"]>.c-border,
+	div#content_left>div[class][mu*="ip138"]>.c-border,
+	div#content_left>div[class][mu*="typhoon"]>.c-row {
 		flex-direction: column!important;
 	}
-	.op_site_box_tools table td{
+
+	.op_site_box_tools table td {
 		padding: 3px!important;
 		text-align: center!important;
 	}
-	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain{
+
+	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain {
 		margin-bottom: 7px!important;
 	}
-	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right,
-	.op-ip-detail table{
+
+	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right,
+	.op-ip-detail table {
+		height: -webkit-fit-content!important;
+		height: -moz-fit-content!important;
 		height: fit-content!important;
-    	margin: 0!important;
+		margin: 0!important;
 	}
-	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class]){
+
+	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class]) {
 		display: flex!important;
 		flex-flow: column nowrap!important;
 	}
-	div#content_left > div[class][mu*="ip138"]>.c-row.c-gap-top{
+
+	div#content_left>div[class][mu*="ip138"]>.c-row.c-gap-top {
 		display: flex!important;
 		align-items: center!important;
 	}
-	div#content_left > div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class])>a,
-	div#content_left > div[class][mu*="ip138"]>.c-border>.c-row.c-gap-top>.c-span-last{
+
+	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class])>a,
+	div#content_left>div[class][mu*="ip138"]>.c-border>.c-row.c-gap-top>.c-span-last {
 		margin: 0!important;
 	}
-	div#content_left > div[class][tpl="site"]>.c-border>.op_site_main{
+
+	div#content_left>div[class][tpl="site"]>.c-border>.op_site_main {
 		margin-top: 0!important;
 		padding: 0!important;
 	}
-	div#content_left > div[class][tpl="site"]>.c-border>.op_site_main>.op_site_gap_top{
+
+	div#content_left>div[class][tpl="site"]>.c-border>.op_site_main>.op_site_gap_top {
 		margin-top: 8px!important;
 	}
-	#container.sam_newgrid .c-container .t, #container.sam_newgrid .c-container .c-title{
+
+	#container.sam_newgrid .c-container .t,
+	#container.sam_newgrid .c-container .c-title {
 		display: flex!important;
 	}
 	EOT;
@@ -135,7 +194,7 @@
     /*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.0727.1740
+	 * © 最后更新：2021.0729.1601
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -859,6 +918,25 @@ url-prefix("https://www.baidu.com/baidu?") {
         margin-bottom: 20px!important;
         transition: .3s!important;
     }
+    #content_left .c-group-wrapper>div[class]:hover {
+        box-shadow: none!important;
+    }
+    #content_left .c-group-wrapper>div[class]:not(:first-child,
+     :last-child) {
+        border-radius: 0!important;
+        padding-top: 0!important;
+        padding-bottom: 0!important;
+    }
+    #content_left .c-group-wrapper>div[class]:first-child {
+        border-bottom-left-radius: 0!important;
+        border-bottom-right-radius: 0!important;
+        padding-bottom: 0!important;
+    }
+    #content_left .c-group-wrapper>div[class]:last-child {
+        border-top-left-radius: 0!important;
+        border-top-right-radius: 0!important;
+        padding-top: 0!important;
+    }
     .c-container .c-container {
         width: 100%!important;
         padding: 0!important;
@@ -1124,6 +1202,7 @@ url-prefix("https://www.baidu.com/baidu?") {
     }
     .c-group-wrapper {
         width: 610px!important;
+        background: #fff!important;
         margin: 0 auto!important;
         transition: .3s;
     }
