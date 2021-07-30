@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.0729.1601
+@version        2021.0730.0954
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -136,7 +136,8 @@
 	div#content_left>div[class] .wenda-abstract-wrap-new,
 	div#content_left>div[class][tpl="site"]>.c-border,
 	div#content_left>div[class][mu*="ip138"]>.c-border,
-	div#content_left>div[class][mu*="typhoon"]>.c-row {
+	div#content_left>div[class][mu*="typhoon"]>.c-row,
+	div#content_left>div[class][mu*="phoneSearch"]>.c-border{
 		flex-direction: column!important;
 	}
 
@@ -194,7 +195,7 @@
     /*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.0729.1601
+	 * © 最后更新：2021.0730.0954
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
