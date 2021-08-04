@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0803.0951
+	@version        2021.0804.1516
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0803.0951
+	* © 最后更新：2021.0804.1516
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -92,7 +92,7 @@
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-    :root {
+     :root {
         --color-14: #141414 !important;
         --color-1b: #1b1b1b !important;
         --color-21: #212121 !important;
@@ -235,25 +235,25 @@
             line-height: 13px;
         } */
     /* ===浏览器滚动条=== */
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-blue) !important;
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-blue) !important;
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
@@ -2387,7 +2387,9 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     /* ===视频播放页=== */
     /* -- 背景 -- */
     .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap .bscroll-vertical-scrollbar.mousedown,
-    .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap:hover .bscroll-vertical-scrollbar {
+    .danmaku-wrap .player-auxiliary-area .player-auxiliary-danmaku-wrap:hover .bscroll-vertical-scrollbar,
+    .bpx-player-auxiliary .bpx-player-dm-wrap .bscroll-vertical-scrollbar.mousedown,
+    .bpx-player-auxiliary .bpx-player-dm-wrap:hover .bscroll-vertical-scrollbar {
         background-color: var(--color-14) !important;
     }
     .bilibili-player-video-sendbar,
@@ -2434,7 +2436,9 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .video-sections .video-sections-head_second-line .second-line_right,
     .next-button .switch-button,
     .error-container,
-    .main-container .media-info .media-right .media-tool-bar .btn-rating:hover {
+    .main-container .media-info .media-right .media-tool-bar .btn-rating:hover,
+    .bpx-player-sending-bar,
+    .bpx-player-auxiliary .bpx-player-filter {
         background-color: var(--color-2c) !important;
     }
     .up-info .btn-panel .not-follow-charge-btn,
@@ -2469,7 +2473,20 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .error-body,
     .main-container .tool-bar .watch-info .watch-more,
     .player-auxiliary,
-    .collection-m {
+    .collection-m,
+    .bpx-player-auxiliary,
+    .bui-dropdown .bui-dropdown-items,
+    .bui-dropdown .bui-dropdown-items .bui-dropdown-item,
+    .bpx-player-auxiliary .bpx-player-collapse .bui-collapse-body,
+    .bpx-player-auxiliary .bpx-player-dm-function .bpx-player-dm-btn-date,
+    .bpx-player-auxiliary .bpx-player-dm-function .bpx-player-dm-btn-dm,
+    .bpx-player-auxiliary .bpx-player-dm-function .bpx-player-dm-btn-time,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row,
+    .bpx-player-auxiliary .bpx-player-dm-function,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row .dm-info-block-btn,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row .dm-info-protect-btn,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row .dm-info-recall-btn,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row .dm-info-report-btn {
         background-color: var(--color-21) !important;
     }
     .up-info .btn-panel .following,
@@ -2489,14 +2506,17 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .tag-channel-pane .channel-btns__subs--delete .delete-btn:hover,
     .section-ep-wrapper .ep-item .badge[style*="rgb(153, 153, 153)"],
     .van-popover.van-followed .follow_dropdown li:hover,
-    .player-auxiliary .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap .player-auxiliary-setting-menu-list:hover {
+    .player-auxiliary .player-auxiliary-area .player-auxiliary-filter .player-auxiliary-setting-menu-wrap .player-auxiliary-setting-menu-list:hover,
+    .bui-dropdown .bui-dropdown-items .bui-dropdown-item:hover,
+    .bpx-player-auxiliary .bpx-player-dm-btn-history {
         background-color: var(--color-27) !important;
     }
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar,
     .tag-channel-pane .channel-btns .is-subs,
     .tag-channel-cancel-popup a.btn-no,
     .main-container .plp-l .player-mask .bar-wrapper .left-bar,
-    .main-container .plp-l .player-mask .bar-wrapper .right-bar {
+    .main-container .plp-l .player-mask .bar-wrapper .right-bar,
+    .bpx-player-sending-bar .bpx-player-video-inputbar {
         background-color: var(--color-37) !important;
     }
     .s_tag .btn-add span,
@@ -2528,7 +2548,12 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .multi-page .cur-list .module-box li.on,
     .tag-channel-pane .channel-btns__link:hover,
     .tag-channel-cancel-popup a.btn-ok,
-    .next-button .switch-button.on {
+    .next-button .switch-button.on,
+    .bpx-player-auxiliary .bpx-player-dm-wrap .bscroll-vertical-scrollbar .bscroll-indicator,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row .dm-info-block-btn:hover,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row .dm-info-protect-btn:hover,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row .dm-info-recall-btn:hover,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row .dm-info-report-btn:hover {
         background-color: var(--bili-blue) !important;
     }
     .up-info .btn-panel .not-follow:hover,
@@ -2639,7 +2664,17 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .main-container .tool-bar .watch-info .watch-more .title,
     .main-container .media-info .media-right .media-tool-bar .btn-rating span,
     .collection-m .title,
-    .collection-m .content .group-list li {
+    .collection-m .content .group-list li,
+    .bpx-player-video-info,
+    .bpx-player-sending-bar .bpx-player-video-inputbar .bpx-player-dm-input,
+    .bpx-player-auxiliary .bpx-player-filter,
+    .bui-dropdown .bui-dropdown-items .bui-dropdown-item,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row .dm-info-dm,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row,
+    .bpx-player-auxiliary .bpx-player-dm-function .bpx-player-dm-btn-date,
+    .bpx-player-auxiliary .bpx-player-dm-function .bpx-player-dm-btn-dm,
+    .bpx-player-auxiliary .bpx-player-dm-function .bpx-player-dm-btn-time,
+    .bpx-player-auxiliary .bpx-player-dm-btn-history {
         color: var(--color-86) !important;
     }
     .up-info .up-info_right .desc,
@@ -2669,7 +2704,10 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .up-info .up-info_right .name .message,
     .up-info .up-info_right .name .message i,
     .collection-m .content .group-list li label .count,
-    .collection-m .content .group-list .add-group .add-btn {
+    .collection-m .content .group-list .add-group .add-btn,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row-block span.dm-info-dm,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row-block span.dm-info-time,
+    .bpx-player-auxiliary .bpx-player-dm-container .dm-info-row-block:after {
         color: var(--color-66) !important;
     }
     .player-auxiliary-area .player-auxiliary-danmaku .player-auxiliary-danmaku-function [class*="player-auxiliary-danmaku-btn-"],
@@ -2739,7 +2777,8 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .video-sections .video-section-list .video-episode-card__info-title-playing,
     .main-container .tool-bar .watch-info:hover span,
     .up-info .up-info_right .name .message:hover,
-    .up-info .up-info_right .name .message:hover i {
+    .up-info .up-info_right .name .message:hover i,
+    .bui-dropdown .bui-dropdown-items .bui-dropdown-item:hover {
         color: var(--bili-blue) !important;
     }
     .video-desc .tip-info .argue i,
@@ -2799,7 +2838,9 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .main-container .tool-bar .watch-info .watch-more,
     .collection-m .bottom,
     .collection-m .title,
-    .collection-m .content .group-list .add-group .add-btn {
+    .collection-m .content .group-list .add-group .add-btn,
+    .bpx-player-sending-bar .bpx-player-video-inputbar-wrap,
+    .bui-dropdown .bui-dropdown-items {
         border-color: var(--color-42) !important;
     }
     .player-auxiliary-danmaku-date-picker-container .player-auxiliary-danmaku-date-picker-body .day-span {
@@ -2827,7 +2868,8 @@ url-prefix("https://www.bilibili.com/cheese/play") {
         border-color: var(--bili-pink) !important;
     }
     /* -- 阴影 -- */
-    .bilibili-player {
+    .bilibili-player,
+    .bpx-player-container {
         box-shadow: 0 0 8px var(--color-14) !important;
     }
     /* -- SVG -- */
@@ -4618,25 +4660,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://www.bilibili.com/cheese") {
     /* ===课堂=== */
     /* ===浏览器滚动条=== */
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-green) !important;
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-green) !important;
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
@@ -6234,7 +6276,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .live-room-item .item-title,
     #live-list .headline-room h3,
     .game-item .info .title,
-    .game-item .info .type {
+    .game-item .info .type,
+    .pgc-item .right-info .intros .value {
         color: var(--color-86) !important;
     }
     .game-item .info .grade-wrap .player-grade,
@@ -6363,25 +6406,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
     /* ===会员购=== */
     /* ===浏览器滚动条=== */
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-shop-pink) !important;
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-shop-pink) !important;
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
