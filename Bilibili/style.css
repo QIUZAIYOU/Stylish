@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0804.1537
+	@version        2021.0805.1510
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0804.1537
+	* © 最后更新：2021.0805.1510
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -5404,7 +5404,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .album-list__tabs,
     #page-follows .follow-sidenav .follow-list-container .follow-item:hover,
     #page-follows .follow-main .follow-action-bottom .follow-action-fixtop,
-    .elec .elec-status-bg-grey {
+    .elec .elec-status-bg-grey,
+    .card .media-list .content {
         background-color: var(--color-27) !important;
     }
     #page-fav .fav-sidenav .icon-cursor,
@@ -5609,12 +5610,17 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .article-container .text-area .title,
     .shop-desc .desc-box .title,
     .bangumi-container .text-area .title,
-    .list-item .title {
+    .list-item .title,
+    .user-info .user-info-title .info-title,
+    .user-info .info-content .info-command,
+    .card .media-list .content .title {
         color: var(--color-86) !important;
     }
     .video-container .text-area .view-danmaku,
     .video-container .text-area .content,
-    #page-index .channel .channel-item .small-item .video-desc {
+    #page-index .channel .channel-item .small-item .video-desc,
+    .user-info .info-content .info-value,
+    .card .media-list .content .count-box {
         color: var(--color-66) !important;
     }
     .contribution-sidenav .contribution-item.cur .num,
@@ -5661,7 +5667,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .article-title:hover a,
     #page-index .bangumi .content .title:hover,
     #page-index .channel .section-right-options .play-all-channel:hover .video-commonplayer_play,
-    .section-title .play-all-channel:hover .video-commonplayer_play {
+    .section-title .play-all-channel:hover .video-commonplayer_play,
+    .card .media-list:hover .content .title {
         color: var(--bili-blue) !important;
     }
     #page-index .col-2 .section .user-auth .auth-description,
@@ -5742,7 +5749,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .wrapper .edit-video-modal .addfav-container .fake-fav-input,
     .edit-media-list .edit-mask .edit-board .head,
     .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .name-input,
-    .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .media-list-intro {
+    .edit-media-list .edit-mask .edit-board .edit-info .info-wrap .media-list-intro,
+    .user-info .user-info-title,
+    .card .media-list .content {
         border-color: var(--color-42) !important;
     }
     .wrapper .edit-video-modal .target-favlist .target-favitem .target-fav-title .fav-select {
