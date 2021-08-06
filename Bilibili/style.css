@@ -3,18 +3,18 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0805.1510
+	@version        2021.0806.1538
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
 		BiliLive_ON  "开" <<<EOT #bili_live,EOT;
 		BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
 	}
-	@advanced dropdown BiliRace "首页电竞赛事板块屏蔽" {
+    @advanced dropdown BiliRace "首页电竞赛事板块屏蔽" {
 		BiliRace_ON  "开" <<<EOT #reportFirst3,EOT;
 		BiliRace_OFF "关" <<<EOT /*[[BiliRace]]*\/ EOT;
 	}
-	@advanced dropdown LiveFansMedal "直播间粉丝勋章" {
+    @advanced dropdown LiveFansMedal "直播间粉丝勋章" {
 		LiveFansMedal_ON  "开" <<<EOT .chat-history-panel .chat-history-list .chat-item.danmaku-item .fans-medal-item-ctnr,EOT;
 		LiveFansMedal_OFF "关" <<<EOT /*[[LiveFansMedal]]*\/ EOT;
 	}
@@ -36,10 +36,10 @@
 ==/UserStyle== */
 
 @-moz-document url-prefix("http://example.com") {
-	/*===
+    /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0805.1510
+	* © 最后更新：2021.0806.1538
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -2438,7 +2438,8 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .error-container,
     .main-container .media-info .media-right .media-tool-bar .btn-rating:hover,
     .bpx-player-sending-bar,
-    .bpx-player-auxiliary .bpx-player-filter {
+    .bpx-player-auxiliary .bpx-player-filter,
+    .bpx-docker-minor {
         background-color: var(--color-2c) !important;
     }
     .up-info .btn-panel .not-follow-charge-btn,
