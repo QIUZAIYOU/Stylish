@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0810.1146
+	@version        2021.0810.1443
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0810.1146
+	* © 最后更新：2021.0810.1443
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -2527,7 +2527,8 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .main-container .media-info .media-right .pub-wrapper .up-info-wrapper .split-line,
     .bilibili-player-video-sendbar .bilibili-player-video-inputbar .bilibili-player-video-btn-send.bui-button-disabled,
     .video-sections .border-bottom-line,
-    .recommend-list .split-line {
+    .recommend-list .split-line,
+    .bpx-player-sending-area:before {
         background-color: var(--color-42) !important;
     }
     .coin-operated-m .mc-box.left-con,
