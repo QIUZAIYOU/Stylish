@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0810.1117
+	@version        2021.0810.1146
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0810.1117
+	* © 最后更新：2021.0810.1146
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -2438,7 +2438,6 @@ url-prefix("https://www.bilibili.com/cheese/play") {
     .next-button .switch-button,
     .error-container,
     .main-container .media-info .media-right .media-tool-bar .btn-rating:hover,
-    .bpx-player-sending-bar,
     .bpx-player-auxiliary .bpx-player-filter,
     .bpx-docker-minor {
         background-color: var(--color-2c) !important;
@@ -2587,7 +2586,8 @@ url-prefix("https://www.bilibili.com/cheese/play") {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/live_eye.png) !important;
     }
     .up-info .up-info_right .name .username .mask,
-    .video-sections .video-section-title {
+    .video-sections .video-section-title,
+    .bpx-player-sending-bar {
         background: transparent !important
     }
     /* -- 字体 -- */
