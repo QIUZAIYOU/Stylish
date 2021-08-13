@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1.常用页面夜间模式全覆盖⭐2.去除垃圾元素`
-@version        2021.0806.1634
+@version        2021.0814.0235
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@
     * © 版权信息
     * © 自用，上传只为保存
     * © 作者：QIUZAIYOU 
-    * © 最后更新：2021.0806.1634
+    * © 最后更新：2021.0814.0235
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     * © UserStyles.world项目地址：https://userstyles.world/style/242/nightmode-for-zhihu-com
@@ -250,6 +250,7 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .popover .popover-content,
     .SignFlowHomepage .css-zvnmar,
     .BottomInfo,
+    .SearchTopicHeader-IntroTail,
     .LinkCard.new {
         background: var(--color-2c) !important;
     }
@@ -331,7 +332,6 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .Input-wrapper--multiline .Input,
     .EmoticonsFooter-item--selected,
     .SearchTopicReview-Icon,
-    .SearchTopicHeader-IntroTail,
     .AutoInviteItem-wrapper--desktop,
     .CommentCollapseButton,
     .css-10rt8mt,
@@ -378,7 +378,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .SearchTopicHeader-IntroTail:before {
         background-image: linear-gradient( 90deg, var(--color-ff), var(--color-37)) !important;
     }
-    .SearchResult-Card .SearchTopicHeader-IntroTail:before {
+    .SearchResult-Card .SearchTopicHeader-IntroTail:before,
+    .SearchTopicHeader-Info .SearchTopicHeader-IntroTail:before {
         background-image: linear-gradient( 90deg, var(--color-37), var(--color-2c)) !important;
     }
     .Switch--checked {
@@ -540,7 +541,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .TimelineItem-module-title-3OWz,
     .Header-module-intro-2QIJ,
     a.QuestionMainAction,
-    .BottomInfo>div span {
+    .BottomInfo>div span,
+    .HotLanding-ListTitle {
         color: var(--color-86) !important;
     }
     .ztext blockquote,
@@ -593,7 +595,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     span[class*='TimelineItem-module-tag-'],
     .BottomInfo,
     .MCNLinkCard-source,
-    .LinkCard.new .LinkCard-desc {
+    .LinkCard.new .LinkCard-desc,
+    .HotLanding-contentItemCount,
+    html[data-theme=dark] .HotLanding-contentItemCount {
         color: var(--color-66) !important;
     }
     .post-link,
@@ -982,7 +986,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .label-input-label,
     .CollectionsHeader-mainContent,
     .SelfCollectionItem-innerContainer,
-    .CollectionDetailPageItem-innerContainer {
+    .CollectionDetailPageItem-innerContainer,
+    .HotLanding-content,
+    .HotLanding-contentItem:not(:last-child) {
         border-color: var(--color-42) !important;
     }
     .UserAvatar,
