@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.0810.1523
+@version        2021.0813.1627
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -27,7 +27,6 @@
 		margin: 0 0 10px 0!important;
 		box-sizing: border-box!important;
 		padding: 15px!important;
-		overflow: hidden!important;
 		border-radius: 10px!important;
 	}
 
@@ -158,13 +157,13 @@
 		margin: 0!important;
 	}
 
-	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class]) {
+	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class]){
 		display: flex!important;
 		flex-flow: column nowrap!important;
 	}
 
 	div#content_left>div[class][mu*="ip138"]>.c-row.c-gap-top,
-div#content_left>div[class][mu*="ip138"]>.c-border>.c-row.c-gap-top {
+	div#content_left>div[class][mu*="ip138"]>.c-border>.c-row.c-gap-top {
 		display: flex!important;
 		align-items: center!important;
 	}
@@ -184,8 +183,30 @@ div#content_left>div[class][mu*="ip138"]>.c-border>.c-row.c-gap-top {
 	}
 
 	#container.sam_newgrid .c-container .t,
-	#container.sam_newgrid .c-container .c-title {
+	#container.sam_newgrid .c-container .c-title,
+	.ms-measures-container .operation-container{
 		display: flex!important;
+	}
+	.ms-measures-container .operation-unit-number{
+		width: 1rem!important;
+	}
+	.ms-measures-container .dropdown-menu{
+		display: flex;
+		flex-flow: column nowrap!important;
+		align-items: center!important;
+	}
+	.ms-measures-container .ms-measures-content .op-unit-tabs-nav-container .op-unit-tabs-nav-left-bg{
+		width: 100%!important;
+	}
+	.ms-measures-container .ms-measures-content .op-unit-tabs-nav-container .op-unit-tabs-nav-left{
+		width: calc(100% - 38px)!important;
+	}
+	.ms-measures-container .dropdown-menu li{
+	width:100%!important;
+	text-align:center!important;
+	}
+	.ms-measures-container .dropdown-menu-item{
+		padding:0!important
 	}
 	EOT;
 	trebleList_OFF "关" <<<EOT /*[[trebleList]]*\/ EOT;
@@ -196,7 +217,7 @@ div#content_left>div[class][mu*="ip138"]>.c-border>.c-row.c-gap-top {
     /*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.0810.1523
+	 * © 最后更新：2021.0813.1627
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
