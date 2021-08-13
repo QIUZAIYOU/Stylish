@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.0813.1627
+@version        2021.0813.2134
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -28,6 +28,7 @@
 		box-sizing: border-box!important;
 		padding: 15px!important;
 		border-radius: 10px!important;
+		overflow:auto;
 	}
 
 	div#content_left>div[class="c-group-wrapper"] {
@@ -157,7 +158,8 @@
 		margin: 0!important;
 	}
 
-	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class]){
+	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class]),
+	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div>div[style]{
 		display: flex!important;
 		flex-flow: column nowrap!important;
 	}
@@ -181,7 +183,9 @@
 	div#content_left>div[class][tpl="site"]>.c-border>.op_site_main>.op_site_gap_top {
 		margin-top: 8px!important;
 	}
-
+	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div{
+		overflow:auto;
+	}
 	#container.sam_newgrid .c-container .t,
 	#container.sam_newgrid .c-container .c-title,
 	.ms-measures-container .operation-container{
@@ -217,7 +221,7 @@
     /*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.0813.1627
+	 * © 最后更新：2021.0813.2134
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -295,7 +299,7 @@ url-prefix("http://www.baidu.com/?tn=") {
         width: 270px!important;
         height: 129px!important;
         margin: 0 auto!important;
-        /* 		background: url("http://asifadeaway.com/web/baidu/simple_baidu_logo.png") no-repeat; */
+        background: url("http://asifadeaway.com/Stylish/baidu/simple_baidu_logo_1.png") no-repeat;
     }
     #lg>* {
         display: none!important;
@@ -1069,7 +1073,7 @@ url-prefix("https://www.baidu.com/baidu?") {
     .s_logo {
         width: 101px!important;
         height: 33px!important;
-        /* 		background: url("http://asifadeaway.com/web/baidu/simple_baidu_logo.png") no-repeat scroll left center!important; */
+        background: url("http://asifadeaway.com/Stylish/baidu/simple_baidu_logo_2.png") no-repeat scroll left center!important;
         margin-top: 0!important;
         margin-left: 40px!important;
         background-size: cover!important;
