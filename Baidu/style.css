@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.0813.2134
+@version        2021.0814.1238
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -137,7 +137,9 @@
 	div#content_left>div[class][tpl="site"]>.c-border,
 	div#content_left>div[class][mu*="ip138"]>.c-border,
 	div#content_left>div[class][mu*="typhoon"]>.c-row,
-	div#content_left>div[class][mu*="phoneSearch"]>.c-border{
+	div#content_left>div[class][mu*="phoneSearch"]>.c-border,
+	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div>.c-row>.c-span12>.c-border,
+	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div>.c-row>.c-span12>.c-border>div:not([class])>.c-row{
 		flex-direction: column!important;
 	}
 
@@ -186,6 +188,9 @@
 	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div{
 		overflow:auto;
 	}
+	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div{
+		overflow:hidden;
+	}
 	#container.sam_newgrid .c-container .t,
 	#container.sam_newgrid .c-container .c-title,
 	.ms-measures-container .operation-container{
@@ -221,7 +226,7 @@
     /*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.0813.2134
+	 * © 最后更新：2021.0814.1238
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -949,7 +954,7 @@ url-prefix("https://www.baidu.com/baidu?") {
         box-shadow: none!important;
     }
     #content_left .c-group-wrapper>div[class]:not(:first-child,
-    :last-child) {
+     :last-child) {
         border-radius: 0!important;
         padding-top: 0!important;
         padding-bottom: 0!important;
