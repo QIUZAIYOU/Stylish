@@ -1,4 +1,4 @@
-# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.07.27-blue)
+# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.08.15-blue)
 
 ![夜间斗鱼 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/douyu/StylishCover.png)
 
@@ -46,6 +46,8 @@
 ## 历史更新
 
 ### 2021
+
+`08.15 13:02`：修复粉丝牌屏蔽失效的问题。
 
 `07.27 15:31`：适配斗鱼更新及积累问题修复。
 
