@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0810.1443
+	@version        2021.0817.1620
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0810.1443
+	* © 最后更新：2021.0817.1620
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1628,7 +1628,8 @@
     .international-footer .link-box .link-item .bt,
     .international-footer .partner,
     .international-footer .partner a,
-    .footer .boston-postcards li .tips，.link-footer .footer-img-linker .footer-img-text,
+    .footer .boston-postcards li .tips,
+    .link-footer .footer-img-linker .footer-img-text,
     .link-footer .footer-img-linker .footer-img-item {
         color: var(--color-86) !important;
     }
@@ -8387,10 +8388,13 @@ url-prefix("https://cm.bilibili.com/") {
     .live-room-app .app-content .app-body .player-and-aside-area .aside-area .chat-control-panel,
     .live-room-app .app-content .app-body .player-and-aside-area .left-container .gift-control-section,
     .rank-list-ctnr,
-    .live-room-app .app-content .app-body .player-and-aside-area .aside-area .rank-list-section {
+    .live-room-app .app-content .app-body .player-and-aside-area .aside-area .rank-list-section,
+    .follow-ctnr .right-part,
+    .link-input {
         background: var(--color-2c) !important;
     }
-    .chat-history-panel {
+    .chat-history-panel,
+    .more-btn-cntr {
         background: var(--color-27) !important;
     }
     .search-bar,
@@ -8416,8 +8420,14 @@ url-prefix("https://cm.bilibili.com/") {
     .card-content .not-support,
     .card-content .deleted,
     .bl-switch:not(.bl-switch-checked),
-    .danmaku-group-item {
+    .danmaku-group-item,
+    .gift-item.buy.hover,
+    .gift-item.buy:hover,
+    .gift-panel-switch:hover {
         background-color: var(--color-27) !important;
+    }
+    .bl-button--primary:disabled {
+        background-color: var(--color-37) !important;
     }
     .link-navbar,
     .highlight-area-item,
@@ -8442,14 +8452,21 @@ url-prefix("https://cm.bilibili.com/") {
     .side-bar-cntr::before,
     .attention-btn-ctnr .right-part,
     .side-bar-cntr,
-    .common-popup-wrap {
+    .common-popup-wrap,
+    input.level-input,
+    .gift-sender-panel,
+    .count-choice,
+    .choice-item,
+    .gift-panel-box,
+    .feed-title {
         background-color: var(--color-2c) !important;
     }
     .link-navbar .main-ctnr .nav-items-ctnr.over-width {
         background-color: var(--color-2c-95) !important;
     }
     .divider,
-    .guard-rank-cntr .rank-cntr .btn-box .daily-record-title {
+    .guard-rank-cntr .rank-cntr .btn-box .daily-record-title,
+    .list-content-candidate.divider::after {
         background-color: var(--color-42) !important;
     }
     [class*="gui-settings"] .custom-color-preview {
@@ -8466,8 +8483,14 @@ url-prefix("https://cm.bilibili.com/") {
     .gui-settings-checkbox-container input:checked~.gui-settings-checkbox {
         background: var(--bili-lightblue-50) !important
     }
+    .list-content-candidate.active {
+        background: transparent!important;
+    }
     .chat-input-ctnr .medal-section .action-item.medal.get-medal {
         background-image: url(https://www.asifadeaway.com/Stylish/bilibili/get-medal.png) !important;
+    }
+    .svg-icon.checkbox-default {
+        background-image: url(https://www.asifadeaway.com/Stylish/bilibili/live_icons.svg) !important;
     }
     /* -- 字体 -- */
     .link-navbar .main-ctnr .nav-logo,
@@ -8515,7 +8538,20 @@ url-prefix("https://cm.bilibili.com/") {
     .block-effect-ctnr .item,
     .gift-rank-cntr .top3-cntr .top3 .top3-item,
     .gift-item .label,
-    .room-introduction-content span {
+    .room-introduction-content span,
+    .more-btn-text,
+    .gift-rank-list-item,
+    .control-panel-icon-row .icon-item,
+    input.level-input,
+    .link-input,
+    .block-content,
+    .bl-button--primary:disabled,
+    .block-setting-row .setting-label,
+    .block-setting-row .setting-value,
+    .gift-info-title,
+    .choice-item,
+    .gift-panel-box .gift-reveal-header .gift-tab,
+    .feed-title {
         color: var(--color-86) !important;
     }
     .activity-item-ctnr .info-ctnr .first-line .time,
@@ -8530,7 +8566,12 @@ url-prefix("https://cm.bilibili.com/") {
     .right-action-ctnr .icon-font,
     .room-introduction-content.empty,
     .des,
-    .area-desc {
+    .area-desc,
+    .follow-empty-cntr .follow-empty-text,
+    .list-content-candidate,
+    .gift-info-desc,
+    .gift-info-special-batch,
+    .no-glory {
         color: var(--color-66) !important;
     }
     p span[style*="background:yellow"] {
@@ -8553,7 +8594,12 @@ url-prefix("https://cm.bilibili.com/") {
     .tabs .item:hover,
     .announcement-cntr .header p,
     .right-action-ctnr.btn:hover,
-    .right-action-ctnr.btn:hover i {
+    .right-action-ctnr.btn:hover i,
+    .control-panel-icon-row .icon-item:hover,
+    .list-content-candidate.active,
+    .choice-item.active,
+    .choice-item:hover,
+    .gift-panel-box .gift-reveal-header .gift-tab.active {
         color: var(--bili-blue) !important;
     }
     #rank-list-ctnr-box .tabs.isHundred .item.active {
@@ -8586,12 +8632,22 @@ url-prefix("https://cm.bilibili.com/") {
     .guard-rank-cntr .rank-cntr .btn-box .r-line,
     .side-bar-cntr,
     .common-popup-wrap,
-    .tabs .tab-list .item {
+    .tabs .tab-list .item,
+    .side-bar-popup-cntr,
+    .follow-ctnr .right-part,
+    .link-input,
+    .count-choice,
+    .choice-item,
+    .gift-panel-box,
+    .gift-panel-box .gift-reveal-header {
         border-color: var(--color-42) !important;
     }
     .tag-default.current,
     .tag-default:active,
-    .tag-default:hover {
+    .tag-default:hover,
+    .choice-item.active,
+    .choice-item:hover,
+    .gift-panel-box .gift-reveal-header .gift-tab:hover .name {
         border-color: var(--bili-blue) !important;
     }
     .arrow {
@@ -8613,6 +8669,12 @@ url-prefix("https://cm.bilibili.com/") {
         border-color: var(--color-86) !important;
         border-top-color: transparent!important;
         border-right-color: transparent!important;
+    }
+    .arrow {
+        border-color: transparent transparent transparent #424242!important;
+    }
+    .gift-sender-panel.arrow-bottom::before {
+        border-color: var(--color-2c) transparent transparent transparent;
     }
     /* -- 图标 -- */
     .link-navbar .main-ctnr .nav-switcher.open-btn {
@@ -8649,6 +8711,12 @@ url-prefix("https://cm.bilibili.com/") {
         box-shadow: 0 6px 12px 0 rgba(0, 0, 0, .08)!important;
     }
     /* -- 其他 -- */
+    .control-panel-icon-row .icon-item {
+        fill: var(--color-86)!important;
+    }
+    .control-panel-icon-row .icon-item:hover {
+        fill: var(--bili-blue)!important;
+    }
     .player-area-ctnr {
         padding-bottom: 0!important;
     }
