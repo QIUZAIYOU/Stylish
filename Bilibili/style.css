@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0817.1620
+	@version        2021.0817.2357
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0817.1620
+	* © 最后更新：2021.0817.2357
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1666,6 +1666,32 @@
     }
     .link-footer .footer-img-linker li a:hover .footer-img-item {
         border-color: transparent!important
+    }
+    /* -- 搜索历史 -- */
+    .suggest-wrap {
+        background-color: var(--color-21)!important;
+        border-color: var(--color-42)!important;
+        color: var(--color-86)!important;
+    }
+    .suggest-wrap .trending-item .rank.top,
+    .suggest-wrap .trending-item .rank,
+    .suggest-wrap .header .clear[data-v-fb29674c] {
+        color: var(--color-86)!important;
+    }
+    .suggest-wrap .trending-item.active,
+    .suggest-wrap .trending-item:hover,
+    .suggest-wrap .trending-item:focus {
+        background-color: var(--color-2c)!important;
+        color: var(--bili-blue) !important;
+    }
+    .suggest-wrap .header .clear[data-v-fb29674c]:hover {
+        color: var(--bili-blue) !important;
+    }
+    .suggest-wrap .histories .history-item {
+        background-color: var(--color-2c)!important;
+    }
+    .suggest-wrap .histories .history-item .close svg {
+        fill: var(--color-86)!important;
     }
 }
 
