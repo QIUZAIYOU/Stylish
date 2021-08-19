@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.0814.1238
+@version        2021.0819.1858
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -217,6 +217,14 @@
 	.ms-measures-container .dropdown-menu-item{
 		padding:0!important
 	}
+	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_addmodle,
+	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_from_e,
+	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_to_e, .op_exrate_txt_e{
+		margin-bottom: 15px!important;
+	}
+	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_tip{
+		margin-top: 0!important;
+	}
 	EOT;
 	trebleList_OFF "关" <<<EOT /*[[trebleList]]*\/ EOT;
 }
@@ -226,7 +234,7 @@
     /*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.0814.1238
+	 * © 最后更新：2021.0819.1858
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
