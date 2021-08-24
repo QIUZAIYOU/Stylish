@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0823.1048
+	@version        2021.0824.0940
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0823.1048
+	* © 最后更新：2021.0824.0940
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1677,7 +1677,7 @@
     }
     .suggest-wrap .trending-item .rank.top,
     .suggest-wrap .trending-item .rank,
-    .suggest-wrap .header .clear[data-v-fb29674c] {
+    .suggest-wrap .header .clear {
         color: var(--color-86)!important;
     }
     .suggest-wrap .trending-item.active,
@@ -1686,13 +1686,13 @@
         background-color: var(--color-2c)!important;
         color: var(--bili-blue) !important;
     }
-    .suggest-wrap .header .clear[data-v-fb29674c]:hover {
+    .suggest-wrap .header .clear:hover {
         color: var(--bili-blue) !important;
     }
     .suggest-wrap .histories .history-item,
-    .suggest-wrap .suggest-item.active[data-v-fb29674c],
-    .suggest-wrap .suggest-item[data-v-fb29674c]:focus,
-    .suggest-wrap .suggest-item[data-v-fb29674c]:hover {
+    .suggest-wrap .suggest-item.active,
+    .suggest-wrap .suggest-item:focus,
+    .suggest-wrap .suggest-item:hover {
         background-color: var(--color-2c)!important;
     }
     .suggest-wrap .histories .history-item .close svg {
@@ -5418,7 +5418,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .search-component-input input,
     #page-fav .fav-main .fav-action-bottom .fav-action-fixtop,
     #page-fav .fav-main .fav-video-list.is-batch .small-item.selected,
-    #page-fav .fav-main .fav-video-list.is-batch .small-item:hover {
+    #page-fav .fav-main .fav-video-list.is-batch .small-item:hover,
+    .search-page {
         background-color: var(--color-2c) !important;
     }
     .list-create,
@@ -5656,7 +5657,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .video-container .text-area .content,
     #page-index .channel .channel-item .small-item .video-desc,
     .user-info .info-content .info-value,
-    .card .media-list .content .count-box {
+    .card .media-list .content .count-box,
+    .search-nav-item .num {
         color: var(--color-66) !important;
     }
     .contribution-sidenav .contribution-item.cur .num,
@@ -5674,7 +5676,10 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-follows .follow-sidenav .follow-list-container .follow-item.cur .text,
     .h .h-f-btn,
     .h .h-add-to-black .icon-ic_more,
-    .h .h-avatar .avatar-cover {
+    .h .h-avatar .avatar-cover，.search-nav-item.search-nav-actived .num,
+    .search-nav-item.search-nav-actived .text,
+    .search-nav-item.search-nav-actived .num,
+    .search-nav-item.search-nav-actived .text {
         color: var(--color-ff) !important;
     }
     .pgc-space-follow-item .bangumi-options .opt-list li.disabled,
