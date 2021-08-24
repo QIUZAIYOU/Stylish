@@ -10,11 +10,11 @@
 		BiliLive_ON  "开" <<<EOT #bili_live,EOT;
 		BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
 	}
-    @advanced dropdown BiliRace "首页电竞赛事板块屏蔽" {
+    	@advanced dropdown BiliRace "首页电竞赛事板块屏蔽" {
 		BiliRace_ON  "开" <<<EOT #reportFirst3,EOT;
 		BiliRace_OFF "关" <<<EOT /*[[BiliRace]]*\/ EOT;
 	}
-    @advanced dropdown LiveFansMedal "直播间粉丝勋章" {
+    	@advanced dropdown LiveFansMedal "直播间粉丝勋章" {
 		LiveFansMedal_ON  "开" <<<EOT .chat-history-panel .chat-history-list .chat-item.danmaku-item .fans-medal-item-ctnr,EOT;
 		LiveFansMedal_OFF "关" <<<EOT /*[[LiveFansMedal]]*\/ EOT;
 	}
