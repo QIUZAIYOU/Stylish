@@ -8590,7 +8590,8 @@ url-prefix("https://cm.bilibili.com/") {
     .gift-info-title,
     .choice-item,
     .gift-panel-box .gift-reveal-header .gift-tab,
-    .feed-title {
+    .feed-title,
+    .area-name {
         color: var(--color-86) !important;
     }
     .activity-item-ctnr .info-ctnr .first-line .time,
