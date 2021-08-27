@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1.常用页面夜间模式全覆盖⭐2.去除垃圾元素`
-@version        2021.0814.0235
+@version        2021.0827.1117
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@
     * © 版权信息
     * © 自用，上传只为保存
     * © 作者：QIUZAIYOU 
-    * © 最后更新：2021.0814.0235
+    * © 最后更新：2021.0827.1117
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     * © UserStyles.world项目地址：https://userstyles.world/style/242/nightmode-for-zhihu-com
@@ -251,7 +251,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .SignFlowHomepage .css-zvnmar,
     .BottomInfo,
     .SearchTopicHeader-IntroTail,
-    .LinkCard.new {
+    .LinkCard.new,
+    .Sticky {
         background: var(--color-2c) !important;
     }
     .Tag,
@@ -356,6 +357,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     div[class*="SectionBar-module-current-"] {
         background: var(--color-24) !important;
     }
+    .Question-mainColumn .Card a[data-za-detail-view-id]::after {
+        background: var(--color-86) !important;
+    }
     html.no-touchevents .zm-item-vote-count:hover {
         background: #698ebf !important;
     }
@@ -382,7 +386,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .SearchTopicHeader-Info .SearchTopicHeader-IntroTail:before {
         background-image: linear-gradient( 90deg, var(--color-37), var(--color-2c)) !important;
     }
-    .Switch--checked {
+    .Switch--checked,
+    .Question-mainColumn .Card a[data-za-detail-view-id]:first-child::after {
         background-color: var(--zhihu-blue) !important;
     }
     .QuestionItem-footer--writeAnswerButton {
@@ -542,7 +547,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .Header-module-intro-2QIJ,
     a.QuestionMainAction,
     .BottomInfo>div span,
-    .HotLanding-ListTitle {
+    .HotLanding-ListTitle,
+    .Question-mainColumn .Card a[data-za-detail-view-id]>div {
         color: var(--color-86) !important;
     }
     .ztext blockquote,
@@ -597,7 +603,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .MCNLinkCard-source,
     .LinkCard.new .LinkCard-desc,
     .HotLanding-contentItemCount,
-    html[data-theme=dark] .HotLanding-contentItemCount {
+    html[data-theme=dark] .HotLanding-contentItemCount,
+    .css-1wtzfac,
+    .Question-mainColumn .Card a[data-za-detail-view-id]>div:first-child {
         color: var(--color-66) !important;
     }
     .post-link,
@@ -677,8 +685,7 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .BrandQuestionSymbol-name,
     .NotificationList-Item-header .NotificationList-Item-link:hover,
     html[data-theme="dark"] .NotificationList-Item-header .NotificationList-Item-link:hover,
-    .css-7bx0rn-Label,
-    .css-ebe467 {
+    .css-7bx0rn-Label {
         color: var(--zhihu-lightblue) !important;
     }
     .tab-navs .tab-nav.active>a,
@@ -730,7 +737,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     html[data-theme=dark] .Button,
     div[class*="Section-module-"],
     .Timeline-module-footer-2gab,
-    .SimilarQuestions-item .Button {
+    .SimilarQuestions-item .Button,
+    .Question-mainColumn .Card a[data-za-detail-view-id]:first-child>div:first-child,
+    .Question-mainColumn .Card a[data-za-detail-view-id]>div:not(:first-child):hover {
         color: var(--zhihu-blue) !important;
     }
     .TopSearch-itemText {
@@ -988,7 +997,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .SelfCollectionItem-innerContainer,
     .CollectionDetailPageItem-innerContainer,
     .HotLanding-content,
-    .HotLanding-contentItem:not(:last-child) {
+    .HotLanding-contentItem:not(:last-child),
+    .Question-mainColumn [class*="css-"]::before {
         border-color: var(--color-42) !important;
     }
     .UserAvatar,
@@ -1031,6 +1041,12 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .zu-top,
     .AppHeader {
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.7) !important;
+    }
+    .Question-mainColumn .Card a[data-za-detail-view-id]::after {
+        box-shadow: 0px 0px 0px 2px var(--color-42);
+    }
+    .Question-mainColumn .Card a[data-za-detail-view-id]:first-child::after {
+        box-shadow: 0px 0px 0px 2px var(--zhihu-blue);
     }
     .zu-top-search-input,
     .topic-recommend.modal-dialog,
