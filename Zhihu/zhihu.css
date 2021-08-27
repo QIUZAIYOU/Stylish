@@ -605,7 +605,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .HotLanding-contentItemCount,
     html[data-theme=dark] .HotLanding-contentItemCount,
     .css-1wtzfac,
-    .Question-mainColumn .Card a[data-za-detail-view-id]>div:first-child {
+    .Question-mainColumn .Card a[data-za-detail-view-id]>div:first-child,
+    .css-hnrfcf figure figcaption {
         color: var(--color-66) !important;
     }
     .post-link,
