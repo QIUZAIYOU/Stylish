@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1.常用页面夜间模式全覆盖⭐2.去除垃圾元素`
-@version        2021.0827.1117
+@version        2021.0827.1122
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@
     * © 版权信息
     * © 自用，上传只为保存
     * © 作者：QIUZAIYOU 
-    * © 最后更新：2021.0827.1117
+    * © 最后更新：2021.0827.1122
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     * © UserStyles.world项目地址：https://userstyles.world/style/242/nightmode-for-zhihu-com
@@ -258,7 +258,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .Tag,
     .TopicTag .Tag,
     .css-1k01q48,
-    .MCNLinkCard {
+    .MCNLinkCard,
+    .LinkCard.new,
+    .LinkCard.new:hover {
         background: var(--color-27) !important;
     }
     .PushNotifications-item:after,
@@ -346,7 +348,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     html[data-theme="dark"] .SpecialListCard-followButton,
     .ChatUserListItem--active,
     .zm-item-tag,
-    .zm-tag-editor-edit-item {
+    .zm-tag-editor-edit-item,
+    .css-hnrfcf .LinkCard.new .LinkCard-desc .LinkCard-tag,
+    .css-hnrfcf .LinkCard.new .LinkCard-desc .tag {
         background: var(--color-37) !important;
     }
     .lower {
