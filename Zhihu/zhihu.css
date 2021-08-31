@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1.常用页面夜间模式全覆盖⭐2.去除垃圾元素`
-@version        2021.0827.1122
+@version        2021.0831.1514
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@
     * © 版权信息
     * © 自用，上传只为保存
     * © 作者：QIUZAIYOU 
-    * © 最后更新：2021.0827.1122
+    * © 最后更新：2021.0831.1514
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     * © UserStyles.world项目地址：https://userstyles.world/style/242/nightmode-for-zhihu-com
@@ -260,7 +260,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .css-1k01q48,
     .MCNLinkCard,
     .LinkCard.new,
-    .LinkCard.new:hover {
+    .LinkCard.new:hover,
+    .VideoAnswerPlayer-stateBar {
         background: var(--color-27) !important;
     }
     .PushNotifications-item:after,
@@ -552,7 +553,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     a.QuestionMainAction,
     .BottomInfo>div span,
     .HotLanding-ListTitle,
-    .Question-mainColumn .Card a[data-za-detail-view-id]>div {
+    .Question-mainColumn .Card a[data-za-detail-view-id]>div,
+    .VideoAnswerPlayer-state--title {
         color: var(--color-86) !important;
     }
     .ztext blockquote,
@@ -610,7 +612,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     html[data-theme=dark] .HotLanding-contentItemCount,
     .css-1wtzfac,
     .Question-mainColumn .Card a[data-za-detail-view-id]>div:first-child,
-    .css-hnrfcf figure figcaption {
+    .css-hnrfcf figure figcaption,
+    .VideoAnswerPlayer-state--data {
         color: var(--color-66) !important;
     }
     .post-link,
@@ -1194,5 +1197,12 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     }
     .ErrorPage-errorImage {
         mix-blend-mode: overlay!important
+    }
+    /* LastPass	 */
+    input:-internal-autofill-selected {
+        background-color: transparent!important;
+    }
+    .SignContainer-content input:-webkit-autofill {
+        box-shadow: none!important
     }
 }
