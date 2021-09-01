@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1.常用页面夜间模式全覆盖⭐2.去除垃圾元素`
-@version        2021.0831.1514
+@version        2021.0901.1009
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@
     * © 版权信息
     * © 自用，上传只为保存
     * © 作者：QIUZAIYOU 
-    * © 最后更新：2021.0831.1514
+    * © 最后更新：2021.0901.1009
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     * © UserStyles.world项目地址：https://userstyles.world/style/242/nightmode-for-zhihu-com
@@ -613,7 +613,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .css-1wtzfac,
     .Question-mainColumn .Card a[data-za-detail-view-id]>div:first-child,
     .css-hnrfcf figure figcaption,
-    .VideoAnswerPlayer-state--data {
+    .VideoAnswerPlayer-state--data,
+    .AnswerInfo-favlist {
         color: var(--color-66) !important;
     }
     .post-link,
