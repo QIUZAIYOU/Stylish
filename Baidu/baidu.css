@@ -3,14 +3,14 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.0819.1858
+@version        2021.0901.1007
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
     trebleist_ON "开" <<<EOT 
 	#rs,
 	#foot,
-	[tpl="recommend_list"] {
+	[tpl="recommend_list"],[tpl="jy_course_and_org_pc"] [class*="course-new-style"]>div.c-row{
 		display: none!important;
 	}
 
@@ -47,7 +47,8 @@
 		border-radius: 10px!important;
 	}
 
-	div#content_left>div[class="c-group-wrapper"]:hover {
+	div#content_left>div[class="c-group-wrapper"]:hover,
+	[class*="course-new-style"]{
 		box-shadow: none!important;
 	}
 
@@ -71,7 +72,8 @@
 	div#content_left>div[class] .c-span9,
 	div#content_left>div[class] canvas,
 	div#content_left>.c-group-wrappe>div[class],
-	div#content_left>div[class="c-group-wrapper"]>div[class] ul {
+	div#content_left>div[class="c-group-wrapper"]>div[class] ul,
+	[class*="course-new-flex"]{
 		width: 100%!important;
 	}
 	div#content_left>div[class="c-group-wrapper"]>div[class] ul{
@@ -177,7 +179,7 @@
 		margin: 0!important;
 	}
 
-	div#content_left>div[class][tpl="site"]>.c-border>.op_site_main {
+	div#content_left>div[class][tpl="site"]>.c-border>.op_site_main,[class*="course-new-style"] {
 		margin-top: 0!important;
 		padding: 0!important;
 	}
@@ -234,7 +236,7 @@
     /*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.0819.1858
+	 * © 最后更新：2021.0901.1007
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
