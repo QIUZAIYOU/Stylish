@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1.常用页面夜间模式全覆盖⭐2.去除垃圾元素`
-@version        2021.0901.1009
+@version        2021.0906.1128
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@
     * © 版权信息
     * © 自用，上传只为保存
     * © 作者：QIUZAIYOU 
-    * © 最后更新：2021.0901.1009
+    * © 最后更新：2021.0906.1128
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     * © UserStyles.world项目地址：https://userstyles.world/style/242/nightmode-for-zhihu-com
@@ -22,7 +22,7 @@
 
 @-moz-document domain("zhihu.com") {
     /* ===通用属性=== */
-    :root {
+     :root {
         --color-00: #000 !important;
         --color-14: #141414 !important;
         --color-1b: #1b1b1b !important;
@@ -72,26 +72,26 @@ url-prefix("https://zhuanlan.zhihu.com/") {
 @-moz-document url-prefix("https://www.zhihu.com/"),
 url-prefix("https://zhuanlan.zhihu.com/") {
     /*=== 基本样式调整 ===*/
-    ::-webkit-scrollbar {
+     ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-    ::-webkit-scrollbar-track-piece {
+     ::-webkit-scrollbar-track-piece {
         background-color: var(--color-14) !important;
         border-radius: 0 !important;
         -webkit-border-radius: 0 !important;
     }
-    ::-webkit-scrollbar-thumb:vertical {
+     ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         background-color: var(--zhihu-blue) !important;
         border-radius: 6px !important;
     }
-    ::-webkit-scrollbar-thumb:horizontal {
+     ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         background-color: var(--zhihu-blue) !important;
         border-radius: 6px !important;
     }
-    ::-webkit-scrollbar-corner {
+     ::-webkit-scrollbar-corner {
         background-color: var(--color-14) !important;
         border-radius: 0 !important;
     }
@@ -252,7 +252,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .BottomInfo,
     .SearchTopicHeader-IntroTail,
     .LinkCard.new,
-    .Sticky {
+    .Sticky,
+    .css-1sclke5-Label,
+    .css-16xodth-PopoverContent {
         background: var(--color-2c) !important;
     }
     .Tag,
@@ -277,7 +279,6 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .RichContent-cover,
     input,
     .SignFlow-accountSeperator,
-    .LinkCard-image--default,
     textarea[class*="FeedbackForm-inputBox-"],
     .CommentsV2-openComment-divider,
     .ColumnPageHeader-Line,
@@ -375,6 +376,10 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .UserCoverEditor-leftMasker,
     .UserCoverEditor-rightMasker {
         background-color: rgba(44, 44, 44, 0.5) !important;
+    }
+    .loading,
+    .LinkCard-image--default {
+        background-color: var(--color-2c) !important;
     }
     .SignFlowInput-errorMask:before,
     input[type="range"].RangeInput {
@@ -554,7 +559,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .BottomInfo>div span,
     .HotLanding-ListTitle,
     .Question-mainColumn .Card a[data-za-detail-view-id]>div,
-    .VideoAnswerPlayer-state--title {
+    .VideoAnswerPlayer-state--title,
+    .css-7yxr85 {
         color: var(--color-86) !important;
     }
     .ztext blockquote,
@@ -701,7 +707,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .AnswerItem-statusReason,
     .MCNLinkCard-price,
     .MCNLinkCard-button,
-    .UserStatus {
+    .UserStatus,
+    .css-1sclke5-Label,
+    .css-r36aav-Label-PopoverContent {
         color: var(--color-e43) !important;
     }
     .Qrcode-container p.Qrcode-scanResultTips {
@@ -766,6 +774,9 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .css-zzd7cz-Label {
         color: var(--zhihu-yellow) !important;
     }
+    .css-e5iko0-PopoverContent {
+        fill: var(--color-2c) !important;
+    }
     .SettingsNav-link.is-active svg,
     .Zi,
     .SettingsNav-link .Zi--Ban,
@@ -775,7 +786,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
         fill: var(--zhihu-blue) !important;
     }
     .Zi--Alert,
-    .MCNLinkCard-button svg.Zi.Zi--ArrowRight {
+    .MCNLinkCard-button svg.Zi.Zi--ArrowRight,
+    .css-1sclke5-Label svg[class*="Zi--Arrow"] {
         fill: var(--color-e43) !important;
     }
     .Modal-closeIcon,
