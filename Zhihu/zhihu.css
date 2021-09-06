@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1.常用页面夜间模式全覆盖⭐2.去除垃圾元素`
-@version        2021.0906.1128
+@version        2021.0907.0012
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 ==/UserStyle== */
@@ -13,7 +13,7 @@
     * © 版权信息
     * © 自用，上传只为保存
     * © 作者：QIUZAIYOU 
-    * © 最后更新：2021.0906.1128
+    * © 最后更新：2021.0907.0012
     * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
     * © Gitee项目地址：https://gitee.com/aiideai/Stylish
     * © UserStyles.world项目地址：https://userstyles.world/style/242/nightmode-for-zhihu-com
@@ -22,7 +22,7 @@
 
 @-moz-document domain("zhihu.com") {
     /* ===通用属性=== */
-     :root {
+    :root {
         --color-00: #000 !important;
         --color-14: #141414 !important;
         --color-1b: #1b1b1b !important;
@@ -72,26 +72,26 @@ url-prefix("https://zhuanlan.zhihu.com/") {
 @-moz-document url-prefix("https://www.zhihu.com/"),
 url-prefix("https://zhuanlan.zhihu.com/") {
     /*=== 基本样式调整 ===*/
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         background-color: var(--color-14) !important;
         border-radius: 0 !important;
         -webkit-border-radius: 0 !important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         background-color: var(--zhihu-blue) !important;
         border-radius: 6px !important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         background-color: var(--zhihu-blue) !important;
         border-radius: 6px !important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         background-color: var(--color-14) !important;
         border-radius: 0 !important;
     }
@@ -560,7 +560,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .HotLanding-ListTitle,
     .Question-mainColumn .Card a[data-za-detail-view-id]>div,
     .VideoAnswerPlayer-state--title,
-    .css-7yxr85 {
+    .css-7yxr85,
+    .QuestionSidebarTopicMeta-cardMoreInner {
         color: var(--color-86) !important;
     }
     .ztext blockquote,
@@ -756,7 +757,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .Timeline-module-footer-2gab,
     .SimilarQuestions-item .Button,
     .Question-mainColumn .Card a[data-za-detail-view-id]:first-child>div:first-child,
-    .Question-mainColumn .Card a[data-za-detail-view-id]>div:not(:first-child):hover {
+    .Question-mainColumn .Card a[data-za-detail-view-id]>div:not(:first-child):hover,
+    .zm-topic-tree a {
         color: var(--zhihu-blue) !important;
     }
     .TopSearch-itemText {
@@ -1019,7 +1021,8 @@ url-prefix("https://zhuanlan.zhihu.com/") {
     .CollectionDetailPageItem-innerContainer,
     .HotLanding-content,
     .HotLanding-contentItem:not(:last-child),
-    .Question-mainColumn [class*="css-"]::before {
+    .Question-mainColumn [class*="css-"]::before,
+    .TopicCreatorModule-more {
         border-color: var(--color-42) !important;
     }
     .UserAvatar,
