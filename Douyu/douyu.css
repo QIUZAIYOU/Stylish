@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1.常用页面夜间模式全覆盖⭐2.去除广告⭐3.去除导航栏中游戏等无用杂项⭐4.部分icon更换使之更符合当前主题⭐5.自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素⭐㊖ 凡涉及到金钱交易（充值、付费购买等）等页面，若遇到因本样式导致文字颜色看不清的情况，请关闭本样式之后再进行金钱交易操作。否则因未关闭本样式导致的财产损失与本样式及作者无关。若发现文字看不清的情况请及时反馈。`
-@version        2021.0905.2029
+@version        2021.0908.1826
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -25,6 +25,10 @@
 @advanced dropdown BarrageNoble "贵族徽章屏蔽" {
     BarrageNoble_ON "开" <<<EOT .Barrage-noble.Barrage-icon, EOT;
     BarrageNoble_OFF "关" <<<EOT /*[[BarrageNoble]]*\/ EOT;
+}
+@advanced dropdown BarrageHonor "榜单专属徽章屏蔽" {
+    BarrageNoble_ON "开" <<<EOT .Barrage-listItem .Barrage-honor, EOT;
+    BarrageNoble_OFF "关" <<<EOT /*[[BarrageHonor]]*\/ EOT;
 }
 @advanced dropdown RoomVipIcon "房间VIP图标屏蔽" {
     RoomVipIcon_ON "开" <<<EOT .Barrage-roomVipIcon, EOT;
@@ -77,7 +81,7 @@
     /*=== 
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0905.2029
+	* © 最后更新：2021.0908.1826
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/240/nightmode-for-douyu-com
@@ -6009,6 +6013,7 @@ url-prefix("http://www.douyu.com") {
     /*[[ChatLetter]]*/
     /*[[FansMedal]]*/
     /*[[BarrageNoble]]*/
+    /*[[BarrageHonor]]*/
     /*[[RoomVipIcon]]*/
     /*[[ToolbarActivityArea]]*/
     www.asifadeawy.com {
