@@ -9009,7 +9009,7 @@ url-prefix("https://cm.bilibili.com/") {
 }
 
 @-moz-document domain("game.bilibili.com") {
-    /* ===游戏 > 正在施工 === */
+    /* ===游戏中心 > 正在施工 === */
     /* -- 背景 -- */
     [class*="Bookswiper"] [class*="gallery-top"] .swiper-slide,
     .bili-game-footer {
