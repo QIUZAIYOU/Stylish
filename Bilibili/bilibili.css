@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0902.1734
+	@version        2021.0910.1711
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0902.1734
+	* © 最后更新：2021.0910.1711
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -95,7 +95,7 @@
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-     :root {
+    :root {
         --color-14: #141414 !important;
         --color-1b: #1b1b1b !important;
         --color-21: #212121 !important;
@@ -238,25 +238,25 @@
             line-height: 13px;
         } */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-blue) !important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-blue) !important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
@@ -4927,25 +4927,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://www.bilibili.com/cheese") {
     /* ===课堂=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-green) !important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-green) !important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
@@ -6702,25 +6702,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
     /* ===会员购=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-shop-pink) !important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-shop-pink) !important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
@@ -9006,4 +9006,78 @@ url-prefix("https://cm.bilibili.com/") {
         padding-bottom: 0!important;
     }
     /*[[ChatColorfulBubble]]*/
+}
+
+@-moz-document domain("game.bilibili.com") {
+    /* ===游戏 > 正在施工 === */
+    /* -- 背景 -- */
+    [class*="Bookswiper"] [class*="gallery-top"] .swiper-slide,
+    .bili-game-footer {
+        background-color: var(--color-21) !important;
+    }
+    .bili-game-header-nav .bili-game-header-nav-bar,
+    [class*="category-item"] {
+        background-color: var(--color-2c) !important;
+    }
+    /* -- 字体 -- */
+    [class*="title"],
+    [class*="search-wrap-tab-item"],
+    [class*="card-title"],
+    [class*="btn-more"],
+    [class*="card-content-title"]>div,
+    [class*="game-info-name"],
+    [class*="card-content-info-name"],
+    [class*="grade-num"],
+    [class*="load_btn"],
+    [class*="category-item"],
+    [class*="card-action-exchange"],
+    [class*="gameName"],
+    [class*="list-item-num"] [class*="num"],
+    [class*="list-item-title"] [class*="date"],
+    [class*="list-item-title"] [class*="games-num"],
+    [class*="list-item-cont"] [class*="testGameItem"] [class*="gameDes"] [class*="gameScore-no"],
+    .bili-game-footer * {
+        color: var(--color-86) !important;
+    }
+    [class*="listItem-info-subTitle"],
+    [class*="listItem-gameInfo-grade-num"],
+    [class*="listItem-gameInfo-category"],
+    [class*="listItem-info-otherInfo"],
+    [class*="tag_"],
+    [class*="gameScoreNum"],
+    [class*="score-degree"],
+    [class*="score-comment"],
+    [class*="card-content-des"],
+    [class*="card-content-info-des"],
+    [class*="comment-num"],
+    [class*="hotActivity-item-time"],
+    [class*="list-item-cont"] [class*="testGameItem"] [class*="gameDes"] [class*="gameTestTime"] {
+        color: var(--color-66) !important;
+    }
+    .bili-game-footer .bili-game-footer-content .bili-game-footer-content-logo .bili-game-footer-content-share a .bili-game-footer-content-shareIcon .iconfontF {
+        color: var(--color-ff) !important;
+    }
+    /* -- 边框 -- */
+    [class*="btn-more"],
+    [class*="tag_"],
+    [class*="Card-recomend-item"],
+    [class*="gallery-thumbs-item"],
+    [class*="card-game-common"],
+    [class*="load_btn"],
+    [class*="hotActivity-item"],
+    [class*="card-action-exchange"],
+    [class*="Card-header"] [class*="btn-link"],
+    [class*="webGameItem"],
+    [class*="list-item-cont"] [class*="testGameItem"] [class*="gameDes"],
+    [class*="testing-ranking"],
+    [class*="testing-ranking"] {
+        border-color: var(--color-42) !important;
+    }
+    [class*="gallery-thumbs-item-active"] {
+        border-color: var(--bili-blue) !important;
+    }
+    /* -- 阴影 -- */
+    [class*="Card-recomend-item"]:hover {
+        box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%)!important;
+    }
 }
