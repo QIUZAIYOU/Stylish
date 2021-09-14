@@ -1905,7 +1905,8 @@
     .bili-header .bili-header-channel-panel,
     .bili-header .bili-header-channel-panel .channel-panel__column,
     .download-entry-popover.download-entry-popover,
-    .bili-footer {
+    .bili-footer,
+    .bili-header .message-entry-popover .message-inner-list {
         background-color: var(--color-2c) !important;
     }
     .bangumi-card-list .track-switch button:not(.is-active):hover,
@@ -1918,7 +1919,11 @@
     .bili-header .histories .history-item,
     .bili-header .trending-item.active,
     .bili-header .trending-item:hover,
-    .bili-header .trending-item:focus {
+    .bili-header .trending-item:focus,
+    .history-panel-popover .header-tabs-panel__content .view-all-history-btn,
+    .bili-header .header-history-live:hover,
+    .bili-header .header-history-article:hover,
+    .bili-header .header-history-video:hover {
         background-color: var(--color-27) !important;
     }
     .elevator .bg23 {
@@ -2000,7 +2005,8 @@
     .bili-header .manga-right-list-item:not(:nth-child(-n+3)) .manga-right-list-item-index,
     .bili-header .login-panel-popover .tips,
     .download-entry-popover.download-entry-popover .txt,
-    .bili-article-card .bili-article-card__icon {
+    .bili-article-card .bili-article-card__icon,
+    .history-panel-popover .header-tabs-panel__content .view-all-history-btn {
         color: var(--color-86) !important;
     }
     .bili-video-card .bili-video-card__info--owner,
@@ -2022,7 +2028,8 @@
     .avatar-panel-popover .level-item .level-item__text,
     .avatar-panel-popover .coins-item .coin-item__num,
     .level-intro-popover .level-intro__content--info,
-    .bili-article-card .bili-article-card__info--stats {
+    .bili-article-card .bili-article-card__info--stats,
+    .history-panel-popover .header-history-card__info--date {
         color: var(--color-66) !important;
     }
     .live-card .up .txt .desc {
@@ -2073,7 +2080,8 @@
     .bili-header .game-left,
     .bili-header .manga-left,
     .bili-header .bili-header-channel-panel .channel-panel__column,
-    .bili-article-card .bili-article-card__cover {
+    .bili-article-card .bili-article-card__cover,
+    .bili-header .header-entry-avatar {
         border-color: var(--color-42) !important;
     }
     .history-panel-popover .header-tabs-panel__item:not(.header-tabs-panel__item--active) {
@@ -2090,7 +2098,11 @@
         mix-blend-mode: color-burn!important;
     }
     .upload-panel-popover .upload-item .item-icon rect,
-    .upload-panel-popover .upload-item .item-icon path:not([stroke-linejoin="round"]) {
+    .upload-panel-popover .upload-item .item-icon path:not([stroke-linejoin="round"]),
+    svg.link-icon--right path,
+    svg.link-icon path,
+    svg.device-icon path,
+    svg.up-icon path {
         fill: var(--color-86)!important
     }
 }
