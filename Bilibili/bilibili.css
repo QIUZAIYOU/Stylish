@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0910.1711
+	@version        2021.0914.1104
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0910.1711
+	* © 最后更新：2021.0914.1104
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1869,7 +1869,9 @@
     div[class*="bili-rank-list-"] ul[class*="__list"],
     div[class*="bili-rank-list-"] li[class*="__item"]:nth-of-type(2n+1),
     .header-login-entry,
-    .avatar-panel-popover .level-item .level-item__bar .level-progress {
+    .avatar-panel-popover .level-item .level-item__bar .level-progress,
+    .bili-header .bili-header__channel,
+    .bili-header .bili-header__banner {
         background-color: var(--color-21) !important;
     }
     .home-header__channel .channel-entry-more__link,
@@ -1893,7 +1895,17 @@
     [class*="bili-rank-list-"] [class*="-card__popover"],
     .level-intro-popover .level-intro,
     .channel-entry-popover,
-    .n-drawer {
+    .n-drawer,
+    .bili-header .bili-header__channel .channel-entry-more__link,
+    .bili-header .bili-header__channel .channel-link,
+    .bili-header.fixed-top .bili-header__bar,
+    .bili-header .live,
+    .bili-header .game,
+    .bili-header .manga,
+    .bili-header .bili-header-channel-panel,
+    .bili-header .bili-header-channel-panel .channel-panel__column,
+    .download-entry-popover.download-entry-popover,
+    .bili-footer {
         background-color: var(--color-2c) !important;
     }
     .bangumi-card-list .track-switch button:not(.is-active):hover,
@@ -1902,7 +1914,11 @@
     .avatar-panel-popover .links-item .single-link-item:hover,
     .avatar-panel-popover .logout-item:hover,
     .elevator-core:hover,
-    .elevator-core:active {
+    .elevator-core:active,
+    .bili-header .histories .history-item,
+    .bili-header .trending-item.active,
+    .bili-header .trending-item:hover,
+    .bili-header .trending-item:focus {
         background-color: var(--color-27) !important;
     }
     .elevator .bg23 {
@@ -1969,7 +1985,22 @@
     .level-intro-popover .level-intro__content--title,
     .elevator-core .name,
     .elevator-core .icon,
-    .elevator-head {
+    .elevator-head,
+    .bili-header.fixed-top ul li a,
+    .bili-header.fixed-top .bili-header__bar .mini-header-left-entry .entry-title,
+    .bili-header.fixed-top .bili-header__bar .mini-header-left-entry .default-entry,
+    .bili-header.fixed-top .bili-header__bar .mini-header-left-entry .loc-mc-box__text,
+    .bili-header.fixed-top .bili-header__bar .mini-header-left-entry .download-entry,
+    .bili-header .header .clear,
+    .bili-header.fixed-top .bili-header__bar .right-entry__outside .right-entry-text,
+    .bili-header.fixed-top .bili-header__bar .right-entry__outside .right-entry-icon,
+    .bili-header .live .title,
+    .bili-header .manga-right-title,
+    .bili-header .manga-right-list-item-text,
+    .bili-header .manga-right-list-item:not(:nth-child(-n+3)) .manga-right-list-item-index,
+    .bili-header .login-panel-popover .tips,
+    .download-entry-popover.download-entry-popover .txt,
+    .bili-article-card .bili-article-card__icon {
         color: var(--color-86) !important;
     }
     .bili-video-card .bili-video-card__info--owner,
@@ -1990,7 +2021,8 @@
     .avatar-panel-popover .counts-item .single-count-item .count-text,
     .avatar-panel-popover .level-item .level-item__text,
     .avatar-panel-popover .coins-item .coin-item__num,
-    .level-intro-popover .level-intro__content--info {
+    .level-intro-popover .level-intro__content--info,
+    .bili-article-card .bili-article-card__info--stats {
         color: var(--color-66) !important;
     }
     .live-card .up .txt .desc {
@@ -2001,7 +2033,9 @@
     .login-panel-popover .login-btn,
     .avatar-panel-popover .vip-item__link,
     .elevator-core.is-active span,
-    .elevator-core.is-active .icon {
+    .elevator-core.is-active .icon,
+    .bili-header.back-top ul li a,
+    .bili-header .login-panel-popover .login-btn {
         color: var(--color-ff) !important;
     }
     .home-header.fixed-top .home-header__bar .mini-header-left-entry li:hover a,
@@ -2016,7 +2050,8 @@
     .bili-live-card .bili-live-card__info--uname:hover,
     p[class*="-card__info--pub"]:hover,
     p[class*="-card__info--subtitle"]:hover,
-    [class*="-card__info--title"]:hover {
+    [class*="-card__info--title"]:hover,
+    .bili-header .header .clear:hover {
         color: var(--bili-blue) !important;
     }
     /* -- 边框 -- */
@@ -2031,11 +2066,21 @@
     .favorite-panel-popover__nav,
     .favorite-panel-popover__content .content-bottom,
     .favorite-panel-popover__content .content-bottom__btn--view,
-    .history-panel-popover .header-tabs-panel {
+    .history-panel-popover .header-tabs-panel,
+    .bili-header .bili-header__channel .channel-entry-more__link,
+    .bili-header .bili-header__channel .channel-link,
+    .bili-header .live-left-list,
+    .bili-header .game-left,
+    .bili-header .manga-left,
+    .bili-header .bili-header-channel-panel .channel-panel__column,
+    .bili-article-card .bili-article-card__cover {
         border-color: var(--color-42) !important;
     }
     .history-panel-popover .header-tabs-panel__item:not(.header-tabs-panel__item--active) {
         border-color: var(--color-2c) !important;
+    }
+    .bili-header .bili-header-channel-panel .channel-panel__column:last-child {
+        border: none!important
     }
     /* -- 其他 -- */
     .list-state-loading i {
