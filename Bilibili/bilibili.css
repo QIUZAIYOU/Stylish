@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.0914.1104
+	@version        2021.0917.0812
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.0914.1104
+	* © 最后更新：2021.0917.0812
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1871,7 +1871,10 @@
     .header-login-entry,
     .avatar-panel-popover .level-item .level-item__bar .level-progress,
     .bili-header .bili-header__channel,
-    .bili-header .bili-header__banner {
+    .bili-header .bili-header__banner,
+    .bili-video-card__wrap,
+    .bili-movie-card__wrap,
+    .bili-cheese-card__wrap {
         background-color: var(--color-21) !important;
     }
     .home-header__channel .channel-entry-more__link,
