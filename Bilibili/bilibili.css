@@ -2319,7 +2319,8 @@ regexp("https://space.bilibili.com/[0-9]+/dynamic") {
     body,
     .fixed-bg,
     .extension-wrapper iframe,
-    .main-panel {
+    .main-panel,
+    #app {
         background: var(--color-21) !important;
     }
     .card-list .tab-bar,
@@ -5745,7 +5746,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #page-fav .fav-main .fav-video-list.is-batch .small-item.selected,
     #page-fav .fav-main .fav-video-list.is-batch .small-item:hover,
     .search-page,
-    #page-index .col-1.shielding:after {
+    #page-index .col-1.shielding:after,
+    .forw-area {
         background-color: var(--color-2c) !important;
     }
     .list-create,
@@ -5986,7 +5988,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .card .media-list .content .count-box,
     .search-nav-item .num,
     #page-index .col-1.be-shielding:after,
-    #page-index .col-1.shielding:after {
+    #page-index .col-1.shielding:after,
+    .comm-loading>span {
         color: var(--color-66) !important;
     }
     .contribution-sidenav .contribution-item.cur .num,
@@ -6226,6 +6229,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     }
     .h .h-forbid .f-wrap .f-icon {
         filter: invert(48%) sepia(72%) saturate(2051%) hue-rotate(326deg) brightness(98%) contrast(100%) !important;
+    }
+    .comm-loading .loading-icon {
+        filter: invert(50%) sepia(26%) saturate(0%) hue-rotate(154deg) brightness(100%) contrast(96%)!important;
     }
 }
 
