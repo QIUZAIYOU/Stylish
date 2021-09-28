@@ -1928,7 +1928,8 @@
     .bili-header .header-history-article:hover,
     .bili-header .header-history-video:hover,
     .bili-header .center-search-container .center-search__bar #nav-searchform:before,
-    .bili-header .center-search-container .center-search__bar .nav-search-input {
+    .bili-header .center-search-container .center-search__bar .nav-search-input,
+    .bili-header .message-entry-popover .message-inner-list__item:hover {
         background-color: var(--color-27) !important;
     }
     .elevator .bg23 {
