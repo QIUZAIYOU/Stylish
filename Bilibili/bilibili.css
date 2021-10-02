@@ -4780,7 +4780,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .list-container .list-info-block .right-side .title,
     .list-container .article-list-block .article-item .item-holder .index,
     .view-note .ql-editor,
-    .view-note .ql-tag-blot .time-tag-item {
+    .view-note .ql-tag-blot .time-tag-item,
+    .normal-article-holder .color-default {
         color: var(--color-86) !important;
     }
     blockquote,
