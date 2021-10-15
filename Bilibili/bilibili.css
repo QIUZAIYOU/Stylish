@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.1008.0852
+	@version        2021.1015.1723
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.1008.0852
+	* © 最后更新：2021.1015.1723
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -95,7 +95,7 @@
 
 @-moz-document domain("bilibili.com") {
     /* ===通用属性=== */
-     :root {
+    :root {
         --color-14: #141414 !important;
         --color-1b: #1b1b1b !important;
         --color-21: #212121 !important;
@@ -238,25 +238,25 @@
             line-height: 13px;
         } */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-blue) !important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-blue) !important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
@@ -1879,7 +1879,8 @@
     .bili-header .bili-header__banner,
     .bili-video-card__wrap,
     .bili-movie-card__wrap,
-    .bili-cheese-card__wrap {
+    .bili-cheese-card__wrap,
+    .bili-live-card__wrap {
         background-color: var(--color-21) !important;
     }
     .home-header__channel .channel-entry-more__link,
@@ -5014,25 +5015,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://www.bilibili.com/cheese") {
     /* ===课堂=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-green) !important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-green) !important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
@@ -6797,25 +6798,25 @@ url-prefix("https://www.bilibili.com/bangumi") {
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
     /* ===会员购=== */
     /* ===浏览器滚动条=== */
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px !important;
         height: 6px !important;
     }
-     ::-webkit-scrollbar-track-piece {
+    ::-webkit-scrollbar-track-piece {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-shop-pink) !important;
     }
-     ::-webkit-scrollbar-thumb:horizontal {
+    ::-webkit-scrollbar-thumb:horizontal {
         width: 5px !important;
         border-radius: 6px !important;
         background-color: var(--bili-shop-pink) !important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         border-radius: 0 !important;
         background-color: var(--color-14) !important;
     }
