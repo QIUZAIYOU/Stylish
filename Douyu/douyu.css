@@ -4540,7 +4540,8 @@ url-prefix("http://www.douyu.com") {
     .compay-way-con-inner [class*="-pay-tips"],
     .shark-webp .PlayerToolbar-couponIcon,
     .FudaiGiftToolBarTips,
-    .FansShopTips {
+    .FansShopTips,
+	.HeaderTask {
         opacity: 0!important;
         display: none!important;
     }
