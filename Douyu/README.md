@@ -1,4 +1,4 @@
-# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.09.08-blue)
+# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.10.20-blue)
 
 ![夜间斗鱼 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/douyu/StylishCover.png)
 
@@ -46,6 +46,8 @@
 ## 历史更新
 
 ### 2021
+
+`10.20 10:50`：修复直播卡片封面丢失问题。
 
 `09.08 18:26`：新增直播间榜单专属徽章自定义屏蔽选项，默认开启屏蔽。
 
