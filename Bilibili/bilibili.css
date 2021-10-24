@@ -4553,7 +4553,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .list-item.active,
     .bili-im,
     .list-item .name.name-loading,
-    .action-menu .menu-list a:hover {
+    .action-menu .menu-list a:hover,
+    .reply-textarea {
         background-color: var(--color-27) !important;
     }
     .msg-notify hr,
@@ -4584,7 +4585,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .input-box.placeholder-shown::before,
     .config,
     .radio-selector,
-    .detail .content {
+    .detail .content,
+    .reply-textarea {
         color: var(--color-86) !important;
     }
     .line-2,
@@ -4627,7 +4629,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .btn-box,
     .static-popup,
     .action-menu .menu-list,
-    .action-menu .menu-list:before {
+    .action-menu .menu-list:before,
+    .reply-box .center-box .reply-textarea {
         border-color: var(--color-42) !important;
     }
     .count-2 .avatar:first-child::before {
