@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.1025.1524
+	@version        2021.1025.2337
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.1025.1524
+	* © 最后更新：2021.1025.2337
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -2231,7 +2231,7 @@ url-prefix("https://message.bilibili.com/pages/nav/index_new_sync") {
         background: transparent!important
     }
     /* -- 字体 -- */
-    .out-container.new-container .tab-bar .tab-item[data-v-c0793b8a]:not(.active) {
+    .out-container.new-container .tab-bar .tab-item:not(.active) {
         color: var(--color-66) !important;
     }
     /* -- 边框 -- */
@@ -6620,7 +6620,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .home-wrap .home-input .list li:hover {
         background-color: var(--color-27) !important;
     }
-    .filter-wrap .filter-wrap_bottom {
+    .filter-wrap .filter-wrap_bottom,
+    .all-user-item .user-row .row-2 .live-entry:after {
         background-color: var(--color-42) !important;
     }
     .up-feedback .up-fb-btn:hover {
@@ -6701,7 +6702,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
     #live-list .headline-room h3,
     .game-item .info .title,
     .game-item .info .type,
-    .pgc-item .right-info .intros .value {
+    .pgc-item .right-info .intros .value,
+    .all-user-item .user-row .row-2 .num,
+    .all-user-item .user-row .row-3 {
         color: var(--color-86) !important;
     }
     .game-item .info .grade-wrap .player-grade,
@@ -6732,7 +6735,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .video-info-module .v-info,
     .video-info-module .v-preview .txt,
     .video-info-module .v-data span,
-    .activity-item .info .desc {
+    .activity-item .info .desc,
+    .all-user-item .u-videos .video-item .vi-row-wrap .vi-row {
         color: var(--color-66) !important;
     }
     .bili-footer .boston-postcards li .tips,
@@ -6743,7 +6747,8 @@ url-prefix("https://www.bilibili.com/bangumi") {
     .home-wrap .home-input .searchBtn,
     .home-wrap .home-suggest .hot-search .item .num.special,
     .user-item .attention-btn,
-    #pgc-navigate-wrap .ep-box .ep-sub .ep-item:hover {
+    #pgc-navigate-wrap .ep-box .ep-sub .ep-item:hover,
+    .all-user-item .user-row .attention-btn {
         color: var(--color-ff) !important;
     }
     .notification-tips a,
@@ -6825,6 +6830,9 @@ url-prefix("https://www.bilibili.com/bangumi") {
         outline: none !important;
     }
     /* -- 其他 -- */
+    .all-user-item .u-videos .video-item .vi-row-wrap .vi-row svg {
+        fill: #666666!important
+    }
 }
 
 @-moz-document url-prefix("https://show.bilibili.com/platform") {
@@ -8815,7 +8823,7 @@ url-prefix("https://cm.bilibili.com/") {
     .bl-switch::after,
     .index_24yI6t8z,
     .Item_1EohdhbR .Item_2A9JA1Uf:hover,
-    .no__data .no__data_txt p[data-v-4460078e]:before {
+    .no__data .no__data_txt p:before {
         background-color: var(--color-21) !important;
     }
     .area-list-panel .list-item:hover,
@@ -8970,10 +8978,10 @@ url-prefix("https://cm.bilibili.com/") {
     .area-name,
     .index_24yI6t8z,
     .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_2GEmdhg6,
-    .all__area-top-ctnr .top__header-wrap .title[data-v-3a019c1e],
-    .all__special-area-recommend-list-ctnr .header__wrap .sub-title[data-v-245b105f],
-    .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count[data-v-245b105f],
-    .tabs .tabs__normal-item[data-v-ae5ddaa0] {
+    .all__area-top-ctnr .top__header-wrap .title,
+    .all__special-area-recommend-list-ctnr .header__wrap .sub-title,
+    .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count,
+    .tabs .tabs__normal-item {
         color: var(--color-86) !important;
     }
     .activity-item-ctnr .info-ctnr .first-line .time,
@@ -8996,7 +9004,7 @@ url-prefix("https://cm.bilibili.com/") {
     .no-glory,
     .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_29AwQRu5 .Item_QAOnosoB,
     .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_29AwQRu5 .Item_3Iz_3buh,
-    .no__data .no__data_txt[data-v-4460078e] {
+    .no__data .no__data_txt {
         color: var(--color-66) !important;
     }
     p span[style*="background:yellow"] {
@@ -9028,11 +9036,11 @@ url-prefix("https://cm.bilibili.com/") {
     .index_24yI6t8z.index_26Me1j3E,
     .index_24yI6t8z:active,
     .index_24yI6t8z:hover,
-    .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count .highlight[data-v-245b105f],
+    .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count .highlight,
     .link-navbar a:hover span,
-    .normal-active[data-v-ae5ddaa0],
-    .tabs .tabs__normal-item.active[data-v-ae5ddaa0],
-    .tabs .tabs__normal-item[data-v-ae5ddaa0]:hover {
+    .normal-active,
+    .tabs .tabs__normal-item.active,
+    .tabs .tabs__normal-item:hover {
         color: var(--bili-blue) !important;
     }
     #rank-list-ctnr-box .tabs.isHundred .item.active {
@@ -9075,10 +9083,10 @@ url-prefix("https://cm.bilibili.com/") {
     .gift-panel-box .gift-reveal-header,
     .link-input,
     .Item_1EohdhbR .Item_2A9JA1Uf:hover,
-    .no__data .no__data_txt[data-v-4460078e],
-    .no__data .no__data_txt[data-v-4460078e]:after,
-    .no__data .no__data_txt[data-v-4460078e]:before,
-    .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count[data-v-245b105f] {
+    .no__data .no__data_txt,
+    .no__data .no__data_txt:after,
+    .no__data .no__data_txt:before,
+    .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count {
         border-color: var(--color-42) !important;
     }
     .tag-default.current,
@@ -9088,9 +9096,9 @@ url-prefix("https://cm.bilibili.com/") {
     .choice-item:hover,
     .gift-panel-box .gift-reveal-header .gift-tab:hover .name,
     .index_24yI6t8z:hover,
-    .normal-active[data-v-ae5ddaa0],
-    .tabs .tabs__normal-item.active[data-v-ae5ddaa0],
-    .tabs .tabs__normal-item[data-v-ae5ddaa0]:hover {
+    .normal-active,
+    .tabs .tabs__normal-item.active,
+    .tabs .tabs__normal-item:hover {
         border-color: var(--bili-blue) !important;
     }
     .arrow {
