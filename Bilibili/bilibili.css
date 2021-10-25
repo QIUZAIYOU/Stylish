@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.1024.2153
+	@version        2021.1025.1524
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.1024.2453
+	* © 最后更新：2021.1025.1524
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -354,7 +354,10 @@
     .header-popover-avatar .link:hover,
     .header-popover-download .link:hover,
     .bili-header .upload-panel-popover .upload-item:hover,
-    .bili-header .game-right-list-item:hover {
+    .bili-header .game-right-list-item:hover,
+    .bili-header .suggest-item.active,
+    .bili-header .suggest-item:hover,
+    .bili-header .suggest-item:focus {
         background-color: var(--color-27) !important;
     }
     .bilibili-search-suggest .suggest-item:hover,
@@ -418,7 +421,10 @@
     .header-popover-download .link div p:first-child,
     .van-popper-avatar .level-intro,
     .mini-header .right-entry .right-entry__outside .right-entry-text,
-    .mini-header .left-entry .mini-header__title {
+    .mini-header .left-entry .mini-header__title,
+    .bili-header .trending-item .trendings-rank,
+    .bili-header .fold-text,
+    .bili-header .fold-icon {
         color: var(--color-86) !important;
     }
     .van-popper-history .header-video-card .video-info .desc,
@@ -454,13 +460,16 @@
     .van-popper-login .btn-box .btn.reg-btn,
     .header-popover-avatar .link:hover span,
     .header-popover-download .link:hover div p:first-child,
-    .van-popper-avatar .level-intro__link {
+    .van-popper-avatar .level-intro__link,
+    .bili-header .trending-item .trendings-rank.search-rank-top,
+    .bili-header .fold-text:hover {
         color: var(--bili-blue) !important;
     }
     .van-popper-avatar .nickname[style*="rgb(251, 114, 153)"] {
         color: var(--bili-pink) !important;
     }
-    .nav-link .nav-link-ul .nav-link-item .link .navbar_pullup path {
+    .nav-link .nav-link-ul .nav-link-item .link .navbar_pullup path,
+    .bili-header .histories .history-item .close svg {
         fill: var(--color-86) !important;
     }
     .international-header .mini-type .nav-search #nav_searchform,
