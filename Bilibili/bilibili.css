@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.1025.2337
+	@version        2021.1102.2056
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -39,7 +39,7 @@
     /*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.1025.2337
+	* © 最后更新：2021.1102.2056
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -8810,11 +8810,13 @@ url-prefix("https://cm.bilibili.com/") {
     .rank-list-ctnr,
     .live-room-app .app-content .app-body .player-and-aside-area .aside-area .rank-list-section,
     .follow-ctnr .right-part,
-    .link-input {
+    .link-input,
+    .imagesbox .boost-img {
         background: var(--color-2c) !important;
     }
     .chat-history-panel,
-    .more-btn-cntr {
+    .more-btn-cntr,
+    .imagesbox .boost-control {
         background: var(--color-27) !important;
     }
     .search-bar,
@@ -8981,7 +8983,8 @@ url-prefix("https://cm.bilibili.com/") {
     .all__area-top-ctnr .top__header-wrap .title,
     .all__special-area-recommend-list-ctnr .header__wrap .sub-title,
     .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count,
-    .tabs .tabs__normal-item {
+    .tabs .tabs__normal-item,
+    .imagesbox .boost-control li i {
         color: var(--color-86) !important;
     }
     .activity-item-ctnr .info-ctnr .first-line .time,
