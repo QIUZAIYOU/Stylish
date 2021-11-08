@@ -3,15 +3,14 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.1019.1655
+@version        2021.0901.1007
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
     trebleist_ON "开" <<<EOT 
 	#rs,
 	#foot,
-	[tpl="recommend_list"],[tpl="jy_course_and_org_pc"] [class*="course-new-style"]>div.c-row,
-    #rs_new{
+	[tpl="recommend_list"],[tpl="jy_course_and_org_pc"] [class*="course-new-style"]>div.c-row{
 		display: none!important;
 	}
 
@@ -142,6 +141,7 @@
 	div#content_left>div[class][mu*="typhoon"]>.c-row,
 	div#content_left>div[class][mu*="phoneSearch"]>.c-border,
 	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div>.c-row>.c-span12>.c-border,
+    div#content_left>div[class][mu*="zhuanlan.zhihu.com"]>div>.c-row>.c-span12>.c-border,
 	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div>.c-row>.c-span12>.c-border>div:not([class])>.c-row{
 		flex-direction: column!important;
 	}
@@ -237,7 +237,7 @@
     /*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.1019.1655
+	 * © 最后更新：2021.0901.1007
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -275,27 +275,27 @@ url-prefix("http://www.baidu.com") {
         top: -9999px!important;
     }
     /*=== Chrome - 修改滚动条 ===*/
-     ::-webkit-scrollbar {
+    ::-webkit-scrollbar {
         width: 6px!important;
         height: 6px!important;
     }
-     ::-webkit-scrollbar-track-piece,
+    ::-webkit-scrollbar-track-piece,
     .opui-scroll-ctrl-scroll .opui-scroll-axis {
         background-color: #fff!important;
         border-radius: 0!important;
     }
-     ::-webkit-scrollbar-thumb:vertical {
+    ::-webkit-scrollbar-thumb:vertical {
         height: 5px!important;
         background-color: #3385ff!important;
         border-radius: 0!important;
     }
-     ::-webkit-scrollbar-thumb:horizontal,
+    ::-webkit-scrollbar-thumb:horizontal,
     .opui-scroll-ctrl-scroll .opui-scroll-slider {
         width: 5px!important;
         background-color: #3385ff!important;
         border-radius: 0!important;
     }
-     ::-webkit-scrollbar-corner {
+    ::-webkit-scrollbar-corner {
         background-color: #fff!important;
         border-radius: 0!important;
     }
@@ -626,8 +626,7 @@ url-prefix("https://www.baidu.com/baidu?") {
     .op_translation_lagtip_data a.op_translation_lag_seldata,
     .op_translation_lagtip_data a.op_translation_lag_data:hover,
     .op_translation_sel_exchange,
-    .c-btn:active,
-    #rs_new {
+    .c-btn:active {
         background: #fff!important;
     }
     .soutu-btn {
@@ -918,7 +917,7 @@ url-prefix("https://www.baidu.com/baidu?") {
     #container {
         width: 1200px!important;
         margin: 0 auto!important;
-        padding-bottom: 0!important;
+        padding-bottom: 86px!important;
     }
     #content_left {
         width: auto!important;
@@ -955,8 +954,7 @@ url-prefix("https://www.baidu.com/baidu?") {
     .c-container,
     .result,
     .video_list,
-    table[data-tpl="hint_safeinfo_left_level"],
-    #rs_new {
+    table[data-tpl="hint_safeinfo_left_level"] {
         padding: 25px!important;
         border-radius: 10px!important;
         margin: 0 auto!important;
@@ -982,23 +980,13 @@ url-prefix("https://www.baidu.com/baidu?") {
         border-top-right-radius: 0!important;
         padding-top: 0!important;
     }
-    .new-pmd.c-container,
-    #rs_new {
-        width: 560px;
-        word-wrap: break-word;
-        word-break: break-all;
-        color: #333;
-        font-size: 13px;
-        line-height: 21px;
-    }
     .c-container .c-container {
         width: 100%!important;
         padding: 0!important;
     }
     .c-container:hover,
     .result:hover,
-    .c-group-wrapper:hover,
-    #rs_new:hover {
+    .c-group-wrapper:hover {
         box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1)!important;
     }
     .c-container .c-container:hover {
@@ -1047,22 +1035,13 @@ url-prefix("https://www.baidu.com/baidu?") {
         text-align: center!important;
     }
     #page {
-        width: -moz-fit-content;
-        width: fit-content;
-        margin: 30px auto!important;
+        margin: 30px auto 40px!important;
         box-sizing: border-box!important;
-        padding: 0!important;
+        padding: 0 15px!important;
         overflow: hidden!important;
-    }
-    #page [class*='page-inner'] {
-        padding: 0
-    }
-    #page strong {
-        background: #3072f6!important;
-        color: #fff!important
-    }
-    #page strong span.pc {
-        color: #fff!important
+        position: absolute!important;
+        left: 50%!important;
+        transform: translateX(-50%)!important;
     }
     #form,
     form[name="f"] {
