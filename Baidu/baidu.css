@@ -134,7 +134,6 @@
 		overflow-y: hidden!important;
 		overflow-x: scroll!important;
 	}
-    div#content_left>.result-op[tpl="wenda_abstract_pc"],
 	div#content_left>div[class][mu*="天气"] .c-row,
 	div#content_left>div[class] .wenda-abstract-wrap-new,
 	div#content_left>div[class][tpl="site"]>.c-border,
@@ -144,6 +143,7 @@
 	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div>.c-row>.c-span12>.c-border,
 	div#content_left>div[class][mu*="zhuanlan.zhihu.com"]>div>.c-row>.c-span12>.c-border,
 	div#content_left>div[class][mu*="blog.csdn.net"]>div>.c-row>.c-span12>.c-border,
+	div#content_left>.result-op[tpl="wenda_abstract_pc"]>div>.c-row>.c-span12>.c-border,
 	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div>.c-row>.c-span12>.c-border>div:not([class])>.c-row{
 		flex-direction: column!important;
 	}
