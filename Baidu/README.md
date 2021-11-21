@@ -1,4 +1,4 @@
-# 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.11.08-blue)
+# 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.11.21-blue)
 
 ![简百度 Simple Baidu](https://www.asifadeaway.com/Stylish/baidu/StylishCover.png)
 
@@ -24,6 +24,8 @@
 ## 历史更新
 
 ### 2021
+
+`11.21`：修复搜索结果页面空白内容及三列模式下未打开百度百科秒懂百科时视频占位元素被错误显示的问题。
 
 `10.19`：修复搜索结果页面分页失效及相关搜索元素错位问题。
 
