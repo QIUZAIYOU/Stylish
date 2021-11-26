@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.1121.1521
+@version        2021.1126.1518
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -81,7 +81,7 @@
 		max-height:310px!important;
 	}
 	div#content_left>div[class].new-pmd .c-gap-top-large,
-	.new-pmd .c-row:not([class*='bk_polysemy_'] [class*='video-wrapper_'][class*='hide_']),
+	.new-pmd .c-row:not([class*='bk_polysemy_'] [class*='video-wrapper_'][class*='hide_'],[class*='select-wrapper']),
 	.c-border,
 	div#content_left>div[class].new-pmd .c-tabs.c-sub-tabs .c-tabs-content {
 		width: 100%!important;
@@ -233,6 +233,12 @@
 	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_tip{
 		margin-top: 0!important;
 	}
+	[class*='board_'] [class*='type-map_'] [class*='type-wrap_']{
+		width:36%!important
+	}
+	.new-pmd .c-span5{
+		width:100px!important
+	}
 	EOT;
 	trebleList_OFF "关" <<<EOT /*[[trebleList]]*\/ EOT;
 }
@@ -241,7 +247,7 @@
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.1121.1521
+	 * © 最后更新：2021.1126.1518
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -249,7 +255,10 @@
 }
 @-moz-document url-prefix("https://www.baidu.com"), url-prefix("http://www.baidu.com") {
 	/*=== 垃圾元素屏蔽 ===*/
-	.qrcodeCon, #u1 > a.bri, #content_right, #content_bottom, [mu*="http://xin.baidu.com"], [mu*="http://shouji.baidu.com"], #s_wrap, .s_bri, .s-skin, .s-top-nav, #result_logo img, .s_logo img, div[fk="今日新鲜事"], .rrecom-btn-parent, #_mask, .ecom-result, div[tpl="zp_exact_new"], div#content_left > div:not([class]), table.result-op {
+	.qrcodeCon, #u1 > a.bri, #content_right, #content_bottom, #s_wrap, .s_bri, .s-skin, .s-top-nav, #result_logo img, .s_logo img, div[fk="今日新鲜事"], .rrecom-btn-parent, #_mask, .ecom-result, div[tpl="zp_exact_new"], div#content_left > div:not([class]), table.result-op {
+		display: none!important;
+	}
+	[mu*="xin.baidu.com"], [mu*="shouji.baidu.com"] {
 		display: none!important;
 	}
 	div.xpath-log[mu*="http://fanyi.baidu.com"] {
