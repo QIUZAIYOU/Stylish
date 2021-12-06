@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2021.1126.1523
+@version        2021.1206.1138
 @license        NO-REDISTRIBUTION
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -16,6 +16,7 @@
 	}
 
 	#container.sam_newgrid #content_left {
+		margin: 0 auto!important;
 		width: 1200px!important;
 		display: flex!important;
 		justify-content: space-between!important;
@@ -250,7 +251,7 @@
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2021.1126.1523
+	 * © 最后更新：2021.1206.1138
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
