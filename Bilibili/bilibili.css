@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.1224.1500
+	@version        2021.1226.1439
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.1224.1500
+	* © 最后更新：2021.1226.1439
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -370,7 +370,7 @@
 	.custom-like-icon.zan:not(.zan-a-hover) {
 		background-image: url(//www.asifadeaway.com/Stylish/bilibili/custom-like-icon_zan.svg) !important;
 	}
-	.bb-comment a:not(.more-link), .comment-bilibili-fold a {
+	.bb-comment a:not(.more-link, .paging-box .prev, .paging-box .next, .paging-box .tcd-number), .comment-bilibili-fold a {
 		color: var(--bili-blue) !important;
 	}
 	.bb-comment .operation .opera-list, .comment-bilibili-fold .operation .opera-list, .bb-comment .comment-send .comment-emoji, .comment-bilibili-fold .comment-send .comment-emoji, .bb-comment .comment-list .list-item .info, .comment-bilibili-fold .comment-list .list-item .info, .bb-comment .no-more-reply, .comment-bilibili-fold .no-more-reply, .bb-comment .comment-send .textarea-container textarea, .comment-bilibili-fold .comment-send .textarea-container textarea, .user-card .info .sign, .bb-comment .comment-list .list-item .reply-box .view-more, .comment-bilibili-fold .comment-list .list-item .reply-box .view-more, .bb-comment .comment-list .list-item .con .vote-container .text-area .text-content, .comment-bilibili-fold .comment-list .list-item .con .vote-container .text-area .text-content, .bb-comment .comment-list .list-item .info .reply-tags span, .comment-bilibili-fold .comment-list .list-item .info .reply-tags span, .bb-comment .comment-loading, .comment-bilibili-fold .comment-loading, .bb-comment .comment-list .list-item .user-face .hot-follow .follow-btn.followed, .comment-bilibili-fold .comment-list .list-item .user-face .hot-follow .follow-btn.followed, .bb-comment .no-login .comment-submit, .comment-bilibili-fold .no-login .comment-submit, .bb-comment .no-login .baffle, .bb-comment .comment-list .list-item .user .text-con, .comment-bilibili-fold .no-login .baffle, .comment-bilibili-con .btn .btn-cancel, .comment-bilibili-con .t, .comment-bilibili-con .reason-box dl dt, .comment-bilibili-con .reason-box dl dd, .bb-comment .comment-list .list-item .text, .comment-bilibili-fold .comment-list .list-item .text, .feed-tag .core-style, .feed-tag .box-toggle, .video-container .text-area .title, .card .button-area .more-button, .card .more-panel, .comment-title-block, .bb-comment .comment-list .list-item .user .name, .comment-bilibili-fold .comment-list .list-item .user .name, .bb-comment .comment-list .list-item .reply-box .view-more .btn-more, .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more, .bb-comment .comment-send .textarea-container .ipt-txt, .comment-bilibili-fold .comment-send .textarea-container .ipt-txt, .bb-comment .comment-send-lite .textarea-container .ipt-txt, .comment-bilibili-fold .comment-send-lite .textarea-container .ipt-txt, .bb-comment .comment-send .comment-emoji, .comment-bilibili-fold .comment-send .comment-emoji, .bb-comment .comment-send-lite .comment-emoji, .comment-bilibili-fold .comment-send-lite .comment-emoji, .bb-comment .loading-state, .comment-bilibili-fold .loading-state, .comment-wrap .header .title-h2, .bb-comment .comment-header .tabs-order li, .comment-bilibili-fold .comment-header .tabs-order li, .textarea-container textarea, .textarea-container .comm-tool .comm-emoji .bp-emoji-box, .textarea-container .comm-tool .comm-emoji .bp-emoji-box .static-popup .title {
