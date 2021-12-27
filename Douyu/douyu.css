@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `⭐1.常用页面夜间模式全覆盖⭐2.去除广告⭐3.去除导航栏中游戏等无用杂项⭐4.部分icon更换使之更符合当前主题⭐5.自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素⭐㊖ 凡涉及到金钱交易（充值、付费购买等）等页面，若遇到因本样式导致文字颜色看不清的情况，请关闭本样式之后再进行金钱交易操作。否则因未关闭本样式导致的财产损失与本样式及作者无关。若发现文字看不清的情况请及时反馈。`
-@version        2021.1116.1900
+@version        2021.1227.1259
 @license        CC-BY-NC-ND-4.0
 @preprocessor   uso
 @advanced dropdown UserLevel "用户等级屏蔽" {
@@ -80,7 +80,7 @@
 	/*=== 
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2021.1116.1900
+	* © 最后更新：2021.1227.1259
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/240/nightmode-for-douyu-com
@@ -4733,7 +4733,7 @@ url-prefix("http://www.douyu.com") {
 	.FansRankList-itemRank,
 	.FansRankAllList-itemRank,
 	.Header-follow-tab,
-	.VideoAnchorItem:hover {
+	.VideoAnchorItem:hover, .HistoryList > a:hover, .FollowList > a:hover {
 		background-color: var(--color-37)!important;
 	}
 	.Header-follow-tab.is-active {
@@ -4994,8 +4994,11 @@ url-prefix("http://www.douyu.com") {
 	.footer-protocol a,
 	.PlayerToolbar-Wealth,
 	.Search-recommend-info h3,
-	.Header-history-tab:not(.is-active), .DyRecCover-intro {
+	.Header-history-tab:not(.is-active), .DyRecCover-intro, .FollowTitle, .HistoryTitle {
 		color: var(--color-86)!important;
+	}
+	.HistoryList .HistoryName, .FollowList .FollowName, .FollowList .FollowPlayTime {
+		color: var(--color-66)!important;
 	}
 	.RichRankList-item.is-stealth .RichRankList-name {
 		color: #971dff!important;
@@ -5102,7 +5105,7 @@ url-prefix("http://www.douyu.com") {
 	.Title-anchorName-block:hover,
 	.Search-default-item:hover,
 	.VideoAnchorItem:hover .VideoAnchorItem-title,
-	.VideoEntry-tabItem.is-active .VideoEntry-text {
+	.VideoEntry-tabItem.is-active .VideoEntry-text, .FollowTitle:hover, .HistoryTitle:hover, .HistoryList > a:hover .HistoryTitle, .FollowList > a:hover .FollowTitle {
 		color: var(--douyu-orange-4)!important;
 	}
 	.layout-Player-announce .AnchorAnnounce > h3,
