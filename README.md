@@ -12,7 +12,7 @@
 
 - 斗鱼：[夜间斗鱼](https://userstyles.world/style/240/nightmode-for-douyu-com) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.12.27-blue)
 - 知乎：[夜间知乎](https://userstyles.world/style/242/nightmode-for-zhihu-com) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.12.20-blue)
-- 哔哩：[夜间哔哩](https://userstyles.world/style/241/nightmode-for-bilibili-com) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.12.26-blue)
+- 哔哩：[夜间哔哩](https://userstyles.world/style/241/nightmode-for-bilibili-com) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.12.27-blue)
 - 百度：[简百度](https://userstyles.world/style/243/simple-baidu) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2021.12.06-blue)
 
 分支：
