@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.1228.1908
+	@version        2021.1229.0930
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新： 2021.1228.1908
+	* © 最后更新： 2021.1229.0930
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -2894,10 +2894,10 @@
 		background: transparent !important;
 	}
 	/* -- 字体 -- */
-	.video-item.list .type, .search-wrap .search-block .input-wrap input, .suggest-wrap .title span, .suggest-wrap .vt-text .rank, .home-wrap .home-suggest .hotlist .num, .home-wrap .home-suggest .title .delete-history, .home-wrap .home-input .content, .user-item .attention-btn.followed, .user-item .attention-btn.followed:hover, #user-list .dropdown-wrap .select-wrap .bili-dropdown .dropdown-list .dropdown-item, #user-list .dropdown-wrap .select-wrap .bili-dropdown, .bangumi-item .right-info .headline .bangumi-label, .pgc-item .right-info .headline .pgc-label, #pgc-navigate-wrap .ep-box .ep-sub .ep-item, .live-user-item .item-right .status.free, .live-user-item .item-right .uname, #live-list .headline-live h3, .live-room-item .item-title, #live-list .headline-room h3, .game-item .info .title, .game-item .info .type, .pgc-item .right-info .intros .value, .all-user-item .user-row .row-2 .num, .all-user-item .user-row .row-3 {
+	.video-item.list .type, .search-wrap .search-block .input-wrap input, .suggest-wrap .title span, .suggest-wrap .vt-text .rank, .home-wrap .home-suggest .hotlist .num, .home-wrap .home-suggest .title .delete-history, .home-wrap .home-input .content, .user-item .attention-btn.followed, .user-item .attention-btn.followed:hover, #user-list .dropdown-wrap .select-wrap .bili-dropdown .dropdown-list .dropdown-item, #user-list .dropdown-wrap .select-wrap .bili-dropdown, .bangumi-item .right-info .headline .bangumi-label, .pgc-item .right-info .headline .pgc-label, #pgc-navigate-wrap .ep-box .ep-sub .ep-item, .live-user-item .item-right .status.free, .live-user-item .item-right .uname, #live-list .headline-live h3, .live-room-item .item-title, #live-list .headline-room h3, .game-item .info .title, .game-item .info .type, .pgc-item .right-info .intros .value, .all-user-item .user-row .row-2 .num, .all-user-item .user-row .row-3,.header-video-card .video-info .line-2 {
 		color: var(--color-86) !important;
 	}
-	.game-item .info .grade-wrap .player-grade, .game-item .info .desc, .so-icon, .video-item .so-icon .up-name, .video-item.list .des, #navigator .v-switcher-header-item a span, .home-wrap .home-suggest .title .subtitle, .total-wrap .total-text, .user-item .up-videos .ptime, .user-item .desc, .user-item .up-info > span, #user-list .dropdown-wrap .select-wrap .bili-dropdown .selected, .bangumi-item .right-info .intros .label, .bangumi-item .right-info .intros .desc, .pgc-item .right-info .intros .label, .pgc-item .right-info .intros .desc, #live-list .headline-live h3 .num-txt, .live-user-item .item-right .tags > span, .live-room-item .item-info .live-num, .live-room-item .item-info .uname, #live-list .headline-room h3 .num-txt, .article-item .content .desc, .topic-item .content .desc, .up-feedback .up-fb-btn, .activity-item .info .type, .video-info-module .v-info, .video-info-module .v-preview .txt, .video-info-module .v-data span, .activity-item .info .desc, .all-user-item .u-videos .video-item .vi-row-wrap .vi-row {
+	.game-item .info .grade-wrap .player-grade, .game-item .info .desc, .so-icon, .video-item .so-icon .up-name, .video-item.list .des, #navigator .v-switcher-header-item a span, .home-wrap .home-suggest .title .subtitle, .total-wrap .total-text, .user-item .up-videos .ptime, .user-item .desc, .user-item .up-info > span, #user-list .dropdown-wrap .select-wrap .bili-dropdown .selected, .bangumi-item .right-info .intros .label, .bangumi-item .right-info .intros .desc, .pgc-item .right-info .intros .label, .pgc-item .right-info .intros .desc, #live-list .headline-live h3 .num-txt, .live-user-item .item-right .tags > span, .live-room-item .item-info .live-num, .live-room-item .item-info .uname, #live-list .headline-room h3 .num-txt, .article-item .content .desc, .topic-item .content .desc, .up-feedback .up-fb-btn, .activity-item .info .type, .video-info-module .v-info, .video-info-module .v-preview .txt, .video-info-module .v-data span, .activity-item .info .desc, .all-user-item .u-videos .video-item .vi-row-wrap .vi-row,.header-video-card .video-info .up,.van-popper-favorite .tab-item .num,.van-popper-history .empty-panel {
 		color: var(--color-66) !important;
 	}
 	.bili-footer .boston-postcards li .tips, .up-feedback .up-fb-btn:hover {
