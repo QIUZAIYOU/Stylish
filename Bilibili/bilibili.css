@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2021.1231.1126
+	@version        2021.1231.1630
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -11,7 +11,7 @@
 		BiliLive_OFF "关" <<<EOT /*[[BiliLive]]*\/ EOT;
 	}
     @advanced dropdown BiliRace "首页电竞赛事板块屏蔽" {
-		BiliRace_ON  "开" <<<EOT #reportFirst3,EOT;
+		BiliRace_ON  "开" <<<EOT #reportFirst3,.battle-area,EOT;
 		BiliRace_OFF "关" <<<EOT /*[[BiliRace]]*\/ EOT;
 	}
     @advanced dropdown LiveFansMedal "直播间粉丝勋章" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新： 2021.1231.1126
+	* © 最后更新： 2021.1231.1630
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -135,6 +135,8 @@
 		--filter-20-mangaBlue: invert(50%) sepia(91%) saturate(1050%) hue-rotate(180deg) brightness(101%) contrast(101%) !important;
 		--filter-6c727e-mangaBlue: invert(50%) sepia(66%) saturate(1178%) hue-rotate(182deg) brightness(103%) contrast(102%) !important;
 		--filter-bdc7cf-mangaBlue: invert(50%) sepia(98%) saturate(1080%) hue-rotate(180deg) brightness(101%) contrast(102%) !important;
+		--title-font-size: 14px!important;
+		--subtitle-font-size: 12px!important;
 	}
 	html, body {
 		font-family: "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", Tahoma, "宋体b8b\4f53", SimSun, sans-serif !important;
