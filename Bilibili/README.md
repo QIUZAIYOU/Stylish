@@ -43,9 +43,13 @@
 
 除了「直播」和「游戏」相关页面，使用时可点击浏览器工具栏 stylus 图标，再点击本样式名称后面的操作菜单（竖着的三个点），勾选排除当前链接，这两个域名相关页面夜化后续会补上。
 
+### 2022
+
+`01.02 18:30`：修复 [#8](https://github.com/QIUZAIYOU/Stylish/issues/8)
+
 ### 2021
 
-`12.29 09:30`：修复 [#6](https://github.com/QIUZAIYOU/Stylish/issues/6#issue-1089973255)
+`12.29 09:30`：修复 [#6](https://github.com/QIUZAIYOU/Stylish/issues/6)
 
 `12.28 08:26`：修复部分新版「首页」直播板块屏蔽失效问题。
 
