@@ -2439,6 +2439,10 @@
 }
 @-moz-document regexp("https:\\/\\/www\\.douyu\\.com\\/\\d*"), regexp("https:\\/\\/www\\.douyu\\.com\\/topic\\/.*") {
 	/*=== 直播间 ===*/
+	html {
+		height: 100vh!important;
+		overflow: hidden!important;
+	}
 	.u-specialStateInput[name=js-aside-state]:checked ~ .layout-Main {
 		padding-top: 80px!important;
 	}
@@ -3226,10 +3230,6 @@
 @-moz-document url-prefix("https://www.douyu.com"), url-prefix("http://www.douyu.com"), url-prefix("https://cz.douyu.com") {
 	/*=== 斗鱼更新后补丁 ===*/
 	/* -- 2019.10.05 ===*/
-	html {
-		height: 100vh!important;
-		overflow: hidden!important;
-	}
 	body {
 		overflow-X: hidden!important;
 	}
