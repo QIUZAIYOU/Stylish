@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        2022.0124
+	@version        2022.0125
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：  2022.0124
+	* © 最后更新：  2022.0125
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -143,8 +143,8 @@
 		background-color: var(--color-21) !important;
 		color: var(--color-86) !important;
 	}
-	a {
-		color: var(--color-86) !important;
+	a:not(.nickname-item) {
+		color: var(--color-86)!important;
 	}
 	a:hover {
 		color: var(--bili-blue) !important;
@@ -279,7 +279,7 @@
 	.van-popper-history .header-video-card .video-info .desc, .bili-header-m .nav-search .nav-search-keyword:focus, .international-header .nav-search .nav-search-keyword:focus, .van-popper-history .header-video-card .video-info .info, .van-popper-avatar .count-item .item-key, .van-popper-history .bili-PC:before, .header-popover-download .link div p:last-child, .bili-header .center-search-container .center-search__bar .nav-search-content .nav-search-clean svg, .dynamic-video .split-line {
 		color: var(--color-66) !important;
 	}
-	.van-popper-history .tab-item--active, .van-popper-avatar .vip, .van-popper-login .btn-box .btn, .van-popover .login-btn, .bili-header .avatar-panel-popover .vip-item__link {
+	.van-popper-history .tab-item--active, .van-popper-login .btn-box .btn, .van-popover .login-btn, .bili-header .avatar-panel-popover, .vip-item__link.van-popper-avatar .vip, .bili-header .avatar-panel-popover .vip-item__link, [id*="van-popover"].van-popper-avatar .vip {
 		color: var(--color-ff) !important;
 	}
 	.bilibili-search-suggest .suggest-item a:hover, .international-header .mini-type .nav-link .nav-link-ul .nav-link-item .link:hover, .van-popover .mini-type .nav-link .nav-link-ul .nav-link-item .link:hover, .channel-menu-mini .box a:hover, .van-popper-favorite .tab-item--normal:hover span:not(.num), .bilibili-search-history .history-item a:hover, .mini-type .nav-user-center .user-con .item .name:hover, .van-popper-avatar .logout span:hover, .van-popper-avatar .links .link-item:hover .link-title, .lang-change .lang-item:hover .lang-title, .van-popper-avatar .logout span:hover, .van-popper-upload .upload-item:hover, .van-popper-upload .upload-item:hover .bilifont, .van-popper-avatar .coins .contact .email-icon--bind, .van-popper-avatar .coins .contact .phone-icon--bind, .van-popper-login .btn-box .btn.reg-btn, .header-popover-avatar .link:hover span, .header-popover-download .link:hover div p:first-child, .van-popper-avatar .level-intro__link, .bili-header .trending-item .trendings-rank.search-rank-top, .bili-header .fold-text:hover {
@@ -291,7 +291,7 @@
 	.nav-link .nav-link-ul .nav-link-item .link .navbar_pullup path, .bili-header .histories .history-item .close svg, .bili-header .center-search-container .center-search__bar .nav-search-content .nav-search-clean svg path {
 		fill: var(--color-86) !important;
 	}
-	.international-header .mini-type .nav-search #nav_searchform, .van-popover .mini-type .nav-search #nav_searchform, .bilibili-search-suggest, .channel-menu-mini .r-box, .van-popper-favorite .tabs-panel, .van-popper-favorite .play-all, .van-popper-history .tab-header, .bili-header-m .nav-search #nav_searchform, .international-header .nav-search #nav_searchform, .bilibili-search-history, .van-popper-avatar .coins, .van-popper-avatar .counts, .lang-change, .van-popper-avatar .links, .van-popper-login .lang-change, .van-popper-login .vp-container, .login-panel .divider, .el-popover, .unlogin-popover, .van-popover, .vip-m .bubble-traditional .notify, .bili-header .header-entry-mini .v-img > img, .dynamic-video .split-line:before, .bili-header .header-dynamic-avatar {
+	.international-header .mini-type .nav-search #nav_searchform, .van-popover .mini-type .nav-search #nav_searchform, .bilibili-search-suggest, .channel-menu-mini .r-box, .van-popper-favorite .tabs-panel, .van-popper-favorite .play-all, .van-popper-history .tab-header, .bili-header-m .nav-search #nav_searchform, .international-header .nav-search #nav_searchform, .bilibili-search-history, .van-popper-avatar .coins, .van-popper-avatar .counts, .lang-change, .van-popper-avatar .links, .van-popper-login .lang-change, .van-popper-login .vp-container, .login-panel .divider, .el-popover, .unlogin-popover, .van-popover, .vip-m .bubble-traditional .notify, .bili-header .header-entry-mini .v-img > img, .dynamic-video .split-line:before, .bili-header .header-dynamic-avatar, .bili-header .header-avatar-wrap .header-avatar-wrap--container .bili-avatar {
 		border-color: var(--color-42) !important;
 	}
 	.bili-header-m .nav-search .nav-search-btn, .international-header .nav-search .nav-search-btn {
@@ -1260,7 +1260,7 @@
 	.indicator::after {
 		color: var(--color-42) !important;
 	}
-	.type-label, .shop-desc .btn-box .jump-btn {
+	.type-label, .shop-desc .btn-box .jump-btn, .publish-btn.publishing, .publish-btn.disabled {
 		color: var(--color-ff) !important;
 	}
 	.most-viewed-panel .list-content .most-viewed-item .name.active, .video-container.can-hover:hover .text-area .title, .article-container:hover .text-area .title, .dynamic-link-hover-bg, .bb-comment .comment-header .tabs-order li.on, .comment-bilibili-fold .comment-header .tabs-order li.on, .backdrop .title-box .close-button:hover, .music-container:hover .text-content, .card .focus-btn .unfocus .unfocus-text:hover, .new-topic-panel .tag-item .content:hover, .tab-bar .tab .tab-text.selected, .tab-bar .tab .tab-text:hover, .box-toggle:hover, .box-toggle.active, .imagesbox .boost-control li:hover, .imagesbox .boost-control li:hover i, .live-container:hover .text-area .title, .bangumi-container:hover .text-area .title, .dyn-topic__text, .dyn-topic__icon {
