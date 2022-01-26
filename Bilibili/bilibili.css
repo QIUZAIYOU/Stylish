@@ -1588,9 +1588,9 @@
 		position: relative!important
 	}
 	.video-desc .tip-info .copyright, .video-desc .tip-info .argue {
-		display: flex;
-		color: #fa5a57;
-		align-items: center;
+		display: flex!important;
+		color: #fa5a57!important;
+		align-items: center!important;
 	}
 }
 @-moz-document url-prefix("https://www.bilibili.com/appeal") {
