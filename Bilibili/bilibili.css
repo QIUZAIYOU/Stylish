@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        202202030919
+	@version        202202042243
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202202030919
+	* © 最后更新：202202042243
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -2269,6 +2269,68 @@
 		filter: var(--filter-50-42) !important;
 	}
 }
+@-moz-document url-prefix("https://www.bilibili.com/v/topic") {
+	/* ===话题=== */
+	/* -- 背景 -- */
+	.bili-user-profile, .bili-user-profile__error, .bili-user-profile__loading {
+		background-color: var(--color-21)!important
+	}
+	.bili-rich-textarea__inner, .bili-dyn-publishing, .switch-tab, .bili-dyn-item, .topic-panel, .topic-nav, .bb-comment, .comment-bilibili-fold, .bili-user-profile-view__info__button.chat, .join-button__join-way .way:hover, .bili-topic-selector__bulletin, .bili-topic-item__normal:hover, .active-card, .share-popover__tips--content .title {
+		background-color: var(--color-2c)!important
+	}
+	.bili-topic-search__popover, .bili-popover, .bili-popover__arrow, .dyn-archive__body, .bili-dyn-follow-btn:not(:hover), .join-button__join-way, .bili-topic-selector__bulletin__clear, .dyn-draw__watch__control, .bili-dyn-content__orig.reference, .dyn-draw__preview__picture__img, .share-popover {
+		background-color: var(--color-27)!important
+	}
+	.dyn-draw__watch__content, .bili-rich-text-link:hover, .bili-rich-text-module:hover, .bili-rich-text-topic:hover {
+		background-color: transparent!important
+	}
+	/* -- 字体 -- */
+	.bili-dyn-title__text:not(:hover, [style]), .bili-rich-textarea__inner, .bili-rich-text__content, .bili-popover, .bili-dyn-item, .bili-dyn-item div:not(:hover), .topic-panel__nav span, .relevant-topic__title:not(:hover), .topic-title h1, .launch-user__name:not(:hover), .action-item__data, .topic-nav span, .bili-user-profile-view__info__stat span, .bili-user-profile-view__info__officialverify, .bili-user-profile-view__info__signature, .bili-user-profile-view__info__uname:not([style]), .bili-user-profile-view__info__stat, .bili-user-profile__error, .bili-user-profile__loading, .bili-user-profile-view__info__button.chat, .join-button__join-way .way__text, .active-card .active-content__title, .share-popover__tips span, .share-popover__tips--content .title {
+		color: var(--color-86)!important
+	}
+	.bili-dyn-time:not(:hover), .bili-dyn-action:not(:hover), .relevant-topic__exposed span, .launch-user__text, .topic-desc__text, .topic-desc__text-btn, .topic-title span, .active-card .active-content__desc {
+		color: var(--color-66)!important
+	}
+	.bili-dyn-publishing__action {
+		color: var(--color-ff)!important
+	}
+	.switch-tab__tab-text.selected, .switch-tab__tab-text:hover, .bili-user-profile-view__info__button.chat:hover, .bili-dyn-item div:not(:hover) .bili-dyn-follow-btn:not(:hover), .dyn-orig-author__right .dyn-orig-author__following:not(:hover), .bili-rich-text-link, .bili-rich-text-module, .bili-rich-text-topic {
+		color: var(--bili-blue)!important
+	}
+	.bili-user-profile-view__info__uname[style] {
+		color: var(--bili-pink)!important
+	}
+	/* -- 边框 -- */
+	.bili-topic-search__popover, .bili-popover, .bili-popover__arrow, .dyn-archive, .bili-user-profile-view__info__button.chat {
+		border-color: var(--color-42)!important
+	}
+	.join-button__join-way::after, .share-popover::after {
+		border-bottom-color: var(--color-27)!important
+	}
+	.topic-nav {
+		border-bottom: var(--bodr-42)!important
+	}
+	.bili-user-profile-view__info__button.chat:hover {
+		border-color: var(--bili-blue)!important
+	}
+	/* -- 阴影 -- */
+	.bili-popover, .topic-nav, .join-button__join-way, .share-popover {
+		box-shadow: none!important
+	}
+	/* -- 其他 -- */
+	.action-item__icon, .bili-dyn-action.forward i:not(:hover), .bili-dyn-action.comment i:not(:hover), .bili-dyn-action.like i:not(:hover), .join-button__join-way .way__video-icon, .join-button__join-way .way__dynamic-icon {
+		filter: invert(50%) sepia(98%) saturate(1%) hue-rotate(56deg) brightness(87%) contrast(92%)!important;
+	}
+	.bili-dyn-more__btn.tp:not(:hover) {
+		filter: invert(50%) sepia(22%) saturate(0%) hue-rotate(306deg) brightness(101%) contrast(92%)!important;
+	}
+	.dyn-draw__watch__control__option:not(:hover) i {
+		filter: var(--filter-99-86)
+	}
+	.launch-user__text, .topic-title span, .active-card .active-content__desc span {
+		opacity: 1!important
+	}
+}
 @-moz-document url-prefix("https://www.bilibili.com/cheese") {
 	/* ===课堂=== */
 	/* ===浏览器滚动条=== */
@@ -3266,58 +3328,6 @@
 	/* -- 边框 -- */
 	.MenuBox, .container header, .container .collapseItem {
 		border-color: var(--color-42) !important;
-	}
-}
-@-moz-document url-prefix("https://space.bilibili.com/v/note") {
-	/* ===笔记=== */
-	/* -- 背景 -- */
-	.note-header, .note-header .note-title, .tabs-content, .note-list-item, .ql-container, .note-tabs, .ql-toolbar .toolbar-mask, .readonly-toolbar .toolbar-mask, .card-image-card, .note-single-item .note-item__cover, .protocal-dialog {
-		background-color: var(--color-2c) !important;
-	}
-	.note-single-item--selected, .checkbox .box:not(.checked), .note-tooltip.info {
-		background-color: var(--color-27) !important;
-	}
-	.note-tabs .van-tabs-bar::after {
-		background-color: var(--color-42) !important;
-	}
-	.manage-note, #web-toolbar {
-		background-color: var(--color-37) !important;
-	}
-	.note-single-item .go-video-btn:hover {
-		background-color: var(--bili-blue) !important;
-	}
-	/* -- 字体 -- */
-	.note-header .note-title .note-text, .note-tabs .van-tabs-tab:not(.van-tabs-tab-active), .note-single-item .note-item__detail--title, .ql-editor, .ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected, .ql-snow.ql-toolbar .ql-picker-item:not(:hover), .ql-snow .ql-toolbar .ql-picker-item:not(:hover), .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-label:not(:hover), .ql-snow .ql-toolbar .ql-picker-label:not(:hover), .ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar button:not(:focus), .ql-snow .ql-toolbar button:not(:focus), .ql-snow.ql-toolbar button:not(:hover), .ql-snow .ql-toolbar button:not(:hover), .protocal-dialog .van-dialog__title, .van-dialog__body, .dialog-note-content, .note-tooltip.info {
-		color: var(--color-86) !important;
-	}
-	.note-header .note-title .note-count, .note-single-item .note-item__detail--info .update-mtime, .note-single-item .note-item__detail--summary, .pub-notes-empty {
-		color: var(--color-66) !important;
-	}
-	.ql-snow.ql-toolbar .ql-picker-item.ql-selected, .ql-snow .ql-toolbar .ql-picker-item.ql-selected, .ql-snow.ql-toolbar .ql-picker-item:hover, .ql-snow .ql-toolbar .ql-picker-item:hover, .ql-snow.ql-toolbar .ql-picker-label.ql-active, .ql-snow .ql-toolbar .ql-picker-label.ql-active, .ql-snow.ql-toolbar .ql-picker-label:hover, .ql-snow .ql-toolbar .ql-picker-label:hover, .ql-snow.ql-toolbar button.ql-active, .ql-snow .ql-toolbar button.ql-active, .ql-snow.ql-toolbar button:focus, .ql-snow .ql-toolbar button:focus, .ql-snow.ql-toolbar button:hover, .ql-snow .ql-toolbar button:hover, .note-single-item .go-video-btn, .dialog-note-content p a {
-		color: var(--bili-blue) !important;
-	}
-	.note-single-item .go-video-btn {
-		color: var(--color-ff) !important;
-	}
-	/* -- 边框 -- */
-	#web-toolbar, .protocal-dialog .van-dialog__header, .checkbox .box:not(.checked) {
-		border-color: var(--color-42) !important;
-	}
-	.note-single-item .go-video-btn {
-		border-color: var(--bili-blue) !important;
-	}
-	/* -- 其他 -- */
-	#web-toolbar > span svg {
-		fill: var(--color-86) !important;
-	}
-	.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke, .ql-snow.ql-toolbar .ql-picker-item:hover .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-item:hover .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke, .ql-snow.ql-toolbar .ql-picker-label:hover .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-label:hover .ql-stroke-miter, .ql-snow.ql-toolbar button.ql-active .ql-stroke, .ql-snow .ql-toolbar button.ql-active .ql-stroke, .ql-snow.ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar button:focus .ql-stroke, .ql-snow .ql-toolbar button:focus .ql-stroke, .ql-snow.ql-toolbar button:focus .ql-stroke-miter, .ql-snow .ql-toolbar button:focus .ql-stroke-miter, .ql-snow.ql-toolbar button:hover .ql-stroke, .ql-snow .ql-toolbar button:hover .ql-stroke, .ql-snow.ql-toolbar button:hover .ql-stroke-miter, .ql-snow .ql-toolbar button:hover .ql-stroke-miter {
-		stroke: var(--bili-blue) !important;
-	}
-	.ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke, .ql-snow.ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-item.ql-selected .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-item:not(:hover) .ql-stroke, .ql-snow .ql-toolbar .ql-picker-item:not(:hover) .ql-stroke, .ql-snow.ql-toolbar .ql-picker-item:not(:hover) .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-item:not(:hover) .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke, .ql-snow.ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-label.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar .ql-picker-label:not(:hover) .ql-stroke, .ql-snow .ql-toolbar .ql-picker-label:not(:hover) .ql-stroke, .ql-snow.ql-toolbar .ql-picker-label:not(:hover) .ql-stroke-miter, .ql-snow .ql-toolbar .ql-picker-label:not(:hover) .ql-stroke-miter, .ql-snow.ql-toolbar button.ql-active .ql-stroke, .ql-snow .ql-toolbar button.ql-active .ql-stroke, .ql-snow.ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow .ql-toolbar button.ql-active .ql-stroke-miter, .ql-snow.ql-toolbar button:not(:focus) .ql-stroke, .ql-snow .ql-toolbar button:not(:focus) .ql-stroke, .ql-snow.ql-toolbar button:not(:focus) .ql-stroke-miter, .ql-snow .ql-toolbar button:not(:focus) .ql-stroke-miter, .ql-snow.ql-toolbar button:not(:hover) .ql-stroke, .ql-snow .ql-toolbar button:not(:hover) .ql-stroke, .ql-snow.ql-toolbar button:not(:hover) .ql-stroke-miter, .ql-snow .ql-toolbar button:not(:hover) .ql-stroke-miter {
-		stroke: var(--color-86) !important;
-	}
-	.note-single-item .note-item__detail--info .update-mtime__icon, .note-single-item .note-item__delete--icon {
-		filter: invert(44%) sepia(0%) saturate(0%) hue-rotate(197deg) brightness(89%) contrast(93%);
 	}
 }
 @-moz-document url-prefix("https://pay.bilibili.com/") {
