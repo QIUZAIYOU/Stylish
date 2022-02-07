@@ -4,7 +4,7 @@
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
 	@version        202202071850
-	@license        CC-BY-NC-ND-4.0
+	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
 		BiliLive_ON  "开" <<<EOT #bili_live,.bili-layout section.bili-grid:nth-child(5),.live-card-list,.live-rank-conent,section.bili-grid:nth-child(6),section.bili-grid:nth-child(3), EOT;
