@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        202202071038
+	@version        202202071850
 	@license        CC-BY-NC-ND-4.0
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202202071038
+	* © 最后更新：202202071850
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -3770,11 +3770,11 @@
 	/*[[LiveFansMedal]]*/
 	/* 粉丝等级 */
 	/*[[LiveRank]]*/
-	.room-bg:after, .flip-view, .wrapper .content .state-null > .txt:before, .wrapper .content .state-null > .txt > p:before, .wrapper .content .state-null > .txt:after, .player-area-ctnr > a {
+	.room-bg:after, .flip-view, .wrapper .content .state-null > .txt:before, .wrapper .content .state-null > .txt > p:before, .wrapper .content .state-null > .txt:after, .player-area-ctnr > a, .topBanner {
 		display: none!important;
 	}
 	/* -- 背景 -- */
-	.room-bg {
+	.room-bg, .medalList .title .btn, .ztolayer-dialog, .ztolayer-dialog .dialog-title .btn {
 		background: var(--color-21) !important;
 	}
 	.live-room-app .app-content .app-body .player-and-aside-area .left-container .head-info-section, .live-room-app .app-content .app-body .player-and-aside-area .aside-area .chat-control-panel, .live-room-app .app-content .app-body .player-and-aside-area .left-container .gift-control-section, .rank-list-ctnr, .live-room-app .app-content .app-body .player-and-aside-area .aside-area .rank-list-section, .follow-ctnr .right-part, .link-input, .imagesbox .boost-img {
@@ -3823,10 +3823,10 @@
 		background-image: url(//www.asifadeaway.com/Stylish/bilibili/live_icons.svg) !important;
 	}
 	/* -- 字体 -- */
-	.link-navbar .main-ctnr .nav-logo, .shortcuts-ctnr div, .search-bar span, .search-bar input, .search-bar-ctnr .search-bar .search-btn, .link-navbar .nav-item, .link-navbar .main-ctnr .nav-switcher, .area-list-panel .list-item, .user-item .username, .section-title h2, .activity-item-ctnr .info-ctnr .title-text, .activity-item-ctnr .info-ctnr .first-line .username, .link-panel-ctnr .load-more .load-more-btn, .section-title, .banner-title, .item-title, .room-anchor, .area-title, .yzly-title, .title-text, .card-info-ctnr .room-title, .highlight-areas-ctnr .area-name, .sec-area-name, .tag-default, .wrapper .content .state-null > .txt, .chat-input, .chat-history-panel .chat-history-list .chat-item.danmaku-item, .tab-candidate, .room-introduction-scroll-wrapper, .room-introduction-tags .room-introduction-tag, .announcement-cntr .content, #rank-list-ctnr-box .tabs.isHundred .item, .live-skin-coloration-area .live-skin-normal-a-text, .live-skin-coloration-area .live-skin-normal-text, .room-title, .guard-rank-cntr .rank-cntr .btn-box .daily-record-title, .pophover > p:first-child, .seeds-wrap, .gift-item-wrap .num, .yan-item, .danmaku-position-item .icon-font, .danmaku-group-item, .block-effect-ctnr .item, .gift-rank-cntr .top3-cntr .top3 .top3-item, .gift-item .label, .room-introduction-content span, .more-btn-text, .gift-rank-list-item, .control-panel-icon-row .icon-item, input.level-input, .link-input, .block-content, .bl-button--primary:disabled, .block-setting-row .setting-label, .block-setting-row .setting-value, .gift-info-title, .choice-item, .gift-panel-box .gift-reveal-header .gift-tab, .feed-title, .area-name, .index_24yI6t8z, .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_2GEmdhg6, .all__area-top-ctnr .top__header-wrap .title, .all__special-area-recommend-list-ctnr .header__wrap .sub-title, .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count, .tabs .tabs__normal-item, .imagesbox .boost-control li i {
+	.link-navbar .main-ctnr .nav-logo, .shortcuts-ctnr div, .search-bar span, .search-bar input, .search-bar-ctnr .search-bar .search-btn, .link-navbar .nav-item, .link-navbar .main-ctnr .nav-switcher, .area-list-panel .list-item, .user-item .username, .section-title h2, .activity-item-ctnr .info-ctnr .title-text, .activity-item-ctnr .info-ctnr .first-line .username, .link-panel-ctnr .load-more .load-more-btn, .section-title, .banner-title, .item-title, .room-anchor, .area-title, .yzly-title, .title-text, .card-info-ctnr .room-title, .highlight-areas-ctnr .area-name, .sec-area-name, .tag-default, .wrapper .content .state-null > .txt, .chat-input, .chat-history-panel .chat-history-list .chat-item.danmaku-item, .tab-candidate, .room-introduction-scroll-wrapper, .room-introduction-tags .room-introduction-tag, .announcement-cntr .content, #rank-list-ctnr-box .tabs.isHundred .item, .live-skin-coloration-area .live-skin-normal-a-text, .live-skin-coloration-area .live-skin-normal-text, .room-title, .guard-rank-cntr .rank-cntr .btn-box .daily-record-title, .pophover > p:first-child, .seeds-wrap, .gift-item-wrap .num, .yan-item, .danmaku-position-item .icon-font, .danmaku-group-item, .block-effect-ctnr .item, .gift-rank-cntr .top3-cntr .top3 .top3-item, .gift-item .label, .room-introduction-content span, .more-btn-text, .gift-rank-list-item, .control-panel-icon-row .icon-item, input.level-input, .link-input, .block-content, .bl-button--primary:disabled, .block-setting-row .setting-label, .block-setting-row .setting-value, .gift-info-title, .choice-item, .gift-panel-box .gift-reveal-header .gift-tab, .feed-title, .area-name, .index_24yI6t8z, .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_2GEmdhg6, .all__area-top-ctnr .top__header-wrap .title, .all__special-area-recommend-list-ctnr .header__wrap .sub-title, .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count, .tabs .tabs__normal-item, .imagesbox .boost-control li i, .medalList .title .name, .ztolayer-dialog .dialog-body, .medalList .noList p {
 		color: var(--color-86) !important;
 	}
-	.activity-item-ctnr .info-ctnr .first-line .time, .item-time, .popularity-row, .room-anchor, .input-limit-hint, .icon-label, .announcement-cntr .header p .icon-edit, .announcement-cntr .header p span, .up-info .up-info-tip, .right-action-ctnr .icon-font, .room-introduction-content.empty, .des, .area-desc, .follow-empty-cntr .follow-empty-text, .list-content-candidate, .gift-info-desc, .gift-info-special-batch, .no-glory, .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_29AwQRu5 .Item_QAOnosoB, .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_29AwQRu5 .Item_3Iz_3buh, .no__data .no__data_txt {
+	.activity-item-ctnr .info-ctnr .first-line .time, .item-time, .popularity-row, .room-anchor, .input-limit-hint, .icon-label, .announcement-cntr .header p .icon-edit, .announcement-cntr .header p span, .up-info .up-info-tip, .right-action-ctnr .icon-font, .room-introduction-content.empty, .des, .area-desc, .follow-empty-cntr .follow-empty-text, .list-content-candidate, .gift-info-desc, .gift-info-special-batch, .no-glory, .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_29AwQRu5 .Item_QAOnosoB, .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_29AwQRu5 .Item_3Iz_3buh, .no__data .no__data_txt, .medalList .title .mount {
 		color: var(--color-66) !important;
 	}
 	p span[style*="background:yellow"] {
@@ -3915,6 +3915,9 @@
 	}
 	.player-area-ctnr {
 		padding-bottom: 0!important;
+	}
+	header.topBanner + section.curMedal {
+		margin-top: 20px
 	}
 	/*[[ChatColorfulBubble]]*/
 }
