@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	`⭐1. 常用页面夜间模式全覆盖⭐2. 去除广告⭐3. 页面样式优化`
-	@version        202202102117
+	@version        202202170016
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202202102117
+	* © 最后更新：202202170016
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -86,6 +86,7 @@
 		--bili-green: #0dad9e !important;
 		--bili-lightgreen: #43ce5b !important;
 		--bili-green-50: #0dad9e80 !important;
+		--bili-service-green: #09aeb0!important;
 		--bili-pink: #fb7299 !important;
 		--bili-khaki: #d9a773 !important;
 		--bili-golden: #ffbb2f !important;
@@ -978,7 +979,7 @@
 	.time-line .tl-link, .bypb-window .online, .video-card-common .card-pic a, .van-popper-channel .sub-item, .bili-banner {
 		background-color: var(--color-21) !important;
 	}
-	.contact-help, .rank-wrap .number, .pgc-rank-wrap .number, .elevator .list-box, .elevator .list-box .item, .manga-rank-item .rank-number, .popover-video-card, .live-rank .live-rank-item .number, .live-card .up .up-cover .face, .new-home-entry {
+	.contact-help, .rank-wrap .number, .pgc-rank-wrap .number, .elevator .list-box, .elevator .list-box .item, .manga-rank-item .rank-number, .popover-video-card, .live-rank .live-rank-item .number, .live-card .up .up-cover .face, .new-home-entry, .elevator {
 		background-color: var(--color-2c) !important;
 	}
 	.contact-help:hover, .exchange-btn .btn:hover, .rank-header .more:hover, .bypb-window .online:hover, .rcmd-box-wrap .change-btn:hover {
@@ -3298,14 +3299,14 @@
 @-moz-document url-prefix("https://www.bilibili.com/blackboard") {
 	/* ===黑板=== */
 	/* -- 背景 -- */
-	.comment-container, #webShare .bili-share-pc, .topic-main .act-list ul li, .active-main .act-list ul li {
+	.comment-container, #webShare .bili-share-pc, .topic-main .act-list ul li, .active-main .act-list ul li, .q-check-box__item:not(.q-check-box__checked) .q-check-box__content .q-check-box__label, .q-textarea, .activity-dialog-content {
 		background-color: var(--color-21) !important;
 	}
 	.temp-model-topic .item, .active-main .back-top:not(:hover) {
 		background-color: var(--color-2c) !important;
 	}
 	/* -- 字体 -- */
-	.comment-container .common .b-head, .bili-share-pc .title, .act-rich-style-init .public-DraftEditor-content, .act-rich-style-init .act-rich-render-content, .context p span, .temp-model-topic .item-text, .topic-main .topic-title .b-topic-t, .active-main .active-title .b-active-t {
+	.comment-container .common .b-head, .bili-share-pc .title, .act-rich-style-init .public-DraftEditor-content, .act-rich-style-init .act-rich-render-content, .context p span, .temp-model-topic .item-text, .topic-main .topic-title .b-topic-t, .active-main .active-title .b-active-t, .activity-questions-list-wrap .activity-questions-item, .q-textarea, .activity-dialog-footer, .activity-dialog-content .activity-dialog-content-message {
 		color: var(--color-86) !important;
 	}
 	.topic-main .act-list ul li .found-time, .topic-main .act-list ul li .act-info, .active-main .act-list ul li .event_status, .active-main .act-list ul li .act-info {
@@ -3315,11 +3316,82 @@
 		color: var(--bili-blue) !important;
 	}
 	/* -- 边框 -- */
-	#webShare .bili-share-pc, .topic-main .nav-tab, .topic-main .act-list ul li, .active-main .active-title, .active-main .act-list ul li, .active-main .back-top {
+	#webShare .bili-share-pc, .topic-main .nav-tab, .topic-main .act-list ul li, .active-main .active-title, .active-main .act-list ul li, .active-main .back-top, .q-radio__item:not(.q-radio__checked) .q-radio__label, .q-check-box__item:not(.q-check-box__checked) .q-check-box__content .q-check-box__label, .q-textarea, .activity-dialog-footer {
 		border-color: var(--color-42) !important;
 	}
 	.active-main .back-top:hover {
 		border-color: var(--bili-lightblue) !important;
+	}
+}
+@-moz-document url-prefix("https://www.bilibili.com/v/customer-service"), url-prefix("https://service.bilibili.com") {
+	/* ===客服=== */
+	/* -- 背景 -- */
+	.guess-panel .question-tags .tag-item__active, .white-layer, .pushEvaluate .operateType .operateTypeBtn p, .sureWindow, .capture-outer, .bootbox .modal-dialog .modal-header {
+		background-color: var(--color-21)!important
+	}
+	.chatPanelList, .chatPanel, .text-layout, .footer, .textArea, #js-inputMsg, .magBox .msgDiv .msgText .sessionTmp1 .tmp1InnerList .innerEle, .evaluateDialog, #faceGroupTarea .groupChildren, .pushEvaluate, .sureWindow .btngroup span:not(.js-leavesure), .leaveMsg .leaveMsgBody .definedFields .definedArea .definedDropListUl li:hover {
+		background-color: var(--color-2c)!important
+	}
+	.magBox .msgDiv, .group-outer, .group-main ul li:not(:hover), .chatPanelList .systemMsg .systemMsgText, .evaluateWether .evaluate-btn.evaluateno, .send-btn, #faceGroupTarea .groupChildren li:hover, .msgBottomArea, .leaveMsg .submitArea, .leaveMsg .leaveMsgHeader, .leaveMsg, .leaveMsg .leaveMsgBody .definedFields .definedArea .definedInput, .leaveMsg .leaveMsgBody .leaveMsgDetail, .leaveMsg .leaveMsgBody .email, .leaveMsg .leaveMsgBody .telephone {
+		background-color: var(--color-27)!important
+	}
+	.leaveMsg .leaveMsgBody .definedFields .definedArea .definedDropList, .leaveMsg .leaveMsgBody .definedFields .definedArea .definedDropListUl {
+		background-color: var(--color-37)!important
+	}
+	.rightMsg .msgDiv, .pushEvaluate .operateType p.solveActive, .send-btn:hover {
+		background-color: var(--bili-service-green)!important;
+	}
+	.msgChatEvaluate i, .msgChatSwitch i {
+		background-image: url(//www.asifadeaway.com/Stylish/bilibili/service_icons.png)
+	}
+	/* -- 字体 -- */
+	.guess-panel .question-tags .tag-item:not(.tag-item__active), .guess-panel .question-container .answer, .mini-header .left-entry .mini-header__title, .mini-header .left-entry .entry-title, .mini-header .left-entry .default-entry, .mini-header .left-entry .loc-mc-box__text, .mini-header .left-entry .download-entry, .mini-header .left-entry .loc-entry, .mini-header .right-entry .right-entry__outside .right-entry-icon, .magBox .leftName, .js-pulldown-text, .textareaPre, .textareaSpan, #js-inputMsg, .group-title, .group-main ul li:not(:hover), .magBox .msgDiv .msgText, .magBox .msgDiv .msgText .sessionTmp1 .beginLan, .magBox .msgDiv .msgText .sessionTmp1 .tmp1InnerList .innerEle, .chatPanelList .systemMsg .systemMsgText, .evaluateWether .evaluateTitle, .evaluateWether span:not(.okactive), .pushEvaluate .operateType .operateTypeTitle, .pushEvaluate .operateType .solve, .chatPanelList .systemMsg .systemMsgPushEva .moregood, .pushEvaluate .operateType .operateTypeBtn p, .msgBottomArea .msgChatEvaluate i:not(:hover), .leaveMsg .leaveMsgBody .guide, .leaveMsg .leaveMsgBody .definedFields .definedArea .title, .leaveMsg .leaveMsgBody .definedFields .definedArea .definedInput, .leaveMsg .leaveMsgBody .infoArea .infoAreaTitle, .leaveMsg .leaveMsgBody .leaveMsgDetail, .txt-tip, .leaveMsg .leaveMsgBody .email, .leaveMsg .leaveMsgBody .telephone, .sureWindow .title, .sureWindow .btngroup span:not(.js-leavesure), .bootbox .capture-dialog .modal-header .modal-title, .capture-outer .h5, .capture-outer ol, .capture-outer ol h6, .capture-outer ol .capture-text, .leaveMsg .leaveMsgBody .definedFields .definedArea .definedDropList .definedDropListTitle, .leaveMsg .leaveMsgBody .definedFields .definedArea .definedDropListUl li {
+		color: var(--color-86)!important
+	}
+	.chatPanelList .msgData, .leaveMsgUpload .btnarea span.btareatxt {
+		color: var(--color-66)!important
+	}
+	.msgBottomArea .fengefu {
+		color: var(--color-42)!important
+	}
+	.systemMsgPushEva .pushEvaTitle, .pushEvaluate .operateType p.solved, [style*='color:#4298ba'], [style*='color:#4298ba']:hover, .msgEvaluateOk:hover i {
+		color: var(--bili-service-green)!important
+	}
+	.rightMsg .msgDiv, .rightMsg .msgDiv .msgText, .pushEvaluate .operateType .solveActive, .pushEvaluate .operateType p, .pushEvaluate .operateType p.solveActive, .send-btn:hover {
+		color: var(--color-ff)!important
+	}
+	.capture-outer ol .capture-text a {
+		color: var(--bili-service-green)!important
+	}
+	/* -- 边框 -- */
+	.guess-panel .question-tags .tag-item:not(.tag-item__active), .footer, .group-title, .group-main ul li:not(:hover), .magBox .msgDiv .msgText .sessionTmp1 .tmp1InnerList .innerEle, .evaluateWether .evaluate-btn.evaluateno, #faceGroupTarea, .pushEvaluate, .pushEvaluate .operateType .defaultSolveActive, .pushEvaluate .operateType .solve, .pushEvaluate .operateType .operateTypeBtn p, .msgBottomArea, .leaveMsg .leaveMsgHeader, .leaveMsg .leaveMsgBody .definedFields .definedArea .definedInput, .leaveMsg .leaveMsgBody .leaveMsgDetail, .leaveMsg .leaveMsgBody .email, .leaveMsg .leaveMsgBody .telephone {
+		border-color: var(--color-42)!important
+	}
+	.pushEvaluate .operateType .defaultSolveActive, .pushEvaluate .operateType p.solved {
+		border-color: var(--bili-service-green)!important
+	}
+	.leftMsg .msgDiv::before {
+		border-color: transparent var(--color-27)!important
+	}
+	.rightMsg .msgDiv::before {
+		border-color: transparent var(--bili-service-green)!important
+	}
+	#faceGroupTarea {
+		border: var(--bodr-42)
+	}
+	asifadeaway {
+		border-color: var(--bili-blue)!important
+	}
+	/* -- 阴影 -- */
+	#faceGroupTarea {
+		box-shadow: none !important;
+	}
+	/* -- 其他 -- */
+	[class*='close']:not(.closeForm), .footer-off .block .block-img, .evaluateWether span:not(.okactive) i, .funcPanel .addFace, .funcPanel .capture, .funcPanel .evaluate, .funcPanel .leaveMessage, .funcPanel .switchRobotBtn, .funcPanel .zhichiClose, .funcPanel .upImg, .pushEvaluate .operateType .unSolved span {
+		filter: invert(50%) sepia(2%) saturate(0%) hue-rotate(223deg) brightness(106%) contrast(83%)!important;
+	}
+	.leaveMsg .leaveMsgBody .definedFields .definedArea .definedDropList .dropListTitleIcn {
+		filter: invert(50%) sepia(0%) saturate(4676%) hue-rotate(3deg) brightness(109%) contrast(53%)!important;
 	}
 }
 @-moz-document url-prefix("https://www.bilibili.com/blackboard/help") {
