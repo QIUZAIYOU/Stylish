@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202202172141
+	@version        202202181845
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202202172141
+	* © 最后更新：202202181845
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -682,19 +682,25 @@
 		border-color: var(--color-42) !important;
 	}
 	/* -- 弹出 -- */
-	.dialog-contnent, .bp-popup-panel, .ui-popup .popup-wrap.shadow, .ivu-modal-body, .ivu-modal-content, .dialog-wrapper, .create-wrapper .create-input .series-kw input, .create-wrapper .create-input .series-desc textarea, .create-wrapper .create-input .series-desc textarea, .create-wrapper .create-input input {
+	.dialog-contnent, .bp-popup-panel, .ui-popup .popup-wrap.shadow, .ivu-modal-body, .ivu-modal-content, .dialog-wrapper, .create-wrapper .create-input .series-kw input, .create-wrapper .create-input .series-desc textarea, .create-wrapper .create-input .series-desc textarea, .create-wrapper .create-input input, .bili-mini, .bili-mini-account input, .bili-mini-password input, .bili-mini-tel .bili-mini-tel_left .tel-input, .bili-mini-code input {
 		background-color: var(--color-21) !important;
 	}
 	.mask .popup-box, .modalBox, .bcc-popover, .upper-check-confirm .inter-box {
 		background-color: var(--color-2c) !important;
 	}
-	.mask .popup-box h3, .dialog-title-txt, .dialog-fail-explain, .bp-popup-panel .title-ctnr .popup-title, .modalBox, .ui-popup .popup-wrap .text-box .text, .bcc-popover, .popup-container-title-context .title, .ivu-modal-header-inner, .ivu-modal-header p, .upper-check-confirm .inter-box, .h .report-popup-tip, .h .report-popup-item-text, .create-wrapper .dialog-title, .create-wrapper .create-input .command, .create-wrapper .choose-title .choose-kw, .create-wrapper .choose-title .choose-kw-num {
+	.bili-mini-content .bili-mini-line, .bili-mini-tab-line, .bili-mini-tel .bili-mini-tel_right .line {
+		background-color: var(--color-42) !important;
+	}
+	.bili-mini-scan-code {
+		background-color: var(--color-ff) !important;
+	}
+	.mask .popup-box h3, .dialog-title-txt, .dialog-fail-explain, .bp-popup-panel .title-ctnr .popup-title, .modalBox, .ui-popup .popup-wrap .text-box .text, .bcc-popover, .popup-container-title-context .title, .ivu-modal-header-inner, .ivu-modal-header p, .upper-check-confirm .inter-box, .h .report-popup-tip, .h .report-popup-item-text, .create-wrapper .dialog-title, .create-wrapper .create-input .command, .create-wrapper .choose-title .choose-kw, .create-wrapper .choose-title .choose-kw-num, .bili-mini-agreement-wrapper, .bili-mini-login-register-wrapper .register-btn, .bili-mini-password input, .bili-mini-account input, .bili-mini-tel .bili-mini-tel_left .tel-input, .bili-mini-code input, .bili-mini-tab {
 		color: var(--color-86) !important;
 	}
 	.dialog-fail-explain2, .ui-popup .popup-wrap .text-box .subtext, .create-wrapper .create-input .series-kw .rec-kw p, .create-wrapper .create-input .series-title .command-num, .create-wrapper .choose-video .choose-no-video .no-video-tips {
 		color: var(--color-66) !important;
 	}
-	.mask .popup-box .popup-title, .dialog-title, .ui-popup .popup-wrap.shadow, .bcc-popover, .ivu-modal-header, .h .report-popup-item-checkbox, .create-wrapper .create-input .series-kw input, .create-wrapper .create-input .series-desc textarea, .create-wrapper .create-input .series-desc textarea, .create-wrapper .create-input input, .create-wrapper .choose-title .choose-kw-num {
+	.mask .popup-box .popup-title, .dialog-title, .ui-popup .popup-wrap.shadow, .bcc-popover, .ivu-modal-header, .h .report-popup-item-checkbox, .create-wrapper .create-input .series-kw input, .create-wrapper .create-input .series-desc textarea, .create-wrapper .create-input .series-desc textarea, .create-wrapper .create-input input, .create-wrapper .choose-title .choose-kw-num, .bili-mini-scan-code, .bili-mini-login-register-wrapper .register-btn, .bili-mini-login-register-wrapper .register-btn, .bili-mini-account, .bili-mini-password, .bili-mini-tel, .bili-mini-code {
 		border-color: var(--color-42) !important;
 	}
 	.bcc-popover[x-placement^=bottom] .popper__arrow {
@@ -707,6 +713,9 @@
 		padding: 8px!important;
 		border: var(--bodr-42)!important;
 		border-radius: 4px!important;
+	}
+	.bili-mini-account input, .bili-mini-password input {
+		box-shadow: none!important;
 	}
 	/* -- 返回顶部 -- */
 	.back-top-btn .arrow-icon, .topic-main .back-top {
