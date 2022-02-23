@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202202231947
+	@version        202202232007
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202202231947
+	* © 最后更新：202202232007
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1342,6 +1342,7 @@
 	.bp-img-icon {
 		filter: invert(50%) sepia(82%) saturate(2349%) hue-rotate(161deg) brightness(91%) contrast(101%)!important;
 	}
+
 	/* -- 其他 -- */
 	.tab-bar {
 		position: sticky !important;
@@ -1422,20 +1423,20 @@
 	.bili-rich-textarea__inner, .bili-dyn-publishing, .switch-tab, .bili-dyn-item, .topic-panel, .topic-nav, .bb-comment, .comment-bilibili-fold, .bili-user-profile-view__info__button.chat, .join-button__join-way .way:hover, .bili-topic-selector__bulletin, .bili-topic-item__normal:hover, .active-card, .share-popover__tips--content .title, .active-capsules .capsule {
 		background-color: var(--color-2c)!important
 	}
-	.bili-topic-search__popover, .bili-popover, .bili-popover__arrow, .dyn-archive__body, .bili-dyn-follow-btn:not(:hover), .join-button__join-way, .bili-topic-selector__bulletin__clear, .dyn-draw__watch__control, .bili-dyn-content__orig.reference, .dyn-draw__preview__picture__img, .share-popover {
+	.bili-topic-search__popover, .bili-popover, .bili-popover__arrow, .dyn-archive__body, .bili-dyn-follow-btn:not(:hover), .join-button__join-way, .bili-topic-selector__bulletin__clear, .dyn-draw__watch__control, .bili-dyn-content__orig.reference, .dyn-draw__preview__picture__img, .share-popover, .dyn-reserve__card, .bili-lazy-img.sleepy, .dyn-vote__body {
 		background-color: var(--color-27)!important
 	}
 	.dyn-draw__watch__content, .bili-rich-text-link:hover, .bili-rich-text-module:hover, .bili-rich-text-topic:hover {
 		background-color: transparent!important
 	}
 	/* -- 字体 -- */
-	.bili-dyn-title__text:not(:hover, [style]), .bili-rich-textarea__inner, .bili-rich-text__content, .bili-popover, .bili-dyn-item, .bili-dyn-item div:not(:hover, .bili-rich-text__action), .topic-panel__nav span, .relevant-topic__title:not(:hover), .topic-title h1, .launch-user__name:not(:hover), .action-item__data, .topic-nav span, .bili-user-profile-view__info__stat span, .bili-user-profile-view__info__officialverify, .bili-user-profile-view__info__signature, .bili-user-profile-view__info__uname:not([style]), .bili-user-profile-view__info__stat, .bili-user-profile__error, .bili-user-profile__loading, .bili-user-profile-view__info__button.chat, .join-button__join-way .way__text, .active-card .active-content__title, .share-popover__tips span, .share-popover__tips--content .title, .bili-rich-textarea__inner.empty::before, .bili-dyn-forward-publishing__emoji {
+	.bili-dyn-title__text:not(:hover, [style]), .bili-rich-textarea__inner, .bili-rich-text__content, .bili-popover, .bili-dyn-item, .topic-panel__nav span, .relevant-topic__title:not(:hover), .topic-title h1, .launch-user__name:not(:hover), .action-item__data, .topic-nav span, .bili-user-profile-view__info__stat span, .bili-user-profile-view__info__officialverify, .bili-user-profile-view__info__signature, .bili-user-profile-view__info__uname:not([style]), .bili-user-profile-view__info__stat, .bili-user-profile__error, .bili-user-profile__loading, .bili-user-profile-view__info__button.chat, .join-button__join-way .way__text, .active-card .active-content__title, .share-popover__tips span, .share-popover__tips--content .title, .bili-rich-textarea__inner.empty::before, .bili-dyn-forward-publishing__emoji, .dyn-archive__title, .dyn-vote__detail__title:not(:hover), .dyn-reserve__title {
 		color: var(--color-86)!important
 	}
-	.bili-dyn-time:not(:hover), .bili-dyn-action:not(:hover), .relevant-topic__exposed span, .launch-user__text, .topic-desc__text, .topic-desc__text-btn, .topic-title span, .active-card .active-content__desc, .bili-dyn-forward-publishing__action__count {
+	.bili-dyn-time:not(:hover), .bili-dyn-action:not(:hover), .relevant-topic__exposed span, .launch-user__text, .topic-desc__text, .topic-desc__text-btn, .topic-title span, .active-card .active-content__desc, .bili-dyn-forward-publishing__action__count, .dyn-vote__detail__desc, .dyn-reserve__desc {
 		color: var(--color-66)!important
 	}
-	.bili-dyn-publishing__action {
+	.bili-dyn-publishing__action, .dyn-archive__badge {
 		color: var(--color-ff)!important
 	}
 	.switch-tab__tab-text.selected, .switch-tab__tab-text:hover, .bili-user-profile-view__info__button.chat:hover, .bili-dyn-item div:not(:hover) .bili-dyn-follow-btn:not(:hover), .dyn-orig-author__right .dyn-orig-author__following:not(:hover), .bili-rich-text-link, .bili-rich-text-module, .bili-rich-text-topic, .active-capsules .capsule, .bili-dyn-forward-publishing__emoji:hover {
@@ -1445,7 +1446,7 @@
 		color: var(--bili-pink)!important
 	}
 	/* -- 边框 -- */
-	.bili-topic-search__popover, .bili-popover, .bili-popover__arrow, .dyn-archive, .bili-user-profile-view__info__button.chat, .bili-dyn-forward__item, .bili-dyn-forward__more, .bili-dyn-forward-publishing__editor:not(:hover), .bili-dyn-forward-publishing__emoji {
+	.bili-topic-search__popover, .bili-popover, .bili-popover__arrow, .dyn-archive, .bili-user-profile-view__info__button.chat, .bili-dyn-forward__item, .bili-dyn-forward__more, .bili-dyn-forward-publishing__editor:not(:hover), .bili-dyn-forward-publishing__emoji, .dyn-vote {
 		border-color: var(--color-42)!important
 	}
 	.join-button__join-way::after, .share-popover::after {
@@ -1473,6 +1474,9 @@
 	}
 	.bili-dyn-forward-publishing__emoji:hover i {
 		filter: invert(50%) sepia(70%) saturate(2245%) hue-rotate(160deg) brightness(90%) contrast(102%)!important;
+	}
+	.bili-lazy-img.sleepy:after {
+		filter: invert(50%) sepia(9%) saturate(4%) hue-rotate(33deg) brightness(104%) contrast(87%)!important;
 	}
 	.launch-user__text, .topic-title span, .active-card .active-content__desc span {
 		opacity: 1!important
