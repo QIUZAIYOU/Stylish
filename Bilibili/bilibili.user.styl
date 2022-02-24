@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202202242115
+	@version        202202242152
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202202242115
+	* © 最后更新：202202242152
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -253,10 +253,10 @@
 		color: var(--color-86) !important;
 	}
 	/* -- 全站导航 -- */
-	.international-header .mini-type, .van-popover .mini-type, .channel-menu-mini, .bili-header-m .nav-search .nav-search-btn, .international-header .nav-search .nav-search-btn, .van-popper-favorite .play-all, .van-popper-avatar .level-bar, .mini-header, .sticky-bar, .nav-user-center .user-con .fall-mini-avatar, .vip-m .bubble-traditional .recommand .bubble-col .item img, .van-popper-history .view-all, .up-info .u-face .u-face__avatar, .dynamic-video .history-tip, .split-line, .bili-header-m, .bili-header-m .nav-menu .nav-con .nav-item:hover {
+	.international-header .mini-type, .van-popover .mini-type, .channel-menu-mini, .bili-header-m .nav-search .nav-search-btn, .international-header .nav-search .nav-search-btn, .van-popper-favorite .play-all, .van-popper-avatar .level-bar, .mini-header, .sticky-bar, .nav-user-center .user-con .fall-mini-avatar, .vip-m .bubble-traditional .recommand .bubble-col .item img, .van-popper-history .view-all, .up-info .u-face .u-face__avatar, .dynamic-video .history-tip, .split-line, .bili-header-m, .bili-header-m .nav-menu .nav-con .nav-item:hover, .bubble-traditional, .i-frame::before, .van-popper-favorite .vp-container, .van-popper-favorite .tabs-panel, .vp-container .tabs-panel .tab-item, .van-popper-history .vp-container {
 		background-color: var(--color-2c) !important;
 	}
-	.vip-m, .international-header .mini-type .nav-search #nav_searchform, .van-popover .mini-type .nav-search #nav_searchform, .bilibili-search-suggest, .channel-menu-mini .box a:hover, .bilibili-search-history, .bili-header-m .nav-search #nav_searchform, .international-header .nav-search #nav_searchform, .i-frame iframe, .i-frame::before, .bili-header-m .nav-search .nav-search-btn, .van-popper-history .vp-container, .van-popper-favorite .vp-container, .van-popper-avatar .vp-container, .lang-change .lang-intro, .van-popper-avatar .coins .contact .contact-tips, .van-popper-avatar .coins .info .login-award, .sticky-bar .nav-item:hover, .van-popover.van-popper.van-popper-upload, .van-popper-login .vp-container, .van-popper-login .btn-box .btn.reg-btn, .van-popper-login .lang-change, .unlogin-popover, .unlogin-popover:before, .el-popover, .van-popper-avatar .level-intro, .z-top-container {
+	.vip-m, .international-header .mini-type .nav-search #nav_searchform, .van-popover .mini-type .nav-search #nav_searchform, .bilibili-search-suggest, .channel-menu-mini .box a:hover, .bilibili-search-history, .bili-header-m .nav-search #nav_searchform, .international-header .nav-search #nav_searchform, .i-frame iframe, .bili-header-m .nav-search .nav-search-btn, .van-popper-avatar .vp-container, .lang-change .lang-intro, .van-popper-avatar .coins .contact .contact-tips, .van-popper-avatar .coins .info .login-award, .sticky-bar .nav-item:hover, .van-popover.van-popper.van-popper-upload, .van-popper-login .vp-container, .van-popper-login .btn-box .btn.reg-btn, .van-popper-login .lang-change, .unlogin-popover, .unlogin-popover:before, .el-popover, .van-popper-avatar .level-intro, .z-top-container {
 		background-color: var(--color-21) !important;
 	}
 	.bilibili-search-history .history-item.focus, .bilibili-search-history .history-item:hover, .van-popper-favorite .tab-item--normal:hover, .header-video-card:hover.van-popper-favorite .play-all:hover, .van-popper-favorite .play-all:hover, .header-video-card:hover, .van-popper-avatar .links .link-item:hover, .lang-change .lang-item:hover, .van-popper-avatar .logout span:hover, .lang-change .lang-intro-item:hover, .van-popper-upload .upload-item:hover, .unlogin-avatar, .header-popover-avatar .link:hover, .header-popover-download .link:hover, .bili-header .upload-panel-popover .upload-item:hover, .bili-header .game-right-list-item:hover, .bili-header .suggest-item.active, .bili-header .suggest-item:hover, .bili-header .suggest-item:focus, .bili-header .center-search-container .center-search__bar #nav-searchform.is-actived .nav-search-content, .bili-header .center-search-container .center-search__bar #nav-searchform.is-focus .nav-search-content, .wnd_bottom a {
@@ -267,6 +267,9 @@
 	}
 	.header-popover-avatar .logout .line {
 		background-color: var(--color-42) !important;
+	}
+	.van-popper-favorite .tab-item--active, .van-popper-history .tab-item--active {
+		background-color: var(--bili-blue) !important;
 	}
 	.van-popper-avatar .level-bar .level-progress {
 		background-color: var(--bili-yellow) !important;
@@ -280,10 +283,10 @@
 	.van-popper-history .header-video-card .video-info .desc, .bili-header-m .nav-search .nav-search-keyword:focus, .international-header .nav-search .nav-search-keyword:focus, .van-popper-history .header-video-card .video-info .info, .van-popper-avatar .count-item .item-key, .van-popper-history .bili-PC:before, .header-popover-download .link div p:last-child, .bili-header .center-search-container .center-search__bar .nav-search-content .nav-search-clean svg, .dynamic-video .split-line, .user-card .info p > span {
 		color: var(--color-66) !important;
 	}
-	.van-popper-history .tab-item--active, .van-popper-login .btn-box .btn, .van-popover .login-btn, .bili-header .avatar-panel-popover, .vip-item__link.van-popper-avatar .vip, .bili-header .avatar-panel-popover .vip-item__link, [id*="van-popover"].van-popper-avatar .vip {
+	.van-popper-history .tab-item--active, .van-popper-login .btn-box .btn, .van-popover .login-btn, .bili-header .avatar-panel-popover, .vip-item__link.van-popper-avatar .vip, .bili-header .avatar-panel-popover .vip-item__link, [id*="van-popover"].van-popper-avatar .vip, .van-popper-favorite .tab-item--active, .van-popper-history .tab-item--active {
 		color: var(--color-ff) !important;
 	}
-	.bilibili-search-suggest .suggest-item a:hover, .international-header .mini-type .nav-link .nav-link-ul .nav-link-item .link:hover, .van-popover .mini-type .nav-link .nav-link-ul .nav-link-item .link:hover, .channel-menu-mini .box a:hover, .van-popper-favorite .tab-item--normal:hover span:not(.num), .bilibili-search-history .history-item a:hover, .mini-type .nav-user-center .user-con .item .name:hover, .van-popper-avatar .logout span:hover, .van-popper-avatar .links .link-item:hover .link-title, .lang-change .lang-item:hover .lang-title, .van-popper-avatar .logout span:hover, .van-popper-upload .upload-item:hover, .van-popper-upload .upload-item:hover .bilifont, .van-popper-avatar .coins .contact .email-icon--bind, .van-popper-avatar .coins .contact .phone-icon--bind, .van-popper-login .btn-box .btn.reg-btn, .header-popover-avatar .link:hover span, .header-popover-download .link:hover div p:first-child, .van-popper-avatar .level-intro__link, .bili-header .trending-item .trendings-rank.search-rank-top, .bili-header .fold-text:hover {
+	.bilibili-search-suggest .suggest-item a:hover, .international-header .mini-type .nav-link .nav-link-ul .nav-link-item .link:hover, .van-popover .mini-type .nav-link .nav-link-ul .nav-link-item .link:hover, .channel-menu-mini .box a:hover, .van-popper-favorite .tab-item--normal:hover span:not(.num), .bilibili-search-history .history-item a:hover, .mini-type .nav-user-center .user-con .item .name:hover, .van-popper-avatar .logout span:hover, .van-popper-avatar .links .link-item:hover .link-title, .lang-change .lang-item:hover .lang-title, .van-popper-avatar .logout span:hover, .van-popper-upload .upload-item:hover, .van-popper-upload .upload-item:hover .bilifont, .van-popper-avatar .coins .contact .email-icon--bind, .van-popper-avatar .coins .contact .phone-icon--bind, .van-popper-login .btn-box .btn.reg-btn, .header-popover-avatar .link:hover span, .header-popover-download .link:hover div p:first-child, .van-popper-avatar .level-intro__link, .bili-header .trending-item .trendings-rank.search-rank-top, .bili-header .fold-text:hover, .international-header a:hover, .van-popover a:hover {
 		color: var(--bili-blue) !important;
 	}
 	.van-popper-avatar .nickname[style*="rgb(251, 114, 153)"] {
@@ -310,7 +313,7 @@
 		border-bottom-color: var(--color-42) !important;
 	}
 	.van-popper[x-placement^="bottom"] .popper__arrow:after {
-		border-bottom-color: var(--color-21) !important;
+		border-bottom-color: var(--color-2c) !important;
 	}
 	.vip-m, .van-popper-favorite .vp-container, .van-popper-history .vp-container, .van-popper-avatar .coins .contact .contact-tips, .van-popover.van-popper.van-popper-upload, .nav-user-center .nav-item-message .i-frame iframe {
 		border: var(--bodr-42) !important;
@@ -1016,7 +1019,7 @@
 	.van-popper-avatar .vip, .pgc-rank-wrap .number.on, .live-rank .live-rank-item .number.on, .manga-rank-item .rank-number.on, .time-line .tl-link:hover, .time-line .tl-link:hover .bilifont, .page-tab .con li .bilifont, .elevator .list-box .item.on .bilifont, .elevator .list-box .item:hover .bilifont, .elevator .list-box .item.on, .elevator .list-box .item:hover, .rcmd-box-wrap .new-guide .bili-icon_sousuo_yichu {
 		color: var(--color-ff) !important;
 	}
-	.contact-help:hover, .van-popper-channel .sub-item .name:hover, .international-header a:hover, .video-card-common .title:hover, #international-home-app + #app .nav-link-item a:hover, .nav-user-center .user-con .item .name:hover, .time-line .tl-link, .time-line .tl-link .bilifont, .new-home-entry:hover {
+	.contact-help:hover, .van-popper-channel .sub-item .name:hover, .international-header a:hover, .video-card-common .title:hover, #international-home-app + #app .nav-link-item a:hover, .nav-user-center .user-con .item .name:hover, .time-line .tl-link, .time-line .tl-link .bilifont, .new-home-entry:hover, .header-video-card:hover .video-info .line-2 {
 		color: var(--bili-blue) !important;
 	}
 	/* -- 边框 -- */
@@ -1102,7 +1105,7 @@
 		background-color: transparent !important;
 	}
 	.im-list-box {
-		background-color: var(--color-21) !important;
+		background-color: var(--color-2c) !important;
 	}
 	.im-list:hover {
 		background-color: var(--color-27) !important;
@@ -1125,10 +1128,7 @@
 	html, body, .round-corner {
 		background-color: transparent !important;
 	}
-	.out-container, .split-line .history-tip {
-		background-color: var(--color-21) !important;
-	}
-	.cover {
+	.out-container, .split-line .history-tip, .cover {
 		background-color: var(--color-2c) !important;
 	}
 	.list-item:hover {
@@ -1182,7 +1182,7 @@
 		background-color: transparent !important;
 	}
 	.box {
-		background-color: var(--color-21) !important;
+		background-color: var(--color-2c) !important;
 	}
 	.brief a:hover, .all a:hover {
 		background-color: var(--color-27) !important;
@@ -1201,7 +1201,7 @@
 		background-color: transparent !important;
 	}
 	.live-box {
-		background-color: var(--color-21) !important;
+		background-color: var(--color-2c) !important;
 	}
 	.act-list .list-item:hover {
 		background-color: var(--color-27) !important;
@@ -1221,7 +1221,7 @@
 		background-color: transparent !important;
 	}
 	.app-layout {
-		background-color: var(--color-21) !important;
+		background-color: var(--color-2c) !important;
 	}
 	.popularity-list .item-list .list-item:hover, .recommendation-list .list-item:before {
 		background-color: var(--color-27) !important;
@@ -1722,10 +1722,10 @@
 	.schedule-filter .bscroll-vertical-scrollbar {
 		background-color: var(--color-14) !important;
 	}
-	html, body, .video-list .vl-hd .vl-hd-sub .selector-block .date-select, .game-groom-m .title, .game-groom-m, .select-type .type-group li, .sub-nav-m .tips, .spread-module .num, .video-floor-m .zone-title .headline .link-more, .bili-dropdown, .bili-dropdown .dropdown-list .dropdown-item, .tag-list li.tag-item, .video-floor-m .dynamic-title .read-push, .mobile-link-l, .video-info-module, .game-groom-m .num, .schedule-time .time-contain, .datepicker *, .schedule-filter .filter-content li .img img, .detail-page-container, .category-container, .team-box .team-item .team-name.selected, .tab-content, .tab-item.active, .tab-item.active:after, .tab-item, .rank-card-panel .toggle > span, .video-floor-infomation-m .zone-title .headline .link-more, .discovery-container, .el-message-box, .sub-nav-m, .international-header {
+	html, body, .video-list .vl-hd .vl-hd-sub .selector-block .date-select, .game-groom-m .title, .game-groom-m, .select-type .type-group li, .sub-nav-m .tips, .spread-module .num, .video-floor-m .zone-title .headline .link-more, .bili-dropdown, .bili-dropdown .dropdown-list .dropdown-item, .tag-list li.tag-item, .video-floor-m .dynamic-title .read-push, .mobile-link-l, .video-info-module, .game-groom-m .num, .schedule-time .time-contain, .datepicker *, .schedule-filter .filter-content li .img img, .detail-page-container, .category-container, .team-box .team-item .team-name.selected, .tab-content, .tab-item.active, .tab-item.active:after, .rank-card-panel .toggle > span, .video-floor-infomation-m .zone-title .headline .link-more, .discovery-container, .el-message-box, .sub-nav-m, .international-header {
 		background-color: var(--color-21) !important;
 	}
-	.rank-list .rank-item .ri-num, .sec-rank .more-link, .score-contain .page-btn, .matchlist-contain .more-match, .schedule-filter .filter-top, .schedule-contain .time-all, .schedule-time .time, .schedule-contain .contain-top .hasDatepicker .range_start input, .schedule-contain .contain-top .hasDatepicker, .user-contain .page-btn, .channel-sidebar, .sidebar-search-bar .inner-input, .discovery-panel__toggle, .subscribe-panel, .year-selector__item, .video-card__content .cover-picture, .channel-list-preview .header-cover, .filter-wrap .select-sort li, .filter-wrap .toggle-open-select, .game-menu .more, .team-box .team-detail .team-player-img .controlbar, .team-box .team-detail .team-player-img img, .playrank-box .single-rank .single-rank-box .top-three .single-top .player-t3, .team-box .team-item .playerImg, .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .other-player-img, .border-table tr:nth-child(odd), .schedule-filter .filter-content .content-all div, .competition-option .competition-option-content, .competition-option .competition-option-hide > div, .competition-option .competition-option-hide .competition-option-input input, .competition-option .competition-option-hide .competition-option-input .competition-option-math > span, .competition-user, .score-module-wrap .team-msg, .play-selector__item, .slide-channel-panel .mini-channel-card, s .mini-channel-card .cover, .customer-card .card-header {
+	.rank-list .rank-item .ri-num, .sec-rank .more-link, .score-contain .page-btn, .matchlist-contain .more-match, .schedule-filter .filter-top, .schedule-contain .time-all, .schedule-time .time, .schedule-contain .contain-top .hasDatepicker .range_start input, .schedule-contain .contain-top .hasDatepicker, .user-contain .page-btn, .channel-sidebar, .sidebar-search-bar .inner-input, .discovery-panel__toggle, .subscribe-panel, .year-selector__item, .video-card__content .cover-picture, .channel-list-preview .header-cover, .filter-wrap .select-sort li, .filter-wrap .toggle-open-select, .game-menu .more, .team-box .team-detail .team-player-img .controlbar, .team-box .team-detail .team-player-img img, .playrank-box .single-rank .single-rank-box .top-three .single-top .player-t3, .team-box .team-item .playerImg, .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .other-player-img, .border-table tr:nth-child(odd), .schedule-filter .filter-content .content-all div, .competition-option .competition-option-content, .competition-option .competition-option-hide > div, .competition-option .competition-option-hide .competition-option-input input, .competition-option .competition-option-hide .competition-option-input .competition-option-math > span, .competition-user, .score-module-wrap .team-msg, .play-selector__item, .slide-channel-panel .mini-channel-card, s .mini-channel-card .cover, .customer-card .card-header, .app-layout {
 		background-color: var(--color-2c) !important;
 	}
 	.bili-dropdown .dropdown-list .dropdown-item:hover, .sec-rank .more-link:hover, .video-floor-m .dynamic-title .read-push:hover, .select-type .type-group li:hover, .matchlist-contain .more-match:hover, .discovery-panel .content-item:hover, .discovery-panel__title:hover, .subscribe-panel .subscribe-item--active, .subscribe-panel .subscribe-item:hover, .discovery-panel .content-item--active, .border-table tr:hover, .discovery-panel__title:hover, .discovery-panel__title--active {
@@ -1755,20 +1755,23 @@
 	.team-box .team-item .team-name:not(.selected), .playercard .player-img {
 		background-image: linear-gradient(0deg, var(--color-2c), var(--color-21)) !important;
 	}
+	.mini-channel-card .cover {
+		background: transparent!important;
+	}
 	/* -- 字体 -- */
 	.tab-item.active, .competition-history-nodata p, .team-name, .filter-wrap .toggle-open-select, .user-contain .page-btn, .schedule-list .match-time.over, .schedule-list .match-time.over .time-hours, .schedule-list .list-item, .schedule-filter .filter-content li, .schedule-time .time-contain li.data .week, .schedule-filter .filter-top, .card-score .team .score .score-state, .game-groom-m a .title, .main-menu .search-bar input, .energy-m .hot-box li:first-child .txt, .energy-m .hot-box li .txt, .spread-module .t, .rank-list .rank-item .ri-detail .ri-title, .rank-list .rank-item .ri-num, .tag-list li.tag-item .tag-a, .video-floor-m .dynamic-title .title .name, .tag-list-wrp .title .name, .video-list .vl-hd .tab-list li, .video-info-module .v-info, .video-info-module .v-preview .txt, .tag-more .b-toggle-btn, .article-card .l-con .title, .card-score .team .team-info .team-nam, .card-score .time-wrap, .score-contain .allmatch, .schedule-contain .time-all, .datepicker, .has-matchs div:nth-child(2), .calendar-header .iconfont, .icon-ic, .sidebar-search-bar .inner-input, .discovery-panel__title, .subscribe-panel__title .text, .subscribe-panel .subscribe-item .name, .category-container .inner-container__header .tit .channel-list-preview .header-info .title .card-score .team .score .score-away, .score-contain .page-btn, .library-contain .search-sort .sort-list li, .game-menu ul li, .filter-wrap .select-sort li, .filter-wrap .select-sort li .icon-guanbi, .game-menu .more, .team-box .title, .team-box .team-item .teamNum, .team-box .team-infodata .infobox .score, .team-box .team-detail .team-player-img .controlbar, .ring-box .win-count, .headline .getmore, .Ptitle, .playrank-box .single-rank .single-rank-box .top-three .single-top .countnum, .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .other-count, .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .player-info .name, .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .killcontainer .countnum, .headline .title, .border-table th, .border-table td .teamname, .border-table td, .border-table tr .iconfont, .rep-list-wrap .team-msg .score, .rep-list-wrap .msg-wrap .team-name, .schedule-filter .filter-content .content-all div, .schedule-list .match-ranks .ranks-score .score-away, .schedule-list .match-operate, .competition-title .competition-title-center .team-name, .competition-option .competition-option-hide .competition-option-input > span, .competition-option .competition-option-hide .competition-option-input input, .competition-option .competition-option-hide .competition-option-input .competition-option-math > span, .competition-option .competition-option-hide .competition-option-result > i, .competition-option .competition-option-hide .competition-option-close, .competition-user-money .competition-user-info .competition-user-coin > div i, .competition-score > li span, .tab-item, .single-wrap .match-info-title .team, .competition-title, .all span, .team-msg .score, .score-module-wrap .team-msg .msg-title, .score-module-wrap .team-msg .msg-score, .competition-title .competition-title-center .team-vs, .rank-card-panel .toggle, .video-floor-infomation-m .zone-title .headline .link-more, .schedule-list .match-time, .schedule-list .match-time .time-hours, .category-container .inner-container__header .title, .channel-list-preview .header-info .title, .type-header .header-info .title, .type-header .header-info .title, .card--light, .arrow-btn .iconfont, .game-content .team-box .team-detail .team-infodata .infodata-box .score, .mini-channel-card .name, .mini-channel-card .btn, .mini-channel-card .count, .el-message-box .el-message-box__message, .rank-card-panel .header .title, .self-panel .scroll-container .item > span, .customer-card .card-header .name, .other-panel .card .title, .other-panel .card .detail-text, .other-panel .card .detail p, .card-score .team .score .score-away, .card-score .time-wrap .text.state.playing, .card-score .special-game-info {
 		color: var(--color-86) !important;
 	}
-	.competition-score > li p, .schedule-time .time-contain li, .schedule-time .time-contain li.data .date, .mod-3 .r .v-info .v-info-i, .spread-module .num, .rank-list .rank-item .ri-detail .ri-point, .tag-list-wrp .title .small, .mod-1 .r .v-info .v-info-i, .mod-1 .r .up-info .v-date, .mod-1 .r .v-desc, .mod-2 li .r .v-info .v-info-i, .mod-2 li .r .v-desc, .video-info-module .v-data span, .game-groom-m .nume, .card-video .video-wrap .video-info .detail .iconfont, .card-video .video-wrap .video-info .detail .item, .matchlist-contain .match-wrap .match-time, .card-score .team .team-info .team-name, .lastMonth, .nextMonth, .schedule-list .match-time .time-status.over, .video-card .up-name, .channel-list-preview .header-desc, .card-score .des, .team-box .subtitle, .team-box .team-infodata .infobox .score-title, .ring-box .inset-text, .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .player-info .position, .playrank-box .single-rank .single-rank-box .top-three .single-top .logobox .belongteam, .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .killdata-container .rankboxtitle, .playrank-box .single-rank .single-rank-box .top-three .single-top .rankboxtitle, .simple-nav, .simple-nav a, .game-content .team-box .team-detail .team-name .full-name, .game-content .team-container .tn, .game-content .team-history .des-container .desc, .rep-list-wrap .msg-wrap, .how-pay, .competition-option .competition-option-hide .competition-option-desc, .competition-option .competition-option-hide .competition-option-input > i, .competition-option .competition-option-hide .competition-option-tools .competition-option-tools-left, .part-title-menu p, .competition-title .competition-title-season, .competition-title .competition-title-between p span, .single-data-wrap .match-info-title a, .single-data-wrap .match-info-title, .competition-menu, .msg-wrap, .score-module-wrap .team-msg .title, .score-module-wrap .team-msg .msg-score .score-time, .card-score .desc, .card-score .title .title-text, .mini-channel-card .label, .game-content .team-box .team-detail .team-infodata .infodata-box .score-title, .other-panel .card .detail-hint, .game-groom-m .num {
+	.competition-score > li p, .schedule-time .time-contain li, .schedule-time .time-contain li.data .date, .mod-3 .r .v-info .v-info-i, .spread-module .num, .rank-list .rank-item .ri-detail .ri-point, .tag-list-wrp .title .small, .mod-1 .r .v-info .v-info-i, .mod-1 .r .up-info .v-date, .mod-1 .r .v-desc, .mod-2 li .r .v-info .v-info-i, .mod-2 li .r .v-desc, .video-info-module .v-data span, .game-groom-m .nume, .card-video .video-wrap .video-info .detail .iconfont, .card-video .video-wrap .video-info .detail .item, .matchlist-contain .match-wrap .match-time, .card-score .team .team-info .team-name, .lastMonth, .nextMonth, .schedule-list .match-time .time-status.over, .video-card .up-name, .channel-list-preview .header-desc, .card-score .des, .team-box .subtitle, .team-box .team-infodata .infobox .score-title, .ring-box .inset-text, .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .player-info .position, .playrank-box .single-rank .single-rank-box .top-three .single-top .logobox .belongteam, .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .killdata-container .rankboxtitle, .playrank-box .single-rank .single-rank-box .top-three .single-top .rankboxtitle, .simple-nav, .simple-nav a, .game-content .team-box .team-detail .team-name .full-name, .game-content .team-container .tn, .game-content .team-history .des-container .desc, .rep-list-wrap .msg-wrap, .how-pay, .competition-option .competition-option-hide .competition-option-desc, .competition-option .competition-option-hide .competition-option-input > i, .competition-option .competition-option-hide .competition-option-tools .competition-option-tools-left, .part-title-menu p, .competition-title .competition-title-season, .competition-title .competition-title-between p span, .single-data-wrap .match-info-title a, .single-data-wrap .match-info-title, .competition-menu, .msg-wrap, .score-module-wrap .team-msg .title, .score-module-wrap .team-msg .msg-score .score-time, .card-score .desc, .card-score .title .title-text, .mini-channel-card .label, .game-content .team-box .team-detail .team-infodata .infodata-box .score-title, .other-panel .card .detail-hint, .game-groom-m .num, .type-header .header-info .count {
 		color: var(--color-66) !important;
 	}
-	.select-type .type-group li.on, .rank-list .rank-item.highlight .ri-num, .tag-list li.tag-item.on .tag-a, .tag-list li.tag-item.on .tag-a:hover, .select-type .type-group li.on:hover, .schedule-list .match-operate.live, .schedule-time .time-contain li.active .date, .schedule-time .time-contain li.active .week, .library-contain .search-sort .sort-list li.active, .game-menu ul li.active, .schedule-filter .filter-content .content-all div.active, .detail-banner-title .btn--subscribe:hover {
+	.select-type .type-group li.on, .rank-list .rank-item.highlight .ri-num, .tag-list li.tag-item.on .tag-a, .tag-list li.tag-item.on .tag-a:hover, .select-type .type-group li.on:hover, .schedule-list .match-operate.live, .schedule-time .time-contain li.active .date, .schedule-time .time-contain li.active .week, .library-contain .search-sort .sort-list li.active, .game-menu ul li.active, .schedule-filter .filter-content .content-all div.active, .detail-banner-title .btn--subscribe:hover, .detail-banner .relative-tags__item {
 		color: var(--color-ff) !important;
 	}
 	.calendar-table td.current div, .calendar-table .thead th {
 		color: var(--color-af) !important;
 	}
-	.select-type .type-group li:hover, .main-menu .tabs a.active, .energy-m .hot-box li:hover .txt, .spread-module a:hover .t, .rank-list .rank-item:hover .ri-title, .bili-dropdown .dropdown-list .dropdown-item:hover, .tag-list li.tag-item:hover a, .video-list .vl-hd .order-tab li.on, .video-list .vl-hd .type-tab li.on, .tag-more .b-toggle-btn:hover, .article-card .l-con:hover .title, .game-groom-m:hover a .title, .discovery-panel .content-item:hover, .subscribe-panel .subscribe-item:hover .name, .subscribe-panel .subscribe-item--active .name, .discovery-panel .content-item--active, .score-contain .page-btn:hover, .game-menu ul li:hover:not(.active), .library-contain .search-sort .sort-list li:hover:not(.active), .filter-wrap .select-sort li .icon-guanbi:hover, .border-table tr .iconfont.active, .competition-option .competition-option-hide .competition-option-result > span, .competition-option .competition-option-hide .competition-option-close:hover, .single-data-wrap .match-info-title a:hover, .video-floor-infomation-m .zone-title .headline .link-more:hover, .discovery-panel__title--active {
+	.select-type .type-group li:hover, .main-menu .tabs a.active, .energy-m .hot-box li:hover .txt, .spread-module a:hover .t, .rank-list .rank-item:hover .ri-title, .bili-dropdown .dropdown-list .dropdown-item:hover, .tag-list li.tag-item:hover a, .video-list .vl-hd .order-tab li.on, .video-list .vl-hd .type-tab li.on, .tag-more .b-toggle-btn:hover, .article-card .l-con:hover .title, .game-groom-m:hover a .title, .discovery-panel .content-item:hover, .subscribe-panel .subscribe-item:hover .name, .subscribe-panel .subscribe-item--active .name, .discovery-panel .content-item--active, .score-contain .page-btn:hover, .game-menu ul li:hover:not(.active), .library-contain .search-sort .sort-list li:hover:not(.active), .filter-wrap .select-sort li .icon-guanbi:hover, .border-table tr .iconfont.active, .competition-option .competition-option-hide .competition-option-result > span, .competition-option .competition-option-hide .competition-option-close:hover, .single-data-wrap .match-info-title a:hover, .video-floor-infomation-m .zone-title .headline .link-more:hover, .discovery-panel__title--active, .slide-channel-panel .mini-channel-card:hover .name, .channel-list-preview .header .channel-btns .go-channel-btn {
 		color: var(--bili-blue) !important;
 	}
 	.card-score .team .score .score-home, .schedule-list .match-ranks .ranks-score .score-home {
