@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202202242238
+	@version        202202261201
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202202242238
+	* © 最后更新：202202261201
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1074,7 +1074,7 @@
 	.home-header.back-top .home-header__bar .mini-header-left-entry li a, .manga-card-list .mouse-switch > .is-active, .login-panel-popover .login-btn, .avatar-panel-popover .vip-item__link, .elevator-core.is-active span, .elevator-core.is-active .icon, .bili-header.back-top ul li a, .bili-header .login-panel-popover .login-btn, .bili-header .left-entry .entry-title, .bili-header .left-entry .entry-title, .bili-header .left-entry .download-entry, .bili-header .left-entry .default-entry, .bili-header .left-entry .loc-entry, .palette-button-wrap .feedback, .palette-button-wrap .primary-btn, .area-header .roll-btn, .area-header .see-more, .area-header .timeline-btn, .bili-video-card__info--relation {
 		color: var(--color-ff) !important;
 	}
-	.home-header.fixed-top .home-header__bar .mini-header-left-entry li:hover a, .mini-header-left-entry .left-entry__title .mini-header__title:hover > span, .mini-header-left-entry .left-entry__title .mini-header__title:hover .mini-header__arrow, .bili-video-card .bili-video-card__info--owner:hover, .trending-item .rank.top, .trending-item:hover .trending-text, .aside-head .mouse-switch > .is-active, h3[class*="-card__info--tit"]:hover, h3[class*="-card__info--bottom"] :hover, .bili-live-card .bili-live-card__info--uname:hover, p[class*="-card__info--pub"]:hover, p[class*="-card__info--subtitle"]:hover, [class*="-card__info--title"]:hover, .bili-header .header .clear:hover, .bili-header .bili-header__channel .channel-entry-more__link:hover, .bili-header .bili-header__channel .channel-link:hover, .bili-header .bili-header__channel .channel-entry-more__link--active, .bili-header .bili-header__channel .channel-link--active {
+	.home-header.fixed-top .home-header__bar .mini-header-left-entry li:hover a, .mini-header-left-entry .left-entry__title .mini-header__title:hover > span, .mini-header-left-entry .left-entry__title .mini-header__title:hover .mini-header__arrow, .bili-video-card .bili-video-card__info--owner:hover, .trending-item .rank.top, .trending-item:hover .trending-text, .aside-head .mouse-switch > .is-active, h3[class*="-card__info--tit"]:hover, h3[class*="-card__info--bottom"] :hover, .bili-live-card .bili-live-card__info--uname:hover, p[class*="-card__info--pub"]:hover, p[class*="-card__info--subtitle"]:hover, [class*="-card__info--title"]:hover, .bili-header .header .clear:hover, .bili-header .bili-header__channel .channel-entry-more__link:hover, .bili-header .bili-header__channel .channel-link:hover, .bili-header .bili-header__channel .channel-entry-more__link--active, .bili-header .bili-header__channel .channel-link--active, .bili-video-card .bili-video-card__info--bottom:hover span {
 		color: var(--bili-blue) !important;
 	}
 	/* -- 边框 -- */
@@ -1096,6 +1096,9 @@
 	}
 	.upload-panel-popover .upload-item .item-icon rect, .upload-panel-popover .upload-item .item-icon path:not([stroke-linejoin="round"]), svg.link-icon--right path, svg.link-icon path, svg.device-icon path, svg.up-icon path, .bili-header .bili-header__channel .channel-link__right:not(:hover) .side-icon {
 		fill: var(--color-86)!important
+	}
+	.bili-video-card .bili-video-card__info--bottom span {
+		transition: color .2s linear!important;
 	}
 }
 @-moz-document url-prefix("https://message.bilibili.com/pages/nav/index_new_pc_sync"), url-prefix("https://message.bilibili.com/pages/nav/index_new_sync") {
