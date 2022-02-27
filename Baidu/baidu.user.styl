@@ -7,12 +7,13 @@
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
-    trebleist_ON "开" <<<EOT 
+    trebleist_ON "开" <<<EOT
 	#rs,
 	#foot,
-	[tpl="recommend_list"],[tpl="jy_course_and_org_pc"] [class*="course-new-style"]>div.c-row,
-    #rs_new,
-    #content_left .result-molecule{
+	[tpl="recommend_list"],
+	[tpl="jy_course_and_org_pc"] [class*="course-new-style"]>div.c-row,
+	#rs_new,
+	#content_left .result-molecule {
 		display: none!important;
 	}
 
@@ -31,8 +32,8 @@
 		box-sizing: border-box!important;
 		padding: 15px!important;
 		border-radius: 10px!important;
-		overflow:auto;
-        background:#fff!important;
+		overflow: auto;
+		background: #fff!important;
 	}
 
 	div#content_left>div[class="c-group-wrapper"] {
@@ -43,14 +44,12 @@
 		background: transparent!important;
 		padding: 0!important;
 		margin: 0!important;
-	}
-	div#content_left>div[class="c-group-wrapper"]{
-		background: #fff!important;
-    	flex-direction: column!important;
+		flex-wrap: wrap!important;
 		border-radius: 10px!important;
 		overflow: hidden!important;
 		margin-bottom: 10px!important;
 	}
+
 	div#content_left>div[class="c-group-wrapper"]>div[class]:first-child,
 	div#content_left>div[class="c-group-wrapper"]>div[class]:last-child,
 	#content_left .c-group-wrapper>div[class]:not(:first-child, :last-child) {
@@ -58,7 +57,7 @@
 	}
 
 	div#content_left>div[class="c-group-wrapper"]:hover,
-	[class*="course-new-style"]{
+	[class*="course-new-style"] {
 		box-shadow: none!important;
 	}
 
@@ -69,8 +68,9 @@
 		align-items: center;
 		justify-content: center;
 		background: #fff;
-        width:100%;
+		width: 100%;
 	}
+
 	div#content_left>div[class].hit-toptip.new-pmd .c-gap-bottom-large {
 		margin: 0!important;
 	}
@@ -79,28 +79,37 @@
 	div#content_left>div[class] canvas,
 	div#content_left>.c-group-wrappe>div[class],
 	div#content_left>div[class="c-group-wrapper"]>div[class] ul,
-	[class*="course-new-flex"]{
+	[class*="course-new-flex"] {
 		width: 100%!important;
 	}
-	div#content_left>div[class="c-group-wrapper"]>div[class] ul{
-		max-height:310px!important;
+
+	div#content_left>div[class="c-group-wrapper"]>div[class] ul {
+		max-height: 310px!important;
 	}
-	div#content_left>div[class="c-group-wrapper"] > div[class][srcid]{
-		width: 100%!important;
-		border-radius: 0!important;
+
+	div#content_left>div[class="c-group-wrapper"]>div[class][srcid] {
+		width: calc((100% - 10px) / 2)!important;
+		height: 219px!important;
 	}
+
+	div#content_left>div[class="c-group-wrapper"]>div[class][srcid]:first-child {
+		overflow: hidden!important;
+	}
+
 	div#content_left>div[class].new-pmd .c-gap-top-large,
-	.new-pmd .c-row:not([class*='bk_polysemy_'] [class*='video-wrapper_'][class*='hide_'],[class*='select-wrapper']),
+	.new-pmd .c-row:not([class*='bk_polysemy_'] [class*='video-wrapper_'][class*='hide_'], [class*='select-wrapper']),
 	.c-border,
 	div#content_left>div[class].new-pmd .c-tabs.c-sub-tabs .c-tabs-content {
 		width: 100%!important;
 		display: flex!important;
 		background: transparent!important;
 	}
+
 	[class*='bk_polysemy_'] [class*='video-wrapper_'] {
 		width: 100%!important;
 		height: auto!important
 	}
+
 	div#content_left>div[class].new-pmd .c-abstract {
 		margin-top: 10px!important;
 	}
@@ -146,6 +155,7 @@
 		overflow-y: hidden!important;
 		overflow-x: scroll!important;
 	}
+
 	div#content_left>div[class][mu*="天气"] .c-row,
 	div#content_left>div[class] .wenda-abstract-wrap-new,
 	div#content_left>div[class][tpl="site"]>.c-border,
@@ -156,7 +166,7 @@
 	div#content_left>div[class][mu*="zhuanlan.zhihu.com"]>div>.c-row>.c-span12>.c-border,
 	div#content_left>div[class][mu*="blog.csdn.net"]>div>.c-row>.c-span12>.c-border,
 	div#content_left>.result-op[tpl="wenda_abstract_pc"]>div>.c-row>.c-span12>.c-border,
-	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div>.c-row>.c-span12>.c-border>div:not([class])>.c-row{
+	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div>.c-row>.c-span12>.c-border>div:not([class])>.c-row {
 		flex-direction: column!important;
 	}
 
@@ -178,7 +188,7 @@
 	}
 
 	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class]),
-	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div>div[style]{
+	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div>div[style] {
 		display: flex!important;
 		flex-flow: column nowrap!important;
 	}
@@ -194,7 +204,8 @@
 		margin: 0!important;
 	}
 
-	div#content_left>div[class][tpl="site"]>.c-border>.op_site_main,[class*="course-new-style"] {
+	div#content_left>div[class][tpl="site"]>.c-border>.op_site_main,
+	[class*="course-new-style"] {
 		margin-top: 0!important;
 		padding: 0!important;
 	}
@@ -202,54 +213,69 @@
 	div#content_left>div[class][tpl="site"]>.c-border>.op_site_main>.op_site_gap_top {
 		margin-top: 8px!important;
 	}
-	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div{
-		overflow:auto;
+
+	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div {
+		overflow: auto;
 	}
-	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div{
-		overflow:hidden;
+
+	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div {
+		overflow: hidden;
 	}
+
 	#container.sam_newgrid .c-container .t,
 	#container.sam_newgrid .c-container .c-title,
-	.ms-measures-container .operation-container{
+	.ms-measures-container .operation-container {
 		display: flex!important;
 	}
-	.ms-measures-container .operation-unit-number{
+
+	.ms-measures-container .operation-unit-number {
 		width: 1rem!important;
 	}
-	.ms-measures-container .dropdown-menu{
+
+	.ms-measures-container .dropdown-menu {
 		display: flex;
 		flex-flow: column nowrap!important;
 		align-items: center!important;
 	}
-	.ms-measures-container .ms-measures-content .op-unit-tabs-nav-container .op-unit-tabs-nav-left-bg{
+
+	.ms-measures-container .ms-measures-content .op-unit-tabs-nav-container .op-unit-tabs-nav-left-bg {
 		width: 100%!important;
 	}
-	.ms-measures-container .ms-measures-content .op-unit-tabs-nav-container .op-unit-tabs-nav-left{
+
+	.ms-measures-container .ms-measures-content .op-unit-tabs-nav-container .op-unit-tabs-nav-left {
 		width: calc(100% - 38px)!important;
 	}
-	.ms-measures-container .dropdown-menu li{
-	width:100%!important;
-	text-align:center!important;
+
+	.ms-measures-container .dropdown-menu li {
+		width: 100%!important;
+		text-align: center!important;
 	}
-	.ms-measures-container .dropdown-menu-item{
-		padding:0!important
+
+	.ms-measures-container .dropdown-menu-item {
+		padding: 0!important
 	}
+
 	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_addmodle,
 	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_from_e,
-	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_to_e, .op_exrate_txt_e{
+	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_to_e,
+	.op_exrate_txt_e {
 		margin-bottom: 15px!important;
 	}
-	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_tip{
+
+	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_tip {
 		margin-top: 0!important;
 	}
-	[class*='board_'] [class*='type-map_'] [class*='type-wrap_']{
-		width:36%!important;
+
+	[class*='board_'] [class*='type-map_'] [class*='type-wrap_'] {
+		width: 36%!important;
 	}
-	.new-pmd .c-span5{
-		width:100px!important
+
+	.new-pmd .c-span5 {
+		width: 100px!important
 	}
-	[mu*="mydown.yesky.com"] .c-span12{
-		margin:0!important;
+
+	[mu*="mydown.yesky.com"] .c-span12 {
+		margin: 0!important;
 	}
 	EOT;
 	trebleList_OFF "关" <<<EOT /*[[trebleList]]*\/ EOT;
@@ -547,7 +573,6 @@
 	}
 	#content_left .c-group-wrapper > div[class]:not(:first-child, :last-child) {
 		border-radius: 0!important;
-		padding-top: 0!important;
 		padding-bottom: 0!important;
 	}
 	#content_left .c-group-wrapper > div[class]:first-child {
@@ -558,7 +583,6 @@
 	#content_left .c-group-wrapper > div[class]:last-child {
 		border-top-left-radius: 0!important;
 		border-top-right-radius: 0!important;
-		padding-top: 0!important;
 	}
 	.new-pmd.c-container, #rs_new {
 		width: 560px;
