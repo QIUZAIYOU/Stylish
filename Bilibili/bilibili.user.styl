@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202202272118
+	@version        202203131456
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202202272118
+	* © 最后更新：202203131456
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -3023,7 +3023,7 @@
 	.home-wrap .home-input .type.selected, .home-wrap .home-input .type:hover {
 		background-image: linear-gradient(0deg, var(--color-27), var(--color-21));
 	}
-	#user-list .dropdown-wrap .select-wrap .bili-dropdown {
+	#user-list .dropdown-wrap .select-wrap .bili-dropdown, .home-wrap .home-input .type.selected, .home-wrap .home-input .type:hover {
 		background: transparent !important;
 	}
 	/* -- 字体 -- */
@@ -3039,7 +3039,7 @@
 	.filter-wrap .filter-item.active a, .home-wrap .home-input .searchBtn, .home-wrap .home-suggest .hot-search .item .num.special, .user-item .attention-btn, #pgc-navigate-wrap .ep-box .ep-sub .ep-item:hover, .all-user-item .user-row .attention-btn {
 		color: var(--color-ff) !important;
 	}
-	.notification-tips a, .history-list .r-info .history-delete:hover, .history-dlg .hsbtn .cancel:hover, .home-wrap .home-suggest .hot-search .item:hover .word, .home-wrap .home-input .list li:hover, #navigator .v-switcher-header-item .router-link-active, .user-item .up-videos .video-more, #user-list .dropdown-wrap .select-wrap .bili-dropdown .dropdown-list .dropdown-item:hover, #live-list .live-tabs a.active {
+	.notification-tips a, .history-list .r-info .history-delete:hover, .history-dlg .hsbtn .cancel:hover, .home-wrap .home-suggest .hot-search .item:hover .word, .home-wrap .home-input .list li:hover, #navigator .v-switcher-header-item .router-link-active, .user-item .up-videos .video-more, #user-list .dropdown-wrap .select-wrap .bili-dropdown .dropdown-list .dropdown-item:hover, #live-list .live-tabs a.active, .home-wrap .home-input .type.selected, .home-wrap .home-input .type:hover {
 		color: var(--bili-blue) !important;
 	}
 	.suggest-wrap .vertical > li:nth-child(2) .rank, .suggest-wrap .vertical > li:nth-child(2) a {
@@ -3052,7 +3052,7 @@
 		color: #e39423 !important;
 	}
 	/* -- 边框 -- */
-	.game-item .info .type, .filter-wrap, #navigator .v-switcher-header-item, .video-item.matrix, .filter-wrap .sub-filter, .video-item.list .type, .video-item.list, .search-wrap .search-block .input-wrap input, .suggest-wrap, .suggest-wrap .horizontal .hz-text, .suggest-wrap .title, .home-wrap .home-input .content, .home-wrap .home-input .type, .home-wrap .home-suggest .hot-search, .home-wrap .home-suggest .hotlist .item, .home-wrap .home-suggest .history, .home-wrap .home-suggest .history .list .item, .home-wrap .home-input .list, .user-item, #user-list .dropdown-wrap .select-wrap, .bangumi-item, #pgc-navigate-wrap .ep-box .ep-sub .ep-item, .bangumi-item .right-info .headline .bangumi-label, .pgc-item, .pgc-item .right-info .headline .pgc-label, .live-user-item .item-right .tags > span, .article-item, .topic-item, #all-list .mixin-list ul:not(:last-child), .activity-item .info .type, .video-info-module, .video-info-module .v-info .line, .video-info-module .v-preview, .video-info-module .v-data, .error-wrap {
+	.game-item .info .type, .filter-wrap, #navigator .v-switcher-header-item, .video-item.matrix, .filter-wrap .sub-filter, .video-item.list .type, .video-item.list, .search-wrap .search-block .input-wrap input, .suggest-wrap, .suggest-wrap .horizontal .hz-text, .suggest-wrap .title, .home-wrap .home-input .content, .home-wrap .home-input .type, .home-wrap .home-suggest .hot-search, .home-wrap .home-suggest .hotlist .item, .home-wrap .home-suggest .history, .home-wrap .home-suggest .history .list .item, .home-wrap .home-input .list, .user-item, #user-list .dropdown-wrap .select-wrap, .bangumi-item, #pgc-navigate-wrap .ep-box .ep-sub .ep-item, .bangumi-item .right-info .headline .bangumi-label, .pgc-item, .pgc-item .right-info .headline .pgc-label, .live-user-item .item-right .tags > span, .article-item, .topic-item, #all-list .mixin-list ul:not(:last-child), .activity-item .info .type, .video-info-module, .video-info-module .v-info .line, .video-info-module .v-preview, .video-info-module .v-data, .error-wrap, .home-wrap .home-input .type.selected, .home-wrap .home-input .type:hover {
 		border-color: var(--color-42) !important;
 	}
 	.history-dlg .hsbtn .cancel:hover, .history-wrap .history-btn .btn:hover, #pgc-navigate-wrap .ep-box .ep-sub .ep-item:hover {
