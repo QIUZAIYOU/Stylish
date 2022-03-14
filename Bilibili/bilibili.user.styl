@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202203131456
+	@version        202203140832
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202203131456
+	* © 最后更新：202203140832
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -2908,7 +2908,7 @@
 		filter: var(--filter-ccd0d7-42) !important;
 	}
 }
-@-moz-document url-prefix("https://passport.bilibili.com/register/login_sms_verify.html") {
+@-moz-document url-prefix("https://passport.bilibili.com/register/login_sms_verify.html"), url-prefix("https://passport.bilibili.com/account/mobile/security/managephone/phone/verify") {
 	/* ===护照中心 > 登录验证=== */
 	/* -- 其他 -- */
 	#internationalHeader {
@@ -2916,6 +2916,24 @@
 	}
 	.container {
 		margin-top: 20px!important;
+	}
+	[data-dpr="1"] .bili-day .verify-bottom .ui-border-tb {
+		background-color: var(--color-2c) !important;
+	}
+	.bili-day .verify-bottom .text-title-color, .bili-day .verify-bottom .tips, .bili-day .verify-bottom .primary-text-color.text-disabled-color {
+		color: var(--color-86)!important
+	}
+	.bili-day .verify-bottom .primary-text-color {
+		color: var(--bili-pink)!important
+	}
+	.bili-day .verify-bottom .error-text {
+		color: var(--bili-red)!important
+	}
+	.bind-phone-bottom p a {
+		color: var(--bili-blue)!important
+	}
+	[data-dpr="1"] .bili-day .verify-bottom .ui-border-tb, [data-dpr="1"] .bili-day .verify-bottom .ui-border-l {
+		border-color: var(--color-42) !important;
 	}
 }
 @-moz-document url-prefix("https://www.bilibili.com/account/history") {
