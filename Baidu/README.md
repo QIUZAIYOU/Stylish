@@ -1,4 +1,4 @@
-# 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2022.03.03-blue)
+# 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2022.03.24-blue)
 
 ![简百度 Simple Baidu](https://www.asifadeaway.com/Stylish/baidu/StylishCover.png)
 
@@ -27,6 +27,8 @@
 ## 历史更新
 
 ### 2022
+
+`03.24`：修复三列模式下搜索结果为「万年历」时显示错位的问题。
 
 `02.27`：修复三列模式下搜索结果以组合状态显示时排列不合适的问题。
 
