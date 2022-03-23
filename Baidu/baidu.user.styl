@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2022.0310
+@version        2022.0324
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -283,8 +283,58 @@
 		flex-direction: column!important;
 	}
 	[class*="wenda-abstract"]{
-		border: noneimportant;
-		overflow: hiddenimportant;
+		border: none!important;
+		overflow: hidden!important;
+	}
+	[class*="calendar_"] {
+		margin:unset!important;
+		box-shadow:none!important;
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"]{
+		width: 294px!important;
+	}
+
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"]{
+		flex-wrap: wrap!important;
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"] [class*="back-today"]{
+	
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"] [class*="header-block"]{
+		width: 76px!important;
+		margin: 0 5px 5px 0!important;
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"] [class*="header-block-2"]{
+    	padding: 0 28px!important;
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"] [class*="header-block-2"],
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"] [class*="header-block-2"] [class*="select_"]{
+		width: 62px!important;
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="content-box_"] [class*="content-thead-box_"]{
+		margin-top: 35px!important;
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="content-box_"] [class*="content-thead-box_"] [class*="content-thead_"]{
+		width: 37px!important;
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="cell"] [class*="cell-inner-box"]{
+		width: 33px!important;
+		height: 52px!important;
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-right"]{
+		width: fit-content!important;
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-right"]>div:not([class]){
+		width: 72px!important;
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-right"] [class*="calendar-right-day"]{
+		width: 60px!important;
+   	 	height: 60px!important;
+		line-height: 60px!important;
+		font-size: 40px!important;
+	}
+	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-right"] [class*="calendar-right-suggestion-box"] {
+		padding-bottom: 0!important;
 	}
 	EOT;
 	trebleList_OFF "关" <<<EOT /*[[trebleList]]*\/ EOT;
@@ -294,7 +344,7 @@
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2022.0310
+	 * © 最后更新：2022.0324
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
