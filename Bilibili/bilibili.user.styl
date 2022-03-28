@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202203281836
+	@version        202203281839
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202203281836
+	* © 最后更新：202203281839
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1725,7 +1725,7 @@
 	}
 }
 @-moz-document url-prefix("https://www.bilibili.com/v"), url-prefix("https://www.bilibili.com/guochuang"), regexp("https:\\/\\/www\\.bilibili\\.com\\/.*") {
-	/* ===频道及频道详情页=== */
+	/* ===分区及分区详情页=== */
 	/* -- 背景 -- */
 	.schedule-filter .bscroll-vertical-scrollbar {
 		background-color: var(--color-14) !important;
@@ -1773,7 +1773,7 @@
 	.competition-score > li p, .schedule-time .time-contain li, .schedule-time .time-contain li.data .date, .mod-3 .r .v-info .v-info-i, .spread-module .num, .rank-list .rank-item .ri-detail .ri-point, .tag-list-wrp .title .small, .mod-1 .r .v-info .v-info-i, .mod-1 .r .up-info .v-date, .mod-1 .r .v-desc, .mod-2 li .r .v-info .v-info-i, .mod-2 li .r .v-desc, .video-info-module .v-data span, .game-groom-m .nume, .card-video .video-wrap .video-info .detail .iconfont, .card-video .video-wrap .video-info .detail .item, .matchlist-contain .match-wrap .match-time, .card-score .team .team-info .team-name, .lastMonth, .nextMonth, .schedule-list .match-time .time-status.over, .video-card .up-name, .channel-list-preview .header-desc, .card-score .des, .team-box .subtitle, .team-box .team-infodata .infobox .score-title, .ring-box .inset-text, .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .player-info .position, .playrank-box .single-rank .single-rank-box .top-three .single-top .logobox .belongteam, .playrank-box .single-rank .single-rank-box .ohter-box .ohter-rank-item .killdata-container .rankboxtitle, .playrank-box .single-rank .single-rank-box .top-three .single-top .rankboxtitle, .simple-nav, .simple-nav a, .game-content .team-box .team-detail .team-name .full-name, .game-content .team-container .tn, .game-content .team-history .des-container .desc, .rep-list-wrap .msg-wrap, .how-pay, .competition-option .competition-option-hide .competition-option-desc, .competition-option .competition-option-hide .competition-option-input > i, .competition-option .competition-option-hide .competition-option-tools .competition-option-tools-left, .part-title-menu p, .competition-title .competition-title-season, .competition-title .competition-title-between p span, .single-data-wrap .match-info-title a, .single-data-wrap .match-info-title, .competition-menu, .msg-wrap, .score-module-wrap .team-msg .title, .score-module-wrap .team-msg .msg-score .score-time, .card-score .desc, .card-score .title .title-text, .mini-channel-card .label, .game-content .team-box .team-detail .team-infodata .infodata-box .score-title, .other-panel .card .detail-hint, .game-groom-m .num, .type-header .header-info .count, .bangumi-item .pub-info {
 		color: var(--color-66) !important;
 	}
-	.select-type .type-group li.on, .rank-list .rank-item.highlight .ri-num, .tag-list li.tag-item.on .tag-a, .tag-list li.tag-item.on .tag-a:hover, .select-type .type-group li.on:hover, .schedule-list .match-operate.live, .schedule-time .time-contain li.active .date, .schedule-time .time-contain li.active .week, .library-contain .search-sort .sort-list li.active, .game-menu ul li.active, .schedule-filter .filter-content .content-all div.active, .detail-banner-title .btn--subscribe:hover, .detail-banner .relative-tags__item, .hot-module .left .goto, .index-module .sub-m[data-v-36e6a640] {
+	.select-type .type-group li.on, .rank-list .rank-item.highlight .ri-num, .tag-list li.tag-item.on .tag-a, .tag-list li.tag-item.on .tag-a:hover, .select-type .type-group li.on:hover, .schedule-list .match-operate.live, .schedule-time .time-contain li.active .date, .schedule-time .time-contain li.active .week, .library-contain .search-sort .sort-list li.active, .game-menu ul li.active, .schedule-filter .filter-content .content-all div.active, .detail-banner-title .btn--subscribe:hover, .detail-banner .relative-tags__item, .hot-module .left .goto, .index-module .sub-m {
 		color: var(--color-ff) !important;
 	}
 	.calendar-table td.current div, .calendar-table .thead th {
@@ -1925,7 +1925,7 @@
 	}
 }
 @-moz-document url-prefix("https://www.bilibili.com/anime"), url-prefix("https://www.bilibili.com/guochuang"), url-prefix("https://www.bilibili.com/documentary"), url-prefix("https://www.bilibili.com/movie"), url-prefix("https://www.bilibili.com/tv"), url-prefix("https://www.bilibili.com/bangumi") {
-	/* ===视频分类=== */
+	/* ===视频分区=== */
 	/* -- 背景 -- */
 	#app, .spread-module .num, .new-stat-module .zone-title .headline .new-stat-more, .new-stat-module .zone-title .headline .new-stat-more:hover, .block-area .follow-wrapper .follow-head .follow-more, .block-area .follow-wrapper .follow-head .follow-more:hover, .pgc-rank-dropdown, .pgc-rank-dropdown .dropdown-list, .timeline-header, .tl-head .tl-day, .timeline-wrapper, .season-timeline .season-group .group-time:before, .media-tab-wrp {
 		background-color: var(--color-21) !important;
@@ -3389,7 +3389,7 @@
 		background-color: var(--color-2c) !important;
 	}
 	/* -- 字体 -- */
-	.comment-container .common .b-head, .bili-share-pc .title, .act-rich-style-init .public-DraftEditor-content, .act-rich-style-init .act-rich-render-content, .context p span, .temp-model-topic .item-text, .topic-main .topic-title .b-topic-t, .active-main .active-title .b-active-t, .activity-questions-list-wrap .activity-questions-item, .q-textarea, .activity-dialog-footer, .activity-dialog-content .activity-dialog-content-message, .mini-header .left-entry .mini-header__title, .mini-header .left-entry .entry-title, .mini-header .left-entry .default-entry, .mini-header .left-entry .loc-mc-box__text, .mini-header .left-entry .download-entry, .mini-header .left-entry .loc-entry, .mini-header .right-entry .right-entry__outside .right-entry-icon, .bili-share-pc .share-weixin-qr h4 {
+	.comment-container .common .b-head, .bili-share-pc .title, .act-rich-style-init .public-DraftEditor-content, .act-rich-style-init .act-rich-render-content, .context p span, .temp-model-topic .item-text, .topic-main .topic-title .b-topic-t, .active-main .active-title .b-active-t, .activity-questions-list-wrap .activity-questions-item, .q-textarea, .activity-dialog-footer, .activity-dialog-content .activity-dialog-content-message, .mini-header .left-entry .mini-header__title, .mini-header .left-entry .entry-title, .mini-header .left-entry .default-entry, .mini-header .left-entry .loc-mc-box__text, .mini-header .left-entry .download-entry, .mini-header .left-entry .loc-entry, .mini-header .right-entry .right-entry__outside .right-entry-icon, .bili-share-pc .share-weixin-qr h4, .act-rich-style-init2 .public-DraftEditor-content h1, .act-rich-style-init2 .public-DraftEditor-content h2, .act-rich-style-init2 .public-DraftEditor-content h3, .act-rich-style-init2 .public-DraftEditor-content h4, .act-rich-style-init2 .public-DraftEditor-content h5, .act-rich-style-init2 .public-DraftEditor-content h6, .act-rich-style-init2 .act-rich-render-content h1, .act-rich-style-init2 .act-rich-render-content h2, .act-rich-style-init2 .act-rich-render-content h3, .act-rich-style-init2 .act-rich-render-content h4, .act-rich-style-init2 .act-rich-render-content h5, .act-rich-style-init2 .act-rich-render-content h6 {
 		color: var(--color-86) !important;
 	}
 	.topic-main .act-list ul li .found-time, .topic-main .act-list ul li .act-info, .active-main .act-list ul li .event_status, .active-main .act-list ul li .act-info {
