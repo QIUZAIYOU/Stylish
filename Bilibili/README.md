@@ -48,7 +48,7 @@
 
 ### 2022
 
-`03.29 16:08`：适配新版「播放」及「动态」页面（修复 [#7](https://github.com/QIUZAIYOU/Stylish/issues/7) [#11](https://github.com/QIUZAIYOU/Stylish/issues/11)）并修复部分页面及元素未覆盖问题。
+`03.29 16:49`：适配新版「播放」及「动态」页面（修复 [#7](https://github.com/QIUZAIYOU/Stylish/issues/7) [#11](https://github.com/QIUZAIYOU/Stylish/issues/11)）并修复部分页面及元素未覆盖问题。
 
 `03.28 18:39`：适配新版「分区」页面并修复部分页面未覆盖问题。
 
