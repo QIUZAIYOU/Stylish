@@ -1,4 +1,4 @@
-# 夜间哔哩 NightMode For Bilibili.com ![Last_Update](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2022.03.29-blue)
+# 夜间哔哩 NightMode For Bilibili.com ![Last_Update](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen) ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2022.03.30-blue)
 
 ![夜间哔哩 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/bilibili/StylishCover.png)
 
@@ -48,11 +48,13 @@
 
 ### 2022
 
+`03.30 09:21`：修复 [#12](https://github.com/QIUZAIYOU/Stylish/issues/12) 和部分页面及元素未覆盖问题。
+
 `03.29 16:49`：适配新版「播放」及「动态」页面（修复 [#7](https://github.com/QIUZAIYOU/Stylish/issues/7) [#11](https://github.com/QIUZAIYOU/Stylish/issues/11)）并修复部分页面及元素未覆盖问题。
 
 `03.28 18:39`：适配新版「分区」页面并修复部分页面未覆盖问题。
 
-`03.23 23:36`：适配新版「搜索」页面（修复 [#10](https://github.com/QIUZAIYOU/Stylish/issues/10)），修复。
+`03.23 23:36`：适配新版「搜索」页面（修复 [#10](https://github.com/QIUZAIYOU/Stylish/issues/10)）。
 
 `02.17 21:41`：修复「漫画」部分页面未覆盖问题。
 
