@@ -1,4 +1,4 @@
-# 夜间知乎 NightMode For Zhihu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2022.02.07-blue)
+# 夜间知乎 NightMode For Zhihu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2022.03.31-blue)
 
 ![夜间知乎 NightMode For Zhihu.com](https://www.asifadeaway.com/Stylish/zhihu/StylishCover.png)
 
@@ -24,6 +24,10 @@
 ⭐ 若在 Stylus 设置中开启「启用CSP补丁以使样式资源生效」选项会导致知乎加载异常
 
 ## 历史更新
+
+### 2022
+
+`03.31 09:50`：积累问题修复。
 
 ### 2021
 
