@@ -28,7 +28,7 @@
 
 ### 2022
 
-`04.05`：修复单列模式下搜索结果整体偏移 [#15](https://github.com/QIUZAIYOU/Stylish/issues/15) 及部分结果宽度错误的问题。
+`04.05`：修复 [#15](https://github.com/QIUZAIYOU/Stylish/issues/15) 及部分搜索结果元素宽度错误的问题。
 
 `03.24`：修复三列模式下搜索结果为「万年历」时显示错位的问题。
 
