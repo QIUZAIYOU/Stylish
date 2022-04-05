@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202204051450
+	@version        202204051517
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202204051450
+	* © 最后更新：202204051517
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1739,7 +1739,7 @@
 @-moz-document url-prefix("https://www.bilibili.com/video"), url-prefix("https://www.bilibili.com/bangumi/play"), url-prefix("https://www.bilibili.com/cheese/play"), url-prefix("https://www.bilibili.com/medialist/play"), url-prefix("https://www.bilibili.com/watchroom") {
 	/* ===视频播放页(新版)=== */
 	/* -- 背景 -- */
-	.video-container-v1 .danmaku-box .danmaku-wrap, .recommend-list-v1 .rec-footer, .fixed-nav .nav-menu .item, .van-popover.van-share, .van-popover.van-more, .s_tag-v1 .tag-wrap .tag-area > li .tag-link, .tag-channel-pane-exp, .s_tag-v1 .tag-wrap .tag-more, .float-nav-exp .nav-menu .item, .base-video-sections-v1, .base-video-sections-v1 .video-section-list .video-episode-card, .up-info-v1 .u-face .u-face__avatar, .main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list {
+	.video-container-v1 .danmaku-box .danmaku-wrap, .recommend-list-v1 .rec-footer, .fixed-nav .nav-menu .item, .van-popover.van-share, .van-popover.van-more, .s_tag-v1 .tag-wrap .tag-area > li .tag-link, .tag-channel-pane-exp, .s_tag-v1 .tag-wrap .tag-more, .float-nav-exp .nav-menu .item, .base-video-sections-v1, .base-video-sections-v1 .video-section-list .video-episode-card, .up-info-v1 .u-face .u-face__avatar, .main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list, .members-info-v1 .normal-members-header {
 		background-color: var(--color-2c) !important;
 	}
 	.van-popover.van-share .share_dropdown .share-pos .box-left .share-link, .base-video-sections-v1 .video-section-list .video-episode-card__info-playing, .main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list li:hover {
@@ -1754,20 +1754,26 @@
 	.float-nav-exp .nav-menu .item.mini.on:hover, .float-nav-exp .nav-menu .item:hover {
 		background-color: var(--bili-blue) !important;
 	}
+	.members-info-v1 .wide-members-container .general-mask-right {
+		background: linear-gradient(270deg, var(--color-2c) 0%, rgba(44, 44, 44, 0) 100%)!important;
+	}
+	.members-info-v1 .wide-members-container .general-mask-left {
+		background: linear-gradient(-270deg, var(--color-2c) 0%, rgba(44, 44, 44, 0) 100%)!important;
+	}
 	.van-popover.van-share .share_dropdown .share-pos .box-left .share-link input, .van-popover.van-more .more_dropdown .ops-watch-later, .up-info-v1 .btn-panel .not-follow-charge-btn, .base-video-sections-v1 .video-sections-head_second-line .second-line_right {
 		background: transparent!important;
 	}
 	/* -- 字体 -- */
-	.video-info-v1 .video-data, .bilibili-player-video-sendbar .bilibili-player-video-danmaku-root .bilibili-player-video-inputbar-wrap .bilibili-player-video-danmaku-wrap, .video-desc-v1 .desc-info, .video-toolbar-v1 .toolbar-right > div, .video-toolbar-v1 .toolbar-right > span, .video-toolbar-v1 .toolbar-left > span:not(:hover), .recommend-list-v1 .rec-title, .video-page-card-small .card-box .info .title, .video-page-game-card-small .card-box .info .title, .recommend-list-v1 .rec-title .next-button, .fixed-nav .nav-menu .item, .van-popover.van-share .share_dropdown .share-pos .box-left .share-btns .share-btn-text, .van-popover.van-share .share_dropdown .share-pos .box-right p, .van-popover.van-share .share_dropdown .share-pos .box-left .share-link input, .van-popover.van-more .more_dropdown li, .s_tag-v1 .tag-wrap .tag-area > li .tag-link, .tag-channel-pane-exp .channel-title, .float-nav-exp .nav-menu .item, .float-nav-exp .nav-menu .item:not(:hover), .recommend-list-v1 .rec-footer, .base-video-sections-v1 .video-section-list .video-episode-card__info-title, .main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list li {
+	.video-info-v1 .video-data, .bilibili-player-video-sendbar .bilibili-player-video-danmaku-root .bilibili-player-video-inputbar-wrap .bilibili-player-video-danmaku-wrap, .video-desc-v1 .desc-info, .video-toolbar-v1 .toolbar-right > div, .video-toolbar-v1 .toolbar-right > span, .video-toolbar-v1 .toolbar-left > span:not(:hover), .recommend-list-v1 .rec-title, .video-page-card-small .card-box .info .title, .video-page-game-card-small .card-box .info .title, .recommend-list-v1 .rec-title .next-button, .fixed-nav .nav-menu .item, .van-popover.van-share .share_dropdown .share-pos .box-left .share-btns .share-btn-text, .van-popover.van-share .share_dropdown .share-pos .box-right p, .van-popover.van-share .share_dropdown .share-pos .box-left .share-link input, .van-popover.van-more .more_dropdown li, .s_tag-v1 .tag-wrap .tag-area > li .tag-link, .tag-channel-pane-exp .channel-title, .float-nav-exp .nav-menu .item, .float-nav-exp .nav-menu .item:not(:hover), .recommend-list-v1 .rec-footer, .base-video-sections-v1 .video-section-list .video-episode-card__info-title, .main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list li, .members-info-v1 .wide-members-header, .members-info-v1 .normal-members-container .up-card .upinfo .upname:not(.is-vip), .video-page-operator-card-small .card-box .info .title:not(:hover), .members-info-v1 .normal-members-header, .members-info-v1 .wide-members-container .van-icon-general_enter_s:not(:hover), .members-info-v1 .wide-members-container .van-icon-general_back_s:not(:hover) {
 		color: var(--color-86) !important;
 	}
-	.video-page-card-small .card-box .info .playinfo, .video-page-game-card-small .card-box .info .grade .grade-text, .tag-channel-pane-exp .channel-desc, .base-video-sections-v1 .video-sections-head_first-line .first-line-left .cur-page, .base-video-sections-v1 .video-sections-head_second-line, .base-video-sections-v1 .video-sections-head_second-line .abstract, .base-video-sections-v1 .video-section-list .video-episode-card__info-duration, .main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list li.disabled.main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list li.disabled:hover {
+	.video-page-card-small .card-box .info .playinfo, .video-page-game-card-small .card-box .info .grade .grade-text, .tag-channel-pane-exp .channel-desc, .base-video-sections-v1 .video-sections-head_first-line .first-line-left .cur-page, .base-video-sections-v1 .video-sections-head_second-line, .base-video-sections-v1 .video-sections-head_second-line .abstract, .base-video-sections-v1 .video-section-list .video-episode-card__info-duration, .main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list li.disabled.main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list li.disabled:hover, .members-info-v1 .wide-members-header .person, .members-info-v1 .wide-members-container .up-card .info-tag, .members-info-v1 .normal-members-container .up-card .upinfo .info-tag, .video-page-operator-card-small .card-box .info .playinfo, .video-desc-v1 .toggle-btn span:not(:hover) {
 		color: var(--color-66) !important;
 	}
 	.video-desc-v1 .desc-info a, .video-toolbar-v1 .toolbar-right > div:hover, .video-toolbar-v1 .toolbar-right > span:hover, .video-page-card-small .card-box .info .title:hover, .fixed-nav .nav-menu .item:hover, .s_tag-v1 .tag-wrap .tag-area > li .tag-link.topic-link, .tag-channel-pane-exp .channel-btns__link, .float-nav-exp .nav-menu .item.mini.on, .base-video-sections-v1 .video-section-list .video-episode-card:hover .video-episode-card__info-title, .base-video-sections-v1 .video-section-list .video-episode-card__info-playing .video-episode-card__info-title, .video-toolbar-v1 .toolbar-left > span:hover, .video-toolbar-v1 .toolbar-left > span.on, .main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list li:hover {
 		color: var(--bili-blue) !important;
 	}
-	.video-info-v1 .video-data .honor.honor-rank {
+	.video-info-v1 .video-data .honor.honor-rank, .members-info-v1 .normal-members-container .up-card .upinfo .upname.is-vip {
 		color: var(--bili-pink) !important;
 	}
 	.tag-channel-pane-exp .channel-btns__link:hover, .float-nav-exp .nav-menu .item.mini.on:hover, .float-nav-exp .nav-menu .item:hover, .main-container .pay-bar .btn-pay {
@@ -1780,7 +1786,7 @@
 		color: #FFB027!important;
 	}
 	/* -- 边框 -- */
-	.video-toolbar-v1, .s_tag-v1, .fixed-nav .nav-menu .item, .van-popover.van-share .share_dropdown .share-pos .box-right, .tag-channel-pane-exp .channel-cover, .float-nav-exp .nav-menu .item, .main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list {
+	.video-toolbar-v1, .s_tag-v1, .fixed-nav .nav-menu .item, .van-popover.van-share .share_dropdown .share-pos .box-right, .tag-channel-pane-exp .channel-cover, .float-nav-exp .nav-menu .item, .main-container .media-info .media-right .media-tool-bar .bangumi-options .opt-list, .members-info-v1 .normal-members-container .up-card .avatar {
 		border-color: var(--color-42) !important;
 	}
 	/* -- 其他 -- */
@@ -3164,10 +3170,10 @@
 	.filter-wrap .sub-filter, .search-wrap .fixed-top, .filter-wrap .fold:hover, .home-wrap .home-suggest .hotlist .num, .user-item .attention-btn.followed, .user-item .attention-btn.followed:hover, .live-user-item .item-right .status.free, #live-list .live-user-wrap .live-user-item, .bili-footer, .vui_button--tab, .vui_button--tab:focus, .vui_tabs--navbar .vui_tabs--nav-item .vui_tabs--nav-num, .search-input-container .search-input-wrap, .search-input-wrap .search-panel, .vui_button, .vui_button:focus, .search-layout .search-header .search-conditions .search-condition-row .search-channel-item .search-sub-wrapper .search-sub-channel, .v-popover-content, .dynamic-article .split-line .history-tip, .vui_dropdown-content, #go-to-new-search {
 		background-color: var(--color-2c) !important;
 	}
-	.suggest-wrap .vt-text:hover, .home-wrap .home-input .list li:hover, .search-input-wrap .histories .history-item, .bili-header .message-entry-popover .message-inner-list__item:hover, .bili-header .list-item:hover, .bili-header .header-fav-card:hover, .bili-header .header-history-video:hover, .history-panel-popover .header-tabs-panel__content .view-all-history-btn, .bili-header .header-history-live:hover, .bili-header .header-history-article:hover, .media-footer-select-content-item:hover {
+	.suggest-wrap .vt-text:hover, .home-wrap .home-input .list li:hover, .search-input-wrap .histories .history-item, .bili-header .message-entry-popover .message-inner-list__item:hover, .bili-header .list-item:hover, .bili-header .header-fav-card:hover, .bili-header .header-history-video:hover, .history-panel-popover .header-tabs-panel__content .view-all-history-btn, .bili-header .header-history-live:hover, .bili-header .header-history-article:hover, .media-footer-select-content-item:hover, .search-input-wrap .suggest-item.active, .search-input-wrap .suggest-item:hover, .search-input-wrap .suggest-item:focus {
 		background-color: var(--color-27) !important;
 	}
-	.filter-wrap .filter-wrap_bottom, .all-user-item .user-row .row-2 .live-entry:after {
+	.filter-wrap .filter-wrap_bottom, .all-user-item .user-row .row-2 .live-entry:after, .show-more-text {
 		background-color: var(--color-42) !important;
 	}
 	.search-input-container .search-input-wrap .clear-icon {
@@ -3217,7 +3223,7 @@
 	.filter-wrap .filter-item.active a, .home-wrap .home-input .searchBtn, .home-wrap .home-suggest .hot-search .item .num.special, .user-item .attention-btn, #pgc-navigate-wrap .ep-box .ep-sub .ep-item:hover, .all-user-item .user-row .attention-btn, .vui_button--tab:active, .vui_button--tab.vui_button--active, .vui_button--tab.vui_button--active:hover, .vui_button--active-blue:active, .vui_button--active-blue.vui_button--active:hover, .vui_button--active-blue.vui_button--active, .vui_button.vui_button--active:hover, .search-page-live .live-room .room-header .live-type-btn.vui_button--active, .search-input-container .search-input-wrap:hover .vui_button, .vui_button--blue:hover {
 		color: var(--color-ff) !important;
 	}
-	.notification-tips a, .history-list .r-info .history-delete:hover, .history-dlg .hsbtn .cancel:hover, .home-wrap .home-suggest .hot-search .item:hover .word, .home-wrap .home-input .list li:hover, #navigator .v-switcher-header-item .router-link-active, .user-item .up-videos .video-more, #user-list .dropdown-wrap .select-wrap .bili-dropdown .dropdown-list .dropdown-item:hover, #live-list .live-tabs a.active, .home-wrap .home-input .type.selected, .home-wrap .home-input .type:hover, .vui_tabs--navbar .vui_tabs--nav-item:hover .vui_tabs--nav-text, .vui_tabs--navbar .vui_tabs--nav-item-active .vui_tabs--nav-text, .vui_button--tab:not(:active):hover, .search-input-wrap .trending-item .trendings-rank.search-rank-top, .bili-video-card .bili-video-card__info--tit:hover, .bili-header .list-item:hover .content, .bili-header .header-fav-card:hover .header-fav-card__info--title, .favorite-panel-popover__nav .tab-item:not(.tab-item--active):hover .tab-item__title, .favorite-panel-popover__content .content-bottom__btn--play, .dynamic-panel-popover .header-tabs-panel__item:hover, .history-panel-popover .header-tabs-panel__item:hover, .bili-header .header-history-video:hover .header-history-card__info--title, .history-panel-popover .header-tabs-panel__content .view-all-history-btn:hover, .bili-header .header-history-live:hover .header-history-card__info--title, .bili-header .header-history-article:hover .header-history-card__info--title, .bili-live-card .bili-live-card__info--tit:hover, .vui_pagenation--btns .vui_pagenation--btn:not([disabled], .vui_button--active):hover, .media-footer-select-content-item:hover {
+	.notification-tips a, .history-list .r-info .history-delete:hover, .history-dlg .hsbtn .cancel:hover, .home-wrap .home-suggest .hot-search .item:hover .word, .home-wrap .home-input .list li:hover, #navigator .v-switcher-header-item .router-link-active, .user-item .up-videos .video-more, #user-list .dropdown-wrap .select-wrap .bili-dropdown .dropdown-list .dropdown-item:hover, #live-list .live-tabs a.active, .home-wrap .home-input .type.selected, .home-wrap .home-input .type:hover, .vui_tabs--navbar .vui_tabs--nav-item:hover .vui_tabs--nav-text, .vui_tabs--navbar .vui_tabs--nav-item-active .vui_tabs--nav-text, .vui_button--tab:not(:active, .vui_button--active):hover, .search-input-wrap .trending-item .trendings-rank.search-rank-top, .bili-video-card .bili-video-card__info--tit:hover, .bili-header .list-item:hover .content, .bili-header .header-fav-card:hover .header-fav-card__info--title, .favorite-panel-popover__nav .tab-item:not(.tab-item--active):hover .tab-item__title, .favorite-panel-popover__content .content-bottom__btn--play, .dynamic-panel-popover .header-tabs-panel__item:hover, .history-panel-popover .header-tabs-panel__item:hover, .bili-header .header-history-video:hover .header-history-card__info--title, .history-panel-popover .header-tabs-panel__content .view-all-history-btn:hover, .bili-header .header-history-live:hover .header-history-card__info--title, .bili-header .header-history-article:hover .header-history-card__info--title, .bili-live-card .bili-live-card__info--tit:hover, .vui_pagenation--btns .vui_pagenation--btn:not([disabled], .vui_button--active):hover, .media-footer-select-content-item:hover {
 		color: var(--bili-blue) !important;
 	}
 	.suggest-wrap .vertical > li:nth-child(2) .rank, .suggest-wrap .vertical > li:nth-child(2) a {
