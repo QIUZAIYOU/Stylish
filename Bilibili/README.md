@@ -48,6 +48,8 @@
 
 ### 2022
 
+`04.05 21:04`：修复 [#14](https://github.com/QIUZAIYOU/Stylish/issues/14) 及「新版首页」部分元素覆盖错误问题。
+
 `04.05 14:50`：修复 [#13](https://github.com/QIUZAIYOU/Stylish/issues/13) 及「排行」页面及元素未覆盖问题。
 
 `03.30 10:15`：修复 [#12](https://github.com/QIUZAIYOU/Stylish/issues/12) 和部分页面及元素未覆盖问题。
