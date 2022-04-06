@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202204052104
+	@version        202204061505
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202204052104
+	* © 最后更新：202204061505
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1309,6 +1309,10 @@
 	.userinfo-content .btn-box > a, .imagesbox .boost-control, .bili-topic-search__popover.active .bili-topic-search__input, .bili-topic-item__cloud:hover {
 		background-color: var(--color-37) !important;
 	}
+	.like-users-panel::before {
+		background-color: var(--color-42) !important;
+	}
+
 	.dynamic-link-hover-bg:hover, .dyn-topic__card:hover, .bili-rich-textarea__inner, .bili-radio-group .bili-radio__inner, .bili-input__inner, .bili-create-poll-choice__img:before, .bili-select {
 		background: transparent!important;
 	}
@@ -1316,7 +1320,7 @@
 	.shop-desc .desc-box .title, .user-panel .content .bottom .number-part .numbers, .user-panel .content .bottom .number-part .text, .tc-black, .live-panel .title .count, .live-name, .placeholder-shown::before, .core-style, .indicator, .most-viewed-panel .list-content .most-viewed-item .name, .new-topic-panel .tag-item .label, .card .more-panel, .card .button-area .more-button, .bb-comment .comment-send .comment-emoji, .comment-bilibili-fold .comment-send .comment-emoji, .bb-comment .comment-list .list-item .user-face .hot-follow .follow-btn.followed, .comment-bilibili-fold .comment-list .list-item .user-face .hot-follow .follow-btn.followed, .bb-comment .comment-list .list-item .reply-box .view-more, .comment-bilibili-fold .comment-list .list-item .reply-box .view-more, .bb-comment .operation .opera-list, .comment-bilibili-fold .operation .opera-list, .up-info .up-info-tip, .article-container .text-area .content, .time, .fold-box .fold-hoverable, .video-container .text-area .content, .userinfo-content .info .sign, .bb-comment .comment-header .tabs-order li, .comment-bilibili-fold .comment-header .tabs-order li, .bb-comment .comment-send .dynamic-repost, .comment-bilibili-fold .comment-send .dynamic-repost, .userinfo-content, .bb-comment .comment-list .list-item .info .reply-tags span, .comment-bilibili-fold .comment-list .list-item .info .reply-tags span, .backdrop .title-box .close-button, .music-container .text-desc, .bb-comment .nameplate .nameplate-card .nameplate-text .n-type, .comment-bilibili-fold .nameplate .nameplate-card .nameplate-text .n-type, .box-toggle, .new-topic-panel .tag-item .content, .feed-title, .dynamic-list-item-wrap .item-detail .text, .textarea-container .comm-tool .comm-emoji, .imagesbox .boost-control li, .imagesbox .boost-control li i, .up-name, .bangumi-container .text-area .title, .article-container .text-area .title, .content-full, .video-container .text-area .title, .card .main-content .user-name a, .userinfo-content .info .user .name, .music-container .text-content, .bb-comment .nameplate .nameplate-card .nameplate-text .n-name, .comment-bilibili-fold .nameplate .nameplate-card .nameplate-text .n-name, .live-container .text-area .title, .relevant-topic__title:not(:hover), .topic-panel__nav-title, .bili-topic-search__input__text, .bili-topic-search__input__prefix, .bili-topic-item__cloud__name, .bili-topic-search__popover.active .bili-topic-search__input__inner, .bili-rich-textarea__inner, .bili-dyn-list-empty__text, .bili-dyn-list-loading__text, .bili-dyn-list-tabs__item:not(.active), .bili-dyn-my-info__stat__item__count:not(:hover), .bili-rich-textarea__inner.empty:before, .bili-emoji, .bili-at-popup__hint, .bili-create-poll__opt__title, .bili-radio-group .bili-radio__label, .bili-select-dropdown__item, .bili-input__inner, .bili-dyn-publishing-timing-setting__label, .bili-time-picker__child__unit, .bili-picker__option:not(.active), .bili-date-table thead tr th, .bili-date-table tbody tr td, .bili-reserve__type, .bili-reserve__form__title {
 		color: var(--color-86) !important;
 	}
-	.shop-panel .panel-desc, .shop-desc .desc-box .sub-title, .card .main-content .button-bar, .textarea-container .comm-tool .comm-word, .relevant-topic__exposed, .bili-topic-item__cloud__desc, .bili-topic-search__loading, .bili-dyn-my-info__stat__item__label, .bili-input__count, .bili-date-table tbody tr td.disabled {
+	.shop-panel .panel-desc, .shop-desc .desc-box .sub-title, .card .main-content .button-bar, .textarea-container .comm-tool .comm-word, .relevant-topic__exposed, .bili-topic-item__cloud__desc, .bili-topic-search__loading, .bili-dyn-my-info__stat__item__label, .bili-input__count, .bili-date-table tbody tr td.disabled, .like-users-panel {
 		color: var(--color-66) !important;
 	}
 	.indicator::after {
@@ -1382,7 +1386,7 @@
 	.most-viewed-panel > .icon {
 		fill: var(--color-86) !important;
 	}
-	.fold-box .fold-arrow {
+	.fold-box .fold-arrow, .like-users-panel .like-icon {
 		filter: invert(50%) sepia(12%) saturate(49%) hue-rotate(314deg) brightness(103%) contrast(83%) !important;
 	}
 	.dyn-topic__icon {
