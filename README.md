@@ -15,7 +15,7 @@
 | 网站 | 斗鱼 | 知乎 | 哔哩哔哩 | 百度 |
 | :----: | :----: | :----: | :----: | :----: |
 | 样式 | [夜间斗鱼](https://userstyles.world/style/240/nightmode-for-douyu-com) | [夜间知乎](https://userstyles.world/style/242/nightmode-for-zhihu-com) | [夜间哔哩](https://userstyles.world/style/241/nightmode-for-bilibili-com) | [简百度](https://userstyles.world/style/243/simple-baidu) |
-| 最后更新时间 | 2022.03.28 | 2022.03.31 | 2022.04.12  | 2022.03.24 |
+| 最后更新时间 | 2022.04.14 | 2022.03.31 | 2022.04.12  | 2022.03.24 |
 
 分支：
 
