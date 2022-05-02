@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202205021103
+	@version        202205022029
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202205021103
+	* © 最后更新：202205022029
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -134,6 +134,7 @@
 		--filter-98a2aa-shopPink: invert(50%) sepia(81%) saturate(1975%) hue-rotate(308deg) brightness(100%) contrast(90%) !important;
 		--filter-green-blue: invert(50%) sepia(68%) saturate(522%) hue-rotate(125deg) brightness(95%) contrast(95%) !important;
 		--filter-626a6e-blue: invert(51%) sepia(96%) saturate(2303%) hue-rotate(161deg) brightness(91%) contrast(101%) !important;
+		--filter-008ac5-blue: invert(50%) sepia(88%) saturate(2909%) hue-rotate(163deg) brightness(94%) contrast(101%)!important;
 		--filter-20-mangaBlue: invert(50%) sepia(91%) saturate(1050%) hue-rotate(180deg) brightness(101%) contrast(101%) !important;
 		--filter-6c727e-mangaBlue: invert(50%) sepia(66%) saturate(1178%) hue-rotate(182deg) brightness(103%) contrast(102%) !important;
 		--filter-bdc7cf-mangaBlue: invert(50%) sepia(98%) saturate(1080%) hue-rotate(180deg) brightness(101%) contrast(102%) !important;
@@ -1304,7 +1305,7 @@
 	.card-list .tab-bar, .live-rank .live-rank-item .number, .user-panel, .live-panel, .home-page .home-container .home-content .center-panel .section-block, .publish-panel, .core-style, .most-viewed-panel, .notice-panel, .new-topic-panel, .card, .bb-comment, .comment-bilibili-fold, .bb-comment .comment-list .list-item:hover, .comment-bilibili-fold .comment-list .list-item:hover, .bb-comment .operation .opera-list li:hover, .comment-bilibili-fold .operation .opera-list li:hover, .userinfo-content, .feed-title, .card .focus-btn .unfocus .unfocus-text, .notice-panel .img-container .notice-img, .forw-area .forw-main, .forw-area .forw-more, .textarea-container textarea, .textarea-container .comm-tool .comm-emoji, .topic-panel, .imagesbox .boost-img, .bili-topic-selector__bulletin, .bili-dyn-banner, .bili-dyn-my-info, .bili-dyn-my-info--skeleton, .bili-dyn-list-empty, .bili-dyn-list-tabs, .bili-dyn-publishing, .bili-dyn-list-loading, .bili-popover, .bili-popover__arrow, .bili-select-dropdown, .bili-dyn-live-users, .bili-dyn-item, .bili-user-profile, .bili-dyn-up-list, .bb-comment .fold-comment {
 		background-color: var(--color-2c) !important;
 	}
-	.new-topic-panel .tag-item .label, .video-container, .card .more-panel, .card .more-panel, .card-content .repost, .card-content .not-support .card-content .deleted, .bb-comment .comment-list .list-item .user-face .hot-follow .follow-btn.followed, .comment-bilibili-fold .comment-list .list-item .user-face .hot-follow .follow-btn.followed, .bb-comment .comment-list .list-item .reply-box .view-more .btn-more:hover, .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more:hover, .bb-comment .comment-list .list-item .info .btn-hover:hover, .comment-bilibili-fold .comment-list .list-item .info .btn-hover:hover, .bb-comment .operation .opera-list, .comment-bilibili-fold .operation .opera-list, .bb-comment .comment-send .textarea-container textarea, .comment-bilibili-fold .comment-send .textarea-container textarea, .bangumi-container, .article-container, .card .more-panel::after, .dynamic-link-hover-bg:hover, .userinfo-content .btn-box > a, .userinfo-content .btn-box > a.liked:hover, .userinfo-content .btn-box > a.liked, .bb-comment .comment-list .list-item .info .reply-tags span, .comment-bilibili-fold .comment-list .list-item .info .reply-tags span, .backdrop .title-box, .music-container, .live-panel-item .live-up-img, .card .focus-btn .unfocus .unfocus-text:hover, .vote-container, .shop-panel .shop-list, .shop-item, .live-container, .bili-topic-search__popover, .dyn-topic__card:hover, .bili-topic-item__normal:hover, .bili-topic-selector__bulletin__clear, .bili-at-popup, .bili-select-dropdown__item:hover, .bili-dyn-publishing-timing-setting, .bili-picker-panel, .bili-dyn-card-video__body, .bili-dyn-content__orig.reference, .dyn-reserve__card, .bili-dyn-card-article, .bili-awesome-img--sleepy, .bili-dyn-card-live__body, .bili-dyn-card-pgc__body, .dyn-additional-common__wrap, .dyn-ugc__wrap {
+	.new-topic-panel .tag-item .label, .video-container, .card .more-panel, .card .more-panel, .card-content .repost, .card-content .not-support .card-content .deleted, .bb-comment .comment-list .list-item .user-face .hot-follow .follow-btn.followed, .comment-bilibili-fold .comment-list .list-item .user-face .hot-follow .follow-btn.followed, .bb-comment .comment-list .list-item .reply-box .view-more .btn-more:hover, .comment-bilibili-fold .comment-list .list-item .reply-box .view-more .btn-more:hover, .bb-comment .comment-list .list-item .info .btn-hover:hover, .comment-bilibili-fold .comment-list .list-item .info .btn-hover:hover, .bb-comment .operation .opera-list, .comment-bilibili-fold .operation .opera-list, .bb-comment .comment-send .textarea-container textarea, .comment-bilibili-fold .comment-send .textarea-container textarea, .bangumi-container, .article-container, .card .more-panel::after, .dynamic-link-hover-bg:hover, .userinfo-content .btn-box > a, .userinfo-content .btn-box > a.liked:hover, .userinfo-content .btn-box > a.liked, .bb-comment .comment-list .list-item .info .reply-tags span, .comment-bilibili-fold .comment-list .list-item .info .reply-tags span, .backdrop .title-box, .music-container, .live-panel-item .live-up-img, .card .focus-btn .unfocus .unfocus-text:hover, .vote-container, .shop-panel .shop-list, .shop-item, .live-container, .bili-topic-search__popover, .dyn-topic__card:hover, .bili-topic-item__normal:hover, .bili-topic-selector__bulletin__clear, .bili-at-popup, .bili-select-dropdown__item:hover, .bili-dyn-publishing-timing-setting, .bili-picker-panel, .bili-dyn-card-video__body, .bili-dyn-content__orig.reference, .dyn-reserve__card, .bili-dyn-card-article, .bili-awesome-img--sleepy, .bili-dyn-card-live__body, .bili-dyn-card-pgc__body, .dyn-additional-common__wrap, .dyn-ugc__wrap, .bili-rich-text-link:hover, .bili-rich-text-module:hover, .bili-rich-text-topic:hover, .bili-dyn-topic__card:hover {
 		background-color: var(--color-27) !important;
 	}
 	.userinfo-content .btn-box > a, .imagesbox .boost-control, .bili-topic-search__popover.active .bili-topic-search__input, .bili-topic-item__cloud:hover {
@@ -1332,7 +1333,7 @@
 	.type-label, .shop-desc .btn-box .jump-btn, .publish-btn.publishing, .publish-btn.disabled {
 		color: var(--color-ff) !important;
 	}
-	.most-viewed-panel .list-content .most-viewed-item .name.active, .video-container.can-hover:hover .text-area .title, .article-container:hover .text-area .title, .dynamic-link-hover-bg, .bb-comment .comment-header .tabs-order li.on, .comment-bilibili-fold .comment-header .tabs-order li.on, .backdrop .title-box .close-button:hover, .music-container:hover .text-content, .card .focus-btn .unfocus .unfocus-text:hover, .new-topic-panel .tag-item .content:hover, .tab-bar .tab .tab-text.selected, .tab-bar .tab .tab-text:hover, .box-toggle:hover, .box-toggle.active, .imagesbox .boost-control li:hover, .imagesbox .boost-control li:hover i, .live-container:hover .text-area .title, .bangumi-container:hover .text-area .title, .dyn-topic__text, .dyn-topic__icon, .bili-topic-item__normal__name, .bili-topic-item__normal__prefix, .bili-select-dropdown__item:hover, .bili-date-table tbody tr td.active, .bili-reserve__about .link, .bili-dyn-card-video:hover .bili-dyn-card-video__title, .bili-dyn-action.active, .bili-dyn-action:hover, .bili-dyn-up-list__item.active .bili-dyn-up-list__item__name, .bili-dyn-more__menu__item:hover, .bili-rich-text-link, .bili-rich-text-module, .bili-rich-text-topic, .bili-dyn-card-article:hover .bili-dyn-card-article__title, .bili-dyn-card-live:hover .bili-dyn-card-live__title, .bili-user-profile-view__info__stat.like:hover, .bili-dyn-card-pgc:hover .bili-dyn-card-pgc__title, .bb-comment .fold-comment:hover, .dyn-ugc__wrap:hover .dyn-ugc__detail__title {
+	.most-viewed-panel .list-content .most-viewed-item .name.active, .video-container.can-hover:hover .text-area .title, .article-container:hover .text-area .title, .dynamic-link-hover-bg, .bb-comment .comment-header .tabs-order li.on, .comment-bilibili-fold .comment-header .tabs-order li.on, .backdrop .title-box .close-button:hover, .music-container:hover .text-content, .card .focus-btn .unfocus .unfocus-text:hover, .new-topic-panel .tag-item .content:hover, .tab-bar .tab .tab-text.selected, .tab-bar .tab .tab-text:hover, .box-toggle:hover, .box-toggle.active, .imagesbox .boost-control li:hover, .imagesbox .boost-control li:hover i, .live-container:hover .text-area .title, .bangumi-container:hover .text-area .title, .dyn-topic__text, .dyn-topic__icon, .bili-topic-item__normal__name, .bili-topic-item__normal__prefix, .bili-select-dropdown__item:hover, .bili-date-table tbody tr td.active, .bili-reserve__about .link, .bili-dyn-card-video:hover .bili-dyn-card-video__title, .bili-dyn-action.active, .bili-dyn-action:hover, .bili-dyn-up-list__item.active .bili-dyn-up-list__item__name, .bili-dyn-more__menu__item:hover, .bili-rich-text-link, .bili-rich-text-module, .bili-rich-text-topic, .bili-dyn-card-article:hover .bili-dyn-card-article__title, .bili-dyn-card-live:hover .bili-dyn-card-live__title, .bili-user-profile-view__info__stat.like:hover, .bili-dyn-card-pgc:hover .bili-dyn-card-pgc__title, .bb-comment .fold-comment:hover, .dyn-ugc__wrap:hover .dyn-ugc__detail__title, .bili-dyn-topic__icon, .bili-dyn-topic__text {
 		color: var(--bili-blue) !important;
 	}
 	.card .main-content .user-name.big-vip a, .card .main-content .user-name.big-vip a:hover, .userinfo-content .info .user .name.vip, .card .main-content .user-name a[style*='rgb(251, 114, 153)'], .bili-user-profile-view__info__uname[style*='rgb(251, 114, 153)'] {
@@ -1410,7 +1411,22 @@
 	.bp-img-icon {
 		filter: invert(50%) sepia(82%) saturate(2349%) hue-rotate(161deg) brightness(91%) contrast(101%)!important;
 	}
+	.bili-rich-text-link:before {
+		filter: var(--filter-008ac5-blue)!important;
+	}
 	/* -- 其他 -- */
+	.bili-dyn-topic__card, .bili-rich-text-topic {
+		transition: .3s!important;
+	}
+	.bili-dyn-topic__card:hover {
+		padding: 0 3px!important;
+	}
+	.bili-rich-text-topic:hover {
+		padding: 2px 5px!important;
+	}
+	.bili-dyn-topic__text {
+		line-height: 20px!important;
+	}
 	.tab-bar {
 		position: sticky !important;
 		top: 0 !important;
