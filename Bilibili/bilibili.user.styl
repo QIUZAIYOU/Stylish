@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202205041058
+	@version        202205041428
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202205041058
+	* © 最后更新：202205041428
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -301,7 +301,7 @@
 	.nav-link .nav-link-ul .nav-link-item .link .navbar_pullup path, .bili-header .histories .history-item .close svg, .bili-header .center-search-container .center-search__bar .nav-search-content .nav-search-clean svg path {
 		fill: var(--color-86) !important;
 	}
-	.international-header .mini-type .nav-search #nav_searchform, .van-popover .mini-type .nav-search #nav_searchform, .bilibili-search-suggest, .channel-menu-mini .r-box, .van-popper-favorite .tabs-panel, .van-popper-favorite .play-all, .van-popper-history .tab-header, .bili-header-m .nav-search #nav_searchform, .international-header .nav-search #nav_searchform, .bilibili-search-history, .van-popper-avatar .coins, .van-popper-avatar .counts, .lang-change, .van-popper-avatar .links, .van-popper-login .lang-change, .van-popper-login .vp-container, .login-panel .divider, .el-popover, .unlogin-popover, .van-popover, .vip-m .bubble-traditional .notify, .bili-header .header-entry-mini .v-img > img, .dynamic-video .split-line:before, .bili-header .header-dynamic-avatar, .bili-header .header-avatar-wrap .header-avatar-wrap--container .bili-avatar, .mini-header .center-search-container .center-search__bar #nav-searchform.is-focus, .bili-header .search-panel, .bili-header .live-left-list, .bili-header .v-popover-content, .bili-header [class*='-left'], .bili-header .center-search-container .center-search__bar #nav-searchform, .dynamic-panel-popover .header-tabs-panel, .favorite-panel-popover__nav, .history-panel-popover .header-tabs-panel {
+	.international-header .mini-type .nav-search #nav_searchform, .van-popover .mini-type .nav-search #nav_searchform, .bilibili-search-suggest, .channel-menu-mini .r-box, .van-popper-favorite .tabs-panel, .van-popper-favorite .play-all, .van-popper-history .tab-header, .bili-header-m .nav-search #nav_searchform, .international-header .nav-search #nav_searchform, .bilibili-search-history, .van-popper-avatar .coins, .van-popper-avatar .counts, .lang-change, .van-popper-avatar .links, .van-popper-login .lang-change, .van-popper-login .vp-container, .login-panel .divider, .el-popover, .unlogin-popover, .van-popover, .vip-m .bubble-traditional .notify, .bili-header .header-entry-mini .v-img > img, .dynamic-video .split-line:before, .bili-header .header-dynamic-avatar, .bili-header .header-avatar-wrap .header-avatar-wrap--container .bili-avatar, .mini-header .center-search-container .center-search__bar #nav-searchform.is-focus, .bili-header .search-panel, .bili-header .live-left-list, .bili-header .v-popover-content, .bili-header [class*='-left'], .bili-header .center-search-container .center-search__bar #nav-searchform, .dynamic-panel-popover .header-tabs-panel, .favorite-panel-popover__nav, .history-panel-popover .header-tabs-panel, .bili-header .bili-header-channel-panel .channel-panel__column {
 		border-color: var(--color-42) !important;
 	}
 	.bili-header-m .nav-search .nav-search-btn, .international-header .nav-search .nav-search-btn {
@@ -2470,7 +2470,7 @@
 	.article-holder .color-pink-04, .article-holder .color-pink-03, .authority, .article-footer-box .footer-text {
 		color: var(--bili-red) !important;
 	}
-	.normal-article-holder a {
+	.normal-article-holder a, .article-container .title-container .joined-activity {
 		color: var(--bili-pink) !important;
 	}
 	.bb-comment .reply-notice .notice-item a, .comment-bilibili-fold .reply-notice .notice-item a {
@@ -3226,7 +3226,7 @@
 	.home-wrap .home-suggest .hot-search .item .num.special {
 		background-color: var(--bili-pink) !important;
 	}
-	.so-icon i.icon-playtime, .so-icon i.icon-date, .so-icon i.icon-uper, .filter-wrap .icon-tid2-arr, .switch-wrap i, .arrow-down, .arrow-up, .suggest-wrap .history-wrap .history-li .clear, .live-user-item .icon-live-life, .live-user-item .icon-live-mgame, .live-user-item .icon-live-indoor, .live-user-item .icon-live-col, .live-user-item .icon-live-compete, .live-user-item .icon-live-net, .live-user-item .icon-live-pcgame, .live-user-item .icon-live-movie, .live-user-item .icon-live-music, #live-list .headline-room .icon-live-frame, .up-feedback .icon-beta, .feedback-mask .content .feedback-body input[type="radio"] + .radio-icon, .feedback-mask .content .icon-del, .so-icon i.icon-subtitle {
+	.so-icon i.icon-playtime, .so-icon i.icon-date, .so-icon i.icon-uper, .filter-wrap .icon-tid2-arr, .switch-wrap i, .arrow-down, .arrow-up:not(.mini-header__arrow), .suggest-wrap .history-wrap .history-li .clear, .live-user-item .icon-live-life, .live-user-item .icon-live-mgame, .live-user-item .icon-live-indoor, .live-user-item .icon-live-col, .live-user-item .icon-live-compete, .live-user-item .icon-live-net, .live-user-item .icon-live-pcgame, .live-user-item .icon-live-movie, .live-user-item .icon-live-music, #live-list .headline-room .icon-live-frame, .up-feedback .icon-beta, .feedback-mask .content .feedback-body input[type="radio"] + .radio-icon, .feedback-mask .content .icon-del, .so-icon i.icon-subtitle {
 		background-image: url(//www.asifadeaway.com/Stylish/bilibili/search_icons_1.png) !important;
 	}
 	.home-wrap .home-suggest .title .delete-history .icon-garbage {
