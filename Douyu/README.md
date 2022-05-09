@@ -1,4 +1,4 @@
-# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2022.05.05-blue)
+# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2022.05.09-blue)
 
 ![夜间斗鱼 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/douyu/StylishCover.png)
 
