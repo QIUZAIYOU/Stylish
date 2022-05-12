@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202205111614
+	@version        202205121646
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202205111614
+	* © 最后更新：202205121646
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -2477,7 +2477,7 @@
 		color: var(--bili-yellow) !important;
 	}
 	/* -- 边框 -- */
-	.up-info-holder .fixed-box .more .top-bar, .up-info-holder .fixed-box .up-article-list-block .block-title, .to-comment, .to-comment .comment-num, .article-action, .bb-comment .comment-header, .comment-bilibili-fold .comment-header, .categories-bar, .page-content .right-side .rank-module .rank-tabs-bar, .page-content .right-side .search-module .search-block, .page-content .left-side .article-list .article-list-holder .article-item, .page-content .right-side .more .top-bar, .page-content .right-side .search-module .search-block .search-word-panel, .page-content .right-side .search-module .search-block .search-word-panel .panel-title .split-line, .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-title-holder .list-mark, .tag-container .tag-item .tag-content, .up-info-holder .fixed-box .rightside-article-list-btn, .article-list-holder-block .article-list-plane, .up-info-holder .fixed-box .rightside-article-list-btn .label, .article-list-holder-block .article-list-plane .button#article-list-btn .label, .article-list-holder-block .article-list-plane .button#article-list-btn .title, .page-content .right-side .up-list .title, .banner-wrap, .slim-border:after, .article-container__content, .recommend-list .recommend-header, .recommend-list .recommend-article-list .article-item, .read-article-holder .row-video-holder, .page-content .right-side .up-list .fresh-btn, .van-popover.van-followed, .list-container .article-list-block .article-item .item-holder .article-content .article-left-block, .interaction-info .toolbar .share-box .qrcode-box, .view-note .ql-tag-blot .time-tag-item, .read-article-holder .article-card-holder, .read-article-holder .slim-video-holder {
+	.up-info-holder .fixed-box .more .top-bar, .up-info-holder .fixed-box .up-article-list-block .block-title, .to-comment, .to-comment .comment-num, .article-action, .bb-comment .comment-header, .comment-bilibili-fold .comment-header, .categories-bar, .page-content .right-side .rank-module .rank-tabs-bar, .page-content .right-side .search-module .search-block, .page-content .left-side .article-list .article-list-holder .article-item, .page-content .right-side .more .top-bar, .page-content .right-side .search-module .search-block .search-word-panel, .page-content .right-side .search-module .search-block .search-word-panel .panel-title .split-line, .page-content .left-side .article-list .article-list-holder .article-item .item-holder .article-title-holder .list-mark, .tag-container .tag-item .tag-content, .up-info-holder .fixed-box .rightside-article-list-btn, .article-list-holder-block .article-list-plane, .up-info-holder .fixed-box .rightside-article-list-btn .label, .article-list-holder-block .article-list-plane .button#article-list-btn .label, .article-list-holder-block .article-list-plane .button#article-list-btn .title, .page-content .right-side .up-list .title, .banner-wrap, .slim-border:after, .article-container__content, .recommend-list .recommend-header, .recommend-list .recommend-article-list .article-item, .read-article-holder .row-video-holder, .page-content .right-side .up-list .fresh-btn, .van-popover.van-followed, .list-container .article-list-block .article-item .item-holder .article-content .article-left-block, .interaction-info .toolbar .share-box .qrcode-box, .view-note .ql-tag-blot .time-tag-item, .read-article-holder .article-card-holder, .read-article-holder .slim-video-holderm, .view-note .ql-image-preview .img-preview {
 		border-color: var(--color-42) !important;
 	}
 	.to-comment:hover, .view-note .ql-tag-blot .time-tag-item:hover {
@@ -2493,7 +2493,13 @@
 	.interaction-info .toolbar .share-box .qrcode-box {
 		box-shadow: 0 0 4px rgba(0, 0, 0, .08)!important;
 	}
+	.view-note .ql-image-preview .img-preview {
+		box-shadow: none!important;
+	}
 	/* -- 其他属性 -- */
+	.view-note .ql-image-preview {
+		margin-left: -8px!important;
+	}
 	.comment-wrapper .comment-m {
 		padding: 0!important
 	}
