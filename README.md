@@ -16,7 +16,7 @@
 | :----: | :----: | :----: | :----: | :----: |
 | 样式 | [夜间斗鱼](https://userstyles.world/style/240/nightmode-for-douyu-com) | [夜间知乎](https://userstyles.world/style/242/nightmode-for-zhihu-com) | [夜间哔哩](https://userstyles.world/style/241/nightmode-for-bilibili-com) | [简百度](https://userstyles.world/style/243/simple-baidu) |
 | 创建时间 | 2018.04.06 | 2018.06.04 | 2020.12.31 | 2019.03.15 |
-| 最后更新时间 | 2022.05.09 | 2022.05.21 | 2022.05.25 | 2022.03.24 |
+| 最后更新时间 | 2022.05.26 | 2022.05.21 | 2022.05.25 | 2022.03.24 |
 
 分支：
 
