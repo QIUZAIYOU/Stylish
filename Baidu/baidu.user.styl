@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2022.0621
+@version        2022.0627
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -34,6 +34,7 @@
 		border-radius: 10px!important;
 		overflow: auto;
 		background: #fff!important;
+		-height: 373px!important;
 	}
 
 	div#content_left>div[class="c-group-wrapper"] {
@@ -120,7 +121,9 @@
 		width: inherit!important;
 	}
 
-	div#content_left>div[class].c-container table{
+	div#content_left>div[class].c-container table,
+	div#content_left>div[class].new-pmd.c-container .c-container[class*="aladdin-card"] .c-border,
+	div#content_left>div[class].new-pmd.c-container .c-container[class*="aladdin-card"] .c-border>.c-row{
 		display: flex!important;
 		flex-direction: column!important;
 	}
@@ -129,7 +132,7 @@
 		box-shadow: none!important;
 	}
 
-	div#content_left>div[class].new-pmd.c-container .c-container {
+	div#content_left>div[class].new-pmd.c-container > .c-container {
 		overflow: auto;
 		margin: 0!important;
 		height: 270px!important;
@@ -346,7 +349,7 @@
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2022.0621
+	 * © 最后更新：2022.0627
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
