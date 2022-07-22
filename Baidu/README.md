@@ -1,4 +1,6 @@
-# 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2022.07.20-blue) ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.STYLISH.BAIDU)
+# 简百度 Simple Baidu 
+
+![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24.date&url=https%3A%2F%2Fqian.npkn.net%2Fstylish%3Ftype%3DBaidu) ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.STYLISH.BAIDU)
 
 ![简百度 Simple Baidu](https://www.asifadeaway.com/Stylish/baidu/StylishCover.png)
 
