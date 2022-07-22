@@ -1,4 +1,4 @@
-# 夜间知乎 NightMode For Zhihu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2022.07.12-blue)
+# 夜间知乎 NightMode For Zhihu.com ![Last_Update](https://img.shields.io/badge/%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0-2022.07.12-blue) ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU-STYLISH-ZHIHU)
 
 ![夜间知乎 NightMode For Zhihu.com](https://www.asifadeaway.com/Stylish/zhihu/StylishCover.png)
 
