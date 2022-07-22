@@ -17,7 +17,7 @@
 | :----: | :----: | :----: | :----: | :----: |
 | 样式 | [夜间斗鱼](https://userstyles.world/style/240/nightmode-for-douyu-com) | [夜间知乎](https://userstyles.world/style/242/nightmode-for-zhihu-com) | [夜间哔哩](https://userstyles.world/style/241/nightmode-for-bilibili-com) | [简百度](https://userstyles.world/style/243/simple-baidu) |
 | 创建时间 | 2018.04.06 | 2018.06.04 | 2020.12.31 | 2019.03.15 |
-| 最后更新时间 | 2022.06.08 | 2022.07.12 | 2022.07.14 | 2022.07.20 |
+| 最后更新时间 | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24.date&url=https%3A%2F%2Fqian.npkn.net%2Fstylish%3Ftype%3DDouyu) | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24.date&url=https%3A%2F%2Fqian.npkn.net%2Fstylish%3Ftype%3DZhihu) | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24.date&url=https%3A%2F%2Fqian.npkn.net%2Fstylish%3Ftype%3DBilibili) | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24.date&url=https%3A%2F%2Fqian.npkn.net%2Fstylish%3Ftype%3DBaidu) |
 
 分支：
 
