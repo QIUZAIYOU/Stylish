@@ -1,6 +1,6 @@
 # 夜间斗鱼 NightMode For Douyu.com 
 
-![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%3Ftype%3DDouyu) ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.STYLISH.DOUYU)
+![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%3Fstylish%3DDouyu) ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.STYLISH.DOUYU)
 
 ![夜间斗鱼 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/douyu/StylishCover.png)
 
