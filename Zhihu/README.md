@@ -1,6 +1,6 @@
 # 夜间知乎 NightMode For Zhihu.com
 
-![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24.date&url=https%3A%2F%2Fqian.npkn.net%2Fstylish%3Ftype%3DZhihu) ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.STYLISH.ZHIHU)
+![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%3Ftype%3DZhihu) ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.STYLISH.ZHIHU)
 
 ![夜间知乎 NightMode For Zhihu.com](https://www.asifadeaway.com/Stylish/zhihu/StylishCover.png)
 
