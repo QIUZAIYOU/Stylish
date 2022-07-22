@@ -1,4 +1,4 @@
-# 夜间哔哩 NightMode For Bilibili.com ![Last_Update](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen) ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%3Fstylish%3DBilibili)
+# 夜间哔哩 NightMode For Bilibili.com ![Last_Update](https://img.shields.io/badge/%E6%96%BD%E5%B7%A5%E4%B8%AD-%E6%95%AC%E8%AF%B7%E6%9C%9F%E5%BE%85-brightgreen) ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%3Fstylish%3DBilibili) ![Continue_Update](https://img.shields.io/badge/dynamic/json?label=%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0&query=%24.diff&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%3Fstylish%3DBilibili)
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.STYLISH.BILIBILI)
 
