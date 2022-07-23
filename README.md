@@ -17,7 +17,7 @@
 | :----: | :----: | :----: | :----: | :----: |
 | 样式 | [夜间斗鱼](https://userstyles.world/style/240/nightmode-for-douyu-com) | [夜间知乎](https://userstyles.world/style/242/nightmode-for-zhihu-com) | [夜间哔哩](https://userstyles.world/style/241/nightmode-for-bilibili-com) | [简百度](https://userstyles.world/style/243/simple-baidu) |
 | 创建时间 | 2018.04.06 | 2018.06.04 | 2020.12.31 | 2019.03.15 |
-| 更新时间 | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%20&query=%24%5B0%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date) | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%20&query=%24%5B1%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date) | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%20&query=%24%5B2%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date) | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%20&query=%24%5B3%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date) |
+| 更新时间 | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%20&query=%24%5B0%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date&?cacheSeconds=60) | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%20&query=%24%5B1%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date&?cacheSeconds=60) | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%20&query=%24%5B2%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date&?cacheSeconds=60) | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%20&query=%24%5B3%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date&?cacheSeconds=60) |
 
 分支：
 
