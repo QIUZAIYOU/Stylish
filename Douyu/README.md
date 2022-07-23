@@ -1,4 +1,4 @@
-# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24%5B1%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%2F) ![Continue_Update](https://img.shields.io/badge/dynamic/json?label=%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0&query=%24%5B1%5D.diff&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%2F)
+# 夜间斗鱼 NightMode For Douyu.com ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24%5B0%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%2F) ![Continue_Update](https://img.shields.io/badge/dynamic/json?label=%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0&query=%24%5B0%5D.diff&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%2F)
 
 ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.STYLISH.DOUYU)
 
