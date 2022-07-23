@@ -1,6 +1,6 @@
 # 简百度 Simple Baidu ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%E6%9C%80%E5%90%8E%E6%9B%B4%E6%96%B0&query=%24%5B3%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%2F) ![Continue_Update](https://img.shields.io/badge/dynamic/json?label=%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0&query=%24%5B3%5D.diff&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%2F)
 
-![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.STYLISH.BAIDU)
+![Built-With-Love](https://img.shields.io/static/v1?label=BUILT%20WITH&message=%E2%9D%A4&labelColor=%23e36d25&color=%23d15d27) ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.STYLISH.BAIDU)
 
 ![简百度 Simple Baidu](https://userstyles.world/api/style/preview/243.webp)
 
