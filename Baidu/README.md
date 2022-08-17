@@ -2,7 +2,7 @@
 
 ![Built-With-Love](https://img.shields.io/static/v1?label=BUILT%20WITH&message=%E2%9D%A4&labelColor=%23e36d25&color=%23d15d27) ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.STYLISH.BAIDU)
 
-![简百度 Simple Baidu](https://userstyles.world/api/style/preview/243.webp)
+![简百度 Simple Baidu](https://userstyles.world/preview/243/1.webp)
 
 <img src="https://camo.githubusercontent.com/3177a12d6dac9a08032f768208bde1cc65437e2fe48b102969255eb7ff5b7512/68747470733a2f2f7777772e61736966616465617761792e636f6d2f696d616765732f66617669636f6e2e737667" width="32" height="32"> ![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png) <img src="https://camo.githubusercontent.com/3177a12d6dac9a08032f768208bde1cc65437e2fe48b102969255eb7ff5b7512/68747470733a2f2f7777772e61736966616465617761792e636f6d2f696d616765732f66617669636f6e2e737667" width="32" height="32">
 
