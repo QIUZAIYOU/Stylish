@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202208162003
+	@version        202208181937
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202208162003
+	* © 最后更新：202208181937
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1349,7 +1349,7 @@
 		padding-bottom: 10px!important
 	}
 }
-@-moz-document url-prefix("https://t.bilibili.com"), url-prefix("https://t.bilibili.com/?tab="), url-prefix("https://t.bilibili.com/?spm_id_from="), regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]"), regexp("https://space.bilibili.com/[0-9]+/dynamic") {
+@-moz-document url-prefix("https://t.bilibili.com"), url-prefix("https://t.bilibili.com/?tab="), url-prefix("https://t.bilibili.com/?spm_id_from="), regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]"), regexp("https://space.bilibili.com/[0-9]+/dynamic.*") {
 	/* ===动态页=== */
 	/* -- 屏蔽 -- */
 	.bili-dyn-list-loading__text img {
@@ -1374,7 +1374,7 @@
 	.bili-dyn-more__btn.tp:not(:hover) {
 		background-image: url(//www.asifadeaway.com/Stylish/bilibili/bili-dyn-more__btn_tp.svg)!important
 	}
-	.dynamic-link-hover-bg:hover, .dyn-topic__card:hover, .bili-rich-textarea__inner, .bili-radio-group .bili-radio__inner, .bili-input__inner, .bili-create-poll-choice__img:before, .bili-select, .dyn-additional-common__cover {
+	.dynamic-link-hover-bg:hover, .dyn-topic__card:hover, .bili-rich-textarea__inner, .bili-radio-group .bili-radio__inner, .bili-input__inner, .bili-create-poll-choice__img:before, .bili-select, .dyn-additional-common__cover, #page-dynamic .bili-dyn-list > div {
 		background: transparent!important;
 	}
 	/* -- 字体 -- */
