@@ -12,7 +12,7 @@
 
 `Gitee`：<https://gitee.com/aiideai/Stylish/tree/main/Douyu>
 
-~~`UserStyles.org`：<https://userstyles.org/styles/158117/nightmode-for-douyu-com>
+~~`UserStyles.org`：<https://userstyles.org/styles/158117/nightmode-for-douyu-com>~~
 
 --> 因平台问题不再在 `UserStyles.org` 平台更新
 
