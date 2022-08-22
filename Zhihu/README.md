@@ -12,7 +12,7 @@
 
 `Gitee`：<https://gitee.com/aiideai/Stylish/tree/main/Zhihu>
 
-~~`UserStyles.org`：<https://userstyles.org/styles/160889/nightmode-for-zhihu-com>
+~~`UserStyles.org`：<https://userstyles.org/styles/160889/nightmode-for-zhihu-com>~~
 
 --> 因平台问题不再在 `UserStyles.org` 平台更新
 
