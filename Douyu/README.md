@@ -18,7 +18,7 @@
 
 `UserStyles.world`：<https://userstyles.world/style/240/nightmode-for-douyu-com>
 
-推荐使用 `UserStyles.world` 项目地址安装，可在 `Stylus` 管理面板在线更新
+⭐ 推荐使用 `UserStyles.world` 项目地址安装，可在 `Stylus` 管理面板在线更新
 
 ## 简介及说明
 
