@@ -12,7 +12,7 @@
 
 `Gitee`：<https://gitee.com/aiideai/Stylish/tree/main/Baidu>
 
-~~`UserStyles.org`：<https://userstyles.org/styles/169907/simple-baidu>
+~~`UserStyles.org`：<https://userstyles.org/styles/169907/simple-baidu>~~
 
 --> 因平台问题不再在 `UserStyles.org` 平台更新
 
