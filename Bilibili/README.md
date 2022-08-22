@@ -14,7 +14,7 @@
 
 ~~`UserStyles.org`：<https://userstyles.org/styles/196283/nightmode-for-bilibili-com>~~
   
---> 由于代码长度已超过上传允许范围故不再在 `UserStyles.org` 平台更新
+⛔ 由于代码长度已超过上传允许范围故不再在 `UserStyles.org` 平台更新
 
 `UserStyles.world`：<https://userstyles.world/style/241/nightmode-for-bilibili-com>
 
