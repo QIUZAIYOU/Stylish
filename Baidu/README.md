@@ -14,7 +14,7 @@
 
 ~~`UserStyles.org`：<https://userstyles.org/styles/169907/simple-baidu>~~
 
---> 因平台问题不再在 `UserStyles.org` 平台更新
+⛔ 因平台问题不再在 `UserStyles.org` 平台更新
 
 `UserStyles.world`：<https://userstyles.world/style/243/simple-baidu>
 
