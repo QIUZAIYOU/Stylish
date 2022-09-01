@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2022.0727
+@version        2022.0901
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -13,7 +13,8 @@
 	[tpl="recommend_list"],
 	[tpl="jy_course_and_org_pc"] [class*="course-new-style"]>div.c-row,
 	#rs_new,
-	#content_left .result-molecule {
+	#content_left .result-molecule,
+	[tpl="bjh_addressing"]{
 		display: none!important;
 	}
 
@@ -284,7 +285,7 @@
 	[mu*="mydown.yesky.com"] .c-span12 {
 		margin: 0!important;
 	}
-	[class*="wenda-abstract"] .c-border{
+	[class*="wenda-abstract"] .c-border,.c-border[class*="b2b-straight-wrap"]{
 		flex-direction: column!important;
 	}
 	[class*="wenda-abstract"]{
@@ -369,6 +370,12 @@
 	[class*="travel-container"] [class*="travel-select"] [class*="select-box"]{
 		width: 89%!important;
 	}
+	.new-pmd[mu*="tieba.baidu.com"] [class*="general-thread-cont"] {
+		margin-right: 0!important;
+	}
+	.new-pmd .c-span9{
+		width: 468px!important;
+	}
 	EOT;
 	trebleList_OFF "关" <<<EOT /*[[trebleList]]*\/ EOT;
 }
@@ -377,7 +384,7 @@
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2022.0727
+	 * © 最后更新：2022.0901
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -622,8 +629,17 @@
 		box-shadow: none!important;
 	}
 	/* -- 属性 -- */
+	.new-pmd[mu*="tieba.baidu.com"] [class*="general-thread-cont"] {
+		margin-right: 140px!important;
+	}
 	.new-pmd .c-span12 {
 		width: 100%!important;
+	}
+	.new-pmd .c-span9 {
+		width: 100%!important;
+	}
+	.new-pmd .c-span3 {
+		margin-bottom: 10px!important;
 	}
 	#container {
 		width: 75%!important;
@@ -678,12 +694,20 @@
 		border-top-right-radius: 0!important;
 	}
 	.new-pmd.c-container, #rs_new {
-		width: 560px;
+		width: 670px;
 		word-wrap: break-word;
 		word-break: break-all;
 		color: #333;
 		font-size: 13px;
 		line-height: 21px;
+	}
+	.image-normal-card_38QCT .image-content_1csSY .image-one-line_2GgpZ .image-one-line-item_aBS4H {
+		width: calc(100% / 4)!important;
+	}
+	.image-normal-card_38QCT .image-content_1csSY .image-one-line_2GgpZ .image-one-line-item_aBS4H img {
+		width: 100%!important;
+		height: 120px!important;
+		margin: 0!important;
 	}
 	.c-container .c-container {
 		width: 100%!important;
@@ -970,6 +994,16 @@
 	}
 	.new-pmd .c-gray {
 		text-align: center!important;
+	}
+	.sp-separator.AC {
+		display: flex!important;
+		justify-content: center!important;
+		margin: 0 auto 20px!important;
+		border: none!important;
+		border-radius: 10px!important;
+	}
+	.sp-separator.AC .sp-sp-nextlink b {
+		display: flex!important;
 	}
 	/*[[trebleList]]*/
 }
