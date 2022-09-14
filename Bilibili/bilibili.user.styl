@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202209081059
+	@version        202209141130
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202209081059
+	* © 最后更新：202209141130
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -404,7 +404,7 @@
 	.user-card .btn-box .message, .dynamic-link-hover-bg:hover, .bili-emoji__pkg:not(.active):hover, .emoji-panel .emoji-tab .emoji-type:hover, .emoji-panel .emoji-content .emoji-info:hover, .bili-album__watch__control {
 		background-color: var(--color-37) !important;
 	}
-	.comment-bilibili-con .btn .btn-submit, .van-popper-favorite .tab-item--active {
+	.comment-bilibili-con .btn .btn-submit, .van-popper-favorite .tab-item--active, .note-content .note-text-container .note-prefix {
 		background-color: var(--bili-blue) !important;
 	}
 	.comment-bilibili-con .btn .btn-submit:hover {
@@ -434,7 +434,7 @@
 	.bb-comment .nameplate .nameplate-card .nameplate-text .n-type, .comment-bilibili-fold .nameplate .nameplate-card .nameplate-text .n-type, .bb-comment .comment-list .list-item .info .plad a, .comment-bilibili-fold .comment-list .list-item .info .plad a, .bb-comment .comment-list .list-item .info > span, .comment-bilibili-fold .comment-list .list-item .info > span, .bb-comment .comment-list .list-item .con .vote-container .text-area .text-desc, .comment-bilibili-fold .comment-list .list-item .con .vote-container .text-area .text-desc, .comment-bilibili-fold .comment-list .list-item .user .text-con, .feed-tag .separater-line, .hash-popup .hint, .indicator, .video-container .text-area .view-danmaku, .tc-slate, .bb-comment .bottom-page.center, .comment-bilibili-fold .bottom-page.center, .bp-emoji-box .static-popup .close-btn, .comment-bilibili-mask .comment-bilibili-con .reason-box dl dt, .room-feed .bb-comment .comment-list .list-item .info, .room-feed .bb-comment .comment-send .comment-emoji, .room-feed .bb-comment .comment-send .dynamic-repost, .room-feed .bb-comment .nameplate .nameplate-card .nameplate-text .n-type, .room-feed .card .up-info .up-info-tip, .room-feed .card .video-container .text-area .view-danmaku, .room-feed .forw-area .dynamic-list-item-wrap .item-detail .info .time, .room-feed .forw-area .textarea-container .comm-tool .comm-emoji, .room-feed .forw-area .textarea-container .comm-tool .comm-word, .room-feed .panel-area .bb-comment .bottom-page.center a, .room-feed .panel-area .forw-area .forw-more a, .room-feed .room-feed-content .card .userinfo-wrapper .userinfo-content .info .sign, .room-feed .room-feed-content .card .userinfo-wrapper .userinfo-content .info .social .label, .room-feed .room-feed-content .card .userinfo-wrapper .userinfo-content .info .verify-desc, .room-feed .room-feed-content .tc-slate, .shop-panel .shop-list .shop-desc .btn-box .jump-btn.disabled, .shop-panel .shop-list .shop-desc .desc-box .sub-title.reserve, .sub-reply-list .view-more, .sub-reply-item .sub-reply-info, .reply-item .content-warp .root-reply .reply-info, .reply-header .reply-navigation .nav-bar .nav-title .total-reply, .reply-header .reply-navigation .nav-bar .nav-sort, .user-card .card-content .card-social-info .card-user-attention .social-info-title, .user-card .card-content .card-social-info .card-user-fans .social-info-title, .user-card .card-content .card-social-info .card-user-like .social-info-title, .user-card .card-content .card-sign {
 		color: var(--color-66) !important;
 	}
-	.user-card .btn-box .like, .bb-comment .no-login .baffle .b-btn, .comment-bilibili-fold .no-login .baffle .b-btn, .comment-bilibili-con .btn .btn-submit {
+	.user-card .btn-box .like, .bb-comment .no-login .baffle .b-btn, .comment-bilibili-fold .no-login .baffle .b-btn, .comment-bilibili-con .btn .btn-submit, .note-content .note-text-container .note-prefix {
 		color: var(--color-ff) !important;
 	}
 	.indicator::after {
@@ -497,6 +497,9 @@
 	}
 	.emoji-slider i[style*="#c9ccd0"] svg path {
 		fill: var(--color-42)!important;
+	}
+	.note-content .note-text-container .note-prefix i svg path {
+		fill: var(--color-ff)!important;
 	}
 	/* -- 短评、长评 -- */
 	.review-feed-wrapper {
@@ -2653,6 +2656,27 @@
 	}
 	.read-article-holder .img-box img[src*="4adb9255ada5b97061e610b682b8636764fe50ed"] {
 		filter: var(--filter-50-42) !important;
+	}
+}
+@-moz-document url-prefix("https://www.bilibili.com/h5/note-app/view") {
+	/* ===笔记=== */
+	.view-note .note-content .ql-container .ql-editor, .ql-container {
+		background-color: var(--color-21) !important;
+	}
+	.note-viewpage .video-page-header .toolbar-header, .view-note .rightbar .sanlian-box {
+		background-color: var(--color-2c) !important;
+	}
+	.note-up .up-desc-container .desc-top .up-name, .view-note .note-content .ql-container .ql-editor, .note-viewpage .video-page-header .toolbar-header p, .view-note .rightbar .tab-action-item .tab-action-icon .tab-num, .view-note .rightbar .tab-action-item:not(.is-active) .tab-action-icon .tab-icon {
+		color: var(--color-86) !important;
+	}
+	.note-up .up-desc-container .desc-bottom {
+		color: var(--color-66) !important;
+	}
+	.note-viewpage .video-page-header .toolbar-header, .view-note .rightbar .sanlian-box {
+		border-color: var(--color-42) !important;
+	}
+	.note-viewpage .video-page-header .toolbar-header {
+		border-top: none!important;
 	}
 }
 @-moz-document url-prefix("https://www.bilibili.com/cheese") {
