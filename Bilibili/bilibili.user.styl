@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202209161442
+	@version        202209161539
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202209161442
+	* © 最后更新：202209161539
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -2660,23 +2660,33 @@
 }
 @-moz-document url-prefix("https://www.bilibili.com/h5/note-app/view") {
 	/* ===笔记=== */
+	/* -- 背景 -- */
 	.view-note .note-content .ql-container .ql-editor, .ql-container {
 		background-color: var(--color-21) !important;
 	}
-	.note-viewpage .video-page-header .toolbar-header, .view-note .rightbar .sanlian-box {
+	.note-viewpage .video-page-header .toolbar-header, .view-note .rightbar .sanlian-box, .note-viewpage .video-page-header {
 		background-color: var(--color-2c) !important;
 	}
-	.note-up .up-desc-container .desc-top .up-name, .view-note .note-content .ql-container .ql-editor, .note-viewpage .video-page-header .toolbar-header p, .view-note .rightbar .tab-action-item .tab-action-icon .tab-num, .view-note .rightbar .tab-action-item:not(.is-active) .tab-action-icon .tab-icon {
+	.view-note .page-loading {
+		background: transparent!important;
+	}
+	/* -- 字体 -- */
+	.note-up .up-desc-container .desc-top .up-name, .view-note .note-content .ql-container .ql-editor, .note-viewpage .video-page-header .toolbar-header p, .view-note .rightbar .tab-action-item .tab-action-icon .tab-num, .view-note .rightbar .tab-action-item:not(.is-active) .tab-action-icon .tab-icon, .view-note .page-loading p {
 		color: var(--color-86) !important;
 	}
 	.note-up .up-desc-container .desc-bottom {
 		color: var(--color-66) !important;
 	}
+	/* -- 边框 -- */
 	.note-viewpage .video-page-header .toolbar-header, .view-note .rightbar .sanlian-box {
 		border-color: var(--color-42) !important;
 	}
 	.note-viewpage .video-page-header .toolbar-header {
 		border-top: none!important;
+	}
+	/* -- 其他 -- */
+	#app {
+		width: 560px!important;
 	}
 }
 @-moz-document url-prefix("https://www.bilibili.com/cheese") {
