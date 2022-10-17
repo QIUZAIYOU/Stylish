@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202210142345
+	@version        202210172159
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202210142345
+	* © 最后更新：202210172159
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -103,6 +103,7 @@
 		--bili-shop-pink: #f25d8e !important;
 		--bili-shop-darkpink: #e50e4c !important;
 		--bili-comment-notice-yellow: #e78b1f !important;
+		--bili-fanhe-pink: #ff778f!important;
 		--bodr-42: 1px solid #424242 !important;
 		--bili-live-yelllow: #ffd432!important;
 		--filter-ff-21: invert(100%) sepia(1%) saturate(2108%) hue-rotate(282deg) brightness(105%) contrast(74%) !important;
@@ -1581,11 +1582,11 @@
 	.bili-topic-search__popover, .bili-popover, .bili-popover__arrow, .dyn-archive__body, .bili-dyn-follow-btn:not(:hover), .join-button__join-way, .bili-topic-selector__bulletin__clear, .dyn-draw__watch__control, .bili-dyn-content__orig.reference, .dyn-draw__preview__picture__img, .share-popover, .dyn-reserve__card, .bili-lazy-img.sleepy, .dyn-vote__body {
 		background-color: var(--color-27)!important
 	}
-	.dyn-draw__watch__content, .bili-rich-text-link:hover, .bili-rich-text-module:hover, .bili-rich-text-topic:hover {
+	.dyn-draw__watch__content, .bili-rich-text-link:hover, .bili-rich-text-module:hover, .bili-rich-text-topic:hover, .bili-dyn-card-video__body {
 		background-color: transparent!important
 	}
 	/* -- 字体 -- */
-	.bili-dyn-title__text:not(:hover, [style]), .bili-rich-textarea__inner, .bili-rich-text__content, .bili-popover, .bili-dyn-item, .topic-panel__nav span, .relevant-topic__title:not(:hover), .topic-title h1, .launch-user__name:not(:hover), .action-item__data, .topic-nav span, .bili-user-profile-view__info__stat span, .bili-user-profile-view__info__officialverify, .bili-user-profile-view__info__signature, .bili-user-profile-view__info__uname:not([style]), .bili-user-profile-view__info__stat, .bili-user-profile__error, .bili-user-profile__loading, .bili-user-profile-view__info__button.chat, .join-button__join-way .way__text, .active-card .active-content__title, .share-popover__tips span, .share-popover__tips--content .title, .bili-rich-textarea__inner.empty::before, .bili-dyn-forward-publishing__emoji, .dyn-archive__title, .dyn-vote__detail__title:not(:hover), .dyn-reserve__title {
+	.bili-dyn-title__text:not(:hover, [style]), .bili-rich-textarea__inner, .bili-rich-text__content, .bili-popover, .bili-dyn-item, .topic-panel__nav span, .relevant-topic__title:not(:hover), .topic-title h1, .launch-user__name:not(:hover), .action-item__data, .topic-nav span, .bili-user-profile-view__info__stat span, .bili-user-profile-view__info__officialverify, .bili-user-profile-view__info__signature, .bili-user-profile-view__info__uname:not([style]), .bili-user-profile-view__info__stat, .bili-user-profile__error, .bili-user-profile__loading, .bili-user-profile-view__info__button.chat, .join-button__join-way .way__text, .active-card .active-content__title, .share-popover__tips span, .share-popover__tips--content .title, .bili-rich-textarea__inner.empty::before, .bili-dyn-forward-publishing__emoji, .dyn-archive__title, .dyn-vote__detail__title:not(:hover), .dyn-reserve__title, .bili-dyn-card-video__title, .bili-header .left-entry .entry-title, .bili-header .left-entry .download-entry, .bili-header .left-entry .default-entry, .bili-header .left-entry .loc-entry {
 		color: var(--color-86)!important
 	}
 	.bili-dyn-time:not(:hover), .bili-dyn-action:not(:hover), .relevant-topic__exposed span, .launch-user__text, .topic-desc__text, .topic-desc__text-btn, .topic-title span, .active-card .active-content__desc, .bili-dyn-forward-publishing__action__count, .dyn-vote__detail__desc, .dyn-reserve__desc {
@@ -1594,14 +1595,14 @@
 	.bili-dyn-publishing__action, .dyn-archive__badge {
 		color: var(--color-ff)!important
 	}
-	.switch-tab__tab-text.selected, .switch-tab__tab-text:hover, .bili-user-profile-view__info__button.chat:hover, .bili-dyn-item div:not(:hover) .bili-dyn-follow-btn:not(:hover), .dyn-orig-author__right .dyn-orig-author__following:not(:hover), .bili-rich-text-link, .bili-rich-text-module, .bili-rich-text-topic, .active-capsules .capsule, .bili-dyn-forward-publishing__emoji:hover {
+	.switch-tab__tab-text.selected, .switch-tab__tab-text:hover, .bili-user-profile-view__info__button.chat:hover, .bili-dyn-item div:not(:hover) .bili-dyn-follow-btn:not(:hover), .dyn-orig-author__right .dyn-orig-author__following:not(:hover), .bili-rich-text-link, .bili-rich-text-module, .bili-rich-text-topic, .active-capsules .capsule, .bili-dyn-forward-publishing__emoji:hover, .bili-dyn-card-video:hover .bili-dyn-card-video__title {
 		color: var(--bili-blue)!important
 	}
 	.bili-user-profile-view__info__uname[style] {
 		color: var(--bili-pink)!important
 	}
 	/* -- 边框 -- */
-	.bili-topic-search__popover, .bili-popover, .bili-popover__arrow, .dyn-archive, .bili-user-profile-view__info__button.chat, .bili-dyn-forward__item, .bili-dyn-forward__more, .bili-dyn-forward-publishing__editor:not(:hover), .bili-dyn-forward-publishing__emoji, .dyn-vote {
+	.bili-topic-search__popover, .bili-popover, .bili-popover__arrow, .dyn-archive, .bili-user-profile-view__info__button.chat, .bili-dyn-forward__item, .bili-dyn-forward__more, .bili-dyn-forward-publishing__editor:not(:hover), .bili-dyn-forward-publishing__emoji, .dyn-vote, .bili-dyn-card-video {
 		border-color: var(--color-42)!important
 	}
 	.join-button__join-way::after, .share-popover::after {
@@ -4535,7 +4536,7 @@
 	[class*="gui-settings"] *:not(i), .be-settings > .sidebar > * {
 		background-color: var(--color-21) !important;
 	}
-	.gui-settings-checkbox-container .gui-settings-checkbox::after, .gui-settings-dropdown ul li:hover, .panel-area .bb-comment .fold-comment, .gui-settings-header .operations .operations-menu .operation:hover {
+	.gui-settings-checkbox-container .gui-settings-checkbox::after, .gui-settings-dropdown ul li:hover, .panel-area .bb-comment .fold-comment, .gui-settings-header .operations .operations-menu .operation:hover, .patchouli-navbar-content-right .right-router:hover {
 		background-color: var(--color-27) !important;
 	}
 	[class*="gui-settings"] .custom-color-preview {
@@ -4573,6 +4574,120 @@
 	}
 	[class*="gui-"] [class*="icon-"]::after {
 		filter: var(--filter-00-86) !important;
+	}
+}
+@-moz-document url-prefix("https://workshop.bilibili.com"), url-prefix("https://play-live.bilibili.com"), url-prefix("https://open-live.bilibili.com/") {
+	/*  饭盒 */
+	/* -- 背景 -- */
+	.link-panigation .panigation, .good-info .detail-modal .detail-modal-box, .flandre__sidebar--auth-code-modal-wrapper, .index_app_eveVj {
+		background-color: var(--color-21) !important;
+	}
+	.patchouli-navbar, .flandre__fanbox--card-info, .fanbox__rankcard, .flandre__fanbox--card-info-center, .flandre__sidebar--item, .fanbox__homepage .fanbox__homepage--row .fanbox__homepage--row-top .fanbox__homepage--row-top-more, .fanbox__homepage .fanbox__homepage--row .fanbox__homepage--row-top .fanbox__homepage--row-top-refresh, .select, .fanbox__work-detail--live2d .loading, .good-info .detail-modal .detail-modal-box .detail-modal-body .file-box, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-right .fanbox__work-detail--content-right-block:not(:first-child), .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-right .fanbox__work-detail--content-copyright-detail, .navbar-user-card, .fan-group-anchor-page .fan-group-anchor-top-info-tab, .fan-group-anchor-page .fan-group-anchor-center, .fan-group-anchor-topic-top, .fan-group-anchor-topic-tabs, .fan-group-anchor-dyn-tabs, .bili-dyn-item, .bili-dyn-card-video__body, .details .details-content, .app-card, .feedback, .layout .sidebar, .flandre__sidebar--item, .bpx-player-sending-bar, .type-option, .app-list .card, .app-list .card .card-info, .index_content_mnoqj .index_box-w_tknDMc, .index_content_CfJLI .index_desc_jn8tK .index_service_YtXn6, .index_content_mnoqj .index_box__QYXq, .index_content_mnoqj .index_box__QYXq .index_pic-box_kaRAy, .index_content_YgEW7, aside.sidebar, .custom-block.tip, .search-box input, .theme-container tr:nth-child(2n) {
+		background-color: var(--color-2c) !important;
+	}
+	.selector .ss, .navbar-user-card .items .item:hover, .selector .hoverboard, .bili-user-profile, .bili-dyn-item__more .bili-dyn-more__btn.tp .bili-popover, .bili-dyn-item__more .bili-dyn-more__btn.tp .bili-popover__arrow, .fan-group-timeline, .fan-group-tags-item, .live-room-list .item-more, .sidebar .flandre__sidebar--group .flandre__sidebar--item:hover:before, .tool-tip, .index_content_YgEW7 .index_step-content_QzvQr .index_step_HWmOg .index_box_YrlQQ, .theme-default-content code {
+		background-color: var(--color-27) !important;
+	}
+	.fanbox__homepage .fanbox__homepage--row .fanbox__homepage--row-top .fanbox__homepage--row-top-title:before, .fanbox__homepage .fanbox__homepage--row .fanbox__homepage--row-top .fanbox__homepage--row-top-title:after, .navbar-user-card .items .divider, .fan-group-timeline-item, .fan-group-timeline-item:after, .sidebar .flandre__sidebar--group .flandre__sidebar--item:after {
+		background-color: var(--color-42) !important;
+	}
+	.selector .hoverboard .optionactive {
+		background-color: var(--bili-fanhe-pink) !important;
+	}
+	.fan-group-timeline-item:last-child {
+		background-image: linear-gradient(270deg, var(--color-27), var(--color-42) 50%)!important;
+	}
+	.fan-group-timeline-item:first-child {
+		background-image: linear-gradient(270deg, var(--color-42), var(--color-27) 50%)!important;
+	}
+	.details, .home {
+		background: var(--color-21) !important;
+	}
+	body.webp .fan-group-home-page {
+		background: var(--color-2c) !important;
+	}
+	.live-room-list .item-more .point {
+		background: var(--color-86) !important;
+	}
+	.jumping-ctnr .jumping-input, .work-pagination .link-panigation .panigation.unavailable:hover, .bili-rich-text-link:hover, .bili-rich-text-module:hover, .bili-rich-text-topic:hover, .patchouli-button-outline, .sidebar .flandre__sidebar--group, .flandre__sidebar--auth-code-modal-content #flandre__sidebar--auth-code-modal-input, .bpx-player-sending-bar .bpx-player-video-inputbar, .theme-default-content pre[class*=language-] code, .theme-default-content pre code {
+		background: transparent !important;
+	}
+	/* -- 字体 -- */
+	.fanbox__homepage .fanbox__homepage--row .fanbox__homepage--row-top .fanbox__homepage--row-top-title, .flandre__fanbox--card-info-center, .flandre__fanbox--card-info-top-user-name, .patchouli-navbar-content-left-item:not(:hover, .patchouli-navbar-content-left-item-selected) > .patchouli-navbar-content-left-item-text, .select .menu .active, .select .menu span, .selector .ss, .link-panigation .panigation, .jumping-ctnr > span, .work-pagination .link-panigation .panigation.unavailable:hover, .footer .main .footer-linker a, .footer .main .footer-linker li, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-left-block .fanbox__work-detail--content-work-category, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-right-block .fanbox__work-detail--content-work-category, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-left-block .fanbox__work-detail--content-work-title, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-right-block .fanbox__work-detail--content-work-title, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-left .fanbox__work-detail--content-left-block .fanbox__work-detail--content-left-block-title, .creator-info .remain .remain-contents, .creator-info .remain .actions .pm, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-left .fanbox__work-detail--content-left-block .fanbox__work-detail--content-left-desc, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-right .fanbox__work-detail--content-copyright-detail .fanbox__work-detail--content-copyright-detail-item .fanbox__work-detail--content-copyright-detail-name, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-right .fanbox__work-detail--content-copyright-detail .fanbox__work-detail--content-copyright-detail-title, .good-info h3, .good-info .detail-modal .detail-modal-box .detail-modal-body .file-box .file span, .good-info .detail-modal .detail-modal-box .detail-modal-head, .patchouli-navbar-content-center .search-input input, .navbar-user-card .user-info .info .nickname, .navbar-user-card .items .item, .selector .hoverboard div, .jumping-ctnr .jumping-input, .related-work .remain .name, .related-work .remain .author, .fan-group-anchor-page .fan-group-anchor-top-info-tab-header-info-uname, .fan-group-anchor-topic-top-body-topic-name, .fan-group-anchor-topic-top-header-nickname, .bili-dyn-title__text, .fan-group-anchor-dyn-tabs-header-item, .bili-rich-text__content, .bili-dyn-card-video__title, .bili-dyn-more__menu, .fan-group-anchor-topic-top-body-desc, .fan-group-tags-item, .fan-group-anchor-page .fan-group-anchor-top-info-tab-details-desc, .fan-group-anchor-page .fan-group-anchor-top-info-tab-details-planning, .fan-group-timeline-item-text, .fan-group-anchor-page .fan-group-anchor-top-info-tab-header-info-sign, .fan-group-anchor-page .fan-group-anchor-top-info-tab-header-relation-followed-title, .fan-group-anchor-page .fan-group-anchor-top-info-tab-header-relation-following-title, .fan-group-anchor-page .fan-group-anchor-top-info-tab-header-relation-followed, .fan-group-anchor-page .fan-group-anchor-top-info-tab-header-relation-following, .details .edition-info .info-content, .details .use-instruction .instruction-content, .details .introduction .container, .model-title, .model-title, .live-room-list .title, .like-button, .feedback, .app-card .app-inf .app-desc .desc-top .top-left .title-content, .sidebar .flandre__sidebar--group .flandre__sidebar--item .flandre__sidebar--item-title, .flandre__sidebar--auth-code-modal-title, .flandre__sidebar--auth-code-modal-content #flandre__sidebar--auth-code-modal-input, .bpx-player-sending-bar .bpx-player-video-info, .live-room-item.item .tool-tip .info .title, .home-sort .sort, .type-option, .card-info-center, .card-info-top, .index_content_CfJLI .index_title_cRRSM, .index_title_spLyc, .index_content_mnoqj .index_title__YDdm, .index_content_CfJLI .index_desc_jn8tK .index_service_YtXn6 .index_a-title_wcF3b, .index_content_mnoqj .index_box__QYXq .index_des-title_GleUN, .index_content_YgEW7 .index_title_bG0S4, .index_content_YgEW7 .index_step-content_QzvQr .index_step_HWmOg .index_box_YrlQQ, .index_content_YgEW7 .index_step-content_QzvQr .index_step_HWmOg .index_text-title_T8fZV, .sidebar-heading, .theme-default-content code, .search-box input {
+		color: var(--color-86) !important;
+	}
+	.flandre__fanbox--card-info-bottom-time, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-left-block .fanbox__work-detail--content-work-publish-info .fanbox__work-detail--content-work-publish-report .fanbox__work-detail--content-work-publish-report-text, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-right-block .fanbox__work-detail--content-work-publish-info .fanbox__work-detail--content-work-publish-report .fanbox__work-detail--content-work-publish-report-text, .good-info .hello a, .good-info .three .type, .good-info .detail-modal .detail-modal-box .detail-modal-footer .detail-footer span, .navbar-user-card .user-info .info .uid, .bili-dyn-time, .bili-dyn-action:not(:hover), .fan-group-anchor-topic-top-body-count-discuss, .fan-group-anchor-topic-top-body-count-dot, .fan-group-anchor-topic-top-body-count-view, .fan-group-anchor-topic-top-header-tips, .live-room-item.item .tool-tip .info .name, .card-info-bottom-updatetime, .index_content_CfJLI .index_desc_jn8tK .index_service_YtXn6 .index_a-sub-title_AMxHg, .index_content_mnoqj .index_box__QYXq .index_desc_WoFc4, .index_desc_BlnVf .index_sub-desc_He08N, .index_content_YgEW7 .index_step-content_QzvQr .index_step_HWmOg .index_gray_lDkGM {
+		color: var(--color-66) !important;
+	}
+	.page .work-pagination .link-panigation .panigation.selected, .patchouli-navbar-content-right .navbar-btn, .work-pagination .link-panigation .panigation:not(.unavailable):hover, .tag-items > span, .selector .hoverboard .optionactive {
+		color: var(--color-ff) !important;
+	}
+	.bili-rich-text-link, .bili-rich-text-module, .bili-rich-text-topic, .bili-rich-text__action, .bili-dyn-card-video:hover .bili-dyn-card-video__title, .app-card .app-inf .app-desc .desc-top .top-left .label {
+		color: var(--bili-blue) !important;
+	}
+	.patchouli-navbar-content-left-item-selected > .patchouli-navbar-content-left-item-text, .navbar-user-card .items .item:hover, .selector .hoverboard div:not(.optionactive):hover, .fan-group-anchor-dyn-tabs-header-item-active, .type-option.is-active {
+		color: var(--bili-fanhe-pink) !important;
+	}
+	.custom-block.warning，.custom-block.warning .custom-block-title {
+		color: #ffd400;
+	}
+	/* -- 边框 -- */
+	.fanbox__homepage .fanbox__homepage--row .fanbox__homepage--row-top .fanbox__homepage--row-top-title:before, .jumping-ctnr .jumping-input, .footer .main .link-groups .link-group:nth-child(2), .like, .comment-header .tabs-order .clearfix li.part-symbol, .bili-dyn-card-video, .bili-dyn-item__more .bili-dyn-more__btn.tp .bili-popover, .model-title .right, .model-title .right, .avatar, .like-button, .live-room-list .item-more, .flandre__sidebar--auth-code-modal-content #flandre__sidebar--auth-code-modal-input, .flandre__sidebar--auth-code-modal-refresh, .bpx-player-sending-bar .bpx-player-video-inputbar-wrap, aside.sidebar, .page .theme-default-content h2, .search-box input, .page-nav .inner, blockquote, .theme-container td, .theme-container th {
+		border-color: var(--color-42) !important;
+	}
+	.app-card .app-inf .app-desc .desc-top .top-left .label.type-obs {
+		border-color: var(--bili-blue) !important;
+	}
+	.sidebar-heading .arrow.down {
+		border-top-color: var(--color-86) !important;
+	}
+	.sidebar-heading .arrow.right {
+		border-left-color: var(--color-86) !important;
+	}
+	.bili-dyn-item__more .bili-dyn-more__btn.tp .bili-popover__arrow {
+		border-left: 1px solid var(--color-42)!important;
+		border-top: 1px solid var(--color-42)!important;
+	}
+	.patchouli-navbar-content-right .navbar-btn {
+		outline-color: var(--color-42) !important;
+	}
+	/* -- 图标 -- */
+	.fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-left-block .fanbox__work-detail--content-work-publish-info .fanbox__work-detail--content-work-publish-report .fanbox__work-detail--content-work-publish-report-icon, .fanbox__work-detail .fanbox__work-detail--content .fanbox__work-detail--content-right-block .fanbox__work-detail--content-work-publish-info .fanbox__work-detail--content-work-publish-report .fanbox__work-detail--content-work-publish-report-icon {
+		filter: invert(50%) sepia(0%) saturate(1436%) hue-rotate(212deg) brightness(77%) contrast(88%)!important;
+	}
+	.good-info .detail-modal .detail-modal-box .detail-modal-body .file-box .file .file-type-3 {
+		filter: invert(49%) sepia(41%) saturate(0%) hue-rotate(161deg) brightness(98%) contrast(92%)!important;
+	}
+	.selector .ss img {
+		filter: invert(50%) sepia(54%) saturate(0%) hue-rotate(290deg) brightness(95%) contrast(86%)!important;
+	}
+	.bili-dyn-action:not(:hover) .bili-dyn-action__icon {
+		filter: invert(61%) sepia(2%) saturate(13%) hue-rotate(333deg) brightness(87%) contrast(88%)!important;
+	}
+	.like-button .like-text .like-icon {
+		filter: invert(50%) sepia(0%) saturate(0%) hue-rotate(166deg) brightness(105%) contrast(98%)!important;
+	}
+	.sidebar .flandre__sidebar--group .flandre__sidebar--icon {
+		filter: invert(50%) sepia(15%) saturate(0%) hue-rotate(292deg) brightness(102%) contrast(99%)!important;
+	}
+	.index_content_mnoqj .index_logo-png_Q8lZx {
+		filter: invert(60%) sepia(6%) saturate(0%) hue-rotate(145deg) brightness(90%) contrast(85%)!important;
+	}
+	/* -- 阴影 -- */
+	.fan-group-anchor-page .fan-group-anchor-top-info-tab-header-avatar-live-tips {
+		box-shadow: 0 0 0 2px var(--color-2c)!important;
+	}
+	.bili-dyn-more__menu {
+		box-shadow: rgb(0 0 0 / 12%) 0px 11px 12px 0px!important;
+	}
+	.bpx-player-container {
+		box-shadow: 0 0 8px #000000;
+	}
+	.live-room-item.item .tool-tip {
+		box-shadow: 0 6px 12px rgb(0 0 0 / 37%);
+	}
+	.index_content_YgEW7 .index_step-content_QzvQr .index_step_HWmOg .index_box_YrlQQ, .index_content_CfJLI .index_desc_jn8tK .index_service_YtXn6 {
+		box-shadow: 0 0 0.15625rem rgb(0 0 0 / 12%);
 	}
 }
 @-moz-document url-prefix("https://cool.bilibili.com") {
@@ -4643,10 +4758,10 @@
 	.room-bg, .medalList .title .btn, .ztolayer-dialog, .ztolayer-dialog .dialog-title .btn, #hotrank-rank .list-others, .baseFrame {
 		background: var(--color-21) !important;
 	}
-	.live-room-app .app-content .app-body .player-and-aside-area .left-container .head-info-section, .live-room-app .app-content .app-body .player-and-aside-area .aside-area .chat-control-panel, .live-room-app .app-content .app-body .player-and-aside-area .left-container .gift-control-section, .rank-list-ctnr, .live-room-app .app-content .app-body .player-and-aside-area .aside-area .rank-list-section, .follow-ctnr .right-part, .link-input, .imagesbox .boost-img, .calendar-checkin .title, .calendar-checkin .calendar-wrapper, .calendar-checkin:hover, .calendar-checkin, .user-panel-ctnr .user-panel, .download-panel-ctnr, .link-navbar-ctnr, .link-navbar-ctnr, .link-navbar-ctnr .link-navbar, .pay-note-panel, .link-navbar-ctnr .link-navbar .main-ctnr .search-bar-ctnr .search-bar, .small-banner, .highlight-areas-ctnr .highlight-area-item, #link-footer-vm .link-footer, .link-footer-ctnr .link-footer, .recommend-area-ctnr .rec-area-item, .highlight-areas-ctnr .hover-panel-wrap, .room-feed .bb-comment, .baseFrame, .hotrank-component-other-item, .hotrank-component-mine, .live-status, .base-bubble, .base-bubble .content-ctnr:before, .feed-component-mine {
+	.live-room-app .app-content .app-body .player-and-aside-area .left-container .head-info-section, .live-room-app .app-content .app-body .player-and-aside-area .aside-area .chat-control-panel, .live-room-app .app-content .app-body .player-and-aside-area .left-container .gift-control-section, .rank-list-ctnr, .live-room-app .app-content .app-body .player-and-aside-area .aside-area .rank-list-section, .follow-ctnr .right-part, .link-input, .imagesbox .boost-img, .calendar-checkin .title, .calendar-checkin .calendar-wrapper, .calendar-checkin:hover, .calendar-checkin, .user-panel-ctnr .user-panel, .download-panel-ctnr, .link-navbar-ctnr, .link-navbar-ctnr, .link-navbar-ctnr .link-navbar, .pay-note-panel, .link-navbar-ctnr .link-navbar .main-ctnr .search-bar-ctnr .search-bar, .small-banner, .highlight-areas-ctnr .highlight-area-item, #link-footer-vm .link-footer, .link-footer-ctnr .link-footer, .recommend-area-ctnr .rec-area-item, .highlight-areas-ctnr .hover-panel-wrap, .room-feed .bb-comment, .baseFrame, .hotrank-component-other-item, .hotrank-component-mine, .live-status, .base-bubble, .base-bubble .content-ctnr:before, .feed-component-mine, .fanbox-panel-ctnr {
 		background: var(--color-2c) !important;
 	}
-	.chat-history-panel, .more-btn-cntr, .imagesbox .boost-control {
+	.chat-history-panel, .more-btn-cntr, .imagesbox .boost-control, .fanbox-panel-ctnr .list-item:hover {
 		background: var(--color-27) !important;
 	}
 	.search-bar, .text-info-ctnr.body-bg, .tag-default, .bl-switch::after, .index_24yI6t8z, .Item_1EohdhbR .Item_2A9JA1Uf:hover, .no__data .no__data_txt p:before, .room-card-ctnr .hover-panel-wrapper {
@@ -4698,7 +4813,7 @@
 		background-image: url(//www.asifadeaway.com/Stylish/bilibili/calendar-date-day-item-info.png)!important
 	}
 	/* -- 字体 -- */
-	.link-navbar .main-ctnr .nav-logo, .shortcuts-ctnr div, .search-bar span, .search-bar input, .search-bar-ctnr .search-bar .search-btn, .link-navbar .nav-item, .link-navbar .main-ctnr .nav-switcher, .area-list-panel .list-item, .user-item .username, .section-title h2, .activity-item-ctnr .info-ctnr .title-text, .activity-item-ctnr .info-ctnr .first-line .username, .link-panel-ctnr .load-more .load-more-btn, .section-title, .banner-title, .item-title, .room-anchor, .area-title, .yzly-title, .title-text, .card-info-ctnr .room-title, .highlight-areas-ctnr .area-name, .sec-area-name, .tag-default, .wrapper .content .state-null > .txt, .chat-input, .chat-history-panel .chat-history-list .chat-item.danmaku-item, .tab-candidate, .room-introduction-scroll-wrapper, .room-introduction-tags .room-introduction-tag, .announcement-cntr .content, #rank-list-ctnr-box .tabs.isHundred .item, .live-skin-coloration-area .live-skin-normal-a-text, .live-skin-coloration-area .live-skin-normal-text, .guard-rank-cntr .rank-cntr .btn-box .daily-record-title, .pophover > p:first-child, .seeds-wrap, .gift-item-wrap .num, .yan-item, .danmaku-position-item .icon-font, .danmaku-group-item, .block-effect-ctnr .item, .gift-rank-cntr .top3-cntr .top3 .top3-item, .gift-item .label, .room-introduction-content span, .more-btn-text, .gift-rank-list-item, .control-panel-icon-row .icon-item, input.level-input, .link-input, .block-content, .bl-button--primary:disabled, .block-setting-row .setting-label, .block-setting-row .setting-value, .gift-info-title, .choice-item, .gift-panel-box .gift-reveal-header .gift-tab, .feed-title, .area-name, .index_24yI6t8z, .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_2GEmdhg6, .all__area-top-ctnr .top__header-wrap .title, .all__special-area-recommend-list-ctnr .header__wrap .sub-title, .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count, .tabs .tabs__normal-item, .imagesbox .boost-control li i, .medalList .title .name, .ztolayer-dialog .dialog-body, .medalList .noList p, .calendar-checkin .checkin-btn, .calendar-checkin .title, .medalList .title .mount, .calendar-checkin .calendar-wrapper .calendar .date-ctnr .day-item, .calendar-checkin .title, .calendar-checkin .calendar-wrapper .calendar .date-ctnr .day-item:before, .user-panel-ctnr .user-panel .content-ctnr .logout-btn, .edit-button > span, .search-bar-ctnr .minimal-icon > i, .live-title .text, .live-player-ctnr.minimal:before, .link-navbar-ctnr .link-navbar .main-ctnr .search-bar-ctnr .search-bar input, .search-bar-ctnr .search-bar .search-btn, .gift-rank-list-item, .gift-rank-list-item .name, .gift-rank-cntr .top3-cntr .top3 .top3-item .top3-name, .chat-history-panel .chat-history-list .chat-item.danmaku-item, .item .rank, .live-skin-coloration-area .live-skin-main-text:not(:hover), .chat-history-panel .chat-history-list .chat-item.gift-item .username, .hab-ctnr .item-title, .hab-ctnr .room-anchor, .hab-ctnr .section-title, .news-ctnr .item-title, .news-ctnr .room-anchor, .news-ctnr .section-title, .rank-ctnr .item-title, .rank-ctnr .room-anchor, .rank-ctnr .section-title, .hab-ctnr .live-notice-ctnr .notice-item .notice-main .notice-title, .news-ctnr .live-notice-ctnr .notice-item .notice-main .notice-title, .rank-ctnr .live-notice-ctnr .notice-item .notice-main .notice-title, .chat-history-panel .brush-prompt .brush-prompt-item.brush-aggregated-content .brush-aggregated-text, #link-footer-vm .link-footer, .link-footer-ctnr .link-footer, #link-footer-vm .link-footer .footer-linker .icp-info, #link-footer-vm .link-footer .footer-linker dl > dd, .link-footer-ctnr .link-footer .footer-linker .icp-info, .link-footer-ctnr .link-footer .footer-linker dl > dd, #link-footer-vm .link-footer .footer-img-linker .footer-img-item, .link-footer-ctnr .link-footer .footer-img-linker .footer-img-item, #link-footer-vm .link-footer .footer-img-linker .footer-img-text, .link-footer-ctnr .link-footer .footer-img-linker .footer-img-text, .recommend-area-ctnr .area-name, .highlight-areas-ctnr .area-desc, .highlight-areas-ctnr .hover-panel-wrap .sec-area-name, .chat-history-panel .brush-prompt .brush-prompt-item, .hab-ctnr .banner-title, .news-ctnr .banner-title, .rank-ctnr .banner-title, .hab-ctnr .tab-item, .news-ctnr .tab-item, .rank-ctnr .tab-item, .highlight-areas-ctnr .hover-panel-wrap .btn-all, .room-card-ctnr .card-text, .hotrank-component-other-item .name .uname, .hotrank-component-tab, #hotrank-rank .rank-body .info-top .right, .card:not(.highlight), .rank-feed-body .info-tops .right, .rank-icon, .gift-upgrade-item .left .title, .header-info-ctnr .rows-ctnr .upper-row .live-area .area-link:not(:hover) {
+	.link-navbar .main-ctnr .nav-logo, .shortcuts-ctnr div, .search-bar span, .search-bar input, .search-bar-ctnr .search-bar .search-btn, .link-navbar .nav-item, .link-navbar .main-ctnr .nav-switcher, .area-list-panel .list-item, .user-item .username, .section-title h2, .activity-item-ctnr .info-ctnr .title-text, .activity-item-ctnr .info-ctnr .first-line .username, .link-panel-ctnr .load-more .load-more-btn, .section-title, .banner-title, .item-title, .room-anchor, .area-title, .yzly-title, .title-text, .card-info-ctnr .room-title, .highlight-areas-ctnr .area-name, .sec-area-name, .tag-default, .wrapper .content .state-null > .txt, .chat-input, .chat-history-panel .chat-history-list .chat-item.danmaku-item, .tab-candidate, .room-introduction-scroll-wrapper, .room-introduction-tags .room-introduction-tag, .announcement-cntr .content, #rank-list-ctnr-box .tabs.isHundred .item, .live-skin-coloration-area .live-skin-normal-a-text, .live-skin-coloration-area .live-skin-normal-text, .guard-rank-cntr .rank-cntr .btn-box .daily-record-title, .pophover > p:first-child, .seeds-wrap, .gift-item-wrap .num, .yan-item, .danmaku-position-item .icon-font, .danmaku-group-item, .block-effect-ctnr .item, .gift-rank-cntr .top3-cntr .top3 .top3-item, .gift-item .label, .room-introduction-content span, .more-btn-text, .gift-rank-list-item, .control-panel-icon-row .icon-item, input.level-input, .link-input, .block-content, .bl-button--primary:disabled, .block-setting-row .setting-label, .block-setting-row .setting-value, .gift-info-title, .choice-item, .gift-panel-box .gift-reveal-header .gift-tab, .feed-title, .area-name, .index_24yI6t8z, .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_2GEmdhg6, .all__area-top-ctnr .top__header-wrap .title, .all__special-area-recommend-list-ctnr .header__wrap .sub-title, .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count, .tabs .tabs__normal-item, .imagesbox .boost-control li i, .medalList .title .name, .ztolayer-dialog .dialog-body, .medalList .noList p, .calendar-checkin .checkin-btn, .calendar-checkin .title, .medalList .title .mount, .calendar-checkin .calendar-wrapper .calendar .date-ctnr .day-item, .calendar-checkin .title, .calendar-checkin .calendar-wrapper .calendar .date-ctnr .day-item:before, .user-panel-ctnr .user-panel .content-ctnr .logout-btn, .edit-button > span, .search-bar-ctnr .minimal-icon > i, .live-title .text, .live-player-ctnr.minimal:before, .link-navbar-ctnr .link-navbar .main-ctnr .search-bar-ctnr .search-bar input, .search-bar-ctnr .search-bar .search-btn, .gift-rank-list-item, .gift-rank-list-item .name, .gift-rank-cntr .top3-cntr .top3 .top3-item .top3-name, .chat-history-panel .chat-history-list .chat-item.danmaku-item, .item .rank, .live-skin-coloration-area .live-skin-main-text:not(:hover), .chat-history-panel .chat-history-list .chat-item.gift-item .username, .hab-ctnr .item-title, .hab-ctnr .room-anchor, .hab-ctnr .section-title, .news-ctnr .item-title, .news-ctnr .room-anchor, .news-ctnr .section-title, .rank-ctnr .item-title, .rank-ctnr .room-anchor, .rank-ctnr .section-title, .hab-ctnr .live-notice-ctnr .notice-item .notice-main .notice-title, .news-ctnr .live-notice-ctnr .notice-item .notice-main .notice-title, .rank-ctnr .live-notice-ctnr .notice-item .notice-main .notice-title, .chat-history-panel .brush-prompt .brush-prompt-item.brush-aggregated-content .brush-aggregated-text, #link-footer-vm .link-footer, .link-footer-ctnr .link-footer, #link-footer-vm .link-footer .footer-linker .icp-info, #link-footer-vm .link-footer .footer-linker dl > dd, .link-footer-ctnr .link-footer .footer-linker .icp-info, .link-footer-ctnr .link-footer .footer-linker dl > dd, #link-footer-vm .link-footer .footer-img-linker .footer-img-item, .link-footer-ctnr .link-footer .footer-img-linker .footer-img-item, #link-footer-vm .link-footer .footer-img-linker .footer-img-text, .link-footer-ctnr .link-footer .footer-img-linker .footer-img-text, .recommend-area-ctnr .area-name, .highlight-areas-ctnr .area-desc, .highlight-areas-ctnr .hover-panel-wrap .sec-area-name, .chat-history-panel .brush-prompt .brush-prompt-item, .hab-ctnr .banner-title, .news-ctnr .banner-title, .rank-ctnr .banner-title, .hab-ctnr .tab-item, .news-ctnr .tab-item, .rank-ctnr .tab-item, .highlight-areas-ctnr .hover-panel-wrap .btn-all, .room-card-ctnr .card-text, .hotrank-component-other-item .name .uname, .hotrank-component-tab, #hotrank-rank .rank-body .info-top .right, .card:not(.highlight), .rank-feed-body .info-tops .right, .rank-icon, .gift-upgrade-item .left .title, .header-info-ctnr .rows-ctnr .upper-row .live-area .area-link:not(:hover), .link-navbar-ctnr .link-navbar .main-ctnr .activity-item-ctnr .username, .link-navbar-ctnr .link-navbar .main-ctnr .link-panel-ctnr .user-item .username, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel .load-error-panel, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel .user-level-detail .darkgray, .link-navbar-ctnr .link-navbar .main-ctnr .download-panel-ctnr .content-ctnr .desc, .link-navbar-ctnr .link-navbar .main-ctnr .download-panel-ctnr .content-ctnr .download-link, .link-navbar-ctnr .link-navbar .main-ctnr .link-panel-ctnr .section-title h2, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel .ctrl-btn, .link-navbar-ctnr .link-navbar .main-ctnr .calendar-checkin .checkin-btn, .link-navbar-ctnr .link-navbar .main-ctnr .link-panel-ctnr .load-more .load-more-btn, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel .content-ctnr .logout-btn {
 		color: var(--color-86) !important;
 	}
 	.activity-item-ctnr .info-ctnr .first-line .time, .item-time, .popularity-row, .input-limit-hint, .icon-label, .announcement-cntr .header p .icon-edit, .announcement-cntr .header p span, .up-info .up-info-tip, .right-action-ctnr .icon-font, .room-introduction-content.empty, .des, .area-desc, .follow-empty-cntr .follow-empty-text, .list-content-candidate, .gift-info-desc, .gift-info-special-batch, .no-glory, .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_29AwQRu5 .Item_QAOnosoB, .Item_1EohdhbR .Item_2A9JA1Uf .Item_2onI5dXq .Item_1Cr59yf9 .Item_29AwQRu5 .Item_3Iz_3buh, .no__data .no__data_txt, .room-title, .chat-history-panel .chat-history-list .chat-item.gift-item, .chat-history-panel .chat-history-list .chat-item.danmaku-item .user-name:not([style]), .user-info-room-name, .hab-ctnr .item-time, .hab-ctnr .more-link, .hab-ctnr .popularity-row, .hab-ctnr .room-title, .news-ctnr .item-time, .news-ctnr .more-link, .news-ctnr .popularity-row, .news-ctnr .room-title, .rank-ctnr .item-time, .rank-ctnr .more-link, .rank-ctnr .popularity-row, .rank-ctnr .room-title, #hotrank-rank .rank-body .info-top .left, .rank-feed-body .info-tops .left .banner-count-down, .gift-upgrade-item .left .price, .gift-upgrade-item .left .price, .gift-info-expScore {
@@ -4717,7 +4832,7 @@
 		color: var(--bili-live-yelllow) !important;
 	}
 	/* -- 边框 -- */
-	.search-bar, .hover-panel-wrapper, .rec-area-item, .news-ctnr, .hover-panel-wrap, .live-room-app .app-content .app-body .player-and-aside-area .left-container .head-info-section, .live-room-app .app-content .app-body .player-and-aside-area .left-container .gift-control-section, .tag-default, .wrapper .content .state-null > .txt, .live-room-app .app-content .app-body .player-and-aside-area .aside-area, .rank-list-ctnr, .chat-input-ctnr, .chat-input-ctnr .medal-section, .tab-candidate.active, .tab-candidate:hover, .room-introduction-tags, .content-wrapper, .room-feed-content .feed-card .card, .announcement-cntr, .announcement-cntr .content, .side-bar-cntr::before, .attention-btn-ctnr .right-part, .guard-rank-cntr .rank-cntr .btn-box .l-line, .guard-rank-cntr .rank-cntr .btn-box .r-line, .side-bar-cntr, .common-popup-wrap, .tabs .tab-list .item, .side-bar-popup-cntr, .follow-ctnr .right-part, .link-input, .count-choice, .choice-item, .gift-panel-box, .gift-panel-box .gift-reveal-header, .link-input, .Item_1EohdhbR .Item_2A9JA1Uf:hover, .no__data .no__data_txt, .no__data .no__data_txt:after, .no__data .no__data_txt:before, .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count, .info-item-ctnr, .edit-button, .link-navbar-ctnr .link-navbar .main-ctnr .search-bar-ctnr .search-bar, #link-footer-vm .link-footer, .link-footer-ctnr .link-footer, #link-footer-vm .link-footer .footer-img-linker .footer-img-item, .link-footer-ctnr .link-footer .footer-img-linker .footer-img-item, .recommend-area-ctnr .rec-area-item, .highlight-areas-ctnr .hover-panel-wrap, .room-card-ctnr .hover-panel-wrapper, .avatar, #hotrank-rank .rank-body .info-top .right, .rank-feed-body .info-tops .right, .gift-upgrade-item {
+	.search-bar, .hover-panel-wrapper, .rec-area-item, .news-ctnr, .hover-panel-wrap, .live-room-app .app-content .app-body .player-and-aside-area .left-container .head-info-section, .live-room-app .app-content .app-body .player-and-aside-area .left-container .gift-control-section, .tag-default, .wrapper .content .state-null > .txt, .live-room-app .app-content .app-body .player-and-aside-area .aside-area, .rank-list-ctnr, .chat-input-ctnr, .chat-input-ctnr .medal-section, .tab-candidate.active, .tab-candidate:hover, .room-introduction-tags, .content-wrapper, .room-feed-content .feed-card .card, .announcement-cntr, .announcement-cntr .content, .side-bar-cntr::before, .attention-btn-ctnr .right-part, .guard-rank-cntr .rank-cntr .btn-box .l-line, .guard-rank-cntr .rank-cntr .btn-box .r-line, .side-bar-cntr, .common-popup-wrap, .tabs .tab-list .item, .side-bar-popup-cntr, .follow-ctnr .right-part, .link-input, .count-choice, .choice-item, .gift-panel-box, .gift-panel-box .gift-reveal-header, .link-input, .Item_1EohdhbR .Item_2A9JA1Uf:hover, .no__data .no__data_txt, .no__data .no__data_txt:after, .no__data .no__data_txt:before, .all__special-area-recommend-list-ctnr .header__wrap .new-dynamic-count, .info-item-ctnr, .edit-button, .link-navbar-ctnr .link-navbar .main-ctnr .search-bar-ctnr .search-bar, #link-footer-vm .link-footer, .link-footer-ctnr .link-footer, #link-footer-vm .link-footer .footer-img-linker .footer-img-item, .link-footer-ctnr .link-footer .footer-img-linker .footer-img-item, .recommend-area-ctnr .rec-area-item, .highlight-areas-ctnr .hover-panel-wrap, .room-card-ctnr .hover-panel-wrapper, .avatar, #hotrank-rank .rank-body .info-top .right, .rank-feed-body .info-tops .right, .gift-upgrade-item, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel .user-level-detail, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel .user-level-detail hr {
 		border-color: var(--color-42) !important;
 	}
 	.calendar-checkin .title .month.cur-month:before {
@@ -4725,6 +4840,9 @@
 	}
 	.tag-default.current, .tag-default:active, .tag-default:hover, .choice-item.active, .choice-item:hover, .gift-panel-box .gift-reveal-header .gift-tab:hover .name, .index_24yI6t8z:hover, .normal-active, .tabs .tabs__normal-item.active, .tabs .tabs__normal-item:hover {
 		border-color: var(--bili-blue) !important;
+	}
+	.link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel .user-level-detail:after {
+		border-color: var(--color-2c) !important;
 	}
 	.arrow {
 		border-top-color: var(--color-42) !important;
