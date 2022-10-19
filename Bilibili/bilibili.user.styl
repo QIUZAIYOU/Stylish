@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202210180029
+	@version        202210191849
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202210180029
+	* © 最后更新：202210191849
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1189,11 +1189,14 @@
 		color: var(--bili-blue) !important;
 	}
 	/* -- 边框 -- */
-	.home-header__channel .channel-entry-more__link, .home-header__channel .channel-link, .center-search-container .center-search__bar #nav-searchform, .search-panel, div[class*="bili-rank-list-"] ul[class*="__list"], .v-popover-content, .home-header-channel-panel .channel-panel__column, [class*="bili-rank-list-"] ul[class*="-card__popover--stats"], .favorite-panel-popover__nav, .favorite-panel-popover__content .content-bottom, .favorite-panel-popover__content .content-bottom__btn--view, .history-panel-popover .header-tabs-panel, .bili-header .bili-header__channel .channel-entry-more__link, .bili-header .bili-header__channel .channel-link, .bili-header .live-left-list, .bili-header .game-left, .bili-header .manga-left, .bili-header .bili-header-channel-panel .channel-panel__column, .bili-article-card .bili-article-card__cover, .bili-header .header-entry-avatar, .dynamic-panel-popover .header-tabs-panel, .dynamic-article .split-line:before, .bili-header .bili-header__channel .channel-items__left, .bili-header .channel-icons .channel-notify, .feed-floor .channel-floor {
+	.home-header__channel .channel-entry-more__link, .home-header__channel .channel-link, .center-search-container .center-search__bar #nav-searchform, .search-panel, div[class*="bili-rank-list-"] ul[class*="__list"], .v-popover-content, .home-header-channel-panel .channel-panel__column, [class*="bili-rank-list-"] ul[class*="-card__popover--stats"], .favorite-panel-popover__nav, .favorite-panel-popover__content .content-bottom, .favorite-panel-popover__content .content-bottom__btn--view, .history-panel-popover .header-tabs-panel, .bili-header .bili-header__channel .channel-entry-more__link, .bili-header .bili-header__channel .channel-link, .bili-header .live-left-list, .bili-header .game-left, .bili-header .manga-left, .bili-header .bili-header-channel-panel .channel-panel__column, .bili-article-card .bili-article-card__cover, .bili-header .header-entry-avatar, .dynamic-panel-popover .header-tabs-panel, .dynamic-article .split-line:before, .bili-header .bili-header__channel .channel-items__left, .feed-floor .channel-floor {
 		border-color: var(--color-42) !important;
 	}
 	.history-panel-popover .header-tabs-panel__item:not(.header-tabs-panel__item--active) {
 		border-color: var(--color-2c) !important;
+	}
+	.bili-header .channel-icons .channel-notify {
+		border-color: var(--color-21) !important;
 	}
 	.bili-header .bili-header-channel-panel .channel-panel__column:last-child {
 		border: none!important
