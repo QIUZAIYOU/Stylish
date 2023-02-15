@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202302132208
+	@version        202302150840
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202302132208
+	* © 最后更新：202302150840
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1829,7 +1829,7 @@
 	}
 	/* -- 其他属性 -- */
 	/* 成为大会员 */
-	/*     .bili-dialog-m {
+	/* .bili-dialog-m {
         display: none !important;
     } */
 	.collection-m .content .group-list li input[type=checkbox]:not(:hover) + i {
@@ -1875,6 +1875,9 @@
 @-moz-document url-prefix("https://www.bilibili.com/video"), url-prefix("https://www.bilibili.com/bangumi/play"), url-prefix("https://www.bilibili.com/cheese/play"), url-prefix("https://www.bilibili.com/medialist/play"), url-prefix("https://www.bilibili.com/watchroom"), url-prefix("https://www.bilibili.com/list/watchlater") {
 	/* ===视频播放页(新版)=== */
 	/* -- 背景 -- */
+	#app > div.video-container-v1 > div.right-container.is-in-large-ab > div > div.pop-live-small-mode.part-undefined {
+		display: none!important;
+	}
 	.player-auxiliary-adv-danmaku *, .bpx-player-auxiliary .bpx-player-adv-danmaku * {
 		background-color: var(--color-21);
 	}
