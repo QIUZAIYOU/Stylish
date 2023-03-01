@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2022.0901
+@version        2023.0301
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -35,7 +35,7 @@
 		border-radius: 10px!important;
 		overflow: auto;
 		background: #fff!important;
-		-height: 373px!important;
+		min-height: 373px!important;
 	}
 
 	div#content_left>div[class="c-group-wrapper"] {
@@ -384,7 +384,7 @@
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2022.0901
+	 * © 最后更新：2023.0301
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -547,6 +547,8 @@
 		text-decoration: none!important;
 	}
 	#s_btn_wr input {
+		-webkit-transition: .3s;
+		-o-transition: .3s;
 		transition: .3s;
 	}
 	#s_btn_wr:hover input {
@@ -675,6 +677,8 @@
 		border-radius: 10px!important;
 		margin: 0 auto!important;
 		margin-bottom: 20px!important;
+		-webkit-transition: .3s!important;
+		-o-transition: .3s!important;
 		transition: .3s!important;
 	}
 	#content_left .c-group-wrapper > div[class]:hover {
@@ -758,6 +762,7 @@
 		text-align: center!important;
 	}
 	#page {
+		width: -moz-fit-content;
 		width: fit-content;
 		margin: 30px auto!important;
 		box-sizing: border-box!important;
@@ -970,6 +975,8 @@
 		width: 610px!important;
 		background: #fff!important;
 		margin: 0 auto!important;
+		-webkit-transition: .3s;
+		-o-transition: .3s;
 		transition: .3s;
 	}
 	.c-group-wrapper .c-group-top, .c-group-wrapper .c-group-middle {
