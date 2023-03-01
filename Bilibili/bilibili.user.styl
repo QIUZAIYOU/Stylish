@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202302232128
+	@version        202303011642
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202302232128
+	* © 最后更新：202303011642
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -156,17 +156,32 @@
 		background-color: var(--color-21) !important;
 		color: var(--color-86) !important;
 	}
+	:-moz-any-link:not([style*='#'], [style*='rgb']) {
+		color: var(--color-86)!important;
+	}
 	:any-link:not([style*='#'], [style*='rgb']) {
 		color: var(--color-86)!important;
+	}
+	:-moz-any-link:not([style*='#'], [style*='rgb']):hover {
+		color: var(--bili-blue) !important;
 	}
 	:any-link:not([style*='#'], [style*='rgb']):hover {
 		color: var(--bili-blue) !important;
 	}
+	*[style*='#FB7299'] :-moz-any-link[class*="name"] {
+		color: var(--bili-pink) !important;
+	}
 	*[style*='#FB7299'] :any-link[class*="name"] {
+		color: var(--bili-pink) !important;
+	}
+	*[style*='#FB7299'] :-moz-any-link[class*="name"]:hover {
 		color: var(--bili-pink) !important;
 	}
 	*[style*='#FB7299'] :any-link[class*="name"]:hover {
 		color: var(--bili-pink) !important;
+	}
+	:-moz-any-link[class*="primary-btn"]:hover {
+		color: var(--color-ff) !important;
 	}
 	:any-link[class*="primary-btn"]:hover {
 		color: var(--color-ff) !important;
@@ -1234,6 +1249,8 @@
 		fill: var(--color-86)!important
 	}
 	.bili-video-card .bili-video-card__info--bottom span {
+		-webkit-transition: color .2s linear!important;
+		-o-transition: color .2s linear!important;
 		transition: color .2s linear!important;
 	}
 	.bili-mini-content-wp input, .bili-mini-content-wp select, .bili-mini-content-wp textarea {
@@ -1517,6 +1534,8 @@
 	}
 	/* -- 其他 -- */
 	.bili-dyn-topic__card, .bili-rich-text-topic {
+		-webkit-transition: .3s!important;
+		-o-transition: .3s!important;
 		transition: .3s!important;
 	}
 	.bili-dyn-topic__card:hover {
@@ -1851,6 +1870,8 @@
 		filter: var(--filter-99-66) !important;
 	}
 	.up-info .up-info_right .name .message i {
+		-webkit-transition: .3s!important;
+		-o-transition: .3s!important;
 		transition: .3s!important
 	}
 	input[class][type="checkbox"]:not(.player-adjustment-setting-checkbox) {
@@ -2205,6 +2226,8 @@
 		opacity: 1 !important;
 	}
 	.detail-banner-title .btn--subscribe, .detail-banner-title .btn {
+		-webkit-transition: 0.3s;
+		-o-transition: 0.3s;
 		transition: 0.3s;
 	}
 	/* 频道分类页 TabBar */
@@ -2361,6 +2384,8 @@
 		margin: 0 !important;
 	}
 	.bangumi-media .bangumi-media-header .btn-more-review, .media-tab-detail-wrp .media-tab-detail-l .media-tab-module-wrp .media-tab-module-more, .media-tab-detail-wrp .media-tab-detail .media-tab-module-wrp .media-tab-module-more {
+		-webkit-transition: .3s !important;
+		-o-transition: .3s !important;
 		transition: .3s !important;
 	}
 	/* -- 其他属性 -- */
