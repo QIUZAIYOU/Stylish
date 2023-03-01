@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    ⭐1.常用页面夜间模式全覆盖 ⭐2.去除广告 ⭐3.去除导航栏中游戏等无用杂项 ⭐4.部分icon更换使之更符合当前主题 ⭐5.自定义屏蔽，可选是否屏蔽弹幕等级、铭牌等元素 ⭐㊖ 凡涉及到金钱交易（充值、付费购买等）等页面，若遇到因本样式导致文字颜色看不清的情况，请关闭本样式之后再进行金钱交易操作。否则因未关闭本样式导致的财产损失与本样式及作者无关。若发现文字看不清的情况请及时反馈。
-@version        2023.0227
+@version        2023.0301
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown PlayerToolbar "播放器工具栏屏蔽" {
@@ -84,7 +84,7 @@
 	/*=== 
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：2023.0227
+	* © 最后更新：2023.0301
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/240/nightmode-for-douyu-com
@@ -578,9 +578,13 @@
 	.t-tag a, .checkphone, #js_changepwd, .checkemail, .is-bound > a:nth-child(3), #setqq {
 		border-color: var(--color-42)!important;
 		color: var(--color-86)!important;
+		-webkit-transition: .3s;
+		-o-transition: .3s;
 		transition: .3s;
 	}
 	.mobile_email .user_check_total .user_check_detial .spec_bor {
+		-webkit-transition: .3s;
+		-o-transition: .3s;
 		transition: .3s;
 	}
 	.checkphone:hover, #js_changepwd:hover, .checkemail:hover, .is-bound > a:nth-child(3):hover, #setqq:hover {
@@ -2309,6 +2313,8 @@
 		align-items: center;
 	}
 	.dy-ModalRadius-close {
+		-webkit-transition: none!important;
+		-o-transition: none!important;
 		transition: none!important;
 	}
 	/*=== 成就 ===*/
@@ -2720,6 +2726,8 @@
 		border: 1px solid var(--color-2c)!important;
 		background-color: var(--color-42)!important;
 		color: var(--color-86)!important;
+		-webkit-transition: .3s!important;
+		-o-transition: .3s!important;
 		transition: .3s!important;
 	}
 	#rank-list-content .rank-list-list .order-link:hover {
@@ -2974,6 +2982,8 @@
 	}
 	.geetest_holder.geetest_douyufullpage .geetest_radar_btn {
 		background: var(--color-42)!important;
+		-webkit-transition: .3s;
+		-o-transition: .3s;
 		transition: .3s;
 	}
 	.geetest_holder.geetest_douyufullpage .geetest_radar_btn:hover {
@@ -3107,6 +3117,8 @@
 	}
 	.anchor-action-btn {
 		background: var(--color-21)!important;
+		-webkit-transition: .3s;
+		-o-transition: .3s;
 		transition: .3s;
 	}
 	.anchor-action-btn:hover {
