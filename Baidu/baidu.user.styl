@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2023.0301
+@version        2023.0322
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -384,7 +384,7 @@
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2023.0301
+	 * © 最后更新：2023.0322
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -392,7 +392,7 @@
 }
 @-moz-document url-prefix("https://www.baidu.com"), url-prefix("http://www.baidu.com") {
 	/*=== 垃圾元素屏蔽 ===*/
-	.qrcodeCon, #u1 > a.bri, #content_right, #content_bottom, #s_wrap, .s_bri, .s-skin, .s-top-nav, #result_logo img, .s_logo img, div[fk="今日新鲜事"], .rrecom-btn-parent, #_mask, .ecom-result, div[tpl="zp_exact_new"], div#content_left > div:not([class]), table.result-op {
+	.qrcodeCon, #u1 > a.bri, #content_right > table, #content_bottom, #s_wrap, .s_bri, .s-skin, .s-top-nav, #result_logo img, .s_logo img, div[fk="今日新鲜事"], .rrecom-btn-parent, #_mask, .ecom-result, div[tpl="zp_exact_new"], div#content_left > div:not([class]), table.result-op {
 		display: none!important;
 	}
 	[mu*="xin.baidu.com"], [mu*="shouji.baidu.com"] {
@@ -1011,6 +1011,15 @@
 	}
 	.sp-separator.AC .sp-sp-nextlink b {
 		display: flex!important;
+	}
+	#content_right {
+		margin: 20px 0!important;
+	}
+	#chat-gpt-for-google-search-enhance {
+		margin: 0!important;
+	}
+	#content_right, #chat-gpt-for-google-search-enhance, #chat-gpt-for-google-search-enhance .search-enhance-WDIEk {
+		width: 100%!important;
 	}
 	/*[[trebleList]]*/
 }
