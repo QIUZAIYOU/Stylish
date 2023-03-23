@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202303171740
+	@version        202303231624
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202303171740
+	* © 最后更新：202303231624
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -408,7 +408,7 @@
 		stroke: var(--color-86) !important;
 	}
 	/* -- 全站评论列表 -- */
-	.page-container, .article-action .more .more-ops-list, .bb-comment, .comment-bilibili-fold, .bb-comment .operation .opera-list, .comment-bilibili-fold .operation .opera-list, .emoji-box, .emoji-box .emoji-tabs .tab-link.on, .bb-comment .nameplate .nameplate-card, .feed-tag .publish-panel-container, .feed-tag .card, .publish-panel, .feed-tag .core-style, .card .more-panel, .card .more-panel:after, .box-body, .bb-comment .comment-send.comment-send-lite, .comment-bilibili-fold .comment-send.comment-send-lite, .bb-comment .comment-send-lite.comment-send-lite, .comment-bilibili-fold .comment-send-lite.comment-send-lite, .comment-wrap, .textarea-container .comm-tool .comm-emoji .bp-emoji-box .static-popup, .textarea-container .comm-tool .comm-emoji .bp-emoji-box .static-popup .emoji, .textarea-container .comm-tool .comm-emoji .bp-emoji-box .static-popup .emoji-cover.selected, .textarea-container .comm-tool .comm-emoji .bp-emoji-box .static-popup .emoji > div, .reply-box.fixed-box, .reply-item .root-reply-container .content-warp .user-info .fan-badge .badge-level-wrap, .bili-comment.browser-pc, .bili-view-note .note-content, .at-panel {
+	.page-container, .article-action .more .more-ops-list, .bb-comment, .comment-bilibili-fold, .bb-comment .operation .opera-list, .comment-bilibili-fold .operation .opera-list, .emoji-box, .emoji-box .emoji-tabs .tab-link.on, .bb-comment .nameplate .nameplate-card, .feed-tag .publish-panel-container, .feed-tag .card, .publish-panel, .feed-tag .core-style, .card .more-panel, .card .more-panel:after, .box-body, .bb-comment .comment-send.comment-send-lite, .comment-bilibili-fold .comment-send.comment-send-lite, .bb-comment .comment-send-lite.comment-send-lite, .comment-bilibili-fold .comment-send-lite.comment-send-lite, .comment-wrap, .textarea-container .comm-tool .comm-emoji .bp-emoji-box .static-popup, .textarea-container .comm-tool .comm-emoji .bp-emoji-box .static-popup .emoji, .textarea-container .comm-tool .comm-emoji .bp-emoji-box .static-popup .emoji-cover.selected, .textarea-container .comm-tool .comm-emoji .bp-emoji-box .static-popup .emoji > div, .reply-box.fixed-box, .reply-item .root-reply-container .content-warp .user-info .fan-badge .badge-level-wrap, .bili-comment.browser-pc, .bili-view-note .note-content, .at-panel, .bili-comment-container {
 		background-color: var(--color-21) !important;
 	}
 	.bb-comment .comment-send .textarea-container textarea, .comment-bilibili-fold .comment-send .textarea-container textarea, .emoji-box .emoji-tabs, .bb-comment .comment-list .list-item .con .vote-container .image-area .share-img, .comment-bilibili-fold .comment-list .list-item .con .vote-container .image-area .share-img, .pic-box, .comment-bilibili-con .con, .comment-bilibili-con .t, .hash-popup, .bb-comment .comment-send .textarea-container .ipt-txt, .comment-bilibili-fold .comment-send .textarea-container .ipt-txt, .bb-comment .comment-send-lite .textarea-container .ipt-txt, .comment-bilibili-fold .comment-send-lite .textarea-container .ipt-txt, .textarea-container .comm-tool .comm-emoji .bp-emoji-box .static-popup .pagination, .textarea-container .comm-tool .comm-emoji .bp-emoji-box .static-popup .pagination li:not(.selected) > div, .bili-emoji__footer, .bili-emoji__list__item:hover, .error-container, .large-banner-ctnr, .reply-box .box-normal .reply-box-warp .reply-box-textarea, .emoji-panel .emoji-tab, .reply-tag-item, .reply-box.disabled .box-normal .reply-box-warp .disable-mask, .reply-box.disabled .box-normal .reply-box-send::after, .bili-user-profile__error, .bili-user-profile__loading, .reply-content-container .reply-content .note-prefix, .reply-operation .operation-list, .at-panel .at-list-container .at-list-ground .at-user-list .at-user-item:hover {
@@ -5030,34 +5030,43 @@
 @-moz-document domain("game.bilibili.com") {
 	/* ===游戏中心 > 正在施工 === */
 	/* -- 背景 -- */
-	[class*="Bookswiper"] [class*="gallery-top"] .swiper-slide, .bili-game-footer, .bili-game-header-nav-search input, .suggestions-wrap-textarea_1-18D {
+	[class*="Bookswiper"] [class*="gallery-top"] .swiper-slide, .bili-game-footer, .bili-game-header-nav-search input, [class*='suggestions-wrap-textarea'], #ranks [class*='body'] [class*='aside'], [class*='scroll-wrap'] [class*='list_wrapper'] [class*='list_item'] {
 		background-color: var(--color-21) !important;
 	}
-	.bili-game-header-nav .bili-game-header-nav-bar, [class*="category-item"], .bili-game-header-user-login .bili-game-header-user-popper {
+	.bili-game-header-nav .bili-game-header-nav-bar, [class*="category-item"], .bili-game-header-user-login .bili-game-header-user-popper, [class*='collection-wrap'] [class*='collection-item']:not(:has([class*='game-item-footer'])), [class*='game-item'] [class*='game-item-content-footer'] [class*='game-button-detail'], [class*='Banner-wrap'] [class*='Swiper-wrap'] .swiper-slide [class*='Swiper-slide-inner'] {
 		background-color: var(--color-2c) !important;
 	}
 	.bili-game-header-user-login .bili-game-header-user-popper > ul .bili-game-header-user-item:hover {
 		background-color: var(--color-27) !important;
 	}
+	[class*='game-item-pic'] {
+		background-image: url(//www.asifadeaway.com/Stylish/bilibili/game_icon_empty.png)!important
+	}
 	/* -- 字体 -- */
-	[class*="title"], [class*="search-wrap-tab-item"], [class*="card-title"], [class*="btn-more"], [class*="card-content-title"] > div, [class*="game-info-name"], [class*="card-content-info-name"], [class*="grade-num"], [class*="load_btn"], [class*="category-item"], [class*="card-action-exchange"], [class*="gameName"], [class*="list-item-num"] [class*="num"], [class*="list-item-title"] [class*="date"], [class*="list-item-title"] [class*="games-num"], [class*="list-item-cont"] [class*="testGameItem"] [class*="gameDes"] [class*="gameScore-no"], .bili-game-footer *, .bili-game-header-nav-search .bili-game-header-nav-search-button .iconfontH, .bili-game-header-nav-search input, .bili-game-header-user-login .bili-game-header-user-popper .bili-game-header-user-name, .bili-game-header-user-login .bili-game-header-user-popper > ul .bili-game-header-user-item, .bili-game-header-user-login .bili-game-header-user-popper > ul .bili-game-header-user-item .bili-game-header-user-item-num, .bili-game-header-user-login .bili-game-header-user-popper .bili-game-header-user-logOut, .bili-game-header-user-login .bili-game-header-user-popper > ul .bili-game-header-user-item, .iconic_pc_arrow_right_light:before, .breadcrumbWrap-breadcrumb_2VQjr, .suggestions-wrap-textarea_1-18D {
+	[class*="title"], [class*="search-wrap-tab-item"], [class*="card-title"], [class*="btn-more"], [class*="card-content-title"] > div, [class*="game-info-name"], [class*="card-content-info-name"], [class*="grade-num"], [class*="load_btn"], [class*="category-item"], [class*="card-action-exchange"], [class*="gameName"], [class*="list-item-num"] [class*="num"], [class*="list-item-title"] [class*="date"], [class*="list-item-title"] [class*="games-num"], [class*="list-item-cont"] [class*="testGameItem"] [class*="gameDes"] [class*="gameScore-no"], .bili-game-footer *, .bili-game-header-nav-search .bili-game-header-nav-search-button .iconfontH, .bili-game-header-nav-search input, .bili-game-header-user-login .bili-game-header-user-popper .bili-game-header-user-name, .bili-game-header-user-login .bili-game-header-user-popper > ul .bili-game-header-user-item, .bili-game-header-user-login .bili-game-header-user-popper > ul .bili-game-header-user-item .bili-game-header-user-item-num, .bili-game-header-user-login .bili-game-header-user-popper .bili-game-header-user-logOut, .bili-game-header-user-login .bili-game-header-user-popper > ul .bili-game-header-user-item, .iconic_pc_arrow_right_light:before, [class*='breadcrumbWrap-breadcrumb'], [class*='suggestions-wrap-textarea'], [class*='aside-wrap'] [class*='anchor_wrapper'] [class*='anchor_item']:not([class*='active']) [class*='text'], [class*='list_item'] [class*='list_body'] [class*='link'], [class*='list_item'] [class*='list_body'] [class*='list_content'] [class*='content_wrap'] [class*='content_desc'], [class*='game-item-footer-name'], [class*='collection-wrap'] [class*='collection-item'] [class*='collection-item-game-name'], [class*='loadComplete-txt'], [class*='game-item']:not(:hover) [class*='game-item-content-name'], [class*='card-title'] [class*='card-num'], [class*='mine-header-userInfo'] [class*='user-basic-nav'] [class*='user-statistics-type'], [class*='mine-header-userInfo'] [class*='user-basic-nav'] [class*='user-statistics-num'], [class*='gameSns-content-other-account'] [class*='wechat-text'], [class*='gameSns-content-other-account'] [class*='weibo-text'], [class*='contactUs-content-info-item'] [class*='text'], [class*='comment-item-wrap'] [class*='comment-item-main-header-time'], [class*='comment-item-wrap'] [class*='comment-item-main-header-name'], [class*='comment-item-wrap'] [class*='comment-item-main-content'], [class*='games-wrap'] [class*='game-sub-item'] [class*='text-wrap-count'], [class*='loadingTip-loading'] span, [class*='tagGroup'] [class*="tag_"] {
 		color: var(--color-86) !important;
 	}
-	[class*="listItem-info-subTitle"], [class*="listItem-gameInfo-grade-num"], [class*="listItem-gameInfo-category"], [class*="listItem-info-otherInfo"], [class*="tag_"], [class*="gameScoreNum"], [class*="score-degree"], [class*="score-comment"], [class*="card-content-des"], [class*="card-content-info-des"], [class*="comment-num"], [class*="hotActivity-item-time"], [class*="list-item-cont"] [class*="testGameItem"] [class*="gameDes"] [class*="gameTestTime"], .suggestions-wrap-num_C020E {
+	[class*="listItem-info-subTitle"], [class*="listItem-gameInfo-grade-num"], [class*="listItem-gameInfo-category"], [class*="listItem-info-otherInfo"], [class*="gameScoreNum"], [class*="score-degree"], [class*="score-comment"], [class*="card-content-des"], [class*="card-content-info-des"], [class*="comment-num"], [class*="hotActivity-item-time"], [class*="list-item-cont"] [class*="testGameItem"] [class*="gameDes"] [class*="gameTestTime"], [class*='suggestions-wrap-num'], [class*='game-item-footer-type'], [class*='game-item-footer-no'], [class*='collection-wrap'] [class*='collection-item'] [class*='collection-item-game-count'], [class*='game-item'] [class*='game-item-content-no'] {
 		color: var(--color-66) !important;
 	}
-	.bili-game-header-user-logOut:hover > div {
+	.bili-game-header-user-logOut:hover > div, [class*='list_item'] [class*='list_body'] [class*='list_content'] [class*='content_wrap'] [class*='content_title'] a:hover, [class*='game-item']:hover [class*='game-item-footer-name'], [class*='collection-wrap'] [class*='collection-item']:hover [class*='collection-item-game-name'], [class*='list-item-cont'] [class*='testGameItem']:hover [class*='gameName'] {
 		color: var(--bili-blue) !important;
 	}
 	.bili-game-footer .bili-game-footer-content .bili-game-footer-content-logo .bili-game-footer-content-share a .bili-game-footer-content-shareIcon .iconfontF {
 		color: var(--color-ff) !important;
 	}
 	/* -- 边框 -- */
-	[class*="btn-more"], [class*="tag_"], [class*="Card-recomend-item"], [class*="gallery-thumbs-item"], [class*="card-game-common"], [class*="load_btn"], [class*="hotActivity-item"], [class*="card-action-exchange"], [class*="Card-header"] [class*="btn-link"], [class*="webGameItem"], [class*="list-item-cont"] [class*="testGameItem"] [class*="gameDes"], [class*="testing-ranking"], [class*="testing-ranking"], .suggestions-wrap-textarea_1-18D {
+	[class*="btn-more"], [class*="tag_"], [class*="Card-recomend-item"], [class*="gallery-thumbs-item"], [class*="card-game-common"], [class*="load_btn"], [class*="hotActivity-item"], [class*="card-action-exchange"], [class*="Card-header"] [class*="btn-link"], [class*="webGameItem"], [class*="list-item-cont"] [class*="testGameItem"] [class*="gameDes"], [class*="testing-ranking"], [class*="testing-ranking"], [class*='suggestions-wrap-textarea'], #ranks [class*='body'] [class*='aside'], [class*='scroll-wrap'] [class*='list_wrapper'] [class*='list_item'], [class*='card-title'] [class*='card-num'], [class*='gameSns-content'], [class*='mine-home'] [class*='myCollect'], [class*='mine-home'] [class*='myComments'], [class*='mine-home'] [class*='myGames'], [class*='contactUs-content-info-item'], [class*='games-wrap'] [class*='game-sub-item']:not(:last-child) [class*='text-wrap'], [class*='games-wrap'] [class*='wrap-title'], [class*='mine-header-userInfo'] [class*='user-basic-nav'], .bili-game-footer .bili-game-footer-content .bili-game-footer-content-externalLinks, [class*='collections-wrap'] [class*='wrap-title'], [class*='comments-wrap'] [class*='wrap-title'], [class*='list-item'] {
 		border-color: var(--color-42) !important;
 	}
-	[class*="gallery-thumbs-item-active"] {
+	[class*='user-avatar'] {
+		border-color: var(--color-21)!important;
+	}
+	[class*="gallery-thumbs-item-active"], [class*='mine-header-userInfo'] [class*='user-basic-nav'] [class*='user-nav'] [class*='active'] {
 		border-color: var(--bili-blue) !important;
+	}
+	[class*='mine-header-userInfo'] [class*='user-basic-nav'] [class*='user-nav'] li {
+		border-color: transparent!important;
 	}
 	/* -- 阴影 -- */
 	[class*="Card-recomend-item"]:hover {
