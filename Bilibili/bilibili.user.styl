@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author         QIUZAIYOU
 	@description   	⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202303231624
+	@version        202303261452
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202303231624
+	* © 最后更新：202303261452
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -152,7 +152,7 @@
 	html, body {
 		font-family: "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", Tahoma, "宋体b8b\4f53", SimSun, sans-serif !important;
 	}
-	html, body, #app {
+	html, body, body.win, #app {
 		background-color: var(--color-21) !important;
 		color: var(--color-86) !important;
 	}
@@ -297,7 +297,7 @@
 		background: var(--color-2c) !important;
 	}
 	/* -- 全站导航 -- */
-	.international-header .mini-type, .van-popover .mini-type, .channel-menu-mini, .bili-header-m .nav-search .nav-search-btn, .international-header .nav-search .nav-search-btn, .van-popper-favorite .play-all, .van-popper-avatar .level-bar, .mini-header, .sticky-bar, .nav-user-center .user-con .fall-mini-avatar, .vip-m .bubble-traditional .recommand .bubble-col .item img, .van-popper-history .view-all, .up-info .u-face .u-face__avatar, .dynamic-video .history-tip, .split-line, .bili-header-m, .bili-header-m .nav-menu .nav-con .nav-item:hover, .bubble-traditional, .i-frame::before, .van-popper-favorite .vp-container, .van-popper-favorite .tabs-panel, .vp-container .tabs-panel .tab-item, .van-popper-history .vp-container, .large-header, .fixed-header-nav-sticky, .mini-header .center-search-container .center-search__bar #nav-searchform.is-focus, .bili-header .search-panel, .bili-header .live, .bili-header .v-popover-content, .bili-header .v-popover-content > div, .main-container .left-box .verify-box, .link-navbar-ctnr, .link-navbar-ctnr .link-navbar, .link-navbar-ctnr .link-navbar .main-ctnr .calendar-checkin, .link-navbar-ctnr .link-navbar .main-ctnr .calendar-checkin .calendar-wrapper, .link-navbar-ctnr .link-navbar .main-ctnr .calendar-checkin .title, .link-navbar-ctnr .link-navbar .main-ctnr .download-panel-ctnr, .link-navbar-ctnr .link-navbar .main-ctnr .link-panel-ctnr, .link-navbar-ctnr .link-navbar .main-ctnr .link-panel-ctnr .totally-empty-hint, .link-navbar-ctnr .link-navbar .main-ctnr .nav-item .area-list-panel, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel .load-error-panel, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel .user-level-detail, #biliMainHeader, .header-channel {
+	.international-header .mini-type, .van-popover .mini-type, .channel-menu-mini, .bili-header-m .nav-search .nav-search-btn, .international-header .nav-search .nav-search-btn, .van-popper-favorite .play-all, .van-popper-avatar .level-bar, .mini-header, .sticky-bar, .nav-user-center .user-con .fall-mini-avatar, .vip-m .bubble-traditional .recommand .bubble-col .item img, .van-popper-history .view-all, .up-info .u-face .u-face__avatar, .dynamic-video .history-tip, .split-line, .bili-header-m, .bili-header-m .nav-menu .nav-con .nav-item:hover, .bubble-traditional, .i-frame::before, .van-popper-favorite .vp-container, .van-popper-favorite .tabs-panel, .vp-container .tabs-panel .tab-item, .van-popper-history .vp-container, .large-header, .fixed-header-nav-sticky, .mini-header .center-search-container .center-search__bar #nav-searchform.is-focus, .bili-header .search-panel, .bili-header .live, .bili-header .v-popover-content, .bili-header .v-popover-content > div, .main-container .left-box .verify-box, .link-navbar-ctnr, .link-navbar-ctnr .link-navbar, .link-navbar-ctnr .link-navbar .main-ctnr .calendar-checkin, .link-navbar-ctnr .link-navbar .main-ctnr .calendar-checkin .calendar-wrapper, .link-navbar-ctnr .link-navbar .main-ctnr .calendar-checkin .title, .link-navbar-ctnr .link-navbar .main-ctnr .download-panel-ctnr, .link-navbar-ctnr .link-navbar .main-ctnr .link-panel-ctnr, .link-navbar-ctnr .link-navbar .main-ctnr .link-panel-ctnr .totally-empty-hint, .link-navbar-ctnr .link-navbar .main-ctnr .nav-item .area-list-panel, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel .load-error-panel, .link-navbar-ctnr .link-navbar .main-ctnr .user-panel-ctnr .user-panel .user-level-detail, #biliMainHeader, .header-channel, #bili-header-container {
 		background-color: var(--color-2c) !important;
 	}
 	.vip-m, .international-header .mini-type .nav-search #nav_searchform, .van-popover .mini-type .nav-search #nav_searchform, .bilibili-search-suggest, .channel-menu-mini .box a:hover, .bilibili-search-history, .bili-header-m .nav-search #nav_searchform, .international-header .nav-search #nav_searchform, .i-frame iframe, .bili-header-m .nav-search .nav-search-btn, .van-popper-avatar .vp-container, .lang-change .lang-intro, .van-popper-avatar .coins .contact .contact-tips, .van-popper-avatar .coins .info .login-award, .sticky-bar .nav-item:hover, .van-popover.van-popper.van-popper-upload, .van-popper-login .vp-container, .van-popper-login .btn-box .btn.reg-btn, .van-popper-login .lang-change, .unlogin-popover, .unlogin-popover:before, .el-popover, .van-popper-avatar .level-intro, .z-top-container, .van-popper-avatar .links .sub-links {
