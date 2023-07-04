@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2023.0630
+@version        2023.0704
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -21,21 +21,20 @@
 	#container.sam_newgrid #content_left {
 		margin: 0 auto!important;
 		width: 100%!important;
-		display: flex!important;
-		justify-content: space-between!important;
-		flex-wrap: wrap!important;
+		display: grid!important;
+		grid-template-columns: repeat(3,1fr)!important;
+      grid-gap: 10px!important;
 	}
 
 	div#content_left>div[class],
 	div#content_left>div[class="c-group-wrapper"]>div[class] {
-		width: calc((100% - 20px) / 3)!important;
-		margin: 0 0 10px 0!important;
+		width: 100%!important;
+		margin: 0!important;
 		box-sizing: border-box!important;
 		padding: 15px!important;
 		border-radius: 10px!important;
 		overflow: auto;
 		background: #fff!important;
-		min-height: 373px!important;
 	}
 
 	div#content_left>div[class="c-group-wrapper"] {
@@ -107,6 +106,7 @@
 		width: 100%!important;
 		display: flex!important;
 		background: transparent!important;
+		box-sizing:border-box!important;
 	}
 
 	[class*='bk_polysemy_'] [class*='video-wrapper_'] {
@@ -133,7 +133,7 @@
 		box-shadow: none!important;
 	}
 
-	div#content_left>div[class].new-pmd.c-container > .c-container {
+	div#content_left>div[class].new-pmd.c-container:not([mu*="tieba"]) > .c-container {
 		overflow: auto;
 		margin: 0!important;
 		height: 270px!important;
@@ -173,7 +173,9 @@
 	div#content_left>div[class][mu*="zhuanlan.zhihu.com"]>div>.c-row>.c-span12>.c-border,
 	div#content_left>div[class][mu*="blog.csdn.net"]>div>.c-row>.c-span12>.c-border,
 	div#content_left>.result-op[tpl="wenda_abstract_pc"]>div>.c-row>.c-span12>.c-border,
-	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div>.c-row>.c-span12>.c-border>div:not([class])>.c-row {
+	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div>.c-row>.c-span12>.c-border>div:not([class])>.c-row,
+	.c-container[mu*="vsearch?pd=goods_tab"] h3+[style],
+	.c-container[mu*="tieba"]>.c-container>[has-tts]{
 		flex-direction: column!important;
 	}
 
@@ -376,6 +378,20 @@
 	.new-pmd .c-span9{
 		width: 468px!important;
 	}
+.c-container:has([class*="calc-box"]),.c-container[mu*="vsearch?pd=goods_tab"]{
+		grid-column: span 2!important;
+	}
+	.c-container>[class*="calc-box"]{
+		width:100%!important;
+		margin:0!important;
+		box-sizing: border-box!important;
+	}
+	.c-container[mu*="vsearch?pd=goods_tab"] h3+[style]{
+		margin:0!important;
+	}
+	.c-row.c-gap-top-middle {
+		flex-direction: column;
+	}
 	EOT;
 	trebleList_OFF "关" <<<EOT /*[[trebleList]]*\/ EOT;
 }
@@ -384,7 +400,7 @@
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2023.0630
+	 * © 最后更新：2023.0704
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -627,7 +643,7 @@
 	#s_tab, #head.s_down {
 		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1)!important;
 	}
-	.bdsug, .s_btn.btnhover, .bdpfmenu, .usermenu, .s-user-set-menu div, .c-border, .op_new_cal_wrap, .c-btn:active, .c-group-wrapper, .c-group-wrapper .c-group-top:hover, .c-group-wrapper .c-group-middle:hover, .c-group-wrapper .c-group-bottom:hover {
+	.bdsug, .s_btn.btnhover, .bdpfmenu, .usermenu, .s-user-set-menu div, .c-border, .op_new_cal_wrap, .c-btn:active, .c-group-wrapper, .c-group-wrapper .c-group-top:hover, .c-group-wrapper .c-group-middle:hover, .c-group-wrapper .c-group-bottom:hover, .cu-border, [class*="card-shadow"] {
 		box-shadow: none!important;
 	}
 	/* -- 属性 -- */
