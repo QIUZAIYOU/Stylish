@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2023.0707
+@version        2023.0723
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -392,6 +392,10 @@
 	.c-row.c-gap-top-middle {
 		flex-direction: column;
 	}
+	#content_left .c-group-wrapper .result-op[mu*="http://nourl.ubs.baidu.com/"][data-op][data-cost]{
+		width: 100%!important;
+		border-radius: 0!important;
+	}
 	EOT;
 	trebleList_OFF "关" <<<EOT /*[[trebleList]]*\/ EOT;
 }
@@ -400,7 +404,7 @@
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2023.0707
+	 * © 最后更新：2023.0723
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
