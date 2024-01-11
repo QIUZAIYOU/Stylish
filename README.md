@@ -23,7 +23,7 @@
 | 网站 | 哔哩哔哩 |
 | :----: | :----: |
 | 样式 |[夜间哔哩 > 创作中心](https://userstyles.world/style/241/nightmode-for-bilibili-com)|
-| 最后更新时间 | ![Last_Update](https://img.shields.io/badge/dynamic/json?label=%20&query=%24%5B2%5D.date&url=https%3A%2F%2Fqian.npkn.net%2Fget-stylish-last-update-date%2F) |
+| 最后更新时间 | 2022.02.08 |
 
 备注：目前基本页面已经施工完毕，但因本人未上传过视频，不知道实际使用情况中页面是什么样，所以和稿件展示及操作方面有关的样式会出现没有夜化的问题，见谅。
 
