@@ -1,7 +1,7 @@
 # 简介及说明 ![Built-With-Love](https://img.shields.io/static/v1?label=BUILT%20WITH&message=%E2%9D%A4&labelColor=%23e36d25&color=%23d15d27) ![GitHub2Gitee](https://github.com/QIUZAIYOU/Stylish/workflows/Mirror/badge.svg)  ![visitors](https://visitor-badge.glitch.me/badge?page_id=QIUZAIYOU.Stylish)
 
 
-<img src="https://www.asifadeaway.com/images/favicon.svg" width="32" height="32"> ![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png) <img src="https://www.asifadeaway.com/images/favicon.svg" width="32" height="32">
+<img src="https://www.asifadeaway.com/images/favicon.svg" width="32" height="32"> ![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png) <img src="https://www.asifadeaway.com/images/favicon.svg" width="32" height="32">  
 为部分网站添加自定义样式。
 
 适用于浏览器插件「Stylus」和「Stylish」
