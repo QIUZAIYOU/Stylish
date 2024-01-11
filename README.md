@@ -1,4 +1,4 @@
-# 简介及说明 ![Built-With-Love](https://img.shields.io/static/v1?label=BUILT%20WITH&message=%E2%9D%A4&labelColor=%23e36d25&color=%23d15d27) ![GitHub2Gitee](https://github.com/QIUZAIYOU/Stylish/workflows/Mirror/badge.svg)  <img src="https://badges.toozhao.com/badges/01HKWDV02MHPBEZB3TRE8YE11J/green.svg" />  
+# 简介及说明 ![Built-With-Love](https://img.shields.io/static/v1?label=BUILT%20WITH&message=%E2%9D%A4&labelColor=%23e36d25&color=%23d15d27) ![GitHub2Gitee](https://github.com/QIUZAIYOU/Stylish/workflows/Mirror/badge.svg)  [![Page Views Count](https://badges.toozhao.com/badges/01HKWDV02MHPBEZB3TRE8YE11J/orange.svg)](https://badges.toozhao.com/stats/01HKWDV02MHPBEZB3TRE8YE11J "Get your own page views count badge on badges.toozhao.com")
 
 
 <img src="https://www.asifadeaway.com/images/favicon.svg" width="32" height="32"> ![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png) <img src="https://www.asifadeaway.com/images/favicon.svg" width="32" height="32">  
