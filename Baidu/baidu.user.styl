@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2023.0723
+@version        2024.0306
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -378,7 +378,7 @@
 	.new-pmd .c-span9{
 		width: 468px!important;
 	}
-.c-container:has([class*="calc-box"]),.c-container[mu*="vsearch?pd=goods_tab"]{
+   .c-container:has([class*="calc-box"]),.c-container[mu*="vsearch?pd=goods_tab"]{
 		grid-column: span 2!important;
 	}
 	.c-container>[class*="calc-box"]{
@@ -392,9 +392,12 @@
 	.c-row.c-gap-top-middle {
 		flex-direction: column;
 	}
-	#content_left .c-group-wrapper .result-op[mu*="http://nourl.ubs.baidu.com/"][data-op][data-cost]{
+	#content_left .c-group-wrapper .result-op[mu*="baidu.com"][data-op][data-cost]{
 		width: 100%!important;
 		border-radius: 0!important;
+	}
+	.c-container[m-name*="short_video"] h3+div>div{
+		overflow:auto!important;
 	}
 	EOT;
 	trebleList_OFF "关" <<<EOT /*[[trebleList]]*\/ EOT;
@@ -404,7 +407,7 @@
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2023.0723
+	 * © 最后更新：2024.0306
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -412,7 +415,7 @@
 }
 @-moz-document url-prefix("https://www.baidu.com"), url-prefix("http://www.baidu.com") {
 	/*=== 垃圾元素屏蔽 ===*/
-	.qrcodeCon, #u1 > a.bri, #content_right > table, #content_bottom, #s_wrap, .s_bri, .s-skin, .s-top-nav, #result_logo img, .s_logo img, div[fk="今日新鲜事"], .rrecom-btn-parent, #_mask, .ecom-result, div[tpl="zp_exact_new"], div#content_left > div:not([class]), table.result-op, .result:has(a[data-click='{"rsv_snapshot":"1"}']), .result-op[mu*="51xiazai"] {
+	.qrcodeCon, #u1 > a.bri, #content_right > table, #content_bottom, #s_wrap, .s_bri, .s-skin, .s-top-nav, #result_logo img, .s_logo img, div[fk="今日新鲜事"], .rrecom-btn-parent, #_mask, .ecom-result, div[tpl="zp_exact_new"], div#content_left > div:not([class]), table.result-op, .result:has(a[data-click='{"rsv_snapshot":"1"}']), .result-op[mu*="51xiazai"], .search-source-wrap {
 		display: none!important;
 	}
 	[mu*="xin.baidu.com"], [mu*="shouji.baidu.com"] {
@@ -1044,7 +1047,6 @@
 	#chat-gpt-for-google-search-enhance, .sider-search-container {
 		margin: 0!important;
 	}
-
 	/*[[trebleList]]*/
 }
 @-moz-document url-prefix("https://www.baidu.com/s?rtt") {
