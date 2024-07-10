@@ -2,6 +2,8 @@
 
 ![Built-With-Love](https://img.shields.io/static/v1?label=BUILT%20WITH&message=%E2%9D%A4&labelColor=%23e36d25&color=%23d15d27) ![Page Views Count](https://badges.toozhao.com/badges/01HMB5N539FDH2G56B75YSF56C/blue.svg)
 
+⛔ 目前发现B站将部分页面元素放入了「shadow-root」里，导致样式失效，该问题目前没有解决方法。[Support for ShadowRoot DOM #1212](https://github.com/openstyles/stylus/issues/1212)
+
 ![夜间哔哩 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/bilibili/StylishCover.png)
 
 <img src="https://www.asifadeaway.com/images/favicon.svg" width="32" height="32"> ![AsiFadeaway.com](https://www.asifadeaway.com/imgs/Logo.png) <img src="https://www.asifadeaway.com/images/favicon.svg" width="32" height="32">  
