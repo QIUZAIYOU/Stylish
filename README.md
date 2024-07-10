@@ -12,6 +12,8 @@
 
 目前适配如下网站：
 
+⛔ 目前发现B站将部分页面元素放入了「shadow-root」里，导致样式失效，该问题目前没有解决方法。[Support for ShadowRoot DOM #1212](https://github.com/openstyles/stylus/issues/1212)
+
 | 网站名称 | 斗鱼 | 知乎 | 哔哩哔哩 | 百度 |
 | :----: | :----: | :----: | :----: | :----: |
 | 样式名称 | [夜间斗鱼](https://userstyles.world/style/240/nightmode-for-douyu-com) | [夜间知乎](https://userstyles.world/style/242/nightmode-for-zhihu-com) | [夜间哔哩](https://userstyles.world/style/241/nightmode-for-bilibili-com) | [简百度](https://userstyles.world/style/243/simple-baidu) |
