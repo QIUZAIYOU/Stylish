@@ -12,7 +12,7 @@
 
 目前适配如下网站：
 
-⛔ 目前发现B站将部分页面元素放入了「shadow-root」里，若官方未使用CSS变量则会导致样式失效，该问题目前没有解决方法。[Support for ShadowRoot DOM #1212](https://github.com/openstyles/stylus/issues/1212)
+⛔ 目前发现B站将部分页面元素放入了「shadow-root」里，若官方「未使用CSS变量」则会导致样式失效，该问题目前没有解决方法。[Support for ShadowRoot DOM #1212](https://github.com/openstyles/stylus/issues/1212)
 
 | 网站名称 | 斗鱼 | 知乎 | 哔哩哔哩 | 百度 |
 | :----: | :----: | :----: | :----: | :----: |
