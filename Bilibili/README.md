@@ -2,7 +2,7 @@
 
 ![Built-With-Love](https://img.shields.io/static/v1?label=BUILT%20WITH&message=%E2%9D%A4&labelColor=%23e36d25&color=%23d15d27) ![Page Views Count](https://badges.toozhao.com/badges/01HMB5N539FDH2G56B75YSF56C/blue.svg)
 
-⛔ 目前发现B站将部分页面元素放入了「shadow-root」里，导致样式失效，该问题目前没有解决方法。[Support for ShadowRoot DOM #1212](https://github.com/openstyles/stylus/issues/1212)
+⛔ 目前发现B站将部分页面元素放入了「shadow-root」里，若官方「未使用CSS变量」则会导致样式失效，该问题目前没有解决方法。[Support for ShadowRoot DOM #1212](https://github.com/openstyles/stylus/issues/1212)
 
 ![夜间哔哩 NightMode For Douyu.com](https://www.asifadeaway.com/Stylish/bilibili/StylishCover.png)
 
@@ -51,6 +51,8 @@
 除了「直播」和「游戏」相关页面，使用时可点击浏览器工具栏 stylus 图标，再点击本样式名称后面的操作菜单（竖着的三个点），勾选排除当前链接，这两个域名相关页面夜化后续会补上。
 
 ### 2024
+
+`07.13 22:20`：重新适配「shadow-root」中官方使用「CSS变量」的元素。
 
 `07.10 16:10`：⛔ 因「播放页」评论区被放入「shadow-root」导致样式失效并且暂无解决办法，故先取消此部分样式修改。
 
