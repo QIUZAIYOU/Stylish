@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author        QIUZAIYOU
 	@description   	  ⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202503201145
+	@version        202504011614
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202503201145
+	* © 最后更新：202504011614
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -171,6 +171,10 @@
 		--Lb6: var(--bili-blue)!important;
 		--Wh0_rgb: 44, 44, 44;
 		--Pi10_u: var(--color-86)!important;
+		--bili-comment-tag-color-light: var(--color-86) !important;
+		--bili-comment-tag-color-dark: var(--color-86) !important;
+		--bili-comment-tag-bg-light: transparent!important;
+		--bili-comment-tag-bg-dark: transparent!important;
 	}
 	html, body {
 		font-family: "Microsoft Yahei UI", "Microsoft Yahei", "微软雅黑", "Segoe UI", Tahoma, "宋体b8b\4f53", SimSun, sans-serif !important;
@@ -1899,7 +1903,7 @@
 		color: var(--bili-pink)!important;
 		border-color: var(--bili-pink)!important;
 	}
-	[class*='VideoAssistant'] [class*='Body'] [class*='Content'] {
+	[class*='VideoAssistant'] [class*='Body'] [class*='Content'],.bpx-player-ctrl-eplist-section-content,.bpx-player-ctrl-eplist-section {
 		overscroll-behavior: contain!important;
 	}
 	/* 	#comment {
