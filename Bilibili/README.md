@@ -52,13 +52,15 @@
 
 ### 2025
 
+`05.14 10:17`：调整主体文字颜色，略微提高了文字和背景的对比度，视觉上更容易看清文字，但总体上又不会使文字显得太亮。 [#27](https://github.com/QIUZAIYOU/Stylish/issues/27)
+
 `03.07 09:00`：对「直播间」的小修小补。
 
 `02.22 00:00`：适配「播放页」中「AI小助手」弹窗页面。
 
 ### 2024
 
-`11.28 22:29`：修复 [#18](https://github.com/QIUZAIYOU/Stylish/issues/25)。
+`11.28 22:29`：修复 [#25](https://github.com/QIUZAIYOU/Stylish/issues/25)。
 
 `07.13 22:20`：重新适配「shadow-root」中官方使用「CSS变量」的元素。
 
