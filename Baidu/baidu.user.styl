@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2025.0429
+@version        2025.0516
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -33,9 +33,9 @@ trebleist_ON "开" <<<EOT
 		box-sizing: border-box!important;
 		padding: 15px!important;
 		border-radius: 10px!important;
-		overflow: auto;
+		overflow: hidden auto;
 		background: #fff!important;
-		height: fit-content!important;
+		height: 300px!important;
 	}
 
 	div#content_left>div[class="c-group-wrapper"] {
@@ -96,8 +96,8 @@ trebleist_ON "开" <<<EOT
 	div#content_left>div[class="c-group-wrapper"]>div[class][srcid].new-pmd .c-gap-top{
 		margin-top:0!important;
 	}
-	div#content_left>div[class="c-group-wrapper"]>div[class][srcid]:first-child {
-		overflow: hidden!important;
+	div#content_left>div[class="c-group-wrapper"]>div[class][srcid] {
+		overflow-x: hidden!important;
 	}
 
 	div#content_left>div[class].new-pmd .c-gap-top-large,
@@ -410,6 +410,9 @@ trebleist_ON "开" <<<EOT
 }
 @advanced dropdown waterfall "使用原生CSS瀑布流(部分浏览器不支持)" {
 	waterfall_ON "开" <<<EOT
+	div#content_left>div[class="c-group-wrapper"]>div[class][srcid]{
+		height:auto!important;
+	}
 	#container.sam_newgrid #content_left {
 		display: block!important;
 		grid-template-columns: unset!important;
@@ -425,6 +428,9 @@ trebleist_ON "开" <<<EOT
 	div#content_left>div[class].new-pmd.c-container:not([mu*="tieba"]) > .c-container {
 		height: fit-content!important
 	}
+	div#content_left>div[class="c-group-wrapper"]>div[mu*="nourl"] {
+		margin: 0 !important;
+	}
 	EOT;
 	waterfall_OFF "关" <<<EOT /*[[waterfall]]*\/ EOT;
 }
@@ -433,7 +439,7 @@ trebleist_ON "开" <<<EOT
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2025.0429
+	 * © 最后更新：2025.0516
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
