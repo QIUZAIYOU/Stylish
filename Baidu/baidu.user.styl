@@ -3,7 +3,7 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2025.0526
+@version        2025.0528
 @license        GPL-3.0 License
 @preprocessor   uso
 @advanced dropdown trebleList "搜索结果三列显示" {
@@ -439,7 +439,7 @@ trebleist_ON "开" <<<EOT
 	/*=== 
 	 * © 版权信息
 	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2025.0526
+	 * © 最后更新：2025.0528
 	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
@@ -965,6 +965,9 @@ trebleist_ON "开" <<<EOT
 	}
 	#content_left .result-op, #content_left .result {
 		position: relative!important;
+	}
+	#content_left .result-op:has(div[data-tools*="guba"]) .c-border{
+		flex-direction: column!important;
 	}
 	#content_left > div {
 		width: 50%!important;
