@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author        QIUZAIYOU
 	@description   	  ⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202506101652
+	@version        202506111047
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202506101652
+	* © 最后更新：202506111047
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1386,7 +1386,7 @@
 		padding-bottom: 10px!important
 	}
 }
-@-moz-document url-prefix("https://t.bilibili.com"), url-prefix("https://t.bilibili.com/?tab="), url-prefix("https://t.bilibili.com/?spm_id_from="), regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]"), regexp("https://space.bilibili.com/[0-9]+/dynamic.*"), url-prefix("https://t.bilibili.com/pages/nav/index_new"), url-prefix("https://www.bilibili.com/opus") {
+@-moz-document url-prefix("https://t.bilibili.com"), url-prefix("https://t.bilibili.com/?tab="), url-prefix("https://t.bilibili.com/?spm_id_from="), regexp("https://t.bilibili.com/[0-9]+\\?type=[0-9]"), regexp("https://space.bilibili.com/[0-9]+/dynamic.*"), url-prefix("https://t.bilibili.com/pages/nav/index_new"), url-prefix("https://www.bilibili.com/opus"), regexp("https://space.bilibili.com/[0-9]+/search.*") {
 	/* ===动态页=== */
 	/* -- 屏蔽 -- */
 	.bili-dyn-list-loading__text img, #app .bg, #app .bgc,.bili-dyn-ads {
@@ -1433,7 +1433,7 @@
 	.type-label, .shop-desc .btn-box .jump-btn, .publish-btn.publishing, .publish-btn.disabled, .bili-dyn-publishing__action.disabled {
 		color: var(--color-ff) !important;
 	}
-	.most-viewed-panel .list-content .most-viewed-item .name.active, .video-container.can-hover:hover .text-area .title, .article-container:hover .text-area .title, .dynamic-link-hover-bg, .bb-comment .comment-header .tabs-order li.on, .comment-bilibili-fold .comment-header .tabs-order li.on, .backdrop .title-box .close-button:hover, .music-container:hover .text-content, .card .focus-btn .unfocus .unfocus-text:hover, .new-topic-panel .tag-item .content:hover, .tab-bar .tab .tab-text.selected, .tab-bar .tab .tab-text:hover, .box-toggle:hover, .box-toggle.active, .imagesbox .boost-control li:hover, .imagesbox .boost-control li:hover i, .live-container:hover .text-area .title, .bangumi-container:hover .text-area .title, .dyn-topic__text, .dyn-topic__icon, .bili-topic-item__normal__name, .bili-topic-item__normal__prefix, .bili-select-dropdown__item:hover, .bili-date-table tbody tr td.active, .bili-reserve__about .link, .bili-dyn-card-video:hover .bili-dyn-card-video__title, .bili-dyn-action.active, .bili-dyn-action:hover, .bili-dyn-up-list__item.active .bili-dyn-up-list__item__name, .bili-dyn-more__menu__item:hover, .bili-rich-text-link, .bili-rich-text-module, .bili-rich-text-topic, .bili-dyn-card-article:hover .bili-dyn-card-article__title, .bili-dyn-card-live:hover .bili-dyn-card-live__title, .bili-user-profile-view__info__stat.like:hover, .bili-dyn-card-pgc:hover .bili-dyn-card-pgc__title, .bb-comment .fold-comment:hover, .dyn-ugc__wrap:hover .dyn-ugc__detail__title, .bili-dyn-topic__icon, .bili-dyn-topic__text, .bili-dyn-action:not(.disabled).active, .bili-dyn-action:not(.disabled):hover, .bili-dyn-sidebar__btn:hover, .bili-dyn-card-ugc__detail__title:hover, .bili-dyn-more__btn.tp:hover {
+	.most-viewed-panel .list-content .most-viewed-item .name.active, .video-container.can-hover:hover .text-area .title, .article-container:hover .text-area .title, .dynamic-link-hover-bg, .bb-comment .comment-header .tabs-order li.on, .comment-bilibili-fold .comment-header .tabs-order li.on, .backdrop .title-box .close-button:hover, .music-container:hover .text-content, .card .focus-btn .unfocus .unfocus-text:hover, .new-topic-panel .tag-item .content:hover, .tab-bar .tab .tab-text.selected, .tab-bar .tab .tab-text:hover, .box-toggle:hover, .box-toggle.active, .imagesbox .boost-control li:hover, .imagesbox .boost-control li:hover i, .live-container:hover .text-area .title, .bangumi-container:hover .text-area .title, .dyn-topic__text, .dyn-topic__icon, .bili-topic-item__normal__name, .bili-topic-item__normal__prefix, .bili-select-dropdown__item:hover, .bili-date-table tbody tr td.active, .bili-reserve__about .link, .bili-dyn-card-video:hover .bili-dyn-card-video__title, .bili-dyn-action.active, .bili-dyn-action:hover, .bili-dyn-up-list__item.active .bili-dyn-up-list__item__name, .bili-dyn-more__menu__item:hover, .bili-rich-text-link, .bili-rich-text-module, .bili-rich-text-topic, .bili-dyn-card-article:hover .bili-dyn-card-article__title, .bili-dyn-card-live:hover .bili-dyn-card-live__title, .bili-user-profile-view__info__stat.like:hover, .bili-dyn-card-pgc:hover .bili-dyn-card-pgc__title, .bb-comment .fold-comment:hover, .dyn-ugc__wrap:hover .dyn-ugc__detail__title, .bili-dyn-topic__icon, .bili-dyn-topic__text, .bili-dyn-action:not(.disabled).active, .bili-dyn-action:not(.disabled):hover, .bili-dyn-sidebar__btn:hover, .bili-dyn-card-ugc__detail__title:hover, .bili-dyn-more__btn.tp:hover,.bili-rich-text-link, .bili-rich-text-module, .bili-rich-text-topic, .bili-rich-text-viewpic {
 		color: var(--bili-blue) !important;
 	}
 	.card .main-content .user-name.big-vip a, .card .main-content .user-name.big-vip a:hover, .userinfo-content .info .user .name.vip, .card .main-content .user-name a[style*='rgb(251, 114, 153)'], .bili-user-profile-view__info__uname[style*='rgb(251, 114, 153)'] {
