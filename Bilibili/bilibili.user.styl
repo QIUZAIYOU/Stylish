@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author        QIUZAIYOU
 	@description   	  ⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202507051443
+	@version        202507151141
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -38,7 +38,7 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202507051443
+	* © 最后更新：202507151141
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
@@ -1160,7 +1160,7 @@
 }
 @-moz-document url-prefix("https://www.bilibili.com/") {
 	/* ===首页=== */
-	.bili-video-card:has(.bili-video-card__wrap>a:not([href*="www.bilibili.com"])), .floor-single-card, .adblock-tips, .feed-card:has(.bili-video-card__info--creative-ad, .bili-video-card__image--link:not([href*='https://www.bilibili.com'])), .palette-button-wrap .fixed-card:has([class*='-ad'], [class*='-adcard']) {
+	.bili-video-card:has(.bili-video-card__wrap>a:not([href*="www.bilibili.com"])),.bili-feed-card:has(.bili-video-card__wrap>a:not([href*="www.bilibili.com"])), .floor-single-card, .adblock-tips, .feed-card:has(.bili-video-card__info--creative-ad, .bili-video-card__image--link:not([href*='https://www.bilibili.com'])), .palette-button-wrap .fixed-card:has([class*='-ad'], [class*='-adcard']) {
 		display: none!important;
 	}
 	/* -- 背景 -- */
