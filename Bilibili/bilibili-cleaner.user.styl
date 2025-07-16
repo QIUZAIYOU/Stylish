@@ -1,0 +1,163 @@
+/* ==UserStyle==
+@name           哔哩哔哩清洁工 Bilibili Cleaner
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    去除广告、推荐及干扰元素，部分内容可配置
+@author         QIUZAIYOU
+@preprocessor   stylus
+
+@var checkbox headerActivity '主导航活动类广告' 1
+@var checkbox headerShop '主导航会员购' 1
+@var checkbox headerDownload '主导航软件下载' 0
+@var checkbox indexCardAds '主页广告卡片' 1
+@var checkbox indexCardRecommends '主页分区推荐卡片' 1
+@var checkbox indexCardLives '主页直播卡片' 1
+@var checkbox videoActivity '视频参加活动横幅' 1
+@var checkbox liveIndexActivity '直播首页活动相关' 1
+@var checkbox liveRoomSimple '极简直播间' 0
+@var checkbox liveRoomBackground '直播间背景' 1
+@var checkbox liveRoomGiftPanel '直播间礼物面板' 1
+@var checkbox liveRoomRankList '直播间排行' 1
+@var checkbox liveRoomRankBadge'直播间排行榜牌子' 1
+@var checkbox liveRoomWealthMedal '直播间荣耀等级勋章' 1
+@var checkbox liveRoomFansMedal '直播间粉丝勋章' 1
+@var checkbox liveRoomTitleMedal '直播间头衔' 1
+@var checkbox liveRoomRecommeds '直播间其他推荐' 1
+@var checkbox liveRoomDynamic '直播间up动态' 1
+==/UserStyle== */
+i = !important 
+kill = @block {
+	display: none i;
+	opacity: 0 i;
+	visibility: hidden i
+}
+@-moz-document url-prefix("https://www.bilibili.com/") {
+	/* 	首页 */
+	.adblock-tips {
+		{ kill }
+	}
+	if headerActivity {
+		.bili-header .left-entry .left-loc-entry {
+			{ kill }
+		}
+	}
+	if headerShop {
+		.bili-header .left-entry li:has(a[href*="show.bilibili.com"]) {
+			{ kill }
+		}
+	}
+	if headerDownload {
+		.bili-header .left-entry li:has(.download-entry){
+			{ kill }
+		}
+	}
+	if indexCardAds {
+		.bili-video-card:not([style *= "--cover-radio"]):not(:has(.bili-watch-later)), .bili-feed-card:not(:has(.bili-watch-later)), .feed-card:not(:has(.bili-watch-later)){
+			{ kill }
+		}
+		.recommended-container_floor-aside .container > * {
+			margin-top: 0 !important;
+		}
+	}
+	if indexCardRecommends {
+		.floor-single-card {
+			{ kill }
+		}
+	}
+	if indexCardLives {
+		.bili-feed-card:has(.bili-live-card) {
+			{ kill }
+		}
+	}
+}
+@-moz-document url-prefix("https://www.bilibili.com/video"), url-prefix("https://www.bilibili.com/bangumi/play"), url-prefix("https://www.bilibili.com/cheese/play"), url-prefix("https://www.bilibili.com/medialist/play"), url-prefix("https://www.bilibili.com/watchroom"), url-prefix("https://www.bilibili.com/list") {
+	/* 	视频播放页 */
+	.ad-report,.ad-report-inner, .ad-floor-exp, .ad-floor-cover {
+		{ kill }
+	}
+	if videoActivity {
+		.activity-m-v1{
+			{ kill }
+		}
+	}
+}
+@-moz-document domain("live.bilibili.com"), url-prefix("https://link.bilibili.com/p") {
+	/* 	直播页 */
+
+	if liveIndexActivity {
+		.area-detail-ctnr, .recommend-area-ctnr {
+			margin-top: 0 i
+		}
+		.grid-area-ctnr.t-center {
+			margin: 20px 0 i
+		}
+		.player-area-ctnr > a .bg-image {
+			background:transparent i
+		}
+		.room-ctnr~.flip-view, #sections-vm .left-container > .flip-view, .banner-ctn{
+			{ kill } 
+		}	
+	}
+	if liveRoomSimple {
+		#rank-list-vm, .wealth-medal-ctnr, .danmaku-item-left > *:not(.common-nickname-wrapper, .admin-icon),.gift-control-panel, #sections-vm .left-container, #web-player__bottom-bar__container {
+			{ kill }
+		}
+		.room-bg {
+			background:transparent i
+		}
+		body:not(.pure_room_root) .live-room-app .app-content .app-body .player-and-aside-area .aside-area {
+			overflow: hidden i
+		}
+		.fullscreen-danmaku{
+			bottom: 56px i
+		}
+	}
+	if liveRoomBackground {
+		.room-bg {
+			background:transparent i
+		}
+	}
+	if liveRoomGiftPanel {
+		.gift-control-panel {
+			{ kill }
+		}
+	}
+	if liveRoomRankList {
+		body:not(.pure_room_root) .live-room-app .app-content .app-body .player-and-aside-area .aside-area {
+			overflow: hidden i
+		}
+		#rank-list-vm {
+			{ kill }
+		}
+	}
+	if liveRoomRankBadge {
+		.danmaku-item-left > .rank-icon {
+			{ kill }
+		}
+	}
+	if liveRoomWealthMedal {
+		.danmaku-item-left > .wealth-medal-ctnr {
+			{ kill }
+		}
+	}
+	if liveRoomFansMedal {
+		.danmaku-item-left > .fans-medal-item-ctnr {
+			{ kill }
+		}
+	}
+	if liveRoomTitleMedal {
+		.danmaku-item-left > .title-label {
+			{ kill }
+		}
+	}
+	if liveRoomRecommeds {
+		.room-info-ctnr {
+			{ kill }
+		}
+	}
+	if liveRoomDynamic {
+		.room-feed {
+			{ kill }
+		}
+	}
+}
