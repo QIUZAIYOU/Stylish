@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           哔哩哔哩清洁工 Bilibili Cleaner
 @namespace      https://github.com/QIUZAIYOU/Stylish/blob/main/Bilibili/bilibili.user.styl
-@version        1.0.0
+@version        2025.07.16
 @description    去除广告、推荐及干扰元素，部分内容可配置
 @author         QIUZAIYOU
 @preprocessor   stylus
@@ -34,8 +34,8 @@ kill = @block {
 	visibility: hidden i
 }
 
-@-moz-document url-prefix("https://www.bilibili.com/") {
-	/* 	首页 */
+@-moz-document domain("bilibili.com") {
+	/* 通用 */
 	.adblock-tips {
 		{ kill }
 	}
@@ -54,6 +54,9 @@ kill = @block {
 			{ kill }
 		}
 	}
+}
+@-moz-document url-prefix("https://www.bilibili.com") {
+	/* 首页 */
 	if indexCardAds {
 		.bili-video-card:not([style *= "--cover-radio"]):not(:has(.bili-watch-later)), .bili-feed-card:not(:has(.bili-watch-later)), .feed-card:not(:has(.bili-watch-later)){
 			{ kill }
@@ -74,7 +77,7 @@ kill = @block {
 	}
 }
 @-moz-document url-prefix("https://www.bilibili.com/video"), url-prefix("https://www.bilibili.com/bangumi/play"), url-prefix("https://www.bilibili.com/cheese/play"), url-prefix("https://www.bilibili.com/medialist/play"), url-prefix("https://www.bilibili.com/watchroom"), url-prefix("https://www.bilibili.com/list") {
-	/* 	视频播放页 */
+	/* 视频播放页 */
 	.ad-report,.ad-report-inner, .ad-floor-exp, .ad-floor-cover {
 		{ kill }
 	}
@@ -85,7 +88,7 @@ kill = @block {
 	}
 }
 @-moz-document domain("live.bilibili.com"), url-prefix("https://link.bilibili.com/p") {
-	/* 	直播页 */
+	/* 直播页 */
 
 	if liveIndexActivity {
 		.area-detail-ctnr, .recommend-area-ctnr {
