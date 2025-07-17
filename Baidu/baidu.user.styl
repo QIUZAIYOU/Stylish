@@ -3,603 +3,176 @@
 @namespace      USO Archive
 @author         QIUZAIYOU
 @description    `去广告，样式更改。`
-@version        2025.0528
+@version        2025.0717
 @license        GPL-3.0 License
-@preprocessor   uso
-@advanced dropdown trebleList "搜索结果三列显示" {
-trebleist_ON "开" <<<EOT
-	#rs,
-	#foot,
-	[tpl="recommend_list"],
-	[tpl="jy_course_and_org_pc"] [class*="course-new-style"]>div.c-row,
-	#rs_new,
-	#content_left .result-molecule,
-	[tpl="bjh_addressing"]{
-		display: none!important;
-	}
+@preprocessor   stylus
 
-	#container.sam_newgrid #content_left {
-		margin: 10px auto!important;
-		width: 100%!important;
-		display: grid!important;
-		grid-template-columns: repeat(3,1fr)!important;
-      grid-gap: 10px!important;
-	}
-
-	div#content_left>div[class],
-	div#content_left>div[class="c-group-wrapper"]>div[class] {
-		width: 100%!important;
-		margin: 0!important;
-		box-sizing: border-box!important;
-		padding: 15px!important;
-		border-radius: 10px!important;
-		overflow: hidden auto;
-		background: #fff!important;
-		height: 300px!important;
-	}
-
-	div#content_left>div[class="c-group-wrapper"] {
-		display: flex!important;
-		flex-direction: row!important;
-		justify-content: space-between!important;
-		width: 100%!important;
-		background: transparent!important;
-		padding: 0!important;
-		margin: 0!important;
-		flex-wrap: wrap!important;
-		border-radius: 10px!important;
-		overflow: hidden!important;
-		margin-bottom: 10px!important;
-	}
-
-	div#content_left>div[class="c-group-wrapper"]>div[class]:first-child,
-	div#content_left>div[class="c-group-wrapper"]>div[class]:last-child,
-	#content_left .c-group-wrapper>div[class]:not(:first-child, :last-child) {
-		border-radius: 10px!important;
-	}
-
-	div#content_left>div[class="c-group-wrapper"]:hover,
-	[class*="course-new-style"] {
-		box-shadow: none!important;
-	}
-
-	div#content_left>div[class].hit-toptip.new-pmd,
-	#rs_top_new,
-	.hit_top_new {
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		background: #fff;
-		width: 100%;
-	}
-
-	div#content_left>div[class].hit-toptip.new-pmd .c-gap-bottom-large {
-		margin: 0!important;
-	}
-
-	div#content_left>div[class] .c-span9,
-	div#content_left>div[class] canvas,
-	div#content_left>.c-group-wrappe>div[class],
-	div#content_left>div[class="c-group-wrapper"]>div[class] ul,
-	[class*="course-new-flex"] {
-		width: 100%!important;
-	}
-
-	div#content_left>div[class="c-group-wrapper"]>div[class] ul {
-		max-height: 310px!important;
-	}
-
-	div#content_left>div[class="c-group-wrapper"]>div[class][srcid] {
-		width: calc((100% - 10px) / 2)!important;
-		height: 219px!important;
-	}
-	div#content_left>div[class="c-group-wrapper"]>div[class][srcid].new-pmd .c-gap-top{
-		margin-top:0!important;
-	}
-	div#content_left>div[class="c-group-wrapper"]>div[class][srcid] {
-		overflow-x: hidden!important;
-	}
-
-	div#content_left>div[class].new-pmd .c-gap-top-large,
-	.new-pmd .c-row:not([class*='bk_polysemy_'] [class*='video-wrapper_'][class*='hide_'], [class*='select-wrapper']),
-	.c-border,
-	div#content_left>div[class].new-pmd .c-tabs.c-sub-tabs .c-tabs-content {
-		width: 100%!important;
-		display: flex!important;
-		background: transparent!important;
-		box-sizing:border-box!important;
-	}
-
-	[class*='bk_polysemy_'] [class*='video-wrapper_']{
-		width: 100%!important;
-		height: auto!important
-	}
-
-	div#content_left>div[class].new-pmd .c-abstract {
-		margin-top: 10px!important;
-	}
-
-	div#content_left>div[class] .info-row_37tWa .info-col_2viHg {
-		width: inherit!important;
-	}
-
-	div#content_left>div[class].c-container table,
-	div#content_left>div[class].new-pmd.c-container .c-container[class*="aladdin-card"] .c-border,
-	div#content_left>div[class].new-pmd.c-container .c-container[class*="aladdin-card"] .c-border>.c-row{
-		display: flex!important;
-		flex-direction: column!important;
-	}
-
-	div#content_left>div[class] .re-box_2CJ9w {
-		box-shadow: none!important;
-	}
-
-	div#content_left>div[class].new-pmd.c-container:not([mu*="tieba"]) > .c-container {
-		overflow: auto;
-		margin: 0!important;
-		height: 270px!important;
-	}
-
-	div#content_left>div[class] .c-border .c-span-last {
-		width: 100%!important;
-		margin-top: 10px!important;
-	}
-
-	div#content_left>div[class] .op-short-video-pc,
-	div#content_left>div[class].new-pmd .c-tabs.c-sub-tabs .c-tabs-content .c-row {
-		overflow: auto!important;
-		padding-bottom: 5px!important;
-	}
-
-	div#content_left>div[class] .op-short-video-pc .c-span3 {
-		width: calc((100% - 60px) / 2)!important
-	}
-
-	div#content_left>div[class].new-pmd .op-short-video-pc .c-img img {
-		width: initial!important;
-	}
-
-	.op_weather4_twoicon_container_div {
-		overflow-y: hidden!important;
-		overflow-x: scroll!important;
-	}
-
-	div#content_left>div[class][mu*="天气"] .c-row,
-	div#content_left>div[class] .wenda-abstract-wrap-new,
-	div#content_left>div[class][tpl="site"]>.c-border,
-	div#content_left>div[class][mu*="ip138"]>.c-border,
-	div#content_left>div[class][mu*="typhoon"]>.c-row,
-	div#content_left>div[class][mu*="phoneSearch"]>.c-border,
-	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div>.c-row>.c-span12>.c-border,
-	div#content_left>div[class][mu*="zhuanlan.zhihu.com"]>div>.c-row>.c-span12>.c-border,
-	div#content_left>div[class][mu*="blog.csdn.net"]>div>.c-row>.c-span12>.c-border,
-	div#content_left>.result-op[tpl="wenda_abstract_pc"]>div>.c-row>.c-span12>.c-border,
-	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div>.c-row>.c-span12>.c-border>div:not([class])>.c-row,
-	.c-container[mu*="vsearch?pd=goods_tab"] h3+[style],
-	.c-container[mu*="tieba"]>.c-container>[has-tts]{
-		flex-direction: column!important;
-	}
-
-	.op_site_box_tools table td {
-		padding: 3px!important;
-		text-align: center!important;
-	}
-
-	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain {
-		margin-bottom: 7px!important;
-	}
-
-	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right,
-	.op-ip-detail table {
-		height: -webkit-fit-content!important;
-		height: -moz-fit-content!important;
-		height: fit-content!important;
-		margin: 0!important;
-	}
-
-	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class]),
-	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div>div[style] {
-		display: flex!important;
-		flex-flow: column nowrap!important;
-	}
-
-	div#content_left>div[class][mu*="ip138"]>.c-row.c-gap-top,
-	div#content_left>div[class][mu*="ip138"]>.c-border>.c-row.c-gap-top,
-	.new-pmd .c-border ul[class*="prod-wrap"]{
-		display: flex!important;
-		align-items: center!important;
-	}
-
-	div#content_left>div[class][tpl="site"]>.c-border>.op_site_domain>.op_site_domain_right>p:not([class])>a,
-	div#content_left>div[class][mu*="ip138"]>.c-border>.c-row.c-gap-top>.c-span-last {
-		margin: 0!important;
-	}
-
-	div#content_left>div[class][tpl="site"]>.c-border>.op_site_main,
-	[class*="course-new-style"] {
-		margin-top: 0!important;
-		padding: 0!important;
-	}
-
-	div#content_left>div[class][tpl="site"]>.c-border>.op_site_main>.op_site_gap_top {
-		margin-top: 8px!important;
-	}
-
-	div#content_left>div[class][mu*="nourl.ubs.baidu.com"]>div {
-		overflow: auto;
-	}
-
-	div#content_left>div[class][mu*="nourl.ubs.baidu.com"][tpl="game-page-profession"]>div {
-		overflow: hidden;
-	}
-
-	#container.sam_newgrid .c-container .t,
-	#container.sam_newgrid .c-container .c-title,
-	.ms-measures-container .operation-container {
-		display: flex!important;
-	}
-
-	.ms-measures-container .operation-unit-number {
-		width: 1rem!important;
-	}
-
-	.ms-measures-container .dropdown-menu {
-		display: flex;
-		flex-flow: column nowrap!important;
-		align-items: center!important;
-	}
-
-	.ms-measures-container .ms-measures-content .op-unit-tabs-nav-container .op-unit-tabs-nav-left-bg {
-		width: 100%!important;
-	}
-
-	.ms-measures-container .ms-measures-content .op-unit-tabs-nav-container .op-unit-tabs-nav-left {
-		width: calc(100% - 38px)!important;
-	}
-
-	.ms-measures-container .dropdown-menu li {
-		width: 100%!important;
-		text-align: center!important;
-	}
-
-	.ms-measures-container .dropdown-menu-item {
-		padding: 0!important
-	}
-
-	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_addmodle,
-	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_from_e,
-	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_to_e,
-	.op_exrate_txt_e {
-		margin-bottom: 15px!important;
-	}
-
-	div#content_left>div[class][mu*="forex.hexun.com"][tpl="exrate"] .op_exrate_tip {
-		margin-top: 0!important;
-	}
-
-	[class*='board_'] [class*='type-map_'] [class*='type-wrap_'] {
-		width: 36%!important;
-	}
-
-	.new-pmd .c-span5 {
-		width: 100px!important
-	}
-
-	[mu*="mydown.yesky.com"] .c-span12 {
-		margin: 0!important;
-	}
-	[class*="wenda-abstract"] .c-border,.c-border[class*="b2b-straight-wrap"]{
-		flex-direction: column!important;
-	}
-	[class*="wenda-abstract"]{
-		border: none!important;
-		overflow: hidden!important;
-	}
-	[class*="calendar_"] {
-		margin:unset!important;
-		box-shadow:none!important;
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"]{
-		width: 294px!important;
-	}
-
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"]{
-		flex-wrap: wrap!important;
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"] [class*="back-today"]{
-	
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"] [class*="header-block"]{
-		width: 76px!important;
-		margin: 0 5px 5px 0!important;
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"] [class*="header-block-2"]{
-    	padding: 0 28px!important;
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"] [class*="header-block-2"],
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="header-box"] [class*="header-block-2"] [class*="select_"]{
-		width: 62px!important;
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="content-box_"] [class*="content-thead-box_"]{
-		margin-top: 35px!important;
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="content-box_"] [class*="content-thead-box_"] [class*="content-thead_"]{
-		width: 37px!important;
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-left"] [class*="cell"] [class*="cell-inner-box"]{
-		width: 33px!important;
-		height: 52px!important;
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-right"]{
-		width: fit-content!important;
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-right"]>div:not([class]){
-		width: 72px!important;
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-right"] [class*="calendar-right-day"]{
-		width: 60px!important;
-   	 	height: 60px!important;
-		line-height: 60px!important;
-		font-size: 40px!important;
-	}
-	[class*="calendar"] [class*="calendar-box"] [class*="calendar-box-right"] [class*="calendar-right-suggestion-box"] {
-		padding-bottom: 0!important;
-	}
-	.wrapper_l #con-at{
-		padding:0!important;
-	}
-	.wrapper_l #con-at .result-op{
-		width: 100%!important;
-		margin:0 auto!important;
-	}
-	.wrapper_l #con-at .result-op .venture__3pjR .adjust-margin_3ud50{
-		width: 1200px!important;
-		margin: 0 auto!important;
-	}
-	.wrapper_l #con-at .result-op .venture__3pjR .adjust-margin_3ud50 .c-span10 .c-row{
-		flex-wrap:wrap!important;
-	}
-	.new-pmd  .venture-wrapper_3QIYV .venture-right_2lHE4 .c-span5{
-		width:unset!important;
-	}
-	[class*="travel-container"]{
-		width: 100%!important;
-		margin: 0!important;
-		box-shadow: none!important;
-	}
-	[class*="travel-container"] [class*="travel-select"]{
-		width: 40%!important;
-	}
-	[class*="travel-container"] [class*="travel-select"] [class*="select-box"]{
-		width: 89%!important;
-	}
-	.new-pmd[mu*="tieba.baidu.com"] [class*="general-thread-cont"] {
-		margin-right: 0!important;
-	}
-	.new-pmd .c-span9{
-		width: 468px!important;
-	}
-   .c-container:has([class*="calc-box"]),.c-container[mu*="vsearch?pd=goods_tab"]{
-		grid-column: span 2!important;
-	}
-	.c-container>[class*="calc-box"]{
-		width:100%!important;
-		margin:0!important;
-		box-sizing: border-box!important;
-	}
-	.c-container[mu*="vsearch?pd=goods_tab"] h3+[style]{
-		margin:0!important;
-	}
-	.c-row.c-gap-top-middle {
-		flex-direction: column;
-	}
-	#content_left .c-group-wrapper .result-op[mu*="baidu.com"][data-op][data-cost]{
-		width: 100%!important;
-		border-radius: 0!important;
-	}
-	.c-container[m-name*="short_video"] h3+div>div{
-		overflow:auto!important;
-	}
-	.c-container[tpl="ai_index"] [class*="swiper-box"]{
-		width: 100%!important;
-		margin:0!important
-	}
-	EOT;
-	trebleList_OFF "关" <<<EOT /*[[trebleList]]*\/ EOT;
-
-}
-@advanced dropdown waterfall "使用原生CSS瀑布流(部分浏览器不支持)" {
-	waterfall_ON "开" <<<EOT
-	div#content_left>div[class="c-group-wrapper"]>div[class][srcid]{
-		height:auto!important;
-	}
-	#container.sam_newgrid #content_left {
-		display: block!important;
-		grid-template-columns: unset!important;
-      grid-gap: unset!important;
-		column-count: 3!important;
-		column-gap: 10px!important;
-	}
-	div#content_left>div[class],
-	div#content_left>div[class="c-group-wrapper"]>div[class] {
-		margin: 0 0 10px!important;
-		height: fit-content!important;
-	}
-	div#content_left>div[class].new-pmd.c-container:not([mu*="tieba"]) > .c-container {
-		height: fit-content!important
-	}
-	div#content_left>div[class="c-group-wrapper"]>div[mu*="nourl"] {
-		margin: 0 !important;
-	}
-	EOT;
-	waterfall_OFF "关" <<<EOT /*[[waterfall]]*\/ EOT;
-}
+@var checkbox trebleList "搜索结果三列显示" 1
+@var checkbox waterfall "使用原生CSS瀑布流(部分浏览器不支持)" 0
 ==/UserStyle== */
-@-moz-document url-prefix("http://example.com") {
-	/*=== 
-	 * © 版权信息
-	 * © 作者：QIUZAIYOU 
-	 * © 最后更新：2025.0528
-	 * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
-	 * © Gitee项目地址：https://gitee.com/aiideai/Stylish
-	 * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
-	===*/
-}
-@-moz-document url-prefix("https://www.baidu.com"), url-prefix("http://www.baidu.com") {
+/*=== 
+ * © 版权信息
+ * © 作者：QIUZAIYOU 
+ * © 最后更新：2025.0717
+ * © Github项目地址：https://github.com/QIUZAIYOU/Stylish
+ * © Gitee项目地址：https://gitee.com/aiideai/Stylish
+ * © UserStyles.world项目地址：https://userstyles.world/style/243/simple-baidu
+===*/
+i = !important @-moz-document url-prefix("https://www.baidu.com"), url-prefix("http://www.baidu.com") {
 	/*=== 垃圾元素屏蔽 ===*/
-	.qrcodeCon, #u1 > a.bri, #content_right > table, #content_bottom, #s_wrap, .s_bri, .s-skin, .s-top-nav, #result_logo img, .s_logo img, div[fk="今日新鲜事"], .rrecom-btn-parent, #_mask, .ecom-result, div[tpl="zp_exact_new"], div#content_left > div:not([class]), table.result-op, .result:has(a[data-click='{"rsv_snapshot":"1"}']), .result-op[mu*="51xiazai"], .search-source-wrap,#content_right {
-		display: none!important;
+	.qrcodeCon, #u1 > a.bri, #content_right > table, #content_bottom, #s_wrap, .s_bri, .s-skin, .s-top-nav, #result_logo img, .s_logo img, div[fk = "今日新鲜事"], .rrecom-btn-parent, #_mask, .ecom-result, div[tpl = "zp_exact_new"], div#content_left > div:not([class]), table.result-op, .result:has(a[data-click = '{"rsv_snapshot":"1"}']), .result-op[mu *= "51xiazai"], .search-source-wrap, #content_right {
+		display: none i;
 	}
-	[mu*="xin.baidu.com"], [mu*="shouji.baidu.com"] {
-		display: none!important;
+	[mu *= "xin.baidu.com"], [mu *= "shouji.baidu.com"] {
+		display: none i;
 	}
-	div.xpath-log[mu*="http://fanyi.baidu.com"] {
-		display: block!important;
+	div.xpath-log[mu *= "http://fanyi.baidu.com"] {
+		display: block i;
 	}
-	#content_left > div[style*="display:block !important"] {
-		position: absolute!important;
-		top: -9999px!important;
+	#content_left > div[style *= "display:block !important"] {
+		position: absolute i;
+		top: -9999px i;
 	}
 	/*=== Chrome - 修改滚动条 ===*/
 	::-webkit-scrollbar {
-		width: 6px!important;
-		height: 6px!important;
+		width: 6px i;
+		height: 6px i;
 	}
 	::-webkit-scrollbar-track-piece, .opui-scroll-ctrl-scroll .opui-scroll-axis {
-		background-color: #fff!important;
-		border-radius: 0!important;
+		background-color: #fff i;
+		border-radius: 0 i;
 	}
 	::-webkit-scrollbar-thumb:vertical {
-		height: 5px!important;
-		background-color: #3385ff!important;
-		border-radius: 0!important;
+		height: 5px i;
+		background-color: #3385ff i;
+		border-radius: 0 i;
 	}
 	::-webkit-scrollbar-thumb:horizontal, .opui-scroll-ctrl-scroll .opui-scroll-slider {
-		width: 5px!important;
-		background-color: #3385ff!important;
-		border-radius: 0!important;
+		width: 5px i;
+		background-color: #3385ff i;
+		border-radius: 0 i;
 	}
 	::-webkit-scrollbar-corner {
-		background-color: #fff!important;
-		border-radius: 0!important;
+		background-color: #fff i;
+		border-radius: 0 i;
 	}
 }
 @-moz-document url("https://www.baidu.com/"), url("http://www.baidu.com/"), url-prefix("https://www.baidu.com/index.php"), url-prefix("https://www.baidu.com/?tn="), url-prefix("http://www.baidu.com/index.php"), url-prefix("http://www.baidu.com/?tn=") {
 	/*=== 首页样式更改 ===*/
 	body {
-		overflow: hidden!important;
+		overflow: hidden i;
 	}
 	#lg {
-		width: 270px!important;
-		height: 129px!important;
-		margin: 0 auto!important;
+		width: 270px i;
+		height: 129px i;
+		margin: 0 auto i;
 		background: url("http://asifadeaway.com/Stylish/baidu/simple_baidu_logo_1.png") no-repeat;
 	}
 	#lg > * {
-		display: none!important;
+		display: none i;
 	}
 	#head_wrapper .s-p-top {
-		min-height: inherit!important;
+		min-height: inherit i;
 	}
 	/* -- 背景色 -- */
 	body, .tang-pass-pop-login div.tang-body, .tang-pass-pop-login div.tang-title, #wrapper {
-		background: #f5f5f5!important;
+		background: #f5f5f5 i;
 	}
 	.s_ipt_wr, #wrapper .bdbri, .bdpfmenu, .usermenu, #wrapper .bdpfmenu a:link, #wrapper .bdpfmenu a:visited, .tang-pass-footerBar, .tang-pass-pop-login .pass-text-input, .bdpfmenu a:link, .bdpfmenu a:visited, #u .usermenu a:link, #u .usermenu a:visited, #kw, #s_top_wrap, #s_tab, .s-user-set-menu, .s-user-set-menu div, .s-user-set-menu div a, .s-mod-msg .msg-area, .bdsug, .bdlayer, .bdsug .bdsug-feedback-wrap {
-		background: #fff!important;
+		background: #fff i;
 	}
 	.soutu-btn {
-		background-color: #fff!important;
+		background-color: #fff i;
 	}
 	.s-skin-hasbg .btn, .s-skin-hasbg .btn_wr {
-		background: #3385ff!important;
+		background: #3385ff i;
 	}
 	.bdsug li.bdsug-s, .advanced-setting .result-setting {
-		background: #fff!important;
+		background: #fff i;
 	}
 	#gxszButton .prefpanelrestore, .advanced-setting input {
-		background: #fff!important;
+		background: #fff i;
 	}
 	/* -- 字体颜色 -- */
 	#u1 a.mnav, #u1 a.mnav:visited, #u1 a.lb, #u1 a.lb:visited, #u1 a.username, #u1 a.pf, #u1 a.pf:visited, #ftCon a, #qrcode .qrcode-text b, #wrapper .bdbriimgtitle, #wrapper .bdbri.bdbriimg .bdmainlink a:visited, #wrapper .bdbri.bdbriimg .bdothlink a:visited, #wrapper .bdbri.bdbriimg .bdmainlink a, #wrapper .bdbri.bdbriimg .bdothlink a, .bdpfmenu, .usermenu, #wrapper .bdpfmenu a:link, #wrapper .bdpfmenu a:visited, p.pass-form-logo, .tang-pass-pop-login .pass-text-input, .tang-pass-pop-login .pass-form-item-memberPass label, .s-skin-hasbg .s-upfunc-menus .s-icons a, .s-skin-hasbg .s-sp-menu a, .s-skin-hasbg #nv a, .s-skin-hasbg #nv b, .s-skin-hasbg #lm, .s-skin-hasbg #lm a, .s-user-set-menu div a, .s-skin-hasbg .s-bottom-ctner, .s-skin-hasbg .s-bottom-ctner a, .s-mod-msg .s-msg-item .item-name .item-name-link, .bdsug li b, .pftab_hd, .search-setting, .search-setting td, #gxszButton .prefpanelrestore, .advanced-setting th, .advanced-setting td, .advanced-setting .advanced-search-btn, #s_tab a, #s_tab b, #ent_sug, .bdsug .bdsug-feedback-wrap span, .s-skin-hasbg .s-top-left .mnav, .s-skin-hasbg .s-top-left .mnav .s-bri, .s-skin-hasbg .s-top-right .s-top-right-text.c-color-t, .s-skin-hasbg .s-top-right .s-top-username .user-name {
-		color: #333!important;
+		color: #333 i;
 	}
 	#wrapper .bdpfmenu a:hover, .bdpfmenu a:link, .bdpfmenu a:visited, #u .usermenu a:hover, .s-user-set-menu div a:hover, .s-user-name-top .user-name, .s-skin-hasbg .soutu-env-newindex.soutu-env-nomac #kw, .bdsug li, .pftab_hd .cur, body #s_tab .s_tab_inner b, body #s_tab .s_tab_inner a:hover, .wrapper_l #kw {
-		color: #3385ff!important;
+		color: #3385ff i;
 	}
 	#su, #s_hasmsg_setting a {
-		color: #fff!important;
+		color: #fff i;
 	}
 	/* -- 边框颜色 -- */
 	.s_ipt_wr, #wrapper .bdbri, #wrapper .bdbri.bdbriimg .bdmainlink a, #wrapper .bdbri.bdbriimg .bdothlink a, #wrapper .bdbriimgtitle, .bdpfmenu, .usermenu, .s-user-set-menu div, .s-mod-msg .msg-area, .bdsug, .bdlayer, .pftab_hd, select, #gxszButton .prefpanelrestore, .advanced-setting .result-setting, .advanced-setting input, #head {
-		border-color: #dedede!important;
+		border-color: #dedede i;
 	}
 	.tang-pass-pop-login .pass-text-input, .bdpfmenu a {
-		border-color: #dedede!important;
+		border-color: #dedede i;
 	}
 	#wrapper .bdnuarrow em, .s-user-set-menu .menu-arrow, .s-mod-msg .menu-arrow {
-		border-bottom-color: #dedede!important;
+		border-bottom-color: #dedede i;
 	}
 	#wrapper .bdnuarrow i, .s-user-set-menu .menu-arrow em, .s-mod-msg .menu-arrow em {
-		border-bottom-color: #dedede!important;
+		border-bottom-color: #dedede i;
 	}
 	.bdpfmenu {
-		border: 1px solid #dedede!important;
+		border: 1px solid #dedede i;
 	}
 	.bdsug {
-		border: none!important;
+		border: none i;
 	}
 	/* -- 阴影 -- */
 	.s_btn.btnhover, .bdpfmenu, .usermenu, .s-user-set-menu div, .bdsug, .s-skin-hasbg .btn {
-		box-shadow: none!important;
+		box-shadow: none i;
 	}
 	.s-skin-hasbg #kw {
 		box-shadow: inset 0 0px 5px rgba(0, 0, 0, 0.2);
 	}
 	/* -- 属性 -- */
 	#wrapper {
-		position: relative!important;
+		position: relative i;
 	}
 	#head_wrapper {
-		position: absolute!important;
-		top: 50%!important;
-		left: 50%!important;
-		transform: translate(-50%, -70%)!important;
+		position: absolute i;
+		top: 50% i;
+		left: 50% i;
+		transform: translate(-50%, -70%) i;
 	}
 	#s_usersetting_top {
-		margin-right: 40px!important;
+		margin-right: 40px i;
 	}
 	.s-skin-hasbg .s-sp-menu a, .s-skin-hasbg #nv a, .s-skin-hasbg #nv b, .s-skin-hasbg #lm, .s-skin-hasbg #lm a {
-		font-size: 14px!important;
-		font-weight: normal!important;
+		font-size: 14px i;
+		font-weight: normal i;
 	}
 	#s_lg_img, #s_lg_img_new {
 		filter: invert(50%) sepia(92%) saturate(3728%) hue-rotate(202deg) brightness(102%) contrast(101%);
 	}
 	#s_user_name_menu div a {
-		font-size: 12px!important;
+		font-size: 12px i;
 	}
 	body #s_tab {
-		display: block!important;
-		margin: 0 auto!important;
+		display: block i;
+		margin: 0 auto i;
 	}
 	body #s_tab .s_tab_inner {
-		float: none!important;
-		margin: 0 auto!important;
-		width: 640px!important;
-		display: block!important;
+		float: none i;
+		margin: 0 auto i;
+		width: 640px i;
+		display: block i;
 	}
 	#ent_sug {
-		top: 230px!important;
-		margin: 0!important;
+		top: 230px i;
+		margin: 0 i;
 		left: 50%;
-		transform: translateX(-50%)!important;
+		transform: translateX(-50%) i;
 	}
-	body[link*="#"] #s_form_wrapper #form {
-		margin-top: 140px!important;
+	body[link *= "#"] #s_form_wrapper #form {
+		margin-top: 140px i;
 	}
 	.s-sp-menu a, .user-name, .setting-text, .s-msg {
-		text-decoration: none!important;
+		text-decoration: none i;
 	}
 	#s_btn_wr input {
 		-webkit-transition: .3s;
@@ -607,67 +180,67 @@ trebleist_ON "开" <<<EOT
 		transition: .3s;
 	}
 	#s_btn_wr:hover input {
-		background: #317ef3!important;
+		background: #317ef3 i;
 	}
 	.s-skin-hasbg #head_wrapper .s_btn, #head_wrapper .s_btn_wr {
-		border-radius: 0 10px 10px 0!important;
+		border-radius: 0 10px 10px 0 i;
 	}
 }
 @-moz-document url-prefix("https://www.baidu.com/s?"), url-prefix("https://www.baidu.com/sf/vsearch?"), url-prefix("https://www.baidu.com/baidu?wd="), url-prefix("http://www.baidu.com/s?"), url-prefix("http://www.baidu.com/sf/vsearch?"), url-prefix("http://www.baidu.com/baidu?wd="), url-prefix("https://www.baidu.com/s?ie"), url-prefix("https://www.baidu.com/baidu?cl="), url-prefix("https://www.baidu.com/baidu?") {
 	/*=== 搜索结果页样式更改 ===*/
 	/* -- 背景色 -- */
 	body, #page a, #page strong, #rs, .c-tabs-nav .c-tabs-nav-selected, .c-tabs-nav .c-tabs-nav-btn, .op_new_cal_line .op_new_cal_bg_pale {
-		background: #f5f5f5!important;
+		background: #f5f5f5 i;
 	}
 	#s_tab, #head, .c-container, #foot, #help, #page .n:hover, #page a:hover .pc, .bdsug-feedback-wrap, .result, .c-tip-con, .c-tip-con a, .video_list, .s_ipt_wr, #wrapper .bdbri, .bdpfmenu, .usermenu, #wrapper .bdpfmenu a:link, #wrapper .bdpfmenu a:visited, .tang-pass-footerBar, .tang-pass-pop-login .pass-text-input, .bdpfmenu a:link, .bdpfmenu a:visited, #u .usermenu a:link, #u .usermenu a:visited, #s_top_wrap, .s-user-set-menu, .s-user-set-menu div, .s-user-set-menu div a, .s-mod-msg .msg-area, .bdsug, .general_image_pic a, .bdsugbg div, .bdsug.bdsugbg ul, .c-btn, .bdsug li:hover, .c-border, .c-tabs-nav, .op_site_main, .op_site_box_subkey td, .op_pcsoft_table th, .op_new_cal_screen, .op_new_cal_line span, .op_new_cal_line span, .op_translation_lagfrom, .op_translation_lagto, .op_translation_text.op_translation_textbg, .bdsug li.bdsug-s, .c-tabs-nav .c-tabs-nav-view .c-tabs-nav-selected, .c-numberset a, .op_translation_lagtip_data a.op_translation_lag_seldata, .op_translation_lagtip_data a.op_translation_lag_data:hover, .op_translation_sel_exchange, .c-btn:active, #rs_new {
-		background: #fff!important;
+		background: #fff i;
 	}
 	.soutu-btn {
-		background-color: #fff!important;
+		background-color: #fff i;
 	}
 	.wrapper_new .s_btn_wr .s_btn {
-		background: #3072f6!important;
+		background: #3072f6 i;
 	}
 	/* -- 字体颜色 -- */
-	#u a, #s_tab a, #s_tab b, .c-abstract, .m, a.m, .c-container, .c-gray, .nums, .search_tool, .search_tool_conter span, .bdsug, #rs .tt, #foot span, #help a, .bdsug li, .result, .c-summary, .c-author, .c-title-author, .c-cache, .op-tieba-general-graycolor, .op-tieba-offcial-gray, .op-tieba-offical-tit, .c-tip-con a, .video_list_intro_small, .video_play_num, .video_source_small, .video_noMoreResult, .video_reload, .video_loading, .bdpfmenu, .usermenu, .usermenu a, .bdpfmenu a, #rs table th a, .op-video-vast-ul li.op-video-vast-smallicon-li a span i, .op-video-vast-more a, .op-video-vast-more a:active, .op-video-vast-more a:hover, .c-table th, .c-tabs-nav li, .c-tabs-nav a, .c-container div[class*='c-span'] p a.c-btn, .c-container div[class*='c-span'] p a.c-btn:visited, .op_tb_fr, .op_exactqa_tag_item, .op_new_val_screen_result, .op_new_val_screen_process, .op_new_cal_line span, .op_translation_main .c-btn-primary, .op_translation_main .c-btn, .op_translation_selfrom, .op_translation_selto, .op_translation_lagtip_data a.op_translation_lag_data, .op_translation_canvas textarea, .c-btn, .c-btn:visited, .translateContent, .nors p, .nors li, .setup_storeSug, .op_weather4_twoicon_simple_day, .c-gap-top-small, .op_exactqa_formula_title, .sftip_com td strong {
-		color: #333!important;
+	#u a, #s_tab a, #s_tab b, .c-abstract, .m, a.m, .c-container, .c-gray, .nums, .search_tool, .search_tool_conter span, .bdsug, #rs .tt, #foot span, #help a, .bdsug li, .result, .c-summary, .c-author, .c-title-author, .c-cache, .op-tieba-general-graycolor, .op-tieba-offcial-gray, .op-tieba-offical-tit, .c-tip-con a, .video_list_intro_small, .video_play_num, .video_source_small, .video_noMoreResult, .video_reload, .video_loading, .bdpfmenu, .usermenu, .usermenu a, .bdpfmenu a, #rs table th a, .op-video-vast-ul li.op-video-vast-smallicon-li a span i, .op-video-vast-more a, .op-video-vast-more a:active, .op-video-vast-more a:hover, .c-table th, .c-tabs-nav li, .c-tabs-nav a, .c-container div[class *= 'c-span'] p a.c-btn, .c-container div[class *= 'c-span'] p a.c-btn:visited, .op_tb_fr, .op_exactqa_tag_item, .op_new_val_screen_result, .op_new_val_screen_process, .op_new_cal_line span, .op_translation_main .c-btn-primary, .op_translation_main .c-btn, .op_translation_selfrom, .op_translation_selto, .op_translation_lagtip_data a.op_translation_lag_data, .op_translation_canvas textarea, .c-btn, .c-btn:visited, .translateContent, .nors p, .nors li, .setup_storeSug, .op_weather4_twoicon_simple_day, .c-gap-top-small, .op_exactqa_formula_title, .sftip_com td strong {
+		color: #333 i;
 	}
-	.wrapper_l #kw, #s_tab b, .favurl, .sitelink_summary a, h3.t a, .c-gap-right-small, .op-se-listen-recommend, .c-gap-bottom-small, .c-gap-bottom-small a, #s_tab a:hover, #help a:hover, #page .pc, #page .pc, #page .n, .op-short-video-pc-title, .op-short-video-pc-more a, .bdsug li span, .bdsug li:hover, .c-title a, #gotoPage a, .hint_top a:link, div[mu*="http://tieba.baidu.com"] p a, div[mu*="http://tieba.baidu.com"] td a, div[mu*="http://tieba.baidu.com"] a, div[mu*="http://map.baidu.com"] a, div[mu*="http://music.baidu.com"] a, .xpath-log a, .c-tip-con a:hover, .video_list_title_small, #u .usermenu a:hover, #u .usermenu a:active, .bdpfmenu a:hover, a#user, .op_url_sitelink_summary a, .c-recommend a, .subLink_factory td a, .c-container div[class*='c-span'] p a, div.c-tabs.c-gap-top > div > a, .op_tb_line, .op_exactqa_word_word_pronounce, .opui-honourCard4-title, .op_dict3_font24, .op_site_domain_title, div[fk*="site:"] td a, .op_exactqa_title, .opui-page, .op_mobilephone_s a, .op_pcsoft_table td a, .pcsoft-more, .op_new_cal_line span:hover, .op_new_val_screen_result, .op_translation_download_link:hover, .op_translation_main .c-btn:hover, .op_exactqa_link_item:visited, .op_exactqa_link_item, .sftip_blue td a, .op-timeliness-news-ul a, .op_timeliness_news_title a, .op_timeliness_news_subtitle a, .c-span-last a, h4.f14 a {
-		color: #3385ff!important;
+	.wrapper_l #kw, #s_tab b, .favurl, .sitelink_summary a, h3.t a, .c-gap-right-small, .op-se-listen-recommend, .c-gap-bottom-small, .c-gap-bottom-small a, #s_tab a:hover, #help a:hover, #page .pc, #page .pc, #page .n, .op-short-video-pc-title, .op-short-video-pc-more a, .bdsug li span, .bdsug li:hover, .c-title a, #gotoPage a, .hint_top a:link, div[mu *= "http://tieba.baidu.com"] p a, div[mu *= "http://tieba.baidu.com"] td a, div[mu *= "http://tieba.baidu.com"] a, div[mu *= "http://map.baidu.com"] a, div[mu *= "http://music.baidu.com"] a, .xpath-log a, .c-tip-con a:hover, .video_list_title_small, #u .usermenu a:hover, #u .usermenu a:active, .bdpfmenu a:hover, a#user, .op_url_sitelink_summary a, .c-recommend a, .subLink_factory td a, .c-container div[class *= 'c-span'] p a, div.c-tabs.c-gap-top > div > a, .op_tb_line, .op_exactqa_word_word_pronounce, .opui-honourCard4-title, .op_dict3_font24, .op_site_domain_title, div[fk *= "site:"] td a, .op_exactqa_title, .opui-page, .op_mobilephone_s a, .op_pcsoft_table td a, .pcsoft-more, .op_new_cal_line span:hover, .op_new_val_screen_result, .op_translation_download_link:hover, .op_translation_main .c-btn:hover, .op_exactqa_link_item:visited, .op_exactqa_link_item, .sftip_blue td a, .op-timeliness-news-ul a, .op_timeliness_news_title a, .op_timeliness_news_subtitle a, .c-span-last a, h4.f14 a {
+		color: #3385ff i;
 	}
 	.c-showurl, .g, a.g, .c-more_link, .c-showurl-color, .c {
-		color: #4CAF50!important;
+		color: #4CAF50 i;
 	}
-	em, .PS-word, div[fk*="site:"] span b, .opui-page-number-now, .op_new_cal_line .op_new_cal_color_orange {
-		color: #e43!important;
+	em, .PS-word, div[fk *= "site:"] span b, .opui-page-number-now, .op_new_cal_line .op_new_cal_color_orange {
+		color: #e43 i;
 	}
 	h3.t a.OP_LOG_LINK, .unsafe_content a, .unsafe_content span, .op_exactqa_tag_selected, .c-text-public, .op_weather4_twoicon_container_div * {
-		color: #fff!important;
+		color: #fff i;
 	}
 	.opui-honourCard4 {
-		color: #ffc000!important;
+		color: #ffc000 i;
 	}
 	.hint_top a:visited, .c-title a:visited, h3.t a:visited, a.video_list_title_small:visited, .op-video-vast-more a:visited {
-		color: #9C27B0!important;
+		color: #9C27B0 i;
 	}
 	/* -- 边框颜色 -- */
 	#head, .source-icon, .bdsug, #foot, .c-border, .c-tip-con, .s_ipt_wr, .s_ipt_wr, #wrapper .bdbri, #wrapper .bdbri.bdbriimg .bdmainlink a, #wrapper .bdbri.bdbriimg .bdothlink a, #wrapper .bdbriimgtitle, .bdpfmenu, .usermenu, .s-user-set-menu div, .s-mod-msg .msg-area, .op_jingyan_list_hide, .op_jingyan_list_showmore, .op-video-vast-border, .op-video-vast-ul li.op-video-vast-smallicon-li, .c-recommend, .c-table th, .c-table td, .c-numberset a, .c-icon-unfold, .c-icon-fold, .c-icon-chevron-unfold, .c-icon-chevron-fold, .c-icon-download, .c-icon-lyric, .op-musicsong-lrc-baidu, .c-btn, .op_dict3_extra, .op_site_main, .op_site_box_subkey td, .ecl-pc-digital-table td, .opui-page-number, .opui-page-pre, .opui-page-next, .op_new_cal_line span, .op_translation_canvas textarea, .op_translation_selfrom, .op_translation_selto, .op_translation_lagfrom, .op_translation_lagto, .op_translation_sel_exchange, .res-border-bottom, .op_exactqa_detail_ext, .op-music-lrc-r-lrc, .op-misuc-lrc-text, .op_weather4_twoicon_simple_day, .op_exactqa_formula_gongshi, div#content_left > div[class].sp-separator {
-		border-color: #dedede!important;
+		border-color: #dedede i;
 	}
 	#page .pc, #page .n {
-		border-color: #dedede!important;
+		border-color: #dedede i;
 	}
 	.c-border, .c-tabs-nav, .op_translation_sel_exchange:hover {
-		border-color: #3385ff!important;
+		border-color: #3385ff i;
 	}
 	#wrapper .bdnuarrow em, .s-user-set-menu .menu-arrow, .s-mod-msg .menu-arrow, .c-tip-arrow em {
-		border-bottom-color: #dedede!important;
+		border-bottom-color: #dedede i;
 	}
 	#wrapper .bdnuarrow i, .s-user-set-menu .menu-arrow em, .s-mod-msg .menu-arrow em, .c-tip-arrow ins {
-		border-bottom-color: #dedede!important;
+		border-bottom-color: #dedede i;
 	}
 	#head.s_down, .opui-scroll-ctrl-scroll, .opui-scroll-ctrl-scroll .opui-scroll-slider {
-		border: none!important;
+		border: none i;
 	}
 	.c-tabs-nav .c-tabs-nav-selected {
 		border-color: #2c99ff #2c99ff transparent #2c99ff;
@@ -676,81 +249,81 @@ trebleist_ON "开" <<<EOT
 		border-color: transparent;
 	}
 	.c-tabs-nav .c-tabs-nav-view .c-tabs-nav-li:not(.c-tabs-nav-selected) {
-		border: none!important;
+		border: none i;
 	}
 	/* -- 阴影 -- */
 	#s_tab, #head.s_down {
-		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1)!important;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1) i;
 	}
-	.bdsug, .s_btn.btnhover, .bdpfmenu, .usermenu, .s-user-set-menu div, .c-border, .op_new_cal_wrap, .c-btn:active, .c-group-wrapper, .c-group-wrapper .c-group-top:hover, .c-group-wrapper .c-group-middle:hover, .c-group-wrapper .c-group-bottom:hover, .cu-border, [class*="card-shadow"] {
-		box-shadow: none!important;
+	.bdsug, .s_btn.btnhover, .bdpfmenu, .usermenu, .s-user-set-menu div, .c-border, .op_new_cal_wrap, .c-btn:active, .c-group-wrapper, .c-group-wrapper .c-group-top:hover, .c-group-wrapper .c-group-middle:hover, .c-group-wrapper .c-group-bottom:hover, .cu-border, [class *= "card-shadow"] {
+		box-shadow: none i;
 	}
 	/* -- 属性 -- */
-	.new-pmd[mu*="tieba.baidu.com"] [class*="general-thread-cont"] {
-		margin-right: 140px!important;
+	.new-pmd[mu *= "tieba.baidu.com"] [class *= "general-thread-cont"] {
+		margin-right: 140px i;
 	}
 	.new-pmd .c-span12 {
-		width: 100%!important;
+		width: 100% i;
 	}
 	.new-pmd .c-span9 {
-		width: 100%!important;
+		width: 100% i;
 	}
 	.new-pmd .c-span3 {
-		margin-bottom: 10px!important;
+		margin-bottom: 10px i;
 	}
 	#container {
-		width: 75%!important;
-		margin: 0 auto!important;
-		padding-bottom: 0!important;
+		width: 75% i;
+		margin: 0 auto i;
+		padding-bottom: 0 i;
 	}
 	#content_left {
-		width: auto!important;
-		float: none!important;
-		padding: 0!important;
-		margin: 0!important;
+		width: auto i;
+		float: none i;
+		padding: 0 i;
+		margin: 0 i;
 	}
-	.nums, #rs_top_new, .hit_top_new, .search_tool_conter, .hint_common_restop, .video_noMoreResult, .video_reload, .video_loading, #tsn_inner > [class*='options_'] {
-		margin: 0 auto!important;
+	.nums, #rs_top_new, .hit_top_new, .search_tool_conter, .hint_common_restop, .video_noMoreResult, .video_reload, .video_loading, #tsn_inner > [class *= 'options_'] {
+		margin: 0 auto i;
 	}
-	.hint_common_restop, table[data-tpl="hint_safeinfo_left_level"] {
-		text-align: center!important;
-		color: #e43!important;
-		font-size: 18px!important;
-		margin-bottom: 20px!important;
-		font-weight: bold!important;
-		border: 2px solid!important;
-		padding: 15px 0!important;
-		width: 588px!important;
-		box-sizing: border-box!important;
-		border-radius: 10px!important;
+	.hint_common_restop, table[data-tpl = "hint_safeinfo_left_level"] {
+		text-align: center i;
+		color: #e43 i;
+		font-size: 18px i;
+		margin-bottom: 20px i;
+		font-weight: bold i;
+		border: 2px solid i;
+		padding: 15px 0 i;
+		width: 588px i;
+		box-sizing: border-box i;
+		border-radius: 10px i;
 	}
 	#rs_top_new, .hit_top_new {
-		margin-bottom: 10px!important;
+		margin-bottom: 10px i;
 	}
-	.c-container, .result, .video_list, table[data-tpl="hint_safeinfo_left_level"], #rs_new {
-		padding: 25px!important;
-		border-radius: 10px!important;
-		margin: 0 auto!important;
-		margin-bottom: 20px!important;
-		-webkit-transition: .3s!important;
-		-o-transition: .3s!important;
-		transition: .3s!important;
+	.c-container, .result, .video_list, table[data-tpl = "hint_safeinfo_left_level"], #rs_new {
+		padding: 25px i;
+		border-radius: 10px i;
+		margin: 0 auto i;
+		margin-bottom: 20px i;
+		-webkit-transition: .3s i;
+		-o-transition: .3s i;
+		transition: .3s i;
 	}
 	#content_left .c-group-wrapper > div[class]:hover {
-		box-shadow: none!important;
+		box-shadow: none i;
 	}
 	#content_left .c-group-wrapper > div[class]:not(:first-child, :last-child) {
-		border-radius: 0!important;
-		padding-bottom: 0!important;
+		border-radius: 0 i;
+		padding-bottom: 0 i;
 	}
 	#content_left .c-group-wrapper > div[class]:first-child {
-		border-bottom-left-radius: 0!important;
-		border-bottom-right-radius: 0!important;
-		padding-bottom: 0!important;
+		border-bottom-left-radius: 0 i;
+		border-bottom-right-radius: 0 i;
+		padding-bottom: 0 i;
 	}
 	#content_left .c-group-wrapper > div[class]:last-child {
-		border-top-left-radius: 0!important;
-		border-top-right-radius: 0!important;
+		border-top-left-radius: 0 i;
+		border-top-right-radius: 0 i;
 	}
 	.new-pmd.c-container, #rs_new {
 		width: 670px;
@@ -761,345 +334,669 @@ trebleist_ON "开" <<<EOT
 		line-height: 21px;
 	}
 	.image-normal-card_38QCT .image-content_1csSY .image-one-line_2GgpZ .image-one-line-item_aBS4H {
-		width: calc(100% / 4)!important;
+		width: calc(100% / 4) i;
 	}
 	.image-normal-card_38QCT .image-content_1csSY .image-one-line_2GgpZ .image-one-line-item_aBS4H img {
-		width: 100%!important;
-		height: 120px!important;
-		margin: 0!important;
+		width: 100% i;
+		height: 120px i;
+		margin: 0 i;
 	}
 	.c-container .c-container {
-		width: 100%!important;
-		padding: 0!important;
+		width: 100% i;
+		padding: 0 i;
 	}
 	.c-container:hover, .result:hover, .c-group-wrapper:hover, #rs_new:hover {
-		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1)!important;
+		box-shadow: 0 0 10px 0 rgba(0, 0, 0, .1) i;
 	}
 	.c-container .c-container:hover {
-		box-shadow: none!important;
+		box-shadow: none i;
 	}
 	#rs, #gotoPage, .hint_top {
-		width: 588px!important;
-		padding: 25px!important;
-		margin: 0 auto!important;
-		border-radius: 10px!important;
-		box-sizing: border-box!important;
+		width: 588px i;
+		padding: 25px i;
+		margin: 0 auto i;
+		border-radius: 10px i;
+		box-sizing: border-box i;
 	}
 	#rs {
-		padding: 0 25px!important;
+		padding: 0 25px i;
 	}
 	.video_noMoreResult, .video_reload, .video_loading {
-		width: 600px!important;
-		text-align: center!important;
+		width: 600px i;
+		text-align: center i;
 	}
 	.hint_top {
-		padding-top: 0!important;
+		padding-top: 0 i;
 	}
 	#gotoPage {
-		margin-bottom: 10px!important;
+		margin-bottom: 10px i;
 	}
 	#header_top_bar {
-		width: 568px!important;
-		margin: 15px auto!important;
-		padding: 0!important;
+		width: 568px i;
+		margin: 15px auto i;
+		padding: 0 i;
 		position: relative;
 	}
 	#header_top_bar .search_sort_news {
-		position: absolute!important;
-		right: 0!important;
+		position: absolute i;
+		right: 0 i;
 	}
 	#help {
-		float: none!important;
-		margin: 0 auto!important;
-		display: block!important;
-		width: 568px!important;
-		padding: 0!important;
-		text-align: center!important;
+		float: none i;
+		margin: 0 auto i;
+		display: block i;
+		width: 568px i;
+		padding: 0 i;
+		text-align: center i;
 	}
 	#page {
 		width: -moz-fit-content;
 		width: fit-content;
-		margin: 30px auto!important;
-		box-sizing: border-box!important;
-		padding: 0!important;
-		overflow: hidden!important;
+		margin: 30px auto i;
+		box-sizing: border-box i;
+		padding: 0 i;
+		overflow: hidden i;
 	}
-	#page [class*='page-inner'] {
+	#page [class *= 'page-inner'] {
 		padding: 0
 	}
 	#page strong {
-		background: #3072f6!important;
-		color: #fff!important
+		background: #3072f6 i;
+		color: #fff i
 	}
 	#page strong span.pc {
-		color: #fff!important
+		color: #fff i
 	}
-	#form, form[name="f"] {
-		float: none!important;
-		margin: 10px auto!important;
+	#form, form[name = "f"] {
+		float: none i;
+		margin: 10px auto i;
 		width: 640px;
 	}
 	.tab-wrapper {
-		float: none!important;
-		margin: 0 auto!important;
+		float: none i;
+		margin: 0 auto i;
 		width: 640px;
 	}
 	.s_tab_inner {
-		float: none!important;
-		margin: 0 auto!important;
+		float: none i;
+		margin: 0 auto i;
 		width: 640px;
 	}
 	.s_form {
-		height: 50px!important;
+		height: 50px i;
 	}
 	.bdsug li {
 		padding: 3px 8px;
 	}
 	.bdsug {
-		border-top: 1px solid #3385ff!important;
+		border-top: 1px solid #3385ff i;
 	}
 	.c-icon-bear-border {
-		vertical-align: -2px!important;
+		vertical-align: -2px i;
 	}
 	h3.t, h3.c-title {
-		font-size: 16px!important;
+		font-size: 16px i;
 		margin-bottom: 15px;
 	}
-	div[mu*="http://tieba.baidu.com"] td, .op-tieba-offical-lookmore, .op-tieba-offical-bot {
-		padding-left: 0!important;
+	div[mu *= "http://tieba.baidu.com"] td, .op-tieba-offical-lookmore, .op-tieba-offical-bot {
+		padding-left: 0 i;
 	}
 	.video_list {
-		margin: 20px auto!important;
-		width: 600px!important;
+		margin: 20px auto i;
+		width: 600px i;
 	}
 	#result_logo, .s_logo {
-		width: 101px!important;
-		height: 33px!important;
-		background: url("http://asifadeaway.com/Stylish/baidu/simple_baidu_logo_2.png") no-repeat scroll left center!important;
-		margin-top: 0!important;
-		margin-left: 40px!important;
-		background-size: cover!important;
+		width: 101px i;
+		height: 33px i;
+		background: url("http://asifadeaway.com/Stylish/baidu/simple_baidu_logo_2.png") no-repeat scroll left center i;
+		margin-top: 0 i;
+		margin-left: 40px i;
+		background-size: cover i;
 	}
 	#s_tab {
-		height: 35px!important;
+		height: 35px i;
 	}
 	.wrapper_new .s_form {
-		padding-left: 0!important;
+		padding-left: 0 i;
 	}
 	.wrapper_new #s_tab {
-		width: 100%!important;
-		padding-left: 0!important;
+		width: 100% i;
+		padding-left: 0 i;
 	}
 	body #s_tab .s_tab_inner {
-		float: none!important;
-		margin: 0 auto!important;
-		width: -moz-fit-content!important;
-		width: fit-content!important;
-		display: block!important;
+		float: none i;
+		margin: 0 auto i;
+		width: -moz-fit-content i;
+		width: fit-content i;
+		display: block i;
 	}
 	.wrapper_new #s_tab a, .wrapper_new #s_tab b {
-		width: -moz-fit-content!important;
-		width: fit-content!important;
-		margin-right: 23px!important;
+		width: -moz-fit-content i;
+		width: fit-content i;
+		margin-right: 23px i;
 	}
 	.wrapper_new #s_tab a:last-child {
-		margin-right: 0!important;
+		margin-right: 0 i;
 	}
 	.nums {
-		width: 588px!important;
+		width: 588px i;
 	}
 	.c-btn-mini .c-icon {
-		margin-top: 1px!important;
+		margin-top: 1px i;
 	}
 	.c-btn-mini {
-		padding: 3px 5px!important;
+		padding: 3px 5px i;
 	}
 	.c-tabs-content {
-		border: 1px solid #3385ff !important;
-		border-top: none!important;
-		padding: 0!important;
+		border: 1px solid #3385ff i;
+		border-top: none i;
+		padding: 0 i;
 		margin-bottom: 5px;
 	}
 	.op-musicsongs-more {
-		margin-left: 10px!important;
+		margin-left: 10px i;
 	}
 	.unsafe_content {
-		padding: 5px!important;
-		text-align: center!important;
-		margin: 0 0 15px 0!important;
-		background: #e43!important;
+		padding: 5px i;
+		text-align: center i;
+		margin: 0 0 15px 0 i;
+		background: #e43 i;
 	}
 	.unsafe_content a {
-		font-size: 13px!important;
-		text-decoration: none!important;
+		font-size: 13px i;
+		text-decoration: none i;
 	}
 	.op_translation_canvas textarea {
-		padding: 5px 7px!important;
-		box-sizing: border-box!important;
+		padding: 5px 7px i;
+		box-sizing: border-box i;
 	}
 	.c-tabs-nav .c-tabs-nav-selected, .c-tabs-content, .c-border, .c-tabs-nav, .op_translation_sel_exchange:hover {
-		border: none!important;
+		border: none i;
 	}
 	.content_none {
-		padding: 20px!important;
-		width: 588px!important;
-		margin: 0 auto!important;
+		padding: 20px i;
+		width: 588px i;
+		margin: 0 auto i;
 	}
 	.opui-scroll-ctrl-scroll .opui-scroll-axis {
-		width: 6px!important;
+		width: 6px i;
 	}
 	.opui-scroll-ctrl-scroll .opui-scroll-slider {
-		margin: 0!important;
+		margin: 0 i;
 	}
 	#u a {
-		text-decoration: none!important;
+		text-decoration: none i;
 	}
 	.result {
-		position: relative!important;
+		position: relative i;
 	}
 	table.sftip_blue {
-		color: #3385ff!important;
+		color: #3385ff i;
 	}
 	table.sftip_blue td {
-		padding: 0!important;
+		padding: 0 i;
 	}
 	#content_left .result-op, #content_left .result {
-		position: relative!important;
+		position: relative i;
 	}
-	#content_left .result-op:has(div[data-tools*="guba"]) .c-border{
-		flex-direction: column!important;
+	#content_left .result-op:has(div[data-tools *= "guba"]) .c-border {
+		flex-direction: column i;
 	}
 	#content_left > div {
-		width: 50%!important;
-		box-sizing: border-box!important;
+		width: 50% i;
+		box-sizing: border-box i;
 	}
 	#con-at {
-		margin-bottom: 20px!important;
+		margin-bottom: 20px i;
 	}
 	.op-timeliness-inner div em, .op-timeliness-news-dl dd em {
-		color: #fff!important;
+		color: #fff i;
 	}
-	[class*='bk_polysemy_'] [class*='video-wrapper_'] [class*='video-container_'] video {
-		width: 100%!important;
-		height: auto!important
+	[class *= 'bk_polysemy_'] [class *= 'video-wrapper_'] [class *= 'video-container_'] video {
+		width: 100% i;
+		height: auto i
 	}
 	/*=== AC-baidu ===*/
 	*[ac-needhide] {
-		display: none!important;
+		display: none i;
 	}
 	#myuser .myuserconfig {
-		background: none!important;
-		color: #333!important;
-		border: none!important;
-		box-shadow: none!important;
-		font-weight: normal!important;
+		background: none i;
+		color: #333 i;
+		border: none i;
+		box-shadow: none i;
+		font-weight: normal i;
 	}
 	#myuser .myuserconfig:hover {
-		background: transparent!important;
-		color: #3385ff!important;
-		cursor: pointer!important;
-		border: none!important;
+		background: transparent i;
+		color: #3385ff i;
+		cursor: pointer i;
+		border: none i;
 	}
 	#myuser .myuserconfig:focus {
-		border: none!important;
-		outline: none!important;
+		border: none i;
+		outline: none i;
 	}
 	h3 > button.ghhider {
 		border-color: #e8e8e8;
 		color: #868686;
-		position: absolute!important;
-		right: 20px!important;
+		position: absolute i;
+		right: 20px i;
 	}
-	div[tpl="wenda_abstract_pc"] {
+	div[tpl = "wenda_abstract_pc"] {
 		border: 1px solid #e3e3e3;
 	}
 	article.wenda-abstract-wrap {
-		border: none!important;
+		border: none i;
 	}
 	article.wenda-abstract-wrap section {
-		position: relative!important;
+		position: relative i;
 	}
 	article.wenda-abstract-wrap .wenda-abstract-img-wrap {
-		margin: 0!important;
+		margin: 0 i;
 	}
 	article.wenda-abstract-wrap .wenda-abstract-abstract {
-		margin-top: 20px!important;
+		margin-top: 20px i;
 	}
 	.wrapper_new .s_ipt_wr {
-		width: calc(100% - 122px)!important;
-		min-width: calc(100% - 122px)!important;
+		width: calc(100% - 122px) i;
+		min-width: calc(100% - 122px) i;
 	}
 	.c-group-wrapper {
-		width: 610px!important;
-		background: #fff!important;
-		margin: 0 auto!important;
+		width: 610px i;
+		background: #fff i;
+		margin: 0 auto i;
 		-webkit-transition: .3s;
 		-o-transition: .3s;
 		transition: .3s;
 	}
 	.c-group-wrapper .c-group-top, .c-group-wrapper .c-group-middle {
-		margin-bottom: 0!important;
+		margin-bottom: 0 i;
 	}
 	.c-group-wrapper .c-group-top {
-		border-bottom-left-radius: 0!important;
-		border-bottom-right-radius: 0!important;
-		padding-bottom: 0!important;
+		border-bottom-left-radius: 0 i;
+		border-bottom-right-radius: 0 i;
+		padding-bottom: 0 i;
 	}
 	.c-group-wrapper .c-group-middle {
-		border-radius: 0!important;
+		border-radius: 0 i;
 	}
 	.c-group-wrapper .c-group-bottom {
-		border-top-left-radius: 0!important;
-		border-top-right-radius: 0!important;
-		padding-top: 0!important;
+		border-top-left-radius: 0 i;
+		border-top-right-radius: 0 i;
+		padding-top: 0 i;
 	}
 	#content_left > div:not(.result):first-child {
 		width: 590px;
 		margin: 0 auto 12px;
 	}
 	.new-pmd .c-gray {
-		text-align: center!important;
+		text-align: center i;
 	}
 	.sp-separator.AC {
-		display: flex!important;
-		justify-content: center!important;
-		margin: 0 auto 20px!important;
-		border: none!important;
-		border-radius: 10px!important;
+		display: flex i;
+		justify-content: center i;
+		margin: 0 auto 20px i;
+		border: none i;
+		border-radius: 10px i;
 	}
 	.sp-separator.AC .sp-sp-nextlink b {
-		display: flex!important;
+		display: flex i;
 	}
 	#searchTag.tag-fixed {
-		top: 60px!important;
-		padding: 10px 0!important;
-		box-sizing: border-box!important;
+		top: 60px i;
+		padding: 10px 0 i;
+		box-sizing: border-box i;
 	}
 	#content_right {
-		width: 100%!important;
-		margin: 20px 0!important;
+		width: 100% i;
+		margin: 20px 0 i;
 	}
 	#chat-gpt-for-google-search-enhance, .sider-search-container {
-		margin: 0!important;
+		margin: 0 i;
 	}
-	.cos-pc [class*="source-pc"]{
-		position: unset!important;
+	.cos-pc [class *= "source-pc"] {
+		position: unset i;
 	}
-	/*[[trebleList]]*/
-	/*[[waterfall]]*/
+	if trebleList {
+		#rs, #foot, [tpl = "recommend_list"], [tpl = "jy_course_and_org_pc"] [class *= "course-new-style"] > div.c-row, #rs_new, #content_left .result-molecule, [tpl = "bjh_addressing"] {
+			display: none i;
+		}
+		#container.sam_newgrid #content_left {
+			margin: 10px auto i;
+			width: 100% i;
+			display: grid i;
+			grid-template-columns: repeat(3, 1fr) i;
+			grid-gap: 10px i;
+		}
+		div#content_left > div[class], div#content_left > div[class = "c-group-wrapper"] > div[class] {
+			width: 100% i;
+			margin: 0 i;
+			box-sizing: border-box i;
+			padding: 15px i;
+			border-radius: 10px i;
+			overflow: hidden auto;
+			background: #fff i;
+			height: 300px i;
+		}
+		div#content_left > div[class = "c-group-wrapper"] {
+			display: flex i;
+			flex-direction: row i;
+			justify-content: space-between i;
+			width: 100% i;
+			background: transparent i;
+			padding: 0 i;
+			margin: 0 i;
+			flex-wrap: wrap i;
+			border-radius: 10px i;
+			overflow: hidden i;
+			margin-bottom: 10px i;
+		}
+		div#content_left > div[class = "c-group-wrapper"] > div[class]:first-child, div#content_left > div[class = "c-group-wrapper"] > div[class]:last-child, #content_left .c-group-wrapper > div[class]:not(:first-child, :last-child) {
+			border-radius: 10px i;
+		}
+		div#content_left > div[class = "c-group-wrapper"]:hover, [class *= "course-new-style"] {
+			box-shadow: none i;
+		}
+		div#content_left > div[class].hit-toptip.new-pmd, #rs_top_new, .hit_top_new {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			background: #fff;
+			width: 100%;
+		}
+		div#content_left > div[class].hit-toptip.new-pmd .c-gap-bottom-large {
+			margin: 0 i;
+		}
+		div#content_left > div[class] .c-span9, div#content_left > div[class] canvas, div#content_left > .c-group-wrappe > div[class], div#content_left > div[class = "c-group-wrapper"] > div[class] ul, [class *= "course-new-flex"] {
+			width: 100% i;
+		}
+		div#content_left > div[class = "c-group-wrapper"] > div[class] ul {
+			max-height: 310px i;
+		}
+		div#content_left > div[class = "c-group-wrapper"] > div[class][srcid] {
+			width: calc((100% - 10px) / 2) i;
+			height: 219px i;
+		}
+		div#content_left > div[class = "c-group-wrapper"] > div[class][srcid].new-pmd .c-gap-top {
+			margin-top: 0 i;
+		}
+		div#content_left > div[class = "c-group-wrapper"] > div[class][srcid] {
+			overflow-x: hidden i;
+		}
+		div#content_left > div[class].new-pmd .c-gap-top-large, .new-pmd .c-row:not([class *= 'bk_polysemy_'] [class *= 'video-wrapper_'][class *= 'hide_'], [class *= 'select-wrapper']), .c-border, div#content_left > div[class].new-pmd .c-tabs.c-sub-tabs .c-tabs-content {
+			width: 100% i;
+			display: flex i;
+			background: transparent i;
+			box-sizing: border-box i;
+		}
+		[class *= 'bk_polysemy_'] [class *= 'video-wrapper_'] {
+			width: 100% i;
+			height: auto i
+		}
+		div#content_left > div[class].new-pmd .c-abstract {
+			margin-top: 10px i;
+		}
+		div#content_left > div[class] .info-row_37tWa .info-col_2viHg {
+			width: inherit i;
+		}
+		div#content_left > div[class].c-container table, div#content_left > div[class].new-pmd.c-container .c-container[class *= "aladdin-card"] .c-border, div#content_left > div[class].new-pmd.c-container .c-container[class *= "aladdin-card"] .c-border > .c-row {
+			display: flex i;
+			flex-direction: column i;
+		}
+		div#content_left > div[class] .re-box_2CJ9w {
+			box-shadow: none i;
+		}
+		div#content_left > div[class].new-pmd.c-container:not([mu *= "tieba"]) > .c-container {
+			overflow: auto;
+			margin: 0 i;
+			height: 270px i;
+		}
+		div#content_left > div[class] .c-border .c-span-last {
+			width: 100% i;
+			margin-top: 10px i;
+		}
+		div#content_left > div[class] .op-short-video-pc, div#content_left > div[class].new-pmd .c-tabs.c-sub-tabs .c-tabs-content .c-row {
+			overflow: auto i;
+			padding-bottom: 5px i;
+		}
+		div#content_left > div[class] .op-short-video-pc .c-span3 {
+			width: calc((100% - 60px) / 2) i
+		}
+		div#content_left > div[class].new-pmd .op-short-video-pc .c-img img {
+			width: initial i;
+		}
+		.op_weather4_twoicon_container_div {
+			overflow-y: hidden i;
+			overflow-x: scroll i;
+		}
+		div#content_left > div[class][mu *= "天气"] .c-row, div#content_left > div[class] .wenda-abstract-wrap-new, div#content_left > div[class][tpl = "site"] > .c-border, div#content_left > div[class][mu *= "ip138"] > .c-border, div#content_left > div[class][mu *= "typhoon"] > .c-row, div#content_left > div[class][mu *= "phoneSearch"] > .c-border, div#content_left > div[class][mu *= "nourl.ubs.baidu.com"] > div > .c-row > .c-span12 > .c-border, div#content_left > div[class][mu *= "zhuanlan.zhihu.com"] > div > .c-row > .c-span12 > .c-border, div#content_left > div[class][mu *= "blog.csdn.net"] > div > .c-row > .c-span12 > .c-border, div#content_left > .result-op[tpl = "wenda_abstract_pc"] > div > .c-row > .c-span12 > .c-border, div#content_left > div[class][mu *= "nourl.ubs.baidu.com"][tpl = "game-page-profession"] > div > .c-row > .c-span12 > .c-border > div:not([class]) > .c-row, .c-container[mu *= "vsearch?pd=goods_tab"] h3 + [style], .c-container[mu *= "tieba"] > .c-container > [has-tts] {
+			flex-direction: column i;
+		}
+		.op_site_box_tools table td {
+			padding: 3px i;
+			text-align: center i;
+		}
+		div#content_left > div[class][tpl = "site"] > .c-border > .op_site_domain {
+			margin-bottom: 7px i;
+		}
+		div#content_left > div[class][tpl = "site"] > .c-border > .op_site_domain > .op_site_domain_right, .op-ip-detail table {
+			height: -webkit-fit-content i;
+			height: -moz-fit-content i;
+			height: fit-content i;
+			margin: 0 i;
+		}
+		div#content_left > div[class][tpl = "site"] > .c-border > .op_site_domain > .op_site_domain_right > p:not([class]), div#content_left > div[class][mu *= "nourl.ubs.baidu.com"] > div > div[style] {
+			display: flex i;
+			flex-flow: column nowrap i;
+		}
+		div#content_left > div[class][mu *= "ip138"] > .c-row.c-gap-top, div#content_left > div[class][mu *= "ip138"] > .c-border > .c-row.c-gap-top, .new-pmd .c-border ul[class *= "prod-wrap"] {
+			display: flex i;
+			align-items: center i;
+		}
+		div#content_left > div[class][tpl = "site"] > .c-border > .op_site_domain > .op_site_domain_right > p:not([class]) > a, div#content_left > div[class][mu *= "ip138"] > .c-border > .c-row.c-gap-top > .c-span-last {
+			margin: 0 i;
+		}
+		div#content_left > div[class][tpl = "site"] > .c-border > .op_site_main, [class *= "course-new-style"] {
+			margin-top: 0 i;
+			padding: 0 i;
+		}
+		div#content_left > div[class][tpl = "site"] > .c-border > .op_site_main > .op_site_gap_top {
+			margin-top: 8px i;
+		}
+		div#content_left > div[class][mu *= "nourl.ubs.baidu.com"] > div {
+			overflow: auto;
+		}
+		div#content_left > div[class][mu *= "nourl.ubs.baidu.com"][tpl = "game-page-profession"] > div {
+			overflow: hidden;
+		}
+		#container.sam_newgrid .c-container .t, #container.sam_newgrid .c-container .c-title, .ms-measures-container .operation-container {
+			display: flex i;
+		}
+		.ms-measures-container .operation-unit-number {
+			width: 1rem i;
+		}
+		.ms-measures-container .dropdown-menu {
+			display: flex;
+			flex-flow: column nowrap i;
+			align-items: center i;
+		}
+		.ms-measures-container .ms-measures-content .op-unit-tabs-nav-container .op-unit-tabs-nav-left-bg {
+			width: 100% i;
+		}
+		.ms-measures-container .ms-measures-content .op-unit-tabs-nav-container .op-unit-tabs-nav-left {
+			width: calc(100% - 38px) i;
+		}
+		.ms-measures-container .dropdown-menu li {
+			width: 100% i;
+			text-align: center i;
+		}
+		.ms-measures-container .dropdown-menu-item {
+			padding: 0 i
+		}
+		div#content_left > div[class][mu *= "forex.hexun.com"][tpl = "exrate"] .op_exrate_addmodle, div#content_left > div[class][mu *= "forex.hexun.com"][tpl = "exrate"] .op_exrate_from_e, div#content_left > div[class][mu *= "forex.hexun.com"][tpl = "exrate"] .op_exrate_to_e, .op_exrate_txt_e {
+			margin-bottom: 15px i;
+		}
+		div#content_left > div[class][mu *= "forex.hexun.com"][tpl = "exrate"] .op_exrate_tip {
+			margin-top: 0 i;
+		}
+		[class *= 'board_'] [class *= 'type-map_'] [class *= 'type-wrap_'] {
+			width: 36% i;
+		}
+		.new-pmd .c-span5 {
+			width: 100px i
+		}
+		[mu *= "mydown.yesky.com"] .c-span12 {
+			margin: 0 i;
+		}
+		[class *= "wenda-abstract"] .c-border, .c-border[class *= "b2b-straight-wrap"] {
+			flex-direction: column i;
+		}
+		[class *= "wenda-abstract"] {
+			border: none i;
+			overflow: hidden i;
+		}
+		[class *= "calendar_"] {
+			margin: unset i;
+			box-shadow: none i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-left"] {
+			width: 294px i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-left"] [class *= "header-box"] {
+			flex-wrap: wrap i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-left"] [class *= "header-box"] [class *= "back-today"] {}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-left"] [class *= "header-box"] [class *= "header-block"] {
+			width: 76px i;
+			margin: 0 5px 5px 0 i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-left"] [class *= "header-box"] [class *= "header-block-2"] {
+			padding: 0 28px i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-left"] [class *= "header-box"] [class *= "header-block-2"], [class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-left"] [class *= "header-box"] [class *= "header-block-2"] [class *= "select_"] {
+			width: 62px i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-left"] [class *= "content-box_"] [class *= "content-thead-box_"] {
+			margin-top: 35px i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-left"] [class *= "content-box_"] [class *= "content-thead-box_"] [class *= "content-thead_"] {
+			width: 37px i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-left"] [class *= "cell"] [class *= "cell-inner-box"] {
+			width: 33px i;
+			height: 52px i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-right"] {
+			width: fit-content i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-right"] > div:not([class]) {
+			width: 72px i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-right"] [class *= "calendar-right-day"] {
+			width: 60px i;
+			height: 60px i;
+			line-height: 60px i;
+			font-size: 40px i;
+		}
+		[class *= "calendar"] [class *= "calendar-box"] [class *= "calendar-box-right"] [class *= "calendar-right-suggestion-box"] {
+			padding-bottom: 0 i;
+		}
+		.wrapper_l #con-at {
+			padding: 0 i;
+		}
+		.wrapper_l #con-at .result-op {
+			width: 100% i;
+			margin: 0 auto i;
+		}
+		.wrapper_l #con-at .result-op .venture__3pjR .adjust-margin_3ud50 {
+			width: 1200px i;
+			margin: 0 auto i;
+		}
+		.wrapper_l #con-at .result-op .venture__3pjR .adjust-margin_3ud50 .c-span10 .c-row {
+			flex-wrap: wrap i;
+		}
+		.new-pmd .venture-wrapper_3QIYV .venture-right_2lHE4 .c-span5 {
+			width: unset i;
+		}
+		[class *= "travel-container"] {
+			width: 100% i;
+			margin: 0 i;
+			box-shadow: none i;
+		}
+		[class *= "travel-container"] [class *= "travel-select"] {
+			width: 40% i;
+		}
+		[class *= "travel-container"] [class *= "travel-select"] [class *= "select-box"] {
+			width: 89% i;
+		}
+		.new-pmd[mu *= "tieba.baidu.com"] [class *= "general-thread-cont"] {
+			margin-right: 0 i;
+		}
+		.new-pmd .c-span9 {
+			width: 468px i;
+		}
+		.c-container:has([class *= "calc-box"]), .c-container[mu *= "vsearch?pd=goods_tab"] {
+			grid-column: span 2 i;
+		}
+		.c-container > [class *= "calc-box"] {
+			width: 100% i;
+			margin: 0 i;
+			box-sizing: border-box i;
+		}
+		.c-container[mu *= "vsearch?pd=goods_tab"] h3 + [style] {
+			margin: 0 i;
+		}
+		.c-row.c-gap-top-middle {
+			flex-direction: column;
+		}
+		#content_left .c-group-wrapper .result-op[mu *= "baidu.com"][data-op][data-cost] {
+			width: 100% i;
+			border-radius: 0 i;
+		}
+		.c-container[m-name *= "short_video"] h3 + div > div {
+			overflow: auto i;
+		}
+		.c-container[tpl = "ai_index"] [class *= "swiper-box"] {
+			width: 100% i;
+			margin: 0 i
+		}
+	}
+	if waterfall {
+		div#content_left > div[class = "c-group-wrapper"] > div[class][srcid] {
+			height: auto i;
+		}
+		#container.sam_newgrid #content_left {
+			display: block i;
+			grid-template-columns: unset i;
+			grid-gap: unset i;
+			column-count: 3 i;
+			column-gap: 10px i;
+		}
+		div#content_left > div[class], div#content_left > div[class = "c-group-wrapper"] > div[class] {
+			margin: 0 0 10px i;
+			height: fit-content i;
+		}
+		div#content_left > div[class].new-pmd.c-container:not([mu *= "tieba"]) > .c-container {
+			height: fit-content i
+		}
+		div#content_left > div[class = "c-group-wrapper"] > div[mu *= "nourl"] {
+			margin: 0 i;
+		}
+	}
 }
 @-moz-document url-prefix("https://www.baidu.com/s?rtt") {
 	#wrapper {
-		position: relative!important;
+		position: relative i;
 	}
 	#container {
-		padding-bottom: 0!important;
+		padding-bottom: 0 i;
 	}
 	#rs {
-		margin-bottom: 86px!important;
+		margin-bottom: 86px i;
 	}
 	#page {
-		position: absolute!important;
+		position: absolute i;
 		bottom: 36px;
 	}
 }
