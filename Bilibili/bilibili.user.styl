@@ -3,7 +3,7 @@
 	@namespace      USO Archive
 	@author        QIUZAIYOU
 	@description   	  ⭐1. 常用页面夜间模式全覆盖 ⭐2. 去除广告 ⭐3. 页面样式优化
-	@version        202609031657
+	@version        202609211633
 	@license        GPL-3.0 License
 	@preprocessor   uso
 	@advanced dropdown BiliLive "首页直播板块屏蔽" {
@@ -42,13 +42,14 @@
 	/*===
 	* © 版权信息
 	* © 作者：QIUZAIYOU
-	* © 最后更新：202609031657
+	* © 最后更新：202609211633
 	* © Github项目地址：https://github.com/QIUZAIYOU/Stylish
 	* © Gitee项目地址：https://gitee.com/aiideai/Stylish
 	* © UserStyles.world项目地址：https://userstyles.world/style/241/nightmode-for-bilibili-com
 	===*/
 }
 @-moz-document domain("bilibili.com") {
+	/* ===StylusNightForBilibili=== */
 	/* ===屏蔽元素=== */
 	/* -- 首页 -- */
 	/* 导航活动元素及app下载 */
@@ -191,7 +192,7 @@
 	:-moz-any-link:not([style*='#'], [style*='rgb'], .is-vip) {
 		color: var(--color-text-main)!important;
 	}
-	:any-link:not([style*='#'], [style*='rgb'], .is-vip) {
+	:any-link:not([style*='#'], [style*='rgb'], .is-vip,.right-entry__item-trigger) {
 		color: var(--color-text-main)!important;
 	}
 	:-moz-any-link:not([style*='#'], [style*='rgb'], .is-vip):hover {
@@ -1884,7 +1885,7 @@
 	.coin-operated-m .like-checkbox input[type="checkbox"]:not(:checked) + i {
 		filter: var(--filter-ccd0d7-66) !important;
 	}
-	.fixed-header .bili-header__bar {
+	.fixed-header .bili-header__bar,.bili-header--fixed .bili-header__bar {
 		position: relative!important
 	}
 	.video-ai-assistant .video-ai-assistant-info {
